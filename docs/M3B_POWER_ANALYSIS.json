@@ -1,0 +1,539 @@
+{
+  "date": "2026-10-14",
+  "revision": "M3B-E1",
+  "classification": "DESIGN CALCULATIONS AND LINEAR-PASSIVE NGSPICE; NO HARDWARE MEASUREMENTS",
+  "input_corners": [
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-07,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 21.1778480965371,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-07,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 35.03714100779343,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-07,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 28.511550565078007,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-07,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 47.17019467444458,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-06,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 6.69702359261187,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-06,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 11.079716828511458,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-06,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 9.01614394087073,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-06,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 14.916525284478956,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-05,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 2.1177848096537097,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-05,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 3.5037141007793426,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-05,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 2.851155056507801,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 1e-05,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 4.717019467444459,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 0.0001,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 0.669702359261187,
+      "peak_v": 17.78836322806367
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 0.0001,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 1.1079716828511457,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 0.0001,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 0.9016143940870732,
+      "peak_v": 16.824061330625508
+    },
+    {
+      "step_v": 16.8,
+      "cable_L_H": 0.0001,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 1.4916525284478956,
+      "peak_v": 16.8
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-07,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 21.1778480965371,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-07,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 35.03714100779343,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-07,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 28.511550565078007,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-07,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 47.17019467444458,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-06,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 6.69702359261187,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-06,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 11.079716828511458,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-06,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 9.01614394087073,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-06,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 14.916525284478956,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-05,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 2.1177848096537097,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-05,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 3.5037141007793426,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-05,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 2.851155056507801,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 1e-05,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 4.717019467444459,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 0.0001,
+      "C_F": 8e-05,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 0.669702359261187,
+      "peak_v": 18.000129456969187
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 0.0001,
+      "C_F": 8e-05,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 1.1079716828511457,
+      "peak_v": 17.0
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 0.0001,
+      "C_F": 0.000145,
+      "source_R_ohm": 0.02,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 0.9016143940870732,
+      "peak_v": 17.024347775037715
+    },
+    {
+      "step_v": 17.0,
+      "cable_L_H": 0.0001,
+      "C_F": 0.000145,
+      "source_R_ohm": 1.0,
+      "damper_R_min_ohm": 1.4775,
+      "damping_ratio": 1.4916525284478956,
+      "peak_v": 17.0
+    }
+  ],
+  "input_max_qualified_cable_L_H": 1e-05,
+  "nominal_pack_limit_v": 16.8,
+  "analysis_margin_step_v": 17,
+  "input_max_v_in_stated_envelope": 17.0,
+  "input_stress_100uH_max_v": 18.000129456969187,
+  "inrush_i2t_upper_a2s": 0.013991652754590984,
+  "nominal_fuse_i2t_a2s": 0.0766,
+  "fuse_nominal_i2t_fraction": 0.18265865214870736,
+  "damper_active_loss_at_060A_w": 0.54,
+  "damper_20percent_loss_w": 0.10799999999999998,
+  "disconnect_energy_at_10uH_080A_j": 3.2000000000000007e-06,
+  "driver_surrogates": [
+    {
+      "step_v": 16.8,
+      "imposed_opening_us": 20,
+      "credited_HF_uF": 0.88,
+      "bulk_ESR_ohm": 0.03,
+      "layout_L_H": 1e-08,
+      "driver_max_v": 9.55829003,
+      "driver_min_v": 2.63781203,
+      "within_12_6_v": true
+    },
+    {
+      "step_v": 18,
+      "imposed_opening_us": 20,
+      "credited_HF_uF": 0.88,
+      "bulk_ESR_ohm": 0.5,
+      "layout_L_H": 1e-07,
+      "driver_max_v": 10.2982952,
+      "driver_min_v": 2.70213065,
+      "within_12_6_v": true
+    },
+    {
+      "step_v": 18,
+      "imposed_opening_us": 100,
+      "credited_HF_uF": 0.88,
+      "bulk_ESR_ohm": 0.5,
+      "layout_L_H": 1e-07,
+      "driver_max_v": 12.8641377,
+      "driver_min_v": 5.25846537,
+      "within_12_6_v": false
+    },
+    {
+      "step_v": 18,
+      "imposed_opening_us": 20,
+      "credited_HF_uF": 0.88,
+      "bulk_ESR_ohm": 1.5,
+      "layout_L_H": 1e-07,
+      "driver_max_v": 11.4168612,
+      "driver_min_v": 2.69043201,
+      "within_12_6_v": true
+    },
+    {
+      "step_v": 18,
+      "imposed_opening_us": 20,
+      "credited_HF_uF": 1e-06,
+      "bulk_ESR_ohm": 0.5,
+      "layout_L_H": 1e-07,
+      "driver_max_v": 10.9886337,
+      "driver_min_v": 2.53350884,
+      "within_12_6_v": true
+    }
+  ],
+  "open": [
+    "Cable/source model is assumed and must be measured; not a surge-standard rating",
+    "TVS17V does not guarantee18/20V clamp; wrong-source DC overvoltage excluded",
+    "Input fuse interrupt35A requires upstream protected-pack fault-current coordination; first tests current-limited lab only",
+    "20us switch/comparator timing imposed, not simulated or guaranteed",
+    "Capacitor ESR/ESL0-50C and pulse resistor SOA require qualification",
+    "No transistor RF, AM, CW, antenna, thermal, safety or endurance measurement"
+  ],
+  "input_ngspice_surrogates": [
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 16.9734696,
+      "VIN_PA_max_V": 16.9708375
+    },
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9558446,
+      "VIN_PA_max_V": 16.9502971
+    },
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 18.6637301,
+      "VIN_PA_max_V": 16.9708301
+    },
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9558295,
+      "VIN_PA_max_V": 16.9502809
+    },
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 21.7378475,
+      "VIN_PA_max_V": 16.9708173
+    },
+    {
+      "cable_L_uH": 0.1,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9558032,
+      "VIN_PA_max_V": 16.9502525
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 16.9735309,
+      "VIN_PA_max_V": 16.9709082
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9559163,
+      "VIN_PA_max_V": 16.9503841
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 16.9735236,
+      "VIN_PA_max_V": 16.9709009
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9559013,
+      "VIN_PA_max_V": 16.9503679
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 16.9735108,
+      "VIN_PA_max_V": 16.970888
+    },
+    {
+      "cable_L_uH": 1,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9558751,
+      "VIN_PA_max_V": 16.9503396
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 17.1188009,
+      "VIN_PA_max_V": 16.971633
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9566365,
+      "VIN_PA_max_V": 16.9512558
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 17.1197942,
+      "VIN_PA_max_V": 16.9716258
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9566219,
+      "VIN_PA_max_V": 16.9512401
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 17.1215838,
+      "VIN_PA_max_V": 16.9716132
+    },
+    {
+      "cable_L_uH": 10,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9565963,
+      "VIN_PA_max_V": 16.9512125
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 20.175557,
+      "VIN_PA_max_V": 17.6297848
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 1e-05,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9644307,
+      "VIN_PA_max_V": 16.9605655
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 20.1797349,
+      "VIN_PA_max_V": 17.6310276
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 0.04,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9644197,
+      "VIN_PA_max_V": 16.9605542
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 0.02,
+      "VIN_PACK_max_V": 20.1870643,
+      "VIN_PA_max_V": 17.6332106
+    },
+    {
+      "cable_L_uH": 100,
+      "upstream_C_uF": 0.11,
+      "source_R_ohm": 1.0,
+      "VIN_PACK_max_V": 16.9644006,
+      "VIN_PA_max_V": 16.9605343
+    }
+  ],
+  "upstream_node_max_surrogate_V": 21.7378475,
+  "post_damper_max_surrogate_V": 17.6332106,
+  "input_model_limitations": "Generic diode, assumed wiring/ESR, no connector arc, source surge or component-failure qualification. VIN_PACK and VIN_PA are distinct.100uH analytic stress is outside the allowed cable envelope."
+}

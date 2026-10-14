@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "classification": "Source binary identity only, not hardware validation or supplier stock",
+  "downloads": [
+    {
+      "source_url": "https://abracon.com/Resonators/abm3b.pdf",
+      "sha256": "17b7417ea2fa9bdde04c2dd11db78dea61bf362fbbf2009aa94b340d74ecc210",
+      "bytes": 735461
+    },
+    {
+      "source_url": "https://www.vishay.com/docs/91023/irf610.pdf",
+      "sha256": "56b6ae92422195dbd44d56ca8ca2b917c2ea2603e1cd5e6cea7ddbef0bb1effc",
+      "bytes": 134374
+    },
+    {
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5134.pdf",
+      "sha256": "82bbc6c7368a146e7d8a0b121c7d13fd02f7e8702eeefadb185caa618a4a67bb",
+      "bytes": 977460
+    },
+    {
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "sha256": "d51e669c597988b20c0963daf5bef7356cbd2104c1f867e9107c6fa6cd2b899c",
+      "bytes": 122881
+    },
+    {
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+      "sha256": "9426b136902f11900825077535e5c65032b7fbc31ffb59c5e9e1f463bb20fb90",
+      "bytes": 175724
+    },
+    {
+      "source_url": "https://www.vishay.com/docs/95222/to220ab.pdf",
+      "sha256": "73e20430c54886b5f5c998cca93b20ba8d89c7d4cc31ddef239feec0f06ba01a",
+      "bytes": 66000
+    }
+  ],
+  "local_router": {
+    "version": "2.5.0",
+    "source": "https://github.com/freerouting/freerouting/releases/tag/v2.5.0",
+    "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7"
+  }
+}

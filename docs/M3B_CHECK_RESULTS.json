@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-14",
+  "revision": "M3B-E1",
+  "baseline_commit": "0dfd224",
+  "status": "CAD AND IDEAL LOGIC CHECKS PASS; ALL PHYSICAL GATES NOT_RUN",
+  "manifest_refs": 281,
+  "electrical_footprints": 273,
+  "mounting_holes": 4,
+  "footprints": 277,
+  "physical_pad_memberships_checked": 664,
+  "manufacturer_pinmaps_checked": [
+    "J502",
+    "Q402",
+    "Q403",
+    "U101",
+    "U202",
+    "U224",
+    "U301",
+    "U302",
+    "U313",
+    "U401",
+    "U501"
+  ],
+  "test_pads": 74,
+  "track_segments": 2237,
+  "through_vias": 328,
+  "zones": 2,
+  "board_mm": [
+    210,
+    160,
+    1.6
+  ],
+  "copper_layers": 2,
+  "track_width_histogram": {
+    "0.15": 196,
+    "0.2": 1386,
+    "0.28": 126,
+    "0.3": 260,
+    "0.55": 77,
+    "0.75": 190,
+    "1.0": 2
+  },
+  "critical_net_geometry": {
+    "GATE_DRV": {
+      "track_length_mm": 13.377,
+      "widths_mm": [
+        0.15,
+        0.2,
+        0.3
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "GATE_PA": {
+      "track_length_mm": 23.655,
+      "widths_mm": [
+        0.2,
+        0.3
+      ],
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "DRAIN_PA": {
+      "track_length_mm": 40.479,
+      "widths_mm": [
+        0.3,
+        1.0
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "VDRV": {
+      "track_length_mm": 34.704,
+      "widths_mm": [
+        0.2,
+        0.3
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "RF_NORMAL": {
+      "track_length_mm": 55.625,
+      "widths_mm": [
+        0.55
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "RF_FOX": {
+      "track_length_mm": 28.082,
+      "widths_mm": [
+        0.3
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "CLK_PA": {
+      "track_length_mm": 112.294,
+      "widths_mm": [
+        0.15,
+        0.2
+      ],
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "CLK_FOX": {
+      "track_length_mm": 41.821,
+      "widths_mm": [
+        0.2,
+        0.3
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "SW_PA": {
+      "track_length_mm": 14.445,
+      "widths_mm": [
+        0.2,
+        0.55
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "VPA_ISO": {
+      "track_length_mm": 23.314,
+      "widths_mm": [
+        0.2,
+        0.3,
+        0.75
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    },
+    "VPA_LOAD": {
+      "track_length_mm": 126.155,
+      "widths_mm": [
+        0.2,
+        0.3,
+        0.75
+      ],
+      "layers": [
+        "F.Cu"
+      ]
+    }
+  },
+  "models_resolve": 199,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unrouted": 0,
+  "schematic_parity": 0,
+  "logic_truth_cases": 256,
+  "state_scenarios": 31,
+  "timing_corners": 16,
+  "not_proved": [
+    "Physical propagation/reset recovery/metastability",
+    "Driver OV withdrawal timing and capacitor hot ESR",
+    "Cable/source transient envelope",
+    "RF power/efficiency/emissions/CW/thermal/antenna/isolation",
+    "Incoming exact component mechanical fit and stock"
+  ]
+}

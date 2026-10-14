@@ -4,7 +4,7 @@
 Ideal digital transitions plus RC/Schmitt engineering models, NOT transistor,
 metastability, RF, thermal or measured safety validation. No firmware/PCB output.
 """
-import argparse, copy, itertools, json, math
+import argparse, copy, itertools, json, math, os
 from pathlib import Path
 import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
@@ -27,7 +27,7 @@ def number(s):
 
 class Circuit:
     def __init__(self,xml=None,mutation=None):
-        tree=ET.parse(xml or HW/'review/RF80.xml');self.p={}
+        tree=ET.parse(xml or os.environ.get('RF80_NETLIST') or HW/'review/RF80.xml');self.p={}
         for comp in tree.findall('./components/comp'):
             src=comp.find('libsource');self.p[comp.attrib['ref']]={'type':src.attrib['part'],'pins':{}}
         for n in tree.findall('./nets/net'):

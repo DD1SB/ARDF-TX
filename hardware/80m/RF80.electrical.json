@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "revision": "M3A-R1",
+  "revision": "M3B-E1",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -8,10 +8,10 @@
       "sheet": "01_source_interface",
       "value": "IDC16 controller",
       "mpn": "Wurth 61201621621",
-      "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+      "footprint": "ARDF_TX:Wurth_61201621621",
       "group": "connectors",
       "population": "BOTH",
-      "note": "Exact Wurth drawing/key orientation to verify; candidate footprint held for evaluation, harness contacts separate.",
+      "note": "Maker61201621621:27.98mm length,17.78mm span,2.54mm pitch; hole recommendation1.1+/-0.15mm. M3B finished hole1.2mm/pads1.9mm, within recommendation; review board finished-hole tolerance. Same pinout/keying.",
       "source_url": "",
       "supplier": "Wurth/Mouser",
       "supplier_part_number": "OPEN",
@@ -49,7 +49,7 @@
       "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
       "group": "source",
       "population": "BOTH",
-      "note": "0x60; CLK0 PA, CLK2 FOX; CLK1 disabled/NC; blank factory part, no preprogrammed outputs. Internal crystal load 10 pF starting setting. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "0x60; CLK0 PA, CLK2 FOX; CLK1 disabled/NC; blank factory part, no preprogrammed outputs. Internal crystal load 10 pF starting setting.",
       "source_url": "https://www.digikey.de/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
       "supplier": "DigiKey",
       "supplier_part_number": "336-2399-5-ND",
@@ -396,7 +396,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -424,7 +424,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -637,7 +637,7 @@
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "SOT23 pin1 RESET,2 VDD,3 VSS; nominal3.0V. Controller POR cannot replace unplugged-module local reset. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "SOT23 pin1 RESET,2 VDD,3 VSS; nominal3.0V. Controller POR cannot replace unplugged-module local reset.",
       "source_url": "https://www.mouser.it/ProductDetail/Microchip-Technology/MCP100T-300I-TT?qs=8U9qMIGhlkokseONjNxnUg%3D%3D",
       "supplier": "Mouser",
       "supplier_part_number": "579-MCP100T-300I/TT",
@@ -662,7 +662,7 @@
       "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected.",
       "source_url": "https://eu.mouser.com/en/ProductDetail/Nexperia/74HC123D653?qs=P62ublwmbi%2FMZUrC9zEqyg%3D%3D",
       "supplier": "Mouser",
       "supplier_part_number": "771-74HC123D-T",
@@ -775,7 +775,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound.",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -827,7 +827,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -894,7 +894,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -922,7 +922,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -950,7 +950,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1176,7 +1176,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -1346,7 +1346,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1374,7 +1374,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1462,7 +1462,7 @@
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected.",
       "source_url": "https://eu.mouser.com/ProductDetail/Nexperia/74HC08D653?qs=P62ublwmbi%2FQCxm29EB%2FyA%3D%3D",
       "supplier": "Mouser",
       "supplier_part_number": "771-74HC08D-T",
@@ -1501,7 +1501,7 @@
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected.",
       "source_url": "https://nl.mouser.com/ProductDetail/Nexperia/74HC74D653?qs=P62ublwmbi8VnJ1KG1%2FblQ%3D%3D",
       "supplier": "Mouser",
       "supplier_part_number": "771-74HC74D-T",
@@ -1579,7 +1579,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1607,7 +1607,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1635,7 +1635,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1663,7 +1663,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -1848,11 +1848,11 @@
       "sheet": "05_power",
       "value": "1.5 A fast / 32V",
       "mpn": "Littelfuse 046701.5NR",
-      "footprint": "Fuse:Fuse_1206_3216Metric",
+      "footprint": "ARDF_TX:Fuse_467_0603",
       "group": "protection",
       "population": "BOTH",
-      "note": "Selection candidate; final interrupt/I2t and max16.8V qualification OPEN. External protected pack remains required.",
-      "source_url": "",
+      "note": "CORRECTED R1 footprint: actual467 family is0603. Own maker reflow lands2.54x1.02mm outer/gap0.36mm; retain1.5A32V, nominalI2t0.0766A2s. Fuse nuisance/pack coordination physical gate.",
+      "source_url": "https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
       "availability": "Exact basket/stock OPEN",
@@ -1875,7 +1875,7 @@
       "footprint": "Diode_SMD:D_SMC",
       "group": "protection",
       "population": "BOTH",
-      "note": "Schottky reverse polarity barrier; K pin1 = VIN_PA. Vf/conduction heat included in prototype efficiency, not silently ignored.",
+      "note": "Schottky reverse polarity barrier. M3B sense is ahead of added input damper; no load-dependent UV threshold shift.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -1887,7 +1887,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VIN_PA",
+        "1": "VIN_PACK",
         "2": "VBAT_FUSED"
       }
     },
@@ -1899,7 +1899,7 @@
       "footprint": "Diode_SMD:D_SMB",
       "group": "protection",
       "population": "NORMAL",
-      "note": "Nominal clamp27.6V close to28V recommended input; real cable/clamp/fuse gate remains open. A TVS rating alone is not transient qualification.",
+      "note": "Secondary surge absorber only; NOT an18/20V precision clamp. M3B R350/C350 damp specified cable hot-plug; TVS is downstream of damper. External sources restricted to qualified4S envelope.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2001,7 +2001,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "normal_supply",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -2497,7 +2497,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -2537,7 +2537,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VIN_PA",
+        "1": "VIN_PACK",
         "2": "V_PACK_SCALED"
       }
     },
@@ -2549,7 +2549,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -2659,7 +2659,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -2683,27 +2683,23 @@
       "ref": "C314",
       "sheet": "06_analog_protection",
       "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
+      "mpn": "CC0603KRX7R9BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "protection",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
+      "note": "50V version on undamped VIN_PACK node; avoids crediting the downstream damper for upstream capacitor voltage.100n\u00b110%X7R0603; price estimate, current basketOPEN.",
+      "source_url": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
       "supplier": "Mouser",
-      "supplier_part_number": "603-CC603KRX7R8BB104",
+      "supplier_part_number": "OPEN",
       "availability": "20401272 newer EU index; DE20582958",
-      "evidence": "OBSERVED_M2",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.04,
-        "50": 0.028,
-        "100": 0.024,
-        "500": 0.017
+        "1": 0.035
       },
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VIN_PA",
+        "1": "VIN_PACK",
         "2": "GND"
       }
     },
@@ -2739,7 +2735,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -2789,7 +2785,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -2863,7 +2859,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -2913,7 +2909,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -2963,7 +2959,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3013,7 +3009,7 @@
       "footprint": "Package_TO_SOT_SMD:SOT-23-5",
       "group": "protection",
       "population": "NORMAL",
-      "note": "Gain20V/V; pin3 IN+,4 IN-,5 VS for DBV. 26V CM. A1T packaging differs from unavailable A1R, same pinout. Quantity10EUR0.70 isESTIMATE; EUR0.96 at1 observed.",
+      "note": "Gain20V/V; pin3 IN+,4 IN-,5 VS for DBV. 26V CM. A1T packaging differs from unavailable A1R, same pinout.",
       "source_url": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
       "supplier": "Mouser/DigiKey",
       "supplier_part_number": "595-INA180A1IDBVT / exact DigiKey code OPEN",
@@ -3161,7 +3157,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": "Shared default0V OC input with sensor DNP; valid only when watt stage DNP. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "Shared default0V OC input with sensor DNP; valid only when watt stage DNP.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3187,7 +3183,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -3215,7 +3211,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": "Pull from bounded<1.0V reference keeps comparator inputs in range at cold/open NTC. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "Pull from bounded<1.0V reference keeps comparator inputs in range at cold/open NTC.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3289,7 +3285,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3339,7 +3335,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3365,7 +3361,7 @@
       "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
       "group": "protection",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://eu.mouser.com/en/ProductDetail/Texas-Instruments/LM393BIDR?qs=BJlw7L4Cy78N8CV%252BGpRosA%3D%3D",
       "supplier": "Mouser",
       "supplier_part_number": "595-LM393BIDR",
@@ -3398,7 +3394,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -3504,7 +3500,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "normal_driver",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3608,7 +3604,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "normal_driver",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -3782,7 +3778,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "normal_driver",
       "population": "NORMAL",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -3805,10 +3801,10 @@
       "sheet": "08_normal_rf",
       "value": "IRF610PBF-BE3",
       "mpn": "IRF610PBF-BE3",
-      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "footprint": "ARDF_TX:TO220_Vertical_1p3Drill",
       "group": "normal_final",
       "population": "NORMAL",
-      "note": "200V VDS, +/-20V gate. Tab=drain; electrically insulating sink hardware required. Prototype drain peak gate<=100V, junctiontarget<=110C. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "200V VDS, +/-20V gate. Tab=drain; electrically insulating sink hardware required. Prototype drain peak gate<=100V, junctiontarget<=110C. M3B:1.3mm finished holes/1.905mm lands,2.54mm pitch. Conservative fit against Vishay TO220AB envelope max lead1.01x0.61mm diagonal1.18mm; exact incoming IRF610 lead dry-fit still required.",
       "source_url": "https://de.farnell.com/vishay/irf610pbf-be3/mosfet-n-kanal-200v-3-3a-to-220ab/dp/4853567",
       "supplier": "Farnell",
       "supplier_part_number": "4853567",
@@ -3831,10 +3827,10 @@
       "sheet": "08_normal_rf",
       "value": "9T + 9T bifilar / FT-50A-43",
       "mpn": "Amidon FT-50A-43 + AWG24 enamel Cu",
-      "footprint": "ARDF_TX:FT50A43_Bifilar_4Terminal",
+      "footprint": "ARDF_TX:FT50A43_Inline_4Terminal",
       "group": "normal_filter",
       "population": "NORMAL",
-      "note": "Astart1 dot; Afinish2; Bstart3 dot; Bfinish4; 2 and3 join drain, series-aiding.9 passes each,24cm each AWG24 0.51mm. AL480nH ->38.9uH per winding; source geometryverify.",
+      "note": "Astart1 dot; Afinish2; Bstart3 dot; Bfinish4; 2 and3 join drain, series-aiding.9 passes each,24cm each AWG24 0.51mm. AL480nH ->38.9uH per winding; source geometryverify. M3B formed leads on one edge:1,2,3,4 at5.08mm pitch;2/3 adjacent for short center join. Same core, turns, polarity and ratio; mechanical forming only.",
       "source_url": "https://www.amidoncorp.com/ft-50a-43/",
       "supplier": "Amidon/Akizuki",
       "supplier_part_number": "FT-50A-43 / Akizuki131662",
@@ -4174,7 +4170,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -4802,7 +4798,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "fox",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -4854,7 +4850,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "fox",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -5062,7 +5058,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "fox",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -5113,7 +5109,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "fox",
       "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "note": "",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -5524,7 +5520,7 @@
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "fox",
       "population": "BOTH",
-      "note": "Absent=high enables normalwhenrequested. Presentlow inhibitsnormalregardlessfirmware; Disarmbeforeplugchanges; JSTXHdoesnotguaranteesequentialmating. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "Absent=high enables normalwhenrequested. Presentlow inhibitsnormalregardlessfirmware; Disarmbeforeplugchanges; JSTXHdoesnotguaranteesequentialmating.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-RC0603FR-0710KL",
@@ -5771,6 +5767,1274 @@
       "multiple": 1,
       "pins": {
         "1": "VDRV"
+      }
+    },
+    {
+      "ref": "R350",
+      "sheet": "12_evaluation",
+      "value": "1.5 ohm / 1W",
+      "mpn": "CRCW25121R50FKEG",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "group": "input_damper",
+      "population": "NORMAL",
+      "note": "\u00b11%; full PA supply damper.0.6A gives0.54W active/0.108W at20%; rated hot derating and insertion pulse must qualify. Not a universal overvoltage limiter.",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "supplier": "Vishay/Mouser",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.15
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_PACK",
+        "2": "VIN_PA"
+      }
+    },
+    {
+      "ref": "C350",
+      "sheet": "12_evaluation",
+      "value": "100u / 35V",
+      "mpn": "EEUFR1V101",
+      "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+      "group": "input_damper",
+      "population": "NORMAL",
+      "note": "FR100u35V\u00b120%,8x11.5mm/P3.5mm,lead0.6mm. ESR/impedance0.056ohm at100kHz20C. Cmin80u used; no guaranteed extra ceramic capacitance credited. Inrush/ESR/temp remain physical gates.",
+      "source_url": "https://na.industrial.panasonic.com/products/capacitors/aluminum-electrolytic-capacitors/aluminum-electrolytic-capacitors-radial-lead-type/series/83367/model/83807",
+      "supplier": "Panasonic/Mouser",
+      "supplier_part_number": "OPEN; exact manufacturer MPN EEUFR1V101",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.45
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_PA",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C405",
+      "sheet": "12_evaluation",
+      "value": "100n / 50V",
+      "mpn": "GRM21BR71H104KA01L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "group": "normal_rf_bypass",
+      "population": "NORMAL",
+      "note": "Local transformer-feed RF bypass; NOT a drain reservoir.100n is negligible vs22u shaper integration but gives~0.45ohm at3.55MHz. RF ripple/heating/key-edge effect require measurement. X7R\u00b110%; procurement quoteOPEN.",
+      "source_url": "https://www.murata.com/en-eu/products/productdetail?partno=GRM21BR71H104KA01L",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_SHAPED",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "TP700",
+      "sheet": "12_evaluation",
+      "value": "VBAT",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VBAT"
+      }
+    },
+    {
+      "ref": "TP701",
+      "sheet": "12_evaluation",
+      "value": "VIN_PACK",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_PACK"
+      }
+    },
+    {
+      "ref": "TP702",
+      "sheet": "12_evaluation",
+      "value": "VIN_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_PA"
+      }
+    },
+    {
+      "ref": "TP703",
+      "sheet": "12_evaluation",
+      "value": "VPA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA"
+      }
+    },
+    {
+      "ref": "TP704",
+      "sheet": "12_evaluation",
+      "value": "VPA_ISO",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_ISO"
+      }
+    },
+    {
+      "ref": "TP705",
+      "sheet": "12_evaluation",
+      "value": "VPA_LOAD",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_LOAD"
+      }
+    },
+    {
+      "ref": "TP706",
+      "sheet": "12_evaluation",
+      "value": "VDRV",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VDRV"
+      }
+    },
+    {
+      "ref": "TP707",
+      "sheet": "12_evaluation",
+      "value": "I_PA_RAW",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "I_PA_RAW"
+      }
+    },
+    {
+      "ref": "TP708",
+      "sheet": "12_evaluation",
+      "value": "I_PA_FILTER",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "I_PA_FILTER"
+      }
+    },
+    {
+      "ref": "TP709",
+      "sheet": "12_evaluation",
+      "value": "FB_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FB_PA"
+      }
+    },
+    {
+      "ref": "TP710",
+      "sheet": "12_evaluation",
+      "value": "PA_PERMIT",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_PERMIT"
+      }
+    },
+    {
+      "ref": "TP711",
+      "sheet": "12_evaluation",
+      "value": "FOX_PERMIT",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_PERMIT"
+      }
+    },
+    {
+      "ref": "TP712",
+      "sheet": "12_evaluation",
+      "value": "PA_INB",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_INB"
+      }
+    },
+    {
+      "ref": "TP713",
+      "sheet": "12_evaluation",
+      "value": "ARM",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "ARM"
+      }
+    },
+    {
+      "ref": "TP714",
+      "sheet": "12_evaluation",
+      "value": "ARM_ACCEPT",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "ARM_ACCEPT"
+      }
+    },
+    {
+      "ref": "TP715",
+      "sheet": "12_evaluation",
+      "value": "ARM_CLK",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "ARM_CLK"
+      }
+    },
+    {
+      "ref": "TP716",
+      "sheet": "12_evaluation",
+      "value": "ARMED",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "ARMED"
+      }
+    },
+    {
+      "ref": "TP717",
+      "sheet": "12_evaluation",
+      "value": "RESET_N",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RESET_N"
+      }
+    },
+    {
+      "ref": "TP718",
+      "sheet": "12_evaluation",
+      "value": "HEALTH_N",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "HEALTH_N"
+      }
+    },
+    {
+      "ref": "TP719",
+      "sheet": "12_evaluation",
+      "value": "POR_N",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "POR_N"
+      }
+    },
+    {
+      "ref": "TP720",
+      "sheet": "12_evaluation",
+      "value": "LEASE",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LEASE"
+      }
+    },
+    {
+      "ref": "TP721",
+      "sheet": "12_evaluation",
+      "value": "LEASE_OK",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LEASE_OK"
+      }
+    },
+    {
+      "ref": "TP722",
+      "sheet": "12_evaluation",
+      "value": "BUS_QUIET",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "BUS_QUIET"
+      }
+    },
+    {
+      "ref": "TP723",
+      "sheet": "12_evaluation",
+      "value": "PA_GUARD_RAW",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_GUARD_RAW"
+      }
+    },
+    {
+      "ref": "TP724",
+      "sheet": "12_evaluation",
+      "value": "PWR0",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PWR0"
+      }
+    },
+    {
+      "ref": "TP725",
+      "sheet": "12_evaluation",
+      "value": "PWR1",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PWR1"
+      }
+    },
+    {
+      "ref": "TP726",
+      "sheet": "12_evaluation",
+      "value": "SEL_EXT",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "SEL_EXT"
+      }
+    },
+    {
+      "ref": "TP727",
+      "sheet": "12_evaluation",
+      "value": "SEL_FULL",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "SEL_FULL"
+      }
+    },
+    {
+      "ref": "TP728",
+      "sheet": "12_evaluation",
+      "value": "PATH_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PATH_PA"
+      }
+    },
+    {
+      "ref": "TP729",
+      "sheet": "12_evaluation",
+      "value": "PATH_FOX",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PATH_FOX"
+      }
+    },
+    {
+      "ref": "TP730",
+      "sheet": "12_evaluation",
+      "value": "KEY_TAIL",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "KEY_TAIL"
+      }
+    },
+    {
+      "ref": "TP731",
+      "sheet": "12_evaluation",
+      "value": "FAULT_N",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FAULT_N"
+      }
+    },
+    {
+      "ref": "TP732",
+      "sheet": "12_evaluation",
+      "value": "CLK_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLK_PA"
+      }
+    },
+    {
+      "ref": "TP733",
+      "sheet": "12_evaluation",
+      "value": "CLK_FOX",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLK_FOX"
+      }
+    },
+    {
+      "ref": "TP734",
+      "sheet": "12_evaluation",
+      "value": "GATE_DRV",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GATE_DRV"
+      }
+    },
+    {
+      "ref": "TP735",
+      "sheet": "12_evaluation",
+      "value": "GATE_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GATE_PA"
+      }
+    },
+    {
+      "ref": "TP736",
+      "sheet": "12_evaluation",
+      "value": "DRAIN_PA",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRAIN_PA"
+      }
+    },
+    {
+      "ref": "TP737",
+      "sheet": "12_evaluation",
+      "value": "VPA_SHAPED",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_SHAPED"
+      }
+    },
+    {
+      "ref": "TP738",
+      "sheet": "12_evaluation",
+      "value": "RF_RAW",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RF_RAW"
+      }
+    },
+    {
+      "ref": "TP739",
+      "sheet": "12_evaluation",
+      "value": "RF_NORMAL",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RF_NORMAL"
+      }
+    },
+    {
+      "ref": "TP740",
+      "sheet": "12_evaluation",
+      "value": "FOX_SUM",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_SUM"
+      }
+    },
+    {
+      "ref": "TP741",
+      "sheet": "12_evaluation",
+      "value": "FOX_PAD_IN",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_PAD_IN"
+      }
+    },
+    {
+      "ref": "TP742",
+      "sheet": "12_evaluation",
+      "value": "RF_FOX",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RF_FOX"
+      }
+    },
+    {
+      "ref": "TP743",
+      "sheet": "12_evaluation",
+      "value": "VFOX",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VFOX"
+      }
+    },
+    {
+      "ref": "TP744",
+      "sheet": "12_evaluation",
+      "value": "TEMP_SENSE",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TEMP_SENSE"
+      }
+    },
+    {
+      "ref": "TP745",
+      "sheet": "12_evaluation",
+      "value": "TEMP_HOT_REF",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TEMP_HOT_REF"
+      }
+    },
+    {
+      "ref": "TP746",
+      "sheet": "12_evaluation",
+      "value": "V_PA_OV",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V_PA_OV"
+      }
+    },
+    {
+      "ref": "TP747",
+      "sheet": "12_evaluation",
+      "value": "V_PACK_SCALED",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V_PACK_SCALED"
+      }
+    },
+    {
+      "ref": "TP748",
+      "sheet": "12_evaluation",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "TP749",
+      "sheet": "12_evaluation",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "TP750",
+      "sheet": "12_evaluation",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "TP751",
+      "sheet": "12_evaluation",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "footprint": "ARDF_TX:Probe_Pad_0p8",
+      "group": "evaluation_access",
+      "population": "BOTH",
+      "note": "Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
       }
     }
   ],
@@ -7611,6 +8875,393 @@
         "unit": 1,
         "x": 260.35,
         "y": 237.49,
+        "type": "TestPoint"
+      }
+    ],
+    "12_evaluation": [
+      {
+        "ref": "R350",
+        "unit": 1,
+        "x": 64.77,
+        "y": 64.77,
+        "type": "R"
+      },
+      {
+        "ref": "C350",
+        "unit": 1,
+        "x": 175.26,
+        "y": 64.77,
+        "type": "C_Polarized"
+      },
+      {
+        "ref": "C405",
+        "unit": 1,
+        "x": 284.48,
+        "y": 64.77,
+        "type": "C"
+      },
+      {
+        "ref": "TP700",
+        "unit": 1,
+        "x": 24.13,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP701",
+        "unit": 1,
+        "x": 67.31,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP702",
+        "unit": 1,
+        "x": 110.49,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP703",
+        "unit": 1,
+        "x": 152.4,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP704",
+        "unit": 1,
+        "x": 195.58,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP705",
+        "unit": 1,
+        "x": 238.76,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP706",
+        "unit": 1,
+        "x": 281.94,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP707",
+        "unit": 1,
+        "x": 325.12,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP708",
+        "unit": 1,
+        "x": 368.3,
+        "y": 105.41,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP709",
+        "unit": 1,
+        "x": 24.13,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP710",
+        "unit": 1,
+        "x": 67.31,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP711",
+        "unit": 1,
+        "x": 110.49,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP712",
+        "unit": 1,
+        "x": 152.4,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP713",
+        "unit": 1,
+        "x": 195.58,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP714",
+        "unit": 1,
+        "x": 238.76,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP715",
+        "unit": 1,
+        "x": 281.94,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP716",
+        "unit": 1,
+        "x": 325.12,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP717",
+        "unit": 1,
+        "x": 368.3,
+        "y": 129.54,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP718",
+        "unit": 1,
+        "x": 24.13,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP719",
+        "unit": 1,
+        "x": 67.31,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP720",
+        "unit": 1,
+        "x": 110.49,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP721",
+        "unit": 1,
+        "x": 152.4,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP722",
+        "unit": 1,
+        "x": 195.58,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP723",
+        "unit": 1,
+        "x": 238.76,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP724",
+        "unit": 1,
+        "x": 281.94,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP725",
+        "unit": 1,
+        "x": 325.12,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP726",
+        "unit": 1,
+        "x": 368.3,
+        "y": 152.4,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP727",
+        "unit": 1,
+        "x": 24.13,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP728",
+        "unit": 1,
+        "x": 67.31,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP729",
+        "unit": 1,
+        "x": 110.49,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP730",
+        "unit": 1,
+        "x": 152.4,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP731",
+        "unit": 1,
+        "x": 195.58,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP732",
+        "unit": 1,
+        "x": 238.76,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP733",
+        "unit": 1,
+        "x": 281.94,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP734",
+        "unit": 1,
+        "x": 325.12,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP735",
+        "unit": 1,
+        "x": 368.3,
+        "y": 176.53,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP736",
+        "unit": 1,
+        "x": 24.13,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP737",
+        "unit": 1,
+        "x": 67.31,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP738",
+        "unit": 1,
+        "x": 110.49,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP739",
+        "unit": 1,
+        "x": 152.4,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP740",
+        "unit": 1,
+        "x": 195.58,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP741",
+        "unit": 1,
+        "x": 238.76,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP742",
+        "unit": 1,
+        "x": 281.94,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP743",
+        "unit": 1,
+        "x": 325.12,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP744",
+        "unit": 1,
+        "x": 368.3,
+        "y": 200.66,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP745",
+        "unit": 1,
+        "x": 24.13,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP746",
+        "unit": 1,
+        "x": 67.31,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP747",
+        "unit": 1,
+        "x": 110.49,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP748",
+        "unit": 1,
+        "x": 152.4,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP749",
+        "unit": 1,
+        "x": 195.58,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP750",
+        "unit": 1,
+        "x": 238.76,
+        "y": 224.79,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP751",
+        "unit": 1,
+        "x": 281.94,
+        "y": 224.79,
         "type": "TestPoint"
       }
     ]

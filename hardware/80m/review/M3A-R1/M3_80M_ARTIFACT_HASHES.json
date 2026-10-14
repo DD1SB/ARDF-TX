@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-14",
+  "revision": "M3A-R1",
+  "status": "Review artifacts; no layout, manufacture or physical validation",
+  "markdown_files_checked": 77,
+  "local_links_checked": 505,
+  "hardware_local_links_checked": 18,
+  "files": [
+    {
+      "path": "hardware/80m/01_source_interface.kicad_sch",
+      "bytes": 74971,
+      "sha256": "6dd43c40d64e498871e7bff25b35f12243cc301b42ba8ccfb5f7c22d35e949ba"
+    },
+    {
+      "path": "hardware/80m/02_interlocks.kicad_sch",
+      "bytes": 70297,
+      "sha256": "03f0e3cb68c049ea5772e0c9e541f6a71ee7e2a0154cdc54ce95834590e35907"
+    },
+    {
+      "path": "hardware/80m/03_safety_logic.kicad_sch",
+      "bytes": 65629,
+      "sha256": "9bb6a215c0f71d3fc8688703882fd3196472eb20349f85af05a2ae6da1693025"
+    },
+    {
+      "path": "hardware/80m/04_arm_key.kicad_sch",
+      "bytes": 89815,
+      "sha256": "2fd688661b46f9bef70b9d412a1b90ab3bf8f15186054459e5a143c364fcfac8"
+    },
+    {
+      "path": "hardware/80m/05_power.kicad_sch",
+      "bytes": 75429,
+      "sha256": "3a6622e7b2b1f467395bcaae28b7539c56ff7ffe02721cad25d54692300365f8"
+    },
+    {
+      "path": "hardware/80m/06_analog_protection.kicad_sch",
+      "bytes": 48607,
+      "sha256": "77cfaef2bff8ee45d8dc89e0446780f5a60bcb2170d224603f37f0e9b98af80f"
+    },
+    {
+      "path": "hardware/80m/06b_thresholds.kicad_sch",
+      "bytes": 23137,
+      "sha256": "a1fec166b990833fac9bcedfc4071d7626cde56e044d7f85d46a6b43c777b82d"
+    },
+    {
+      "path": "hardware/80m/07_current_thermal.kicad_sch",
+      "bytes": 60253,
+      "sha256": "0baea02483da613cffc86422f959a08a6c2271fe3646f615c6932c4c7ca36976"
+    },
+    {
+      "path": "hardware/80m/08_normal_rf.kicad_sch",
+      "bytes": 78962,
+      "sha256": "e5c7d0bf34e29c891bff647d9412e8cafc65fe44dcff9fd05b18c73f4511e669"
+    },
+    {
+      "path": "hardware/80m/08b_key_tail.kicad_sch",
+      "bytes": 27332,
+      "sha256": "ee1a3f3e6bab93ea13d42bd8faf0fce1011cfeedc1666b8ca091a62d0dba9074"
+    },
+    {
+      "path": "hardware/80m/09_normal_filter.kicad_sch",
+      "bytes": 36861,
+      "sha256": "d7cfed8c56d457758bfad1ad5ac4e19adfaf4551dc3bd004ac91bec465a7d9ef"
+    },
+    {
+      "path": "hardware/80m/10_fox_rf.kicad_sch",
+      "bytes": 78397,
+      "sha256": "f790a768a42f5f19d46cccb434ff97501a6432544f8587218f57fa1e5974a030"
+    },
+    {
+      "path": "hardware/80m/11_fox_filter.kicad_sch",
+      "bytes": 53204,
+      "sha256": "bea3d14375d72dca9fa3c49651bebc0753e54fd30b3923863ae8179b956646c7"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.kicad_sym",
+      "bytes": 146422,
+      "sha256": "c34b50335c3cb092464771150a7276c7ef5b034581309f0c3b6e197d319713fa"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/78F_Axial.kicad_mod",
+      "bytes": 811,
+      "sha256": "4a310607ea0a076630106df958a2b5c10014e669c4237f12a0a5f0aadf376f88"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/FT50A43_Bifilar_4Terminal.kicad_mod",
+      "bytes": 1160,
+      "sha256": "1700a66f304fd3495097091650b0b194e2394f4921068181c0bd00285e0bd2b3"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/SRP7050TA.kicad_mod",
+      "bytes": 806,
+      "sha256": "2325bf86b3f57dc07219e4e5cf3abf4d763314db2438882861496030505b316b"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/T60_2_20T.kicad_mod",
+      "bytes": 910,
+      "sha256": "0606b486c1499aa55ead6675c2087c161e79d670b8f72a575611907f62eed093"
+    },
+    {
+      "path": "hardware/80m/LICENSE-OpenARDF.txt",
+      "bytes": 1065,
+      "sha256": "da85f86c847f881df45b56a38bb0f3832d914e954146e8df696f6cb28098b78d"
+    },
+    {
+      "path": "hardware/80m/LICENSES.md",
+      "bytes": 2018,
+      "sha256": "9a987fb5c6157bf6a78b862edb7a11272ab961f3e57f9bd9ce73a70533c0882e"
+    },
+    {
+      "path": "hardware/80m/README.md",
+      "bytes": 2852,
+      "sha256": "a2460ee5fd4127fa94484876d648c4d033093054f3c5ce73997c9cc42c982506"
+    },
+    {
+      "path": "hardware/80m/RF80.electrical.json",
+      "bytes": 198146,
+      "sha256": "f2436c89f4b97b36b603c9203a165258eefed29174283550d2d957476a5b2026"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_prl",
+      "bytes": 2291,
+      "sha256": "e05cbebd82b8bda19379db5371ab4d9a64058bae00d693843ee67a99cf74c325"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_pro",
+      "bytes": 173,
+      "sha256": "26ba65f4d5306c01abd0d9242b841c5f10274c7dbbf81bbd3cde17edfa6df783"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_sch",
+      "bytes": 7174,
+      "sha256": "54f2e3b394b1ca513a5ba8bdb636d9375908e9c4e72ce53639d193f4b2c6c438"
+    },
+    {
+      "path": "hardware/80m/fp-lib-table",
+      "bytes": 169,
+      "sha256": "6f27fb5b105c132f6c5954da03854a62647618010da571bd7a733adf5014d59f"
+    },
+    {
+      "path": "hardware/80m/review/ERC.json",
+      "bytes": 3986,
+      "sha256": "0664e08192b595d9417dc7f0071d568d52839501bffd76c07c0a996f53c081b0"
+    },
+    {
+      "path": "hardware/80m/review/RF80.pdf",
+      "bytes": 936473,
+      "sha256": "c857f4932360663c3aee4f6f224030aa3362cb7eb1257918b016bc6abaead893"
+    },
+    {
+      "path": "hardware/80m/review/RF80.xml",
+      "bytes": 443298,
+      "sha256": "155a90eb15c634724a8dc8ecc30a1b00225c6f5ab87e69dcc465b54991735e02"
+    },
+    {
+      "path": "hardware/80m/sym-lib-table",
+      "bytes": 172,
+      "sha256": "3da86303a0f7374f920266117f430e60381fd65e34f5f891571d451bc8e29887"
+    }
+  ]
+}

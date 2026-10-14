@@ -1,5 +1,8 @@
 # M3A-R1 — itemized 80 m material review
 
+**Historical M3A-R1 record.** M3B now has an evaluation PCB; current CAD/cost/checks are in [M3B review](M3B_REVIEW_DECISION.md). R1 artifacts are preserved in commit`0dfd224` and the [R1 snapshot](../hardware/80m/review/M3A-R1/). The commands/counts/scope below apply to that revision.
+
+
 Date: **2026-10-14**. **Candidate BOM; no ordering or fabrication.** EUR **net**, VAT/labor/tooling separate. [Workbook](M3_80M_COMPONENT_WORKBOOK.md), [CSV](M3_80M_BOM.csv), [cost JSON](M3_80M_COSTS.json) and [electrical manifest](../hardware/80m/RF80.electrical.json) remain the single component ledger. MPN, footprint, population, supplier ID or OPEN, MOQ, pooled quantities, price breaks and evidence are explicit. Unquoted cut-tape/bulk MOQ1 remains an assumption; factory reel quantities are not customer MOQs. R0 is preserved at `m3a-r0`.
 
 ## Current component totals

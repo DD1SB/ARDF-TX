@@ -121,7 +121,7 @@ class Sheet:
         self.used.add(typ); ident=uid(self.name+':'+ref+':'+str(unit))
         h=0
         for _,_,py,_,_ in self.d.lib.pins(typ,unit): h=max(h,abs(py))
-        self.items.append(f'(symbol (lib_id {q("ARDF_TX:"+typ)}) (at {x} {y} {angle}) (unit {unit}) (in_bom yes) (on_board yes) (dnp {"yes" if pop=="DNP" else "no"}) (uuid {q(ident)}) '+
+        self.items.append(f'(symbol (lib_id {q("ARDF_TX:"+typ)}) (at {x} {y} {angle}) (unit {unit}) (in_bom {"no" if ref.startswith("TP") else "yes"}) (on_board yes) (dnp {"yes" if pop in ("DNP","FOX") else "no"}) (uuid {q(ident)}) '+
             ''.join(f'(property {q(k)} {q(v)} (at {x+5 if typ in ("R","C","L") else x} {y-h-4+i*1.6 if i<2 else y} 0) '+
             f'(effects (font (size {1.0 if i<2 else 1.27} {1.0 if i<2 else 1.27})) '+ ('(hide yes)' if i>=2 else '') + ')) '
             for i,(k,v) in enumerate([('Reference',ref),('Value',value),('Footprint',foot),('Datasheet',source),('MPN',mpn),('Population',pop),('Function',group),('Engineering_Note',note)]))+
@@ -159,18 +159,19 @@ class Sheet:
                     for prop in children(sx,'property'):
                         if prop[1]=='Population':prop[2]=p['population']
                         elif prop[1]=='MPN':prop[2]=p['mpn']
+                        elif prop[1]=='Footprint':prop[2]=p['footprint']
                         elif prop[1]=='Engineering_Note':prop[2]=p['note']
                     item=dump(sx)
             revised.append(item)
         self.items=revised
         defs=' '.join(dump(self.d.lib.defs[t]).replace('(symbol '+q(t)+' ', '(symbol '+q('ARDF_TX:'+t)+' ',1) for t in sorted(self.used))
-        header=f'(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid {q(self.uuid)}) (paper "A3") (title_block (title {q(self.title)}) (date "{DATE}") (rev "M3A-R1") (company "ARDF-TX") (comment 1 "Review schematic; no layout or ordering authorization")) (lib_symbols {defs}) '
-        self.text('M3A-R1: REVIEW / ALL hardware measurements NOT RUN / no layout or procurement.',15,280,0.95)
+        header=f'(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid {q(self.uuid)}) (paper "A3") (title_block (title {q(self.title)}) (date "{DATE}") (rev {q(self.d.revision)}) (company "ARDF-TX") (comment 1 "Evaluation review only; no ordering or manufacture")) (lib_symbols {defs}) '
+        self.text(self.d.revision+': REVIEW / ALL hardware measurements NOT RUN / no ordering or manufacture.',15,280,0.95)
         (DEST/(self.name+'.kicad_sch')).write_text(header.rstrip()+'\n'+'\n'.join(self.items)+'\n(embedded_fonts no))\n')
 
 class Design:
     def __init__(self):
-        self.lib=Library(); self.parts={}; self.sheets=[]; self.root_uuid=uid('root')
+        self.lib=Library(); self.parts={}; self.sheets=[]; self.root_uuid=uid('root');self.revision='M3A-R1'
         for spec in ['Device:R','Device:C','Device:L','Device:Crystal_GND24','Device:D','Device:D_Zener','Device:Fuse','Device:Thermistor_NTC','Transistor_FET:2N7002','Transistor_BJT:MMBT3904','Transistor_BJT:MMBT3906','Transistor_BJT:BD140','Device:Transformer_1P_1S','Regulator_Switching:TPS54302','Oscillator:Si5351A-B-GT','Power_Management:TPS22810DBV','Amplifier_Current:INA180A1','Reference_Voltage:TL431DBZ','74xx:74HC00','74xx:74HC14','74xx:74HC123','Comparator:LM339','Comparator:LM393','Connector_Generic:Conn_01x02','Connector_Generic:Conn_01x03','Connector_Generic:Conn_02x08_Odd_Even','Connector:TestPoint','power:PWR_FLAG']:
             self.lib.native(spec)
         self.lib.native('74xx:74LS174','74HC174'); self.lib.native('Device:C_Polarized'); self.lib.native('74xx:74LS08','74HC08'); self.lib.native('74xx:74LS32','74HC32'); self.lib.native('74xx:74LS74','74HC74'); self.lib.native('74xx:74LS21','74HC21'); self.lib.native('74xx:74LS11','74HC11')
@@ -192,14 +193,14 @@ class Design:
         for i,s in enumerate(self.sheets):
             x=20+(i%3)*130; y=45+(i//3)*42
             sheets.append(f'(sheet (at {x} {y}) (size 112 24) (stroke (width 0.254) (type default)) (fill (color 0 0 0 0)) (uuid {q(s.uuid)}) (property "Sheetname" {q(s.title)} (at {x} {y-1.27} 0) (effects (font (size 1.27 1.27)) (justify left bottom))) (property "Sheetfile" {q(s.name+".kicad_sch")} (at {x} {y+26.27} 0) (effects (font (size 1.27 1.27)) (justify left top))) (instances (project "RF80" (path {q("/"+self.root_uuid)} (page {q(str(i+2))})))))')
-        root=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(self.root_uuid)}) (paper "A3") (title_block (title "ARDF-TX 80 m RF module") (date "{DATE}") (rev "M3A-R1") (company "ARDF-TX / review only")) (lib_symbols) '+'\n'.join(sheets)
+        root=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(self.root_uuid)}) (paper "A3") (title_block (title "ARDF-TX 80 m RF module") (date "{DATE}") (rev {q(self.revision)}) (company "ARDF-TX / review only")) (lib_symbols) '+'\n'.join(sheets)
         root+='(text "Classic 3 W / 1.2 W; Sprint calibrated; independent Fox 10 mW\nNORMAL: protected 4S, 12.0-16.8 V. FOX-only: controller 3.3 V from 2S.\nNo 2 m changes. No production PCB. No measured prototype results.\nInter-sheet connections use explicit named global nets.\nRead docs/M3_80M_SCHEMATIC_REVIEW.md before use." (at 25 18 0) (effects (font (size 1.25 1.25)) (justify left top)) (uuid '+q(uid('root-note'))+')) (embedded_fonts no))\n'
         root=root.replace('\nNORMAL:',r'\nNORMAL:').replace('\nNo 2 m',r'\nNo 2 m').replace('\nInter-sheet',r'\nInter-sheet').replace('\nRead docs',r'\nRead docs')
         (DEST/'RF80.kicad_sch').write_text(root)
         # Do not overwrite a reviewer-edited project settings file on regeneration.
         if not (DEST/'RF80.kicad_pro').exists():
             (DEST/'RF80.kicad_pro').write_text(json.dumps({'meta':{'filename':'RF80.kicad_pro','version':1},'erc':{'erc_exclusions':[]},'schematic':{'meta':{'version':1}}},indent=2)+'\n')
-        (DEST/'RF80.electrical.json').write_text(json.dumps({'date':DATE,'revision':'M3A-R1','status':'REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN','parts':list(self.parts.values()),'placements':{s.name:s.placements for s in self.sheets}},indent=2)+'\n')
+        (DEST/'RF80.electrical.json').write_text(json.dumps({'date':DATE,'revision':self.revision,'status':'REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN','parts':list(self.parts.values()),'placements':{s.name:s.placements for s in self.sheets}},indent=2)+'\n')
 
 FP_R='Resistor_SMD:R_0603_1608Metric'; FP_C='Capacitor_SMD:C_0603_1608Metric'
 FP_SO14='Package_SO:SOIC-14_3.9x8.7mm_P1.27mm'
@@ -216,8 +217,9 @@ def resistor_mpn(v):
     elif not any(c.isalpha() for c in v): code=v+'R'
     return 'RC0603FR-07'+code+'L'
 
-def build():
+def build(m3b=False):
     d=Design()
+    if m3b:d.revision='M3B-E1'
     def r(s,ref,v,a,b,x,y,pop='BOTH',group='protection',note='',fp=FP_R,mpn=None,price=None):
         s.place(ref,'R',v,{'1':a,'2':b},x,y,fp,mpn or resistor_mpn(v),group,pop,note=note,price=price)
     caps={'100n':('CC0603KRX7R8BB104',FP_C,.024),'1n':('CC0603JRNPO9BN102',FP_C,.04),'10n':('CC0603KRX7R9BB103',FP_C,.035),'1u':('CC0805KKX7R9BB105','Capacitor_SMD:C_0805_2012Metric',.08),'470n':('C3216X7R2A474K160AB','Capacitor_SMD:C_1206_3216Metric',.22),'4.7n':('CC0603JRNPO9BN472',FP_C,.04),'4.7u':('GRM31CR71E475KA88L','Capacitor_SMD:C_1206_3216Metric',.16),'10u35':('C3225X7R1V106M250AC','Capacitor_SMD:C_1210_3225Metric',.45),'22u25':('GRM32ER71E226KE15L','Capacitor_SMD:C_1210_3225Metric',.45),'100p':('C0805C101J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1000p':('C0805C102J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1800p':('C0805C182J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12),'91p':('C0805C910J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12)}
@@ -332,8 +334,9 @@ def build():
     s.text('Shared J301/F301/D301 input barrier; converter/loadswitch NORMAL only. Protected4S:12.0-16.8V.\nFox-only retains input barrier/sense bypass, omits buck/loadswitch and watt-rail parts;2S powerscontroller+input sense.\nTPS22810 VIN must stay<=18V, including failed-buck transients;20V is absolute maximum.\n28V passive simulation is NOT a system rating. Input clamp/fault coordination remains OPEN.',15,23)
     s.place('J301','Conn_01x02','RAW protected pack',{'1':'VBAT','2':'GND'},35,60,'Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical','B2P-VH(LF)(SN)','connectors','BOTH',price={'1':.138,'10':.115},evidence='OBSERVED_M3',supplier='Mouser',code='306-B2P-VHLFSN',source='https://www.jst-mfg.com/product/pdf/eng/eVH.pdf',availability='108526 indexed EUR MOQ1',note='Pin1 positive,2 power return. Module input must come from externally protected/fused pack.')
     s.place('F301','Fuse','1.5 A fast / 32V',{'1':'VBAT','2':'VBAT_FUSED'},100,60,'Fuse:Fuse_1206_3216Metric','Littelfuse 046701.5NR','protection','BOTH',price={'1':.30},note='Selection candidate; final interrupt/I2t and max16.8V qualification OPEN. External protected pack remains required.')
-    s.place('D301','D','SS34',{'1':'VIN_PA','2':'VBAT_FUSED'},165,60,'Diode_SMD:D_SMC','SS34-E3/57T','protection','BOTH',price={'1':.18},note='Schottky reverse polarity barrier; K pin1 = VIN_PA. Vf/conduction heat included in prototype efficiency, not silently ignored.')
-    s.place('D302','D_Zener','SMBJ17A TVS',{'1':'VIN_PA','2':'GND'},230,60,'Diode_SMD:D_SMB','SMBJ17A','protection','NORMAL',price={'1':.35},note='Nominal clamp27.6V close to28V recommended input; real cable/clamp/fuse gate remains open. A TVS rating alone is not transient qualification.')
+    pack_net='VIN_PACK' if m3b else 'VIN_PA'
+    s.place('D301','D','SS34',{'1':pack_net,'2':'VBAT_FUSED'},165,60,'Diode_SMD:D_SMC','SS34-E3/57T','protection','BOTH',price={'1':.18},note='Schottky reverse polarity barrier. M3B sense is ahead of added input damper; no load-dependent UV threshold shift.')
+    s.place('D302','D_Zener','SMBJ17A TVS',{'1':'VIN_PA','2':'GND'},230,60,'Diode_SMD:D_SMB','SMBJ17A','protection','NORMAL',price={'1':.35},note='Secondary surge absorber only; NOT an18/20V precision clamp. M3B R350/C350 damp specified cable hot-plug; TVS is downstream of damper. External sources restricted to qualified4S envelope.')
     c(s,'C301','10u35','VIN_PA','GND',295,60,'NORMAL','supply');c(s,'C302','10u35','VIN_PA','GND',360,60,'NORMAL','supply')
     s.place('U301','TPS54302','TPS54302DDCT',{'1':'GND','2':'SW_PA','3':'VIN_PA','4':'FB_PA','5':'PA_PERMIT','6':'BOOT_PA'},65,122,'Package_TO_SOT_SMD:TSOT-23-6','TPS54302DDCT','normal_supply','NORMAL',price={'1':1.59,'10':1.18,'25':1.08},evidence='OBSERVED_M2',source='https://www.ti.com/lit/ds/symlink/tps54302.pdf',supplier='Mouser',code='595-TPS54302DDCT',availability='New EUR index3137; direct browser failed; basket OPEN',note='4.5-28V/3A; EN max7V, local47k pull-down. 400kHz. No raw16.8V on EN.')
     c(s,'C303','100n','BOOT_PA','SW_PA',155,120,'NORMAL','normal_supply');r(s,'R301','47k','PA_PERMIT','GND',220,120,'NORMAL','normal_supply')
@@ -354,7 +357,7 @@ def build():
     s.text('Real electrical trips; no RF power detector or continuous telemetry. Comparator inputs stay below1.5V.\nShared reverse-protected J301 pack input retained for Fox-only; all PA converter/driver/final components DNP.',15,23)
     s.place('U311','TL431DBZ','TL431AIDBZR',{'1':'VREF_2V5','2':'GND','3':'VREF_2V5'},45,60,'Package_TO_SOT_SMD:SOT-23','TL431AIDBZR','protection',price={'1':.25},source='https://www.ti.com/lit/ds/symlink/tl431.pdf',note='1 REF,2 anode,3 cathode. >=1mA reference bias; no capacitor directly across TL431 until stability region checked.')
     r(s,'R310','180','V3V3','VREF_2V5',110,60);r(s,'R311','1.5k','VREF_2V5','VREF_TH',175,60);r(s,'R312','1k','VREF_TH','GND',240,60);c(s,'C310','100n','VREF_TH','GND',305,60)
-    r(s,'R313','309k','VIN_PA','V_PACK_SCALED',40,108);r(s,'R314','10k','V_PACK_SCALED','GND',100,108);c(s,'C311','10n','V_PACK_SCALED','GND',160,108)
+    r(s,'R313','309k',pack_net,'V_PACK_SCALED',40,108);r(s,'R314','10k','V_PACK_SCALED','GND',100,108);c(s,'C311','10n','V_PACK_SCALED','GND',160,108)
 
     # LM339 native comparator unit mapping:1 +7/-6/out1,2 +5/-4/out2,3 +9/-8/out14,4 +11/-10/out13.
     s.place('U312','LM339','LM339BIDR',{'5':'TEMP_SENSE','4':'TEMP_HOT_REF','2':'PA_GUARD_RAW'},55,161,'Package_SO:SOIC-14_3.9x8.7mm_P1.27mm','LM339BIDR','protection','NORMAL',unit=1,price={'1':.25},source='https://www.ti.com/lit/ds/symlink/lm339b.pdf')
@@ -364,7 +367,7 @@ def build():
     s.place('U312','LM339','LM339BIDR',{'3':'V3V3','12':'GND'},345,230,FP_SO14,'LM339BIDR','protection',unit=5)
     r(s,'R321','2.2k','V3V3','PA_GUARD_RAW',100,211,'NORMAL')
     c(s,'C313','100n','V3V3','GND',285,210,'NORMAL')
-    c(s,'C314','100n','VIN_PA','GND',380,60,group='protection')
+    c(s,'C314','100n',pack_net,'GND',380,60,group='protection')
     r(s,'R324','309k','VPA','V_PA_OV',35,249);r(s,'R325','10k','V_PA_OV','GND',100,249)
     s.text('Nominal backup: commonUV5.810V/4Sbackup11.070V postreversebarrier; railOV8.973V.\nController operational endpoint remains6.0/12.0V with hysteresis; cell-group BMS external.\nLocal pack sensing does not prove weakest-cell voltage. Hysteresis implemented by fault latch;\nrearm only after input exceeds qualified margin. Fox-only: watt guards DNP, R228 clamps PA_GUARD_RAW; UV comparator remains local.',175,244,1.0)
 

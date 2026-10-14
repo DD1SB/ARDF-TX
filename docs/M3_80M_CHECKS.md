@@ -1,5 +1,8 @@
 # M3A-R1 — electrical and documentation checks
 
+**Historical M3A-R1 record.** M3B now has an evaluation PCB; current CAD/cost/checks are in [M3B review](M3B_REVIEW_DECISION.md). R1 artifacts are preserved in commit`0dfd224` and the [R1 snapshot](../hardware/80m/review/M3A-R1/). The commands/counts/scope below apply to that revision.
+
+
 Date: **2026-10-14**. **No physical RF measurement, analog RF simulation or hardware validation.** All prototype gates in the [test plan](M3_80M_TEST_PLAN.md) remain **NOT RUN**.
 
 ## KiCad artifacts

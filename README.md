@@ -2,13 +2,15 @@
 
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 
-**Status:** M1 architectural baseline conditionally accepted; M2 studies preserved. **M3A-R1 now delivers an editable 80 m electrical schematic for review**, with costed populations and physical validation gates. No PCB layout, Gerbers, ordering, fabrication, assembly or production firmware has been performed; no hardware is validated. Proposed ADRs remain proposed.
+**Status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E1 now delivers a routed 80 m evaluation PCB and fabrication artifacts for engineering review.** ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
 
 **Power reassessment, 2026-10-14:** the user now requires **12 h full-power / 24 h competition-appropriate reduced-power** operation. The completed [2S/4S review](docs/M2_POWER_ARCHITECTURE_DECISION.md) proposes mode-dependent supplies and packs; [ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md) awaits review. Earlier 24 h maximum-power tables below and in M1/M2 remain historical calculations, not current pack recommendations.
 
 **M3A, 2026-10-14:** [schematic project and PDF](hardware/80m/README.md), [review decision](docs/M3_80M_REVIEW_DECISION.md), [circuit explanation](docs/M3_80M_SCHEMATIC_REVIEW.md), [PA choice](docs/M3_80M_PA_SELECTION.md), [BOM](docs/M3_80M_BOM.md), [prototype gates](docs/M3_80M_TEST_PLAN.md) and [checks](docs/M3_80M_CHECKS.md). Selected IRF610 normal path targets approximately3 W full /1.2 W extended on4S; separate10 mW Fox path supports2S reduced population. 2 m remains genuine A2A,1 W carrierERP with required AM PEP.
 
 **M3A-R1 correction:** [logic audit](docs/M3A_R1_LOGIC_AUDIT.md), [simplification](docs/M3A_R1_SIMPLIFICATION.md), [cost delta](docs/M3A_R1_COST_DELTA.md), [verification](docs/M3A_R1_VERIFICATION.md) and [review decision](docs/M3A_R1_REVIEW_DECISION.md). Physical timer polarity/startup/rearm defects are corrected; ERC and pin-derived digital checks pass. Driver-fault timing and all RF/thermal gates remain OPEN. R0 is preserved at Git tag `m3a-r0`.
+
+**M3B, 2026-10-14:** [evaluation PCB and review files](hardware/80m/README.md), [review decision](docs/M3B_REVIEW_DECISION.md), [layout](docs/M3B_PCB_LAYOUT_REVIEW.md), [critical packages](docs/M3B_COMPONENT_QUALIFICATION.md), [bring-up](docs/M3B_BRINGUP_PLAN.md), [safety gates](docs/M3B_SAFETY_GATES.md), [evaluation BOM](docs/M3B_EVALUATION_BOM.md) and [reproducible checks](docs/M3B_CHECKS.md). Two layers,210×160 mm; R1 safety logic preserved. Recommendation: independent review, then explicit user approval for a small bare-board batch; no unrestricted RF/hardware release.
 
 ## Planned configurations
 

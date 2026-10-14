@@ -1,5 +1,8 @@
 # M3A-R1 — reproducible verification and limits
 
+**Historical M3A-R1 record.** M3B now has an evaluation PCB; current CAD/cost/checks are in [M3B review](M3B_REVIEW_DECISION.md). R1 artifacts are preserved in commit`0dfd224` and the [R1 snapshot](../hardware/80m/review/M3A-R1/). The commands/counts/scope below apply to that revision.
+
+
 Date: **2026-10-14**. **No assembled prototype or measured RF/thermal/safety results.** R1 supersedes R0's functional-check claims; historic R0 remains tagged in Git. The primary defect escaped ERC and the old intended-signal Boolean model. The replacement checks read actual connected physical pins.
 
 ## Reproduce
