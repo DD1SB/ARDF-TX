@@ -23,3 +23,21 @@ Retrieved/reviewed **2026-10-14**. Existing M2 pinned revisions/hashes remain in
 | KiCad attribution | [Official library licence](https://www.kicad.org/libraries/license/index.html) | Library attribution/exception retained; local custom symbol/footprint data, no routed board. |
 
 Unavailable external information is an open gate, not filled in by fabricated measurements/prices. Old failed-link audits remain intact. M3 source checks do not reclassify old historical stock as current verified procurement.
+
+## M3A-R1 correction sources — 2026-10-14
+
+R0 source records above are historical; the following narrow electrical corrections do not revalidate its hardware. No new reference RF topology or VHF change.
+
+| Source | Verified primary facts / limit |
+| --- | --- |
+| [Nexperia HC123 Rev13](https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf) | Exact Q13//Q4 and Q5//Q12; trigger/retrigger, reset-release trigger condition and discharge protection. Actual timing curves are typical; K0.45–0.60 is our sensitivity assumption. |
+| [Nexperia HC74](https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf) | Witness and armed FF pin mapping/asynchronous clear; input reset recovery remains physical gate. |
+| [HC174 datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf), [manufacturer product](https://www.nexperia.com/product/74HC174D) | Five used physical D/Q pairs plus MR1/CP9; Production status. Exact local cut-tape price/stock OPEN;€0.35/€0.25 estimates. |
+| [BSS138BK](https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf) |60 V drain,±20 V gate, max6.5 Ω at2.5 V/10 mA. Replaces low-current sinks, not Q404's ≈70 mA sink. |
+| [Mouser EU BSS138BK215](https://eu.mouser.com/de/ProductDetail/Nexperia/BSS138BK215?qs=A1cBxND5mHIu7uZeHkM5Xw%3D%3D) | Indexed net€0.099/10; direct fetch failed. One/hundred prices estimates, exact stock/basket OPEN. |
+| [TI LM5134](https://www.ti.com/lit/ds/symlink/lm5134.pdf), [TPS22810](https://www.ti.com/lit/ds/symlink/tps22810.pdf) | Actual IN/INB logic,4–12.6 V driver operating range. Switch tOFF≈3.3 µs is typical under specified conditions; no guaranteed complete20 µs trip follows. TPS22810 VIN18 V operating/20 V absolute; INA180 common-mode26 V.28 V passive stress is outside system rating. |
+| [Panasonic25SVPF47M](https://industrial.panasonic.com/ww/products/pt/os-con/models/25SVPF47M), [recommended lands](https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000COL10.pdf) |47 µF25 V±20%,30 mΩ at100 kHz/20°C, max235 µA leakage; C6 lands outer9.1/gap2.1/width1.6 mm match native KiCad. Land PDF accessed using curl/pdftotext after browser issues. Transient0–50°C ESR still unmeasured. |
+| [DigiKey DE25SVPF47M](https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845) | Indexed Active/48,247, P16513CT-ND, cut tapeMOQ1; net€1.50/1,€0.973/10,€0.7506/50. Direct open cache miss. Other regional caches differ; DE observation used consistently, no reel-MOQ assumption. |
+| [Toshiba74HC175D](https://toshiba.semicon-storage.com/ap-en/semiconductor/product/general-purpose-logic-ics/detail.74HC175D.html), [DiodesAP7384](https://www.diodes.com/part/AP7384) | Current NRND indications: not selected. No cheap legacy/NRND substitution or fabricated regulator suffix. |
+
+Software model, circuit wiring changes, timing sensitivities and passive simulations are ARDF-TX engineering work. They are not publisher measurements. [Verification](M3A_R1_VERIFICATION.md) explicitly separates manufacturer facts, static checks, simulated behavior and physical OPEN gates. Existing KiCad/OpenARDF attribution stays in place. CRCW25124R70FKEG pulse qualification, exact HC174 basket and new diode/passive quotations remain unresolved.

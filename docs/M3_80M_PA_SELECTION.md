@@ -41,6 +41,6 @@ The original QCX MPS751 has a625 mW free-air DC limit at25°C and no adequate pu
 
 ## Cost and stop decision
 
-At6/10/20, [component workbook](M3_80M_COMPONENT_WORKBOOK.md): full board **€28.54/€25.35/€25.14**, Fox-only **€11.61/€10.55/€10.53**. The normal stage with drive/shaper/filter/supply and input/output hardware is **€16.12/€14.16/€14.03**, before shared source/interlocks and local current/thermal protection. Only €9.75 of the full ten-board per-unit basket has observed-price evidence; the remainder is estimated. Exact quantities, price classes and supply gaps are in [BOM review](M3_80M_BOM.md).
+Current **M3A-R1** [component workbook](M3_80M_COMPONENT_WORKBOOK.md): full board **€31.18/€26.60/€26.60**, Fox-only **€12.01/€10.80/€10.46** at6/10/20. These supersede R0's hardware cost totals; the proven PA choice/transformer/filter comparison above is unchanged. Normal stage with indispensable drive/shaping/filter/supply is€15.073 at ten; bare IRF610 remains€0.622. Full observed-price portion€9.37/estimated€17.23. [R1 delta](M3A_R1_COST_DELTA.md) and [BOM](M3_80M_BOM.md) expose corrections rather than silently changing reference circuit scope.
 
 The approximately€20 optimization target is missed. The schematic makes the overrun visible; it does not delete the filter, lease, rail switch, current trip or protected low port to force a paper result. Select this one stage for review, then test it. No global cheapest-design claim, no layout, no order, no measured efficiency or RF compliance claim.

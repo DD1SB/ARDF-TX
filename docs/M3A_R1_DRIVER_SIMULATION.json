@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-14",
+  "revision": "M3A-R1",
+  "classification": "ACTUAL NGSPICE LINEAR-PASSIVE SIMULATION; IMPOSED ISOLATION; NOT MEASURED",
+  "series_R_min_ohm": 4.6530000000000005,
+  "bulk_C_min_f": 3.76e-05,
+  "HF_C_min_f": 8.8e-07,
+  "cases": [
+    {
+      "label": "pack-step",
+      "within_load_switch_operating_range": true,
+      "input_step_v": 16.8,
+      "imposed_isolation_us": 20,
+      "bulk_esr_assumed_ohm": 0.5,
+      "peak_driver_v": 10.0821351,
+      "within_12_6V": true,
+      "resistor_total_pulse_energy_j": 0.0013396531220487727
+    },
+    {
+      "label": "28V-surrogate-OUTSIDE-SYSTEM-RATING",
+      "within_load_switch_operating_range": false,
+      "input_step_v": 28.0,
+      "imposed_isolation_us": 20,
+      "bulk_esr_assumed_ohm": 0.5,
+      "peak_driver_v": 12.1065147,
+      "within_12_6V": true,
+      "resistor_total_pulse_energy_j": 0.0026072443792045466
+    },
+    {
+      "label": "slow-isolation-NO-GO",
+      "within_load_switch_operating_range": false,
+      "input_step_v": 28.0,
+      "imposed_isolation_us": 50,
+      "bulk_esr_assumed_ohm": 0.5,
+      "peak_driver_v": 14.3467453,
+      "within_12_6V": false,
+      "resistor_total_pulse_energy_j": 0.004467632317103818
+    },
+    {
+      "label": "excess-ESR-NO-GO",
+      "within_load_switch_operating_range": false,
+      "input_step_v": 28.0,
+      "imposed_isolation_us": 20,
+      "bulk_esr_assumed_ohm": 1.5,
+      "peak_driver_v": 14.4142629,
+      "within_12_6V": false,
+      "resistor_total_pulse_energy_j": 0.0019370222079209177
+    }
+  ],
+  "limitations": [
+    "Switch/comparator/gate timing imposed20us, not proven",
+    "28V is isolated passive stress only: TPS22810 operating18V/absolute20V; not valid system stimulus or protection proof",
+    "Capacitor ESR over0-50C must be measured; high ESR fails",
+    "R410 pulse energy/thermal derating and actual charge/discharge path remain open",
+    "RF gate voltage, PA power/efficiency, key edges and emissions not simulated"
+  ]
+}

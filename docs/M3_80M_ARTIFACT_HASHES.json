@@ -1,77 +1,80 @@
 {
   "date": "2026-10-14",
-  "status": "Review artifacts only; no layout or manufacturing",
-  "hardware_local_links_checked": 14,
+  "revision": "M3A-R1",
+  "status": "Review artifacts; no layout, manufacture or physical validation",
+  "markdown_files_checked": 77,
+  "local_links_checked": 505,
+  "hardware_local_links_checked": 18,
   "files": [
     {
       "path": "hardware/80m/01_source_interface.kicad_sch",
-      "bytes": 74972,
-      "sha256": "1785104f307d388b67879b580dd1592e9b9ed7ee905a30338c5da53be91e28e4"
+      "bytes": 74971,
+      "sha256": "6dd43c40d64e498871e7bff25b35f12243cc301b42ba8ccfb5f7c22d35e949ba"
     },
     {
       "path": "hardware/80m/02_interlocks.kicad_sch",
-      "bytes": 69958,
-      "sha256": "29444deadbf588b141f1acfd6403afa4974bb5ccddd693dab0bec7c50540cf10"
+      "bytes": 70297,
+      "sha256": "03f0e3cb68c049ea5772e0c9e541f6a71ee7e2a0154cdc54ce95834590e35907"
     },
     {
       "path": "hardware/80m/03_safety_logic.kicad_sch",
-      "bytes": 88417,
-      "sha256": "419f5478c932d70d9b55c13735fbc4b562786c7105ea2ce0f904ee7e93feb6d5"
+      "bytes": 65629,
+      "sha256": "9bb6a215c0f71d3fc8688703882fd3196472eb20349f85af05a2ae6da1693025"
     },
     {
       "path": "hardware/80m/04_arm_key.kicad_sch",
-      "bytes": 71876,
-      "sha256": "68fb776733e9530fc5eb41668878392d52a0891bb1529fe74aea864f063f665a"
+      "bytes": 89815,
+      "sha256": "2fd688661b46f9bef70b9d412a1b90ab3bf8f15186054459e5a143c364fcfac8"
     },
     {
       "path": "hardware/80m/05_power.kicad_sch",
-      "bytes": 75146,
-      "sha256": "de9bec1ec5fa50d05aa4bb94b46a1b67c2a4910c098e8f3ddfe7ac086494f80d"
+      "bytes": 75429,
+      "sha256": "3a6622e7b2b1f467395bcaae28b7539c56ff7ffe02721cad25d54692300365f8"
     },
     {
       "path": "hardware/80m/06_analog_protection.kicad_sch",
-      "bytes": 54799,
-      "sha256": "8d534ba8749f099816eeb78b2b03c08ec5a9c0a0c0ea4bdd4560e97cdce3197e"
+      "bytes": 48607,
+      "sha256": "77cfaef2bff8ee45d8dc89e0446780f5a60bcb2170d224603f37f0e9b98af80f"
     },
     {
       "path": "hardware/80m/06b_thresholds.kicad_sch",
-      "bytes": 23126,
-      "sha256": "45647d5f012ad4fca43eec872ac4526d10a8879f457e44c250ef96a3138e4c32"
+      "bytes": 23137,
+      "sha256": "a1fec166b990833fac9bcedfc4071d7626cde56e044d7f85d46a6b43c777b82d"
     },
     {
       "path": "hardware/80m/07_current_thermal.kicad_sch",
-      "bytes": 62352,
-      "sha256": "aeafec2add1384b4a4c734b604723ee7ddd8cb043d2ad628857fce766f5f6180"
+      "bytes": 60253,
+      "sha256": "0baea02483da613cffc86422f959a08a6c2271fe3646f615c6932c4c7ca36976"
     },
     {
       "path": "hardware/80m/08_normal_rf.kicad_sch",
-      "bytes": 67663,
-      "sha256": "e07f4562f802d8ef9bfd72d1b35f578ebc5061d05a24a01a961e974f0f123b94"
+      "bytes": 78962,
+      "sha256": "e5c7d0bf34e29c891bff647d9412e8cafc65fe44dcff9fd05b18c73f4511e669"
     },
     {
       "path": "hardware/80m/08b_key_tail.kicad_sch",
-      "bytes": 27264,
-      "sha256": "49a0bc5e78e8b88286a7e60502c3e62acb9e1c258831859452b7b92081834413"
+      "bytes": 27332,
+      "sha256": "ee1a3f3e6bab93ea13d42bd8faf0fce1011cfeedc1666b8ca091a62d0dba9074"
     },
     {
       "path": "hardware/80m/09_normal_filter.kicad_sch",
-      "bytes": 36862,
-      "sha256": "628cc6918499cc39b070421d84f588527b54fc20f6052c9ce13668db276234eb"
+      "bytes": 36861,
+      "sha256": "d7cfed8c56d457758bfad1ad5ac4e19adfaf4551dc3bd004ac91bec465a7d9ef"
     },
     {
       "path": "hardware/80m/10_fox_rf.kicad_sch",
-      "bytes": 78375,
-      "sha256": "5787beebddb008d645be471b7de8e3059aed4a99288454bc43c7eef407608df7"
+      "bytes": 78397,
+      "sha256": "f790a768a42f5f19d46cccb434ff97501a6432544f8587218f57fa1e5974a030"
     },
     {
       "path": "hardware/80m/11_fox_filter.kicad_sch",
-      "bytes": 53205,
-      "sha256": "ba99c45b9a304ca7d835866977a61cc4881a76ce3eb21cda9c38bed1cab1d56f"
+      "bytes": 53204,
+      "sha256": "bea3d14375d72dca9fa3c49651bebc0753e54fd30b3923863ae8179b956646c7"
     },
     {
       "path": "hardware/80m/ARDF_TX.kicad_sym",
-      "bytes": 140877,
-      "sha256": "375650a1687c30ea659aa879bc6d521b349070a32fc7846a8e35d9ebbfdc1923"
+      "bytes": 146422,
+      "sha256": "c34b50335c3cb092464771150a7276c7ef5b034581309f0c3b6e197d319713fa"
     },
     {
       "path": "hardware/80m/ARDF_TX.pretty/78F_Axial.kicad_mod",
@@ -105,13 +108,13 @@
     },
     {
       "path": "hardware/80m/README.md",
-      "bytes": 2409,
-      "sha256": "eadb4376a277600559fcc10aaf106d0ba6d38a1296293621e744b2c6ed771c50"
+      "bytes": 2852,
+      "sha256": "a2460ee5fd4127fa94484876d648c4d033093054f3c5ce73997c9cc42c982506"
     },
     {
       "path": "hardware/80m/RF80.electrical.json",
-      "bytes": 190688,
-      "sha256": "068a2a886b01d900be3d7abb260db64626894c93a8333bb98ff2e7dde1a54363"
+      "bytes": 198146,
+      "sha256": "f2436c89f4b97b36b603c9203a165258eefed29174283550d2d957476a5b2026"
     },
     {
       "path": "hardware/80m/RF80.kicad_prl",
@@ -125,8 +128,8 @@
     },
     {
       "path": "hardware/80m/RF80.kicad_sch",
-      "bytes": 7138,
-      "sha256": "86dbfe4bc82a2d34de80cb3ff33aa64de494ce3c85f752bcb36d2ab4a7b6e80d"
+      "bytes": 7174,
+      "sha256": "54f2e3b394b1ca513a5ba8bdb636d9375908e9c4e72ce53639d193f4b2c6c438"
     },
     {
       "path": "hardware/80m/fp-lib-table",
@@ -135,18 +138,18 @@
     },
     {
       "path": "hardware/80m/review/ERC.json",
-      "bytes": 3950,
-      "sha256": "fa529222c5eb39712f8ffaa3b1eb4021f7df9b0a61e48ad6f0bd2881ee01f7a2"
+      "bytes": 3986,
+      "sha256": "0664e08192b595d9417dc7f0071d568d52839501bffd76c07c0a996f53c081b0"
     },
     {
       "path": "hardware/80m/review/RF80.pdf",
-      "bytes": 931453,
-      "sha256": "8cfe226b88569fd9f56a5ed04319508790e4af3e8f9d3f62aaf8626fe8fc3194"
+      "bytes": 936473,
+      "sha256": "c857f4932360663c3aee4f6f224030aa3362cb7eb1257918b016bc6abaead893"
     },
     {
       "path": "hardware/80m/review/RF80.xml",
-      "bytes": 424747,
-      "sha256": "0e7abafebc8ad11abeb3b6fd56f755913a94a72a3a33df2a6fd12c89dbb5de37"
+      "bytes": 443298,
+      "sha256": "155a90eb15c634724a8dc8ecc30a1b00225c6f5ab87e69dcc465b54991735e02"
     },
     {
       "path": "hardware/80m/sym-lib-table",

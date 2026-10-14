@@ -4,12 +4,12 @@ Date: 2026-10-14. EUR net. **Candidate, no ordering authorization.** Estimates a
 
 | Scope | 6 EUR/unit | 10 | 20 | Observed / estimate at ten |
 | --- | ---: | ---: | ---: | --- |
-| Full module components | 28.54 | 25.35 | 25.14 | 9.75 / 15.60 |
-| Foxoring-only components | 11.61 | 10.55 | 10.53 | 4.31 / 6.25 |
+| Full module components | 31.18 | 26.60 | 26.60 | 9.37 / 17.23 |
+| Foxoring-only components | 12.01 | 10.80 | 10.46 | 3.62 / 7.19 |
 | RF final transistor alone | 1.11 | 0.62 | 0.62 | 0.62 / 0.00 |
 | RF power stage: final + gate links/bleed + transformer | 2.18 | 1.61 | 1.61 | 0.63 / 0.98 |
-| Normal stage + drive/shaper/filter/supply/input and output hardware | 16.12 | 14.16 | 14.03 | 5.47 / 8.69 |
-| Incremental NORMAL population; shared circuits excluded | 17.03 | 14.78 | 14.63 | 5.52 / 9.26 |
+| Normal stage + drive/shaper/filter/supply/input and output hardware | 17.75 | 15.07 | 15.04 | 5.86 / 9.22 |
+| Incremental NORMAL population; shared circuits excluded | 19.43 | 16.41 | 16.39 | 5.81 / 10.60 |
 
 Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insulators, battery, antenna accessories, wiring/harness mates, enclosure, charging, labor and shared instruments; these are separately budgeted in [BOM review](M3_80M_BOM.md).
 
@@ -17,31 +17,33 @@ Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insul
 | --- | ---: | ---: | ---: |
 | connectors | 1.90 | 1.88 | 1.88 |
 | source | 2.27 | 1.79 | 1.79 |
-| protection | 3.85 | 3.53 | 3.53 |
-| normal_shaper | 1.34 | 1.02 | 1.00 |
-| fox | 2.99 | 2.86 | 2.84 |
-| normal_supply | 4.54 | 3.96 | 3.92 |
-| normal_driver | 2.67 | 2.12 | 2.08 |
-| decoupling | 0.56 | 0.56 | 0.56 |
-| interlocks | 2.90 | 2.60 | 2.50 |
+| protection | 3.84 | 3.52 | 3.52 |
+| normal_shaper | 1.53 | 1.02 | 1.02 |
+| normal_driver | 4.21 | 3.05 | 3.05 |
+| fox | 2.94 | 2.77 | 2.77 |
+| normal_supply | 4.45 | 3.79 | 3.79 |
+| decoupling | 0.51 | 0.51 | 0.51 |
+| interlocks | 4.03 | 3.24 | 3.24 |
 | supply | 0.90 | 0.90 | 0.90 |
 | normal_final | 1.11 | 0.62 | 0.62 |
 | normal_filter | 3.51 | 3.51 | 3.51 |
 
 | Refs | Value; MPN | Footprint | Source / supplier code / MOQ | Evidence / stock | Unit EUR 6 / 10 / 20 | Full row EUR 6 / 10 / 20 |
 | --- | --- | --- | --- | --- | ---: | ---: |
-| C101, C102, C202, C203, C210, C211, C212, C220, C221, C222, C223, C230, C231, C232, C233, C303, C310, C313, C314, C322, C323, C401, C451, C502 | 100n; CC0603KRX7R8BB104 | Capacitor_SMD:C_0603_1608Metric | [source](https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D); Mouser 603-CC603KRX7R8BB104; MOQ1 | OBSERVED_M2; 20401272 newer EU index; DE20582958 | 0.0240 / 0.0240 / 0.0240 | 0.576 / 0.576 / 0.576 |
+| C101, C102, C202, C203, C210, C211, C212, C220, C222, C230, C231, C232, C233, C303, C310, C313, C314, C322, C323, C401, C451, C502 | 100n; CC0603KRX7R8BB104 | Capacitor_SMD:C_0603_1608Metric | [source](https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D); Mouser 603-CC603KRX7R8BB104; MOQ1 | OBSERVED_M2; 20401272 newer EU index; DE20582958 | 0.0240 / 0.0240 / 0.0240 | 0.528 / 0.528 / 0.528 |
 | C103, C201, C402, C501 | 1u; CC0805KKX7R9BB105 | Capacitor_SMD:C_0805_2012Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0800 / 0.0800 / 0.0800 | 0.320 / 0.320 / 0.320 |
 | C301, C302 | 10u35; C3225X7R1V106M250AC | Capacitor_SMD:C_1210_3225Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.4500 / 0.4500 / 0.4500 | 0.900 / 0.900 / 0.900 |
 | C304, C305, C403 | 22u25; GRM32ER71E226KE15L | Capacitor_SMD:C_1210_3225Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.4500 / 0.4500 / 0.4500 | 1.350 / 1.350 / 1.350 |
-| C306, C321 | 1n; CC0603JRNPO9BN102 | Capacitor_SMD:C_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0400 / 0.0400 / 0.0400 | 0.080 / 0.080 / 0.080 |
+| C306 | 4.7n; CC0603JRNPO9BN472 | Capacitor_SMD:C_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0400 / 0.0400 / 0.0400 | 0.040 / 0.040 / 0.040 |
 | C311, C312, C320, C517 | 10n; CC0603KRX7R9BB103 | Capacitor_SMD:C_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0350 / 0.0350 / 0.0350 | 0.140 / 0.140 / 0.140 |
+| C321 | 1n; CC0603JRNPO9BN102 | Capacitor_SMD:C_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0400 / 0.0400 / 0.0400 | 0.040 / 0.040 / 0.040 |
+| C404 | 47u / 25V; 25SVPF47M | Capacitor_SMD:CP_Elec_6.3x5.9 | [source](https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845); DigiKey P16513CT-ND; MOQ1 | OBSERVED_R1_INDEX; DE index48247; direct fetch cache miss; Active/cut tape MOQ1; basket recheck | 1.5000 / 0.9730 / 0.9730 | 1.500 / 0.973 / 0.973 |
 | C410, C510 | 470n; C3216X7R2A474K160AB | Capacitor_SMD:C_1206_3216Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.2200 / 0.2200 / 0.2200 | 0.440 / 0.440 / 0.440 |
 | C411, C415, C511, C515 | 1000p; C0805C102J1GACTU | Capacitor_SMD:C_0805_2012Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.400 / 0.400 / 0.400 |
 | C412, C416, C512, C516 | 100p; C0805C101J1GACTU | Capacitor_SMD:C_0805_2012Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.400 / 0.400 / 0.400 |
 | C413, C513 | 1800p; C0805C182J1GACTU | Capacitor_SMD:C_0805_2012Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1200 / 0.1200 / 0.1200 | 0.240 / 0.240 / 0.240 |
 | C414, C514 | 91p; C0805C910J1GACTU | Capacitor_SMD:C_0805_2012Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1200 / 0.1200 / 0.1200 | 0.240 / 0.240 / 0.240 |
-| D201, D202, D451, D501 | BAT54WS-7-F; BAT54WS-7-F | Diode_SMD:D_SOD-323 | [source](https://www.diodes.com/datasheet/download/BAT54WS.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.400 / 0.400 / 0.400 |
+| D201, D202, D219, D220, D221, D222, D223, D224, D451, D501 | BAT54WS-7-F; BAT54WS-7-F | Diode_SMD:D_SOD-323 | [source](https://www.diodes.com/datasheet/download/BAT54WS.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 1.000 / 1.000 / 1.000 |
 | D301 | SS34; SS34-E3/57T | Diode_SMD:D_SMC | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1800 / 0.1800 / 0.1800 | 0.180 / 0.180 / 0.180 |
 | D302 | SMBJ17A TVS; SMBJ17A | Diode_SMD:D_SMB | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.3500 / 0.3500 / 0.3500 | 0.350 / 0.350 / 0.350 |
 | F301 | 1.5 A fast / 32V; Littelfuse 046701.5NR | Fuse:Fuse_1206_3216Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.3000 / 0.3000 / 0.3000 | 0.300 / 0.300 / 0.300 |
@@ -52,25 +54,27 @@ Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insul
 | L301 | 10 uH >=3 A; SRP7050TA-100M | ARDF_TX:SRP7050TA | [source](https://www.bourns.com/docs/product-datasheets/srp7050ta.pdf); Mouser 652-SRP7050TA-100M; MOQ1 | OBSERVED_M3; CurrentEURindex; exactstocknumberOPEN | 0.9630 / 0.7920 / 0.7920 | 0.963 / 0.792 / 0.792 |
 | L410, L411 | 2.7 uH / 20T T60-2; Micrometals T60-2 + AWG24 Cu | ARDF_TX:T60_2_20T | [source](https://datasheets.micrometals.com/T60-2-DataSheet.pdf); TME T60-2; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.8500 / 0.8500 / 0.8500 | 1.700 / 1.700 / 1.700 |
 | L510, L511 | 2.7uH +/-5%; 78F2R7J-RC | ARDF_TX:78F_Axial | [source](https://www.bourns.com/docs/product-datasheets/78f_series.pdf); DigiKey/Mouser OPEN; exactSKU78F2R7J-RC; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.3000 / 0.3000 / 0.3000 | 0.600 / 0.600 / 0.600 |
-| Q201, Q301, Q302, Q401, Q405, Q404, Q406, Q502 | DMN2056U-7; DMN2056U-7 | Package_TO_SOT_SMD:SOT-23 | [source](https://www.diodes.com/datasheet/download/DMN2056U.pdf); Mouser 621-DMN2056U-7; MOQ1 | OBSERVED_M3; 95248 indexed14Oct; cuttapeMOQ1 | 0.1470 / 0.1470 / 0.1280 | 1.176 / 1.176 / 1.024 |
+| Q201, Q225, Q226, Q227, Q228, Q229, Q301, Q302, Q401, Q405, Q406, Q502 | BSS138BK,215; BSS138BK,215 | Package_TO_SOT_SMD:SOT-23 | [source](https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf); Mouser 771-BSS138BK215; MOQ1 | MIXED_ESTIMATE; EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN | 0.0990 / 0.0600 / 0.0600 | 1.188 / 0.720 / 0.720 |
 | Q402 | IRF610PBF-BE3; IRF610PBF-BE3 | Package_TO_SOT_THT:TO-220-3_Vertical | [source](https://de.farnell.com/vishay/irf610pbf-be3/mosfet-n-kanal-200v-3-3a-to-220ab/dp/4853567); Farnell 4853567; MOQ1 | OBSERVED_M2; 614 in Farnell DE index (about 2-month-old cache); no reservation | 1.1100 / 0.6220 / 0.6220 | 1.110 / 0.622 / 0.622 |
 | Q403 | BD140 / ST; BD140 | Package_TO_SOT_THT:TO-126-3_Vertical | [source](https://www.st.com/resource/en/datasheet/bd140.pdf); Mouser 511-BD140; MOQ1 | OBSERVED_M3; STActive;MouserDEindexed5060;basketOPEN | 0.5850 / 0.2640 / 0.2640 | 0.585 / 0.264 / 0.264 |
+| Q404 | DMN2056U-7; DMN2056U-7 | Package_TO_SOT_SMD:SOT-23 | [source](https://www.diodes.com/datasheet/download/DMN2056U.pdf); Mouser 621-DMN2056U-7; MOQ1 | OBSERVED_M3; Retained R0 stock observation | 0.3350 / 0.1470 / 0.1470 | 0.335 / 0.147 / 0.147 |
 | Q501 | MMBT3906,215; MMBT3906,215 | Package_TO_SOT_SMD:SOT-23 | [source](https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.100 / 0.100 / 0.100 |
 | Q503, Q504 | MMBT3904,215; MMBT3904,215 | Package_TO_SOT_SMD:SOT-23 | [source](https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.200 / 0.200 / 0.200 |
 | R101, R102, R407 | 4.7k; RC0603FR-074K7L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.090 / 0.090 / 0.090 |
-| R103, R506 | 100k; RC0603FR-07100KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.060 / 0.060 / 0.060 |
+| R103, R409, R506 | 100k; RC0603FR-07100KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.090 / 0.090 / 0.090 |
 | R110, R111, R112, R113, R114, R115, R116, R117, R118, R202, R203, R301, R307, R402, R408 | 47k; RC0603FR-0747KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.450 / 0.450 / 0.450 |
-| R201 | 390k; RC0603FR-07390KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
+| R201, R452 | 330k; RC0603FR-07330KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.060 / 0.060 / 0.060 |
+| R219, R220, R321 | 2.2k; RC0603FR-072K2L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.090 / 0.090 / 0.090 |
+| R225, R314, R325, R316, R318, R327, R329, R334, R335, R338, R340, R401, R404, R505, R508, R509, R516 | 10k; RC0603FR-0710KL | Resistor_SMD:R_0603_1608Metric | [source](https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D); Mouser 603-RC0603FR-0710KL; MOQ1 | OBSERVED_M2; 3405942 cached DE | 0.0070 / 0.0070 / 0.0070 | 0.119 / 0.119 / 0.119 |
 | R302 | 137k; RC0603FR-07137KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R303 | 20k; RC0603FR-0720KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R304 | 91k; RC0603FR-0791KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R305 | 24.9k; RC0603FR-0724K9L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
-| R306 | 100; RC0603FR-07100RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
+| R306, R453 | 100; RC0603FR-07100RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.060 / 0.060 / 0.060 |
 | R310 | 180; RC0603FR-07180RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R311, R503 | 1.5k; RC0603FR-071K5L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.060 / 0.060 / 0.060 |
-| R312, R405, R451, R453, R502, R504 | 1k; RC0603FR-071KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.180 / 0.180 / 0.180 |
+| R312, R405, R451, R502, R504 | 1k; RC0603FR-071KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.150 / 0.150 / 0.150 |
 | R313, R324 | 309k; RC0603FR-07309KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.060 / 0.060 / 0.060 |
-| R314, R320, R321, R322, R323, R325, R316, R318, R327, R329, R334, R335, R338, R340, R341, R342, R401, R404, R505, R508, R509, R516 | 10k; RC0603FR-0710KL | Resistor_SMD:R_0603_1608Metric | [source](https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D); Mouser 603-RC0603FR-0710KL; MOQ1 | OBSERVED_M2; 3405942 cached DE | 0.0070 / 0.0070 / 0.0070 | 0.154 / 0.154 / 0.154 |
 | R315 | 127k; RC0603FR-07127KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R317 | 61.9k; RC0603FR-0761K9L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R326 | 78.7k; RC0603FR-0778K7L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
@@ -82,7 +86,7 @@ Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insul
 | R339 | 1.3k; RC0603FR-071K3L | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R403 | 0; RC0603JR-070RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R406 | 100; CRCW2512100RFKEG | Resistor_SMD:R_2512_6332Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.100 / 0.100 / 0.100 |
-| R452 | 330k; RC0603FR-07330KL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
+| R410 | 4.7; CRCW25124R70FKEG | Resistor_SMD:R_2512_6332Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1000 / 0.1000 / 0.1000 | 0.100 / 0.100 / 0.100 |
 | R501 | 27; RC2512FR-0727RL | Resistor_SMD:R_2512_6332Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0800 / 0.0800 / 0.0800 | 0.080 / 0.080 / 0.080 |
 | R507 | 470; RC0603FR-07470RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.030 / 0.030 / 0.030 |
 | R510, R511, R512 | 22; RC0603FR-0722RL | Resistor_SMD:R_0603_1608Metric | Unquoted; manufacturer/supplier check OPEN; OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.0300 / 0.0300 / 0.0300 | 0.090 / 0.090 / 0.090 |
@@ -96,10 +100,10 @@ Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insul
 | U203 | 74HC14D,653; 74HC14D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://www.mouser.es/ProductDetail/Nexperia/74HC14D653?qs=P62ublwmbi8OHaKXqv2GmQ%3D%3D); Mouser 771-74HC14D-T; MOQ1 | OBSERVED_M3; Mouser indexed862904; actualbasketOPEN | 0.1720 / 0.1180 / 0.1180 | 0.172 / 0.118 / 0.118 |
 | U211 | 74HC21D,653; 74HC21D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://assets.nexperia.com/documents/data-sheet/74HC21.pdf); Mouser 771-74HC21D-T; MOQ1 | OBSERVED_M3; IndexedCanada18895,EURSpainprice; localizedbasketOPEN | 0.2410 / 0.1660 / 0.1660 | 0.241 / 0.166 / 0.166 |
 | U212 | 74HC00D,653; 74HC00D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://assets.nexperia.com/documents/data-sheet/74HC_HCT00.pdf); Mouser 771-74HC00D-T; MOQ1 | OBSERVED_M2; M2 indexedNexperia SOICstock; exactcurrentcut-tapebasketOPEN | 0.1720 / 0.1030 / 0.1030 | 0.172 / 0.103 / 0.103 |
-| U213, U222 | 74HC08D,653; 74HC08D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://eu.mouser.com/ProductDetail/Nexperia/74HC08D653?qs=P62ublwmbi%2FQCxm29EB%2FyA%3D%3D); Mouser 771-74HC08D-T; MOQ1 | OBSERVED_M2; 37703 cached EU | 0.1140 / 0.1140 / 0.1010 | 0.228 / 0.228 / 0.202 |
-| U214 | 74HC32D,653; 74HC32D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf); Mouser 771-74HC32D-T; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1600 / 0.1600 / 0.1600 | 0.160 / 0.160 / 0.160 |
 | U221 | 74HC11D,653; 74HC11D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://assets.nexperia.com/documents/data-sheet/74HC_HCT11.pdf); Mouser 771-74HC11D-T; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.1600 / 0.1600 / 0.1600 | 0.160 / 0.160 / 0.160 |
-| U223, U224 | 74HC74D,653; 74HC74D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://nl.mouser.com/ProductDetail/Nexperia/74HC74D653?qs=P62ublwmbi8VnJ1KG1%2FblQ%3D%3D); Mouser 771-74HC74D-T; MOQ1 | OBSERVED_M2; 623 older NL;1590 newer USD | 0.1230 / 0.1230 / 0.1080 | 0.246 / 0.246 / 0.216 |
+| U222 | 74HC08D,653; 74HC08D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://eu.mouser.com/ProductDetail/Nexperia/74HC08D653?qs=P62ublwmbi%2FQCxm29EB%2FyA%3D%3D); Mouser 771-74HC08D-T; MOQ1 | OBSERVED_M2; 37703 cached EU | 0.1630 / 0.1140 / 0.1140 | 0.163 / 0.114 / 0.114 |
+| U223 | 74HC74D,653; 74HC74D,653 | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | [source](https://nl.mouser.com/ProductDetail/Nexperia/74HC74D653?qs=P62ublwmbi8VnJ1KG1%2FblQ%3D%3D); Mouser 771-74HC74D-T; MOQ1 | OBSERVED_M2; 623 older NL;1590 newer USD | 0.1810 / 0.1230 / 0.1230 | 0.181 / 0.123 / 0.123 |
+| U224 | 74HC174D,653; 74HC174D,653 | Package_SO:SOIC-16_3.9x9.9mm_P1.27mm | [source](https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf); Nexperia/DigiKey/Mouser OPEN exact74HC174D,653 cut-tape SKU; MOQ1 | ESTIMATE; Nexperia Production; exact local basket OPEN; 175/Toshiba NRND not substituted | 0.3500 / 0.2500 / 0.2500 | 0.350 / 0.250 / 0.250 |
 | U301 | TPS54302DDCT; TPS54302DDCT | Package_TO_SOT_SMD:TSOT-23-6 | [source](https://www.ti.com/lit/ds/symlink/tps54302.pdf); Mouser 595-TPS54302DDCT; MOQ1 | OBSERVED_M2; New EUR index3137; direct browser failed; basket OPEN | 1.5900 / 1.1800 / 1.1800 | 1.590 / 1.180 / 1.180 |
 | U302 | TPS22810DBVR; TPS22810DBVR | Package_TO_SOT_SMD:SOT-23-6 | [source](https://www.ti.com/lit/ds/symlink/tps22810.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.5200 / 0.5200 / 0.5200 | 0.520 / 0.520 / 0.520 |
 | U311 | TL431AIDBZR; TL431AIDBZR | Package_TO_SOT_SMD:SOT-23 | [source](https://www.ti.com/lit/ds/symlink/tl431.pdf); OPEN OPEN; MOQ1 | ESTIMATE; Exact basket/stock OPEN | 0.2500 / 0.2500 / 0.2500 | 0.250 / 0.250 / 0.250 |

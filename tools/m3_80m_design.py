@@ -164,16 +164,16 @@ class Sheet:
             revised.append(item)
         self.items=revised
         defs=' '.join(dump(self.d.lib.defs[t]).replace('(symbol '+q(t)+' ', '(symbol '+q('ARDF_TX:'+t)+' ',1) for t in sorted(self.used))
-        header=f'(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid {q(self.uuid)}) (paper "A3") (title_block (title {q(self.title)}) (date "{DATE}") (rev "M3A-R0") (company "ARDF-TX") (comment 1 "Review schematic; no layout or ordering authorization")) (lib_symbols {defs}) '
-        self.text('M3A-R0: REVIEW / ALL hardware measurements NOT RUN / no layout or procurement.',15,280,0.95)
-        (DEST/(self.name+'.kicad_sch')).write_text(header+'\n'+'\n'.join(self.items)+'\n(embedded_fonts no))\n')
+        header=f'(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid {q(self.uuid)}) (paper "A3") (title_block (title {q(self.title)}) (date "{DATE}") (rev "M3A-R1") (company "ARDF-TX") (comment 1 "Review schematic; no layout or ordering authorization")) (lib_symbols {defs}) '
+        self.text('M3A-R1: REVIEW / ALL hardware measurements NOT RUN / no layout or procurement.',15,280,0.95)
+        (DEST/(self.name+'.kicad_sch')).write_text(header.rstrip()+'\n'+'\n'.join(self.items)+'\n(embedded_fonts no))\n')
 
 class Design:
     def __init__(self):
         self.lib=Library(); self.parts={}; self.sheets=[]; self.root_uuid=uid('root')
         for spec in ['Device:R','Device:C','Device:L','Device:Crystal_GND24','Device:D','Device:D_Zener','Device:Fuse','Device:Thermistor_NTC','Transistor_FET:2N7002','Transistor_BJT:MMBT3904','Transistor_BJT:MMBT3906','Transistor_BJT:BD140','Device:Transformer_1P_1S','Regulator_Switching:TPS54302','Oscillator:Si5351A-B-GT','Power_Management:TPS22810DBV','Amplifier_Current:INA180A1','Reference_Voltage:TL431DBZ','74xx:74HC00','74xx:74HC14','74xx:74HC123','Comparator:LM339','Comparator:LM393','Connector_Generic:Conn_01x02','Connector_Generic:Conn_01x03','Connector_Generic:Conn_02x08_Odd_Even','Connector:TestPoint','power:PWR_FLAG']:
             self.lib.native(spec)
-        self.lib.native('74xx:74LS08','74HC08'); self.lib.native('74xx:74LS32','74HC32'); self.lib.native('74xx:74LS74','74HC74'); self.lib.native('74xx:74LS21','74HC21'); self.lib.native('74xx:74LS11','74HC11')
+        self.lib.native('74xx:74LS174','74HC174'); self.lib.native('Device:C_Polarized'); self.lib.native('74xx:74LS08','74HC08'); self.lib.native('74xx:74LS32','74HC32'); self.lib.native('74xx:74LS74','74HC74'); self.lib.native('74xx:74LS21','74HC21'); self.lib.native('74xx:74LS11','74HC11')
         self.lib.native('74xx:74HC00','74AC00')
         self.lib.native('Device:Q_PNP','MPS751',{'B':'2','C':'3','E':'1'}) # Central MPS751 physical1E2B3C
         self.lib.native('Device:D','BAT54WS')
@@ -192,14 +192,14 @@ class Design:
         for i,s in enumerate(self.sheets):
             x=20+(i%3)*130; y=45+(i//3)*42
             sheets.append(f'(sheet (at {x} {y}) (size 112 24) (stroke (width 0.254) (type default)) (fill (color 0 0 0 0)) (uuid {q(s.uuid)}) (property "Sheetname" {q(s.title)} (at {x} {y-1.27} 0) (effects (font (size 1.27 1.27)) (justify left bottom))) (property "Sheetfile" {q(s.name+".kicad_sch")} (at {x} {y+26.27} 0) (effects (font (size 1.27 1.27)) (justify left top))) (instances (project "RF80" (path {q("/"+self.root_uuid)} (page {q(str(i+2))})))))')
-        root=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(self.root_uuid)}) (paper "A3") (title_block (title "ARDF-TX 80 m RF module") (date "{DATE}") (rev "M3A-R0") (company "ARDF-TX / review only")) (lib_symbols) '+'\n'.join(sheets)
+        root=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(self.root_uuid)}) (paper "A3") (title_block (title "ARDF-TX 80 m RF module") (date "{DATE}") (rev "M3A-R1") (company "ARDF-TX / review only")) (lib_symbols) '+'\n'.join(sheets)
         root+='(text "Classic 3 W / 1.2 W; Sprint calibrated; independent Fox 10 mW\nNORMAL: protected 4S, 12.0-16.8 V. FOX-only: controller 3.3 V from 2S.\nNo 2 m changes. No production PCB. No measured prototype results.\nInter-sheet connections use explicit named global nets.\nRead docs/M3_80M_SCHEMATIC_REVIEW.md before use." (at 25 18 0) (effects (font (size 1.25 1.25)) (justify left top)) (uuid '+q(uid('root-note'))+')) (embedded_fonts no))\n'
         root=root.replace('\nNORMAL:',r'\nNORMAL:').replace('\nNo 2 m',r'\nNo 2 m').replace('\nInter-sheet',r'\nInter-sheet').replace('\nRead docs',r'\nRead docs')
         (DEST/'RF80.kicad_sch').write_text(root)
         # Do not overwrite a reviewer-edited project settings file on regeneration.
         if not (DEST/'RF80.kicad_pro').exists():
             (DEST/'RF80.kicad_pro').write_text(json.dumps({'meta':{'filename':'RF80.kicad_pro','version':1},'erc':{'erc_exclusions':[]},'schematic':{'meta':{'version':1}}},indent=2)+'\n')
-        (DEST/'RF80.electrical.json').write_text(json.dumps({'date':DATE,'status':'REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN','parts':list(self.parts.values()),'placements':{s.name:s.placements for s in self.sheets}},indent=2)+'\n')
+        (DEST/'RF80.electrical.json').write_text(json.dumps({'date':DATE,'revision':'M3A-R1','status':'REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN','parts':list(self.parts.values()),'placements':{s.name:s.placements for s in self.sheets}},indent=2)+'\n')
 
 FP_R='Resistor_SMD:R_0603_1608Metric'; FP_C='Capacitor_SMD:C_0603_1608Metric'
 FP_SO14='Package_SO:SOIC-14_3.9x8.7mm_P1.27mm'
@@ -220,11 +220,18 @@ def build():
     d=Design()
     def r(s,ref,v,a,b,x,y,pop='BOTH',group='protection',note='',fp=FP_R,mpn=None,price=None):
         s.place(ref,'R',v,{'1':a,'2':b},x,y,fp,mpn or resistor_mpn(v),group,pop,note=note,price=price)
-    caps={'100n':('CC0603KRX7R8BB104',FP_C,.024),'1n':('CC0603JRNPO9BN102',FP_C,.04),'10n':('CC0603KRX7R9BB103',FP_C,.035),'1u':('CC0805KKX7R9BB105','Capacitor_SMD:C_0805_2012Metric',.08),'470n':('C3216X7R2A474K160AB','Capacitor_SMD:C_1206_3216Metric',.22),'4.7u':('GRM31CR71E475KA88L','Capacitor_SMD:C_1206_3216Metric',.16),'10u35':('C3225X7R1V106M250AC','Capacitor_SMD:C_1210_3225Metric',.45),'22u25':('GRM32ER71E226KE15L','Capacitor_SMD:C_1210_3225Metric',.45),'100p':('C0805C101J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1000p':('C0805C102J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1800p':('C0805C182J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12),'91p':('C0805C910J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12)}
+    caps={'100n':('CC0603KRX7R8BB104',FP_C,.024),'1n':('CC0603JRNPO9BN102',FP_C,.04),'10n':('CC0603KRX7R9BB103',FP_C,.035),'1u':('CC0805KKX7R9BB105','Capacitor_SMD:C_0805_2012Metric',.08),'470n':('C3216X7R2A474K160AB','Capacitor_SMD:C_1206_3216Metric',.22),'4.7n':('CC0603JRNPO9BN472',FP_C,.04),'4.7u':('GRM31CR71E475KA88L','Capacitor_SMD:C_1206_3216Metric',.16),'10u35':('C3225X7R1V106M250AC','Capacitor_SMD:C_1210_3225Metric',.45),'22u25':('GRM32ER71E226KE15L','Capacitor_SMD:C_1210_3225Metric',.45),'100p':('C0805C101J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1000p':('C0805C102J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1800p':('C0805C182J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12),'91p':('C0805C910J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12)}
     def c(s,ref,v,a,b,x,y,pop='BOTH',group='decoupling',note=''):
         mpn,fp,p=caps[v];s.place(ref,'C',v,{'1':a,'2':b},x,y,fp,mpn,group,pop,note=note,price={'1':p})
     def fet(s,ref,gate,drain,source,x,y,pop='BOTH',group='protection',note=''):
-        s.place(ref,'2N7002','DMN2056U-7',{'1':gate,'2':source,'3':drain},x,y,'Package_TO_SOT_SMD:SOT-23','DMN2056U-7',group,pop,price={'1':.335,'10':.147,'100':.128},evidence='OBSERVED_M3',supplier='Mouser',code='621-DMN2056U-7',availability='95248 indexed14Oct; cuttapeMOQ1',source='https://www.diodes.com/datasheet/download/DMN2056U.pdf',note=note+' 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.')
+        high_current=ref=='Q404'
+        mpn='DMN2056U-7' if high_current else 'BSS138BK,215'
+        s.place(ref,'2N7002',mpn,{'1':gate,'2':source,'3':drain},x,y,'Package_TO_SOT_SMD:SOT-23',mpn,group,pop,
+            price={'1':.335,'10':.147,'100':.128} if high_current else {'1':.22,'10':.099,'100':.06},
+            evidence='OBSERVED_M3' if high_current else 'MIXED_ESTIMATE',supplier='Mouser',code='621-DMN2056U-7' if high_current else '771-BSS138BK215',
+            availability='Retained R0 stock observation' if high_current else 'EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN',
+            source='https://www.diodes.com/datasheet/download/DMN2056U.pdf' if high_current else 'https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf',
+            note=note+(' 45mohm at2.5V, +/-8VGS; retained for70mA shaper base sink.' if high_current else ' 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.'))
     def tp(s,ref,net,x,y,pop='BOTH'):
         s.place(ref,'TestPoint',net,{'1':net},x,y,'TestPoint:TestPoint_Pad_D1.0mm', 'PCB pad / no purchased component','test',pop,price={'1':0},evidence='BOARD_FEATURE',note='High-impedance probe; not a 50-ohm terminated scope input')
     def logic(s,ref,typ,pinmap,x,y,unit=1,pop='BOTH',price=.16):
@@ -232,7 +239,7 @@ def build():
             s.place(ref,typ,'SN74AC00DR',pinmap,x,y,FP_SO14,'SN74AC00DR','fox',pop,unit=unit,price={'1':.404,'10':.278,'25':.248,'100':.213},evidence='OBSERVED_M3',supplier='Mouser',code='595-SN74AC00DR',source='https://www.ti.com/lit/ds/symlink/sn74ac00.pdf',availability='2369EUindexed;ActiveDRcut-tapeMOQ1;D-tubeEOLnotselected',note='TinyFoxNANDbuffermechanism,ACdriveadaptation.2-6V,+/-12mAoperatingat3V. HC00driveaftershaping/padismarginal;3.3VfamilythresholdsnotTTL. ActualRFperformanceNOTMEASURED.')
             return
         source_name=typ if typ=='74HC21' else typ.replace('74HC','74HC_HCT')
-        s.place(ref,typ,typ+'D,653',pinmap,x,y,FP_SO16 if typ=='74HC123' else FP_SO14,typ+'D,653','interlocks',pop,unit=unit,price={'1':price},supplier='Mouser',code='771-'+typ+'D-T',source='https://assets.nexperia.com/documents/data-sheet/'+source_name+'.pdf',note='CMOS 3.3 V. Supply unit and all unused gates explicitly connected.')
+        s.place(ref,typ,typ+'D,653',pinmap,x,y,FP_SO16 if typ in ('74HC123','74HC174') else FP_SO14,typ+'D,653','interlocks',pop,unit=unit,price={'1':price},supplier='Mouser',code='771-'+typ+'D-T',source='https://assets.nexperia.com/documents/data-sheet/'+source_name+'.pdf',note='CMOS 3.3 V. Supply unit and all unused gates explicitly connected.')
     s=d.sheet('01_source_interface','01 Controller interface and local source')
     s.text('One local Si5351; no MCU/RTC/UI on RF PCB. Shared 3.3 V stays powered during inhibited I2C setup.\nController wide-input regulator remains a proposal: evaluation fixture supplies bounded 3.3 V separately.',15,22)
     pins={'1':'V3V3','2':'GND','3':'SCL','4':'GND','5':'SDA','6':'LEASE','7':'ARM','8':'CW_KEY','9':'PA_REQ','10':'FOX_REQ','11':'PWR0','12':'PWR1','13':'MUTE_N','14':'FAULT_N','15':'PACK4_OK','16':'GND'}
@@ -252,71 +259,77 @@ def build():
     s=d.sheet('02_interlocks','02 Autonomous lease, inhibit and rearm')
     s.text('Healthy-only asynchronous reset. Latched fault cannot recover while ARM remains high.\nARM RC/Schmitt delay releases CLR before clocking. Requests exclusive; both asserted trips.',15,23)
     s.place('U201','MCP100T300','MCP100T-300I/TT',{'1':'POR_N','2':'V3V3','3':'GND'},55,58,'Package_TO_SOT_SMD:SOT-23','MCP100T-300I/TT','interlocks',price={'1':.361},evidence='OBSERVED_M2',source='https://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf',supplier='Mouser',code='579-MCP100T-300I/TT',note='SOT23 pin1 RESET,2 VDD,3 VSS; nominal3.0V. Controller POR cannot replace unplugged-module local reset.')
-    logic(s,'U202','74HC123',{'1':'GND','2':'LEASE','3':'POR_N','4':'LEASE_OK','13':None,'14':'GND','15':'LEASE_RC'},150,55,unit=1,price=.219)
-    logic(s,'U202','74HC123',{'9':'SCL','10':'V3V3','11':'POR_N','12':None,'5':'BUS_QUIET','6':'GND','7':'BUS_RC'},255,55,unit=2,price=.219)
+    logic(s,'U202','74HC123',{'1':'LEASE_SEEN_N','2':'LEASE','3':'POR_N','4':None,'13':'LEASE_OK','14':'GND','15':'LEASE_RC'},150,55,unit=1,price=.219)
+    logic(s,'U202','74HC123',{'9':'GND','10':'SCL','11':'POR_N','12':'BUS_HOLDOFF_N','5':None,'6':'GND','7':'BUS_RC'},255,55,unit=2,price=.219)
     logic(s,'U202','74HC123',{'16':'V3V3','8':'GND'},350,54,unit=3,price=.219)
-    r(s,'R201','390k','V3V3','LEASE_RC',45,103);c(s,'C201','1u','LEASE_RC','GND',100,103,group='interlocks',note='t=KRC approx0.176s at K0.45; characterize 3.3V,tolerance,temperature. Hardware silence<=250ms requirement.')
-    r(s,'R202','47k','V3V3','BUS_RC',170,103);c(s,'C202','100n','BUS_RC','GND',225,103,group='interlocks',note='Approx2ms quiet delay; every falling SCL edge triggers; test actual bound.')
+    r(s,'R201','330k','V3V3','LEASE_RC',45,103);c(s,'C201','1u','LEASE_RC','GND',100,103,group='interlocks',note='t=KRC approx0.165s at assumedK0.50; characterize 3.3V,tolerance,temperature. Hardware silence<=250ms requirement.')
+    r(s,'R202','47k','V3V3','BUS_RC',170,103);c(s,'C202','100n','BUS_RC','GND',225,103,group='interlocks',note='Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound.')
     r(s,'R203','47k','ARM','ARM_RC',300,103);c(s,'C203','100n','ARM_RC','GND',360,103,group='interlocks')
     # Actual logic gates, with physical pin numbers.
     logic(s,'U203','74HC14',{'1':'ARM_RC','2':'ARM_DELAY_N'},40,149,unit=1)
     logic(s,'U203','74HC14',{'3':'ARM_DELAY_N','4':'ARM_CLK'},105,149,unit=2)
     logic(s,'U203','74HC14',{'5':'PA_REQ','6':'PA_REQ_N'},175,149,unit=3)
     logic(s,'U203','74HC14',{'9':'FOX_REQ','8':'FOX_REQ_N'},245,149,unit=4)
-    logic(s,'U203','74HC14',{'11':'GND','10':None},315,149,unit=5)
+    logic(s,'U203','74HC14',{'11':'CW_KEY','10':'KEY_N'},315,149,unit=5)
     logic(s,'U203','74HC14',{'13':'KEY_TAIL_C','12':'KEY_TAIL_N'},380,149,unit=6)
     logic(s,'U203','74HC14',{'14':'V3V3','7':'GND'},380,205,unit=7)
     for i,u in enumerate(['U201','U202','U203']):c(s,'C'+str(210+i),'100n','V3V3','GND',35+i*62,205)
     fet(s,'Q201','NOT_ARMED','FAULT_N','GND',260,203,group='interlocks',note='Open-drain status; unarmed, not only faults. Pull on controller rail.')
     for ref,net,x in [('D201','LEASE_RC',45),('D202','BUS_RC',160)]:
         s.place(ref,'BAT54WS','BAT54WS-7-F',{'1':'V3V3','2':net},x,265,'Diode_SMD:D_SOD-323','BAT54WS-7-F','interlocks',price={'1':.10},source='https://www.diodes.com/datasheet/download/BAT54WS.pdf',note='HC123 manufacturer Fig13 discharge clamp across external timing R; anodeRC/cathodeVCC. Fig11 CEXT6/14 directlygrounded fornoiseimmunity. Qualifypowerdownsurgewithactual3.3Vreservoirandcable.')
-    s.text('U202 first half: positive LEASE edge, /A held low. Second half: falling SCL with B high.\nNo blind ISR heartbeat: controller advances LEASE only after schedule and bus-state checks.\nLocal mute is independent of firmware; hardware does not verify the requested frequency value.\nNormal key-up leaves driver active through the measured drain-envelope tail. ARM/MUTE kill immediately.',15,239,1.1)
+    s.text('U202: first Q=pin13, /A=LEASE_SEEN_N; first validLEASE edge witnesses progress. Second /Q=pin12, /A=0,B=SCL.\nNo blind ISR heartbeat: controller advances LEASE only after schedule and bus-state checks.\nLocal mute is independent of firmware; hardware does not verify the requested frequency value.\nNormal key-up leaves driver active through the measured drain-envelope tail. ARM/MUTE kill immediately.',15,239,1.1)
 
-    s=d.sheet('03_safety_logic','03 Permission logic and latched power modes')
-    s.text('NOT a second contest processor. Hard gates combine measured electrical health and controller requests.',15,23)
-    # 4-input health groups.
-    logic(s,'U211','74HC21',{'1':'POR_N','2':'LEASE_OK','4':'BUS_QUIET','5':'COMMON_UV_OK','6':'SAFE1'},60,60,unit=1)
-    logic(s,'U211','74HC21',{'9':'PA_OV_OK','10':'PA_OC_OK','12':'THERM_OK','13':'MUTE_N','8':'SAFE2'},175,60,unit=2)
+    s=d.sheet('03_safety_logic','03 Reduced permission logic and population-specific guards')
+    s.text('Four redundant gate stages are replaced by one core tree and wired open-collector PA trips.\nSchottky logic margins and source loading remain E1 bench gates; no CMOS outputs are tied together.',15,23)
+    logic(s,'U211','74HC21',{'1':'UV_POR_N','2':'LEASE_OK','4':'BUS_QUIET','5':'MUTE_N','6':'CORE_OK'},60,60,unit=1)
+    logic(s,'U211','74HC21',{'9':'CORE_OK','10':'EXCLUSIVE_OK','12':'MODE_OK','13':'PA_CONDITION_OK','8':'SAFE_RAW'},175,60,unit=2)
     logic(s,'U211','74HC21',{'14':'V3V3','7':'GND'},350,57,unit=3)
     logic(s,'U212','74HC00',{'1':'PA_REQ','2':'FOX_REQ','3':'EXCLUSIVE_OK'},60,115,unit=1,price=.103)
     logic(s,'U212','74HC00',{'4':'PWR0','5':'PWR1','6':'MODE_OK'},150,115,unit=2,price=.103)
     logic(s,'U212','74HC00',{'9':'KEY_TAIL_N','10':'KEY_TAIL_N','8':'KEY_TAIL'},240,115,unit=3,price=.103)
     logic(s,'U212','74HC00',{'12':'FOX_PERMIT','13':'KEY_TAIL','11':'FOX_MUTE'},335,115,unit=4,price=.103)
     logic(s,'U212','74HC00',{'14':'V3V3','7':'GND'},380,211,unit=5,price=.103)
-    logic(s,'U213','74HC08',{'1':'LOCAL_4S_OK','2':'PACK4_OK','3':'PA_PACK_OK'},50,165,unit=1,price=.114)
-    logic(s,'U213','74HC08',{'4':'SAFE1','5':'SAFE2','6':'SAFE12'},145,165,unit=2,price=.114)
-    logic(s,'U213','74HC08',{'9':'EXCLUSIVE_OK','10':'MODE_OK','8':'SAFE_MODES'},240,165,unit=3,price=.114)
-    logic(s,'U213','74HC08',{'12':'PACK_OK','13':'COMPACT_OK','11':'SAFE_PACK'},335,165,unit=4,price=.114)
-    logic(s,'U213','74HC08',{'14':'V3V3','7':'GND'},380,245,unit=5,price=.114)
-    logic(s,'U214','74HC32',{'1':'PA_REQ_N','2':'PA_PACK_OK','3':'PACK_OK'},60,211,unit=1)
-    logic(s,'U214','74HC32',{'4':'PA_REQ_N','5':'FOX_ID','6':'COMPACT_OK'},150,211,unit=2)
-    logic(s,'U214','74HC32',{'9':'PA_KEY','10':'FOX_KEY','8':'COMMON_KEY'},240,211,unit=3)
-    logic(s,'U214','74HC32',{'12':'GND','13':'GND','11':None},335,211,unit=4)
-    logic(s,'U214','74HC32',{'14':'V3V3','7':'GND'},330,245,unit=5)
-    for i in range(4): c(s,'C'+str(220+i),'100n','V3V3','GND',45+i*65,250)
+    r(s,'R219','2.2k','V3V3','HEALTH_N',45,175,group='interlocks')
+    r(s,'R220','2.2k','V3V3','UV_POR_N',145,175,group='interlocks')
+    r(s,'R225','10k','PA_CONDITION_OK','GND',240,175,group='interlocks')
+    def sd(ref,k,a,x,y,pop='BOTH',note=''):
+        s.place(ref,'BAT54WS','BAT54WS-7-F',{'1':k,'2':a},x,y,'Diode_SMD:D_SOD-323','BAT54WS-7-F','interlocks',pop,price={'1':.10},source='https://www.diodes.com/datasheet/download/BAT54WS.pdf',note=note+' pin1K/pin2A; price estimate, MOQ1 assumed.')
+    sd('D219','POR_N','UV_POR_N',45,230,note='AND reset/POR with direct UV open collector; a low POR sinks through diode.')
+    sd('D220','SAFE_RAW','HEALTH_N',150,230,note='Independent open-drain request-withdrawal faults may clamp RESET_N; CMOS CLR_CORE_N is isolated.')
+    sd('D221','PACK4_OK','PA_GUARD_RAW',250,230,'NORMAL','Controller pack qualification AND local analog trips.')
+    sd('D222','FOX_ID','PA_GUARD_RAW',350,230,'NORMAL','Compact accessory present inhibits the watt path.')
+    sd('D223','PA_CONDITION_OK','PA_REQ_N',45,270,note='Diode OR allows the low path when PA request is absent.')
+    sd('D224','PA_CONDITION_OK','PA_GUARD_RAW',160,270,note='Diode OR requires all watt guards when PA request is present.')
+    c(s,'C220','100n','V3V3','GND',240,270);c(s,'C222','100n','V3V3','GND',280,270)
+    r(s,'R228','0','PA_GUARD_RAW','GND',350,175,'FOX','interlocks',note='Fox-only: forces watt guard invalid. Full population MUST omit this link.')
 
-    s=d.sheet('04_arm_key','04 Rearm latch, selected rails and key permits')
-    logic(s,'U221','74HC11',{'1':'SAFE12','2':'SAFE_MODES','13':'SAFE_PACK','12':'SAFE_RAW'},60,55,unit=1)
-    logic(s,'U221','74HC11',{'3':'ARMED','4':'PA_REQ','5':'FOX_REQ_N','6':'PA_PERMIT'},160,55,unit=2)
-    logic(s,'U221','74HC11',{'9':'ARMED','10':'FOX_REQ','11':'PA_REQ_N','8':'FOX_PERMIT'},270,55,unit=3)
+    s=d.sheet('04_arm_key','04 Deliberate rearm, witnessed heartbeat and captured configuration')
+    logic(s,'U221','74HC11',{'1':'POR_N','2':'BUS_HOLDOFF_N','13':'BUS_LINES_HIGH','12':'BUS_QUIET'},60,55,unit=1)
+    logic(s,'U221','74HC11',{'3':'ARMED','4':'PATH_PA','5':'ARM_ACCEPT','6':'PA_PERMIT'},160,55,unit=2)
+    logic(s,'U221','74HC11',{'9':'ARMED','10':'PATH_FOX','11':'ARM_ACCEPT','8':'FOX_PERMIT'},270,55,unit=3)
     logic(s,'U221','74HC11',{'14':'V3V3','7':'GND'},370,55,unit=4)
-    logic(s,'U222','74HC08',{'1':'SAFE_RAW','2':'ARM','3':'CLR_N'},55,115,unit=1,price=.114)
+    logic(s,'U222','74HC08',{'1':'HEALTH_N','2':'ARM','3':'RESET_N'},55,115,unit=1,price=.114)
     logic(s,'U222','74HC08',{'4':'PA_PERMIT','5':'CW_KEY','6':'PA_KEY'},155,115,unit=2,price=.114)
     logic(s,'U222','74HC08',{'9':'FOX_PERMIT','10':'CW_KEY','8':'FOX_KEY'},255,115,unit=3,price=.114)
-    logic(s,'U222','74HC08',{'12':'TEMP_HOT_OK','13':'TEMP_OPEN_OK','11':'THERM_OK'},355,115,unit=4,price=.114)
+    logic(s,'U222','74HC08',{'12':'SCL','13':'SDA','11':'BUS_LINES_HIGH'},355,115,unit=4,price=.114)
     logic(s,'U222','74HC08',{'14':'V3V3','7':'GND'},370,220,unit=5,price=.114)
-    logic(s,'U223','74HC74',{'1':'CLR_N','2':'V3V3','3':'ARM_CLK','4':'V3V3','5':'ARMED','6':'NOT_ARMED'},65,170,unit=1,price=.123)
-    logic(s,'U223','74HC74',{'13':'POR_N','12':'GND','11':'GND','10':'V3V3','9':None,'8':None},180,170,unit=2,price=.123)
+    logic(s,'U223','74HC74',{'1':'RESET_N','2':'ARM_ACCEPT','3':'ARM_CLK','4':'V3V3','5':'ARMED','6':'NOT_ARMED'},65,170,unit=1,price=.123)
+    logic(s,'U223','74HC74',{'13':'POR_N','12':'V3V3','11':'LEASE','10':'V3V3','9':None,'8':'LEASE_SEEN_N'},180,170,unit=2,price=.123)
     logic(s,'U223','74HC74',{'14':'V3V3','7':'GND'},320,220,unit=3,price=.123)
-    logic(s,'U224','74HC74',{'1':'CLR_N','2':'PWR0','3':'ARM_CLK','4':'V3V3','5':'SEL_EXT','6':None},280,170,unit=1,price=.123)
-    logic(s,'U224','74HC74',{'13':'CLR_N','12':'PWR1','11':'ARM_CLK','10':'V3V3','9':'SEL_FULL','8':None},380,170,unit=2,price=.123)
-    logic(s,'U224','74HC74',{'14':'V3V3','7':'GND'},270,220,unit=3,price=.123)
+    logic(s,'U224','74HC174',{'1':'HEALTH_N','2':'SEL_EXT','3':'PWR0','4':'PWR1','5':'SEL_FULL','6':'PA_REQ','7':'PATH_PA','8':'GND','9':'ARM','10':'PATH_FOX','11':'FOX_REQ','12':'ARM_ACCEPT','13':'KEY_N','14':'GND','15':None,'16':'V3V3'},335,173,price=.25)
+    d.parts['U224'].update(price_breaks_eur={'1':.35,'10':.25},supplier='Nexperia/DigiKey/Mouser',supplier_part_number='OPEN exact74HC174D,653 cut-tape SKU',evidence='ESTIMATE',availability='Nexperia Production; exact local basket OPEN; 175/Toshiba NRND not substituted',source_url='https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf')
     for i in range(4):c(s,'C'+str(230+i),'100n','V3V3','GND',35+i*60,220)
-    s.text('PWR1/PWR0: 00 Sprint (start4.68V); 01 extended (start5.58V); 10 full (start7.96V); 11 fault.\nModes latch on delayed ARM edge and reset to Sprint on fault. Changing PWR while armed does not change rail;\nchanging to11 still faults. Retuning/I2C, stopped heartbeat, MUTE low, UV/OV/OC/hot/open NTC clear ARMED.\nRearm: ARM low >=20ms, health stable + I2C quiet, requests/mode fixed; ARM high then wait >=250ms beforefirstKEY.\nNo auto-rearm after fault with ARM stuck high. Verify asynchronous recovery/Schmitt delay with real parts.',15,245,1.1)
-
+    # A selected request withdrawal is a persistent open-drain fault. Capture new
+    # context on RAW ARM first; delayed ARM clock only arms after it has settled.
+    fet(s,'Q225','PATH_PA','HEALTH_N','PA_DROP_MID',45,264,group='interlocks')
+    fet(s,'Q226','PA_REQ_N','PA_DROP_MID','DROP_RETURN',110,264,group='interlocks')
+    fet(s,'Q227','PATH_FOX','HEALTH_N','FOX_DROP_MID',175,264,group='interlocks')
+    fet(s,'Q228','FOX_REQ_N','FOX_DROP_MID','DROP_RETURN',240,264,group='interlocks')
+    fet(s,'Q229','ARM_ACCEPT','DROP_RETURN','GND',255,198,group='interlocks',note='Request faults only when captured context valid. HEALTH MR clears acceptance, independently masking RF; no implicit rearm.')
+    s.text('U224 captures path/mode/key-low on raw ARM; any health fault clears acceptance.\nU223 delayed clock can only arm an accepted context. A fault in the pending delay cannot rearm.\nWithdraw selected request: health clears context and RF permits. New raw ARM edge required.\nFresh ARM low>=20ms, configure requests/mode, then ARM high; wait>=250ms before first key.\nMode changes while armed are ignored; mode11, conflicting requests and SCL/SDA low fault immediately.\nNo recovery with ARM held high. U213/U214 deleted; their duplicated tree is not retained.',15,236,1.0)
     # Supply sheet: full population only, independently powered logic remains shared.
     s=d.sheet('05_power','05 4S input, one buck and independent rail isolation')
-    s.text('Shared J301/F301/D301 input barrier; converter/loadswitch NORMAL only. Protected4S:12.0-16.8V.\nFox-only retains input barrier/sense bypass, omits buck/loadswitch and watt-rail parts;2S powerscontroller+input sense.',15,23)
+    s.text('Shared J301/F301/D301 input barrier; converter/loadswitch NORMAL only. Protected4S:12.0-16.8V.\nFox-only retains input barrier/sense bypass, omits buck/loadswitch and watt-rail parts;2S powerscontroller+input sense.\nTPS22810 VIN must stay<=18V, including failed-buck transients;20V is absolute maximum.\n28V passive simulation is NOT a system rating. Input clamp/fault coordination remains OPEN.',15,23)
     s.place('J301','Conn_01x02','RAW protected pack',{'1':'VBAT','2':'GND'},35,60,'Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical','B2P-VH(LF)(SN)','connectors','BOTH',price={'1':.138,'10':.115},evidence='OBSERVED_M3',supplier='Mouser',code='306-B2P-VHLFSN',source='https://www.jst-mfg.com/product/pdf/eng/eVH.pdf',availability='108526 indexed EUR MOQ1',note='Pin1 positive,2 power return. Module input must come from externally protected/fused pack.')
     s.place('F301','Fuse','1.5 A fast / 32V',{'1':'VBAT','2':'VBAT_FUSED'},100,60,'Fuse:Fuse_1206_3216Metric','Littelfuse 046701.5NR','protection','BOTH',price={'1':.30},note='Selection candidate; final interrupt/I2t and max16.8V qualification OPEN. External protected pack remains required.')
     s.place('D301','D','SS34',{'1':'VIN_PA','2':'VBAT_FUSED'},165,60,'Diode_SMD:D_SMC','SS34-E3/57T','protection','BOTH',price={'1':.18},note='Schottky reverse polarity barrier; K pin1 = VIN_PA. Vf/conduction heat included in prototype efficiency, not silently ignored.')
@@ -333,7 +346,7 @@ def build():
     r(s,'R305','24.9k','FB_PA','FB_FULL',260,175,'NORMAL','normal_supply',note='Full calibration starting value; max target3W, not a5W carrier adaptation.')
     fet(s,'Q302','SEL_FULL','FB_FULL','GND',310,175,'NORMAL','normal_supply')
     s.place('U302','TPS22810DBV','TPS22810DBVR',{'1':'VPA','2':'GND','3':'PA_PERMIT','4':'CT_PA','5':'QOD_PA','6':'VPA_ISO'},75,232,'Package_TO_SOT_SMD:SOT-23-6','TPS22810DBVR','normal_supply','NORMAL',price={'1':.52},source='https://www.ti.com/lit/ds/symlink/tps22810.pdf',note='Independent physical load switch after buck. Shorted buck high-side can still be disconnected. Not reverse-blocking; no external rail injection.')
-    c(s,'C306','1n','CT_PA','GND',175,231,'NORMAL','normal_supply',note='Slew timing starter, measure real charge current and disable discharge.')
+    c(s,'C306','4.7n','CT_PA','GND',175,231,'NORMAL','normal_supply',note='4.7n slows initial47uFdrivercharge; measure inrush belowOC threshold and outputsettling. OFF latency is separately<=20us gate.')
     r(s,'R306','100','QOD_PA','VPA_ISO',235,231,'NORMAL','normal_supply');r(s,'R307','47k','PA_PERMIT','GND',300,231,'NORMAL','normal_supply')
     s.place('#FLG301','PWR_FLAG','PWR_FLAG',{'1':'VBAT'},360,230,'','','test','BOTH',price={'1':0},evidence='BOARD_FEATURE')
 
@@ -344,16 +357,16 @@ def build():
     r(s,'R313','309k','VIN_PA','V_PACK_SCALED',40,108);r(s,'R314','10k','V_PACK_SCALED','GND',100,108);c(s,'C311','10n','V_PACK_SCALED','GND',160,108)
 
     # LM339 native comparator unit mapping:1 +7/-6/out1,2 +5/-4/out2,3 +9/-8/out14,4 +11/-10/out13.
-    s.place('U312','LM339','LM339BIDR',{'5':'V_PACK_SCALED','4':'PACK_2S_REF','2':'COMMON_UV_OK'},55,161,'Package_SO:SOIC-14_3.9x8.7mm_P1.27mm','LM339BIDR','protection',unit=1,price={'1':.25},source='https://www.ti.com/lit/ds/symlink/lm339b.pdf')
-    s.place('U312','LM339','LM339BIDR',{'7':'V_PACK_SCALED','6':'PACK_4S_REF','1':'LOCAL_4S_OK'},150,161,FP_SO14,'LM339BIDR','protection',unit=2)
-    s.place('U312','LM339','LM339BIDR',{'11':'PA_OV_REF','10':'V_PA_OV','13':'PA_OV_OK'},245,161,FP_SO14,'LM339BIDR','protection',unit=3)
-    s.place('U312','LM339','LM339BIDR',{'9':'PA_OC_REF','8':'I_PA_FILTER','14':'PA_OC_OK'},345,161,FP_SO14,'LM339BIDR','protection',unit=4)
+    s.place('U312','LM339','LM339BIDR',{'5':'TEMP_SENSE','4':'TEMP_HOT_REF','2':'PA_GUARD_RAW'},55,161,'Package_SO:SOIC-14_3.9x8.7mm_P1.27mm','LM339BIDR','protection','NORMAL',unit=1,price={'1':.25},source='https://www.ti.com/lit/ds/symlink/lm339b.pdf')
+    s.place('U312','LM339','LM339BIDR',{'7':'V_PACK_SCALED','6':'PACK_4S_REF','1':'PA_GUARD_RAW'},150,161,FP_SO14,'LM339BIDR','protection',unit=2)
+    s.place('U312','LM339','LM339BIDR',{'11':'PA_OV_REF','10':'V_PA_OV','13':'PA_GUARD_RAW'},245,161,FP_SO14,'LM339BIDR','protection',unit=3)
+    s.place('U312','LM339','LM339BIDR',{'9':'PA_OC_REF','8':'I_PA_FILTER','14':'PA_GUARD_RAW'},345,161,FP_SO14,'LM339BIDR','protection',unit=4)
     s.place('U312','LM339','LM339BIDR',{'3':'V3V3','12':'GND'},345,230,FP_SO14,'LM339BIDR','protection',unit=5)
-    for i,net in enumerate(['COMMON_UV_OK','LOCAL_4S_OK','PA_OV_OK','PA_OC_OK']):r(s,'R'+str(320+i),'10k','V3V3',net,35+i*62,211)
-    c(s,'C313','100n','V3V3','GND',285,210)
+    r(s,'R321','2.2k','V3V3','PA_GUARD_RAW',100,211,'NORMAL')
+    c(s,'C313','100n','V3V3','GND',285,210,'NORMAL')
     c(s,'C314','100n','VIN_PA','GND',380,60,group='protection')
     r(s,'R324','309k','VPA','V_PA_OV',35,249);r(s,'R325','10k','V_PA_OV','GND',100,249)
-    s.text('Nominal backup: commonUV5.810V/4Sbackup11.070V postreversebarrier; railOV8.973V.\nController operational endpoint remains6.0/12.0V with hysteresis; cell-group BMS external.\nLocal pack sensing does not prove weakest-cell voltage. Hysteresis implemented by fault latch;\nrearm only after input exceeds qualified margin. Fox-only: VPA node is grounded via R325/R324, not floating.',175,244,1.0)
+    s.text('Nominal backup: commonUV5.810V/4Sbackup11.070V postreversebarrier; railOV8.973V.\nController operational endpoint remains6.0/12.0V with hysteresis; cell-group BMS external.\nLocal pack sensing does not prove weakest-cell voltage. Hysteresis implemented by fault latch;\nrearm only after input exceeds qualified margin. Fox-only: watt guards DNP, R228 clamps PA_GUARD_RAW; UV comparator remains local.',175,244,1.0)
 
     rs=d.sheet('06b_thresholds','06b Independent threshold dividers')
     rs.text('Independent reference dividers from regulated TL431 node, not a loaded shared half-reference.\nPack and PA voltage signals divideby31.9; INA current signal divides by4. No comparator pin exceeds1.05V\nfor28V input/rail or3.465V current-sense saturation. Thermal divider ratios sharetheir own<1.0V node.',15,23)
@@ -370,22 +383,26 @@ def build():
     r(s,'R333','30k','I_PA_RAW','I_PA_FILTER',40,112,'NORMAL');c(s,'C321','1n','I_PA_FILTER','GND',100,112,'NORMAL','protection');r(s,'R334','10k','I_PA_FILTER','GND',160,112,note='Shared default0V OC input with sensor DNP; valid only when watt stage DNP.')
     c(s,'C322','100n','V3V3','GND',220,112,'NORMAL')
     r(s,'R335','10k','VREF_TH','TEMP_SENSE',40,167,note='Pull from bounded<1.0V reference keeps comparator inputs in range at cold/open NTC.')
-    s.place('TH301','Thermistor_NTC','10k NTC / B25-50=3380',{'1':'TEMP_SENSE','2':'GND'},100,167,'Resistor_SMD:R_0603_1608Metric','NCP18XH103F03RB','protection',price={'1':.10},source='https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB',note='B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only fit fixed10k instead via R336.')
-    r(s,'R336','10k','TEMP_SENSE','GND',160,167,'DNP',note='Fox-only substitutes TH301 with this resistor; never populate both on full module.')
+    s.place('TH301','Thermistor_NTC','10k NTC / B25-50=3380',{'1':'TEMP_SENSE','2':'GND'},100,167,'Resistor_SMD:R_0603_1608Metric','NCP18XH103F03RB','protection',price={'1':.10},source='https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB',note='B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only DNP; normal PA and thermal sensing absent; unused dual-comparator inputs grounded via R348/R349.')
     r(s,'R337','60.4k','VREF_TH','TEMP_HOT_REF',220,167);r(s,'R338','10k','TEMP_HOT_REF','GND',280,167)
     r(s,'R339','1.3k','VREF_TH','TEMP_OPEN_REF',340,167);r(s,'R340','10k','TEMP_OPEN_REF','GND',380,215)
-    s.place('U314','LM393','LM393BIDR',{'3':'TEMP_SENSE','2':'TEMP_HOT_REF','1':'TEMP_HOT_OK'},55,224,'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm','LM393BIDR','protection',unit=1,price={'1':.198,'10':.14,'25':.124},evidence='OBSERVED_M2',source='https://www.ti.com/lit/ds/symlink/lm393b.pdf',supplier='Mouser',code='595-LM393BIDR')
-    s.place('U314','LM393','LM393BIDR',{'5':'TEMP_OPEN_REF','6':'TEMP_SENSE','7':'TEMP_OPEN_OK'},160,224,'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm','LM393BIDR','protection',unit=2)
+    s.place('U314','LM393','LM393BIDR',{'3':'V_PACK_SCALED','2':'PACK_2S_REF','1':'UV_POR_N'},55,224,'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm','LM393BIDR','protection',unit=1,price={'1':.198,'10':.14,'25':.124},evidence='OBSERVED_M2',source='https://www.ti.com/lit/ds/symlink/lm393b.pdf',supplier='Mouser',code='595-LM393BIDR')
+    s.place('U314','LM393','LM393BIDR',{'5':'TEMP_OPEN_REF','6':'TEMP_SENSE','7':'PA_GUARD_RAW'},160,224,'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm','LM393BIDR','protection',unit=2)
     s.place('U314','LM393','LM393BIDR',{'8':'V3V3','4':'GND'},255,224,'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm','LM393BIDR','protection',unit=3)
-    r(s,'R341','10k','V3V3','TEMP_HOT_OK',45,262);r(s,'R342','10k','V3V3','TEMP_OPEN_OK',120,262);c(s,'C323','100n','V3V3','GND',200,262)
+    c(s,'C323','100n','V3V3','GND',200,262)
+    r(s,'R348','0','TEMP_OPEN_REF','GND',40,262,'FOX',note='Unused LM393 half input low in Fox-only; full DNP.')
+    r(s,'R349','0','TEMP_SENSE','GND',110,262,'FOX',note='Unused LM393 half input low in Fox-only; full DNP.')
     s.text('Current trip nominal1.251A (20*0.05ohm=1V/A); targetfaultmute<=100us; dividergain0.25V/A;7.5ustau.\nTemperature window detects hot/short and detached/open sensor; nominalhot ~80C case.\nValues/thermal contact, comparator tolerance, filtering and trip latency are qualification gates.',280,245,1.0)
 
     s=d.sheet('08_normal_rf','08 Proven normal RF core and QCX-derived drain shaping')
     s.text('RF core adapted from OpenARDF SignalSlinger HW3.5 (MIT); shaper principle from QCX/W6JL.\nKeep clock running during graceful key tail; INB immediately mutes on fault. This is NOT the VHF AM modulator.',15,23)
-    s.place('U401','LM5134B','LM5134BMF/NOPB',{'1':'VPA_LOAD','2':None,'3':'GATE_DRV','4':'GND','5':'PA_INB','6':'CLK_PA'},70,70,'Package_TO_SOT_SMD:SOT-23-6','LM5134BMF/NOPB','normal_driver','NORMAL',price={'1':2.17,'10':1.62,'25':1.48},evidence='OBSERVED_M2',supplier='Mouser',code='595-LM5134BMF/NOPB',source='https://www.ti.com/lit/ds/symlink/lm5134.pdf',availability='EU stock conflict:510 US indexed; DE incoming30Nov. Local basket MUST close.',note='B only: VIH2.4V, VIL0.8V. VDD4-12.6V; no raw4S. IN can be powered while VDD off per14V input rating; verify leakage.')
-    r(s,'R401','10k','VPA_LOAD','PA_INB',180,65,'NORMAL','normal_driver');fet(s,'Q401','PA_PERMIT','PA_INB','PA_MUTE_MID',245,65,'NORMAL','normal_driver');r(s,'R402','47k','PA_PERMIT','GND',315,65,'NORMAL','normal_driver')
+    s.place('U401','LM5134B','LM5134BMF/NOPB',{'1':'VDRV','2':None,'3':'GATE_DRV','4':'GND','5':'PA_INB','6':'CLK_PA'},70,70,'Package_TO_SOT_SMD:SOT-23-6','LM5134BMF/NOPB','normal_driver','NORMAL',price={'1':2.17,'10':1.62,'25':1.48},evidence='OBSERVED_M2',supplier='Mouser',code='595-LM5134BMF/NOPB',source='https://www.ti.com/lit/ds/symlink/lm5134.pdf',availability='EU stock conflict:510 US indexed; DE incoming30Nov. Local basket MUST close.',note='B only: VIH2.4V, VIL0.8V. VDD4-12.6V; no raw4S. IN can be powered while VDD off per14V input rating; verify leakage.')
+    r(s,'R401','10k','VDRV','PA_INB',180,65,'NORMAL','normal_driver');fet(s,'Q401','PA_PERMIT','PA_INB','PA_MUTE_MID',245,65,'NORMAL','normal_driver');r(s,'R402','47k','PA_PERMIT','GND',315,65,'NORMAL','normal_driver')
     fet(s,'Q405','KEY_TAIL','PA_MUTE_MID','GND',335,115,'NORMAL','normal_driver',note='Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst.')
-    c(s,'C401','100n','VPA_LOAD','GND',180,111,'NORMAL','normal_driver');c(s,'C402','1u','VPA_LOAD','GND',240,111,'NORMAL','normal_driver')
+    c(s,'C401','100n','VDRV','GND',180,111,'NORMAL','normal_driver');c(s,'C402','1u','VDRV','GND',240,111,'NORMAL','normal_driver')
+    r(s,'R410','4.7','VPA_LOAD','VDRV',40,95,'NORMAL','normal_driver',fp='Resistor_SMD:R_2512_6332Metric',mpn='CRCW25124R70FKEG',price={'1':.10},note='1W/pulse-rated candidate; with C404 limits driver dV/dt during buck failure. Pulse energy/part qualification OPEN.')
+    s.place('C404','C_Polarized','47u / 25V',{'1':'VDRV','2':'GND'},120,95,'Capacitor_SMD:CP_Elec_6.3x5.9','25SVPF47M','normal_driver','NORMAL',price={'1':1.50,'10':.973,'50':.7506},evidence='OBSERVED_R1_INDEX',source='https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845',supplier='DigiKey',code='P16513CT-ND',availability='DE index48247; direct fetch cache miss; Active/cut tape MOQ1; basket recheck',note='Panasonic polymer47u25V +/-20%,30mohm max100kHz20C;235uA leakage max. C6 maker land gap2.1/outer9.1/width1.6 agrees native pads. Cmin37.6u, ESR<=0.5ohm over0-50C and isolation<=20us must qualify; no safety proof from ideal RC.')
+    r(s,'R409','100k','PA_MUTE_MID','GND',335,145,'NORMAL','normal_driver',note='Deterministic intermediate source bias; inhibit FETs now +/-20VGS rated.')
     r(s,'R403','0','GATE_DRV','GATE_PA',55,126,'NORMAL','normal_driver',note='Default0ohm like reference; optionally2.2ohm for ringing ONLY after waveforms. Do not attach50ohm scope termination.')
     r(s,'R408','47k','CLK_PA','GND',315,111,'NORMAL','normal_driver',note='Local low default on driver input if shared source is unplugged/unpowered.')
     r(s,'R404','10k','GATE_PA','GND',120,126,'NORMAL','normal_driver')
@@ -401,13 +418,13 @@ def build():
     s.text('No PA/drain reservoir after shaper. Driver reservoir is upstream.\n9+9 series autotransformer: effective voltage step2:1, load~12.5ohm beforefilter.\nTransformer drawing is coupled coils; center join is external and explicit.\nAll components on this sheet DNP on Fox-only. No watt-to-Fox RF switching.',15,145,1.0)
 
     ks=d.sheet('08b_key_tail','08b Shared key-tail and disarm reset')
-    ks.text('Path permission alone must not startRF during drain-integrator charging.\nNormal series INB sink needsPA_PERMIT andKEY_TAIL; FoxRFmute also requiresFOX_PERMIT andKEY_TAIL.\nCOMMON_KEY is OR ofpermittedPA_KEY/FOX_KEY. Exclusivepathlogic prevents simultaneous RF.',15,23)
-    r(ks,'R451','1k','COMMON_KEY','KEY_TAIL_SRC',50,75,group='interlocks')
+    ks.text('Path permission alone must not startRF during drain-integrator charging.\nNormal series INB sink needsPA_PERMIT andKEY_TAIL; FoxRFmute also requiresFOX_PERMIT andKEY_TAIL.\nTail usesraw CW_KEY; disarm clampsmemorybelowSchmittlow. KEYhighcannotarm; capturedpath+withdrawaltrippreventsRFtransfer.',15,23)
+    r(ks,'R451','1k','CW_KEY','KEY_TAIL_SRC',50,75,group='interlocks')
     ks.place('D451','BAT54WS','BAT54WS-7-F',{'1':'KEY_TAIL_C','2':'KEY_TAIL_SRC'},125,75,'Diode_SMD:D_SOD-323','BAT54WS-7-F','interlocks','BOTH',price={'1':.10},source='https://www.diodes.com/datasheet/download/BAT54WS.pdf',note='SchottkyfastchargepreservesHC14VIHmargin;hotleakagemustbemeasured.Anodefrompermittedkey; cathodeatcapacitor. Fixed100nF/330ktailneedshot/coldSchmittthresholdmeasurement.')
     r(ks,'R452','330k','KEY_TAIL_C','GND',205,75,group='interlocks',note='Sharedkeytaildefaultlow; no RF untilagenuinepermittedkey.')
     c(ks,'C451','100n','KEY_TAIL_C','GND',280,75,group='interlocks')
-    r(ks,'R453','1k','KEY_TAIL_C','KEY_TAIL_RESET_D',50,140,group='interlocks')
-    fet(ks,'Q406','NOT_ARMED','KEY_TAIL_RESET_D','GND',150,140,group='interlocks',note='100usRCdischargeresetskeymemorywhileunarmed; preventsrearmstartupdrivefromlastmark.')
+    r(ks,'R453','100','KEY_TAIL_C','KEY_TAIL_RESET_D',50,140,group='interlocks')
+    fet(ks,'Q406','NOT_ARMED','KEY_TAIL_RESET_D','GND',150,140,group='interlocks',note='10usresetRCclampsrawKEYevenifheldhigh; KEYhighcannotarm. Verify thresholds/leakage attemperature.')
     tp(ks,'TP450','KEY_TAIL_C',250,145);tp(ks,'TP451','KEY_TAIL',330,145)
     ks.text('RCtailtau33ms; actualholddependsdiodedrop/HC14hysteresis. Benchqualify10-80mshold,\nlongerthanthe3-8msRFdecay. ShorterfallcanclipRF; excessiveholdraisesidle/leakage.\nARMlow>=20ms clearsmemory. Afterarming wait>=250msbeforefirstkey, thenverifysettleddrain.\nA fault bypassesgracefuldecay: PApermission/driver/railoff immediately.\nRFcalculation usesgatechargefortheentire20%scheduledslot, notonlyCWmarktime.',15,210,1.27)
 
@@ -463,9 +480,11 @@ def build():
     for i,net in enumerate(['FOX_SUM','FOX_PAD_IN','RF_FOX','GND']):tp(s,'TP'+str(510+i),net,35+i*75,237)
     s.text('J502 reference plane: pin1 RF/pin2 definedreturn; use shorttwistedpair coaxadapter sharedfixture.\nCompactaccessory: ~30 cmradiator+definedcompactreturn; tune independentloading/couplingcartridge.\nStartingTinyFoxreference100uH plus1.6-15pF; effectiveC5-15pF mayrequire134-402uH.\nExact30cm geometry/tap/coil/capvalues OPEN untilantenna impedance measurement; no Classicwire substitute.\nNominal10mW in50ohm and30maudible/250minaudible are TWO distinct acceptance tests.',15,252,1.05)
     # Explicit downstream power flags identify passive/switched supply origins.
-    for sname,net,x,y in [('05_power','VPA',40,255),('05_power','VIN_PA',140,255),('07_current_thermal','VPA_LOAD',240,260),('10_fox_rf','VFOX',380,215)]:
+    for sname,net,x,y in [('05_power','VPA',40,255),('05_power','VIN_PA',140,255),('07_current_thermal','VPA_LOAD',240,260),('10_fox_rf','VFOX',380,215),('08_normal_rf','VDRV',390,140)]:
         sh=next(ss for ss in d.sheets if ss.name==sname)
         sh.place('#FLG'+str(len(d.parts)),'PWR_FLAG','PWR_FLAG',{'1':net},x,y,'','','test','NORMAL' if net!='VFOX' else 'BOTH',price={'1':0},evidence='BOARD_FEATURE')
+    normal_refs={'U312','R311','R312','C310','R317','R318','R324','R325','R326','R327','R328','R329','R334','R335','R337','R338','R339','R340','TH301'}
+    for ref in normal_refs:d.parts[ref]['population']='NORMAL'
     return d
 
 def footprints():
@@ -504,21 +523,20 @@ def cost_workbook(d):
             for key in ('price_breaks_eur','supplier','supplier_part_number','availability','source_url'):
                 p[key]=copy.deepcopy(previous[key])
             p['evidence']='OBSERVED_M2';p['note']+=' Dated M2 distributor observation; no fresh basket verification.'
-        if p['ref']=='U224' or p['ref']=='C233':p['population']='NORMAL'
         if p['ref']=='U313':p['evidence']='MIXED_ESTIMATE';p['note']+=' Quantity10EUR0.70 isESTIMATE; EUR0.96 at1 observed.'
         if p['ref']=='U203':
             p['price_breaks_eur']={'1':.172,'10':.118,'25':.104,'100':.086};p['evidence']='OBSERVED_M3';p['source_url']='https://www.mouser.es/ProductDetail/Nexperia/74HC14D653?qs=P62ublwmbi8OHaKXqv2GmQ%3D%3D';p['availability']='Mouser indexed862904; actualbasketOPEN'
         if p['ref']=='U211':
             p['price_breaks_eur']={'1':.241,'10':.166,'25':.148,'100':.127};p['evidence']='OBSERVED_M3';p['availability']='IndexedCanada18895,EURSpainprice; localizedbasketOPEN'
-        if p['ref'] in ('U202','U212','U213','U222','U223','U224'):
+        if p['ref'] in ('U202','U212','U213','U222','U223'):
             # Mandatory actual1/10/25 breaks, not a ten-piece price applied at1.
             p['evidence']='OBSERVED_M2'
             if p['mpn'] not in known:
                 p['price_breaks_eur']=({'1':.172,'10':.103,'100':.081}if p['ref']=='U212' else p['price_breaks_eur'])
                 p['availability']='M2 indexedNexperia SOICstock; exactcurrentcut-tapebasketOPEN'
     sets={
-      'Full module components':[p for p in parts if p['population']!='DNP'],
-      'Foxoring-only components':[p for p in parts if p['population']=='BOTH' and p['ref']!='TH301']+[dict(next(p for p in parts if p['ref']=='R336'),population='FOX')],
+      'Full module components':[p for p in parts if p['population'] in ('BOTH','NORMAL')],
+      'Foxoring-only components':[p for p in parts if p['population'] in ('BOTH','FOX')],
       'RF final transistor alone':[p for p in parts if p['ref']=='Q402'],
       'RF power stage: final + gate links/bleed + transformer':[p for p in parts if p['ref'] in ('Q402','R403','R404','T401')],
       'Normal stage + drive/shaper/filter/supply/input and output hardware': [p for p in parts if p['group'] in ('normal_final','normal_driver','normal_shaper','normal_filter','normal_supply') or p['ref'] in ('F301','D301','D302','J301','J401','C301','C302','C314')],
@@ -545,7 +563,7 @@ def cost_workbook(d):
     output=ROOT/'docs/M3_80M_COSTS.json';output.write_text(json.dumps({'date':DATE,'currency':'EUR NET; VAT separate','status':'Engineering candidate, not released ordering list','scopes':results},indent=2)+'\n')
     fields=['scope','batch','ref','value','mpn','footprint','group','population','supplier','supplier_part_number','evidence','availability','source_url','moq','multiple','needed_mpn','ordered_mpn','leftover_mpn','price_break','unit_price_eur','line_per_unit_eur','note']
     with (ROOT/'docs/M3_80M_BOM.csv').open('w')as f:
-        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(csvrows)
+        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(csvrows)
     out=['# M3A component workbook','',f'Date: {DATE}. EUR net. **Candidate, no ordering authorization.** Estimates are unquoted; observed rows retain index/date/localization limits. Repeated MPN order quantities are purchase pools: sum line_per_unit_eur, never repeated ordered_mpn.', '', '| Scope | 6 EUR/unit | 10 | 20 | Observed / estimate at ten |','| --- | ---: | ---: | ---: | --- |']
     for name,rr in results.items():out.append(f"| {name} | {rr['6']['per_unit_eur']:.2f} | {rr['10']['per_unit_eur']:.2f} | {rr['20']['per_unit_eur']:.2f} | {rr['10']['observed_per_unit_eur']:.2f} / {rr['10']['estimate_per_unit_eur']:.2f} |")
     out+=['','Full scope includes all populated PCB connectors. Excludes bare PCB, sinks/insulators, battery, antenna accessories, wiring/harness mates, enclosure, charging, labor and shared instruments; these are separately budgeted in [BOM review](M3_80M_BOM.md).','', '| Group / full module | 6 | 10 | 20 |','| --- | ---: | ---: | ---: |']

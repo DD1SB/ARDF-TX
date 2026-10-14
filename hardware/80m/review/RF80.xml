@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/home/stefan/src/ardf-tx/hardware/80m/RF80.kicad_sch</source>
-    <date>2026-10-14T17:03:21</date>
+    <date>2026-10-14T21:44:57</date>
     <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>ARDF-TX 80 m RF module</title>
         <company>ARDF-TX / review only</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>RF80.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,7 +26,7 @@
       <title_block>
         <title>01 Controller interface and local source</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>01_source_interface.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -44,7 +44,7 @@
       <title_block>
         <title>02 Autonomous lease, inhibit and rearm</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>02_interlocks.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -58,11 +58,11 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="4" name="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/">
+    <sheet number="4" name="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/">
       <title_block>
-        <title>03 Permission logic and latched power modes</title>
+        <title>03 Reduced permission logic and population-specific guards</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>03_safety_logic.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -76,11 +76,11 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="5" name="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/">
+    <sheet number="5" name="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/">
       <title_block>
-        <title>04 Rearm latch, selected rails and key permits</title>
+        <title>04 Deliberate rearm, witnessed heartbeat and captured configuration</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>04_arm_key.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -98,7 +98,7 @@
       <title_block>
         <title>05 4S input, one buck and independent rail isolation</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>05_power.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -116,7 +116,7 @@
       <title_block>
         <title>06 Reference, pack voltage and thermal/current trips</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>06_analog_protection.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -134,7 +134,7 @@
       <title_block>
         <title>06b Independent threshold dividers</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>06b_thresholds.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -152,7 +152,7 @@
       <title_block>
         <title>07 PA current trip and case-temperature interlock</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>07_current_thermal.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -170,7 +170,7 @@
       <title_block>
         <title>08 Proven normal RF core and QCX-derived drain shaping</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>08_normal_rf.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -188,7 +188,7 @@
       <title_block>
         <title>08b Shared key-tail and disarm reset</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>08b_key_tail.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -206,7 +206,7 @@
       <title_block>
         <title>09 Original 80 m elliptic filter and normal port</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>09_normal_filter.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -224,7 +224,7 @@
       <title_block>
         <title>10 Independent Foxoring shaper and rail-following clock buffer</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>10_fox_rf.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -242,7 +242,7 @@
       <title_block>
         <title>11 Separate Foxoring filter, calibration pad and protected compact port</title>
         <company>ARDF-TX</company>
-        <rev>M3A-R0</rev>
+        <rev>M3A-R1</rev>
         <date>2026-10-14</date>
         <source>11_fox_filter.kicad_sch</source>
         <comment number="1" value="Review schematic; no layout or ordering authorization"/>
@@ -1022,7 +1022,7 @@
         <field name="MPN">CC0805KKX7R9BB105</field>
         <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
-        <field name="Engineering_Note">t=KRC approx0.176s at K0.45; characterize 3.3V,tolerance,temperature. Hardware silence&lt;=250ms requirement.</field>
+        <field name="Engineering_Note">t=KRC approx0.165s at assumedK0.50; characterize 3.3V,tolerance,temperature. Hardware silence&lt;=250ms requirement.</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1031,7 +1031,7 @@
       <property name="MPN" value="CC0805KKX7R9BB105"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="t=KRC approx0.176s at K0.45; characterize 3.3V,tolerance,temperature. Hardware silence&lt;=250ms requirement."/>
+      <property name="Engineering_Note" value="t=KRC approx0.165s at assumedK0.50; characterize 3.3V,tolerance,temperature. Hardware silence&lt;=250ms requirement."/>
       <property name="Sheetname" value="02 Autonomous lease, inhibit and rearm"/>
       <property name="Sheetfile" value="02_interlocks.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1054,7 +1054,7 @@
         <field name="MPN">CC0603KRX7R8BB104</field>
         <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
-        <field name="Engineering_Note">Approx2ms quiet delay; every falling SCL edge triggers; test actual bound. Dated M2 distributor observation; no fresh basket verification.</field>
+        <field name="Engineering_Note">Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound. Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1063,7 +1063,7 @@
       <property name="MPN" value="CC0603KRX7R8BB104"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="Approx2ms quiet delay; every falling SCL edge triggers; test actual bound. Dated M2 distributor observation; no fresh basket verification."/>
+      <property name="Engineering_Note" value="Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound. Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="02 Autonomous lease, inhibit and rearm"/>
       <property name="Sheetfile" value="02_interlocks.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1274,23 +1274,23 @@
       </units>
     </comp>
     <comp ref="Q201">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
-        <field name="Engineering_Note">Open-drain status; unarmed, not only faults. Pull on controller rail. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note">Open-drain status; unarmed, not only faults. Pull on controller rail. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="Open-drain status; unarmed, not only faults. Pull on controller rail. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value="Open-drain status; unarmed, not only faults. Pull on controller rail. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="02 Autonomous lease, inhibit and rearm"/>
       <property name="Sheetfile" value="02_interlocks.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -1308,10 +1308,10 @@
       </units>
     </comp>
     <comp ref="R201">
-      <value>390k</value>
+      <value>330k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">RC0603FR-07390KL</field>
+        <field name="MPN">RC0603FR-07330KL</field>
         <field name="Population">BOTH</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
@@ -1320,7 +1320,7 @@
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-07390KL"/>
+      <property name="MPN" value="RC0603FR-07330KL"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
@@ -1513,7 +1513,7 @@
       <property name="ki_keywords" value="HCMOS not inverter"/>
       <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
       <sheetpath names="/02 Autonomous lease, inhibit and rearm/" tstamps="/6cadfc8c-987d-58e8-9a40-f63c9c9b46cf/"/>
-      <tstamps>f2dc1b97-2efa-58bd-a3b6-6c82fa73835d d2b793a9-e023-54df-8488-3e497535dc17 f85a864b-04fe-5ddd-bd44-8155c121633e b90718ee-b296-5b39-8e62-06bdca9937ed aa10f6f4-e6d2-5986-a8a2-b64aad769421 71d98889-7c4a-5884-8d09-71fd7245c391 38b30e35-2f09-5909-bde4-fe5c6cba86a8</tstamps>
+      <tstamps>f2dc1b97-2efa-58bd-a3b6-6c82fa73835d f85a864b-04fe-5ddd-bd44-8155c121633e d2b793a9-e023-54df-8488-3e497535dc17 b90718ee-b296-5b39-8e62-06bdca9937ed aa10f6f4-e6d2-5986-a8a2-b64aad769421 71d98889-7c4a-5884-8d09-71fd7245c391 38b30e35-2f09-5909-bde4-fe5c6cba86a8</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1576,44 +1576,12 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
       <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
       <tstamps>7dd397c9-3b57-57a5-9017-537bda61a5bd</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C221">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="MPN">CC0603KRX7R8BB104</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">decoupling</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="CC0603KRX7R8BB104"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="decoupling"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
-      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>a6cc465f-9d92-5e10-a5aa-769c9846cdc3</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1640,11 +1608,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
       <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
       <tstamps>e3ac5f5c-e111-5ab9-9950-29a0c96735fa</tstamps>
       <units>
         <unit name="A">
@@ -1655,29 +1623,323 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C223">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    <comp ref="D219">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
       <fields>
-        <field name="MPN">CC0603KRX7R8BB104</field>
+        <field name="MPN">BAT54WS-7-F</field>
         <field name="Population">BOTH</field>
-        <field name="Function">decoupling</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">AND reset/POR with direct UV open collector; a low POR sinks through diode. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="AND reset/POR with direct UV open collector; a low POR sinks through diode. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>7371af2b-2279-59f0-b366-3e233c1aae1c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D220">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Independent open-drain request-withdrawal faults may clamp RESET_N; CMOS CLR_CORE_N is isolated. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Independent open-drain request-withdrawal faults may clamp RESET_N; CMOS CLR_CORE_N is isolated. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>358b31da-60dd-51ba-8844-62498aca45fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D221">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Population">NORMAL</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Controller pack qualification AND local analog trips. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="NORMAL"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Controller pack qualification AND local analog trips. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>ec99c37c-87dc-5aba-b03c-26e5020f124f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D222">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Population">NORMAL</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Compact accessory present inhibits the watt path. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="NORMAL"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Compact accessory present inhibits the watt path. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>a78d1036-7738-54c8-9cce-2192e3a8c807</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D223">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Diode OR allows the low path when PA request is absent. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Diode OR allows the low path when PA request is absent. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>9eb654a8-2cbf-5140-b034-698632a60c34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D224">
+      <value>BAT54WS-7-F</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Diode OR requires all watt guards when PA request is present. pin1K/pin2A; price estimate, MOQ1 assumed.</field>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="BAT54WS" description="Diode"/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Diode OR requires all watt guards when PA request is present. pin1K/pin2A; price estimate, MOQ1 assumed."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>c8172f16-2c26-5615-8ed9-33686ff87b03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R219">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-072K2L</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
-      <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="CC0603KRX7R8BB104"/>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-072K2L"/>
       <property name="Population" value="BOTH"/>
-      <property name="Function" value="decoupling"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
       <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>4571d126-c8bb-575f-ab8a-fefca76d12d7</tstamps>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>31434108-83d2-59ce-bd93-e542badd040d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R220">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-072K2L</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-072K2L"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>d1567a46-5cb9-52b1-b6e7-39ea95468a41</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R225">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>32e7946f-50fb-5757-a1dc-f82b918e164d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R228">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603JR-070RL</field>
+        <field name="Population">FOX</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Fox-only: forces watt guard invalid. Full population MUST omit this link.</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603JR-070RL"/>
+      <property name="Population" value="FOX"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Fox-only: forces watt guard invalid. Full population MUST omit this link."/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
+      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>e327e6a4-dfe9-56a7-8e49-130e92181e6f</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1705,12 +1967,12 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
       <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
       <property name="ki_keywords" value="TTL And4"/>
       <property name="ki_fp_filters" value="DIP?14*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>fa818b38-dca8-57a9-a3ce-54d609b48a79 547765a5-0252-52d9-8cd0-08da8c29ca3d 20f5130b-668b-538c-92df-aeb6355fad33</tstamps>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>547765a5-0252-52d9-8cd0-08da8c29ca3d fa818b38-dca8-57a9-a3ce-54d609b48a79 20f5130b-668b-538c-92df-aeb6355fad33</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1756,134 +2018,12 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
+      <property name="Sheetname" value="03 Reduced permission logic and population-specific guards"/>
       <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
       <property name="ki_keywords" value="HCMOS nand 2-input"/>
       <property name="ki_fp_filters" value="DIP*W7.62mm* SO14*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>81a7e381-70fa-5da0-b52a-091a9ac07372 27528acc-95b4-5ab3-9036-f2b7ac161b86 1d1813af-272c-5bec-8b97-6dfa97d2730b 487a6043-4070-5e01-936f-8170240e99f0 10a9d144-40a8-5760-945b-582c52107cf3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-            <pin num="3"/>
-          </pins>
-        </unit>
-        <unit name="B">
-          <pins>
-            <pin num="4"/>
-            <pin num="5"/>
-            <pin num="6"/>
-          </pins>
-        </unit>
-        <unit name="C">
-          <pins>
-            <pin num="9"/>
-            <pin num="10"/>
-            <pin num="8"/>
-          </pins>
-        </unit>
-        <unit name="D">
-          <pins>
-            <pin num="12"/>
-            <pin num="13"/>
-            <pin num="11"/>
-          </pins>
-        </unit>
-        <unit name="E">
-          <pins>
-            <pin num="14"/>
-            <pin num="7"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="U213">
-      <value>74HC08D,653</value>
-      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT08.pdf</datasheet>
-      <fields>
-        <field name="MPN">74HC08D,653</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">interlocks</field>
-        <field name="Engineering_Note">CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
-        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT08.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="74HC08" description="Quad And2"/>
-      <property name="MPN" value="74HC08D,653"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
-      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
-      <property name="ki_keywords" value="TTL and2"/>
-      <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>9f5cb06e-0ab6-59b2-bed4-553479b49055 b4e2d3de-ee80-51d8-8a4a-302576cbcb0b 839322dd-2a6d-5cd3-9ac8-9847cac4a4e6 53ee352a-f10f-57b2-97b1-017b8d3a9301 45ff58d7-16b4-545d-88b2-07face4f067a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-            <pin num="3"/>
-          </pins>
-        </unit>
-        <unit name="B">
-          <pins>
-            <pin num="4"/>
-            <pin num="5"/>
-            <pin num="6"/>
-          </pins>
-        </unit>
-        <unit name="C">
-          <pins>
-            <pin num="9"/>
-            <pin num="10"/>
-            <pin num="8"/>
-          </pins>
-        </unit>
-        <unit name="D">
-          <pins>
-            <pin num="12"/>
-            <pin num="13"/>
-            <pin num="11"/>
-          </pins>
-        </unit>
-        <unit name="E">
-          <pins>
-            <pin num="14"/>
-            <pin num="7"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="U214">
-      <value>74HC32D,653</value>
-      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf</datasheet>
-      <fields>
-        <field name="MPN">74HC32D,653</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">interlocks</field>
-        <field name="Engineering_Note">CMOS 3.3 V. Supply unit and all unused gates explicitly connected.</field>
-        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
-        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="74HC32" description="Quad 2-input OR"/>
-      <property name="MPN" value="74HC32D,653"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected."/>
-      <property name="Sheetname" value="03 Permission logic and latched power modes"/>
-      <property name="Sheetfile" value="03_safety_logic.kicad_sch"/>
-      <property name="ki_keywords" value="TTL Or2"/>
-      <property name="ki_fp_filters" value="DIP?14*"/>
-      <sheetpath names="/03 Permission logic and latched power modes/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
-      <tstamps>70cf68bc-84f3-54a4-bf7c-a084ff874af7 2a7a4829-5a97-5985-83dd-30c383b99c84 76df5ca1-d1cf-5826-96ff-74afbc4beccc b94b2004-a9f5-52d9-8e81-0e2a6034c97f 059c68e6-0db0-55d1-98b9-33d3144eaa6d</tstamps>
+      <sheetpath names="/03 Reduced permission logic and population-specific guards/" tstamps="/eb846655-e372-5549-945c-b3f61c9dbabc/"/>
+      <tstamps>81a7e381-70fa-5da0-b52a-091a9ac07372 1d1813af-272c-5bec-8b97-6dfa97d2730b 487a6043-4070-5e01-936f-8170240e99f0 27528acc-95b4-5ab3-9036-f2b7ac161b86 10a9d144-40a8-5760-945b-582c52107cf3</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1938,11 +2078,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>4676441d-0bac-5636-9555-a0b1dff7eb80</tstamps>
       <units>
         <unit name="A">
@@ -1970,11 +2110,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>e34be961-0687-5961-8336-2d5dfb03d09f</tstamps>
       <units>
         <unit name="A">
@@ -2002,11 +2142,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>87e25096-56b7-50c6-abc0-746ebd1fa5b1</tstamps>
       <units>
         <unit name="A">
@@ -2022,7 +2162,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">CC0603KRX7R8BB104</field>
-        <field name="Population">NORMAL</field>
+        <field name="Population">BOTH</field>
         <field name="Function">decoupling</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
@@ -2031,19 +2171,189 @@
       </fields>
       <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CC0603KRX7R8BB104"/>
-      <property name="Population" value="NORMAL"/>
+      <property name="Population" value="BOTH"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>f01a330f-6250-563e-bcc2-1e330878806d</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q225">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138BK,215"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
+      <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>52c32bf5-750b-5c72-b1e9-fe72a3fb745e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q226">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138BK,215"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
+      <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>c3235c14-2615-58f1-b520-3ae14c7caaea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q227">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138BK,215"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
+      <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>b27849b9-20e4-5953-bd0c-23b5bca4bd3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q228">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138BK,215"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
+      <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>6aa07a1b-dd96-52d6-a71f-50e35db05f93</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q229">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">BOTH</field>
+        <field name="Function">interlocks</field>
+        <field name="Engineering_Note">Request faults only when captured context valid. HEALTH MR clears acceptance, independently masking RF; no implicit rearm. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138BK,215"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Function" value="interlocks"/>
+      <property name="Engineering_Note" value="Request faults only when captured context valid. HEALTH MR clears acceptance, independently masking RF; no implicit rearm. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
+      <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>424c572d-0276-5eb2-ba77-946d8c6ae1ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
             <pin num="2"/>
           </pins>
         </unit>
@@ -2067,11 +2377,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="TTL And3"/>
       <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>ed794a6b-d51e-5620-9fbd-9d782c1ecedf 32c60aa0-6ed1-5462-baaf-29b41ef6d853 6a7fec6d-7398-5bc2-89f8-e225551e9056 0bc7b626-e6d7-5898-af93-938074706598</tstamps>
       <units>
         <unit name="A">
@@ -2124,12 +2434,12 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="TTL and2"/>
       <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
-      <tstamps>a3b45431-45f3-5f4e-b0b8-ffd8fb7c53c4 b41d633b-d40e-57bd-b870-be88a0a8b383 e468e21b-d50c-5b71-993e-5db9a0590d8f a15ddfd0-8db8-5140-8ad4-c931a47392c4 91dec939-d156-5f82-b64f-d9201e4b5e87</tstamps>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>a3b45431-45f3-5f4e-b0b8-ffd8fb7c53c4 e468e21b-d50c-5b71-993e-5db9a0590d8f a15ddfd0-8db8-5140-8ad4-c931a47392c4 b41d633b-d40e-57bd-b870-be88a0a8b383 91dec939-d156-5f82-b64f-d9201e4b5e87</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2185,11 +2495,11 @@
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
       <property name="ki_keywords" value="TTL DFF"/>
       <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
       <tstamps>bde5f023-0bf5-55d0-99d9-48e9b6ced12d 89bd4e95-4313-5a14-99eb-eb54ab0a5968 2367c6ea-e1d5-59f4-9d77-4eca9c7d1859</tstamps>
       <units>
         <unit name="A">
@@ -2221,54 +2531,48 @@
       </units>
     </comp>
     <comp ref="U224">
-      <value>74HC74D,653</value>
-      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf</datasheet>
+      <value>74HC174D,653</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf</datasheet>
       <fields>
-        <field name="MPN">74HC74D,653</field>
-        <field name="Population">NORMAL</field>
+        <field name="MPN">74HC174D,653</field>
+        <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
-        <field name="Engineering_Note">CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
-        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf</field>
+        <field name="Engineering_Note">CMOS 3.3 V. Supply unit and all unused gates explicitly connected.</field>
+        <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="ARDF_TX" part="74HC74" description="Dual D Flip-flop, Set &amp; Reset"/>
-      <property name="MPN" value="74HC74D,653"/>
-      <property name="Population" value="NORMAL"/>
+      <libsource lib="ARDF_TX" part="74HC174" description="Hex D-type Flip-Flop, reset"/>
+      <property name="MPN" value="74HC174D,653"/>
+      <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="04 Rearm latch, selected rails and key permits"/>
+      <property name="Engineering_Note" value="CMOS 3.3 V. Supply unit and all unused gates explicitly connected."/>
+      <property name="Sheetname" value="04 Deliberate rearm, witnessed heartbeat and captured configuration"/>
       <property name="Sheetfile" value="04_arm_key.kicad_sch"/>
-      <property name="ki_keywords" value="TTL DFF"/>
-      <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
-      <sheetpath names="/04 Rearm latch, selected rails and key permits/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
-      <tstamps>d9133661-9042-516f-be51-fb301f09d17e b936a6ce-2063-5b5e-89e6-14e7ce938405 492c2c43-c1e2-5ecc-88f3-75ca5fe95efa</tstamps>
+      <property name="ki_keywords" value="TTL REG REG6 DFF"/>
+      <property name="ki_fp_filters" value="DIP?16*"/>
+      <sheetpath names="/04 Deliberate rearm, witnessed heartbeat and captured configuration/" tstamps="/2564cd7a-d73b-5f5d-b6c6-cd990e68387d/"/>
+      <tstamps>d9133661-9042-516f-be51-fb301f09d17e</tstamps>
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="3"/>
             <pin num="4"/>
-            <pin num="1"/>
-            <pin num="5"/>
             <pin num="6"/>
-          </pins>
-        </unit>
-        <unit name="B">
-          <pins>
-            <pin num="12"/>
             <pin num="11"/>
-            <pin num="10"/>
             <pin num="13"/>
-            <pin num="9"/>
-            <pin num="8"/>
-          </pins>
-        </unit>
-        <unit name="C">
-          <pins>
             <pin num="14"/>
+            <pin num="9"/>
+            <pin num="1"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="5"/>
             <pin num="7"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="15"/>
           </pins>
         </unit>
       </units>
@@ -2434,22 +2738,22 @@
       </units>
     </comp>
     <comp ref="C306">
-      <value>1n</value>
+      <value>4.7n</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">CC0603JRNPO9BN102</field>
+        <field name="MPN">CC0603JRNPO9BN472</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_supply</field>
-        <field name="Engineering_Note">Slew timing starter, measure real charge current and disable discharge.</field>
+        <field name="Engineering_Note">4.7n slows initial47uFdrivercharge; measure inrush belowOC threshold and outputsettling. OFF latency is separately&lt;=20us gate.</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="CC0603JRNPO9BN102"/>
+      <property name="MPN" value="CC0603JRNPO9BN472"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_supply"/>
-      <property name="Engineering_Note" value="Slew timing starter, measure real charge current and disable discharge."/>
+      <property name="Engineering_Note" value="4.7n slows initial47uFdrivercharge; measure inrush belowOC threshold and outputsettling. OFF latency is separately&lt;=20us gate."/>
       <property name="Sheetname" value="05 4S input, one buck and independent rail isolation"/>
       <property name="Sheetfile" value="05_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2628,23 +2932,23 @@
       </units>
     </comp>
     <comp ref="Q301">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_supply</field>
-        <field name="Engineering_Note"> 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_supply"/>
-      <property name="Engineering_Note" value=" 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="05 4S input, one buck and independent rail isolation"/>
       <property name="Sheetfile" value="05_power.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -2662,23 +2966,23 @@
       </units>
     </comp>
     <comp ref="Q302">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_supply</field>
-        <field name="Engineering_Note"> 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_supply"/>
-      <property name="Engineering_Note" value=" 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="05 4S input, one buck and independent rail isolation"/>
       <property name="Sheetfile" value="05_power.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -2998,7 +3302,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">CC0603KRX7R8BB104</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">decoupling</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
@@ -3007,7 +3311,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CC0603KRX7R8BB104"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3062,7 +3366,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">CC0603KRX7R8BB104</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">decoupling</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
@@ -3071,7 +3375,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CC0603KRX7R8BB104"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="decoupling"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3158,7 +3462,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-071K5L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3167,7 +3471,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-071K5L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3190,7 +3494,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-071KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3199,7 +3503,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-071KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3281,55 +3585,23 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R320">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
-      <property name="Sheetfile" value="06_analog_protection.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/06 Reference, pack voltage and thermal/current trips/" tstamps="/c2031074-328b-5c80-8a77-3788080808c2/"/>
-      <tstamps>d2f0a2b2-213f-549a-86ea-1613c0f8c96a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R321">
-      <value>10k</value>
+      <value>2.2k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="MPN">RC0603FR-072K2L</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
+        <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="MPN" value="RC0603FR-072K2L"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
+      <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
       <property name="Sheetfile" value="06_analog_protection.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3345,76 +3617,12 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R322">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
-      <property name="Sheetfile" value="06_analog_protection.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/06 Reference, pack voltage and thermal/current trips/" tstamps="/c2031074-328b-5c80-8a77-3788080808c2/"/>
-      <tstamps>4d753833-8cf1-53b2-976e-1e22d0c7fd89</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R323">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
-        <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
-      <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
-      <property name="Sheetfile" value="06_analog_protection.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/06 Reference, pack voltage and thermal/current trips/" tstamps="/c2031074-328b-5c80-8a77-3788080808c2/"/>
-      <tstamps>e5805ba1-e90f-5a82-87fe-4dffbb214364</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R324">
       <value>309k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-07309KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3423,7 +3631,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-07309KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3446,7 +3654,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3455,7 +3663,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3513,7 +3721,7 @@
       <datasheet>https://www.ti.com/lit/ds/symlink/lm339b.pdf</datasheet>
       <fields>
         <field name="MPN">LM339BIDR</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
@@ -3522,7 +3730,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="LM339" description="Quad Differential Comparators, SOIC-14/TSSOP-14"/>
       <property name="MPN" value="LM339BIDR"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06 Reference, pack voltage and thermal/current trips"/>
@@ -3530,7 +3738,7 @@
       <property name="ki_keywords" value="cmp open collector"/>
       <property name="ki_fp_filters" value="SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"/>
       <sheetpath names="/06 Reference, pack voltage and thermal/current trips/" tstamps="/c2031074-328b-5c80-8a77-3788080808c2/"/>
-      <tstamps>6abd101b-c3c4-5c16-8986-15320cab4a81 fd2b2f1b-d5ee-59cd-89dd-0729f5c95d1d 296683d7-b8ec-52ac-9980-b4b2558d0c85 379233ed-af1b-565c-8b1a-0d76e9b6aada 25520be6-42dd-5e8a-9c11-764f5308eebe</tstamps>
+      <tstamps>6abd101b-c3c4-5c16-8986-15320cab4a81 296683d7-b8ec-52ac-9980-b4b2558d0c85 379233ed-af1b-565c-8b1a-0d76e9b6aada fd2b2f1b-d5ee-59cd-89dd-0729f5c95d1d 25520be6-42dd-5e8a-9c11-764f5308eebe</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -3669,7 +3877,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0761K9L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3678,7 +3886,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0761K9L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -3701,7 +3909,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3710,7 +3918,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -3733,7 +3941,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0778K7L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3742,7 +3950,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0778K7L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -3765,7 +3973,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3774,7 +3982,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -3797,7 +4005,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0769K8L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3806,7 +4014,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0769K8L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -3829,7 +4037,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -3838,7 +4046,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="06b Independent threshold dividers"/>
@@ -4117,7 +4325,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note">Shared default0V OC input with sensor DNP; valid only when watt stage DNP. Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4126,7 +4334,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value="Shared default0V OC input with sensor DNP; valid only when watt stage DNP. Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4149,7 +4357,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note">Pull from bounded&lt;1.0V reference keeps comparator inputs in range at cold/open NTC. Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4158,7 +4366,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value="Pull from bounded&lt;1.0V reference keeps comparator inputs in range at cold/open NTC. Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4176,45 +4384,12 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R336">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">DNP</field>
-        <field name="Function">protection</field>
-        <field name="Engineering_Note">Fox-only substitutes TH301 with this resistor; never populate both on full module. Dated M2 distributor observation; no fresh basket verification.</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="DNP"/>
-      <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value="Fox-only substitutes TH301 with this resistor; never populate both on full module. Dated M2 distributor observation; no fresh basket verification."/>
-      <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
-      <property name="Sheetfile" value="07_current_thermal.kicad_sch"/>
-      <property name="dnp"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/07 PA current trip and case-temperature interlock/" tstamps="/afa08fea-13ca-5dce-b158-0e5f1a50160c/"/>
-      <tstamps>5f588d22-ae6d-5d5d-9328-5d899380b989</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R337">
       <value>60.4k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0760K4L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4223,7 +4398,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0760K4L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4246,7 +4421,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4255,7 +4430,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4278,7 +4453,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-071K3L</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"/>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4287,7 +4462,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-071K3L"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=""/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4310,7 +4485,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
         <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
@@ -4319,7 +4494,7 @@
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
       <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
@@ -4337,29 +4512,29 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R341">
-      <value>10k</value>
+    <comp ref="R348">
+      <value>0</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="MPN">RC0603JR-070RL</field>
+        <field name="Population">FOX</field>
         <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
+        <field name="Engineering_Note">Unused LM393 half input low in Fox-only; full DNP.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="MPN" value="RC0603JR-070RL"/>
+      <property name="Population" value="FOX"/>
       <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
+      <property name="Engineering_Note" value="Unused LM393 half input low in Fox-only; full DNP."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
       <property name="Sheetfile" value="07_current_thermal.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/07 PA current trip and case-temperature interlock/" tstamps="/afa08fea-13ca-5dce-b158-0e5f1a50160c/"/>
-      <tstamps>df75bc54-b69a-515b-b004-9b203c26289d</tstamps>
+      <tstamps>11c9d222-ee0a-5a11-a8b7-6c267e7f8027</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -4369,29 +4544,29 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R342">
-      <value>10k</value>
+    <comp ref="R349">
+      <value>0</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
-        <field name="Population">BOTH</field>
+        <field name="MPN">RC0603JR-070RL</field>
+        <field name="Population">FOX</field>
         <field name="Function">protection</field>
-        <field name="Engineering_Note"> Dated M2 distributor observation; no fresh basket verification.</field>
+        <field name="Engineering_Note">Unused LM393 half input low in Fox-only; full DNP.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Population" value="BOTH"/>
+      <property name="MPN" value="RC0603JR-070RL"/>
+      <property name="Population" value="FOX"/>
       <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value=" Dated M2 distributor observation; no fresh basket verification."/>
+      <property name="Engineering_Note" value="Unused LM393 half input low in Fox-only; full DNP."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
       <property name="Sheetfile" value="07_current_thermal.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/07 PA current trip and case-temperature interlock/" tstamps="/afa08fea-13ca-5dce-b158-0e5f1a50160c/"/>
-      <tstamps>0a4ab68f-c18e-565b-9cdf-48c4bdf59ad0</tstamps>
+      <tstamps>cee59085-c554-5b43-91a2-3df9d14f2e5d</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -4407,18 +4582,18 @@
       <datasheet>https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB</datasheet>
       <fields>
         <field name="MPN">NCP18XH103F03RB</field>
-        <field name="Population">BOTH</field>
+        <field name="Population">NORMAL</field>
         <field name="Function">protection</field>
-        <field name="Engineering_Note">B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only fit fixed10k instead via R336.</field>
+        <field name="Engineering_Note">B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only DNP; normal PA and thermal sensing absent; unused dual-comparator inputs grounded via R348/R349.</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="Thermistor_NTC" description="Temperature dependent resistor, negative temperature coefficient"/>
       <property name="MPN" value="NCP18XH103F03RB"/>
-      <property name="Population" value="BOTH"/>
+      <property name="Population" value="NORMAL"/>
       <property name="Function" value="protection"/>
-      <property name="Engineering_Note" value="B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only fit fixed10k instead via R336."/>
+      <property name="Engineering_Note" value="B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only DNP; normal PA and thermal sensing absent; unused dual-comparator inputs grounded via R348/R349."/>
       <property name="Sheetname" value="07 PA current trip and case-temperature interlock"/>
       <property name="Sheetfile" value="07_current_thermal.kicad_sch"/>
       <property name="ki_keywords" value="thermistor NTC resistor sensor RTD"/>
@@ -4613,24 +4788,57 @@
         </unit>
       </units>
     </comp>
-    <comp ref="Q401">
-      <value>DMN2056U-7</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+    <comp ref="C404">
+      <value>47u / 25V</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.9</footprint>
+      <datasheet>https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">25SVPF47M</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_driver</field>
-        <field name="Engineering_Note"> 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note">Panasonic polymer47u25V +/-20%,30mohm max100kHz20C;235uA leakage max. C6 maker land gap2.1/outer9.1/width1.6 agrees native pads. Cmin37.6u, ESR&lt;=0.5ohm over0-50C and isolation&lt;=20us must qualify; no safety proof from ideal RC.</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x5.9</field>
+        <field name="Datasheet">https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="25SVPF47M"/>
+      <property name="Population" value="NORMAL"/>
+      <property name="Function" value="normal_driver"/>
+      <property name="Engineering_Note" value="Panasonic polymer47u25V +/-20%,30mohm max100kHz20C;235uA leakage max. C6 maker land gap2.1/outer9.1/width1.6 agrees native pads. Cmin37.6u, ESR&lt;=0.5ohm over0-50C and isolation&lt;=20us must qualify; no safety proof from ideal RC."/>
+      <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
+      <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/08 Proven normal RF core and QCX-derived drain shaping/" tstamps="/097f71b4-ce62-57fe-87b9-02666d86e55f/"/>
+      <tstamps>734a5a6a-82e3-5acb-809f-b0c726be2d37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q401">
+      <value>BSS138BK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
+      <fields>
+        <field name="MPN">BSS138BK,215</field>
+        <field name="Population">NORMAL</field>
+        <field name="Function">normal_driver</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_driver"/>
-      <property name="Engineering_Note" value=" 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
       <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -4722,7 +4930,7 @@
         <field name="MPN">DMN2056U-7</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_shaper</field>
-        <field name="Engineering_Note"> 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note"> 45mohm at2.5V, +/-8VGS; retained for70mA shaper base sink.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
         <field name="Description"/>
@@ -4731,7 +4939,7 @@
       <property name="MPN" value="DMN2056U-7"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_shaper"/>
-      <property name="Engineering_Note" value=" 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value=" 45mohm at2.5V, +/-8VGS; retained for70mA shaper base sink."/>
       <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
       <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -4749,23 +4957,23 @@
       </units>
     </comp>
     <comp ref="Q405">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">NORMAL</field>
         <field name="Function">normal_driver</field>
-        <field name="Engineering_Note">Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note">Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="NORMAL"/>
       <property name="Function" value="normal_driver"/>
-      <property name="Engineering_Note" value="Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value="Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
       <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -5038,6 +5246,70 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R409">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Population">NORMAL</field>
+        <field name="Function">normal_driver</field>
+        <field name="Engineering_Note">Deterministic intermediate source bias; inhibit FETs now +/-20VGS rated.</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Population" value="NORMAL"/>
+      <property name="Function" value="normal_driver"/>
+      <property name="Engineering_Note" value="Deterministic intermediate source bias; inhibit FETs now +/-20VGS rated."/>
+      <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
+      <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/08 Proven normal RF core and QCX-derived drain shaping/" tstamps="/097f71b4-ce62-57fe-87b9-02666d86e55f/"/>
+      <tstamps>6e0937b7-93d1-546a-a5c5-7e5b2ac78d46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R410">
+      <value>4.7</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <fields>
+        <field name="MPN">CRCW25124R70FKEG</field>
+        <field name="Population">NORMAL</field>
+        <field name="Function">normal_driver</field>
+        <field name="Engineering_Note">1W/pulse-rated candidate; with C404 limits driver dV/dt during buck failure. Pulse energy/part qualification OPEN.</field>
+        <field name="Footprint">Resistor_SMD:R_2512_6332Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ARDF_TX" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW25124R70FKEG"/>
+      <property name="Population" value="NORMAL"/>
+      <property name="Function" value="normal_driver"/>
+      <property name="Engineering_Note" value="1W/pulse-rated candidate; with C404 limits driver dV/dt during buck failure. Pulse energy/part qualification OPEN."/>
+      <property name="Sheetname" value="08 Proven normal RF core and QCX-derived drain shaping"/>
+      <property name="Sheetfile" value="08_normal_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/08 Proven normal RF core and QCX-derived drain shaping/" tstamps="/097f71b4-ce62-57fe-87b9-02666d86e55f/"/>
+      <tstamps>d3d53708-1de6-5e91-af02-2130f441a3a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="T401">
       <value>9T + 9T bifilar / FT-50A-43</value>
       <footprint>ARDF_TX:FT50A43_Bifilar_4Terminal</footprint>
@@ -5297,23 +5569,23 @@
       </units>
     </comp>
     <comp ref="Q406">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
-        <field name="Engineering_Note">100usRCdischargeresetskeymemorywhileunarmed; preventsrearmstartupdrivefromlastmark. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note">10usresetRCclampsrawKEYevenifheldhigh; KEYhighcannotarm. Verify thresholds/leakage attemperature. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
-      <property name="Engineering_Note" value="100usRCdischargeresetskeymemorywhileunarmed; preventsrearmstartupdrivefromlastmark. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value="10usresetRCclampsrawKEYevenifheldhigh; KEYhighcannotarm. Verify thresholds/leakage attemperature. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="08b Shared key-tail and disarm reset"/>
       <property name="Sheetfile" value="08b_key_tail.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -5395,10 +5667,10 @@
       </units>
     </comp>
     <comp ref="R453">
-      <value>1k</value>
+      <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">RC0603FR-071KL</field>
+        <field name="MPN">RC0603FR-07100RL</field>
         <field name="Population">BOTH</field>
         <field name="Function">interlocks</field>
         <field name="Engineering_Note"/>
@@ -5407,7 +5679,7 @@
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="MPN" value="RC0603FR-07100RL"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="interlocks"/>
       <property name="Engineering_Note" value=""/>
@@ -6098,23 +6370,23 @@
       </units>
     </comp>
     <comp ref="Q502">
-      <value>DMN2056U-7</value>
+      <value>BSS138BK,215</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.diodes.com/datasheet/download/DMN2056U.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</datasheet>
       <fields>
-        <field name="MPN">DMN2056U-7</field>
+        <field name="MPN">BSS138BK,215</field>
         <field name="Population">BOTH</field>
         <field name="Function">fox</field>
-        <field name="Engineering_Note"> 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V.</field>
+        <field name="Engineering_Note"> 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMN2056U.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ARDF_TX" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="MPN" value="DMN2056U-7"/>
+      <property name="MPN" value="BSS138BK,215"/>
       <property name="Population" value="BOTH"/>
       <property name="Function" value="fox"/>
-      <property name="Engineering_Note" value=" 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes&lt;9V."/>
+      <property name="Engineering_Note" value=" 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."/>
       <property name="Sheetname" value="10 Independent Foxoring shaper and rail-following clock buffer"/>
       <property name="Sheetfile" value="10_fox_rf.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
@@ -7518,6 +7790,38 @@
         <pin num="14" name="VCC" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="ARDF_TX" part="74HC174">
+      <description>Hex D-type Flip-Flop, reset</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS174</docs>
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS174</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS174</field>
+        <field name="Description">Hex D-type Flip-Flop, reset</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{Mr}" type="input"/>
+        <pin num="2" name="Q0" type="output"/>
+        <pin num="3" name="D0" type="input"/>
+        <pin num="4" name="D1" type="input"/>
+        <pin num="5" name="Q1" type="output"/>
+        <pin num="6" name="D2" type="input"/>
+        <pin num="7" name="Q2" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Cp" type="input"/>
+        <pin num="10" name="Q3" type="output"/>
+        <pin num="11" name="D3" type="input"/>
+        <pin num="12" name="Q4" type="output"/>
+        <pin num="13" name="D4" type="input"/>
+        <pin num="14" name="D5" type="input"/>
+        <pin num="15" name="Q5" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="ARDF_TX" part="74HC21">
       <description>Dual 4-input AND</description>
       <docs>http://www.ti.com/lit/gpn/sn74LS21</docs>
@@ -7541,36 +7845,6 @@
         <pin num="8" name="" type="output"/>
         <pin num="9" name="" type="input"/>
         <pin num="10" name="" type="input"/>
-        <pin num="12" name="" type="input"/>
-        <pin num="13" name="" type="input"/>
-        <pin num="14" name="VCC" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="ARDF_TX" part="74HC32">
-      <description>Quad 2-input OR</description>
-      <docs>http://www.ti.com/lit/gpn/sn74LS32</docs>
-      <footprints>
-        <fp>DIP?14*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">74LS32</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS32</field>
-        <field name="Description">Quad 2-input OR</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="input"/>
-        <pin num="2" name="" type="input"/>
-        <pin num="3" name="" type="output"/>
-        <pin num="4" name="" type="input"/>
-        <pin num="5" name="" type="input"/>
-        <pin num="6" name="" type="output"/>
-        <pin num="7" name="GND" type="power_in"/>
-        <pin num="8" name="" type="output"/>
-        <pin num="9" name="" type="input"/>
-        <pin num="10" name="" type="input"/>
-        <pin num="11" name="" type="output"/>
         <pin num="12" name="" type="input"/>
         <pin num="13" name="" type="input"/>
         <pin num="14" name="VCC" type="power_in"/>
@@ -7660,6 +7934,23 @@
         <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ARDF_TX" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -8169,70 +8460,69 @@
       <node ref="R111" pin="1" pintype="passive"/>
       <node ref="R203" pin="1" pintype="passive"/>
       <node ref="U222" pin="2" pintype="input"/>
+      <node ref="U224" pin="9" pinfunction="Cp_9" pintype="input"/>
     </net>
     <net code="2" name="ARMED" class="Default">
       <node ref="U221" pin="3" pintype="input"/>
       <node ref="U221" pin="9" pintype="input"/>
       <node ref="U223" pin="5" pinfunction="Q_5" pintype="output"/>
     </net>
-    <net code="3" name="ARM_CLK" class="Default">
+    <net code="3" name="ARM_ACCEPT" class="Default">
+      <node ref="Q229" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="U221" pin="11" pintype="input"/>
+      <node ref="U221" pin="5" pintype="input"/>
+      <node ref="U223" pin="2" pinfunction="D_2" pintype="input"/>
+      <node ref="U224" pin="12" pinfunction="Q4_12" pintype="output"/>
+    </net>
+    <net code="4" name="ARM_CLK" class="Default">
       <node ref="U203" pin="4" pintype="output"/>
       <node ref="U223" pin="3" pinfunction="C_3" pintype="input"/>
-      <node ref="U224" pin="11" pinfunction="C_11" pintype="input"/>
-      <node ref="U224" pin="3" pinfunction="C_3" pintype="input"/>
     </net>
-    <net code="4" name="ARM_DELAY_N" class="Default">
+    <net code="5" name="ARM_DELAY_N" class="Default">
       <node ref="U203" pin="2" pintype="output"/>
       <node ref="U203" pin="3" pintype="input"/>
     </net>
-    <net code="5" name="ARM_RC" class="Default">
+    <net code="6" name="ARM_RC" class="Default">
       <node ref="C203" pin="1" pintype="passive"/>
       <node ref="R203" pin="2" pintype="passive"/>
       <node ref="U203" pin="1" pintype="input"/>
     </net>
-    <net code="6" name="BOOT_PA" class="Default">
+    <net code="7" name="BOOT_PA" class="Default">
       <node ref="C303" pin="1" pintype="passive"/>
       <node ref="U301" pin="6" pinfunction="BOOT_6" pintype="passive"/>
     </net>
-    <net code="7" name="BUS_QUIET" class="Default">
-      <node ref="U202" pin="5" pinfunction="Q_5" pintype="output"/>
-      <node ref="U211" pin="4" pintype="input"/>
+    <net code="8" name="BUS_HOLDOFF_N" class="Default">
+      <node ref="U202" pin="12" pinfunction="~{Q}_12" pintype="output"/>
+      <node ref="U221" pin="2" pintype="input"/>
     </net>
-    <net code="8" name="BUS_RC" class="Default">
+    <net code="9" name="BUS_LINES_HIGH" class="Default">
+      <node ref="U221" pin="13" pintype="input"/>
+      <node ref="U222" pin="11" pintype="output"/>
+    </net>
+    <net code="10" name="BUS_QUIET" class="Default">
+      <node ref="U211" pin="4" pintype="input"/>
+      <node ref="U221" pin="12" pintype="output"/>
+    </net>
+    <net code="11" name="BUS_RC" class="Default">
       <node ref="C202" pin="1" pintype="passive"/>
       <node ref="D202" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R202" pin="2" pintype="passive"/>
       <node ref="U202" pin="7" pinfunction="RCext_7" pintype="input"/>
     </net>
-    <net code="9" name="CLK_FOX" class="Default">
+    <net code="12" name="CLK_FOX" class="Default">
       <node ref="R505" pin="1" pintype="passive"/>
       <node ref="TP103" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U101" pin="6" pinfunction="CLK2_6" pintype="output"/>
     </net>
-    <net code="10" name="CLK_PA" class="Default">
+    <net code="13" name="CLK_PA" class="Default">
       <node ref="R408" pin="1" pintype="passive"/>
       <node ref="TP102" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U101" pin="10" pinfunction="CLK0_10" pintype="output"/>
       <node ref="U401" pin="6" pinfunction="IN_6" pintype="input"/>
     </net>
-    <net code="11" name="CLR_N" class="Default">
-      <node ref="U222" pin="3" pintype="output"/>
-      <node ref="U223" pin="1" pinfunction="~{R}_1" pintype="input"/>
-      <node ref="U224" pin="1" pinfunction="~{R}_1" pintype="input"/>
-      <node ref="U224" pin="13" pinfunction="~{R}_13" pintype="input"/>
-    </net>
-    <net code="12" name="COMMON_KEY" class="Default">
-      <node ref="R451" pin="1" pintype="passive"/>
-      <node ref="U214" pin="8" pintype="output"/>
-    </net>
-    <net code="13" name="COMMON_UV_OK" class="Default">
-      <node ref="R320" pin="2" pintype="passive"/>
-      <node ref="U211" pin="5" pintype="input"/>
-      <node ref="U312" pin="2" pintype="open_collector"/>
-    </net>
-    <net code="14" name="COMPACT_OK" class="Default">
-      <node ref="U213" pin="13" pintype="input"/>
-      <node ref="U214" pin="6" pintype="output"/>
+    <net code="14" name="CORE_OK" class="Default">
+      <node ref="U211" pin="6" pintype="output"/>
+      <node ref="U211" pin="9" pintype="input"/>
     </net>
     <net code="15" name="CT_PA" class="Default">
       <node ref="C306" pin="1" pintype="passive"/>
@@ -8241,6 +8531,8 @@
     <net code="16" name="CW_KEY" class="Default">
       <node ref="J101" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
       <node ref="R112" pin="1" pintype="passive"/>
+      <node ref="R451" pin="1" pintype="passive"/>
+      <node ref="U203" pin="11" pintype="input"/>
       <node ref="U222" pin="10" pintype="input"/>
       <node ref="U222" pin="5" pintype="input"/>
     </net>
@@ -8250,37 +8542,42 @@
       <node ref="T401" pin="3" pinfunction="SA_3" pintype="passive"/>
       <node ref="TP402" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="18" name="EXCLUSIVE_OK" class="Default">
-      <node ref="U212" pin="3" pintype="output"/>
-      <node ref="U213" pin="9" pintype="input"/>
+    <net code="18" name="DROP_RETURN" class="Default">
+      <node ref="Q226" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q228" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q229" pin="3" pinfunction="D_3" pintype="passive"/>
     </net>
-    <net code="19" name="FAULT_N" class="Default">
+    <net code="19" name="EXCLUSIVE_OK" class="Default">
+      <node ref="U211" pin="10" pintype="input"/>
+      <node ref="U212" pin="3" pintype="output"/>
+    </net>
+    <net code="20" name="FAULT_N" class="Default">
       <node ref="J101" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
       <node ref="Q201" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R103" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="FB_EXT" class="Default">
+    <net code="21" name="FB_EXT" class="Default">
       <node ref="Q301" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R304" pin="2" pintype="passive"/>
     </net>
-    <net code="21" name="FB_FULL" class="Default">
+    <net code="22" name="FB_FULL" class="Default">
       <node ref="Q302" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R305" pin="2" pintype="passive"/>
     </net>
-    <net code="22" name="FB_PA" class="Default">
+    <net code="23" name="FB_PA" class="Default">
       <node ref="R302" pin="2" pintype="passive"/>
       <node ref="R303" pin="1" pintype="passive"/>
       <node ref="R304" pin="1" pintype="passive"/>
       <node ref="R305" pin="1" pintype="passive"/>
       <node ref="U301" pin="4" pinfunction="FB_4" pintype="input"/>
     </net>
-    <net code="23" name="FOX_BASE" class="Default">
+    <net code="24" name="FOX_BASE" class="Default">
       <node ref="C501" pin="2" pintype="passive"/>
       <node ref="Q501" pin="1" pinfunction="B_1" pintype="input"/>
       <node ref="R502" pin="2" pintype="passive"/>
       <node ref="R503" pin="1" pintype="passive"/>
     </net>
-    <net code="24" name="FOX_CLK" class="Default">
+    <net code="25" name="FOX_CLK" class="Default">
       <node ref="D501" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="Q503" pin="3" pinfunction="C_3" pintype="passive"/>
       <node ref="R507" pin="2" pintype="passive"/>
@@ -8289,72 +8586,75 @@
       <node ref="U501" pin="4" pintype="input"/>
       <node ref="U501" pin="9" pintype="input"/>
     </net>
-    <net code="25" name="FOX_CLK_B" class="Default">
+    <net code="26" name="FOX_CLK_B" class="Default">
       <node ref="D501" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="Q503" pin="1" pinfunction="B_1" pintype="input"/>
       <node ref="R505" pin="2" pintype="passive"/>
       <node ref="R506" pin="1" pintype="passive"/>
     </net>
-    <net code="26" name="FOX_FEED" class="Default">
+    <net code="27" name="FOX_DROP_MID" class="Default">
+      <node ref="Q227" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q228" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="28" name="FOX_FEED" class="Default">
       <node ref="Q501" pin="2" pinfunction="E_2" pintype="passive"/>
       <node ref="R501" pin="2" pintype="passive"/>
       <node ref="R502" pin="1" pintype="passive"/>
     </net>
-    <net code="27" name="FOX_GATE1" class="Default">
+    <net code="29" name="FOX_GATE1" class="Default">
       <node ref="R510" pin="1" pintype="passive"/>
       <node ref="U501" pin="3" pintype="output"/>
     </net>
-    <net code="28" name="FOX_GATE2" class="Default">
+    <net code="30" name="FOX_GATE2" class="Default">
       <node ref="R511" pin="1" pintype="passive"/>
       <node ref="U501" pin="6" pintype="output"/>
     </net>
-    <net code="29" name="FOX_GATE3" class="Default">
+    <net code="31" name="FOX_GATE3" class="Default">
       <node ref="R512" pin="1" pintype="passive"/>
       <node ref="U501" pin="8" pintype="output"/>
     </net>
-    <net code="30" name="FOX_GATE_EN" class="Default">
+    <net code="32" name="FOX_GATE_EN" class="Default">
       <node ref="Q504" pin="3" pinfunction="C_3" pintype="passive"/>
       <node ref="R509" pin="2" pintype="passive"/>
       <node ref="U501" pin="10" pintype="input"/>
       <node ref="U501" pin="2" pintype="input"/>
       <node ref="U501" pin="5" pintype="input"/>
     </net>
-    <net code="31" name="FOX_ID" class="Default">
+    <net code="33" name="FOX_ID" class="Default">
       <node ref="C517" pin="1" pintype="passive"/>
+      <node ref="D222" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="J502" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R516" pin="2" pintype="passive"/>
-      <node ref="U214" pin="5" pintype="input"/>
     </net>
-    <net code="32" name="FOX_KEY" class="Default">
+    <net code="34" name="FOX_KEY" class="Default">
       <node ref="Q502" pin="1" pinfunction="G_1" pintype="input"/>
-      <node ref="U214" pin="10" pintype="input"/>
       <node ref="U222" pin="8" pintype="output"/>
     </net>
-    <net code="33" name="FOX_KEY_D" class="Default">
+    <net code="35" name="FOX_KEY_D" class="Default">
       <node ref="Q502" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R503" pin="2" pintype="passive"/>
     </net>
-    <net code="34" name="FOX_LPF1" class="Default">
+    <net code="36" name="FOX_LPF1" class="Default">
       <node ref="C510" pin="2" pintype="passive"/>
       <node ref="C511" pin="1" pintype="passive"/>
       <node ref="C512" pin="1" pintype="passive"/>
       <node ref="L510" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="35" name="FOX_LPF2" class="Default">
+    <net code="37" name="FOX_LPF2" class="Default">
       <node ref="C513" pin="1" pintype="passive"/>
       <node ref="C514" pin="1" pintype="passive"/>
       <node ref="L510" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="L511" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="36" name="FOX_MUTE" class="Default">
+    <net code="38" name="FOX_MUTE" class="Default">
       <node ref="R508" pin="1" pintype="passive"/>
       <node ref="U212" pin="11" pintype="output"/>
     </net>
-    <net code="37" name="FOX_MUTE_B" class="Default">
+    <net code="39" name="FOX_MUTE_B" class="Default">
       <node ref="Q504" pin="1" pinfunction="B_1" pintype="input"/>
       <node ref="R508" pin="2" pintype="passive"/>
     </net>
-    <net code="38" name="FOX_PAD_IN" class="Default">
+    <net code="40" name="FOX_PAD_IN" class="Default">
       <node ref="C514" pin="2" pintype="passive"/>
       <node ref="C515" pin="1" pintype="passive"/>
       <node ref="C516" pin="1" pintype="passive"/>
@@ -8363,40 +8663,40 @@
       <node ref="R514" pin="1" pintype="passive"/>
       <node ref="TP511" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="39" name="FOX_PERMIT" class="Default">
+    <net code="41" name="FOX_PERMIT" class="Default">
       <node ref="U212" pin="12" pintype="input"/>
       <node ref="U221" pin="8" pintype="output"/>
       <node ref="U222" pin="9" pintype="input"/>
     </net>
-    <net code="40" name="FOX_REQ" class="Default">
+    <net code="42" name="FOX_REQ" class="Default">
       <node ref="J101" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
       <node ref="R114" pin="1" pintype="passive"/>
       <node ref="U203" pin="9" pintype="input"/>
       <node ref="U212" pin="2" pintype="input"/>
-      <node ref="U221" pin="10" pintype="input"/>
+      <node ref="U224" pin="11" pinfunction="D3_11" pintype="input"/>
     </net>
-    <net code="41" name="FOX_REQ_N" class="Default">
+    <net code="43" name="FOX_REQ_N" class="Default">
+      <node ref="Q228" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="U203" pin="8" pintype="output"/>
-      <node ref="U221" pin="5" pintype="input"/>
     </net>
-    <net code="42" name="FOX_SUM" class="Default">
+    <net code="44" name="FOX_SUM" class="Default">
       <node ref="C510" pin="1" pintype="passive"/>
       <node ref="R510" pin="2" pintype="passive"/>
       <node ref="R511" pin="2" pintype="passive"/>
       <node ref="R512" pin="2" pintype="passive"/>
       <node ref="TP510" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="43" name="GATE_DRV" class="Default">
+    <net code="45" name="GATE_DRV" class="Default">
       <node ref="R403" pin="1" pintype="passive"/>
       <node ref="U401" pin="3" pinfunction="OUT_3" pintype="output"/>
     </net>
-    <net code="44" name="GATE_PA" class="Default">
+    <net code="46" name="GATE_PA" class="Default">
       <node ref="Q402" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R403" pin="2" pintype="passive"/>
       <node ref="R404" pin="1" pintype="passive"/>
       <node ref="TP401" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="45" name="GND" class="Default">
+    <net code="47" name="GND" class="Default">
       <node ref="C101" pin="2" pintype="passive"/>
       <node ref="C102" pin="2" pintype="passive"/>
       <node ref="C103" pin="2" pintype="passive"/>
@@ -8407,9 +8707,7 @@
       <node ref="C211" pin="2" pintype="passive"/>
       <node ref="C212" pin="2" pintype="passive"/>
       <node ref="C220" pin="2" pintype="passive"/>
-      <node ref="C221" pin="2" pintype="passive"/>
       <node ref="C222" pin="2" pintype="passive"/>
-      <node ref="C223" pin="2" pintype="passive"/>
       <node ref="C230" pin="2" pintype="passive"/>
       <node ref="C231" pin="2" pintype="passive"/>
       <node ref="C232" pin="2" pintype="passive"/>
@@ -8429,6 +8727,7 @@
       <node ref="C323" pin="2" pintype="passive"/>
       <node ref="C401" pin="2" pintype="passive"/>
       <node ref="C402" pin="2" pintype="passive"/>
+      <node ref="C404" pin="2" pintype="passive"/>
       <node ref="C411" pin="2" pintype="passive"/>
       <node ref="C412" pin="2" pintype="passive"/>
       <node ref="C413" pin="2" pintype="passive"/>
@@ -8450,6 +8749,7 @@
       <node ref="J401" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="J502" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="Q201" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q229" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q301" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q302" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q402" pin="3" pinfunction="S_3" pintype="passive"/>
@@ -8468,6 +8768,8 @@
       <node ref="R116" pin="2" pintype="passive"/>
       <node ref="R117" pin="2" pintype="passive"/>
       <node ref="R118" pin="2" pintype="passive"/>
+      <node ref="R225" pin="2" pintype="passive"/>
+      <node ref="R228" pin="2" pintype="passive"/>
       <node ref="R301" pin="2" pintype="passive"/>
       <node ref="R303" pin="2" pintype="passive"/>
       <node ref="R307" pin="2" pintype="passive"/>
@@ -8479,13 +8781,15 @@
       <node ref="R327" pin="2" pintype="passive"/>
       <node ref="R329" pin="2" pintype="passive"/>
       <node ref="R334" pin="2" pintype="passive"/>
-      <node ref="R336" pin="2" pintype="passive"/>
       <node ref="R338" pin="2" pintype="passive"/>
       <node ref="R340" pin="2" pintype="passive"/>
+      <node ref="R348" pin="2" pintype="passive"/>
+      <node ref="R349" pin="2" pintype="passive"/>
       <node ref="R402" pin="2" pintype="passive"/>
       <node ref="R404" pin="2" pintype="passive"/>
       <node ref="R407" pin="2" pintype="passive"/>
       <node ref="R408" pin="2" pintype="passive"/>
+      <node ref="R409" pin="2" pintype="passive"/>
       <node ref="R452" pin="2" pintype="passive"/>
       <node ref="R504" pin="2" pintype="passive"/>
       <node ref="R506" pin="2" pintype="passive"/>
@@ -8497,24 +8801,18 @@
       <node ref="TP513" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U101" pin="8" pinfunction="GND_8" pintype="power_in"/>
       <node ref="U201" pin="3" pinfunction="VSS_3" pintype="power_in"/>
-      <node ref="U202" pin="1" pinfunction="A_1" pintype="input"/>
       <node ref="U202" pin="14" pinfunction="Cext_14" pintype="input"/>
       <node ref="U202" pin="6" pinfunction="Cext_6" pintype="input"/>
       <node ref="U202" pin="8" pinfunction="GND_8" pintype="power_in"/>
-      <node ref="U203" pin="11" pintype="input"/>
+      <node ref="U202" pin="9" pinfunction="A_9" pintype="input"/>
       <node ref="U203" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U211" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U212" pin="7" pinfunction="GND_7" pintype="power_in"/>
-      <node ref="U213" pin="7" pinfunction="GND_7" pintype="power_in"/>
-      <node ref="U214" pin="12" pintype="input"/>
-      <node ref="U214" pin="13" pintype="input"/>
-      <node ref="U214" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U221" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U222" pin="7" pinfunction="GND_7" pintype="power_in"/>
-      <node ref="U223" pin="11" pinfunction="C_11" pintype="input"/>
-      <node ref="U223" pin="12" pinfunction="D_12" pintype="input"/>
       <node ref="U223" pin="7" pinfunction="GND_7" pintype="power_in"/>
-      <node ref="U224" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U224" pin="14" pinfunction="D5_14" pintype="input"/>
+      <node ref="U224" pin="8" pinfunction="GND_8" pintype="power_in"/>
       <node ref="U301" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="U302" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U311" pin="2" pinfunction="REF_2" pintype="passive"/>
@@ -8528,27 +8826,39 @@
       <node ref="Y101" pin="2" pinfunction="G_2" pintype="passive"/>
       <node ref="Y101" pin="4" pinfunction="G_4" pintype="passive"/>
     </net>
-    <net code="46" name="I_PA_FILTER" class="Default">
+    <net code="48" name="HEALTH_N" class="Default">
+      <node ref="D220" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="Q225" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="Q227" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R219" pin="2" pintype="passive"/>
+      <node ref="U222" pin="1" pintype="input"/>
+      <node ref="U224" pin="1" pinfunction="~{Mr}_1" pintype="input"/>
+    </net>
+    <net code="49" name="I_PA_FILTER" class="Default">
       <node ref="C321" pin="1" pintype="passive"/>
       <node ref="R333" pin="2" pintype="passive"/>
       <node ref="R334" pin="1" pintype="passive"/>
       <node ref="U312" pin="8" pinfunction="-_8" pintype="input"/>
     </net>
-    <net code="47" name="I_PA_RAW" class="Default">
+    <net code="50" name="I_PA_RAW" class="Default">
       <node ref="R333" pin="1" pintype="passive"/>
       <node ref="U313" pin="1" pintype="output"/>
     </net>
-    <net code="48" name="KEY_DRAIN" class="Default">
+    <net code="51" name="KEY_DRAIN" class="Default">
       <node ref="Q404" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R406" pin="2" pintype="passive"/>
     </net>
-    <net code="49" name="KEY_TAIL" class="Default">
+    <net code="52" name="KEY_N" class="Default">
+      <node ref="U203" pin="10" pintype="output"/>
+      <node ref="U224" pin="13" pinfunction="D4_13" pintype="input"/>
+    </net>
+    <net code="53" name="KEY_TAIL" class="Default">
       <node ref="Q405" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="TP451" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U212" pin="13" pintype="input"/>
       <node ref="U212" pin="8" pintype="output"/>
     </net>
-    <net code="50" name="KEY_TAIL_C" class="Default">
+    <net code="54" name="KEY_TAIL_C" class="Default">
       <node ref="C451" pin="1" pintype="passive"/>
       <node ref="D451" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="R452" pin="1" pintype="passive"/>
@@ -8556,126 +8866,140 @@
       <node ref="TP450" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U203" pin="13" pintype="input"/>
     </net>
-    <net code="51" name="KEY_TAIL_N" class="Default">
+    <net code="55" name="KEY_TAIL_N" class="Default">
       <node ref="U203" pin="12" pintype="output"/>
       <node ref="U212" pin="10" pintype="input"/>
       <node ref="U212" pin="9" pintype="input"/>
     </net>
-    <net code="52" name="KEY_TAIL_RESET_D" class="Default">
+    <net code="56" name="KEY_TAIL_RESET_D" class="Default">
       <node ref="Q406" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R453" pin="2" pintype="passive"/>
     </net>
-    <net code="53" name="KEY_TAIL_SRC" class="Default">
+    <net code="57" name="KEY_TAIL_SRC" class="Default">
       <node ref="D451" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R451" pin="2" pintype="passive"/>
     </net>
-    <net code="54" name="LEASE" class="Default">
+    <net code="58" name="LEASE" class="Default">
       <node ref="J101" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
       <node ref="R110" pin="1" pintype="passive"/>
       <node ref="U202" pin="2" pinfunction="B_2" pintype="input"/>
+      <node ref="U223" pin="11" pinfunction="C_11" pintype="input"/>
     </net>
-    <net code="55" name="LEASE_OK" class="Default">
-      <node ref="U202" pin="4" pinfunction="~{Q}_4" pintype="output"/>
+    <net code="59" name="LEASE_OK" class="Default">
+      <node ref="U202" pin="13" pinfunction="Q_13" pintype="output"/>
       <node ref="U211" pin="2" pintype="input"/>
     </net>
-    <net code="56" name="LEASE_RC" class="Default">
+    <net code="60" name="LEASE_RC" class="Default">
       <node ref="C201" pin="1" pintype="passive"/>
       <node ref="D201" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R201" pin="2" pintype="passive"/>
       <node ref="U202" pin="15" pinfunction="RCext_15" pintype="input"/>
     </net>
-    <net code="57" name="LOCAL_4S_OK" class="Default">
-      <node ref="R321" pin="2" pintype="passive"/>
-      <node ref="U213" pin="1" pintype="input"/>
-      <node ref="U312" pin="1" pintype="open_collector"/>
+    <net code="61" name="LEASE_SEEN_N" class="Default">
+      <node ref="U202" pin="1" pinfunction="A_1" pintype="input"/>
+      <node ref="U223" pin="8" pinfunction="~{Q}_8" pintype="output"/>
     </net>
-    <net code="58" name="LPF_N1" class="Default">
+    <net code="62" name="LPF_N1" class="Default">
       <node ref="C410" pin="2" pintype="passive"/>
       <node ref="C411" pin="1" pintype="passive"/>
       <node ref="C412" pin="1" pintype="passive"/>
       <node ref="L410" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP411" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="59" name="LPF_N2" class="Default">
+    <net code="63" name="LPF_N2" class="Default">
       <node ref="C413" pin="1" pintype="passive"/>
       <node ref="C414" pin="1" pintype="passive"/>
       <node ref="L410" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="L411" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP412" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="60" name="MODE_OK" class="Default">
+    <net code="64" name="MODE_OK" class="Default">
+      <node ref="U211" pin="12" pintype="input"/>
       <node ref="U212" pin="6" pintype="output"/>
-      <node ref="U213" pin="10" pintype="input"/>
     </net>
-    <net code="61" name="MUTE_N" class="Default">
+    <net code="65" name="MUTE_N" class="Default">
       <node ref="J101" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
       <node ref="R117" pin="1" pintype="passive"/>
-      <node ref="U211" pin="13" pintype="input"/>
+      <node ref="U211" pin="5" pintype="input"/>
     </net>
-    <net code="62" name="NOT_ARMED" class="Default">
+    <net code="66" name="NOT_ARMED" class="Default">
       <node ref="Q201" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="Q406" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="U223" pin="6" pinfunction="~{Q}_6" pintype="output"/>
     </net>
-    <net code="63" name="PACK4_OK" class="Default">
+    <net code="67" name="PACK4_OK" class="Default">
+      <node ref="D221" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="J101" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
       <node ref="R118" pin="1" pintype="passive"/>
-      <node ref="U213" pin="2" pintype="input"/>
     </net>
-    <net code="64" name="PACK_2S_REF" class="Default">
+    <net code="68" name="PACK_2S_REF" class="Default">
       <node ref="C312" pin="1" pintype="passive"/>
       <node ref="R315" pin="2" pintype="passive"/>
       <node ref="R316" pin="1" pintype="passive"/>
-      <node ref="U312" pin="4" pinfunction="-_4" pintype="input"/>
+      <node ref="U314" pin="2" pinfunction="-_2" pintype="input"/>
     </net>
-    <net code="65" name="PACK_4S_REF" class="Default">
+    <net code="69" name="PACK_4S_REF" class="Default">
       <node ref="R317" pin="2" pintype="passive"/>
       <node ref="R318" pin="1" pintype="passive"/>
       <node ref="U312" pin="6" pinfunction="-_6" pintype="input"/>
     </net>
-    <net code="66" name="PACK_OK" class="Default">
-      <node ref="U213" pin="12" pintype="input"/>
-      <node ref="U214" pin="3" pintype="output"/>
+    <net code="70" name="PATH_FOX" class="Default">
+      <node ref="Q227" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="U221" pin="10" pintype="input"/>
+      <node ref="U224" pin="10" pinfunction="Q3_10" pintype="output"/>
     </net>
-    <net code="67" name="PA_INB" class="Default">
+    <net code="71" name="PATH_PA" class="Default">
+      <node ref="Q225" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="U221" pin="4" pintype="input"/>
+      <node ref="U224" pin="7" pinfunction="Q2_7" pintype="output"/>
+    </net>
+    <net code="72" name="PA_CONDITION_OK" class="Default">
+      <node ref="D223" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D224" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="R225" pin="1" pintype="passive"/>
+      <node ref="U211" pin="13" pintype="input"/>
+    </net>
+    <net code="73" name="PA_DROP_MID" class="Default">
+      <node ref="Q225" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q226" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="74" name="PA_GUARD_RAW" class="Default">
+      <node ref="D221" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D222" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D224" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R228" pin="1" pintype="passive"/>
+      <node ref="R321" pin="2" pintype="passive"/>
+      <node ref="U312" pin="1" pintype="open_collector"/>
+      <node ref="U312" pin="13" pintype="open_collector"/>
+      <node ref="U312" pin="14" pintype="open_collector"/>
+      <node ref="U312" pin="2" pintype="open_collector"/>
+      <node ref="U314" pin="7" pintype="open_collector"/>
+    </net>
+    <net code="75" name="PA_INB" class="Default">
       <node ref="Q401" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R401" pin="2" pintype="passive"/>
       <node ref="U401" pin="5" pinfunction="INB_5" pintype="input"/>
     </net>
-    <net code="68" name="PA_KEY" class="Default">
+    <net code="76" name="PA_KEY" class="Default">
       <node ref="Q404" pin="1" pinfunction="G_1" pintype="input"/>
-      <node ref="U214" pin="9" pintype="input"/>
       <node ref="U222" pin="6" pintype="output"/>
     </net>
-    <net code="69" name="PA_MUTE_MID" class="Default">
+    <net code="77" name="PA_MUTE_MID" class="Default">
       <node ref="Q401" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q405" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R409" pin="1" pintype="passive"/>
     </net>
-    <net code="70" name="PA_OC_OK" class="Default">
-      <node ref="R323" pin="2" pintype="passive"/>
-      <node ref="U211" pin="10" pintype="input"/>
-      <node ref="U312" pin="14" pintype="open_collector"/>
-    </net>
-    <net code="71" name="PA_OC_REF" class="Default">
+    <net code="78" name="PA_OC_REF" class="Default">
       <node ref="R328" pin="2" pintype="passive"/>
       <node ref="R329" pin="1" pintype="passive"/>
       <node ref="U312" pin="9" pinfunction="+_9" pintype="input"/>
     </net>
-    <net code="72" name="PA_OV_OK" class="Default">
-      <node ref="R322" pin="2" pintype="passive"/>
-      <node ref="U211" pin="9" pintype="input"/>
-      <node ref="U312" pin="13" pintype="open_collector"/>
-    </net>
-    <net code="73" name="PA_OV_REF" class="Default">
+    <net code="79" name="PA_OV_REF" class="Default">
       <node ref="R326" pin="2" pintype="passive"/>
       <node ref="R327" pin="1" pintype="passive"/>
       <node ref="U312" pin="11" pinfunction="+_11" pintype="input"/>
     </net>
-    <net code="74" name="PA_PACK_OK" class="Default">
-      <node ref="U213" pin="3" pintype="output"/>
-      <node ref="U214" pin="2" pintype="input"/>
-    </net>
-    <net code="75" name="PA_PERMIT" class="Default">
+    <net code="80" name="PA_PERMIT" class="Default">
       <node ref="Q401" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R301" pin="1" pintype="passive"/>
       <node ref="R307" pin="1" pintype="passive"/>
@@ -8685,49 +9009,53 @@
       <node ref="U301" pin="5" pinfunction="EN_5" pintype="input"/>
       <node ref="U302" pin="3" pinfunction="EN/UVLO_3" pintype="input"/>
     </net>
-    <net code="76" name="PA_REQ" class="Default">
+    <net code="81" name="PA_REQ" class="Default">
       <node ref="J101" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
       <node ref="R113" pin="1" pintype="passive"/>
       <node ref="U203" pin="5" pintype="input"/>
       <node ref="U212" pin="1" pintype="input"/>
-      <node ref="U221" pin="4" pintype="input"/>
+      <node ref="U224" pin="6" pinfunction="D2_6" pintype="input"/>
     </net>
-    <net code="77" name="PA_REQ_N" class="Default">
+    <net code="82" name="PA_REQ_N" class="Default">
+      <node ref="D223" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="Q226" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="U203" pin="6" pintype="output"/>
-      <node ref="U214" pin="1" pintype="input"/>
-      <node ref="U214" pin="4" pintype="input"/>
-      <node ref="U221" pin="11" pintype="input"/>
     </net>
-    <net code="78" name="POR_N" class="Default">
+    <net code="83" name="POR_N" class="Default">
+      <node ref="D219" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="U201" pin="1" pinfunction="RESET_N_1" pintype="output"/>
       <node ref="U202" pin="11" pinfunction="Clr_11" pintype="input"/>
       <node ref="U202" pin="3" pinfunction="Clr_3" pintype="input"/>
-      <node ref="U211" pin="1" pintype="input"/>
+      <node ref="U221" pin="1" pintype="input"/>
       <node ref="U223" pin="13" pinfunction="~{R}_13" pintype="input"/>
     </net>
-    <net code="79" name="PWR0" class="Default">
+    <net code="84" name="PWR0" class="Default">
       <node ref="J101" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
       <node ref="R115" pin="1" pintype="passive"/>
       <node ref="U212" pin="4" pintype="input"/>
-      <node ref="U224" pin="2" pinfunction="D_2" pintype="input"/>
+      <node ref="U224" pin="3" pinfunction="D0_3" pintype="input"/>
     </net>
-    <net code="80" name="PWR1" class="Default">
+    <net code="85" name="PWR1" class="Default">
       <node ref="J101" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
       <node ref="R116" pin="1" pintype="passive"/>
       <node ref="U212" pin="5" pintype="input"/>
-      <node ref="U224" pin="12" pinfunction="D_12" pintype="input"/>
+      <node ref="U224" pin="4" pinfunction="D1_4" pintype="input"/>
     </net>
-    <net code="81" name="QOD_PA" class="Default">
+    <net code="86" name="QOD_PA" class="Default">
       <node ref="R306" pin="1" pintype="passive"/>
       <node ref="U302" pin="5" pinfunction="QOD_5" pintype="open_collector"/>
     </net>
-    <net code="82" name="RF_FOX" class="Default">
+    <net code="87" name="RESET_N" class="Default">
+      <node ref="U222" pin="3" pintype="output"/>
+      <node ref="U223" pin="1" pinfunction="~{R}_1" pintype="input"/>
+    </net>
+    <net code="88" name="RF_FOX" class="Default">
       <node ref="J502" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R514" pin="2" pintype="passive"/>
       <node ref="R515" pin="1" pintype="passive"/>
       <node ref="TP512" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="83" name="RF_NORMAL" class="Default">
+    <net code="89" name="RF_NORMAL" class="Default">
       <node ref="C414" pin="2" pintype="passive"/>
       <node ref="C415" pin="1" pintype="passive"/>
       <node ref="C416" pin="1" pintype="passive"/>
@@ -8735,109 +9063,84 @@
       <node ref="L411" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="TP413" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="84" name="RF_RAW" class="Default">
+    <net code="90" name="RF_RAW" class="Default">
       <node ref="C410" pin="1" pintype="passive"/>
       <node ref="T401" pin="4" pinfunction="SB_4" pintype="passive"/>
       <node ref="TP404" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP410" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="85" name="SAFE1" class="Default">
-      <node ref="U211" pin="6" pintype="output"/>
-      <node ref="U213" pin="4" pintype="input"/>
-    </net>
-    <net code="86" name="SAFE2" class="Default">
+    <net code="91" name="SAFE_RAW" class="Default">
+      <node ref="D220" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="U211" pin="8" pintype="output"/>
-      <node ref="U213" pin="5" pintype="input"/>
     </net>
-    <net code="87" name="SAFE12" class="Default">
-      <node ref="U213" pin="6" pintype="output"/>
-      <node ref="U221" pin="1" pintype="input"/>
-    </net>
-    <net code="88" name="SAFE_MODES" class="Default">
-      <node ref="U213" pin="8" pintype="output"/>
-      <node ref="U221" pin="2" pintype="input"/>
-    </net>
-    <net code="89" name="SAFE_PACK" class="Default">
-      <node ref="U213" pin="11" pintype="output"/>
-      <node ref="U221" pin="13" pintype="input"/>
-    </net>
-    <net code="90" name="SAFE_RAW" class="Default">
-      <node ref="U221" pin="12" pintype="output"/>
-      <node ref="U222" pin="1" pintype="input"/>
-    </net>
-    <net code="91" name="SCL" class="Default">
+    <net code="92" name="SCL" class="Default">
       <node ref="J101" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R101" pin="2" pintype="passive"/>
       <node ref="TP104" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U101" pin="4" pinfunction="SCL_4" pintype="input"/>
-      <node ref="U202" pin="9" pinfunction="A_9" pintype="input"/>
+      <node ref="U202" pin="10" pinfunction="B_10" pintype="input"/>
+      <node ref="U222" pin="12" pintype="input"/>
     </net>
-    <net code="92" name="SDA" class="Default">
+    <net code="93" name="SDA" class="Default">
       <node ref="J101" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="R102" pin="2" pintype="passive"/>
       <node ref="U101" pin="5" pinfunction="SDA_5" pintype="bidirectional"/>
+      <node ref="U222" pin="13" pintype="input"/>
     </net>
-    <net code="93" name="SEL_EXT" class="Default">
+    <net code="94" name="SEL_EXT" class="Default">
       <node ref="Q301" pin="1" pinfunction="G_1" pintype="input"/>
-      <node ref="U224" pin="5" pinfunction="Q_5" pintype="output"/>
+      <node ref="U224" pin="2" pinfunction="Q0_2" pintype="output"/>
     </net>
-    <net code="94" name="SEL_FULL" class="Default">
+    <net code="95" name="SEL_FULL" class="Default">
       <node ref="Q302" pin="1" pinfunction="G_1" pintype="input"/>
-      <node ref="U224" pin="9" pinfunction="Q_9" pintype="output"/>
+      <node ref="U224" pin="5" pinfunction="Q1_5" pintype="output"/>
     </net>
-    <net code="95" name="SENSE_MINUS" class="Default">
+    <net code="96" name="SENSE_MINUS" class="Default">
       <node ref="C320" pin="2" pintype="passive"/>
       <node ref="R332" pin="2" pintype="passive"/>
       <node ref="U313" pin="4" pinfunction="-_4" pintype="input"/>
     </net>
-    <net code="96" name="SENSE_PLUS" class="Default">
+    <net code="97" name="SENSE_PLUS" class="Default">
       <node ref="C320" pin="1" pintype="passive"/>
       <node ref="R331" pin="2" pintype="passive"/>
       <node ref="U313" pin="3" pinfunction="+_3" pintype="input"/>
     </net>
-    <net code="97" name="SHAPE_BASE" class="Default">
+    <net code="98" name="SHAPE_BASE" class="Default">
       <node ref="C403" pin="2" pintype="passive"/>
       <node ref="Q403" pin="3" pinfunction="B_3" pintype="input"/>
       <node ref="R405" pin="2" pintype="passive"/>
       <node ref="R406" pin="1" pintype="passive"/>
     </net>
-    <net code="98" name="SW_PA" class="Default">
+    <net code="99" name="SW_PA" class="Default">
       <node ref="C303" pin="2" pintype="passive"/>
       <node ref="L301" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U301" pin="2" pinfunction="SW_2" pintype="power_out"/>
     </net>
-    <net code="99" name="TEMP_HOT_OK" class="Default">
-      <node ref="R341" pin="2" pintype="passive"/>
-      <node ref="U222" pin="12" pintype="input"/>
-      <node ref="U314" pin="1" pintype="open_collector"/>
-    </net>
     <net code="100" name="TEMP_HOT_REF" class="Default">
       <node ref="R337" pin="2" pintype="passive"/>
       <node ref="R338" pin="1" pintype="passive"/>
-      <node ref="U314" pin="2" pinfunction="-_2" pintype="input"/>
+      <node ref="U312" pin="4" pinfunction="-_4" pintype="input"/>
     </net>
-    <net code="101" name="TEMP_OPEN_OK" class="Default">
-      <node ref="R342" pin="2" pintype="passive"/>
-      <node ref="U222" pin="13" pintype="input"/>
-      <node ref="U314" pin="7" pintype="open_collector"/>
-    </net>
-    <net code="102" name="TEMP_OPEN_REF" class="Default">
+    <net code="101" name="TEMP_OPEN_REF" class="Default">
       <node ref="R339" pin="2" pintype="passive"/>
       <node ref="R340" pin="1" pintype="passive"/>
+      <node ref="R348" pin="1" pintype="passive"/>
       <node ref="U314" pin="5" pinfunction="+_5" pintype="input"/>
     </net>
-    <net code="103" name="TEMP_SENSE" class="Default">
+    <net code="102" name="TEMP_SENSE" class="Default">
       <node ref="R335" pin="2" pintype="passive"/>
-      <node ref="R336" pin="1" pintype="passive"/>
+      <node ref="R349" pin="1" pintype="passive"/>
       <node ref="TH301" pin="1" pintype="passive"/>
-      <node ref="U314" pin="3" pinfunction="+_3" pintype="input"/>
+      <node ref="U312" pin="5" pinfunction="+_5" pintype="input"/>
       <node ref="U314" pin="6" pinfunction="-_6" pintype="input"/>
     </net>
-    <net code="104" name="THERM_OK" class="Default">
-      <node ref="U211" pin="12" pintype="input"/>
-      <node ref="U222" pin="11" pintype="output"/>
+    <net code="103" name="UV_POR_N" class="Default">
+      <node ref="D219" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R220" pin="2" pintype="passive"/>
+      <node ref="U211" pin="1" pintype="input"/>
+      <node ref="U314" pin="1" pintype="open_collector"/>
     </net>
-    <net code="105" name="V3V3" class="Default">
+    <net code="104" name="V3V3" class="Default">
       <node ref="C101" pin="1" pintype="passive"/>
       <node ref="C102" pin="1" pintype="passive"/>
       <node ref="C103" pin="1" pintype="passive"/>
@@ -8845,9 +9148,7 @@
       <node ref="C211" pin="1" pintype="passive"/>
       <node ref="C212" pin="1" pintype="passive"/>
       <node ref="C220" pin="1" pintype="passive"/>
-      <node ref="C221" pin="1" pintype="passive"/>
       <node ref="C222" pin="1" pintype="passive"/>
-      <node ref="C223" pin="1" pintype="passive"/>
       <node ref="C230" pin="1" pintype="passive"/>
       <node ref="C231" pin="1" pintype="passive"/>
       <node ref="C232" pin="1" pintype="passive"/>
@@ -8863,46 +9164,46 @@
       <node ref="R103" pin="1" pintype="passive"/>
       <node ref="R201" pin="1" pintype="passive"/>
       <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="R219" pin="1" pintype="passive"/>
+      <node ref="R220" pin="1" pintype="passive"/>
       <node ref="R310" pin="1" pintype="passive"/>
-      <node ref="R320" pin="1" pintype="passive"/>
       <node ref="R321" pin="1" pintype="passive"/>
-      <node ref="R322" pin="1" pintype="passive"/>
-      <node ref="R323" pin="1" pintype="passive"/>
-      <node ref="R341" pin="1" pintype="passive"/>
-      <node ref="R342" pin="1" pintype="passive"/>
       <node ref="R501" pin="1" pintype="passive"/>
       <node ref="R516" pin="1" pintype="passive"/>
       <node ref="TP101" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U101" pin="1" pinfunction="VDD_1" pintype="power_in"/>
       <node ref="U101" pin="7" pinfunction="VDDO_7" pintype="power_in"/>
       <node ref="U201" pin="2" pinfunction="VDD_2" pintype="power_in"/>
-      <node ref="U202" pin="10" pinfunction="B_10" pintype="input"/>
       <node ref="U202" pin="16" pinfunction="VCC_16" pintype="power_in"/>
       <node ref="U203" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U211" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U212" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U213" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U214" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U221" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U222" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U223" pin="10" pinfunction="~{S}_10" pintype="input"/>
+      <node ref="U223" pin="12" pinfunction="D_12" pintype="input"/>
       <node ref="U223" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U223" pin="2" pinfunction="D_2" pintype="input"/>
       <node ref="U223" pin="4" pinfunction="~{S}_4" pintype="input"/>
-      <node ref="U224" pin="10" pinfunction="~{S}_10" pintype="input"/>
-      <node ref="U224" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U224" pin="4" pinfunction="~{S}_4" pintype="input"/>
+      <node ref="U224" pin="16" pinfunction="VCC_16" pintype="power_in"/>
       <node ref="U312" pin="3" pinfunction="V+_3" pintype="power_in"/>
       <node ref="U313" pin="5" pinfunction="V+_5" pintype="power_in"/>
       <node ref="U314" pin="8" pinfunction="V+_8" pintype="power_in"/>
     </net>
-    <net code="106" name="VBAT" class="Default">
+    <net code="105" name="VBAT" class="Default">
       <node ref="F301" pin="1" pintype="passive"/>
       <node ref="J301" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
     </net>
-    <net code="107" name="VBAT_FUSED" class="Default">
+    <net code="106" name="VBAT_FUSED" class="Default">
       <node ref="D301" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="F301" pin="2" pintype="passive"/>
+    </net>
+    <net code="107" name="VDRV" class="Default">
+      <node ref="C401" pin="1" pintype="passive"/>
+      <node ref="C402" pin="1" pintype="passive"/>
+      <node ref="C404" pin="1" pintype="passive"/>
+      <node ref="R401" pin="1" pintype="passive"/>
+      <node ref="R410" pin="2" pintype="passive"/>
+      <node ref="U401" pin="1" pinfunction="VDD_1" pintype="power_in"/>
     </net>
     <net code="108" name="VFOX" class="Default">
       <node ref="C501" pin="1" pintype="passive"/>
@@ -8938,14 +9239,11 @@
       <node ref="U302" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
     </net>
     <net code="112" name="VPA_LOAD" class="Default">
-      <node ref="C401" pin="1" pintype="passive"/>
-      <node ref="C402" pin="1" pintype="passive"/>
       <node ref="Q403" pin="1" pinfunction="E_1" pintype="passive"/>
       <node ref="R330" pin="2" pintype="passive"/>
       <node ref="R332" pin="1" pintype="passive"/>
-      <node ref="R401" pin="1" pintype="passive"/>
       <node ref="R405" pin="1" pintype="passive"/>
-      <node ref="U401" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+      <node ref="R410" pin="1" pintype="passive"/>
     </net>
     <net code="113" name="VPA_SHAPED" class="Default">
       <node ref="C403" pin="1" pintype="passive"/>
@@ -8976,8 +9274,8 @@
       <node ref="C311" pin="1" pintype="passive"/>
       <node ref="R313" pin="2" pintype="passive"/>
       <node ref="R314" pin="1" pintype="passive"/>
-      <node ref="U312" pin="5" pinfunction="+_5" pintype="input"/>
       <node ref="U312" pin="7" pinfunction="+_7" pintype="input"/>
+      <node ref="U314" pin="3" pinfunction="+_3" pintype="input"/>
     </net>
     <net code="117" name="V_PA_OV" class="Default">
       <node ref="R324" pin="2" pintype="passive"/>
@@ -8995,34 +9293,22 @@
     <net code="120" name="unconnected-(U101-CLK1-Pad9)" class="Default">
       <node ref="U101" pin="9" pinfunction="CLK1_9" pintype="output+no_connect"/>
     </net>
-    <net code="121" name="unconnected-(U202A-Q-Pad13)" class="Default">
-      <node ref="U202" pin="13" pinfunction="Q_13" pintype="output+no_connect"/>
+    <net code="121" name="unconnected-(U202A-~{Q}-Pad4)" class="Default">
+      <node ref="U202" pin="4" pinfunction="~{Q}_4" pintype="output+no_connect"/>
     </net>
-    <net code="122" name="unconnected-(U202B-~{Q}-Pad12)" class="Default">
-      <node ref="U202" pin="12" pinfunction="~{Q}_12" pintype="output+no_connect"/>
+    <net code="122" name="unconnected-(U202B-Q-Pad5)" class="Default">
+      <node ref="U202" pin="5" pinfunction="Q_5" pintype="output+no_connect"/>
     </net>
-    <net code="123" name="unconnected-(U203-Pad10)" class="Default">
-      <node ref="U203" pin="10" pintype="output+no_connect"/>
-    </net>
-    <net code="124" name="unconnected-(U214-Pad11)" class="Default">
-      <node ref="U214" pin="11" pintype="output+no_connect"/>
-    </net>
-    <net code="125" name="unconnected-(U223B-Q-Pad9)" class="Default">
+    <net code="123" name="unconnected-(U223B-Q-Pad9)" class="Default">
       <node ref="U223" pin="9" pinfunction="Q_9" pintype="output+no_connect"/>
     </net>
-    <net code="126" name="unconnected-(U223B-~{Q}-Pad8)" class="Default">
-      <node ref="U223" pin="8" pinfunction="~{Q}_8" pintype="output+no_connect"/>
+    <net code="124" name="unconnected-(U224-Q5-Pad15)" class="Default">
+      <node ref="U224" pin="15" pinfunction="Q5_15" pintype="output+no_connect"/>
     </net>
-    <net code="127" name="unconnected-(U224A-~{Q}-Pad6)" class="Default">
-      <node ref="U224" pin="6" pinfunction="~{Q}_6" pintype="output+no_connect"/>
-    </net>
-    <net code="128" name="unconnected-(U224B-~{Q}-Pad8)" class="Default">
-      <node ref="U224" pin="8" pinfunction="~{Q}_8" pintype="output+no_connect"/>
-    </net>
-    <net code="129" name="unconnected-(U401-PILOT-Pad2)" class="Default">
+    <net code="125" name="unconnected-(U401-PILOT-Pad2)" class="Default">
       <node ref="U401" pin="2" pinfunction="PILOT_2" pintype="output+no_connect"/>
     </net>
-    <net code="130" name="unconnected-(U501-Pad11)" class="Default">
+    <net code="126" name="unconnected-(U501-Pad11)" class="Default">
       <node ref="U501" pin="11" pintype="output+no_connect"/>
     </net>
   </nets>

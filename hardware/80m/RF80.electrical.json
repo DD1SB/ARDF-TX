@@ -1,5 +1,6 @@
 {
   "date": "2026-10-14",
+  "revision": "M3A-R1",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -676,18 +677,18 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "GND",
+        "1": "LEASE_SEEN_N",
         "2": "LEASE",
         "3": "POR_N",
-        "4": "LEASE_OK",
-        "13": null,
+        "4": null,
+        "13": "LEASE_OK",
         "14": "GND",
         "15": "LEASE_RC",
-        "9": "SCL",
-        "10": "V3V3",
+        "9": "GND",
+        "10": "SCL",
         "11": "POR_N",
-        "12": null,
-        "5": "BUS_QUIET",
+        "12": "BUS_HOLDOFF_N",
+        "5": null,
         "6": "GND",
         "7": "BUS_RC",
         "16": "V3V3",
@@ -697,8 +698,8 @@
     {
       "ref": "R201",
       "sheet": "02_interlocks",
-      "value": "390k",
-      "mpn": "RC0603FR-07390KL",
+      "value": "330k",
+      "mpn": "RC0603FR-07330KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "BOTH",
@@ -726,7 +727,7 @@
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "t=KRC approx0.176s at K0.45; characterize 3.3V,tolerance,temperature. Hardware silence<=250ms requirement.",
+      "note": "t=KRC approx0.165s at assumedK0.50; characterize 3.3V,tolerance,temperature. Hardware silence<=250ms requirement.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -774,7 +775,7 @@
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "Approx2ms quiet delay; every falling SCL edge triggers; test actual bound. Dated M2 distributor observation; no fresh basket verification.",
+      "note": "Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound. Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
       "supplier_part_number": "603-CC603KRX7R8BB104",
@@ -877,8 +878,8 @@
         "6": "PA_REQ_N",
         "9": "FOX_REQ",
         "8": "FOX_REQ_N",
-        "11": "GND",
-        "10": null,
+        "11": "CW_KEY",
+        "10": "KEY_N",
         "13": "KEY_TAIL_C",
         "12": "KEY_TAIL_N",
         "14": "V3V3",
@@ -972,21 +973,21 @@
     {
       "ref": "Q201",
       "sheet": "02_interlocks",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "Open-drain status; unarmed, not only faults. Pull on controller rail. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": "Open-drain status; unarmed, not only faults. Pull on controller rail. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -1067,16 +1068,16 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "POR_N",
+        "1": "UV_POR_N",
         "2": "LEASE_OK",
         "4": "BUS_QUIET",
-        "5": "COMMON_UV_OK",
-        "6": "SAFE1",
-        "9": "PA_OV_OK",
-        "10": "PA_OC_OK",
-        "12": "THERM_OK",
-        "13": "MUTE_N",
-        "8": "SAFE2",
+        "5": "MUTE_N",
+        "6": "CORE_OK",
+        "9": "CORE_OK",
+        "10": "EXCLUSIVE_OK",
+        "12": "MODE_OK",
+        "13": "PA_CONDITION_OK",
+        "8": "SAFE_RAW",
         "14": "V3V3",
         "7": "GND"
       }
@@ -1120,110 +1121,225 @@
       }
     },
     {
-      "ref": "U213",
+      "ref": "R219",
       "sheet": "03_safety_logic",
-      "value": "74HC08D,653",
-      "mpn": "74HC08D,653",
-      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://eu.mouser.com/ProductDetail/Nexperia/74HC08D653?qs=P62ublwmbi%2FQCxm29EB%2FyA%3D%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "771-74HC08D-T",
-      "availability": "37703 cached EU",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.163,
-        "10": 0.114,
-        "25": 0.101,
-        "100": 0.086
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "LOCAL_4S_OK",
-        "2": "PACK4_OK",
-        "3": "PA_PACK_OK",
-        "4": "SAFE1",
-        "5": "SAFE2",
-        "6": "SAFE12",
-        "9": "EXCLUSIVE_OK",
-        "10": "MODE_OK",
-        "8": "SAFE_MODES",
-        "12": "PACK_OK",
-        "13": "COMPACT_OK",
-        "11": "SAFE_PACK",
-        "14": "V3V3",
-        "7": "GND"
-      }
-    },
-    {
-      "ref": "U214",
-      "sheet": "03_safety_logic",
-      "value": "74HC32D,653",
-      "mpn": "74HC32D,653",
-      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
-      "group": "interlocks",
-      "population": "BOTH",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected.",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf",
-      "supplier": "Mouser",
-      "supplier_part_number": "771-74HC32D-T",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
       "availability": "Exact basket/stock OPEN",
       "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.16
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_REQ_N",
-        "2": "PA_PACK_OK",
-        "3": "PACK_OK",
-        "4": "PA_REQ_N",
-        "5": "FOX_ID",
-        "6": "COMPACT_OK",
-        "9": "PA_KEY",
-        "10": "FOX_KEY",
-        "8": "COMMON_KEY",
-        "12": "GND",
-        "13": "GND",
-        "11": null,
-        "14": "V3V3",
-        "7": "GND"
-      }
-    },
-    {
-      "ref": "C220",
-      "sheet": "03_safety_logic",
-      "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "decoupling",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-CC603KRX7R8BB104",
-      "availability": "20401272 newer EU index; DE20582958",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.04,
-        "50": 0.028,
-        "100": 0.024,
-        "500": 0.017
+        "1": 0.03
       },
       "moq": 1,
       "multiple": 1,
       "pins": {
         "1": "V3V3",
+        "2": "HEALTH_N"
+      }
+    },
+    {
+      "ref": "R220",
+      "sheet": "03_safety_logic",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "UV_POR_N"
+      }
+    },
+    {
+      "ref": "R225",
+      "sheet": "03_safety_logic",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": " Dated M2 distributor observation; no fresh basket verification.",
+      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
+      "supplier": "Mouser",
+      "supplier_part_number": "603-RC0603FR-0710KL",
+      "availability": "3405942 cached DE",
+      "evidence": "OBSERVED_M2",
+      "price_breaks_eur": {
+        "1": 0.086,
+        "10": 0.012,
+        "100": 0.007
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_CONDITION_OK",
         "2": "GND"
       }
     },
     {
-      "ref": "C221",
+      "ref": "D219",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "AND reset/POR with direct UV open collector; a low POR sinks through diode. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "POR_N",
+        "2": "UV_POR_N"
+      }
+    },
+    {
+      "ref": "D220",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "Independent open-drain request-withdrawal faults may clamp RESET_N; CMOS CLR_CORE_N is isolated. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "SAFE_RAW",
+        "2": "HEALTH_N"
+      }
+    },
+    {
+      "ref": "D221",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "NORMAL",
+      "note": "Controller pack qualification AND local analog trips. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PACK4_OK",
+        "2": "PA_GUARD_RAW"
+      }
+    },
+    {
+      "ref": "D222",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "NORMAL",
+      "note": "Compact accessory present inhibits the watt path. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_ID",
+        "2": "PA_GUARD_RAW"
+      }
+    },
+    {
+      "ref": "D223",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "Diode OR allows the low path when PA request is absent. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_CONDITION_OK",
+        "2": "PA_REQ_N"
+      }
+    },
+    {
+      "ref": "D224",
+      "sheet": "03_safety_logic",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "Diode OR requires all watt guards when PA request is present. pin1K/pin2A; price estimate, MOQ1 assumed.",
+      "source_url": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_CONDITION_OK",
+        "2": "PA_GUARD_RAW"
+      }
+    },
+    {
+      "ref": "C220",
       "sheet": "03_safety_logic",
       "value": "100n",
       "mpn": "CC0603KRX7R8BB104",
@@ -1279,30 +1395,26 @@
       }
     },
     {
-      "ref": "C223",
+      "ref": "R228",
       "sheet": "03_safety_logic",
-      "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "decoupling",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-CC603KRX7R8BB104",
-      "availability": "20401272 newer EU index; DE20582958",
-      "evidence": "OBSERVED_M2",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlocks",
+      "population": "FOX",
+      "note": "Fox-only: forces watt guard invalid. Full population MUST omit this link.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.04,
-        "50": 0.028,
-        "100": 0.024,
-        "500": 0.017
+        "1": 0.03
       },
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "V3V3",
+        "1": "PA_GUARD_RAW",
         "2": "GND"
       }
     },
@@ -1326,17 +1438,17 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "SAFE12",
-        "2": "SAFE_MODES",
-        "13": "SAFE_PACK",
-        "12": "SAFE_RAW",
+        "1": "POR_N",
+        "2": "BUS_HOLDOFF_N",
+        "13": "BUS_LINES_HIGH",
+        "12": "BUS_QUIET",
         "3": "ARMED",
-        "4": "PA_REQ",
-        "5": "FOX_REQ_N",
+        "4": "PATH_PA",
+        "5": "ARM_ACCEPT",
         "6": "PA_PERMIT",
         "9": "ARMED",
-        "10": "FOX_REQ",
-        "11": "PA_REQ_N",
+        "10": "PATH_FOX",
+        "11": "ARM_ACCEPT",
         "8": "FOX_PERMIT",
         "14": "V3V3",
         "7": "GND"
@@ -1365,18 +1477,18 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "SAFE_RAW",
+        "1": "HEALTH_N",
         "2": "ARM",
-        "3": "CLR_N",
+        "3": "RESET_N",
         "4": "PA_PERMIT",
         "5": "CW_KEY",
         "6": "PA_KEY",
         "9": "FOX_PERMIT",
         "10": "CW_KEY",
         "8": "FOX_KEY",
-        "12": "TEMP_HOT_OK",
-        "13": "TEMP_OPEN_OK",
-        "11": "THERM_OK",
+        "12": "SCL",
+        "13": "SDA",
+        "11": "BUS_LINES_HIGH",
         "14": "V3V3",
         "7": "GND"
       }
@@ -1404,18 +1516,18 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "CLR_N",
-        "2": "V3V3",
+        "1": "RESET_N",
+        "2": "ARM_ACCEPT",
         "3": "ARM_CLK",
         "4": "V3V3",
         "5": "ARMED",
         "6": "NOT_ARMED",
         "13": "POR_N",
-        "12": "GND",
-        "11": "GND",
+        "12": "V3V3",
+        "11": "LEASE",
         "10": "V3V3",
         "9": null,
-        "8": null,
+        "8": "LEASE_SEEN_N",
         "14": "V3V3",
         "7": "GND"
       }
@@ -1423,40 +1535,40 @@
     {
       "ref": "U224",
       "sheet": "04_arm_key",
-      "value": "74HC74D,653",
-      "mpn": "74HC74D,653",
-      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "value": "74HC174D,653",
+      "mpn": "74HC174D,653",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "group": "interlocks",
-      "population": "NORMAL",
-      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected. Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://nl.mouser.com/ProductDetail/Nexperia/74HC74D653?qs=P62ublwmbi8VnJ1KG1%2FblQ%3D%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "771-74HC74D-T",
-      "availability": "623 older NL;1590 newer USD",
-      "evidence": "OBSERVED_M2",
+      "population": "BOTH",
+      "note": "CMOS 3.3 V. Supply unit and all unused gates explicitly connected.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf",
+      "supplier": "Nexperia/DigiKey/Mouser",
+      "supplier_part_number": "OPEN exact74HC174D,653 cut-tape SKU",
+      "availability": "Nexperia Production; exact local basket OPEN; 175/Toshiba NRND not substituted",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.181,
-        "10": 0.123,
-        "25": 0.108,
-        "100": 0.093
+        "1": 0.35,
+        "10": 0.25
       },
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "CLR_N",
-        "2": "PWR0",
-        "3": "ARM_CLK",
-        "4": "V3V3",
-        "5": "SEL_EXT",
-        "6": null,
-        "13": "CLR_N",
-        "12": "PWR1",
-        "11": "ARM_CLK",
-        "10": "V3V3",
-        "9": "SEL_FULL",
-        "8": null,
-        "14": "V3V3",
-        "7": "GND"
+        "1": "HEALTH_N",
+        "2": "SEL_EXT",
+        "3": "PWR0",
+        "4": "PWR1",
+        "5": "SEL_FULL",
+        "6": "PA_REQ",
+        "7": "PATH_PA",
+        "8": "GND",
+        "9": "ARM",
+        "10": "PATH_FOX",
+        "11": "FOX_REQ",
+        "12": "ARM_ACCEPT",
+        "13": "KEY_N",
+        "14": "GND",
+        "15": null,
+        "16": "V3V3"
       }
     },
     {
@@ -1550,7 +1662,7 @@
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
-      "population": "NORMAL",
+      "population": "BOTH",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
@@ -1569,6 +1681,141 @@
       "pins": {
         "1": "V3V3",
         "2": "GND"
+      }
+    },
+    {
+      "ref": "Q225",
+      "sheet": "04_arm_key",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PATH_PA",
+        "2": "PA_DROP_MID",
+        "3": "HEALTH_N"
+      }
+    },
+    {
+      "ref": "Q226",
+      "sheet": "04_arm_key",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_REQ_N",
+        "2": "DROP_RETURN",
+        "3": "PA_DROP_MID"
+      }
+    },
+    {
+      "ref": "Q227",
+      "sheet": "04_arm_key",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PATH_FOX",
+        "2": "FOX_DROP_MID",
+        "3": "HEALTH_N"
+      }
+    },
+    {
+      "ref": "Q228",
+      "sheet": "04_arm_key",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_REQ_N",
+        "2": "DROP_RETURN",
+        "3": "FOX_DROP_MID"
+      }
+    },
+    {
+      "ref": "Q229",
+      "sheet": "04_arm_key",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "group": "interlocks",
+      "population": "BOTH",
+      "note": "Request faults only when captured context valid. HEALTH MR clears acceptance, independently masking RF; no implicit rearm. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "ARM_ACCEPT",
+        "2": "GND",
+        "3": "DROP_RETURN"
       }
     },
     {
@@ -1947,21 +2194,21 @@
     {
       "ref": "Q301",
       "sheet": "05_power",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "normal_supply",
       "population": "NORMAL",
-      "note": " 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -1998,21 +2245,21 @@
     {
       "ref": "Q302",
       "sheet": "05_power",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "normal_supply",
       "population": "NORMAL",
-      "note": " 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -2053,12 +2300,12 @@
     {
       "ref": "C306",
       "sheet": "05_power",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
+      "value": "4.7n",
+      "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "normal_supply",
       "population": "NORMAL",
-      "note": "Slew timing starter, measure real charge current and disable discharge.",
+      "note": "4.7n slows initial47uFdrivercharge; measure inrush belowOC threshold and outputsettling. OFF latency is separately<=20us gate.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2201,7 +2448,7 @@
       "mpn": "RC0603FR-071K5L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2225,7 +2472,7 @@
       "mpn": "RC0603FR-071KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2249,7 +2496,7 @@
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
@@ -2351,7 +2598,7 @@
       "mpn": "LM339BIDR",
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "https://www.ti.com/lit/ds/symlink/lm339b.pdf",
       "supplier": "OPEN",
@@ -2364,124 +2611,44 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "5": "V_PACK_SCALED",
-        "4": "PACK_2S_REF",
-        "2": "COMMON_UV_OK",
+        "5": "TEMP_SENSE",
+        "4": "TEMP_HOT_REF",
+        "2": "PA_GUARD_RAW",
         "7": "V_PACK_SCALED",
         "6": "PACK_4S_REF",
-        "1": "LOCAL_4S_OK",
+        "1": "PA_GUARD_RAW",
         "11": "PA_OV_REF",
         "10": "V_PA_OV",
-        "13": "PA_OV_OK",
+        "13": "PA_GUARD_RAW",
         "9": "PA_OC_REF",
         "8": "I_PA_FILTER",
-        "14": "PA_OC_OK",
+        "14": "PA_GUARD_RAW",
         "3": "V3V3",
         "12": "GND"
       }
     },
     {
-      "ref": "R320",
-      "sheet": "06_analog_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "COMMON_UV_OK"
-      }
-    },
-    {
       "ref": "R321",
       "sheet": "06_analog_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
+        "1": 0.03
       },
       "moq": 1,
       "multiple": 1,
       "pins": {
         "1": "V3V3",
-        "2": "LOCAL_4S_OK"
-      }
-    },
-    {
-      "ref": "R322",
-      "sheet": "06_analog_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "PA_OV_OK"
-      }
-    },
-    {
-      "ref": "R323",
-      "sheet": "06_analog_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "PA_OC_OK"
+        "2": "PA_GUARD_RAW"
       }
     },
     {
@@ -2491,7 +2658,7 @@
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "group": "decoupling",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
       "supplier": "Mouser",
@@ -2547,7 +2714,7 @@
       "mpn": "RC0603FR-07309KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2571,7 +2738,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -2671,7 +2838,7 @@
       "mpn": "RC0603FR-0761K9L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2695,7 +2862,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -2721,7 +2888,7 @@
       "mpn": "RC0603FR-0778K7L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2745,7 +2912,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -2771,7 +2938,7 @@
       "mpn": "RC0603FR-0769K8L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -2795,7 +2962,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -2993,7 +3160,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "Shared default0V OC input with sensor DNP; valid only when watt stage DNP. Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -3047,7 +3214,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "Pull from bounded<1.0V reference keeps comparator inputs in range at cold/open NTC. Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -3073,8 +3240,8 @@
       "mpn": "NCP18XH103F03RB",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
-      "note": "B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only fit fixed10k instead via R336.",
+      "population": "NORMAL",
+      "note": "B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only DNP; normal PA and thermal sensing absent; unused dual-comparator inputs grounded via R348/R349.",
       "source_url": "https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -3091,39 +3258,13 @@
       }
     },
     {
-      "ref": "R336",
-      "sheet": "07_current_thermal",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "DNP",
-      "note": "Fox-only substitutes TH301 with this resistor; never populate both on full module. Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "TEMP_SENSE",
-        "2": "GND"
-      }
-    },
-    {
       "ref": "R337",
       "sheet": "07_current_thermal",
       "value": "60.4k",
       "mpn": "RC0603FR-0760K4L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -3147,7 +3288,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -3173,7 +3314,7 @@
       "mpn": "RC0603FR-071K3L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": "",
       "source_url": "",
       "supplier": "OPEN",
@@ -3197,7 +3338,7 @@
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
-      "population": "BOTH",
+      "population": "NORMAL",
       "note": " Dated M2 distributor observation; no fresh basket verification.",
       "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
       "supplier": "Mouser",
@@ -3239,66 +3380,14 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "3": "TEMP_SENSE",
-        "2": "TEMP_HOT_REF",
-        "1": "TEMP_HOT_OK",
+        "3": "V_PACK_SCALED",
+        "2": "PACK_2S_REF",
+        "1": "UV_POR_N",
         "5": "TEMP_OPEN_REF",
         "6": "TEMP_SENSE",
-        "7": "TEMP_OPEN_OK",
+        "7": "PA_GUARD_RAW",
         "8": "V3V3",
         "4": "GND"
-      }
-    },
-    {
-      "ref": "R341",
-      "sheet": "07_current_thermal",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "TEMP_HOT_OK"
-      }
-    },
-    {
-      "ref": "R342",
-      "sheet": "07_current_thermal",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "BOTH",
-      "note": " Dated M2 distributor observation; no fresh basket verification.",
-      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
-      "supplier": "Mouser",
-      "supplier_part_number": "603-RC0603FR-0710KL",
-      "availability": "3405942 cached DE",
-      "evidence": "OBSERVED_M2",
-      "price_breaks_eur": {
-        "1": 0.086,
-        "10": 0.012,
-        "100": 0.007
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "TEMP_OPEN_OK"
       }
     },
     {
@@ -3330,6 +3419,54 @@
       }
     },
     {
+      "ref": "R348",
+      "sheet": "07_current_thermal",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "protection",
+      "population": "FOX",
+      "note": "Unused LM393 half input low in Fox-only; full DNP.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TEMP_OPEN_REF",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R349",
+      "sheet": "07_current_thermal",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "protection",
+      "population": "FOX",
+      "note": "Unused LM393 half input low in Fox-only; full DNP.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TEMP_SENSE",
+        "2": "GND"
+      }
+    },
+    {
       "ref": "U401",
       "sheet": "08_normal_rf",
       "value": "LM5134BMF/NOPB",
@@ -3351,7 +3488,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VPA_LOAD",
+        "1": "VDRV",
         "2": null,
         "3": "GATE_DRV",
         "4": "GND",
@@ -3381,28 +3518,28 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VPA_LOAD",
+        "1": "VDRV",
         "2": "PA_INB"
       }
     },
     {
       "ref": "Q401",
       "sheet": "08_normal_rf",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "normal_driver",
       "population": "NORMAL",
-      "note": " 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -3439,21 +3576,21 @@
     {
       "ref": "Q405",
       "sheet": "08_normal_rf",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "normal_driver",
       "population": "NORMAL",
-      "note": "Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": "Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -3487,7 +3624,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VPA_LOAD",
+        "1": "VDRV",
         "2": "GND"
       }
     },
@@ -3511,7 +3648,81 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
+        "1": "VDRV",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R410",
+      "sheet": "08_normal_rf",
+      "value": "4.7",
+      "mpn": "CRCW25124R70FKEG",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "group": "normal_driver",
+      "population": "NORMAL",
+      "note": "1W/pulse-rated candidate; with C404 limits driver dV/dt during buck failure. Pulse energy/part qualification OPEN.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
         "1": "VPA_LOAD",
+        "2": "VDRV"
+      }
+    },
+    {
+      "ref": "C404",
+      "sheet": "08_normal_rf",
+      "value": "47u / 25V",
+      "mpn": "25SVPF47M",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+      "group": "normal_driver",
+      "population": "NORMAL",
+      "note": "Panasonic polymer47u25V +/-20%,30mohm max100kHz20C;235uA leakage max. C6 maker land gap2.1/outer9.1/width1.6 agrees native pads. Cmin37.6u, ESR<=0.5ohm over0-50C and isolation<=20us must qualify; no safety proof from ideal RC.",
+      "source_url": "https://www.digikey.de/en/products/detail/panasonic-electronic-components/25SVPF47M/4204845",
+      "supplier": "DigiKey",
+      "supplier_part_number": "P16513CT-ND",
+      "availability": "DE index48247; direct fetch cache miss; Active/cut tape MOQ1; basket recheck",
+      "evidence": "OBSERVED_R1_INDEX",
+      "price_breaks_eur": {
+        "1": 1.5,
+        "10": 0.973,
+        "50": 0.7506
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VDRV",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R409",
+      "sheet": "08_normal_rf",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "normal_driver",
+      "population": "NORMAL",
+      "note": "Deterministic intermediate source bias; inhibit FETs now +/-20VGS rated.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PA_MUTE_MID",
         "2": "GND"
       }
     },
@@ -3724,11 +3935,11 @@
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "normal_shaper",
       "population": "NORMAL",
-      "note": " 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
+      "note": " 45mohm at2.5V, +/-8VGS; retained for70mA shaper base sink.",
       "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
       "supplier": "Mouser",
       "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
+      "availability": "Retained R0 stock observation",
       "evidence": "OBSERVED_M3",
       "price_breaks_eur": {
         "1": 0.335,
@@ -3903,7 +4114,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "COMMON_KEY",
+        "1": "CW_KEY",
         "2": "KEY_TAIL_SRC"
       }
     },
@@ -3986,8 +4197,8 @@
     {
       "ref": "R453",
       "sheet": "08b_key_tail",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "interlocks",
       "population": "BOTH",
@@ -4010,21 +4221,21 @@
     {
       "ref": "Q406",
       "sheet": "08b_key_tail",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "interlocks",
       "population": "BOTH",
-      "note": "100usRCdischargeresetskeymemorywhileunarmed; preventsrearmstartupdrivefromlastmark. 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": "10usresetRCclampsrawKEYevenifheldhigh; KEYhighcannotarm. Verify thresholds/leakage attemperature. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -4535,21 +4746,21 @@
     {
       "ref": "Q502",
       "sheet": "10_fox_rf",
-      "value": "DMN2056U-7",
-      "mpn": "DMN2056U-7",
+      "value": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "fox",
       "population": "BOTH",
-      "note": " 20VDS, +/-8VGS;45mohm at2.5V. Native2N7002 drawing only, actualMPN DMN2056U:1G2S3D; all switchednodes<9V.",
-      "source_url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "note": " 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
       "supplier": "Mouser",
-      "supplier_part_number": "621-DMN2056U-7",
-      "availability": "95248 indexed14Oct; cuttapeMOQ1",
-      "evidence": "OBSERVED_M3",
+      "supplier_part_number": "771-BSS138BK215",
+      "availability": "EUR ten-price indexed0.099; single/100 estimates; EU stock conflict OPEN",
+      "evidence": "MIXED_ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.335,
-        "10": 0.147,
-        "100": 0.128
+        "1": 0.22,
+        "10": 0.099,
+        "100": 0.06
       },
       "moq": 1,
       "multiple": 1,
@@ -5448,7 +5659,7 @@
       }
     },
     {
-      "ref": "#FLG211",
+      "ref": "#FLG221",
       "sheet": "05_power",
       "value": "PWR_FLAG",
       "mpn": "",
@@ -5471,7 +5682,7 @@
       }
     },
     {
-      "ref": "#FLG212",
+      "ref": "#FLG222",
       "sheet": "05_power",
       "value": "PWR_FLAG",
       "mpn": "",
@@ -5494,7 +5705,7 @@
       }
     },
     {
-      "ref": "#FLG213",
+      "ref": "#FLG223",
       "sheet": "07_current_thermal",
       "value": "PWR_FLAG",
       "mpn": "",
@@ -5517,7 +5728,7 @@
       }
     },
     {
-      "ref": "#FLG214",
+      "ref": "#FLG224",
       "sheet": "10_fox_rf",
       "value": "PWR_FLAG",
       "mpn": "",
@@ -5537,6 +5748,29 @@
       "multiple": 1,
       "pins": {
         "1": "VFOX"
+      }
+    },
+    {
+      "ref": "#FLG225",
+      "sheet": "08_normal_rf",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "test",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "BOARD_FEATURE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VDRV"
       }
     }
   ],
@@ -5939,102 +6173,88 @@
         "type": "74HC00"
       },
       {
-        "ref": "U213",
+        "ref": "R219",
         "unit": 1,
-        "x": 49.53,
-        "y": 165.1,
-        "type": "74HC08"
+        "x": 44.45,
+        "y": 175.26,
+        "type": "R"
       },
       {
-        "ref": "U213",
-        "unit": 2,
+        "ref": "R220",
+        "unit": 1,
         "x": 144.78,
-        "y": 165.1,
-        "type": "74HC08"
+        "y": 175.26,
+        "type": "R"
       },
       {
-        "ref": "U213",
-        "unit": 3,
-        "x": 240.03,
-        "y": 165.1,
-        "type": "74HC08"
-      },
-      {
-        "ref": "U213",
-        "unit": 4,
-        "x": 335.28000000000003,
-        "y": 165.1,
-        "type": "74HC08"
-      },
-      {
-        "ref": "U213",
-        "unit": 5,
-        "x": 379.73,
-        "y": 245.11,
-        "type": "74HC08"
-      },
-      {
-        "ref": "U214",
+        "ref": "R225",
         "unit": 1,
-        "x": 59.69,
-        "y": 210.82,
-        "type": "74HC32"
-      },
-      {
-        "ref": "U214",
-        "unit": 2,
-        "x": 149.86,
-        "y": 210.82,
-        "type": "74HC32"
-      },
-      {
-        "ref": "U214",
-        "unit": 3,
         "x": 240.03,
-        "y": 210.82,
-        "type": "74HC32"
+        "y": 175.26,
+        "type": "R"
       },
       {
-        "ref": "U214",
-        "unit": 4,
-        "x": 335.28000000000003,
-        "y": 210.82,
-        "type": "74HC32"
+        "ref": "D219",
+        "unit": 1,
+        "x": 44.45,
+        "y": 229.87,
+        "type": "BAT54WS"
       },
       {
-        "ref": "U214",
-        "unit": 5,
-        "x": 330.2,
-        "y": 245.11,
-        "type": "74HC32"
+        "ref": "D220",
+        "unit": 1,
+        "x": 149.86,
+        "y": 229.87,
+        "type": "BAT54WS"
+      },
+      {
+        "ref": "D221",
+        "unit": 1,
+        "x": 250.19,
+        "y": 229.87,
+        "type": "BAT54WS"
+      },
+      {
+        "ref": "D222",
+        "unit": 1,
+        "x": 350.52,
+        "y": 229.87,
+        "type": "BAT54WS"
+      },
+      {
+        "ref": "D223",
+        "unit": 1,
+        "x": 44.45,
+        "y": 270.51,
+        "type": "BAT54WS"
+      },
+      {
+        "ref": "D224",
+        "unit": 1,
+        "x": 160.02,
+        "y": 270.51,
+        "type": "BAT54WS"
       },
       {
         "ref": "C220",
         "unit": 1,
-        "x": 44.45,
-        "y": 250.19,
-        "type": "C"
-      },
-      {
-        "ref": "C221",
-        "unit": 1,
-        "x": 110.49,
-        "y": 250.19,
+        "x": 240.03,
+        "y": 270.51,
         "type": "C"
       },
       {
         "ref": "C222",
         "unit": 1,
-        "x": 175.26,
-        "y": 250.19,
+        "x": 279.4,
+        "y": 270.51,
         "type": "C"
       },
       {
-        "ref": "C223",
+        "ref": "R228",
         "unit": 1,
-        "x": 240.03,
-        "y": 250.19,
-        "type": "C"
+        "x": 350.52,
+        "y": 175.26,
+        "type": "R"
       }
     ],
     "04_arm_key": [
@@ -6125,23 +6345,9 @@
       {
         "ref": "U224",
         "unit": 1,
-        "x": 279.4,
-        "y": 170.18,
-        "type": "74HC74"
-      },
-      {
-        "ref": "U224",
-        "unit": 2,
-        "x": 379.73,
-        "y": 170.18,
-        "type": "74HC74"
-      },
-      {
-        "ref": "U224",
-        "unit": 3,
-        "x": 270.51,
-        "y": 219.71,
-        "type": "74HC74"
+        "x": 335.28000000000003,
+        "y": 172.72,
+        "type": "74HC174"
       },
       {
         "ref": "C230",
@@ -6170,6 +6376,41 @@
         "x": 214.63,
         "y": 219.71,
         "type": "C"
+      },
+      {
+        "ref": "Q225",
+        "unit": 1,
+        "x": 44.45,
+        "y": 264.16,
+        "type": "2N7002"
+      },
+      {
+        "ref": "Q226",
+        "unit": 1,
+        "x": 110.49,
+        "y": 264.16,
+        "type": "2N7002"
+      },
+      {
+        "ref": "Q227",
+        "unit": 1,
+        "x": 175.26,
+        "y": 264.16,
+        "type": "2N7002"
+      },
+      {
+        "ref": "Q228",
+        "unit": 1,
+        "x": 240.03,
+        "y": 264.16,
+        "type": "2N7002"
+      },
+      {
+        "ref": "Q229",
+        "unit": 1,
+        "x": 255.27,
+        "y": 198.12,
+        "type": "2N7002"
       }
     ],
     "05_power": [
@@ -6335,14 +6576,14 @@
         "type": "PWR_FLAG"
       },
       {
-        "ref": "#FLG211",
+        "ref": "#FLG221",
         "unit": 1,
         "x": 39.37,
         "y": 255.27,
         "type": "PWR_FLAG"
       },
       {
-        "ref": "#FLG212",
+        "ref": "#FLG222",
         "unit": 1,
         "x": 139.7,
         "y": 255.27,
@@ -6442,30 +6683,9 @@
         "type": "LM339"
       },
       {
-        "ref": "R320",
-        "unit": 1,
-        "x": 35.56,
-        "y": 210.82,
-        "type": "R"
-      },
-      {
         "ref": "R321",
         "unit": 1,
-        "x": 96.52,
-        "y": 210.82,
-        "type": "R"
-      },
-      {
-        "ref": "R322",
-        "unit": 1,
-        "x": 158.75,
-        "y": 210.82,
-        "type": "R"
-      },
-      {
-        "ref": "R323",
-        "unit": 1,
-        "x": 220.98,
+        "x": 100.33,
         "y": 210.82,
         "type": "R"
       },
@@ -6642,13 +6862,6 @@
         "type": "Thermistor_NTC"
       },
       {
-        "ref": "R336",
-        "unit": 1,
-        "x": 160.02,
-        "y": 166.37,
-        "type": "R"
-      },
-      {
         "ref": "R337",
         "unit": 1,
         "x": 219.71,
@@ -6698,20 +6911,6 @@
         "type": "LM393"
       },
       {
-        "ref": "R341",
-        "unit": 1,
-        "x": 44.45,
-        "y": 261.62,
-        "type": "R"
-      },
-      {
-        "ref": "R342",
-        "unit": 1,
-        "x": 119.38,
-        "y": 261.62,
-        "type": "R"
-      },
-      {
         "ref": "C323",
         "unit": 1,
         "x": 199.39000000000001,
@@ -6719,7 +6918,21 @@
         "type": "C"
       },
       {
-        "ref": "#FLG213",
+        "ref": "R348",
+        "unit": 1,
+        "x": 39.37,
+        "y": 261.62,
+        "type": "R"
+      },
+      {
+        "ref": "R349",
+        "unit": 1,
+        "x": 110.49,
+        "y": 261.62,
+        "type": "R"
+      },
+      {
+        "ref": "#FLG223",
         "unit": 1,
         "x": 240.03,
         "y": 260.35,
@@ -6775,6 +6988,27 @@
         "x": 240.03,
         "y": 110.49,
         "type": "C"
+      },
+      {
+        "ref": "R410",
+        "unit": 1,
+        "x": 39.37,
+        "y": 95.25,
+        "type": "R"
+      },
+      {
+        "ref": "C404",
+        "unit": 1,
+        "x": 119.38,
+        "y": 95.25,
+        "type": "C_Polarized"
+      },
+      {
+        "ref": "R409",
+        "unit": 1,
+        "x": 335.28000000000003,
+        "y": 144.78,
+        "type": "R"
       },
       {
         "ref": "R403",
@@ -6880,6 +7114,13 @@
         "x": 195.58,
         "y": 267.97,
         "type": "TestPoint"
+      },
+      {
+        "ref": "#FLG225",
+        "unit": 1,
+        "x": 389.89,
+        "y": 139.7,
+        "type": "PWR_FLAG"
       }
     ],
     "08b_key_tail": [
@@ -7210,7 +7451,7 @@
         "type": "R"
       },
       {
-        "ref": "#FLG214",
+        "ref": "#FLG224",
         "unit": 1,
         "x": 379.73,
         "y": 214.63,

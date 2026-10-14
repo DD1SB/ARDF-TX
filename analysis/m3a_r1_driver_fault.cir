@@ -1,0 +1,14 @@
+RF80 R1 linear driver rail failure sensitivity: 28V-surrogate-OUTSIDE-SYSTEM-RATING
+VPA VPA_LOAD 0 PWL(0 8.6 1u 8.6 1.0001u 28.0 21u 28.0 21.0001u 0)
+R410 VPA_LOAD VDRV 4.6530000000000005
+C_HF VDRV 0 8.8e-07
+R_ESR VDRV BULK 0.5
+C404 BULK 0 3.76e-05
+.control
+set wr_singlescale
+set wr_vecnames
+tran 0.02u 150u
+wrdata result.dat v(VDRV) i(VPA)
+quit
+.endc
+.end

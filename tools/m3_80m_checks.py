@@ -37,7 +37,7 @@ def report():
       'U201':{'1':'POR_N','2':'V3V3','3':'GND'},
       'U313':{'1':'I_PA_RAW','2':'GND','3':'SENSE_PLUS','4':'SENSE_MINUS','5':'V3V3'},
       'U301':{'1':'GND','2':'SW_PA','3':'VIN_PA','4':'FB_PA','5':'PA_PERMIT','6':'BOOT_PA'},
-      'U401':{'1':'VPA_LOAD','2':None,'3':'GATE_DRV','4':'GND','5':'PA_INB','6':'CLK_PA'},
+      'U401':{'1':'VDRV','2':None,'3':'GATE_DRV','4':'GND','5':'PA_INB','6':'CLK_PA'},
       'Q402':{'1':'GATE_PA','2':'DRAIN_PA','3':'GND'},
       'Q403':{'1':'VPA_LOAD','2':'VPA_SHAPED','3':'SHAPE_BASE'},
       'T401':{'1':'VPA_SHAPED','2':'DRAIN_PA','3':'DRAIN_PA','4':'RF_RAW'},
@@ -53,8 +53,8 @@ def report():
     assert parts['U203']['pins']['13']=='KEY_TAIL_C' and parts['U203']['pins']['12']=='KEY_TAIL_N'
     assert parts['U212']['pins']['8']=='KEY_TAIL'
     assert parts['U212']['pins']['12']=='FOX_PERMIT' and parts['U212']['pins']['13']=='KEY_TAIL' and parts['U212']['pins']['11']=='FOX_MUTE'
-    assert parts['R451']['pins']['1']=='COMMON_KEY'
-    assert parts['U223']['pins']['1']=='CLR_N' and parts['U223']['pins']['2']=='V3V3' and parts['U223']['pins']['3']=='ARM_CLK' and parts['U223']['pins']['4']=='V3V3'
+    assert parts['R451']['pins']['1']=='CW_KEY'
+    assert parts['U223']['pins']['1']=='RESET_N' and parts['U223']['pins']['2']=='ARM_ACCEPT' and parts['U223']['pins']['3']=='ARM_CLK' and parts['U223']['pins']['4']=='V3V3'
     assert parts['U202']['pins']['6']=='GND' and parts['U202']['pins']['14']=='GND'
     assert parts['D201']['pins']=={'1':'V3V3','2':'LEASE_RC'} and parts['D202']['pins']=={'1':'V3V3','2':'BUS_RC'}
     for ref in ('R451','D451','R452','C451','R453','Q406'):
@@ -119,72 +119,9 @@ def report():
     for name in ('PA_SELECTION','SCHEMATIC_REVIEW','BOM','TEST_PLAN','REVIEW_DECISION'):
         assert (ROOT/'docs'/('M3_80M_'+name+'.md')).exists()
 
-    # Requirements-level Boolean checks (not an analogue/time simulation).
-    # Resolve combinational gate wiring from the exported physical-pin mapping.
-    # Compare against the independent permission requirements, so swapped gate
-    # nets or a wrong physical unit/pin fail this check.
-    layouts={
-      '74HC21':[(('1','2','4','5'),'6'),(('9','10','12','13'),'8')],
-      '74HC08':[(('1','2'),'3'),(('4','5'),'6'),(('9','10'),'8'),(('12','13'),'11')],
-      '74HC32':[(('1','2'),'3'),(('4','5'),'6'),(('9','10'),'8'),(('12','13'),'11')],
-      '74HC00':[(('1','2'),'3'),(('4','5'),'6'),(('9','10'),'8'),(('12','13'),'11')],
-      '74HC11':[(('1','2','13'),'12'),(('3','4','5'),'6'),(('9','10','11'),'8')]
-    }
-    gate_instances=[]
-    for ref in ('U211','U212','U213','U214','U221','U222'):
-        typ=parts[ref]['value'].split('D,')[0]
-        for ip,op in layouts[typ]:
-            if (ref,op) in actual:
-                gate_instances.append((typ,[actual[(ref,p)]for p in ip],actual[(ref,op)]))
-    for ip,op in [('5','6'),('9','8'),('11','10'),('13','12')]:
-        if ('U203',op) in actual:gate_instances.append(('NOT',[actual[('U203',ip)]],actual[('U203',op)]))
-    def evaluate(values):
-        for _ in range(12):
-            for typ,ins,out in gate_instances:
-                if all(n in values for n in ins):
-                    aa=[values[n]for n in ins]
-                    value=(not aa[0] if typ=='NOT' else any(aa)if typ=='74HC32' else not all(aa)if typ=='74HC00' else all(aa))
-                    values[out]=bool(value)
-        return values
-    cases=0
-    for arm,health,pa,fox,p0,p1,pack,absent in itertools.product((0,1),repeat=8):
-        safe=bool(health and not(pa and fox) and not(p0 and p1) and (not pa or pack) and (not pa or absent))
-        armed=bool(arm and safe)
-        pp=bool(armed and pa and not fox);fp=bool(armed and fox and not pa)
-        assert not(pp and fp)
-        if not arm or not health or(pa and fox)or(p0 and p1):assert not(pp or fp)
-        if not pack or not absent:assert not pp
-        values={'GND':False,'V3V3':True,'ARM':bool(arm),'PA_REQ':bool(pa),'FOX_REQ':bool(fox),'PWR0':bool(p0),'PWR1':bool(p1),'PACK4_OK':bool(pack),'LOCAL_4S_OK':bool(pack),'FOX_ID':bool(absent),'CW_KEY':True,'KEY_TAIL_C':False}
-        values.update({n:bool(health)for n in ('POR_N','LEASE_OK','BUS_QUIET','COMMON_UV_OK','PA_OV_OK','PA_OC_OK','MUTE_N','TEMP_HOT_OK','TEMP_OPEN_OK')})
-        values=evaluate(values)
-        assert values['SAFE_RAW']==safe
-        values['ARMED']=bool(arm and values['SAFE_RAW']);values=evaluate(values)
-        assert values['PA_PERMIT']==pp and values['FOX_PERMIT']==fp
-        assert values['KEY_TAIL']==False
-        assert values['FOX_MUTE']==True
-        assert values['COMMON_KEY']==bool(pp or fp)
-        values['KEY_TAIL_C']=True;values=evaluate(values);assert values['KEY_TAIL']==True
-        assert values['FOX_MUTE']==(not fp)
-        cases+=1
-    # Exercise each physical health input individually for both RF requests.
-    health_names=('POR_N','LEASE_OK','BUS_QUIET','COMMON_UV_OK','PA_OV_OK','PA_OC_OK','MUTE_N','TEMP_HOT_OK','TEMP_OPEN_OK')
-    fault_cases=0
-    for path in ('PA_REQ','FOX_REQ'):
-        for fault in health_names:
-            v=dict(GND=False,V3V3=True,ARM=True,PA_REQ=path=='PA_REQ',FOX_REQ=path=='FOX_REQ',PWR0=False,PWR1=False,PACK4_OK=True,LOCAL_4S_OK=True,FOX_ID=True,CW_KEY=True,KEY_TAIL_C=True)
-            v.update({n:n!=fault for n in health_names});v=evaluate(v)
-            assert not v['CLR_N']
-            # Physical HC74 clear is asynchronous and dominant.
-            v['ARMED']=False;v=evaluate(v)
-            assert not(v['PA_PERMIT']or v['FOX_PERMIT']) and v['FOX_MUTE']
-            fault_cases+=1
-    # A cleared HC74 remains clear when health returns without an ARM clock edge.
-    # This is a logical requirement model, not propagation-delay simulation.
-    state=False;clear_n=True;arm_clock_edge=False
-    if not clear_n:state=False
-    elif arm_clock_edge:state=True
-    assert state==False
-
+    # Functional tests now include real HC123/HC74/HC175 state and physical pins.
+    from m3a_r1_logic import verify
+    logical=verify();cases=logical['truth_cases'];fault_cases=len(logical['state_scenarios'])
     ref=2.495
     uv2=ref*10000/(127000+10000)*31.9
     uv4=ref*10000/(61900+10000)*31.9
@@ -236,7 +173,7 @@ def report():
         mean=baseline+.2*bb/.85+.2*.4*(bb/.85)/12
         poor.append(dict(profile=name,PA_eta=.4,buck_eta=.85,mean_pack_w=mean,runtime_4S1P25R_h=22.86144/mean))
     power=dict(baseline_pack_w_assumed=baseline,source_policy='Always powered25mA allowance; do not creditSiidlepoweruntilmeasured',profiles=profiles,Fox_W_retained=.350,poor_efficiency_cases=poor,idle_plus_018W_runtime_h=[p['usable_4S1P25R_wh']/(p['mean_pack_w']+.18)for p in profiles])
-    return dict(date='2026-10-14',classification='NETLIST/FOOTPRINT/BOOLEAN CHECKS AND DESIGN CALCULATIONS; NO MEASUREMENTS OR RF SIMULATION',schematic_sheets=14,manifest_parts=len(parts),connected_pins_checked=pins,footprints_checked=footprints,ERC_violations=0,Boolean_cases=cases,individual_fault_cases=fault_cases,cost_baskets_checked=cost_baskets,cost_csv_rows_checked=len(csv_rows),physical_pinmaps_checked=list(needed),analogue=dict(reference_v=ref,protected_input_UV2_v=uv2,protected_input_UV4_v=uv4,PA_OV_v=ov,PA_OC_a=oc,thermal_approx_trip_c=temptrip,thermal_hub_cases=temp,worst_TL431_cathode_a=worst_tl_cathode,maximum_comparator_input_v=max_input,conservative_VCM_max_v=3.135-2,rails_v=rails,pad_insertion_db_ideal=pad_db,maximum_Fox_fault_available_w_calculated=fault_p,fault_resistor_tolerance_fraction=.01),power=power)
+    return dict(date='2026-10-14',classification='NETLIST/FOOTPRINT/BOOLEAN CHECKS AND DESIGN CALCULATIONS; NO MEASUREMENTS OR RF SIMULATION',schematic_sheets=14,revision='M3A-R1',manifest_parts=len(parts),connected_pins_checked=pins,footprints_checked=footprints,ERC_violations=0,Boolean_cases=cases,individual_fault_cases=fault_cases,cost_baskets_checked=cost_baskets,cost_csv_rows_checked=len(csv_rows),physical_pinmaps_checked=list(needed),analogue=dict(reference_v=ref,protected_input_UV2_v=uv2,protected_input_UV4_v=uv4,PA_OV_v=ov,PA_OC_a=oc,thermal_approx_trip_c=temptrip,thermal_hub_cases=temp,worst_TL431_cathode_a=worst_tl_cathode,maximum_comparator_input_v=max_input,conservative_VCM_max_v=3.135-2,rails_v=rails,pad_insertion_db_ideal=pad_db,maximum_Fox_fault_available_w_calculated=fault_p,fault_resistor_tolerance_fraction=.01),power=power)
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--write',action='store_true');args=ap.parse_args()

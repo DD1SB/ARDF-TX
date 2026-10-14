@@ -1,5 +1,7 @@
 # M3A — prototype measurements and acceptance gates
 
+**M3A-R1 additions:** [R1-L1–L4/P1/R1–R2/T1/I1](M3A_R1_VERIFICATION.md) supplement every gate below and remain NOT RUN. Test actual Q13//Q12 and heartbeat witness; raw ARM context, pending delayed clock, selected-request withdrawal and KEY-high refusal; comparator/diode/FET margins and asynchronous clear feedback. Converter fault acceptance additionally requires measured≤20 µs total isolation, VDRV≤12.6 V and C404 transient ESR≤0.5 Ω over0–50°C. Power-only/logic qualification precedes unrestricted4S and RF. Tests explicitly reject recovery while ARM stays high.
+
 Date: **2026-10-14**. **Every physical test below is NOT RUN.** ERC, netlist and Boolean checks are design checks, not measurements. No PCB, component order or physical assembly has been authorized or produced.
 
 Propose one small evaluation assembly of the selected IRF610 core, supply, shaper and interlocks, with the separate Fox section. It is a temporary fixture, not a fourth primary product PCB. No competing complete QCX transmitter is needed. Keep replaceable fixed feedback/pad values, gate link R403, removable DC block C410 and labelled current/probe access. Do not key an unfiltered or unmatched bare final because a point is called RF_RAW.
