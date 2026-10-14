@@ -1,0 +1,4797 @@
+{
+  "date": "2026-10-13",
+  "classification": "CANDIDATE MATERIAL COST; OBSERVATIONS PLUS EXPLICIT UNQUOTED ALLOWANCES",
+  "scope": "EUR exVAT planning; assembly/test labor and instruments unquoted/excluded; LoRa optional separately",
+  "standalone_boards": [
+    {
+      "board": "Controller, no LoRa",
+      "batch": 6,
+      "base_M1_eur": 15.01,
+      "proposed_nominal_eur": 15.01
+    },
+    {
+      "board": "Controller, no LoRa",
+      "batch": 10,
+      "base_M1_eur": 12.88,
+      "proposed_nominal_eur": 12.88
+    },
+    {
+      "board": "Controller, no LoRa",
+      "batch": 20,
+      "base_M1_eur": 12.82,
+      "proposed_nominal_eur": 12.82
+    },
+    {
+      "board": "80 m full",
+      "batch": 6,
+      "base_M1_eur": 20.13,
+      "proposed_nominal_eur": 25.95
+    },
+    {
+      "board": "80 m full",
+      "batch": 10,
+      "base_M1_eur": 17.88,
+      "proposed_nominal_eur": 23.332
+    },
+    {
+      "board": "80 m full",
+      "batch": 20,
+      "base_M1_eur": 17.8,
+      "proposed_nominal_eur": 23.252
+    },
+    {
+      "board": "2 m MMIC AM + training",
+      "batch": 6,
+      "base_M1_eur": 36.38,
+      "proposed_nominal_eur": 41.135
+    },
+    {
+      "board": "2 m MMIC AM + training",
+      "batch": 10,
+      "base_M1_eur": 31.8,
+      "proposed_nominal_eur": 36.146
+    },
+    {
+      "board": "2 m MMIC AM + training",
+      "batch": 20,
+      "base_M1_eur": 31.73,
+      "proposed_nominal_eur": 36.076
+    },
+    {
+      "board": "80 m Fox-only population",
+      "batch": 6,
+      "base_M1_eur": 8.82,
+      "proposed_nominal_eur": 9.57
+    },
+    {
+      "board": "80 m Fox-only population",
+      "batch": 10,
+      "base_M1_eur": 7.92,
+      "proposed_nominal_eur": 8.67
+    },
+    {
+      "board": "80 m Fox-only population",
+      "batch": 20,
+      "base_M1_eur": 7.86,
+      "proposed_nominal_eur": 8.61
+    }
+  ],
+  "rows": [
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 6,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 35.0,
+      "M2_increment_eur": 5.82,
+      "proposed_PCB_components_eur": 40.82,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        91.31,
+        123.28,
+        171.12
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          36.34,
+          40.82,
+          49.68
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 6,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 35.0,
+      "M2_increment_eur": 5.82,
+      "proposed_PCB_components_eur": 40.82,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        97.31,
+        131.28,
+        181.12
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          36.34,
+          40.82,
+          49.68
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 6,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 35.0,
+      "M2_increment_eur": 5.82,
+      "proposed_PCB_components_eur": 40.82,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        103.31,
+        139.28,
+        191.12
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          36.34,
+          40.82,
+          49.68
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 6,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 35.0,
+      "M2_increment_eur": 5.82,
+      "proposed_PCB_components_eur": 40.82,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        109.31,
+        147.28,
+        201.12
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          36.34,
+          40.82,
+          49.68
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 10,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        82.35,
+        110.19,
+        153.96
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 10,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        88.35,
+        118.19,
+        163.96
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 10,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        94.35,
+        126.19,
+        173.96
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 10,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        100.35,
+        134.19,
+        183.96
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 20,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        80.7,
+        106.94,
+        149.16
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 20,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        86.7,
+        114.94,
+        159.16
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 20,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        92.7,
+        122.94,
+        169.16
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Full 80 m unit, long + compact antennas",
+      "batch": 20,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 30.61,
+      "M2_increment_eur": 5.452,
+      "proposed_PCB_components_eur": 36.062,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        98.7,
+        130.94,
+        179.16
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          31.582,
+          36.062,
+          44.912000000000006
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 6,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 51.18,
+      "M2_increment_eur": 4.755,
+      "proposed_PCB_components_eur": 55.935,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        106.93,
+        142.77,
+        194.47
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          50.934999999999995,
+          55.935,
+          65.975
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 6,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 51.18,
+      "M2_increment_eur": 4.755,
+      "proposed_PCB_components_eur": 55.935,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        112.93,
+        150.77,
+        204.47
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          50.934999999999995,
+          55.935,
+          65.975
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 6,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 51.18,
+      "M2_increment_eur": 4.755,
+      "proposed_PCB_components_eur": 55.935,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        118.93,
+        158.77,
+        214.47
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          50.934999999999995,
+          55.935,
+          65.975
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 6,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 51.18,
+      "M2_increment_eur": 4.755,
+      "proposed_PCB_components_eur": 55.935,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        124.93,
+        166.77,
+        224.47
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          50.934999999999995,
+          55.935,
+          65.975
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 10,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        95.68,
+        127.38,
+        175.02
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 10,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        101.68,
+        135.38,
+        185.02
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 10,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        107.68,
+        143.38,
+        195.02
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 10,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        113.68,
+        151.38,
+        205.02
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 20,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        94.03,
+        124.13,
+        170.22
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 20,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        100.03,
+        132.13,
+        180.22
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 20,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        106.03,
+        140.13,
+        190.22
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "2 m AM + training unit",
+      "batch": 20,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 44.53,
+      "M2_increment_eur": 4.346,
+      "proposed_PCB_components_eur": 48.876,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        112.03,
+        148.13,
+        200.22
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          43.876,
+          48.876000000000005,
+          58.916000000000004
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.9,
+          2.9,
+          2.9
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 6,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 69.54,
+      "M2_increment_eur": 7.915,
+      "proposed_PCB_components_eur": 77.455,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        145.68,
+        193.22,
+        265.76
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          68.905,
+          77.45500000000001,
+          94.515
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          7.5,
+          15.0,
+          22.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 6,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 69.54,
+      "M2_increment_eur": 7.915,
+      "proposed_PCB_components_eur": 77.455,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        151.68,
+        201.22,
+        275.76
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          68.905,
+          77.45500000000001,
+          94.515
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          7.5,
+          15.0,
+          22.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 6,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 69.54,
+      "M2_increment_eur": 7.915,
+      "proposed_PCB_components_eur": 77.455,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        157.68,
+        209.22,
+        285.76
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          68.905,
+          77.45500000000001,
+          94.515
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          7.5,
+          15.0,
+          22.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 6,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 69.54,
+      "M2_increment_eur": 7.915,
+      "proposed_PCB_components_eur": 77.455,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        163.68,
+        217.22,
+        295.76
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          68.905,
+          77.45500000000001,
+          94.515
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          7.5,
+          15.0,
+          22.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 10,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 62.33,
+      "M2_increment_eur": 9.798,
+      "proposed_PCB_components_eur": 72.128,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        135.15,
+        177.56,
+        245.03
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          63.578,
+          72.128,
+          89.188
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 10,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 62.33,
+      "M2_increment_eur": 9.798,
+      "proposed_PCB_components_eur": 72.128,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        141.15,
+        185.56,
+        255.03
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          63.578,
+          72.128,
+          89.188
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 10,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 62.33,
+      "M2_increment_eur": 9.798,
+      "proposed_PCB_components_eur": 72.128,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        147.15,
+        193.56,
+        265.03
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          63.578,
+          72.128,
+          89.188
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 10,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 62.33,
+      "M2_increment_eur": 9.798,
+      "proposed_PCB_components_eur": 72.128,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        153.15,
+        201.56,
+        275.03
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          63.578,
+          72.128,
+          89.188
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 20,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 61.9,
+      "M2_increment_eur": 9.458,
+      "proposed_PCB_components_eur": 71.358,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        132.73,
+        173.54,
+        239.46
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          62.808,
+          71.358,
+          88.41799999999999
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 20,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 61.9,
+      "M2_increment_eur": 9.458,
+      "proposed_PCB_components_eur": 71.358,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        138.73,
+        181.54,
+        249.46
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          62.808,
+          71.358,
+          88.41799999999999
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 20,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 61.9,
+      "M2_increment_eur": 9.458,
+      "proposed_PCB_components_eur": 71.358,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        144.73,
+        189.54,
+        259.46
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          62.808,
+          71.358,
+          88.41799999999999
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Universal three-PCB unit, all antennas",
+      "batch": 20,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 61.9,
+      "M2_increment_eur": 9.458,
+      "proposed_PCB_components_eur": 71.358,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        150.73,
+        197.54,
+        269.46
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          62.808,
+          71.358,
+          88.41799999999999
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          5.2,
+          5.2,
+          5.2
+        ],
+        "Wire/coax/crimps/strain relief": [
+          2.0,
+          3.5,
+          5.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          4.5,
+          9.0,
+          13.5
+        ],
+        "Outer enclosure/seals/mounting": [
+          5,
+          8,
+          12
+        ],
+        "Long-wire match/radiator/symmetric return": [
+          7.6875,
+          10.25,
+          15.375
+        ],
+        "HF installation line/lashing/support allocation": [
+          2,
+          3,
+          5
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "VHF normal antenna/feed/balun": [
+          10,
+          15,
+          20
+        ],
+        "VHF 2-3m support": [
+          5,
+          8,
+          15
+        ],
+        "Training antenna": [
+          2,
+          3,
+          5
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 6,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 23.56,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 24.31,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        63.93,
+        88.32,
+        123.35
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          21.85,
+          24.31,
+          28.98
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 6,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 23.56,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 24.31,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        69.94,
+        96.32,
+        133.35
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          21.85,
+          24.31,
+          28.98
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 6,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 23.56,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 24.31,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        75.94,
+        104.32,
+        143.35
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          21.85,
+          24.31,
+          28.98
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 6,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 23.56,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 24.31,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        81.94,
+        112.32,
+        153.35
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          21.85,
+          24.31,
+          28.98
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.5,
+          0.8333333333333334,
+          1.0
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          5.0,
+          10.0,
+          15.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 4
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 10,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 20.68,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.43,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        56.85,
+        77.11,
+        108.07
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.97,
+          21.43,
+          26.1
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 10,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 20.68,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.43,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        62.85,
+        85.11,
+        118.07
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.97,
+          21.43,
+          26.1
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 10,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 20.68,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.43,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        68.86,
+        93.11,
+        128.07
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.97,
+          21.43,
+          26.1
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 10,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 20.68,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.43,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        74.86,
+        101.11,
+        138.07
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.97,
+          21.43,
+          26.1
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.3,
+          0.5,
+          0.6
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 10,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 20,
+      "pack": "2S1P",
+      "base_M1_PCB_eur": 20.64,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.39,
+      "pack_eur": [
+        11.6,
+        15.6,
+        22.6
+      ],
+      "material_eur": [
+        55.16,
+        73.82,
+        103.23
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.93,
+          21.39,
+          26.06
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          6,
+          8,
+          10
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 20,
+      "pack": "2S2P",
+      "base_M1_PCB_eur": 20.64,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.39,
+      "pack_eur": [
+        17.6,
+        23.6,
+        32.6
+      ],
+      "material_eur": [
+        61.16,
+        81.82,
+        113.23
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.93,
+          21.39,
+          26.06
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          12,
+          16,
+          20
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 20,
+      "pack": "2S3P",
+      "base_M1_PCB_eur": 20.64,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.39,
+      "pack_eur": [
+        23.6,
+        31.6,
+        42.6
+      ],
+      "material_eur": [
+        67.17,
+        89.82,
+        123.23
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.93,
+          21.39,
+          26.06
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          18,
+          24,
+          30
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    },
+    {
+      "configuration": "Fox-only unit, complete compact antenna",
+      "batch": 20,
+      "pack": "2S4P",
+      "base_M1_PCB_eur": 20.64,
+      "M2_increment_eur": 0.75,
+      "proposed_PCB_components_eur": 21.39,
+      "pack_eur": [
+        29.6,
+        39.6,
+        52.6
+      ],
+      "material_eur": [
+        73.17,
+        97.82,
+        133.23
+      ],
+      "items": {
+        "PCB components incl M2 proposal increments": [
+          18.93,
+          21.39,
+          26.06
+        ],
+        "Mandatory transmitter power/RF connector material": [
+          2.1999999999999997,
+          2.1999999999999997,
+          2.1999999999999997
+        ],
+        "Wire/coax/crimps/strain relief": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "Outer enclosure/seals/mounting": [
+          3,
+          4.5,
+          7
+        ],
+        "Complete compact Foxoring cartridge/radiator/return": [
+          6.285,
+          8.38,
+          12.57
+        ],
+        "External qualified 2S charger, one per unit": [
+          7,
+          10,
+          15
+        ],
+        "Shared provisioning fixture allocation": [
+          0.15,
+          0.25,
+          0.3
+        ],
+        "Shipping allocation for consolidated fleet baskets": [
+          1.5,
+          3.0,
+          4.5
+        ],
+        "New reference cells, 2 x P": [
+          24,
+          32,
+          40
+        ],
+        "Qualified balancing/protection BMS": [
+          2,
+          3,
+          5
+        ],
+        "Pack fuse/tabs/insulation/restraint/assembly material": [
+          3,
+          4,
+          7
+        ],
+        "Pack-side mating power connector": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      "fabricated_count_per_design": 20,
+      "unused_bare_boards_per_design": 0
+    }
+  ]
+}

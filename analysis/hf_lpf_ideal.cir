@@ -1,0 +1,28 @@
+* ARDF-TX original ideal LPF comparison; no measured or transistor model.
+Vsource src 0 AC 1
+Rbsource src b1 50
+Cb1 b1 0 4.6839602051594e-10
+Lb2 b1 b2 3.0656917547648e-06
+Cb3 b2 0 1.51576136278e-09
+Lb4 b2 b3 3.0656917547648e-06
+Cb5 b3 0 4.6839602051594e-10
+Rbload b3 0 50
+Rcsource src c1 50
+Cc1 c1 0 9.1704523021066e-10
+Lc2 c1 c2 2.7615363878944e-06
+Cc3 c2 0 1.6278009199119e-09
+Lc4 c2 c3 3.0538197407501e-06
+Cc5 c3 0 1.6278009199119e-09
+Lc6 c3 c4 2.7615363878944e-06
+Cc7 c4 0 9.1704523021066e-10
+Rcload c4 0 50
+.control
+set wr_singlescale
+set wr_vecnames
+ac dec 200 100k 30Meg
+let butterworth_db = db(2*v(b3))
+let chebyshev_db = db(2*v(c4))
+wrdata /tmp/ardf-m2-prep/hf_lpf_ideal.csv butterworth_db chebyshev_db
+quit
+.endc
+.end

@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-14",
+  "classification": "NETLIST/FOOTPRINT/BOOLEAN CHECKS AND DESIGN CALCULATIONS; NO MEASUREMENTS OR RF SIMULATION",
+  "schematic_sheets": 14,
+  "manifest_parts": 215,
+  "connected_pins_checked": 590,
+  "footprints_checked": 208,
+  "ERC_violations": 0,
+  "Boolean_cases": 256,
+  "individual_fault_cases": 18,
+  "cost_baskets_checked": 18,
+  "cost_csv_rows_checked": 1278,
+  "physical_pinmaps_checked": [
+    "U201",
+    "U313",
+    "U301",
+    "U401",
+    "Q402",
+    "Q403",
+    "T401",
+    "D301",
+    "D302",
+    "D501",
+    "J502",
+    "J401"
+  ],
+  "analogue": {
+    "reference_v": 2.495,
+    "protected_input_UV2_v": 5.809525547445255,
+    "protected_input_UV4_v": 11.069610570236438,
+    "PA_OV_v": 8.972998872604283,
+    "PA_OC_a": 1.25062656641604,
+    "thermal_approx_trip_c": 80.1680495946012,
+    "thermal_hub_cases": {
+      "10000": {
+        "hub_v": 0.9142374945532364,
+        "ntc_signal_v": 0.4571187472766183,
+        "hot_ref_v": 0.12986328047631202,
+        "open_ref_v": 0.8090597296931297,
+        "hub_current_a": 0.0010538416702978424
+      },
+      "1655.629": {
+        "hub_v": 0.8965972327696793,
+        "ntc_signal_v": 0.12735755229453777,
+        "hot_ref_v": 0.1273575614729658,
+        "open_ref_v": 0.7934488785572382,
+        "hub_current_a": 0.0010656018448202138
+      },
+      "1e+99": {
+        "hub_v": 0.940072654936415,
+        "ntc_signal_v": 0.940072654936415,
+        "hot_ref_v": 0.1335330475761953,
+        "open_ref_v": 0.8319227034835531,
+        "hub_current_a": 0.00103661823004239
+      }
+    },
+    "worst_TL431_cathode_a": 0.002100424648834579,
+    "maximum_comparator_input_v": 0.940072654936415,
+    "conservative_VCM_max_v": 1.1349999999999998,
+    "rails_v": {
+      "Sprint": 4.678599999999999,
+      "Extended": 5.575874725274726,
+      "Full": 7.957796787148594,
+      "Invalid": 8.855071512423319
+    },
+    "pad_insertion_db_ideal": 1.1687904426649551,
+    "maximum_Fox_fault_available_w_calculated": 0.09836190601143346,
+    "fault_resistor_tolerance_fraction": 0.01
+  },
+  "power": {
+    "baseline_pack_w_assumed": 0.2576667,
+    "source_policy": "Always powered25mA allowance; do not creditSiidlepoweruntilmeasured",
+    "profiles": [
+      {
+        "profile": "Full3.15W",
+        "drain_eta_assumed": 0.6,
+        "base_a_assumed": 0.06968,
+        "driver_gate_w_assumed": 0.23165738000000002,
+        "mean_pack_w": 1.7285454130526317,
+        "wh12": 20.74254495663158,
+        "wh24": 41.48508991326316,
+        "usable_4S1P25R_wh": 22.86144,
+        "runtime_h": 13.225825498924225
+      },
+      {
+        "profile": "Extended1.2W",
+        "drain_eta_assumed": 0.55,
+        "base_a_assumed": 0.04586,
+        "driver_gate_w_assumed": 0.16231736000000002,
+        "mean_pack_w": 0.9062259918364598,
+        "wh12": 10.874711902037518,
+        "wh24": 21.749423804075036,
+        "usable_4S1P25R_wh": 22.86144,
+        "runtime_h": 25.22708486176994
+      },
+      {
+        "profile": "Sprint0.85W",
+        "drain_eta_assumed": 0.5,
+        "base_a_assumed": 0.036890000000000006,
+        "driver_gate_w_assumed": 0.13620569000000002,
+        "mean_pack_w": 0.7665334952861954,
+        "wh12": 9.198401943434344,
+        "wh24": 18.39680388686869,
+        "usable_4S1P25R_wh": 22.86144,
+        "runtime_h": 29.824450125906605
+      }
+    ],
+    "Fox_W_retained": 0.35,
+    "poor_efficiency_cases": [
+      {
+        "profile": "Full3.15W",
+        "PA_eta": 0.4,
+        "buck_eta": 0.85,
+        "mean_pack_w": 2.4952921484953565,
+        "runtime_4S1P25R_h": 9.16182901220015
+      },
+      {
+        "profile": "Extended1.2W",
+        "PA_eta": 0.4,
+        "buck_eta": 0.85,
+        "mean_pack_w": 1.1622527798207285,
+        "runtime_4S1P25R_h": 19.66993789726729
+      }
+    ],
+    "idle_plus_018W_runtime_h": [
+      11.978462678252004,
+      21.04667000404643,
+      24.152806122394622
+    ]
+  }
+}

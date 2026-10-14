@@ -1,0 +1,5418 @@
+{
+  "date": "2026-10-13",
+  "license": "OpenARDF MIT; assets/80m-reference/LICENSES.md",
+  "counts_are_schematic_inventories_not_population_counts": true,
+  "components": [
+    {
+      "design": "FlexFox80",
+      "ref": "C101",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C117",
+      "value": "22uF",
+      "footprint": "Capacitors_SMD:C_1210",
+      "sheet": "/",
+      "mpn": "CL32A226MAJNNNE",
+      "supplier_code": "1276-3373-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-3373-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=1276-3373-1-ND\">Link</a>",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL32A226MAJNNNE",
+        "LCSC Part Number": "C337455",
+        "Footprint": "Capacitors_SMD:C_1210",
+        "Datasheet": "",
+        "Description": "CAP CER 22UF 25V X5R 1210"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C119",
+      "value": "47uF low ESR",
+      "footprint": "Capacitors_SMD:C_2917",
+      "sheet": "/",
+      "mpn": "T495X476K020ATE150",
+      "supplier_code": "399-3904-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-3904-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=399-3904-1-ND\">Link</a>",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "T495X476K020ATE150",
+        "LCSC Part Number": "C122333",
+        "Footprint": "Capacitors_SMD:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 47UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C120",
+      "value": "470nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-9924-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C122",
+      "value": "470nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-9924-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C123",
+      "value": "1100pF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "C0805C112J5GAC7800",
+      "supplier_code": "399-14552-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-14552-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=399-14552-1-ND\">Link</a>",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "C0805C112J5GAC7800",
+        "LCSC Part Number": "C2327793",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1100PF 50V NP0 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C126",
+      "value": "1800pF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "CGA4F2C0G2A182J085AA",
+      "supplier_code": "445-5752-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-5752-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=445-5752-1-ND\">Link</a>",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "CGA4F2C0G2A182J085AA",
+        "LCSC Part Number": "C2173329",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1800PF 100V C0G 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C128",
+      "value": "91pF",
+      "footprint": "Capacitors_SMD:C_0603",
+      "sheet": "/",
+      "mpn": "06031U910FAT2A",
+      "supplier_code": "478-10247-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-10247-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-10247-1-ND\">Link</a>",
+        "Manufacturer": "KYOCERA AVX",
+        "Manufacturer PN": "06031U910FAT2A",
+        "LCSC Part Number": "C2170042",
+        "Footprint": "Capacitors_SMD:C_0603",
+        "Datasheet": "",
+        "Description": "CAP CER 91PF 100V NP0 0603"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C131",
+      "value": "1100pF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/",
+      "mpn": "C0805C112J5GAC7800",
+      "supplier_code": "399-14552-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-14552-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=399-14552-1-ND\">Link</a>",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "C0805C112J5GAC7800",
+        "LCSC Part Number": "C2327793",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1100PF 50V NP0 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D101",
+      "value": "MBD54DWT1G_Schottky_Ind-ARDF-2-Band-MiniTx-rescue",
+      "footprint": "MBD54",
+      "sheet": "/",
+      "mpn": "MBD54DWT1G",
+      "supplier_code": "MBD54DWT1GOSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MBD54DWT1GOSCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MBD54DWT1GOSCT-ND\">Link</a>",
+        "Manufacturer": "ON Semiconductor",
+        "Manufacturer PN": "MBD54DWT1G",
+        "Footprint": "MBD54",
+        "Datasheet": "TO_SOT_Packages_SMD:SOT-363-0.65_MBD54",
+        "Description": "DIODE ARRAY SCHOTTKY 30V SC88"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D102",
+      "value": "4.7V",
+      "footprint": "Diodes_SMD:SOD-123",
+      "sheet": "/",
+      "mpn": "BZT52C4V7-13-F",
+      "supplier_code": "BZT52C4V7-13FDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "BZT52C4V7-13FDICT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=BZT52C4V7-13FDICT-ND\">Link</a>",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "BZT52C4V7-13-F",
+        "LCSC Part Number": "C151054",
+        "Footprint": "Diodes_SMD:SOD-123",
+        "Datasheet": "",
+        "Description": "DIODE ZENER 4.7V 500MW SOD123"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D104",
+      "value": "ESD",
+      "footprint": "Resistors_SMD:R_0603",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND\">Link</a>",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C2655331",
+        "Footprint": "Resistors_SMD:R_0603",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "HS101",
+      "value": "Heatsink",
+      "footprint": "Heatsinks:Heatsink_HF35G",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "HS220-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "HS220-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=HS220-ND\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Heatsinks:Heatsink_HF35G",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J101",
+      "value": "DIN-5_180degree",
+      "footprint": "Connect:SDF-50J",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "CP-7050-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CP-7050-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=CP-7050-ND\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Connect:SDF-50J",
+        "Datasheet": "https://www.cuidevices.com/product/resource/sdf-j.pdf",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J102",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "L104",
+      "value": "9T #24 Bifilar T50-43",
+      "footprint": "Inductors:Toroid_T-50A_TH_BF_CT_Vertical",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "FT50A-43 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "FT50A-43 (Amidon)",
+        "Link": "<a href=\"http://www.amidoncorp.com/ft-50A-43/\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Inductors:Toroid_T-50A_TH_BF_CT_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "L106",
+      "value": "2.7uH",
+      "footprint": "Inductors:Toroid_T-60_2TH_Vertical",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "T60-2 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "T60-2 (Amidon)",
+        "Link": "<a href=\"http://www.amidoncorp.com/t60-2/\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Inductors:Toroid_T-60_2TH_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "L108",
+      "value": "2.7uH",
+      "footprint": "Inductors:Toroid_T-60_2TH_Vertical",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "T60-2 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "T60-2 (Amidon)",
+        "Link": "<a href=\"http://www.amidoncorp.com/t60-2/\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Inductors:Toroid_T-60_2TH_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "Q102",
+      "value": "IRF610",
+      "footprint": "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical_LargePads",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "IRF610PBF-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "IRF610PBF-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=IRF610PBF-ND\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical_LargePads",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U101",
+      "value": "TPS22810DBVT",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-6",
+      "sheet": "/",
+      "mpn": "TPS22810DBVT",
+      "supplier_code": "296-45304-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-45304-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=296-45304-1-ND\">Link</a>",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "TPS22810DBVT",
+        "LCSC Part Number": "C2680364",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-6",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tps22810.pdf",
+        "Description": "Power Switch/Driver 1:1 N-Channel 2A SOT-23-6"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U107",
+      "value": "LM5134B",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-6-LM5134",
+      "sheet": "/",
+      "mpn": "LM5134BMFX/NOPB",
+      "supplier_code": "296-40244-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-40244-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=296-40244-1-ND\">Link</a>",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "LM5134BMFX/NOPB",
+        "LCSC Part Number": "C2677086",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-6-LM5134",
+        "Datasheet": "",
+        "Description": "IC GATE DRVR LOW-SIDE SOT23-6"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W105",
+      "value": "T2",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W106",
+      "value": "T3",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W108",
+      "value": "T4",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W111",
+      "value": "T5",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W113",
+      "value": "T6",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W114",
+      "value": "GND",
+      "footprint": "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W116",
+      "value": "GND",
+      "footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W117",
+      "value": "T7",
+      "footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C202",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C204",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C205",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C206",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C207",
+      "value": "270pF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CL21C271GBANNNC",
+      "supplier_code": "1276-2624-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-2624-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=1276-2624-1-ND\">Link</a>",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21C271GBANNNC",
+        "LCSC Part Number": "C161109",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 270PF 50V C0G/NP0 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C208",
+      "value": "10pF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08052U100FAT2A",
+      "supplier_code": "478-10457-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-10457-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-10457-1-ND\">Link<a/>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08052U100FAT2A",
+        "LCSC Part Number": "C344177",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10PF 200V C0G/NP0 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C209",
+      "value": "150uF low ESR",
+      "footprint": "Capacitors_SMD:C_2917",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "TPME157K020R0035",
+      "supplier_code": "478-5253-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-5253-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-5253-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "TPME157K020R0035",
+        "LCSC Part Number": "C444765",
+        "Footprint": "Capacitors_SMD:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 150UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C210",
+      "value": "22uF",
+      "footprint": "Capacitors_SMD:C_1210",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CL32A226MAJNNNE",
+      "supplier_code": "1276-3373-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-3373-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=1276-3373-1-ND\">Link</a>",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL32A226MAJNNNE",
+        "LCSC Part Number": "C337455",
+        "Footprint": "Capacitors_SMD:C_1210",
+        "Datasheet": "",
+        "Description": "CAP CER 22UF 25V X5R 1210"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C211",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C212",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C213",
+      "value": "1uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CC0805KKX7R7BB105",
+      "supplier_code": "311-1365-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-1365-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-1365-1-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "CC0805KKX7R7BB105",
+        "LCSC Part Number": "C344171",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1UF 16V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C214",
+      "value": "47uF low ESR",
+      "footprint": "Capacitors_SMD:C_2917",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "T495X476K020ATE150",
+      "supplier_code": "399-3904-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-3904-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=399-3904-1-ND\">Link</a>",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "T495X476K020ATE150",
+        "LCSC Part Number": "C122333",
+        "Footprint": "Capacitors_SMD:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 47UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C215",
+      "value": "150uF low ESR",
+      "footprint": "Capacitors_SMD:C_2917",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "TPME157K020R0035",
+      "supplier_code": "478-5253-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-5253-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-5253-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "TPME157K020R0035",
+        "LCSC Part Number": "C444765",
+        "Footprint": "Capacitors_SMD:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 150UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C216",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C217",
+      "value": "47uF low ESR",
+      "footprint": "Capacitors_SMD:C_2917",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "T495X476K020ATE150",
+      "supplier_code": "399-3904-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-3904-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=399-3904-1-ND\">Link</a>",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "T495X476K020ATE150",
+        "LCSC Part Number": "C122333",
+        "Footprint": "Capacitors_SMD:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 47UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C218",
+      "value": "10nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "08055A103JAT2A",
+      "supplier_code": "478-10068-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-10068-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-10068-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055A103JAT2A",
+        "LCSC Part Number": "C527201",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10000PF 50V NP0 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C219",
+      "value": "1uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CC0805KKX7R7BB105",
+      "supplier_code": "311-1365-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-1365-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-1365-1-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "CC0805KKX7R7BB105",
+        "LCSC Part Number": "C344171",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1UF 16V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D201",
+      "value": "B530",
+      "footprint": "Diodes_SMD:DO-214AB",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "B530C-13-F",
+      "supplier_code": "B530C-FDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "B530C-FDICT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=B530C-FDICT-ND\">Link</a>",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "B530C-13-F",
+        "LCSC Part Number": "C110488",
+        "Footprint": "Diodes_SMD:DO-214AB",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 5A SMC"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D202",
+      "value": "B530",
+      "footprint": "Diodes_SMD:DO-214AB",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "B530C-13-F",
+      "supplier_code": "B530C-FDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "B530C-FDICT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=B530C-FDICT-ND\">Link</a>",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "B530C-13-F",
+        "LCSC Part Number": "C110488",
+        "Footprint": "Diodes_SMD:DO-214AB",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 5A SMC"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J203",
+      "value": "V4",
+      "footprint": "Pin_Headers:Pin_Header_Straight_1x01_circle_pad",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Pin_Headers:Pin_Header_Straight_1x01_circle_pad",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J?",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "JP201",
+      "value": "Boost Bypass",
+      "footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "L202",
+      "value": "6.8uH",
+      "footprint": "Inductors:CDR7D28MN",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CDR7D28MNNP-6R8NC",
+      "supplier_code": "308-1328-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "308-1328-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=308-1328-1-ND\">Link</a>",
+        "Manufacturer": "Sumida America Components Inc.",
+        "Manufacturer PN": "CDR7D28MNNP-6R8NC",
+        "Footprint": "Inductors:CDR7D28MN",
+        "Datasheet": "",
+        "Description": "FIXED IND 6.8UH 2.75A 46.3 MOHM"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "L203",
+      "value": "6.8uH",
+      "footprint": "Inductors:CDR7D28MN",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "CDR7D28MNNP-6R8NC",
+      "supplier_code": "308-1328-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "308-1328-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=308-1328-1-ND\">Link</a>",
+        "Manufacturer": "Sumida America Components Inc.",
+        "Manufacturer PN": "CDR7D28MNNP-6R8NC",
+        "Footprint": "Inductors:CDR7D28MN",
+        "Datasheet": "",
+        "Description": "FIXED IND 6.8UH 2.75A 46.3 MOHM"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "P201",
+      "value": "Power Pole",
+      "footprint": "Connect:PowerPole-ASMPP30-1x2",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "TH",
+      "supplier_code": "2243-ASMPP30-1X2-RK-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "2243-ASMPP30-1X2-RK-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2243-ASMPP30-1X2-RK-ND\">Link</a>",
+        "Manufacturer": "Anderson Power Products, Inc.",
+        "Manufacturer PN": "TH",
+        "Footprint": "Connect:PowerPole-ASMPP30-1x2",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "P203",
+      "value": "Power Pole",
+      "footprint": "Connect:PowerPole-ASMPP30-1x2",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "TH",
+      "supplier_code": "2243-ASMPP30-1X2-RK-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "2243-ASMPP30-1X2-RK-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2243-ASMPP30-1X2-RK-ND\">Link</a>",
+        "Manufacturer": "Anderson Power Products, Inc.",
+        "Manufacturer PN": "TH",
+        "Footprint": "Connect:PowerPole-ASMPP30-1x2",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "Q201",
+      "value": "MUN5213DW1",
+      "footprint": "TO_SOT_Packages_SMD:SOT-363-0.65",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "MUN5213DW1T1G",
+      "supplier_code": "MUN5213DW1T1GOSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MUN5213DW1T1GOSCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MUN5213DW1T1GOSCT-ND\">Link</a>",
+        "Manufacturer": "ON Semiconductor",
+        "Manufacturer PN": "MUN5213DW1T1G",
+        "LCSC Part Number": "C95381",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-363-0.65",
+        "Datasheet": "",
+        "Description": "TRANS PREBIAS 2NPN 50V SC88"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "Q202",
+      "value": "DMP4025LSD",
+      "footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "DMP4025LSD-13",
+      "supplier_code": "DMP4025LSD-13DICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "DMP4025LSD-13DICT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=DMP4025LSD-13DICT-ND\">Link</a>",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "DMP4025LSD-13",
+        "LCSC Part Number": "C150763",
+        "Footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+        "Datasheet": "",
+        "Description": "MOSFET 2P-CH 40V 6.9A 8SO"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "Q203",
+      "value": "RJK0354DSP",
+      "footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RJK0354DSP-00#J0",
+      "supplier_code": "RJK0354DSP-00#J0CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "RJK0354DSP-00#J0CT-ND",
+        "Manufacturer": "Renesas Electronics America Inc",
+        "Manufacturer PN": "RJK0354DSP-00#J0",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=RJK0354DSP-00#J0CT-ND\">Link</a>",
+        "LCSC Part Number": "C919563",
+        "Footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+        "Datasheet": "",
+        "Description": "MOSFET N-CH 30V 16A 8SOP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R201",
+      "value": "162k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-162KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C416820",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R202",
+      "value": "49.9k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RT0805BRE0749K9L",
+      "supplier_code": "YAG4990CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "YAG4990CT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=YAG4990CT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RT0805BRE0749K9L",
+        "LCSC Part Number": "C218598",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 49.9K OHM 0.1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R203",
+      "value": "27k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-0727KL",
+      "supplier_code": "311-27.0KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-27.0KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-27.0KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-0727KL",
+        "LCSC Part Number": "C139896",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 27K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R204",
+      "value": "392k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07392KL",
+      "supplier_code": "311-392KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-392KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-392KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07392KL",
+        "LCSC Part Number": "C273847",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 392K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R205",
+      "value": "162k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-162KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C416820",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R206",
+      "value": "27k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-0727KL",
+      "supplier_code": "311-27.0KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-27.0KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-27.0KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-0727KL",
+        "LCSC Part Number": "C139896",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 27K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R207",
+      "value": "100k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07100KL",
+      "supplier_code": "311-100KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-100KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-100KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07100KL",
+        "LCSC Part Number": "C103905",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 100K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R208",
+      "value": "27k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-0727KL",
+      "supplier_code": "311-27.0KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-27.0KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-27.0KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-0727KL",
+        "LCSC Part Number": "C139896",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 27K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R209",
+      "value": "100k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07100KL",
+      "supplier_code": "311-100KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-100KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-100KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07100KL",
+        "LCSC Part Number": "C103905",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 100K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R210",
+      "value": "100k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07100KL",
+      "supplier_code": "311-100KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-100KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-100KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07100KL",
+        "LCSC Part Number": "C103905",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 100K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R211",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R212",
+      "value": "162k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-162KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C416820",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R213",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R214",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R215",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R216",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R217",
+      "value": "1.1k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "RC0805FR-071K1L",
+      "supplier_code": "311-1.10KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-1.10KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-1.10KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-071K1L",
+        "LCSC Part Number": "C352257",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 1.1K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R218",
+      "value": "0.01 0.5W",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "KRL1220E-M-R010-F-T5",
+      "supplier_code": "408-1544-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "408-1544-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=408-1544-1-ND\">Link</a>",
+        "Manufacturer": "Susumu",
+        "Manufacturer PN": "KRL1220E-M-R010-F-T5",
+        "LCSC Part Number": "C728271",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES 0.01 OHM 1% 1/2W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U202",
+      "value": "OPA171",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-5_MCP",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "OPA171AIDBVR",
+      "supplier_code": "296-37698-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-37698-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=296-37698-1-ND\">Link</a>",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "OPA171AIDBVR",
+        "LCSC Part Number": "C88036",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-5_MCP",
+        "Datasheet": "",
+        "Description": "IC OPAMP GP 1 CIRCUIT SOT23-5"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U203",
+      "value": "LTC3600",
+      "footprint": "Housings_SSOP:SSOP-12_Pad",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "LTC3600EMSE#PBF",
+      "supplier_code": "LTC3600EMSE#PBF-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "LTC3600EMSE#PBF-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=LTC3600EMSE%23PBF-ND\">Link</a>",
+        "Manufacturer": "Analog Devices Inc.",
+        "Manufacturer PN": "LTC3600EMSE#PBF",
+        "LCSC Part Number": "C580752",
+        "Footprint": "Housings_SSOP:SSOP-12_Pad",
+        "Datasheet": "",
+        "Description": "IC REG BUCK PROG 1.5A 12MSOP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U204",
+      "value": "MIC2196",
+      "footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "MIC2196YM-TR",
+      "supplier_code": "MIC2196YM-CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MIC2196YM-CT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MIC2196YM-CT-ND\">Link</a>",
+        "Manufacturer": "Microchip Technology",
+        "Manufacturer PN": "MIC2196YM-TR",
+        "LCSC Part Number": "C627808",
+        "Footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+        "Datasheet": "",
+        "Description": "IC REG CTRLR BOOST 8SOIC"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W204",
+      "value": "V4",
+      "footprint": "Measurement_Points:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W205",
+      "value": "Vset",
+      "footprint": "Measurement_Points:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/ARDF Tx Continued/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "BT301",
+      "value": "CR1220",
+      "footprint": "Oddities:BC501SM_CR1220_BAT_Handsolder",
+      "sheet": "/Digital/",
+      "mpn": "BC501SM",
+      "supplier_code": "BC501SM-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "BC501SM-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=BC501SM-ND\">Link</a>",
+        "Manufacturer": "MPD (Memory Protection Devices)",
+        "Manufacturer PN": "BC501SM",
+        "Footprint": "Oddities:BC501SM_CR1220_BAT_Handsolder",
+        "Datasheet": "",
+        "Description": "BATTERY HOLDER COIN 12MM SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C301",
+      "value": "1uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "CC0805KKX7R7BB105",
+      "supplier_code": "311-1365-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-1365-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-1365-1-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "CC0805KKX7R7BB105",
+        "LCSC Part Number": "C344171",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 1UF 16V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C302",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C303",
+      "value": "4.7uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "TMK212AB7475KG-T",
+      "supplier_code": "587-2990-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "587-2990-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=587-2990-1-ND\">Link</a>",
+        "Manufacturer": "Taiyo Yuden",
+        "Manufacturer PN": "TMK212AB7475KG-T",
+        "LCSC Part Number": "C162420",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 4.7UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C304",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C305",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C306",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C307",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C308",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C310",
+      "value": "470nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-9924-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C311",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C312",
+      "value": "470nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-9924-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C313",
+      "value": "10uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "GRM21BR61E106KA73L",
+      "supplier_code": "490-5523-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "490-5523-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=490-5523-1-ND\">Link</a>",
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM21BR61E106KA73L",
+        "LCSC Part Number": "C84416",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 25V X5R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C314",
+      "value": "4.7uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "TMK212AB7475KG-T",
+      "supplier_code": "587-2990-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "587-2990-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=587-2990-1-ND\">Link</a>",
+        "Manufacturer": "Taiyo Yuden",
+        "Manufacturer PN": "TMK212AB7475KG-T",
+        "LCSC Part Number": "C162420",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 4.7UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C315",
+      "value": "4.7uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "TMK212AB7475KG-T",
+      "supplier_code": "587-2990-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "587-2990-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=587-2990-1-ND\">Link</a>",
+        "Manufacturer": "Taiyo Yuden",
+        "Manufacturer PN": "TMK212AB7475KG-T",
+        "LCSC Part Number": "C162420",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 4.7UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C317",
+      "value": "4.7uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "TMK212AB7475KG-T",
+      "supplier_code": "587-2990-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "587-2990-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=587-2990-1-ND\">Link</a>",
+        "Manufacturer": "Taiyo Yuden",
+        "Manufacturer PN": "TMK212AB7475KG-T",
+        "LCSC Part Number": "C162420",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 4.7UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C318",
+      "value": "4.7uF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "TMK212AB7475KG-T",
+      "supplier_code": "587-2990-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "587-2990-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=587-2990-1-ND\">Link</a>",
+        "Manufacturer": "Taiyo Yuden",
+        "Manufacturer PN": "TMK212AB7475KG-T",
+        "LCSC Part Number": "C162420",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 4.7UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C319",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "C320",
+      "value": "100nF",
+      "footprint": "Capacitors_SMD:C_0805",
+      "sheet": "/Digital/",
+      "mpn": "08055C104KAT2A",
+      "supplier_code": "478-1395-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-1395-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=478-1395-1-ND\">Link</a>",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08055C104KAT2A",
+        "LCSC Part Number": "C360619",
+        "Footprint": "Capacitors_SMD:C_0805",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 50V X7R 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D301",
+      "value": "MBD54",
+      "footprint": "TO_SOT_Packages_SMD:SOT-363-0.65_MBD54",
+      "sheet": "/Digital/",
+      "mpn": "MBD54DWT1G",
+      "supplier_code": "MBD54DWT1GOSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MBD54DWT1GOSCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MBD54DWT1GOSCT-ND\">Link</a>",
+        "Manufacturer": "ON Semiconductor",
+        "Manufacturer PN": "MBD54DWT1G",
+        "LCSC Part Number": "C152486",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-363-0.65_MBD54",
+        "Datasheet": "",
+        "Description": "DIODE ARRAY SCHOTTKY 30V SC88"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D304",
+      "value": "GREEN",
+      "footprint": "Diodes_SMD:D_0805",
+      "sheet": "/Digital/",
+      "mpn": "150080GS75000",
+      "supplier_code": "732-4983-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "732-4983-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=732-4983-1-ND\">Link</a>",
+        "Manufacturer": "Wurth Elektronik",
+        "Manufacturer PN": "150080GS75000",
+        "LCSC Part Number": "C98224",
+        "Footprint": "Diodes_SMD:D_0805",
+        "Datasheet": "",
+        "Description": "LED GREEN CLEAR 0805 SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D305",
+      "value": "RED",
+      "footprint": "Diodes_SMD:D_0805",
+      "sheet": "/Digital/",
+      "mpn": "150080RS75000",
+      "supplier_code": "732-4984-1-ND ",
+      "source_fields": {
+        "Digi-Key Part No.": "732-4984-1-ND ",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=732-4984-1-ND \">Link</a>",
+        "Manufacturer": "Wurth Elektronik",
+        "Manufacturer PN": "150080RS75000",
+        "LCSC Part Number": "C72037",
+        "Footprint": "Diodes_SMD:D_0805",
+        "Datasheet": "",
+        "Description": "LED RED CLEAR 0805 SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D306",
+      "value": "ESD",
+      "footprint": "Resistors_SMD:R_0603",
+      "sheet": "/Digital/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND\">Link</a>",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C2655331",
+        "Footprint": "Resistors_SMD:R_0603",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "D307",
+      "value": "ESD",
+      "footprint": "Resistors_SMD:R_0603",
+      "sheet": "/Digital/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND\">Link</a>",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C2655331",
+        "Footprint": "Resistors_SMD:R_0603",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J301",
+      "value": "DB9_Female",
+      "footprint": "Connect:DB9F_CI",
+      "sheet": "/Digital/",
+      "mpn": "DE09S064TLF",
+      "supplier_code": "609-1525-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "609-1525-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=609-1525-ND\">Link</a>",
+        "Manufacturer": "Amphenol ICC (FCI)",
+        "Manufacturer PN": "DE09S064TLF",
+        "Footprint": "Connect:DB9F_CI",
+        "Datasheet": "",
+        "Description": "CONN D-SUB RCPT 9POS SLDR CUP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J302",
+      "value": "Conn_01x06",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "TH",
+      "supplier_code": "929550-01-06-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "929550-01-06-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=929550-01-06-ND\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J303",
+      "value": "DB9_Male",
+      "footprint": "Connect:DB9F_CI",
+      "sheet": "/Digital/",
+      "mpn": "DE09P065TXLF",
+      "supplier_code": "609-5908-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "609-5908-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=609-5908-ND\">Link</a>",
+        "Manufacturer": "Amphenol ICC (FCI)",
+        "Manufacturer PN": "DE09P065TXLF",
+        "Footprint": "Connect:DB9F_CI",
+        "Datasheet": "",
+        "Description": "9 Position D-Sub Plug, Male Pins Connector"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J304",
+      "value": "Conn_01x10",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J305",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J306",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J307",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J308",
+      "value": "Conn_01x03",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "JP301",
+      "value": "Jumper_NO_Small",
+      "footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "JP?",
+      "value": "Jumper_NO_Small",
+      "footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "MOD301",
+      "value": "HUZZAH_ESP8266_Breakout",
+      "footprint": "Oddities:Adafruit_HUZZAH_ESP8266_Breakout_SM",
+      "sheet": "/Digital/",
+      "mpn": "2471",
+      "supplier_code": "1528-1223-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1528-1223-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=1528-1223-ND\">Link</a>",
+        "Manufacturer": "Adafruit Industries LLC",
+        "Manufacturer PN": "2471",
+        "Footprint": "Oddities:Adafruit_HUZZAH_ESP8266_Breakout_SM",
+        "Datasheet": "",
+        "Description": "ESP8266 HUZZAH BREAKOUT BOARD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "P301",
+      "value": "ISP/PDI",
+      "footprint": "Pin_Headers:SM_Pin_Header_Straight_2x03",
+      "sheet": "/Digital/",
+      "mpn": "95278-101A06LF",
+      "supplier_code": "609-3487-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "609-3487-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=609-3487-1-ND\">Link</a>",
+        "Manufacturer": "Amphenol ICC (FCI)",
+        "Manufacturer PN": "95278-101A06LF",
+        "Footprint": "Pin_Headers:SM_Pin_Header_Straight_2x03",
+        "Datasheet": "",
+        "Description": "CONN HEADER SMD 6POS 2.54MM"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "P302",
+      "value": "Thru",
+      "footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "P304",
+      "value": "Header",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "Q301",
+      "value": "PN2222A",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23",
+      "sheet": "/Digital/",
+      "mpn": "MMBT2222A-TP",
+      "supplier_code": "MMBT2222ATPMSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MMBT2222ATPMSCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MMBT2222ATPMSCT-ND\">Link</a>",
+        "Manufacturer": "Micro Commercial Co",
+        "Manufacturer PN": "MMBT2222A-TP",
+        "LCSC Part Number": "C194252",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23",
+        "Datasheet": "",
+        "Description": "TRANS NPN 40V 0.6A SOT23"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R301",
+      "value": "470",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RK73H2ATTD4700F",
+      "supplier_code": "2019-RK73H2ATTD4700FCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "2019-RK73H2ATTD4700FCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2019-RK73H2ATTD4700FCT-ND\">Link</a>",
+        "Manufacturer": "KOA Speer Electronics, Inc.",
+        "Manufacturer PN": "RK73H2ATTD4700F",
+        "LCSC Part Number": "C114564",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES 470 OHM 1% 1/4W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R302",
+      "value": "470",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RK73H2ATTD4700F",
+      "supplier_code": "2019-RK73H2ATTD4700FCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "2019-RK73H2ATTD4700FCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2019-RK73H2ATTD4700FCT-ND\">Link</a>",
+        "Manufacturer": "KOA Speer Electronics, Inc.",
+        "Manufacturer PN": "RK73H2ATTD4700F",
+        "LCSC Part Number": "C114564",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES 470 OHM 1% 1/4W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R303",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R304",
+      "value": "10",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RC0805FR-0710RL",
+      "supplier_code": "311-10.0CRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10.0CRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10.0CRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-0710RL",
+        "LCSC Part Number": "C96347",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10 OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R306",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R307",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R308",
+      "value": "100k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RC0805FR-07100KL",
+      "supplier_code": "311-100KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-100KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-100KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07100KL",
+        "LCSC Part Number": "C103905",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 100K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R309",
+      "value": "2.2k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RC0805FR-072K2L",
+      "supplier_code": "311-2.2KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-2.2KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10.0KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-072K2L",
+        "LCSC Part Number": "C114561",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf",
+        "Description": "RES SMD 2.2K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R310",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R311",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R312",
+      "value": "560k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RT0805FRE07560KL",
+      "supplier_code": "13-RT0805FRE07560KLCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "13-RT0805FRE07560KLCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=13-RT0805FRE07560KLCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RT0805FRE07560KL",
+        "LCSC Part Number": "C352198",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 560K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R313",
+      "value": "100k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RC0805FR-07100KL",
+      "supplier_code": "311-100KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-100KCRCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-100KCRCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-07100KL",
+        "LCSC Part Number": "C103905",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 100K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R314",
+      "value": "560k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "RT0805FRE07560KL",
+      "supplier_code": "13-RT0805FRE07560KLCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "13-RT0805FRE07560KLCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=13-RT0805FRE07560KLCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RT0805FRE07560KL",
+        "LCSC Part Number": "C352198",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 560K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R315",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "R316",
+      "value": "10k",
+      "footprint": "Resistors_SMD:R_0805",
+      "sheet": "/Digital/",
+      "mpn": "AC0805FR-0710KL",
+      "supplier_code": "311-10KLGCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-10KLGCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=311-10KLGCT-ND\">Link</a>",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "AC0805FR-0710KL",
+        "LCSC Part Number": "C38522",
+        "Footprint": "Resistors_SMD:R_0805",
+        "Datasheet": "",
+        "Description": "RES SMD 10K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "RV301",
+      "value": "10k Pot",
+      "footprint": "Potentiometers:Potentiometer_ST32ET_Handsolder",
+      "sheet": "/Digital/",
+      "mpn": "TC33X-2-103E",
+      "supplier_code": "TC33X-103ECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "TC33X-103ECT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=TC33X-103ECT-ND\">Link</a>",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "TC33X-2-103E",
+        "LCSC Part Number": "C719176",
+        "Footprint": "Potentiometers:Potentiometer_ST32ET_Handsolder",
+        "Datasheet": "",
+        "Description": "TRIMMER 10K OHM 0.1W J LEAD TOP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "SJ301",
+      "value": "SolderJumper_2_Open",
+      "footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Wire_Connections_Bridges:Solder-Jumper-NO-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "SW301",
+      "value": "SPST",
+      "footprint": "Buttons_Switches_SMD:PTS645SL50SMTR92",
+      "sheet": "/Digital/",
+      "mpn": "PTS645SL50SMTR92 LFS",
+      "supplier_code": "CKN9088CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CKN9088CT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=CKN9088CT-ND\">Link</a>",
+        "Manufacturer": "C&K",
+        "Manufacturer PN": "PTS645SL50SMTR92 LFS",
+        "LCSC Part Number": "C221877",
+        "Footprint": "Buttons_Switches_SMD:PTS645SL50SMTR92",
+        "Datasheet": "",
+        "Description": "SWITCH TACTILE SPST-NO 0.05A 12V"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "TP301",
+      "value": "I2C1",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "TP302",
+      "value": "I2C0",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U301",
+      "value": "DS3231",
+      "footprint": "SMD_Packages:SO16",
+      "sheet": "/Digital/",
+      "mpn": "DS3231S#T&R",
+      "supplier_code": "DS3231S#T&RCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "DS3231S#T&RCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=DS3231S%23T%26RCT-ND\">Link</a>",
+        "Manufacturer": "Maxim Integrated",
+        "Manufacturer PN": "DS3231S#T&R",
+        "LCSC Part Number": "C2651514",
+        "Footprint": "SMD_Packages:SO16",
+        "Datasheet": "",
+        "Description": "IC RTC CLK/CALENDAR I2C 16-SOIC"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U302",
+      "value": "AVR128DA48",
+      "footprint": "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm_AVR128DA48",
+      "sheet": "/Digital/",
+      "mpn": "AVR128DA48T-E/PT",
+      "supplier_code": "150-AVR128DA48T-E/PTCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "150-AVR128DA48T-E/PTCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=150-AVR128DA48T-E/PTCT-ND\">Link</a>",
+        "Manufacturer": "Microchip Technology",
+        "Manufacturer PN": "AVR128DA48T-E/PT",
+        "LCSC Part Number": "C1870720",
+        "Footprint": "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm_AVR128DA48",
+        "Datasheet": "",
+        "Description": "IC MCU 8BIT 128KB FLASH 48TQFP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U303",
+      "value": "LD2985BM33R",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+      "sheet": "/Digital/",
+      "mpn": "LD2985BM33R",
+      "supplier_code": "497-3499-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "497-3499-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=497-3499-1-ND\">Link</a>",
+        "Manufacturer": "STMicroelectronics",
+        "Manufacturer PN": "LD2985BM33R",
+        "LCSC Part Number": "C222396",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+        "Datasheet": "",
+        "Description": "IC REG LINEAR 3.3V 150MA SOT23-5"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U304",
+      "value": "SI5351A",
+      "footprint": "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm",
+      "sheet": "/Digital/",
+      "mpn": "SI5351A-B-GT",
+      "supplier_code": "336-2399-5-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "336-2399-5-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=336-2399-5-ND\">Link</a>",
+        "Manufacturer": "Silicon Labs",
+        "Manufacturer PN": "SI5351A-B-GT",
+        "LCSC Part Number": "C529366",
+        "Footprint": "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm",
+        "Datasheet": "http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5351-B.pdf",
+        "Description": "IC CLK GENERATOR 200MHZ 10MSOP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U305",
+      "value": "74HC1G08",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+      "sheet": "/Digital/",
+      "mpn": "MC74HC1G08DTT1G",
+      "supplier_code": "MC74HC1G08DTT1GOSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "MC74HC1G08DTT1GOSCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=MC74HC1G08DTT1GOSCT-ND\">Link</a>",
+        "Manufacturer": "ON Semiconductor",
+        "Manufacturer PN": "MC74HC1G08DTT1G",
+        "LCSC Part Number": "C108694",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+        "Datasheet": "",
+        "Description": "IC GATE AND 1CH 2-INP 5TSOP"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U306",
+      "value": "LT1763CS8-5",
+      "footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+      "sheet": "/Digital/",
+      "mpn": "LT1763CS8-5#TRPBF",
+      "supplier_code": "LT1763CS8-5#TRPBFCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "LT1763CS8-5#TRPBFCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=LT1763CS8-5#TRPBFCT-ND\">Link</a>",
+        "Manufacturer": "Analog Devices Inc.",
+        "Manufacturer PN": "LT1763CS8-5#TRPBF",
+        "LCSC Part Number": "C117275",
+        "Footprint": "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm",
+        "Datasheet": "",
+        "Description": "IC REG LINEAR 5V 500MA 8SOIC"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U307",
+      "value": "TPS22810DBVT",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-6",
+      "sheet": "/Digital/",
+      "mpn": "TPS22810DBVT",
+      "supplier_code": "296-45304-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-45304-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=296-45304-1-ND\">Link</a>",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "TPS22810DBVT",
+        "LCSC Part Number": "C2680364",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-6",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tps22810.pdf",
+        "Description": "Power Switch/Driver 1:1 N-Channel 2A SOT-23-6"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "U308",
+      "value": "LD2985BM33R",
+      "footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+      "sheet": "/Digital/",
+      "mpn": "LD2985BM33R",
+      "supplier_code": "497-3499-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "497-3499-1-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=497-3499-1-ND\">Link</a>",
+        "Manufacturer": "STMicroelectronics",
+        "Manufacturer PN": "LD2985BM33R",
+        "LCSC Part Number": "C222396",
+        "Footprint": "TO_SOT_Packages_SMD:SOT-23-5",
+        "Datasheet": "",
+        "Description": "IC REG LINEAR 3.3V 150MA SOT23-5"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W302",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W307",
+      "value": "CONN_01X01",
+      "footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W308",
+      "value": "CONN_01X01",
+      "footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Pin_Headers:Pin_Header_Straight_1x01",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W309",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W310",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W311",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W312",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W313",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W314",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W315",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "W316",
+      "value": "TEST_1P",
+      "footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+      "sheet": "/Digital/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "np",
+        "Link": "np",
+        "Footprint": "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "X301",
+      "value": "25.MHZ TCXO",
+      "footprint": "Crystals:ASTX-H11-25.000MHZ",
+      "sheet": "/Digital/",
+      "mpn": "I537-2O7-25.000 MHZ",
+      "supplier_code": "2780-I537-2O7-25.000MHZCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "2780-I537-2O7-25.000MHZCT-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2780-I537-2O7-25.000MHZCT-ND\">Link</a>",
+        "Manufacturer": "Abracon LLC",
+        "Manufacturer PN": "I537-2O7-25.000 MHZ",
+        "Footprint": "Crystals:ASTX-H11-25.000MHZ",
+        "Datasheet": "",
+        "Description": "XTAL OSC TCXO 25MHZ CLPSNW"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "BOX401",
+      "value": "Chassis Box",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "HM1796-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=1554F2GYCL\">Link</a>",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J401",
+      "value": "CONN_01X06",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "NPPC061KFXC-RC",
+      "supplier_code": "S5637-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S5637-ND",
+        "Link": "<a href=\"https://www.digikey.com/product-detail/en/sullins-connector-solutions/NPPC061KFXC-RC/S5637-ND/776096\">Link</a>",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "NPPC061KFXC-RC",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "CONN HDR 6POS 0.1 GOLD SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J402",
+      "value": "CONN_01X10",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "NPPC101KFXC-RC",
+      "supplier_code": "S5641-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S5641-ND",
+        "Link": "<a href=\"https://www.digikey.com/product-detail/en/sullins-connector-solutions/NPPC101KFXC-RC/S5641-ND/776100\">Link</a>",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "NPPC101KFXC-RC",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "CONN HDR 10POS 0.1 GOLD SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "J403",
+      "value": "CONN_01X10",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "NPPC101KFXC-RC",
+      "supplier_code": "S5641-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S5641-ND",
+        "Link": "<a href=\"https://www.digikey.com/product-detail/en/sullins-connector-solutions/NPPC101KFXC-RC/S5641-ND/776100\">Link</a>",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "NPPC101KFXC-RC",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "CONN HDR 10POS 0.1 GOLD SMD"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "PCB401",
+      "value": "Circuit Board",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "OSH Park PCB",
+        "Link": "<a href=\"https://oshpark.com/shared_projects/sZ495SMd\">Link</a>",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "PH401",
+      "value": "Power Pole Staple",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "TH",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "2243-114555P2-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2243-114555P2-ND\">Link</a>",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "PH402",
+      "value": "PCB Power Pole Pin",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "1377G2-BK",
+      "supplier_code": "2243-1377G2-BK-ND",
+      "source_fields": {
+        "Part No.": "2243-114555P2-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2243-1377G2-BK-ND\">Link</a>",
+        "Manufacturer": "Anderson Power Products, Inc.",
+        "Manufacturer PN": "1377G2-BK",
+        "Digi-Key Part No.": "2243-1377G2-BK-ND",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "RIGHT ANGLE PCB CONT .40/1.295 B"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "PH403",
+      "value": "PCB Power Pole Pin",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "1377G2-BK",
+      "supplier_code": "2243-1377G2-BK-ND",
+      "source_fields": {
+        "Part No.": "2243-114555P2-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en?keywords=2243-1377G2-BK-ND\">Link</a>",
+        "Manufacturer": "Anderson Power Products, Inc.",
+        "Manufacturer PN": "1377G2-BK",
+        "Digi-Key Part No.": "2243-1377G2-BK-ND",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "RIGHT ANGLE PCB CONT .40/1.295 B"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "SCREW401",
+      "value": "QTY 4 SCREWS",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "H742-ND",
+        "Link": "<a href=\"https://www.digikey.com/products/en/hardware-fasteners-accessories/screws-bolts/572?k=H742-ND\">Link</a>",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "PCB retaining screws"
+      }
+    },
+    {
+      "design": "FlexFox80",
+      "ref": "SCREW?",
+      "value": "QTY 2 SCREWS FOR J101",
+      "footprint": "Oddities:Dummy_Empty",
+      "sheet": "/Non-PCB/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Part No.": "",
+        "Footprint": "Oddities:Dummy_Empty",
+        "Datasheet": "",
+        "Description": "2mm x 0.4mm x 6mm Phillips pan head"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C101",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "CL21B104KACNNNC",
+      "supplier_code": "1276-1099-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-1099-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21B104KACNNNC",
+        "Link": "https://www.digikey.com/short/q2f22qnq",
+        "LCSC Part Number": "C29926",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C102",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C103",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C104",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "CL21B104KACNNNC",
+      "supplier_code": "1276-1099-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-1099-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21B104KACNNNC",
+        "Link": "https://www.digikey.com/short/q2f22qnq",
+        "LCSC Part Number": "C29926",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C105",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "CL21B104KACNNNC",
+      "supplier_code": "1276-1099-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-1099-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21B104KACNNNC",
+        "Link": "https://www.digikey.com/short/q2f22qnq",
+        "LCSC Part Number": "C29926",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C106",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C107",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "CL21B104KACNNNC",
+      "supplier_code": "1276-1099-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-1099-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21B104KACNNNC",
+        "Link": "https://www.digikey.com/short/q2f22qnq",
+        "LCSC Part Number": "C29926",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C108",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C109",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C110",
+      "value": "22uF",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "sheet": "/",
+      "mpn": "CL32A226MAJNNNE",
+      "supplier_code": "1276-3373-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-3373-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=1276-3373-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL32A226MAJNNNE",
+        "LCSC Part Number": "C337455",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 22UF 25V X5R 1210"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C111",
+      "value": "47uF low ESR",
+      "footprint": "SignalSlinger_Footprints:C_2917",
+      "sheet": "/",
+      "mpn": "T495X476K020ATE150",
+      "supplier_code": "399-3904-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-3904-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=399-3904-1-ND",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "T495X476K020ATE150",
+        "LCSC Part Number": "C122333",
+        "Footprint": "SignalSlinger_Footprints:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 47UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C112",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D101",
+      "value": "1N914WT",
+      "footprint": "Diode_SMD:D_SOD-523",
+      "sheet": "/",
+      "mpn": "1N4148WT-7",
+      "supplier_code": "1N4148WTDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1N4148WTDICT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148WT-7/583731",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "1N4148WT-7",
+        "LCSC Part Number": "C83482",
+        "Footprint": "Diode_SMD:D_SOD-523",
+        "Datasheet": "",
+        "Description": "DIODE GEN PURP 80V 125MA SOD523"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D102",
+      "value": "1N914WT",
+      "footprint": "Diode_SMD:D_SOD-523",
+      "sheet": "/",
+      "mpn": "1N4148WT-7",
+      "supplier_code": "1N4148WTDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1N4148WTDICT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148WT-7/583731",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "1N4148WT-7",
+        "LCSC Part Number": "C83482",
+        "Footprint": "Diode_SMD:D_SOD-523",
+        "Datasheet": "",
+        "Description": "DIODE GEN PURP 80V 125MA SOD523"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D103",
+      "value": "Red LED",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "LTST-C170KRKT",
+      "supplier_code": "160-1415-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "160-1415-1-ND",
+        "Manufacturer": "Lite-On Inc.",
+        "Manufacturer PN": "LTST-C170KRKT",
+        "Link": "https://www.digikey.com/en/products/detail/liteon/LTST-C170KRKT/386779",
+        "LCSC Part Number": "C94868",
+        "Footprint": "LED_SMD:LED_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "LED RED CLEAR SMD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D104",
+      "value": "Green LED",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "LTST-C170KGKT",
+      "supplier_code": "160-1414-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "160-1414-1-ND",
+        "Manufacturer": "Lite-On Inc.",
+        "Manufacturer PN": "LTST-C170KGKT",
+        "Link": "https://www.digikey.com/en/products/detail/liteon/LTST-C170KGKT/386777",
+        "LCSC Part Number": "C98221",
+        "Footprint": "LED_SMD:LED_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "LED GREEN CLEAR SMD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D105",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D106",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D107",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D108",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D109",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D110",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D111",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D112",
+      "value": "ESD9B5.0ST5G_1",
+      "footprint": "Diode_SMD:D_0603_1608Metric",
+      "sheet": "/",
+      "mpn": "CG0603MLC-05LE",
+      "supplier_code": "CG0603MLC-05LECT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CG0603MLC-05LECT-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=CG0603MLC-05LECT-ND",
+        "Manufacturer": "Bourns Inc.",
+        "Manufacturer PN": "CG0603MLC-05LE",
+        "LCSC Part Number": "C316054",
+        "Footprint": "Diode_SMD:D_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "VARISTOR 0603"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D115",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J101",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J102",
+      "value": "Conn_01x03",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J103",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J104",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J105",
+      "value": "Conn_01x04",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J106",
+      "value": "Conn_01x02",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J107",
+      "value": "DB9 Female",
+      "footprint": "SignalSlinger_Footprints:DSUB-9_Female_EdgeMount_P2.77mm",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "609-1525-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "609-1525-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=609-1525-ND",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "SignalSlinger_Footprints:DSUB-9_Female_EdgeMount_P2.77mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP101",
+      "value": "Jumper_3_Bridged12",
+      "footprint": "SignalSlinger_Footprints:Jumper_THT_1x03_Bridged12_P1.27mm_Vertical",
+      "sheet": "/",
+      "mpn": "GRPB031VWVN-RC",
+      "supplier_code": "S9014E-03-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S9014E-03-ND",
+        "Link": "https://www.digikey.com/short/z0ntzpw3",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "GRPB031VWVN-RC",
+        "Footprint": "SignalSlinger_Footprints:Jumper_THT_1x03_Bridged12_P1.27mm_Vertical",
+        "Datasheet": "",
+        "Description": "CONN HEADER VERT 3POS 1.27MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP102",
+      "value": "Jumper_2_Bridged",
+      "footprint": "SignalSlinger_Footprints:Jumper_THT_1x02_P1.27mm_Vertical",
+      "sheet": "/",
+      "mpn": "GRPB021VWVN-RC",
+      "supplier_code": "S9014E-02-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S9014E-02-ND",
+        "Link": "https://www.digikey.com/short/4w5ttcv3",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "GRPB021VWVN-RC",
+        "Footprint": "SignalSlinger_Footprints:Jumper_THT_1x02_P1.27mm_Vertical",
+        "Datasheet": "",
+        "Description": "CONN HEADER VERT 2POS 1.27MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "L101",
+      "value": "9T #24 Bifilar T50-43",
+      "footprint": "SignalSlinger_Footprints:Toroid_T-50A_TH_BF_CT_Vertical",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "FT50A-43 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "FT50A-43 (Amidon)",
+        "Link": "http://www.amidoncorp.com/ft-50A-43/",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "SignalSlinger_Footprints:Toroid_T-50A_TH_BF_CT_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "P101",
+      "value": "ISP/PDI",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD",
+      "sheet": "/",
+      "mpn": "95278-101A06LF",
+      "supplier_code": "609-3487-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "609-3487-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=609-3487-1-ND",
+        "Manufacturer": "Amphenol ICC (FCI)",
+        "Manufacturer PN": "95278-101A06LF",
+        "LCSC Part Number": "C178294",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD",
+        "Datasheet": "",
+        "Description": "CONN HEADER SMD 6POS 2.54MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "Q101",
+      "value": "NTS4173PT1G",
+      "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "sheet": "/",
+      "mpn": "NTS4173PT1G",
+      "supplier_code": "NTS4173PT1GOSCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "NTS4173PT1GOSCT-ND",
+        "Manufacturer": "ONSEMI",
+        "Manufacturer PN": "NTS4173PT1G",
+        "Link": "https://www.digikey.com/short/j97zqh7v",
+        "Footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+        "Datasheet": "",
+        "Description": "MOSFET P-CH 30V 1.2A SC70-3"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "Q102",
+      "value": "BSS138W-7-F",
+      "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "sheet": "/",
+      "mpn": "BSS138W-7-F",
+      "supplier_code": "BSS138W-FDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "BSS138W-FDICT-ND",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "BSS138W-7-F",
+        "Link": "https://www.digikey.com/short/m8f8nn79",
+        "LCSC Part Number": "C24553",
+        "Footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+        "Datasheet": "",
+        "Description": "MOSFET N-CH 50V 200MA SOT323"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "Q103",
+      "value": "IRF610",
+      "footprint": "SignalSlinger_Footprints:TO-220_Neutral123_Vertical_LargePads",
+      "sheet": "/",
+      "mpn": "TH",
+      "supplier_code": "IRF610PBF-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "IRF610PBF-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=IRF610PBF-ND",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "SignalSlinger_Footprints:TO-220_Neutral123_Vertical_LargePads",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R101",
+      "value": "105k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-07105KL",
+      "supplier_code": "311-105KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-105KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07105KL/727548",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-07105KL",
+        "LCSC Part Number": "C273877",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 105K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R102",
+      "value": "162k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07162KL/727630",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C273888",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R103",
+      "value": "12.4k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-0712K4L",
+      "supplier_code": "311-12.4KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-12.4KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-0712K4L/727572",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-0712K4L",
+        "LCSC Part Number": "C137595",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 12.4K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R104",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RMCF0805FT1K00",
+      "supplier_code": "RMCF0805FT1K00CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "RMCF0805FT1K00CT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT1K00/1760090",
+        "Manufacturer": "Stackpole Electronics Inc",
+        "Manufacturer PN": "RMCF0805FT1K00",
+        "LCSC Part Number": "C17513",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 1K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R105",
+      "value": "220",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-10220RL",
+      "supplier_code": "13-RC0805FR-10220RLCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "13-RC0805FR-10220RLCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/rc0805fr-10220rl/14008375",
+        "Manufacturer": "Yageo",
+        "Manufacturer PN": "RC0805FR-10220RL",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 220 OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R106",
+      "value": "47k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-0747KL",
+      "supplier_code": "311-47.0KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-47.0KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-0747KL/727973",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-0747KL",
+        "LCSC Part Number": "C126351",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 47K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R107",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RNCP0805FTD10K0",
+      "supplier_code": "RNCP0805FTD10K0CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "RNCP0805FTD10K0CT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD10K0/2240262",
+        "Manufacturer": "Stackpole Electronics Inc",
+        "Manufacturer PN": "RNCP0805FTD10K0",
+        "LCSC Part Number": "C2441435",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 10K OHM 1% 1/4W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R108",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RNCP0805FTD10K0",
+      "supplier_code": "RNCP0805FTD10K0CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "RNCP0805FTD10K0CT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD10K0/2240262",
+        "Manufacturer": "Stackpole Electronics Inc",
+        "Manufacturer PN": "RNCP0805FTD10K0",
+        "LCSC Part Number": "C2441435",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 10K OHM 1% 1/4W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R109",
+      "value": "47 0.5W",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R110",
+      "value": "162k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07162KL/727630",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C273888",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "SW101",
+      "value": "SW_SPST",
+      "footprint": "SignalSlinger_Footprints:SW_SPST_TL1014BF160QG",
+      "sheet": "/",
+      "mpn": "TL1014BF160QG",
+      "supplier_code": "EG5042CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "EG5042CT-ND",
+        "Manufacturer": "E-Switch",
+        "Manufacturer PN": "TL1014BF160QG",
+        "Link": "https://www.digikey.com/en/products/detail/e-switch/TL1014BF160QG/3910805",
+        "Footprint": "SignalSlinger_Footprints:SW_SPST_TL1014BF160QG",
+        "Datasheet": "",
+        "Description": "SWITCH TACTILE SPST-NO 0.05A 12V"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "TP101",
+      "value": "I2C1",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U101",
+      "value": "AVR128DA28",
+      "footprint": "SignalSlinger_Footprints:SOIC-28W_7.5x17.9mm_P1.27mm",
+      "sheet": "/",
+      "mpn": "AVR128DA28T-E/SO",
+      "supplier_code": "150-AVR128DA28T-E/SOCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "150-AVR128DA28T-E/SOCT-ND",
+        "Manufacturer": "Microchip Technology",
+        "Manufacturer PN": "AVR128DA28T-E/SO",
+        "Link": "https://www.digikey.com/short/781hqp8f",
+        "LCSC Part Number": "C1870730",
+        "Footprint": "SignalSlinger_Footprints:SOIC-28W_7.5x17.9mm_P1.27mm",
+        "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7707.pdf",
+        "Description": "IC MCU 8BIT 128KB FLASH 28SOIC"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U102",
+      "value": "SI5351",
+      "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+      "sheet": "/",
+      "mpn": "SI5351A-B-GT",
+      "supplier_code": "336-2399-5-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "336-2399-5-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=336-2399-5-ND",
+        "Manufacturer": "Silicon Labs",
+        "Manufacturer PN": "SI5351A-B-GT",
+        "LCSC Part Number": "C529366",
+        "Footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+        "Datasheet": "http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5351-B.pdf",
+        "Description": "IC CLK GENERATOR 200MHZ 10MSOP"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U103",
+      "value": "TPS22810DBVT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sheet": "/",
+      "mpn": "TPS22810DBVT",
+      "supplier_code": "296-45304-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-45304-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=296-45304-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "TPS22810DBVT",
+        "LCSC Part Number": "C2680364",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tps22810.pdf",
+        "Description": "Power Switch/Driver 1:1 N-Channel 2A SOT-23-6"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U104",
+      "value": "LM5134",
+      "footprint": "SignalSlinger_Footprints:SOT-23-6-LM5134",
+      "sheet": "/",
+      "mpn": "LM5134BMFX/NOPB",
+      "supplier_code": "296-40244-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-40244-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=296-40244-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "LM5134BMFX/NOPB",
+        "LCSC Part Number": "C2677086",
+        "Footprint": "SignalSlinger_Footprints:SOT-23-6-LM5134",
+        "Datasheet": "",
+        "Description": "IC GATE DRVR LOW-SIDE SOT23-6"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W101",
+      "value": "T2",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W102",
+      "value": "T3",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W103",
+      "value": "T4",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "X101",
+      "value": "ECS-327TXO-30-TR",
+      "footprint": "SignalSlinger_Footprints:Oscillator_SMD_ECS_327TXO",
+      "sheet": "/",
+      "mpn": "ECS-327TXO-30-TR",
+      "supplier_code": "50-ECS-327TXO-30-CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "50-ECS-327TXO-30-CT-ND",
+        "Manufacturer": "ECS Inc.",
+        "Manufacturer PN": "ECS-327TXO-30-TR",
+        "Footprint": "SignalSlinger_Footprints:Oscillator_SMD_ECS_327TXO",
+        "Datasheet": "",
+        "Description": "OSC TCXO 32.768KHZ 3.0V SMD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "X102",
+      "value": "25 MHz",
+      "footprint": "SignalSlinger_Footprints:Crystal_SMD_TXETCLSANF-4Pin",
+      "sheet": "/",
+      "mpn": "TXETCLSANF-25.000000",
+      "supplier_code": "1664-1273-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1664-1273-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=1664-1273-1-ND",
+        "Manufacturer": "Taitien",
+        "Manufacturer PN": "TXETCLSANF-25.000000",
+        "Footprint": "SignalSlinger_Footprints:Crystal_SMD_TXETCLSANF-4Pin",
+        "Datasheet": "",
+        "Description": "XTAL OSC TCXO 25.0000MHZ SNWV"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "BT201",
+      "value": "LiIon Cell",
+      "footprint": "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C201",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C202",
+      "value": "10nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C0805C103J5GEC7800",
+      "supplier_code": "399-C0805C103J5GEC7800CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-C0805C103J5GEC7800CT-ND",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "C0805C103J5GEC7800",
+        "Link": "https://www.digikey.com/short/qd893213",
+        "LCSC Part Number": "C3887673",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0805 10NF 50V C0G 5%"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C203",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C204",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C205",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C206",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C207",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C208",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C209",
+      "value": "10nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C0805C103J5GEC7800",
+      "supplier_code": "399-C0805C103J5GEC7800CT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-C0805C103J5GEC7800CT-ND",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "C0805C103J5GEC7800",
+        "Link": "https://www.digikey.com/short/qd893213",
+        "LCSC Part Number": "C3887673",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0805 10NF 50V C0G 5%"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C210",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C215",
+      "value": "47uF low ESR",
+      "footprint": "SignalSlinger_Footprints:C_2917",
+      "sheet": "/Power Supply/",
+      "mpn": "T495X476K020ATE150",
+      "supplier_code": "399-3904-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "399-3904-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=399-3904-1-ND",
+        "Manufacturer": "KEMET",
+        "Manufacturer PN": "T495X476K020ATE150",
+        "LCSC Part Number": "C122333",
+        "Footprint": "SignalSlinger_Footprints:C_2917",
+        "Datasheet": "",
+        "Description": "CAP TANT 47UF 10% 20V 2917"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C216",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C217",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C218",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "CL21B104KACNNNC",
+      "supplier_code": "1276-1099-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1276-1099-1-ND",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Manufacturer PN": "CL21B104KACNNNC",
+        "Link": "https://www.digikey.com/short/q2f22qnq",
+        "LCSC Part Number": "C29926",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.1UF 25V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C299",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "C2012X5R1V106K125AC",
+      "supplier_code": "445-14418-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "445-14418-1-ND",
+        "Manufacturer": "TDK Corporation",
+        "Manufacturer PN": "C2012X5R1V106K125AC",
+        "Link": "https://www.digikey.com/short/p8qdn4mp",
+        "LCSC Part Number": "C3843628",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 10UF 35V X5R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D201",
+      "value": "BAT54C",
+      "footprint": "Package_TO_SOT_SMD:SC-59",
+      "sheet": "/Power Supply/",
+      "mpn": "BAT54C,215",
+      "supplier_code": "1727-2902-1-ND ",
+      "source_fields": {
+        "Digi-Key Part No.": "1727-2902-1-ND ",
+        "Link": "https://www.digikey.com/en/products/detail/nexperia-usa-inc/BAT54C-215/763216",
+        "Manufacturer": "Nexperia USA Inc.",
+        "Manufacturer PN": "BAT54C,215",
+        "LCSC Part Number": "C37704",
+        "Footprint": "Package_TO_SOT_SMD:SC-59",
+        "Datasheet": "",
+        "Description": "DIODE ARRAY SCHOTTKY 30V SOT23"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D202",
+      "value": "B330A Schottky Diode",
+      "footprint": "Diode_SMD:D_SMA",
+      "sheet": "/Power Supply/",
+      "mpn": "S3AB-13-F",
+      "supplier_code": "S3AB-FDICT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S3AB-FDICT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/diodes-incorporated/S3AB-13-F/814419",
+        "Manufacturer": "Diodes Incorporated",
+        "Manufacturer PN": "S3AB-13-F",
+        "Footprint": "Diode_SMD:D_SMA",
+        "Datasheet": "",
+        "Description": "DIODE GEN PURP 50V 3A SMB"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D203",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/Power Supply/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D204",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/Power Supply/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D206",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/Power Supply/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D207",
+      "value": "Schottky Diode",
+      "footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+      "sheet": "/Power Supply/",
+      "mpn": "CRS09(TE85L,Q,M)",
+      "supplier_code": "CRS09QCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CRS09QCT-ND",
+        "Manufacturer": "Toshiba Semiconductor and Storage",
+        "Manufacturer PN": "CRS09(TE85L,Q,M)",
+        "Footprint": "SignalSlinger_Footprints:D_SOD-123FL",
+        "Datasheet": "",
+        "Description": "DIODE SCHOTTKY 30V 1.5A SOD-123FL"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D208",
+      "value": "1N4001",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "sheet": "/Power Supply/",
+      "mpn": "HS1AFL",
+      "supplier_code": "HS1AFLCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "HS1AFLCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/HS1AFL/9602851?s=N4IgTCBcDaIBIGUCMBBAYgGQMIBUC0AcgCIgC6AvkA",
+        "Manufacturer": "Taiwan Semiconductor Corporation",
+        "Manufacturer PN": "HS1AFL",
+        "Footprint": "Diode_SMD:D_SOD-123F",
+        "Datasheet": "",
+        "Description": "DIODE GEN PURP 50V 1A SOD123F"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "D209",
+      "value": "1N4001",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "sheet": "/Power Supply/",
+      "mpn": "HS1AFL",
+      "supplier_code": "HS1AFLCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "HS1AFLCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/HS1AFL/9602851?s=N4IgTCBcDaIBIGUCMBBAYgGQMIBUC0AcgCIgC6AvkA",
+        "Manufacturer": "Taiwan Semiconductor Corporation",
+        "Manufacturer PN": "HS1AFL",
+        "Footprint": "Diode_SMD:D_SOD-123F",
+        "Datasheet": "",
+        "Description": "DIODE GEN PURP 50V 1A SOD123F"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "F201",
+      "value": "2.6A",
+      "footprint": "Fuse:Fuse_1812_4532Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "0ZCG0260BF2B",
+      "supplier_code": "0ZCG0260BF2B",
+      "source_fields": {
+        "Digi-Key Part No.": "0ZCG0260BF2B",
+        "Link": "https://www.digikey.com/en/products/detail/bel-fuse-inc/0ZCG0260BF2B/4156115",
+        "Manufacturer": "Bel Fuse Inc.",
+        "Manufacturer PN": "0ZCG0260BF2B",
+        "Footprint": "Fuse:Fuse_1812_4532Metric",
+        "Datasheet": "",
+        "Description": "PTC RESET FUSE 16V 2.6A 1812"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J201",
+      "value": "Barrel_Jack_Switch",
+      "footprint": "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal",
+      "sheet": "/Power Supply/",
+      "mpn": "PJ-036AH-SMT-TR",
+      "supplier_code": "CP-036AHPJCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "CP-036AHPJCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/cui-devices/PJ-036AH-SMT-TR/1530971",
+        "Manufacturer": "CUI Devices",
+        "Manufacturer PN": "PJ-036AH-SMT-TR",
+        "Footprint": "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal",
+        "Datasheet": "",
+        "Description": "CONN PWR JACK 2X5.5MM SOLDER"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J203",
+      "value": "External Fan Power",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J204",
+      "value": "Controlled Fan Power",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J205",
+      "value": "Controlled Bat Pwr",
+      "footprint": "SignalSlinger_Footprints:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "AdaFruit 724",
+      "source_fields": {
+        "Digi-Key Part No.": "AdaFruit 724",
+        "Link": "",
+        "Manufacturer": "4U Con Technology",
+        "Manufacturer PN": "",
+        "Footprint": "SignalSlinger_Footprints:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+        "Datasheet": "",
+        "Description": "TERM BLOCK HDR 4POS 3.50MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP201",
+      "value": "V-ext disable",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP202",
+      "value": "Ext-to-Linear",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP203",
+      "value": "Ext-to-Boost",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "JP204",
+      "value": "Internal_V_Enable",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Manufacturer": "np",
+        "Footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "L201",
+      "value": "2.2uH",
+      "footprint": "SignalSlinger_Footprints:WPN4020H2R2MT",
+      "sheet": "/Power Supply/",
+      "mpn": "WPN4020H2R2MT",
+      "supplier_code": "3442-WPN4020H2R2MTCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "3442-WPN4020H2R2MTCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/shenzhen-sunlord-electronics-co-ltd/WPN4020H2R2MT/14119999?s=N4IgTCBcDaIOoAUByAWADGNAJMAlMAsgCogC6AvkA",
+        "Manufacturer": "Shenzhen Sunlord Electronics Co., Ltd.",
+        "Manufacturer PN": "WPN4020H2R2MT",
+        "Footprint": "SignalSlinger_Footprints:WPN4020H2R2MT",
+        "Datasheet": "",
+        "Description": "FIXED IND 2.2UH 4.3A 48MOHM SMD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "MOD201",
+      "value": "AdaFruit Charger",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "sheet": "/Power Supply/",
+      "mpn": "Product ID: 1904",
+      "supplier_code": "1528-1833-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1528-1833-ND",
+        "Manufacturer": "AdaFruit",
+        "Manufacturer PN": "Product ID: 1904",
+        "Link": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/1904/5054545",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": "LI-ION LI-POLYMER CHARGER BOARD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R1",
+      "value": "TBD",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "TBD",
+      "source_fields": {
+        "Digi-Key Part No.": "TBD",
+        "Footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R2",
+      "value": "TBD",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+      "sheet": "/Power Supply/",
+      "mpn": "",
+      "supplier_code": "TBD",
+      "source_fields": {
+        "Digi-Key Part No.": "TBD",
+        "Footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R204",
+      "value": "162k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "RC0805FR-07162KL",
+      "supplier_code": "311-162KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-162KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07162KL/727630",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-07162KL",
+        "LCSC Part Number": "C273888",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 162K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "R205",
+      "value": "12.4k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "sheet": "/Power Supply/",
+      "mpn": "RC0805FR-0712K4L",
+      "supplier_code": "311-12.4KCRCT-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "311-12.4KCRCT-ND",
+        "Link": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-0712K4L/727572",
+        "Manufacturer": "YAGEO",
+        "Manufacturer PN": "RC0805FR-0712K4L",
+        "LCSC Part Number": "C137595",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "RES 12.4K OHM 1% 1/8W 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U201",
+      "value": "LP2985-3.3",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "sheet": "/Power Supply/",
+      "mpn": "LP2985A-33DBVR",
+      "supplier_code": "296-18479-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-18479-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "LP2985A-33DBVR",
+        "Link": "https://www.digikey.com/short/vr2m3rjp",
+        "LCSC Part Number": "C89826",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "Datasheet": "",
+        "Description": "IC REG LINEAR 3.3V 150MA SOT23-5"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U202",
+      "value": "LP2985-3.3",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "sheet": "/Power Supply/",
+      "mpn": "LP2985A-33DBVR",
+      "supplier_code": "296-18479-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-18479-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "LP2985A-33DBVR",
+        "Link": "https://www.digikey.com/short/vr2m3rjp",
+        "LCSC Part Number": "C89826",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "Datasheet": "",
+        "Description": "IC REG LINEAR 3.3V 150MA SOT23-5"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U203",
+      "value": "TO-220 ADJ Reg.",
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown",
+      "sheet": "/Power Supply/",
+      "mpn": "LT1086CT#PBF",
+      "supplier_code": "505-LT1086CT#PBF-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "505-LT1086CT#PBF-ND",
+        "Link": "https://www.digikey.com/en/products/detail/analog-devices-inc/LT1086CT-PBF/891238",
+        "Manufacturer": "Analog Devices Inc.",
+        "Manufacturer PN": "LT1086CT#PBF",
+        "Footprint": "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown",
+        "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/1086ffs.pdf",
+        "Description": "IC REG LIN POS ADJ 1.5A TO220-3"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U204",
+      "value": "TPS22810DBVT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sheet": "/Power Supply/",
+      "mpn": "TPS22810DBVT",
+      "supplier_code": "296-45304-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-45304-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=296-45304-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "TPS22810DBVT",
+        "LCSC Part Number": "C2680364",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tps22810.pdf",
+        "Description": "Power Switch/Driver 1:1 N-Channel 2A SOT-23-6"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U205",
+      "value": "uA7805",
+      "footprint": "SignalSlinger_Footprints:SOT-223-4",
+      "sheet": "/Power Supply/",
+      "mpn": "UA78M05IDCYR",
+      "supplier_code": "296-17616-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-17616-1-ND",
+        "Link": "https://www.digikey.com/en/products/detail/texas-instruments/UA78M05IDCYR/706596",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "UA78M05IDCYR",
+        "Footprint": "SignalSlinger_Footprints:SOT-223-4",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/ua78.pdf",
+        "Description": "IC REG LINEAR 5V 500MA SOT223-4"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "U206",
+      "value": "TPS22810DBVT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sheet": "/Power Supply/",
+      "mpn": "TPS22810DBVT",
+      "supplier_code": "296-45304-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "296-45304-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=296-45304-1-ND",
+        "Manufacturer": "Texas Instruments",
+        "Manufacturer PN": "TPS22810DBVT",
+        "LCSC Part Number": "C2680364",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tps22810.pdf",
+        "Description": "Power Switch/Driver 1:1 N-Channel 2A SOT-23-6"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C301",
+      "value": "470nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/RF Filters/",
+      "mpn": "08051C474K4Z2A",
+      "supplier_code": "478-9924-1-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "478-9924-1-ND",
+        "Link": "https://www.digikey.com/products/en?keywords=478-9924-1-ND",
+        "Manufacturer": "AVX Corporation",
+        "Manufacturer PN": "08051C474K4Z2A",
+        "LCSC Part Number": "C342818",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "CAP CER 0.47UF 100V X7R 0805"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C302",
+      "value": "1100pF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/RF Filters/",
+      "mpn": "GRM2195C2A112JA01D",
+      "supplier_code": "GRM2195C2A112JA01D-ND",
+      "source_fields": {
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM2195C2A112JA01D",
+        "Digi-Key Part No.": "GRM2195C2A112JA01D-ND",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "1100 pF \u00b15% 100V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C303",
+      "value": "1800pF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/RF Filters/",
+      "mpn": "GCM2165C2A182GA16D",
+      "supplier_code": "",
+      "source_fields": {
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GCM2165C2A182GA16D",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1800 pF 100 VDC 2% 0805 C0G (NP0) AEC-Q200"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C304",
+      "value": "91pF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/RF Filters/",
+      "mpn": "08051A910FAT2A",
+      "supplier_code": "",
+      "source_fields": {
+        "Manufacturer": "KYOCERA AVX",
+        "Manufacturer PN": "08051A910FAT2A",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100V 91pF C0G 0805 1%"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "C305",
+      "value": "1100pF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "/RF Filters/",
+      "mpn": "GRM2195C2A112JA01D",
+      "supplier_code": "GRM2195C2A112JA01D-ND",
+      "source_fields": {
+        "Manufacturer": "Murata Electronics",
+        "Manufacturer PN": "GRM2195C2A112JA01D",
+        "Digi-Key Part No.": "GRM2195C2A112JA01D-ND",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "1100 pF \u00b15% 100V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "J301",
+      "value": "To Antenna",
+      "footprint": "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal",
+      "sheet": "/RF Filters/",
+      "mpn": "31-5431",
+      "supplier_code": "ARF1065-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "ARF1065-ND",
+        "Link": "https://www.digikey.com/en/products/detail/amphenol-rf/31-5431/80179?utm_adgroup=Coaxial%20Connectors%20%28RF%29&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Connectors%2C%20Interconnects&utm_term=&utm_content=Coaxial%20Connectors%20%28RF%29&gclid=Cj0KCQjw1rqkBhCTARIsAAHz7K07BKQI4hz-lx2UKWOAkhojF887qRyZwSAGP9HUwnWBejkHZJLi92kaAsMsEALw_wcB",
+        "Manufacturer": "Amphenol RF",
+        "Manufacturer PN": "31-5431",
+        "Footprint": "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal",
+        "Datasheet": "",
+        "Description": "CONN BNC JACK R/A 50 OHM PCB"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "L301",
+      "value": "2.7uH",
+      "footprint": "SignalSlinger_Footprints:Toroid_T-60_2TH_Vertical",
+      "sheet": "/RF Filters/",
+      "mpn": "TH",
+      "supplier_code": "T60-2 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "T60-2 (Amidon)",
+        "Link": "http://www.amidoncorp.com/t60-2/",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "SignalSlinger_Footprints:Toroid_T-60_2TH_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "L302",
+      "value": "2.7uH",
+      "footprint": "SignalSlinger_Footprints:Toroid_T-60_2TH_Vertical",
+      "sheet": "/RF Filters/",
+      "mpn": "TH",
+      "supplier_code": "T60-2 (Amidon)",
+      "source_fields": {
+        "Digi-Key Part No.": "T60-2 (Amidon)",
+        "Link": "http://www.amidoncorp.com/t60-2/",
+        "Manufacturer": "TH",
+        "Manufacturer PN": "TH",
+        "Footprint": "SignalSlinger_Footprints:Toroid_T-60_2TH_Vertical",
+        "Datasheet": "",
+        "Description": "TH"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W301",
+      "value": "T5",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/RF Filters/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W302",
+      "value": "T6",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/RF Filters/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "W303",
+      "value": "T7",
+      "footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+      "sheet": "/RF Filters/",
+      "mpn": "",
+      "supplier_code": "np",
+      "source_fields": {
+        "Digi-Key Part No.": "np",
+        "Link": "np",
+        "Footprint": "SignalSlinger_Footprints:Measurement_Point_ScopeProbe_Round-SMD-2sides-Pad_Small",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "BT401",
+      "value": "LiPo Battery",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "1570",
+      "supplier_code": "",
+      "source_fields": {
+        "Link": "https://www.adafruit.com/product/1570",
+        "Manufacturer": "Adafruit",
+        "Manufacturer PN": "1570",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Lithium Ion Polymer Battery - 3.7v 100mAh"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR401",
+      "value": "Chassis Box",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "SL-42PMBT",
+      "supplier_code": "",
+      "source_fields": {
+        "Link": "https://www.polycase.com/sl-42p?qty=1#200=99&227=163",
+        "Manufacturer": "polycase",
+        "Manufacturer PN": "SL-42PMBT",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "4.25 x 2.63 x 1.27 in / 107.95 x 66.80 x 32.26 mm. / 0.15 lbs"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR402",
+      "value": "LED Light Pipes",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "LFB063CTP",
+      "supplier_code": "LFB063CTP-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "LFB063CTP-ND",
+        "Link": "https://www.digikey.com/en/products/detail/visual-communications-company-vcc/LFB063CTP/5723593",
+        "Manufacturer": "Visual Communications Company - VCC",
+        "Manufacturer PN": "LFB063CTP",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "LIGHT PIPE ROUND 3MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR403",
+      "value": "PCB Screws",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "SCREWS-MBR-100",
+      "supplier_code": "",
+      "source_fields": {
+        "Link": "https://www.polycase.com/screws-mbr-100",
+        "Manufacturer": "polycase",
+        "Manufacturer PN": "SCREWS-MBR-100",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "SCREWS-MBR-100 PCB Screws"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR404",
+      "value": "Magnet Wire for RF Inductors",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "MAGNET WIRE"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR405",
+      "value": "FTDI Cable",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "70",
+      "supplier_code": "",
+      "source_fields": {
+        "Link": "https://www.adafruit.com/product/70",
+        "Manufacturer": "Adafruit",
+        "Manufacturer PN": "70",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "FTDI Serial TTL-232 USB Cable"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR406",
+      "value": "9POS Backshell",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "AGP-09/IDC",
+      "supplier_code": "AE11006-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "AE11006-ND",
+        "Link": "https://www.digikey.com/en/products/detail/assmann-wsw-components/AGP-09-IDC/1241853",
+        "Manufacturer": "Assmann WSW Components",
+        "Manufacturer PN": "AGP-09/IDC",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "CONN BACKSHELL 9POS 180DEG GRAY"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR407",
+      "value": "LiPo Charger Module",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "1904",
+      "supplier_code": "1528-1833-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "1528-1833-ND",
+        "Link": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/1904/5054545",
+        "Manufacturer": "Adafruit Industries LLC",
+        "Manufacturer PN": "1904",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Micro-Lipo Charger for LiPo/LiIon Batt"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR408",
+      "value": "9-Pin D Male",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "A-DS 09 LL/Z",
+      "supplier_code": "AE10972-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "AE10972-ND",
+        "Link": "https://www.digikey.com/en/products/detail/assmann-wsw-components/A-DS-09-LL-Z/1241781",
+        "Manufacturer": "Assmann WSW Components",
+        "Manufacturer PN": "A-DS 09 LL/Z",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "CONN D-SUB PLUG 9POS SLDR CUP"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR409",
+      "value": "6-pin Angled Header",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "929550-01-06-I",
+      "supplier_code": "929550-01-06-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "929550-01-06-ND",
+        "Link": "https://www.digikey.com/en/products/detail/3m/929550-01-06-I/682149",
+        "Manufacturer": "3M",
+        "Manufacturer PN": "929550-01-06-I",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "CONN HEADER R/A 6POS 2.54MM"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR410",
+      "value": "PCB_AND_ASSEMBLY",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Printed Circuit Board(s) plus Assembly"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR411",
+      "value": "TO-220 Mounting Hardware",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "",
+      "supplier_code": "Amazon",
+      "source_fields": {
+        "Digi-Key Part No.": "Amazon",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR412",
+      "value": "Shorting Jumper",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "NPB02SVAN-RC",
+      "supplier_code": "S9345-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S9345-ND",
+        "Link": "https://www.digikey.com/short/w0p92mhw",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "NPB02SVAN-RC",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "CONN JUMPER SHORTING 1.27MM GOLD"
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR413",
+      "value": "FTDI Adapter PCB",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "",
+      "supplier_code": "",
+      "source_fields": {
+        "Link": "https://oshpark.com/shared_projects/15SnDRmB",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": ""
+      }
+    },
+    {
+      "design": "SignalSlinger",
+      "ref": "HDWR414",
+      "value": "Shorting Jumper",
+      "footprint": "",
+      "sheet": "/Misc/",
+      "mpn": "NPB02SVAN-RC",
+      "supplier_code": "S9345-ND",
+      "source_fields": {
+        "Digi-Key Part No.": "S9345-ND",
+        "Link": "https://www.digikey.com/short/w0p92mhw",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Manufacturer PN": "NPB02SVAN-RC",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "CONN JUMPER SHORTING 1.27MM GOLD"
+      }
+    }
+  ]
+}

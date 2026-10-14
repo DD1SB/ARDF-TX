@@ -1,0 +1,34 @@
+# M1 risk register
+
+Date: 2026-10-13. Scores are **planning judgments**, not measured probabilities. Likelihood 1 (unlikely) to 5 (expected without mitigation), severity 1 (minor) to 5 (safety/legal/major functional failure), priority=L×S. Residual scores cannot be reduced until closure evidence exists. Owner roles below must be assigned to people before M2.
+
+| Risk | L | S | Score | Prevention / concrete verification | Closure owner / gate |
+| --- | --- | --- | --- | --- | --- |
+| R01 VHF amplitude clipping/trough leakage or FM mislabeled A2A | 4 | 5 | 20 | Sinusoidal supply modulation or linear-chain experiment; report m/Pc/mean/PEP across voltage/temp/channel; ≥1 dB clean margin; V2AM/VSPEC | RF lead; before topology release |
+| R02 Affordable VHF PA/driver combination not qualified | 5 | 4 | 20 | Active/priced PD55008 closes part-number gap; measure 144 MHz gain/AM. MMIC drive/compression not proven; BFP650 excluded from new selection; assess current MMIC alternatives | Procurement/RF lead; no fleet lock |
+| R03 Compact Foxoring fails 30 m in dry site or exceeds 250 m wet | 4 | 4 | 16 | Fixed-power compact cartridge/counterpoise recipe, Q/SRF/pF sweep; blinded ≥8-heading wet/dry VFIELD; event-site recheck | Antenna/organiser; no reach claim |
+| R04 Full-power drive/coupling into Foxoring/training network | 3 | 5 | 15 | No PA-output routing switch to low socket; independent bounded source, keyed ID/interlock, PA supply/input gates; inject wrong mode/control and measure coupling/stress | Hardware lead; VSAFE/V80F/V2TRAIN |
+| R05 Off-slot/startup RF or periodic watchdog-recovery bursts | 4 | 5 | 20 | POR+lease qualification, true supply disconnect, RF gate and persistent latch; startup/brownout/frozen GPIO tests >10 watchdog cycles | Hardware lead; VSAFE/VSPEC |
+| R06 Si5351/PLL close-in spurs or broad noise | 4 | 4 | 16 | Local source, all-channel analyzer sweeps, quiet supply/reference; VHF Si5351 only after measured gate; LPF cannot fix close spurs | RF lead; source acceptance |
+| R07 24 h promise invalid after efficiency/idle/cold measurement | 4 | 4 | 16 | Conservative Wh table, measure complete input energy; per-pack mean-power ceilings; improve idle/PA or adjust permitted profile | Power lead; VPWR |
+| R08 Full-power continuous beacon exceeds energy/thermal capability | 5 | 4 | 20 | Distinct d=1 model; event-duration/external-source decision; sustained sealed-enclosure test | Product/organiser; ADR-0006 |
+| R09 Dual full-power operation exceeds 4P energy/peak feed | 5 | 4 | 20 | Default single active band; explicitly price/size simultaneous mode or reject its 24 h scope; log aligned peaks | Product/power lead; scope decision |
+| R10 HF drain/gate overstress or thermal failure at 15 V/mismatch | 4 | 5 | 20 | Compare IRF610 class-C with BS170 class-E; ≥20% breakdown margin, static-drive protection, low-current bring-up, VSWR/open/short tests; V80P/VTHERM | RF lead; 5 W gate |
+| R11 Antenna ERP/pattern assumed from S11 or one radial | 4 | 4 | 16 | Reference-dipole substitution/gain/loss, horizontal scans; symmetric Sprint radials; uniform deployment recipe | Antenna lead; V80A/V2AM |
+| R12 Pack/BMS/charger fault or current imbalance | 3 | 5 | 15 | Matched protected/balanced packs, external proper CC/CV charger, temperature/fuse/polarity mechanics, ESR/current/cutoff trials | Power lead; VPWR |
+| R13 Local timing drift/reset/last symbol crosses Sprint slot | 3 | 4 | 12 | TC RTC capture+monotonic discipline, half-open windows, drift/temp/reset and simultaneous-group tests | Control lead; VCTRL |
+| R14 LoRa optional detection false positive or blocks schedule | 3 | 3 | 9 | Exact module document, bounded BUSY/command/readback; absent/stuck/floating cases, no detection TX | Control lead; VLORA |
+| R15 RF/LoRa desense, VHF sixth harmonic and supply intermodulation | 4 | 3 | 12 | Separate antennas/filters/returns/shields; concurrent TX/RX sensitivity/spectrum/audio tests; legal airtime | RF/control leads; VLORA |
+| R16 Country licence/ID/unattended/SRD assumptions wrong | 3 | 5 | 15 | Primary country review, authority/organiser classification, legal mask, coordinated channels; Germany provisional | Operator/organiser; before radiation |
+| R17 Inaccessible copyright/licence/source prevents reproduction | 3 | 3 | 9 | Exact version/licence/permission log, no copying merely because downloadable; recovery failures retained | Documentation/RF lead; before copying |
+| R18 Candidate cost presented as released procurement price | 4 | 4 | 16 | Quote vs allowance separation, live MOQ/stock confirmation, 6/10/20 quantity arithmetic, full accessory/wiring scope and estimate sensitivity | Procurement/product lead; budget approval |
+| R19 One module bus fault/backpower defeats the other/timebase | 3 | 4 | 12 | Branch isolation/reset, passive ID and non-backpower inputs; shorts/unplug/POR fixtures | Hardware/control leads; VCTRL/VSAFE |
+| R20 Handheld variant invalidates AM modification | 4 | 4 | 16 | Identify exact PCB/firmware/PA lot; measure envelope/spectrum/power/inhibit, conversion labour and yield | RF/procurement leads; comparator trial |
+| R21 Cheap monostable/POR or PWM weakens fail-off/envelope | 4 | 5 | 20 | Persistent fault latch/dual gates/source-bus isolation; tolerance/startup/static-heartbeat/retune tests and all-level PWM ripple/m/PEP measurement | Hardware/RF lead; VSAFE/V2AM |
+| R22 Pigtail/connector scope or cheap matching material hides installed cost | 4 | 4 | 16 | Itemize bulkhead sockets/harness and both antenna cartridges; verify strain relief/interlock/returns, coil Q/SRF/voltage and repeatable assembly labor | Hardware/procurement lead; VFLEET/V80F |
+
+| R23 GVA drive budget fails stable PA gain or compression margin | 5 | 4 | 20 | Measure worst-case MMIC P1dB and PA gain/loss across envelope; ≥3 dB driver backoff and ≤0.2 dB compression; current stronger MMIC comparator | RF lead; G2/G3 |
+| R24 Series pass/helper overheats or exceeds hot DC SOA | 5 | 5 | 25 | No-tone, quarter-power, full-envelope and faults; exact-vendor hot DC SOA, sink/helper sizing, stable feedback and low output capacitance | RF/power lead; G4/G0 |
+| R25 Added shaping/modulator loss invalidates 1P Sprint/3P VHF | 4 | 4 | 16 | Use revised all-pack budget; measure total input Wh, peak current, bias and efficiency; provision ≥5 A single-band path | Power lead; G9 |
+
+Highest-priority unresolved gates: R01/R02/R05/R08/R09/R10/R21/R23/R24/R25. M1 architecture is conditionally accepted. RF analysis and evaluation preparation are authorized; complete system layout/procurement remain held for measured [G0–G9 gates](M2_RF_EVALUATION.md). Tests and instrument needs are in [validation](M1_VALIDATION_PLAN.md); assumptions A1–A9 in [trace](M1_REQUIREMENTS_TRACE.md). Closing a theoretical model or finding a schematic does not close its measurement risk.

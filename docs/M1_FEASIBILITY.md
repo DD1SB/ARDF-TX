@@ -1,0 +1,78 @@
+# M1 RF feasibility and evidence matrix
+
+Date: 2026-10-13. **Research milestone; no project hardware validated.** Reference IDs resolve through the [dated source log](research-register.md). New adaptations, cost allowances and energy inputs are **ASSUMPTIONS/MODELS**, unless explicitly classified otherwise.
+
+**Cost rework:** [revised architecture/cost analysis](M1_COST_REWORK.md) supersedes earlier preferred-part choices and broad cost allowances. New ON7YD/DL3BBX/active-PA evidence and quotes are in [cost sources](M1_COST_SOURCES.md). Original antenna/AM/rule analysis remains applicable; M1 is now conditionally accepted; [M2 preparation](M2_PREPARATION.md) supplies the new circuit proposals and measured gates.
+
+## Reuse evidence
+
+| Candidate | Demonstrated evidence | Quantitative/waveform limitations | Required adaptation / disposition |
+| --- | --- | --- | --- |
+| Netherlands/G3ZOI (NL-HISTORY pp. 12,15–16 Figs.33,43–48) | AUTHOR: built event sets, schematic and series collector modulation. | Nominal 1 W; no calibrated AM, PEP, spectrum or endurance report. | ICS525/BFW16A/2N4427/BLT50 cannot be presumed repeatably available. Strong AM architecture reference, not component-identical fleet design. |
+| PA0JBG/PA0DFN UV-3R (NL-HISTORY p.19 Figs.60–62) | AUTHOR: photographed supply-modulated radios, 2025 control update. | No quantified sinusoidal envelope or unwanted-emission test. | Revision-dependent PA rail/control loop. Relevant modified-radio reference; **not proof of UV-5R conversion**. |
+| G3ZOI/ON7YD ATX80 + L match | AUTHOR hardware; MEASURED-PUBLISHED antenna current on longer wire. | No compact 30 cm/10 mW acceptance. Original keying order can damage PA. | Preserve shaping and safe sequencing lessons; inspect exact version and rights before circuit reuse. |
+| SmartFOX (SMARTFOX) | Published unified RP2040 code, detection, schedule/config, MIT notice. | VHF VCXO **FM sidetone**; HF direct Si5351 keying; no calibrated inspected RF report. | Software reference. Unchanged VHF disqualified for A2A. Defaults (including 24 WPM/frequency rotation) require changes. Complete RF CAD/licence scope not established. |
+| HG0HK UTX80m | AUTHOR: built device, ten channels, long/0.3 m antennas. | Stated 1.7/0.5 W and max 0.8 A at 4 V, not a measurement series; calibrated 10 mW not stated. | 1S, six-hour software limit, ±10 ppm timing. Cannot infer 5 W or 24 h; circuit/licence OPEN. |
+| QRP Labs QCX class-E PA (QCX-PA) | MEASURED-PUBLISHED band-specific power vs supply, class-E scope example, established kits. | Band/winding dependence; 5 W often needs 15–16 V. Thermal/mismatch stresses significant. | Established HF PA comparison; single-IRF610 alternative now evaluated. Three BS170s/shaping/filter need 2S boost and requalification; no promise of 5 W on raw 2S. |
+| DF1FO 2 m midi/maxi | MEASURED-PUBLISHED four-prototype table: ~1.2 W peak/0.6 W mean at 12 V; ~0.7/0.4 W at 8 V. | Square collector modulation and reported ICS525 noise. Original “peak” is not automatically sinusoidal-AM PEP. | Redesign envelope and synthesis, avoid KT610b/BFR96S as assumed fleet stock. Tested reference, not unchanged 70–80% compliance. |
+| Practical Si5351 VHF: QRP Labs/U3S, RA3APW | MEASURED-PUBLISHED spectra at 144.490 MHz with several references/configurations. | Author reports −41 dBc spur at 997 kHz offset in one setup; source phase noise depends on reference. | Chip frequency capability alone insufficient. Low-cost bench experiment; all required channels must pass, close-in spurs cannot be removed by ordinary output LPF. |
+| LMX2571/TIDA-00886 | Manufacturer tested reference, noise vs regulator comparison at **480 MHz**. | TIDUC19A p.9 gives −116.94 dBc/Hz at 10 kHz offset with 3.3 V supply; not a 144 MHz result. | Higher-cost fallback after Si5351 and integer-PLL/discrete-VCO evaluation; 144–146 MHz sweep required. 39 mA typical is conditional; reference/QFN/filtering add cost. |
+| ADF4351 | Manufacturer datasheet/evaluation ecosystem; 35 MHz minimum. | No inspected complete ARDF AM validation; generic cheap modules vary. | Plausible PLL alternative; larger active-power burden and uncertain module provenance. Cannot directly synthesize 3.5 MHz. |
+| Current Ampleon BLP5LA55S / BLP9LA25S | Manufacturer active status; BLP5 Rev.4 has CW/two-tone VHF measurements at 15 V; BLP9 current 25 W family. | BLP5 VHF example uses 893 mA quiescent, ~13.4 W before RF, and costly RF substrate/matching; not our low-power AM result. BLP9 inspected measured examples are outside 144 MHz. | BLP5 quoted in small quantities, BLP9 observed Mouser MOQ 100/500. Availability alternatives exist, but cost/backoff/bias burden prevents an automatic recommendation. No 45% PA efficiency assumed for these unchanged circuits. |
+| DF1FO/Tinyfox-style Foxoring; recent Fixle | Original wet-woodland reach comparison; compact builds and current/size claims. | Some configurations audible beyond 250 m, often 60–100 cm wires, no calibrated 10 mW plane. | Strong evidence for loading/counterpoise sensitivity. Fixed crystal/coin-cell versions cheaper/smaller but do not satisfy locked modular contract unchanged. |
+| UV-5R conversion | Current retailer listings; related UV-3R AM precedent. | No exact UV-5R revision with measured A2A, spectrum and isolated training output found. | Revision-specific AM experiment and cost comparator. PTT/audio cable producing FM is disqualified. |
+
+No reference satisfies every requirement unchanged. Public schematic access is not a copying licence; no reference artwork/code is committed.
+
+## 80 m candidate topology and power control
+
+Local Si5351A → gated buffer → shaped discrete watt PA → LPF → **normal port** → external longer-wire match. The cost rework prioritizes ON7YD's single-IRF610 class-C reference and retains QCX class-E as a comparison. A separate low-power buffer/attenuator → its own LPF → **Foxoring reference port** → compact loading/coupling cartridge. There is no RF switch carrying the watt output into that cartridge.
+
+Both published PA references reduce initial research. Candidate 15–16 V boost permits 5 W exploration but requires drain-voltage, thermal and mismatch qualification; exact matching and safe rail remain OPEN. ON7YD reports 4.8 W at 15 V; the proposed 5 W derivative remains unmeasured. For the class-E alternative, ideal peak drain voltage can approach 3.56×supply: about 53 V at 15 V before overshoot, close to a 60 V BS170 limit. A higher-voltage device or changed impedance may be necessary. Sprint uses a reduced rail/drive combination calibrated for 0.3–1 W. Analogue maximum limits must bound software adjustment. A 27 dB pad from 5 W to 10 mW wastes nearly all PA power and maintains the wrong-path hazard; reject as primary Foxoring solution. Operation close to PA cutoff is also poorly repeatable.
+
+Specify the Foxoring **mark power** at a post-filter 50 Ω reference plane. “Continuous” means continuous Morse service, without contest slots; it need not mean uninterrupted carrier. Use a full key-down upper bound in the energy model. The rule gives nominal 10 mW without tolerance/reference impedance: our plane and provisional calibration tolerance are engineering conventions requiring organiser agreement. Field reach and match losses get independent records.
+
+## The two antenna installations
+
+| Attribute | Classic/Sprint | Compact Foxoring |
+| --- | --- | --- |
+| Candidate installation | 5–8 m upright wire and defined earth/radials. Sprint: symmetric radial arrangement, e.g. three equal wires. Lengths are examples. | ~0.30 m upright radiator plus defined compact counterpoise; experiment with three 0.20–0.30 m radials or insulated ground plate. Counterpoise dimensions **unverified**. |
+| Match | Adjustable L/T network with rated coil/capacitors, counterpoise terminal and strain relief. | Dedicated resonant loading and coupling/tap network, tunable or characterized fixed cartridge; deliberate loss may stabilize range. Its dimensions/Q/SRF and enclosure are qualification variables. |
+| Conducted tests | 50 Ω power, tuner loss, antenna current/voltage. | Nominal 10 mW reference load, then installed base impedance/current/voltage and losses. |
+| Radiated tests | Horizontal pattern, reach from start, consistent installations; symmetric Sprint ground. | Audible at mapped point/30 m, inaudible at 250 m, in wet/dry conditions. Conducted power alone cannot establish this. |
+| Protection | Watt-rated port/match and mismatch shutdown. | Physically independent bounded source, keyed dissimilar connector, cartridge identity and hardware normal-PA inhibit. Verify residual crosstalk/clamp loading. |
+| Installed cost allowance | Historical 8–18 EUR allowance; rework unquoted itemization 10.25 EUR before quote/qualification closure; pole extra. | Historical 7–15 EUR allowance; rework estimate 8.38 EUR includes all required compact functions; no validated field recipe. |
+
+**MODEL, not a coil design:** at 3.55 MHz, wavelength ≈84.45 m. Thin short-monopole approximation over ideal ground with triangular current: `Rrad≈40π²(h/λ)²`, giving **0.005 Ω** for 0.30 m. An illustrative effective capacitance of 5–15 pF gives |X|≈9.0–3.0 kΩ and series-resonance inductance ≈402–134 µH. Finite compact counterpoise and stray coupling may invalidate this approximation. Sweep these values experimentally; do not order a chosen coil from the calculation.
+
+At Q=30–100, coil series resistance alone can be roughly 30–300 Ω, yielding idealized efficiency ~0.0017–0.017% before other loss. Ten milliwatts then suggests order **0.17–1.7 µW radiated**, not a reliable ERP prediction. For C=10 pF/Q=50: L≈201 µH, X≈4.48 kΩ, Rloss≈90 Ω; if 10 mW is accepted by that branch, current≈10.5 mA and reactive voltage≈47 V RMS. Compact still requires insulation/voltage ratings. A 1 pF increase on 10 pF changes resonance about 4.7%; moisture, hands and enclosure capacitance can overwhelm channel tuning. Measure Q and SRF at/above 3.5 MHz, not a catalog's low-frequency test point.
+
+At 30 m distance is only ~0.36 wavelength; `λ/2π≈13.4 m`. Soil, intermediate-field and return-current effects make far-field range calculations unreliable. A very small radiator can still exceed 250 m. Choose coupling/loss at fixed nominal reference power using the [field protocol](M1_VALIDATION_PLAN.md), including installation repeatability and representative receivers.
+
+| Antenna-interface alternative | Total cost/size and risk | M1 assessment |
+| --- | --- | --- |
+| Common port + passive adapter | Saves a socket; still needs two costed matches. Same socket can put 5 W into compact network; firmware ID alone is insufficient. | Reject unless independently watt-rated attenuation/interlock added; harms efficiency/size. |
+| Switched onboard matching | Saves external box; large normal tuner and sensitive compact coil sit near PA/regulators. Switch failure can route full power incorrectly. | Possible, but extra switching, ratings and test effort; weaker isolation. |
+| Separate ports/source paths + compact cartridge | Extra keyed socket/small housing; easiest independent test, repair and source limits. Must still test PA coupling and cable swaps. | **Proposed ADR-0004**, not an accepted circuit. |
+
+## True VHF AM and PEP headroom
+
+Propose local source → filter/buffer/driver → efficient PA with **sinusoidal drain/collector supply modulation** → LPF/sensing → normal output. The rework evaluates Si5351 first, then ADF4002/discrete VCO if spectra fail. The controller supplies keyed ~800 Hz sine control as a project choice, with filtering and modulation hardware on the RF board. First experiment: continuous carrier during its active slot, with shaped keyed AF; shut down both source and PA outside the slot. Keyed carrier plus tone is also allowed by T2.8 but needs extra edge qualification. Never use PLL FM modulation as an AM substitute.
+
+G3ZOI/PA0JBG establishes physical credibility for series modulation. A modern PA, bias/matching and envelope transfer are **R&D**, not demonstrated here. Alternative: low-level AM followed by a class-AB linear chain; easier amplitude control, but more gain/bias and dissipation. Neither a fixed-supply saturated FM PA nor 100% square chopping establishes 70–80% sinusoidal AM.
+
+**MODEL:** `ERPcarrier=Pc×10^((GdBd−Lfeed)/10)`, `PEP=Pc(1+m)²`, `Pmean=Pc(1+m²/2)` for sinusoidal marks. With assumed antenna 0 dBd and 1 dB feed/connector loss, 1 W carrier ERP requires **Pc=1.259 W**, PEP **3.64–4.08 W** at m=0.70–0.80, and mark mean **1.57–1.66 W**. Quarter-watt ERP scales these by four. Reserve ≥1 dB measured compression/envelope margin above 4.08 W, approximately **5.14 W** clean capability. A nominal 1 W FM PA is insufficient.
+
+T2.8 does not explicitly name carrier versus modulated mean/peak ERP. Report all three and obtain organiser agreement before final calibration. Our carrier interpretation is a conservative PA-sizing convention. With −3 dBd antenna and 1 dB feed loss, 1 W ERP needs 2.51 W carrier/8.14 W PEP. Require characterized **net antenna gain ≥−1 dB** for the ~6 W PA budget, or recost/resize. Turnstile/ring antennas are candidates, not measured 0 dBd assumptions.
+
+With 12 V available at the PA modulator output, m=0.8 implies mean rail ≤6.67 V before dropout and trough ~1.33 V. Constant RF drive may leak at the trough and cause AM-to-PM/nonlinear envelopes. Measure transfer versus voltage, frequency, temperature and drive; feedback/predistortion only after stable characterization. A linear series device can dissipate several watts in continuous beacon service; DC SOA, heat sink and headroom must be costed. RD06HVF1 6 W/175 MHz/12.5 V data supports a **bench reference**, but seller labels NOS; AFT05MS006N is EOL. Neither is the repeatable fleet PA recommendation. The rework identifies priced active PD55008; its 144 MHz AM/drive qualification and economical driver sourcing remain gates.
+
+## Protected VHF training
+
+Split the source **before** the high-power PA. With normal drain-modulated PA topology, this source is still unmodulated: the training branch needs **its own low-power AM buffer/modulator** driven by the same keyed sine envelope, then permanent attenuation/own filter and dissimilar keyed socket. Merely tapping the PLL would produce unmodulated carrier and fail training A2A. A common low-level AM tap is available only with the alternative linear-PA topology. No switch connects normal PA output to the training socket; selection disables its supply/drive, invalid mode disables both. Candidate **1 µW–1 mW carrier at 50 Ω** is a project target, not a legal exemption. At 1 mW/80% AM, PEP is 3.24 mW. Football-field reach requires separate field evaluation. A high-power tee is unacceptable.
+
+## Integration trade-off and exclusions
+
+The three accepted PCBs simplify fleet maintenance. Local synthesis permits independent RF-board tests and avoids a VHF harness. A universal unit adds VHF PA/heat sink/filter/antenna and standby load. A Foxoring-only population of the **same 80 m PCB** omits watt PA/boost/normal socket but retains controller, bounded source, compact match, short radiator, compact counterpoise and protected 2S1P. It cannot match the minimum size/cost of a coin-cell fixed-frequency transmitter while keeping the locked ESP32/2S/modular contracts. No fourth primary PCB is proposed.
+
+Hard exclusions: FM-only VHF; unshaped clock output as released RF; software power as sole antenna protection; continuous beacons budgeted at 20%; EOL/reel-only/broker parts as assumed repeatable stock; reach inferred from 10 mW alone; IARU as legal authority. See [decision](M1_DECISION.md) for conditional next steps.

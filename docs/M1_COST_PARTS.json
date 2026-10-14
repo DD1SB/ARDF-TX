@@ -1,0 +1,1138 @@
+{
+  "date": "2026-10-13",
+  "scope": "M1 candidate catalog; not ordering list; EUR exVAT unless documented otherwise",
+  "parts": {
+    "S3": {
+      "mpn": "ESP32-S3-WROOM-1-N4",
+      "supplier": "Mouser",
+      "supplier_part_number": "356-ESP32-S3WROOM1N4",
+      "package": "module 18x25.5 mm",
+      "price_breaks_eur": {
+        "1": 4.48,
+        "10": 3.88,
+        "25": 3.61
+      },
+      "availability": "3318 earlier index; new price page stock uncaptured",
+      "source_url": "https://eu.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N4?qs=Li%252BoUPsLEnsO%2FkiJOUK0FQ%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RTC": {
+      "mpn": "RV-3032-C7-32.768KHZ-2.5PPM-TA-QA",
+      "supplier": "DigiKey",
+      "supplier_part_number": "2195-RV-3032-C7-32.768KHZ-2.5PPM-TA-QACT-ND",
+      "package": "8-SON C7",
+      "price_breaks_eur": {
+        "1": 2.71,
+        "10": 2.032
+      },
+      "availability": "759 earlier EUR; 1389 newer USD index",
+      "source_url": "https://www.digikey.de/en/products/detail/micro-crystal-ag/RV-3032-C7-32-768KHZ-2-5PPM-TA-QA/16273065",
+      "evidence": "OBSERVED",
+      "note": "EUR from original M1 observation; newer USD not converted",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BUCK": {
+      "mpn": "TPS62160DGKT",
+      "supplier": "DigiKey",
+      "supplier_part_number": "296-30318-1-ND",
+      "package": "8-VSSOP DGK",
+      "price_breaks_eur": {
+        "1": 1.9,
+        "10": 1.408
+      },
+      "availability": "4588 earlier index",
+      "source_url": "https://www.digikey.de/de/products/detail/texas-instruments/TPS62160DGKT/3074519",
+      "evidence": "OBSERVED",
+      "note": "",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SYNTH": {
+      "mpn": "SI5351A-B-GT",
+      "supplier": "DigiKey",
+      "supplier_part_number": "336-2399-5-ND",
+      "package": "10-MSOP",
+      "price_breaks_eur": {
+        "1": 1.87,
+        "10": 1.388
+      },
+      "availability": "10254 earlier index",
+      "source_url": "https://www.digikey.de/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+      "evidence": "OBSERVED",
+      "note": "Fixed 0x60; source suitability at VHF unverified",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BOOST": {
+      "mpn": "TPS611781RNWR",
+      "supplier": "Mouser",
+      "supplier_part_number": "595-TPS611781RNWR",
+      "package": "13-VQFN-HR RNW 3x3.5",
+      "price_breaks_eur": {
+        "1": 2.79,
+        "10": 2.09,
+        "25": 1.92
+      },
+      "availability": "2288 cached EUR; DigiKey 4371",
+      "source_url": "https://www.mouser.ee/ProductDetail/Texas-Instruments/TPS611781RNWR?qs=Mv7BduZupUjx2ZfyDo32jQ%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Cut tape MOQ1 from factory reel3000. Alternative DigiKey EUR2.71/2.031. True isolation external.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "HFPA": {
+      "mpn": "IRF610PBF-BE3",
+      "supplier": "Farnell",
+      "supplier_part_number": "4853567",
+      "package": "TO-220AB",
+      "price_breaks_eur": {
+        "1": 1.11,
+        "10": 0.622
+      },
+      "availability": "614 in Farnell DE index (about 2-month-old cache); no reservation",
+      "source_url": "https://de.farnell.com/vishay/irf610pbf-be3/mosfet-n-kanal-200v-3-3a-to-220ab/dp/4853567",
+      "evidence": "OBSERVED",
+      "note": "BE3 is listed as same form/fit/function except origin by Mouser; suffix datasheet/PCNs remain to verify before release. Final stock audit rejects original Mouser 844-IRF610PBF zero stock (May/Aug 2027 incoming), formerly EUR1.11/0.759. BE3 Mouser78-IRF610PBF-BE3 in-stock alternate EUR1.14 at1 only; no ten discount captured. Farnell direct browser fetch cache-miss; indexed distributor quote inspected. No RF derivative validated.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "HFDRIVE": {
+      "mpn": "IRS4427STRPBF",
+      "supplier": "DigiKey",
+      "supplier_part_number": "IRS4427STRPBFCT-ND",
+      "package": "SOIC-8",
+      "price_breaks_eur": {
+        "1": 0.93,
+        "10": 0.668,
+        "25": 0.6032
+      },
+      "availability": "2633 cached EUR",
+      "source_url": "https://www.digikey.it/en/products/detail/infineon-technologies/IRS4427STRPBF/2355493",
+      "evidence": "OBSERVED",
+      "note": "Exact lifecycle/3.3V input threshold/3.6MHz thermal gate remains OPEN",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "MONO": {
+      "mpn": "74HC123D,653",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-74HC123D-T",
+      "package": "SOIC-16",
+      "price_breaks_eur": {
+        "1": 0.327,
+        "10": 0.219,
+        "25": 0.194,
+        "100": 0.165
+      },
+      "availability": "1037 newer EU vs zero older NL/BR; conflict",
+      "source_url": "https://eu.mouser.com/en/ProductDetail/Nexperia/74HC123D653?qs=P62ublwmbi%2FMZUrC9zEqyg%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "No inherent safety certification; external RC, POR, latch and gates needed.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LATCH": {
+      "mpn": "74HC74D,653",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-74HC74D-T",
+      "package": "SOIC-14",
+      "price_breaks_eur": {
+        "1": 0.181,
+        "10": 0.123,
+        "25": 0.108,
+        "100": 0.093
+      },
+      "availability": "623 older NL;1590 newer USD",
+      "source_url": "https://nl.mouser.com/ProductDetail/Nexperia/74HC74D653?qs=P62ublwmbi8VnJ1KG1%2FblQ%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "AND": {
+      "mpn": "74HC08D,653",
+      "supplier": "Mouser",
+      "supplier_part_number": "771-74HC08D-T",
+      "package": "SOIC-14",
+      "price_breaks_eur": {
+        "1": 0.163,
+        "10": 0.114,
+        "25": 0.101,
+        "100": 0.086
+      },
+      "availability": "37703 cached EU",
+      "source_url": "https://eu.mouser.com/ProductDetail/Nexperia/74HC08D653?qs=P62ublwmbi%2FQCxm29EB%2FyA%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "POR": {
+      "mpn": "MCP100T-300I/TT",
+      "supplier": "Mouser",
+      "supplier_part_number": "579-MCP100T-300I/TT",
+      "package": "SOT-23-3",
+      "price_breaks_eur": {
+        "1": 0.361
+      },
+      "availability": "3723 US vs3538 AU indexed; EU live basket OPEN; aggregator counts excluded",
+      "source_url": "https://www.mouser.it/ProductDetail/Microchip-Technology/MCP100T-300I-TT?qs=8U9qMIGhlkokseONjNxnUg%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Only quantity1 EUR price observed; no fabricated ten discount. Verify threshold delay and thermal tolerances.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "CMP": {
+      "mpn": "LM393BIDR",
+      "supplier": "Mouser",
+      "supplier_part_number": "595-LM393BIDR",
+      "package": "SOIC-8",
+      "price_breaks_eur": {
+        "1": 0.198,
+        "10": 0.14,
+        "25": 0.124,
+        "100": 0.105
+      },
+      "availability": "6986 cached EU vs7644 US; basket OPEN",
+      "source_url": "https://eu.mouser.com/en/ProductDetail/Texas-Instruments/LM393BIDR?qs=BJlw7L4Cy78N8CV%252BGpRosA%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Common-mode input limits and fail-low comparator network need qualification.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "OPAMP": {
+      "mpn": "LM2904BIDR",
+      "supplier": "Mouser",
+      "supplier_part_number": "595-LM2904BIDR",
+      "package": "SOIC-8",
+      "price_breaks_eur": {
+        "1": 0.206,
+        "10": 0.142,
+        "25": 0.126,
+        "100": 0.107
+      },
+      "availability": "546 cached EU",
+      "source_url": "https://eu.mouser.com/ProductDetail/Texas-Instruments/LM2904BIDR?qs=9r4v7xj2LnnFewvbXZMeJA%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RAWFET": {
+      "mpn": "PMPB20XPE,115",
+      "supplier": "DigiKey",
+      "supplier_part_number": "1727-1368-1-ND",
+      "package": "DFN2020MD-6",
+      "price_breaks_eur": {
+        "1": 0.72,
+        "10": 0.446
+      },
+      "availability": "6245 earlier index",
+      "source_url": "https://www.digikey.de/en/products/detail/nexperia-usa-inc/PMPB20XPE-115/4021003",
+      "evidence": "OBSERVED",
+      "note": "Raw 2S input only; evaluate 2026 lifecycle PCNs. Not boosted rail or linear AM.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "ISOFET": {
+      "mpn": "DMP4015SPS-13",
+      "supplier": "Mouser",
+      "supplier_part_number": "621-DMP4015SPS-13",
+      "package": "PowerDI5060-8 (check manufacturer pattern)",
+      "price_breaks_eur": {
+        "1": 1.38,
+        "10": 0.646,
+        "100": 0.574
+      },
+      "availability": "4264 cached EU",
+      "source_url": "https://eu.mouser.com/en/ProductDetail/Diodes-Incorporated/DMP4015SPS-13?qs=gfe7vQ8txpUdN3mXhLzzsQ%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Different DE ten quote0.807; sensitivity cost gate. Device ratings follow datasheet, not erroneous category description.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "TVS": {
+      "mpn": "SMBJ8.5A",
+      "supplier": "Mouser",
+      "supplier_part_number": "576-SMBJ8.5A",
+      "package": "SMB DO-214AA",
+      "price_breaks_eur": {
+        "1": 0.456,
+        "10": 0.236,
+        "100": 0.179
+      },
+      "availability": "211 DE vs130 FR cached",
+      "source_url": "https://www.mouser.de/de/ProductDetail/Littelfuse/SMBJ8.5A?qs=JJML70Qc14ta9WvVjIPjwg%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Raw input candidate; clamping coordination/fuse needed; not antenna protection.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "VPA": {
+      "mpn": "PD55008TR-E",
+      "supplier": "DigiKey",
+      "supplier_part_number": "497-6474-1-ND",
+      "package": "PowerSO-10RF formed leads",
+      "price_breaks_eur": {
+        "1": 13.64,
+        "10": 10.791,
+        "25": 10.0792
+      },
+      "availability": "151 older DE vs24 newer DE index; >20 parts possible but no reservation",
+      "source_url": "https://www.digikey.de/de/products/detail/stmicroelectronics/PD55008TR-E/1664257",
+      "evidence": "OBSERVED",
+      "note": "Use higher EUR quote. Newer DE EUR13.32/10.539. Manufacturer Active. 8W/17dB at500MHz12.5V not a144MHz AM guarantee.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "VBOOST": {
+      "mpn": "TPS61088RHLR",
+      "supplier": "Mouser",
+      "supplier_part_number": "595-TPS61088RHLR",
+      "package": "20-VQFN RHL",
+      "price_breaks_eur": {
+        "1": 2.36,
+        "10": 1.76
+      },
+      "availability": "99 earlier DE observation; country variants differ",
+      "source_url": "https://www.mouser.de/de/ProductDetail/Texas-Instruments/TPS61088RHLR?qs=MiqG6Kq1qKNjgpnslrNKug%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "12.6V maximum; independent cutoff mandatory",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "MODULATOR": {
+      "mpn": "BD140",
+      "supplier": "Mouser",
+      "supplier_part_number": "511-BD140",
+      "package": "TO-126",
+      "price_breaks_eur": {
+        "1": 0.585,
+        "10": 0.264
+      },
+      "availability": "5060 earlier DE observation",
+      "source_url": "https://www.mouser.de/ProductDetail/STMicroelectronics/BD140?qs=ljbEvF4DwOOQh3TFtIzRQQ%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "ST part not onsemi BD140G package. DC SOA, AM current/headroom, heatsink gate.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "R10K": {
+      "mpn": "RC0603FR-0710KL",
+      "supplier": "Mouser",
+      "supplier_part_number": "603-RC0603FR-0710KL",
+      "package": "0603",
+      "price_breaks_eur": {
+        "1": 0.086,
+        "10": 0.012,
+        "100": 0.007
+      },
+      "availability": "3405942 cached DE",
+      "source_url": "https://www.mouser.de/en/ProductDetail/YAGEO/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D",
+      "evidence": "OBSERVED",
+      "note": "Only actual10k population aggregated. Other resistor values priced separately as estimates.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "MMIC": {
+      "mpn": "GVA-84+",
+      "supplier": "Mouser",
+      "supplier_part_number": "139-GVA-84",
+      "package": "SOT-89",
+      "price_breaks_eur": {
+        "1": 2.57
+      },
+      "availability": "2941 LT observation; other FR119. Conflicting stock/price; DE basket OPEN",
+      "source_url": "https://www.mouser.es/en/ProductDetail/Mini-Circuits/GVA-84%2B?qs=xZ%2FP%252Ba9zWqZvr4d9xF16QA%3D%3D",
+      "evidence": "OBSERVED",
+      "note": "Preferred current indexed EUR2.57 MOQ1 cut tape. Earlier EUR4.88/2.47@20 conflicting. Add EUR2.31/unit at6/10 if higher quote applies; no unobserved break at20.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "EOLDRIVER": {
+      "mpn": "BFP650H6327XTSA1",
+      "supplier": "DigiKey",
+      "supplier_part_number": "BFP650H6327XTSA1CT-ND",
+      "package": "SOT-343",
+      "price_breaks_eur": {
+        "1": 0.45,
+        "10": 0.322,
+        "25": 0.2876,
+        "100": 0.2503
+      },
+      "availability": "12977 indexed; LTB15May2027; manufacturer discontinued",
+      "source_url": "https://www.digikey.de/en/products/detail/infineon-technologies/BFP650H6327XTSA1/2410153",
+      "evidence": "OBSERVED",
+      "note": "Explicit stock-limited comparison only. Regulated3V; ≤4V VCEO. No repeatability assumption.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "PLL": {
+      "mpn": "ADF4002BRUZ",
+      "supplier": "DigiKey",
+      "supplier_part_number": "505-ADF4002BRUZ-ND",
+      "package": "TSSOP-16",
+      "price_breaks_eur": {
+        "1": 5.06,
+        "10": 3.875
+      },
+      "availability": "359 older EUR vs870 newer USD",
+      "source_url": "https://www.digikey.it/it/products/detail/analog-devices-inc/ADF4002BRUZ/1119982",
+      "evidence": "OBSERVED",
+      "note": "Alternative source option only; externalVCO/reference/loop/lock circuitry separate.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "EEPROM": {
+      "mpn": "AT24C02C-SSHM-T",
+      "supplier": "Mouser",
+      "supplier_part_number": "OPEN",
+      "package": "SOIC-8",
+      "price_breaks_eur": {
+        "1": 0.45
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "https://www.mouser.de/en/ProductDetail/Microchip-Technology/AT24C02C-SSHM-T?qs=sGAEpiMZZMv%252BqVJHFCdzIS1EubxR9opK53kkGRMGNF4%3D",
+      "evidence": "ESTIMATE",
+      "note": "Candidate identity/calibration EEPROM; EUR price/stock/SKU uncaptured",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LDO5": {
+      "mpn": "MCP1703A-5002E/DB",
+      "supplier": "Mouser",
+      "supplier_part_number": "OPEN",
+      "package": "SOT-223",
+      "price_breaks_eur": {
+        "1": 0.55
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "https://www.mouser.de/en/ProductDetail/Microchip-Technology/MCP1703A-5002E-DB?qs=vK53sQ86l6cQZZqYzrDV9w%3D%3D",
+      "evidence": "ESTIMATE",
+      "note": "Candidate250mA16V5V LDO; verify all-temp dropout at actual driver load, price/stock OPEN",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "CRYSTAL": {
+      "mpn": "25/27MHz crystal exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SMD crystal pattern OPEN",
+      "price_breaks_eur": {
+        "1": 0.4
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Total tolerance including temperature/aging must satisfy <50ppm; source spectrum reference choice not frozen",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "INDUCTOR": {
+      "mpn": "Power inductor exact MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "shielded SMD",
+      "price_breaks_eur": {
+        "1": 0.8
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "RF boost ≥4A candidate input peak rating; buck inductor ≥1A separately; inductance/saturation/DCR need design",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BUCKIND": {
+      "mpn": "Buck inductor MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "shielded SMD",
+      "price_breaks_eur": {
+        "1": 0.45
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Current/DC bias and transient qualification",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "C100N": {
+      "mpn": "CC0603KRX7R8BB104",
+      "supplier": "Mouser",
+      "supplier_part_number": "603-CC603KRX7R8BB104",
+      "package": "0603",
+      "price_breaks_eur": {
+        "1": 0.086,
+        "10": 0.04,
+        "50": 0.028,
+        "100": 0.024,
+        "500": 0.017
+      },
+      "availability": "20401272 newer EU index; DE20582958",
+      "source_url": "https://www.mouser.de/de/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzvrkjJ%252BgSm7QM%3D",
+      "evidence": "OBSERVED",
+      "note": "Conservative multi-break EU category price; separate unlike capacitor values not aggregated",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "CBULK": {
+      "mpn": "10-22uF25V X7R MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0805/1206",
+      "price_breaks_eur": {
+        "1": 0.16
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "DC bias/resonance; count allowance; may need larger capacitor for peak current",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "CELECT": {
+      "mpn": "100-220uF25V lowESR MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "radial/SMD OPEN",
+      "price_breaks_eur": {
+        "1": 0.25
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Peak/AM reservoir ripple and discharge need design",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "C0G": {
+      "mpn": "C0G50-100V RF capacitor MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0805/1206",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Required values/Q/voltage await RF tests; not all47pF",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RES": {
+      "mpn": "E24/E96 resistor other values MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0603/0805",
+      "price_breaks_eur": {
+        "1": 0.025
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "No discount across unlike values. Conservative constant estimated price including low quantities",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "PADRES": {
+      "mpn": "RF pad/current-limit resistor MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0805/1206",
+      "price_breaks_eur": {
+        "1": 0.06
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Training/Foxoring fixed pad, adequate voltage/thermal/RF response",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SHUNT": {
+      "mpn": "Low-ohm1% current shunt MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "1206/2512",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Kelvin sensing/current limit; no digital monitorIC",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "NTC": {
+      "mpn": "10k NTC MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0603/lead",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Temperature trip calibrated against actual PA case",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SMALLBJT": {
+      "mpn": "MMBT3904/MMBT3906 equivalent stocked MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SOT-23",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "GPIO levelshift/cutoff/shaping; Nexperia215 out of stock, choose genuine stocked alternate, no RF driver claim",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SMALLFET": {
+      "mpn": "2N7002 equivalent exact stocked MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SOT-23",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Source muting/serial isolation/clamp. Ratings/pinout verified at circuit stage",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "DIODE": {
+      "mpn": "Small signal/clamp diode exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SOD-323/SOT23",
+      "price_breaks_eur": {
+        "1": 0.08
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Fast gate clamps/ID protection; RF detector sensitivity separate",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RFDET": {
+      "mpn": "RF Schottky detector exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SOT23/SOD323",
+      "price_breaks_eur": {
+        "1": 0.15
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Detector/calibration dynamic range not measured",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "FUSE": {
+      "mpn": "Branch fuse exact MPN/rating OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SMD",
+      "price_breaks_eur": {
+        "1": 0.22
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Coordination with BMS/TVS/current cutoff; ≥normal current, fail short-energy budget",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BEAD": {
+      "mpn": "Ferrite bead exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0805/1206",
+      "price_breaks_eur": {
+        "1": 0.08
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Actual impedance/current/SRF qualify; source quiet rail and RF harness filtering",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "INTERFACE": {
+      "mpn": "Polarized logic PCB connector candidate family OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "footprint OPEN",
+      "price_breaks_eur": {
+        "1": 0.45
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Logic PCB socket allocation only; high-current 2S uses separate solder pads/strain-relieved power pigtails and costed mating power plugs.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RFPORT": {
+      "mpn": "Normal50ohm RF PCB socket MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "footprint OPEN",
+      "price_breaks_eur": {
+        "1": 0.7
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Full power/current/voltage rating. Market quote absent; do not claim released connector",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LOWPORT": {
+      "mpn": "Dissimilar keyed low-power PCB socket with identity/interlock MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "footprint OPEN",
+      "price_breaks_eur": {
+        "1": 0.4
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Cannot mate normal RF cable, grounding and safe contact order; cost estimate",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "USB": {
+      "mpn": "Native USB PCB socket exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "footprint OPEN",
+      "price_breaks_eur": {
+        "1": 0.2
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Optional connector; base uses service pads and external fixture",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BACKUP": {
+      "mpn": "RTC hold-up capacitor exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "footprint OPEN",
+      "price_breaks_eur": {
+        "1": 0.3
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Supercap leakage/capacity to verify; packs/cells excluded but this component included",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SHIELD": {
+      "mpn": "RF shield frame/lid material exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "mechanical OPEN",
+      "price_breaks_eur": {
+        "1": 0.7
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Each RF board; not galvanic isolation; measured coupling may require more",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "SINK": {
+      "mpn": "Local heat spreader/insulator/mounting pieces OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "mechanical OPEN",
+      "price_breaks_eur": {
+        "1": 0.6
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Included even though outer enclosure excluded; continuous thermal capacity unverified",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RFCOIL": {
+      "mpn": "VHF aircoil/80m choke MPN or winding recipe OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "wound",
+      "price_breaks_eur": {
+        "1": 0.12
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Material allowance per coil; calibrated jig/labor excluded; SRF/Q/power mandatory",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "HFCORE": {
+      "mpn": "T50-6 reference core; exact supplier/winding OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "toroid",
+      "price_breaks_eur": {
+        "1": 0.7
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "ON7YD precedent; two cores LPF, actual response still qualify",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "TRIM": {
+      "mpn": "Calibration trimmer exact MPN/value OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SMD/THT OPEN",
+      "price_breaks_eur": {
+        "1": 0.18
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Manual power/modulation setup; sealed marking; flexible level from filteredPWM",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "COUPLER": {
+      "mpn": "Optional calibrated directional coupler magnetics/bridge OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "RF",
+      "price_breaks_eur": {
+        "1": 1
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Basic fault/level monitoring retained without precision SWR telemetry; only enhancement omitted",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LONGCOIL": {
+      "mpn": "Long antenna loading/tuner coil candidate material OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 1.2
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "RF-voltage/Q/thermal/windings unresolved; NOT compact Foxoring coil",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "FOXTUNE": {
+      "mpn": "Compact highL loading/coupling coil former/core/wire OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 1.3
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "134-402uH exploratory bracket not selected design; SRF≥3.6MHz and fieldQ tests essential",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RFCAPTRIM": {
+      "mpn": "RF-voltage-rated tuning element exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 3
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Unquoted high-voltage trimmer/adjustable loading element allowance. Low-power source can still produce high RF voltage at high-Q antenna node; confirm voltage/coupling/tap before selecting.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "ACCESSKEY": {
+      "mpn": "Keyed accessory plug/identity/contact exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 0.55
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Foxoring cartridge protection includes polarity/identity and normal-path mechanical inhibition",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "ACCESSCASE": {
+      "mpn": "Cartridge support/insulation/strain relief OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 0.6
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Accessory enclosure separately costed, user mainenclosure exclusion does not erase necessary insulation",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "FOXRAD": {
+      "mpn": "30cm radiator and defined compact counterpoise material OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 1.4
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Mandatory distinct antenna; 3 compact radials/groundplate candidate; dimensions fieldqualified",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LONGWIRE": {
+      "mpn": "Long radiator and symmetric radial/counterpoise wire/terminals OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 3
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Example8m+6m not rule; actual Sprint symmetric grounding wire count may cost more",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LOWPROTECT": {
+      "mpn": "Compact-network lowcap protection/damping components OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "off-board",
+      "price_breaks_eur": {
+        "1": 0.35
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Source rail bound plus disconnect/interlock does not remove local node protection",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "RFTRAIN": {
+      "mpn": "MMBTH10LT1G",
+      "supplier": "Mouser",
+      "supplier_part_number": "OPEN; MPN verified",
+      "package": "SOT-23",
+      "price_breaks_eur": {
+        "1": 0.25
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "https://www.mouser.de/de/ProductDetail/onsemi/MMBTH10LT1G?qs=P4IOph%252Bbot%252BhwlHz6fSVnw%3D%3D",
+      "evidence": "ESTIMATE",
+      "note": "ESTIMATE price/stock/SKU; onsemi650MHz fT spec does not validate1mW AM derivative",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BUSISO": {
+      "mpn": "Dual I2C bus isolation switch e.g. SN74LVC2G66DCUR; exact selection OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "VSSOP/SOT package OPEN",
+      "price_breaks_eur": {
+        "1": 0.25
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "ESTIMATE MPN/SKU/stock/price not verified. Two independently disconnected SCL/SDA channels prevent source backpower while source rail off. Fail-open gate defaults.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "BUTTON": {
+      "mpn": "Momentary pushbutton exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "OPEN",
+      "price_breaks_eur": {
+        "1": 0.12
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "One button; estimated price and MOQ, no supplier quote",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "LED": {
+      "mpn": "Status LED exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "0603/0805 OPEN",
+      "price_breaks_eur": {
+        "1": 0.06
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "One low-duty LED; resistor already counted; estimated price and MOQ",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "USBESD": {
+      "mpn": "USB ESD array exact MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "SOD-323/SOT23",
+      "price_breaks_eur": {
+        "1": 0.15
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Optional socket population protection; shared fixture protects base service pads",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "HVCAP": {
+      "mpn": "RF C0G capacitor >=500 V candidate, exact values/MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "THT/large SMD OPEN",
+      "price_breaks_eur": {
+        "1": 0.25
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Off-board high-impedance antenna match; RF peak voltage, Q and creepage qualification required. No 50V capacitor substitution.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    },
+    "POWERPLUG": {
+      "mpn": "Polarized 2S power plug half e.g. XT30, exact supplier MPN OPEN",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "package": "inline/bulkhead, no PCB footprint locked",
+      "price_breaks_eur": {
+        "1": 0.6
+      },
+      "availability": "UNVERIFIED",
+      "source_url": "",
+      "evidence": "ESTIMATE",
+      "note": "Estimated MOQ/price. Rated path >=5A single-band per M2 stress allowance or >=7A initial dual experiment; pack socket plus two plug halves per RF module feed. Cable/strain relief separate.",
+      "moq": 1,
+      "multiple": 1,
+      "retrieved_on": "2026-10-13"
+    }
+  }
+}

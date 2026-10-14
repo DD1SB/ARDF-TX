@@ -1,0 +1,2513 @@
+{
+  "date": "2026-10-13",
+  "classification": "CANDIDATE, OBSERVED PRICES + EXPLICIT ALLOWANCES; NOT ORDERED/VALIDATED",
+  "tax": "EUR ex VAT planning; labor/instruments/spares excluded and open; baseline estimates retained",
+  "unpriced_scopes": {
+    "labor": "OPEN: assembly, pack/tab connections, winding, programming, calibration and field work",
+    "capital": "OPEN: computer, workshop tools, calibrated RF/pack instrumentation or hire",
+    "yield_and_spares": "OPEN: one accepted unit per planned material set is assumed",
+    "bulk_material_minimums": "OPEN: allowance sets are not verified roll/container purchase minima"
+  },
+  "batches": [
+    {
+      "batch": 10,
+      "m1_baseline_per_unit_eur": "29.06",
+      "m1_baseline_batch_eur": "290.56",
+      "old_m2_per_unit_eur": "77.11",
+      "old_scope_additions": {
+        "Additional RF guard provision": "0.75",
+        "Mandatory transmitter power/RF connector material": "2.1999999999999997",
+        "Wire/coax/crimps/strain relief": "2.5",
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": "6.0",
+        "Outer enclosure/seals/mounting": "4.5",
+        "External qualified 2S charger, one per unit": "10",
+        "Shared provisioning fixture allocation": "0.5",
+        "Shipping allocation for consolidated fleet baskets": "6.0",
+        "New reference cells, 2 x P": "8",
+        "Qualified balancing/protection BMS": "3",
+        "Pack fuse/tabs/insulation/restraint/assembly material": "4",
+        "Pack-side mating power connector": "0.6"
+      },
+      "old_minus_m1_eur": "48.05",
+      "unit_candidate_eur": "53.53",
+      "unit_budget_incl_bms_reserve_eur": "55.24",
+      "unit_budget_batch_eur": "552.36",
+      "shared_equipment_batch_eur": "21.00",
+      "freight_budget_batch_eur": "60.00",
+      "fleet_budget_eur": "633.36",
+      "fleet_budget_per_unit_eur": "63.34",
+      "fleet_with_eur40_freight_per_unit_eur": "61.34",
+      "candidate_fleet_per_unit_eur": "61.63",
+      "one_charger_per_unit_per_unit_eur": "77.74",
+      "groups_per_unit": {
+        "controller": "12.819",
+        "80m": "7.857",
+        "compact80": "8.38",
+        "low_guard": "0.75",
+        "pack": "7.49",
+        "qualification_reserve": "1.71",
+        "power_connector": "2.4",
+        "low_connector": "0.4",
+        "harness": "2.50",
+        "fabrication": "6.00",
+        "enclosure": "4.43",
+        "assembly_material": "0.50"
+      },
+      "evidence_batch_eur": {
+        "OBSERVED": "211.06",
+        "ESTIMATE": "316.70",
+        "RESERVE": "24.60"
+      },
+      "unit_lines": [
+        {
+          "group": "controller",
+          "part_id": "S3",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "3.88",
+          "batch_eur_exact": "38.80",
+          "per_unit_eur_exact": "3.88",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RTC",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "2.032",
+          "batch_eur_exact": "20.32",
+          "per_unit_eur_exact": "2.032",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUCK",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "1.408",
+          "batch_eur_exact": "14.08",
+          "per_unit_eur_exact": "1.408",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RAWFET",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.446",
+          "batch_eur_exact": "8.92",
+          "per_unit_eur_exact": "0.892",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "TVS",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.236",
+          "batch_eur_exact": "2.36",
+          "per_unit_eur_exact": "0.236",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "POR",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.361",
+          "batch_eur_exact": "3.61",
+          "per_unit_eur_exact": "0.361",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "CMP",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.14",
+          "batch_eur_exact": "1.40",
+          "per_unit_eur_exact": "0.14",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUCKIND",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "4.50",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "FUSE",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.22",
+          "batch_eur_exact": "6.60",
+          "per_unit_eur_exact": "0.66",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "INTERFACE",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "9.00",
+          "per_unit_eur_exact": "0.90",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUTTON",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.12",
+          "batch_eur_exact": "1.20",
+          "per_unit_eur_exact": "0.12",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "C100N",
+          "qty_per_unit": 6,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.024",
+          "batch_eur_exact": "1.44",
+          "per_unit_eur_exact": "0.144",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "CBULK",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.16",
+          "batch_eur_exact": "4.80",
+          "per_unit_eur_exact": "0.48",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "R10K",
+          "qty_per_unit": 8,
+          "needed": 80,
+          "ordered_allocated": 80,
+          "unit_eur": "0.007",
+          "batch_eur_exact": "0.56",
+          "per_unit_eur_exact": "0.056",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RES",
+          "qty_per_unit": 12,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.025",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "SMALLBJT",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "DIODE",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "2.40",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "BEAD",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "1.60",
+          "per_unit_eur_exact": "0.16",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SYNTH",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "1.388",
+          "batch_eur_exact": "13.88",
+          "per_unit_eur_exact": "1.388",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CRYSTAL",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.4",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "MONO",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.219",
+          "batch_eur_exact": "2.19",
+          "per_unit_eur_exact": "0.219",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "LATCH",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.123",
+          "batch_eur_exact": "1.23",
+          "per_unit_eur_exact": "0.123",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "AND",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.114",
+          "batch_eur_exact": "1.14",
+          "per_unit_eur_exact": "0.114",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "POR",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.361",
+          "batch_eur_exact": "3.61",
+          "per_unit_eur_exact": "0.361",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CMP",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.14",
+          "batch_eur_exact": "1.40",
+          "per_unit_eur_exact": "0.14",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "INTERFACE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "4.50",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SHUNT",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "1.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "NTC",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "1.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "BEAD",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "2.40",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "DIODE",
+          "qty_per_unit": 6,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "4.80",
+          "per_unit_eur_exact": "0.48",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SMALLFET",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SHIELD",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.7",
+          "batch_eur_exact": "7.00",
+          "per_unit_eur_exact": "0.70",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "R10K",
+          "qty_per_unit": 8,
+          "needed": 80,
+          "ordered_allocated": 80,
+          "unit_eur": "0.007",
+          "batch_eur_exact": "0.56",
+          "per_unit_eur_exact": "0.056",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "OPAMP",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.142",
+          "batch_eur_exact": "1.42",
+          "per_unit_eur_exact": "0.142",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "RFCOIL",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.12",
+          "batch_eur_exact": "2.40",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "C0G",
+          "qty_per_unit": 4,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "RFDET",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.15",
+          "batch_eur_exact": "1.50",
+          "per_unit_eur_exact": "0.15",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SMALLBJT",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "2.00",
+          "per_unit_eur_exact": "0.20",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "PADRES",
+          "qty_per_unit": 6,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "3.60",
+          "per_unit_eur_exact": "0.36",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "TRIM",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.18",
+          "batch_eur_exact": "1.80",
+          "per_unit_eur_exact": "0.18",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "C100N",
+          "qty_per_unit": 6,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.024",
+          "batch_eur_exact": "1.44",
+          "per_unit_eur_exact": "0.144",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CBULK",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.16",
+          "batch_eur_exact": "3.20",
+          "per_unit_eur_exact": "0.32",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "RES",
+          "qty_per_unit": 12,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.025",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "FOXTUNE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "1.3",
+          "batch_eur_exact": "13.00",
+          "per_unit_eur_exact": "1.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "RFCAPTRIM",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "3",
+          "batch_eur_exact": "30.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "HVCAP",
+          "qty_per_unit": 4,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "10.00",
+          "per_unit_eur_exact": "1.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "PADRES",
+          "qty_per_unit": 3,
+          "needed": 30,
+          "ordered_allocated": 30,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "1.80",
+          "per_unit_eur_exact": "0.18",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "ACCESSKEY",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.55",
+          "batch_eur_exact": "5.50",
+          "per_unit_eur_exact": "0.55",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "ACCESSCASE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.6",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "FOXRAD",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "1.4",
+          "batch_eur_exact": "14.00",
+          "per_unit_eur_exact": "1.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "LOWPROTECT",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.35",
+          "batch_eur_exact": "3.50",
+          "per_unit_eur_exact": "0.35",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "BUSISO",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "2.50",
+          "per_unit_eur_exact": "0.25",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "LED",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "0.60",
+          "per_unit_eur_exact": "0.06",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "low_guard",
+          "part_id": "LOWGUARD",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.75",
+          "batch_eur_exact": "7.50",
+          "per_unit_eur_exact": "0.75",
+          "evidence": "RESERVE"
+        },
+        {
+          "group": "pack",
+          "part_id": "CELL25R",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 10,
+          "unit_eur": "1.73",
+          "batch_eur_exact": "34.60",
+          "per_unit_eur_exact": "3.46",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "pack",
+          "part_id": "CELLTABS",
+          "qty_per_unit": 2,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.62",
+          "batch_eur_exact": "12.40",
+          "per_unit_eur_exact": "1.24",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKPCM",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "1.29",
+          "batch_eur_exact": "12.90",
+          "per_unit_eur_exact": "1.29",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "qualification_reserve",
+          "part_id": "PCMRESERVE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "1.71",
+          "batch_eur_exact": "17.10",
+          "per_unit_eur_exact": "1.71",
+          "evidence": "RESERVE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKFUSE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.22",
+          "batch_eur_exact": "2.20",
+          "per_unit_eur_exact": "0.22",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKPAPER",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.35",
+          "batch_eur_exact": "3.50",
+          "per_unit_eur_exact": "0.35",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKSHRINK",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "2.50",
+          "per_unit_eur_exact": "0.25",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKREST",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKLEADS",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.28",
+          "batch_eur_exact": "2.80",
+          "per_unit_eur_exact": "0.28",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "power_connector",
+          "part_id": "POWERPLUG",
+          "qty_per_unit": 4,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "price_break": 1,
+          "unit_eur": "0.6",
+          "batch_eur_exact": "24.0",
+          "per_unit_eur_exact": "2.4",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "low_connector",
+          "part_id": "LOWPORT",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.4",
+          "batch_eur_exact": "4.0",
+          "per_unit_eur_exact": "0.4",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "POWERWIRE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.60",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "LOGICWIRE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.90",
+          "batch_eur_exact": "9.00",
+          "per_unit_eur_exact": "0.90",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "RFWIRE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "HARNESSREST",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.60",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "fabrication",
+          "part_id": "FABCTRL",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "3.00",
+          "batch_eur_exact": "30.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "fabrication",
+          "part_id": "FABRF",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "3.00",
+          "batch_eur_exact": "30.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "SHELL",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "3.28",
+          "batch_eur_exact": "32.80",
+          "per_unit_eur_exact": "3.28",
+          "evidence": "OBSERVED_LIST_BASIS"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "BOARDMOUNT",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "GROMMETS",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "4.50",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "CASESEAL",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.30",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "assembly_material",
+          "part_id": "CONSUMABLE",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "assembly_material",
+          "part_id": "LABEL",
+          "qty_per_unit": 1,
+          "needed": 10,
+          "ordered_allocated": 10,
+          "price_break": 1,
+          "unit_eur": "0.10",
+          "batch_eur_exact": "1.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        }
+      ],
+      "shared_lines": [
+        {
+          "part_id": "CHARGER",
+          "qty_per_fleet": 1,
+          "unit_eur": "15.00",
+          "batch_eur": "15.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "part_id": "CHARGEADAPTER",
+          "qty_per_fleet": 1,
+          "unit_eur": "1.00",
+          "batch_eur": "1.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "part_id": "PROVISION",
+          "qty_per_fleet": 1,
+          "unit_eur": "5.00",
+          "batch_eur": "5.00",
+          "evidence": "ESTIMATE"
+        }
+      ],
+      "core_pooled_purchases": {
+        "S3": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "3.88",
+          "batch_eur": "38.80"
+        },
+        "RTC": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "2.032",
+          "batch_eur": "20.32"
+        },
+        "BUCK": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "1.408",
+          "batch_eur": "14.08"
+        },
+        "RAWFET": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.446",
+          "batch_eur": "8.92"
+        },
+        "TVS": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.236",
+          "batch_eur": "2.36"
+        },
+        "POR": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.361",
+          "batch_eur": "7.22"
+        },
+        "CMP": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.14",
+          "batch_eur": "2.80"
+        },
+        "BUCKIND": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.45",
+          "batch_eur": "4.50"
+        },
+        "FUSE": {
+          "needed": 30,
+          "ordered": 30,
+          "leftover": 0,
+          "unit_eur": "0.22",
+          "batch_eur": "6.60"
+        },
+        "INTERFACE": {
+          "needed": 30,
+          "ordered": 30,
+          "leftover": 0,
+          "unit_eur": "0.45",
+          "batch_eur": "13.50"
+        },
+        "BUTTON": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.12",
+          "batch_eur": "1.20"
+        },
+        "C100N": {
+          "needed": 120,
+          "ordered": 120,
+          "leftover": 0,
+          "unit_eur": "0.024",
+          "batch_eur": "2.88"
+        },
+        "CBULK": {
+          "needed": 50,
+          "ordered": 50,
+          "leftover": 0,
+          "unit_eur": "0.16",
+          "batch_eur": "8.00"
+        },
+        "R10K": {
+          "needed": 160,
+          "ordered": 160,
+          "leftover": 0,
+          "unit_eur": "0.007",
+          "batch_eur": "1.12"
+        },
+        "RES": {
+          "needed": 240,
+          "ordered": 240,
+          "leftover": 0,
+          "unit_eur": "0.025",
+          "batch_eur": "6.00"
+        },
+        "SMALLBJT": {
+          "needed": 50,
+          "ordered": 50,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "5.00"
+        },
+        "DIODE": {
+          "needed": 90,
+          "ordered": 90,
+          "leftover": 0,
+          "unit_eur": "0.08",
+          "batch_eur": "7.20"
+        },
+        "BEAD": {
+          "needed": 50,
+          "ordered": 50,
+          "leftover": 0,
+          "unit_eur": "0.08",
+          "batch_eur": "4.00"
+        },
+        "SYNTH": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "1.388",
+          "batch_eur": "13.88"
+        },
+        "CRYSTAL": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.4",
+          "batch_eur": "4.00"
+        },
+        "MONO": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.219",
+          "batch_eur": "2.19"
+        },
+        "LATCH": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.123",
+          "batch_eur": "1.23"
+        },
+        "AND": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.114",
+          "batch_eur": "1.14"
+        },
+        "SHUNT": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "1.00"
+        },
+        "NTC": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "1.00"
+        },
+        "SMALLFET": {
+          "needed": 30,
+          "ordered": 30,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "3.00"
+        },
+        "SHIELD": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.7",
+          "batch_eur": "7.00"
+        },
+        "OPAMP": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.142",
+          "batch_eur": "1.42"
+        },
+        "RFCOIL": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.12",
+          "batch_eur": "2.40"
+        },
+        "C0G": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "4.00"
+        },
+        "RFDET": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.15",
+          "batch_eur": "1.50"
+        },
+        "PADRES": {
+          "needed": 90,
+          "ordered": 90,
+          "leftover": 0,
+          "unit_eur": "0.06",
+          "batch_eur": "5.40"
+        },
+        "TRIM": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.18",
+          "batch_eur": "1.80"
+        },
+        "FOXTUNE": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "1.3",
+          "batch_eur": "13.00"
+        },
+        "RFCAPTRIM": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "3",
+          "batch_eur": "30.00"
+        },
+        "HVCAP": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.25",
+          "batch_eur": "10.00"
+        },
+        "ACCESSKEY": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.55",
+          "batch_eur": "5.50"
+        },
+        "ACCESSCASE": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.6",
+          "batch_eur": "6.00"
+        },
+        "FOXRAD": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "1.4",
+          "batch_eur": "14.00"
+        },
+        "LOWPROTECT": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.35",
+          "batch_eur": "3.50"
+        },
+        "BUSISO": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.25",
+          "batch_eur": "2.50"
+        },
+        "LED": {
+          "needed": 10,
+          "ordered": 10,
+          "leftover": 0,
+          "unit_eur": "0.06",
+          "batch_eur": "0.60"
+        }
+      }
+    },
+    {
+      "batch": 20,
+      "m1_baseline_per_unit_eur": "29.02",
+      "m1_baseline_batch_eur": "580.48",
+      "old_m2_per_unit_eur": "73.82",
+      "old_scope_additions": {
+        "Additional RF guard provision": "0.75",
+        "Mandatory transmitter power/RF connector material": "2.1999999999999997",
+        "Wire/coax/crimps/strain relief": "2.5",
+        "Bare PCB fabrication incl assumed MOQ5 leftovers": "6.0",
+        "Outer enclosure/seals/mounting": "4.5",
+        "External qualified 2S charger, one per unit": "10",
+        "Shared provisioning fixture allocation": "0.25",
+        "Shipping allocation for consolidated fleet baskets": "3.0",
+        "New reference cells, 2 x P": "8",
+        "Qualified balancing/protection BMS": "3",
+        "Pack fuse/tabs/insulation/restraint/assembly material": "4",
+        "Pack-side mating power connector": "0.6"
+      },
+      "old_minus_m1_eur": "44.80",
+      "unit_candidate_eur": "53.49",
+      "unit_budget_incl_bms_reserve_eur": "55.20",
+      "unit_budget_batch_eur": "1104.08",
+      "shared_equipment_batch_eur": "37.00",
+      "freight_budget_batch_eur": "60.00",
+      "fleet_budget_eur": "1201.08",
+      "fleet_budget_per_unit_eur": "60.05",
+      "fleet_with_eur40_freight_per_unit_eur": "59.05",
+      "candidate_fleet_per_unit_eur": "58.34",
+      "one_charger_per_unit_per_unit_eur": "74.45",
+      "groups_per_unit": {
+        "controller": "12.803",
+        "80m": "7.841",
+        "compact80": "8.38",
+        "low_guard": "0.75",
+        "pack": "7.49",
+        "qualification_reserve": "1.71",
+        "power_connector": "2.4",
+        "low_connector": "0.4",
+        "harness": "2.50",
+        "fabrication": "6.00",
+        "enclosure": "4.43",
+        "assembly_material": "0.50"
+      },
+      "evidence_batch_eur": {
+        "OBSERVED": "421.48",
+        "ESTIMATE": "633.40",
+        "RESERVE": "49.20"
+      },
+      "unit_lines": [
+        {
+          "group": "controller",
+          "part_id": "S3",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "3.88",
+          "batch_eur_exact": "77.60",
+          "per_unit_eur_exact": "3.88",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RTC",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "2.032",
+          "batch_eur_exact": "40.64",
+          "per_unit_eur_exact": "2.032",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUCK",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "1.408",
+          "batch_eur_exact": "28.16",
+          "per_unit_eur_exact": "1.408",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RAWFET",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.446",
+          "batch_eur_exact": "17.84",
+          "per_unit_eur_exact": "0.892",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "TVS",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.236",
+          "batch_eur_exact": "4.72",
+          "per_unit_eur_exact": "0.236",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "POR",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.361",
+          "batch_eur_exact": "7.22",
+          "per_unit_eur_exact": "0.361",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "CMP",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.124",
+          "batch_eur_exact": "2.48",
+          "per_unit_eur_exact": "0.124",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUCKIND",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "9.00",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "FUSE",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.22",
+          "batch_eur_exact": "13.20",
+          "per_unit_eur_exact": "0.66",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "INTERFACE",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "18.00",
+          "per_unit_eur_exact": "0.90",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "BUTTON",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.12",
+          "batch_eur_exact": "2.40",
+          "per_unit_eur_exact": "0.12",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "C100N",
+          "qty_per_unit": 6,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.024",
+          "batch_eur_exact": "2.88",
+          "per_unit_eur_exact": "0.144",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "CBULK",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.16",
+          "batch_eur_exact": "9.60",
+          "per_unit_eur_exact": "0.48",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "R10K",
+          "qty_per_unit": 8,
+          "needed": 160,
+          "ordered_allocated": 160,
+          "unit_eur": "0.007",
+          "batch_eur_exact": "1.12",
+          "per_unit_eur_exact": "0.056",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "controller",
+          "part_id": "RES",
+          "qty_per_unit": 12,
+          "needed": 240,
+          "ordered_allocated": 240,
+          "unit_eur": "0.025",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "SMALLBJT",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "DIODE",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "4.80",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "BEAD",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "3.20",
+          "per_unit_eur_exact": "0.16",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SYNTH",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "1.388",
+          "batch_eur_exact": "27.76",
+          "per_unit_eur_exact": "1.388",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CRYSTAL",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.4",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "MONO",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.219",
+          "batch_eur_exact": "4.38",
+          "per_unit_eur_exact": "0.219",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "LATCH",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.123",
+          "batch_eur_exact": "2.46",
+          "per_unit_eur_exact": "0.123",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "AND",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.114",
+          "batch_eur_exact": "2.28",
+          "per_unit_eur_exact": "0.114",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "POR",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.361",
+          "batch_eur_exact": "7.22",
+          "per_unit_eur_exact": "0.361",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CMP",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.124",
+          "batch_eur_exact": "2.48",
+          "per_unit_eur_exact": "0.124",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "INTERFACE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "9.00",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SHUNT",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "2.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "NTC",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "2.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "BEAD",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "4.80",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "DIODE",
+          "qty_per_unit": 6,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.08",
+          "batch_eur_exact": "9.60",
+          "per_unit_eur_exact": "0.48",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SMALLFET",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SHIELD",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.7",
+          "batch_eur_exact": "14.00",
+          "per_unit_eur_exact": "0.70",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "R10K",
+          "qty_per_unit": 8,
+          "needed": 160,
+          "ordered_allocated": 160,
+          "unit_eur": "0.007",
+          "batch_eur_exact": "1.12",
+          "per_unit_eur_exact": "0.056",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "OPAMP",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.142",
+          "batch_eur_exact": "2.84",
+          "per_unit_eur_exact": "0.142",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "RFCOIL",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.12",
+          "batch_eur_exact": "4.80",
+          "per_unit_eur_exact": "0.24",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "C0G",
+          "qty_per_unit": 4,
+          "needed": 80,
+          "ordered_allocated": 80,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "RFDET",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.15",
+          "batch_eur_exact": "3.00",
+          "per_unit_eur_exact": "0.15",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "SMALLBJT",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.1",
+          "batch_eur_exact": "4.00",
+          "per_unit_eur_exact": "0.20",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "PADRES",
+          "qty_per_unit": 6,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "7.20",
+          "per_unit_eur_exact": "0.36",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "TRIM",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.18",
+          "batch_eur_exact": "3.60",
+          "per_unit_eur_exact": "0.18",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "C100N",
+          "qty_per_unit": 6,
+          "needed": 120,
+          "ordered_allocated": 120,
+          "unit_eur": "0.024",
+          "batch_eur_exact": "2.88",
+          "per_unit_eur_exact": "0.144",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "80m",
+          "part_id": "CBULK",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "unit_eur": "0.16",
+          "batch_eur_exact": "6.40",
+          "per_unit_eur_exact": "0.32",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "RES",
+          "qty_per_unit": 12,
+          "needed": 240,
+          "ordered_allocated": 240,
+          "unit_eur": "0.025",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "FOXTUNE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "1.3",
+          "batch_eur_exact": "26.00",
+          "per_unit_eur_exact": "1.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "RFCAPTRIM",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "3",
+          "batch_eur_exact": "60.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "HVCAP",
+          "qty_per_unit": 4,
+          "needed": 80,
+          "ordered_allocated": 80,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "20.00",
+          "per_unit_eur_exact": "1.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "PADRES",
+          "qty_per_unit": 3,
+          "needed": 60,
+          "ordered_allocated": 60,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "3.60",
+          "per_unit_eur_exact": "0.18",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "ACCESSKEY",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.55",
+          "batch_eur_exact": "11.00",
+          "per_unit_eur_exact": "0.55",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "ACCESSCASE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.6",
+          "batch_eur_exact": "12.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "FOXRAD",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "1.4",
+          "batch_eur_exact": "28.00",
+          "per_unit_eur_exact": "1.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "compact80",
+          "part_id": "LOWPROTECT",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.35",
+          "batch_eur_exact": "7.00",
+          "per_unit_eur_exact": "0.35",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "80m",
+          "part_id": "BUSISO",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "5.00",
+          "per_unit_eur_exact": "0.25",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "controller",
+          "part_id": "LED",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "unit_eur": "0.06",
+          "batch_eur_exact": "1.20",
+          "per_unit_eur_exact": "0.06",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "low_guard",
+          "part_id": "LOWGUARD",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.75",
+          "batch_eur_exact": "15.00",
+          "per_unit_eur_exact": "0.75",
+          "evidence": "RESERVE"
+        },
+        {
+          "group": "pack",
+          "part_id": "CELL25R",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "price_break": 10,
+          "unit_eur": "1.73",
+          "batch_eur_exact": "69.20",
+          "per_unit_eur_exact": "3.46",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "pack",
+          "part_id": "CELLTABS",
+          "qty_per_unit": 2,
+          "needed": 40,
+          "ordered_allocated": 40,
+          "price_break": 1,
+          "unit_eur": "0.62",
+          "batch_eur_exact": "24.80",
+          "per_unit_eur_exact": "1.24",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKPCM",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "1.29",
+          "batch_eur_exact": "25.80",
+          "per_unit_eur_exact": "1.29",
+          "evidence": "OBSERVED"
+        },
+        {
+          "group": "qualification_reserve",
+          "part_id": "PCMRESERVE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "1.71",
+          "batch_eur_exact": "34.20",
+          "per_unit_eur_exact": "1.71",
+          "evidence": "RESERVE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKFUSE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.22",
+          "batch_eur_exact": "4.40",
+          "per_unit_eur_exact": "0.22",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKPAPER",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.35",
+          "batch_eur_exact": "7.00",
+          "per_unit_eur_exact": "0.35",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKSHRINK",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.25",
+          "batch_eur_exact": "5.00",
+          "per_unit_eur_exact": "0.25",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKREST",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "pack",
+          "part_id": "PACKLEADS",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.28",
+          "batch_eur_exact": "5.60",
+          "per_unit_eur_exact": "0.28",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "power_connector",
+          "part_id": "POWERPLUG",
+          "qty_per_unit": 4,
+          "needed": 80,
+          "ordered_allocated": 80,
+          "price_break": 1,
+          "unit_eur": "0.6",
+          "batch_eur_exact": "48.0",
+          "per_unit_eur_exact": "2.4",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "low_connector",
+          "part_id": "LOWPORT",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.4",
+          "batch_eur_exact": "8.0",
+          "per_unit_eur_exact": "0.4",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "POWERWIRE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.60",
+          "batch_eur_exact": "12.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "LOGICWIRE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.90",
+          "batch_eur_exact": "18.00",
+          "per_unit_eur_exact": "0.90",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "RFWIRE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "harness",
+          "part_id": "HARNESSREST",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.60",
+          "batch_eur_exact": "12.00",
+          "per_unit_eur_exact": "0.60",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "fabrication",
+          "part_id": "FABCTRL",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "3.00",
+          "batch_eur_exact": "60.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "fabrication",
+          "part_id": "FABRF",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "3.00",
+          "batch_eur_exact": "60.00",
+          "per_unit_eur_exact": "3.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "SHELL",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "3.28",
+          "batch_eur_exact": "65.60",
+          "per_unit_eur_exact": "3.28",
+          "evidence": "OBSERVED_LIST_BASIS"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "BOARDMOUNT",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "GROMMETS",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.45",
+          "batch_eur_exact": "9.00",
+          "per_unit_eur_exact": "0.45",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "enclosure",
+          "part_id": "CASESEAL",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.30",
+          "batch_eur_exact": "6.00",
+          "per_unit_eur_exact": "0.30",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "assembly_material",
+          "part_id": "CONSUMABLE",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.40",
+          "batch_eur_exact": "8.00",
+          "per_unit_eur_exact": "0.40",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "group": "assembly_material",
+          "part_id": "LABEL",
+          "qty_per_unit": 1,
+          "needed": 20,
+          "ordered_allocated": 20,
+          "price_break": 1,
+          "unit_eur": "0.10",
+          "batch_eur_exact": "2.00",
+          "per_unit_eur_exact": "0.10",
+          "evidence": "ESTIMATE"
+        }
+      ],
+      "shared_lines": [
+        {
+          "part_id": "CHARGER",
+          "qty_per_fleet": 2,
+          "unit_eur": "15.00",
+          "batch_eur": "30.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "part_id": "CHARGEADAPTER",
+          "qty_per_fleet": 2,
+          "unit_eur": "1.00",
+          "batch_eur": "2.00",
+          "evidence": "ESTIMATE"
+        },
+        {
+          "part_id": "PROVISION",
+          "qty_per_fleet": 1,
+          "unit_eur": "5.00",
+          "batch_eur": "5.00",
+          "evidence": "ESTIMATE"
+        }
+      ],
+      "core_pooled_purchases": {
+        "S3": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "3.88",
+          "batch_eur": "77.60"
+        },
+        "RTC": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "2.032",
+          "batch_eur": "40.64"
+        },
+        "BUCK": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "1.408",
+          "batch_eur": "28.16"
+        },
+        "RAWFET": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.446",
+          "batch_eur": "17.84"
+        },
+        "TVS": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.236",
+          "batch_eur": "4.72"
+        },
+        "POR": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.361",
+          "batch_eur": "14.44"
+        },
+        "CMP": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.124",
+          "batch_eur": "4.96"
+        },
+        "BUCKIND": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.45",
+          "batch_eur": "9.00"
+        },
+        "FUSE": {
+          "needed": 60,
+          "ordered": 60,
+          "leftover": 0,
+          "unit_eur": "0.22",
+          "batch_eur": "13.20"
+        },
+        "INTERFACE": {
+          "needed": 60,
+          "ordered": 60,
+          "leftover": 0,
+          "unit_eur": "0.45",
+          "batch_eur": "27.00"
+        },
+        "BUTTON": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.12",
+          "batch_eur": "2.40"
+        },
+        "C100N": {
+          "needed": 240,
+          "ordered": 240,
+          "leftover": 0,
+          "unit_eur": "0.024",
+          "batch_eur": "5.76"
+        },
+        "CBULK": {
+          "needed": 100,
+          "ordered": 100,
+          "leftover": 0,
+          "unit_eur": "0.16",
+          "batch_eur": "16.00"
+        },
+        "R10K": {
+          "needed": 320,
+          "ordered": 320,
+          "leftover": 0,
+          "unit_eur": "0.007",
+          "batch_eur": "2.24"
+        },
+        "RES": {
+          "needed": 480,
+          "ordered": 480,
+          "leftover": 0,
+          "unit_eur": "0.025",
+          "batch_eur": "12.00"
+        },
+        "SMALLBJT": {
+          "needed": 100,
+          "ordered": 100,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "10.00"
+        },
+        "DIODE": {
+          "needed": 180,
+          "ordered": 180,
+          "leftover": 0,
+          "unit_eur": "0.08",
+          "batch_eur": "14.40"
+        },
+        "BEAD": {
+          "needed": 100,
+          "ordered": 100,
+          "leftover": 0,
+          "unit_eur": "0.08",
+          "batch_eur": "8.00"
+        },
+        "SYNTH": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "1.388",
+          "batch_eur": "27.76"
+        },
+        "CRYSTAL": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.4",
+          "batch_eur": "8.00"
+        },
+        "MONO": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.219",
+          "batch_eur": "4.38"
+        },
+        "LATCH": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.123",
+          "batch_eur": "2.46"
+        },
+        "AND": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.114",
+          "batch_eur": "2.28"
+        },
+        "SHUNT": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "2.00"
+        },
+        "NTC": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "2.00"
+        },
+        "SMALLFET": {
+          "needed": 60,
+          "ordered": 60,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "6.00"
+        },
+        "SHIELD": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.7",
+          "batch_eur": "14.00"
+        },
+        "OPAMP": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.142",
+          "batch_eur": "2.84"
+        },
+        "RFCOIL": {
+          "needed": 40,
+          "ordered": 40,
+          "leftover": 0,
+          "unit_eur": "0.12",
+          "batch_eur": "4.80"
+        },
+        "C0G": {
+          "needed": 80,
+          "ordered": 80,
+          "leftover": 0,
+          "unit_eur": "0.1",
+          "batch_eur": "8.00"
+        },
+        "RFDET": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.15",
+          "batch_eur": "3.00"
+        },
+        "PADRES": {
+          "needed": 180,
+          "ordered": 180,
+          "leftover": 0,
+          "unit_eur": "0.06",
+          "batch_eur": "10.80"
+        },
+        "TRIM": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.18",
+          "batch_eur": "3.60"
+        },
+        "FOXTUNE": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "1.3",
+          "batch_eur": "26.00"
+        },
+        "RFCAPTRIM": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "3",
+          "batch_eur": "60.00"
+        },
+        "HVCAP": {
+          "needed": 80,
+          "ordered": 80,
+          "leftover": 0,
+          "unit_eur": "0.25",
+          "batch_eur": "20.00"
+        },
+        "ACCESSKEY": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.55",
+          "batch_eur": "11.00"
+        },
+        "ACCESSCASE": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.6",
+          "batch_eur": "12.00"
+        },
+        "FOXRAD": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "1.4",
+          "batch_eur": "28.00"
+        },
+        "LOWPROTECT": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.35",
+          "batch_eur": "7.00"
+        },
+        "BUSISO": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.25",
+          "batch_eur": "5.00"
+        },
+        "LED": {
+          "needed": 20,
+          "ordered": 20,
+          "leftover": 0,
+          "unit_eur": "0.06",
+          "batch_eur": "1.20"
+        }
+      }
+    }
+  ],
+  "cell_capacity_sensitivity": [
+    {
+      "cell_ah": "2.50",
+      "usable_wh": "11.664000",
+      "hours_at_035w": "33.32571428571428571428571429",
+      "hours_with_lora_rx_0395w": "29.52911392405063291139240506",
+      "maximum_mean_w_for_24h": "0.486000"
+    },
+    {
+      "cell_ah": "2.45",
+      "usable_wh": "11.430720",
+      "hours_at_035w": "32.6592",
+      "hours_with_lora_rx_0395w": "28.93853164556962025316455696",
+      "maximum_mean_w_for_24h": "0.476280"
+    }
+  ]
+}
