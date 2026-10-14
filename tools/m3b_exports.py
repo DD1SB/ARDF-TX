@@ -23,6 +23,9 @@ def main():
   args=['kicad-cli','pcb','export','svg','--mode-single','--fit-page-to-board','--exclude-drawing-sheet','--layers',layers,'--output',str(D/(name+'.svg'))]
   if name=='assembly':args+=['--sketch-pads-on-fab-layers','--crossout-DNP-footprints-on-fab-layers']
   run(*args,B)
+  # KiCad emits trailing spaces on SVG path/DOCTYPE lines. Normalize whitespace
+  # only so repository checks remain useful; keep all drawing tokens unchanged.
+  svg=D/(name+'.svg');svg.write_text('\n'.join(line.rstrip()for line in svg.read_text().splitlines())+'\n')
  run('kicad-cli','pcb','export','pdf','--layers','F.Fab,Edge.Cuts','--sketch-pads-on-fab-layers','--crossout-DNP-footprints-on-fab-layers','--output',str(D/'assembly.pdf'),B)
  run('kicad-cli','pcb','export','pdf','--layers','B.Fab,B.Silkscreen,B.Mask,Edge.Cuts','--output',str(D/'assembly-bottom.pdf'),B)
  if a.render:

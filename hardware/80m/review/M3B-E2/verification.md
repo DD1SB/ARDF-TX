@@ -15,7 +15,7 @@ python3 tools/m3be2_power.py
 /usr/bin/python3 tools/m3be2_audit.py
 /usr/bin/python3 tools/m3be2_regressions.py
 python3 tools/m1_analysis.py --check
-git diff --check
+git diff m3b-e1 --check
 /usr/bin/python3 tools/m3be2_audit.py --manifest
 sha256sum --check hardware/80m/review/M3B-E2/SHA256SUMS
 ```
@@ -56,3 +56,5 @@ Those frozen suites intentionally assert historical counts/hashes/no-PCB state o
 [Preserved M1/M2/Fox model regressions](preserved-model-regressions.json) record exact commands/outputs for `m1_costs --check`, `m2_rf_analysis --check`, `m2_system_costs --check`, `m2_checks`, `foxoring_costs --check`, `m2_80m_analysis --check`, `m2_power_architecture --check`. Local document/anchor consistency is checked with `m1_analysis --check` and an additional hardware-package link pass; external source fetch failures remain disclosed, not converted into successful link checks.
 
 Final [SHA256SUMS](SHA256SUMS) and [manifest](file-manifest.json) cover native CAD, local library/models, E2 documents/BOM, scripts and review outputs. Generated artifacts carry E2 revision and are rebuilt after the final orientation correction. Hashes verify identity, not suitability for manufacture. No independent CAM etch simulation or hardware qualification is implied.
+
+KiCad SVG previews are postprocessed only to remove trailing whitespace from exported lines. The exporter preserves every non-whitespace drawing token; no native board, fabrication layer, drill coordinate, PDF or3D image is changed by this normalization. The complete E1→E2 Git diff is checked, including newly added review files.

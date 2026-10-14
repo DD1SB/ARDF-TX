@@ -42,11 +42,28 @@
       "command": "python3 tools/m1_analysis.py --check",
       "exit_code": 0,
       "captured_combined_log": "{\n  \"markdown_files\": 92,\n  \"local_links_checked\": 626,\n  \"requirements_traced\": 73,\n  \"deliverables\": 12,\n  \"numeric_profile_rows_checked\": 9,\n  \"configuration_batch_totals_checked\": 3,\n  \"sprint_boundary_model\": \"passed, not firmware tested\",\n  \"errors\": []\n}\n"
+    },
+    {
+      "command": "git diff m3b-e1 --check",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
     }
   ],
   "hardware_links": {
     "hardware_markdown_files": 7,
     "local_links_checked": 124,
     "errors": []
+  },
+  "SVG_normalization": {
+    "raw_export_commit": "51fc1c9",
+    "files": [
+      "assembly-bottom.svg",
+      "assembly.svg",
+      "bottom-copper.svg",
+      "top-copper.svg"
+    ],
+    "only_trailing_whitespace_removed": true,
+    "all_non_whitespace_drawing_tokens_unchanged": true
   }
 }
