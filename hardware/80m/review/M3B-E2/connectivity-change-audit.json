@@ -1,0 +1,434 @@
+{
+  "baseline_tag": "m3b-e1",
+  "baseline_commit": "55a5b3f",
+  "revision": "M3B-E2",
+  "removed_tracks": {
+    "e77b3a63-e2e4-4c71-96f3-258b8dd4a2c6": {
+      "net": "GND",
+      "kind": "track",
+      "start": [
+        106.0625,
+        72.95
+      ],
+      "end": [
+        106.0625,
+        73.95
+      ],
+      "width_mm": 0.28,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "3247f28d-2590-4a3d-945e-76689cb09327": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.9375,
+        72.0
+      ],
+      "end": [
+        107.0125,
+        72.0
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "672e36da-0c2a-4cb3-945c-a1b62a785109": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.0125,
+        72.0
+      ],
+      "end": [
+        106.0625,
+        71.05
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "c6f639c7-087c-46c5-8b73-ae87b56e15b2": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.9375,
+        73.7056
+      ],
+      "end": [
+        107.9375,
+        72.0
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    }
+  },
+  "added_tracks_and_via": {
+    "1f343fab-5e6f-4c2e-9eff-a8183739129b": {
+      "net": "GND",
+      "kind": "track",
+      "start": [
+        107.9375,
+        72.0
+      ],
+      "end": [
+        108.8,
+        72.0
+      ],
+      "width_mm": 0.28,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "d9f58a26-3fa0-4445-86f2-b8fcb072de17": {
+      "net": "GND",
+      "kind": "track",
+      "start": [
+        108.8,
+        72.0
+      ],
+      "end": [
+        108.9,
+        72.0
+      ],
+      "width_mm": 0.28,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "9ae7b488-01a8-4476-b9c4-38a58d09f26b": {
+      "net": "GND",
+      "kind": "via",
+      "start": [
+        108.9,
+        72.0
+      ],
+      "end": [
+        108.9,
+        72.0
+      ],
+      "width_mm": 0.6,
+      "layer": "F.Cu",
+      "drill_mm": 0.3
+    },
+    "00108d3a-8447-4bac-b5cd-d3180fa1da6c": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.0,
+        73.0
+      ],
+      "end": [
+        106.0,
+        73.0
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "12a57024-db0e-455c-8b9e-929b7ea6881c": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        106.0,
+        71.0
+      ],
+      "end": [
+        106.0625,
+        71.05
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "2b7101c8-5f21-4c86-b483-d4bd932f8db3": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.9375,
+        73.7056
+      ],
+      "end": [
+        107.8,
+        73.8
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "4f9d1dc0-8f14-4e0e-8e06-c3e869786999": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        106.0625,
+        72.95
+      ],
+      "end": [
+        106.0,
+        71.0
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "85272eee-f258-4006-b170-4c3b615c2111": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        106.0,
+        73.0
+      ],
+      "end": [
+        106.0625,
+        72.95
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    },
+    "9f78f180-14a0-4064-aa90-52a24b02ff46": {
+      "net": "VREF_2V5",
+      "kind": "track",
+      "start": [
+        107.8,
+        73.8
+      ],
+      "end": [
+        107.0,
+        73.0
+      ],
+      "width_mm": 0.2,
+      "layer": "F.Cu",
+      "drill_mm": null
+    }
+  },
+  "changed_existing_tracks": {},
+  "changed_footprint_geometry_or_nets": {
+    "Q403": {
+      "E1": {
+        "origin_mm": [
+          156.0,
+          69.0
+        ],
+        "rotation": 0.0,
+        "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical",
+        "pads": {
+          "1": {
+            "net": "VPA_LOAD",
+            "position_mm": [
+              156.0,
+              69.0
+            ],
+            "size_mm": [
+              1.71,
+              1.8
+            ],
+            "drill_mm": [
+              1.0,
+              1.0
+            ]
+          },
+          "2": {
+            "net": "VPA_SHAPED",
+            "position_mm": [
+              158.28,
+              69.0
+            ],
+            "size_mm": [
+              1.71,
+              1.8
+            ],
+            "drill_mm": [
+              1.0,
+              1.0
+            ]
+          },
+          "3": {
+            "net": "SHAPE_BASE",
+            "position_mm": [
+              160.56,
+              69.0
+            ],
+            "size_mm": [
+              1.71,
+              1.8
+            ],
+            "drill_mm": [
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "E2": {
+        "origin_mm": [
+          160.56,
+          69.0
+        ],
+        "rotation": 180.0,
+        "footprint": "ARDF_TX:ST_BD140_SOT32_1p3Drill",
+        "pads": {
+          "1": {
+            "net": "SHAPE_BASE",
+            "position_mm": [
+              160.56,
+              69.0
+            ],
+            "size_mm": [
+              1.9,
+              1.9
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          },
+          "2": {
+            "net": "VPA_SHAPED",
+            "position_mm": [
+              158.28,
+              69.0
+            ],
+            "size_mm": [
+              1.9,
+              1.9
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          },
+          "3": {
+            "net": "VPA_LOAD",
+            "position_mm": [
+              156.0,
+              69.0
+            ],
+            "size_mm": [
+              1.9,
+              1.9
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          }
+        }
+      }
+    },
+    "U311": {
+      "E1": {
+        "origin_mm": [
+          107.0,
+          72.0
+        ],
+        "rotation": 0.0,
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "pads": {
+          "1": {
+            "net": "VREF_2V5",
+            "position_mm": [
+              106.0625,
+              71.05
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          "2": {
+            "net": "GND",
+            "position_mm": [
+              106.0625,
+              72.95
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          "3": {
+            "net": "VREF_2V5",
+            "position_mm": [
+              107.9375,
+              72.0
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "E2": {
+        "origin_mm": [
+          107.0,
+          72.0
+        ],
+        "rotation": 0.0,
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "pads": {
+          "1": {
+            "net": "VREF_2V5",
+            "position_mm": [
+              106.0625,
+              71.05
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          "2": {
+            "net": "VREF_2V5",
+            "position_mm": [
+              106.0625,
+              72.95
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          "3": {
+            "net": "GND",
+            "position_mm": [
+              107.9375,
+              72.0
+            ],
+            "size_mm": [
+              1.475,
+              0.6
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "all_other_tracks_and_vias_unchanged": true,
+  "RF_source_gate_drain_transformer_and_filters_unchanged": true,
+  "zone_refill": "Both GND zones regenerated after local pad/track and mask changes; not byte-identical fill artwork."
+}

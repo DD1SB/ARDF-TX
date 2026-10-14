@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-14",
-  "revision": "M3B-E1",
+  "date": "2026-10-15",
+  "revision": "M3B-E2",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -1899,8 +1899,8 @@
       "footprint": "Diode_SMD:D_SMB",
       "group": "protection",
       "population": "NORMAL",
-      "note": "Secondary surge absorber only; NOT an18/20V precision clamp. M3B R350/C350 damp specified cable hot-plug; TVS is downstream of damper. External sources restricted to qualified4S envelope.",
-      "source_url": "",
+      "note": "Secondary surge absorber only; NOT an18/20V precision clamp. M3B R350/C350 damp specified cable hot-plug; TVS is downstream of damper. External sources restricted to qualified4S envelope. E2 exact vendor LittelfuseSMBJ17A:17V stand-off,18.9-20.9V breakdown at1mA,27.6V clamp at21.8A. Existing EUR0.35 remains unquoted estimate; not an18V limiter.",
+      "source_url": "https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smbj_datasheet.pdf?assetguid=09a6ae9a-73cb-4ac4-acac-e6dab92ab953",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
       "availability": "Exact basket/stock OPEN",
@@ -1913,7 +1913,8 @@
       "pins": {
         "1": "VIN_PA",
         "2": "GND"
-      }
+      },
+      "manufacturer": "Littelfuse"
     },
     {
       "ref": "C301",
@@ -2400,7 +2401,7 @@
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "group": "protection",
       "population": "BOTH",
-      "note": "1 REF,2 anode,3 cathode. >=1mA reference bias; no capacitor directly across TL431 until stability region checked.",
+      "note": "TI TL431AIDBZR DBZ, SLVS543S May2024 Table5-1/p4:1CATHODE,2REF,3ANODE. E2 corrects E1 anode/reference pad reversal. K andREF tiedVREF_2V5; ANODE ground. Same actual MPN and2.495V functional circuit.",
       "source_url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2413,9 +2414,10 @@
       "multiple": 1,
       "pins": {
         "1": "VREF_2V5",
-        "2": "GND",
-        "3": "VREF_2V5"
-      }
+        "2": "VREF_2V5",
+        "3": "GND"
+      },
+      "manufacturer": "Texas Instruments"
     },
     {
       "ref": "R310",
@@ -3853,10 +3855,10 @@
       "sheet": "08_normal_rf",
       "value": "BD140 / ST",
       "mpn": "BD140",
-      "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical",
+      "footprint": "ARDF_TX:ST_BD140_SOT32_1p3Drill",
       "group": "normal_shaper",
       "population": "NORMAL",
-      "note": "ST1E2C3B,80V1.5A,TO126. ReplacesQCXMPS751mechanismwithoutchangingtopology;betterthermal/SOAdata. HF CWshaper only, NOT VHF AM substitute. MeasurehotSOAandedges.",
+      "note": "ST BD140, May2008 Rev5 Fig1/p7 drawing0016114E:1BASE,2COLLECTOR,3EMITTER. Installed drawing face toward board+Y; PCB west3E,center2C,east1B. Footprint rotated180deg about collector. Native pad numbering unchanged;1.3mm drills/1.9mm lands for max0.88x0.63mm leads; stand body2mm above board. Not interchangeable with another vendor pinout.",
       "source_url": "https://www.st.com/resource/en/datasheet/bd140.pdf",
       "supplier": "Mouser",
       "supplier_part_number": "511-BD140",
@@ -3870,10 +3872,11 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "VPA_LOAD",
+        "1": "SHAPE_BASE",
         "2": "VPA_SHAPED",
-        "3": "SHAPE_BASE"
-      }
+        "3": "VPA_LOAD"
+      },
+      "manufacturer": "STMicroelectronics"
     },
     {
       "ref": "R405",
@@ -7860,7 +7863,7 @@
         "unit": 1,
         "x": 44.45,
         "y": 59.69,
-        "type": "TL431DBZ"
+        "type": "TL431_TI_DBZ"
       },
       {
         "ref": "R310",
@@ -8314,7 +8317,7 @@
         "unit": 1,
         "x": 279.4,
         "y": 170.18,
-        "type": "BD140"
+        "type": "BD140_ST"
       },
       {
         "ref": "R405",

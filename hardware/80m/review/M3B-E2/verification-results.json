@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15",
+  "revision": "M3B-E2",
+  "scope": "Executed command log record; all physical tests NOT_RUN",
+  "commands": [
+    {
+      "command": "python3 tools/m3b_exports.py --render",
+      "exit_code": 0,
+      "captured_combined_log": "OK sch erc --format\nOK sch export netlist\nOK sch export pdf\nOK pcb drc --format\nOK pcb drc --format\nOK pcb export gerbers\nOK pcb export drill\nOK pcb export ipcd356\nOK pcb export pos\nOK pcb export svg\nOK pcb export svg\nOK pcb export svg\nOK pcb export svg\nOK pcb export pdf\nOK pcb export pdf\nOK pcb render --width\nOK pcb render --width\nOK pcb render --width\n"
+    },
+    {
+      "command": "/usr/bin/python3 tools/m3b_verify.py",
+      "exit_code": 0,
+      "captured_combined_log": "./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\nPASS M3B: 664 pad net memberships; 277 footprints; 329 vias; ERC/DRC/parity/unrouted0; R1 256/31/16 retained\n"
+    },
+    {
+      "command": "/usr/bin/python3 tools/m3be2_pinouts.py",
+      "exit_code": 0,
+      "captured_combined_log": "./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n01:21:09: Debug: Adding duplicate image handler for 'PNG file'\n01:21:09: Debug: Adding duplicate image handler for 'JPEG file'\n01:21:09: Debug: Adding duplicate image handler for 'TIFF file'\n01:21:09: Debug: Adding duplicate image handler for 'GIF file'\n01:21:09: Debug: Adding duplicate image handler for 'PNM file'\n01:21:09: Debug: Adding duplicate image handler for 'PCX file'\n01:21:09: Debug: Adding duplicate image handler for 'IFF file'\n01:21:09: Debug: Adding duplicate image handler for 'Windows icon file'\n01:21:09: Debug: Adding duplicate image handler for 'Windows cursor file'\n01:21:09: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n01:21:09: Debug: Adding duplicate image handler for 'TGA file'\n01:21:09: Debug: Adding duplicate image handler for 'XPM file'\nPASS manufacturer pin audit: 55 devices; 10 negative cases including real E1 Q403/U311 rejected\n"
+    },
+    {
+      "command": "python3 tools/m3b_bom.py",
+      "exit_code": 0,
+      "captured_combined_log": "{'Full': {'count': 196, 'ICs': 18, 'prices': {'1': 32.317, '3': 32.065, '5': 31.981, '6': 31.896, '10': 27.311, '20': 27.311}}, 'Fox': {'count': 115, 'ICs': 13, 'prices': {'1': 13.759, '3': 12.273, '5': 12.081, '6': 12.081, '10': 10.815, '20': 10.468}}}\n"
+    },
+    {
+      "command": "python3 tools/m3be2_power.py",
+      "exit_code": 0,
+      "captured_combined_log": "PASS E2 passive models: 32 analytic; 24 input SPICE; 5 driver SPICE; physical protection NOT qualified\n"
+    },
+    {
+      "command": "/usr/bin/python3 tools/m3be2_audit.py",
+      "exit_code": 0,
+      "captured_combined_log": "./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n01:22:09: Debug: Adding duplicate image handler for 'PNG file'\n01:22:09: Debug: Adding duplicate image handler for 'JPEG file'\n01:22:09: Debug: Adding duplicate image handler for 'TIFF file'\n01:22:09: Debug: Adding duplicate image handler for 'GIF file'\n01:22:09: Debug: Adding duplicate image handler for 'PNM file'\n01:22:09: Debug: Adding duplicate image handler for 'PCX file'\n01:22:09: Debug: Adding duplicate image handler for 'IFF file'\n01:22:09: Debug: Adding duplicate image handler for 'Windows icon file'\n01:22:09: Debug: Adding duplicate image handler for 'Windows cursor file'\n01:22:09: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n01:22:09: Debug: Adding duplicate image handler for 'TGA file'\n01:22:09: Debug: Adding duplicate image handler for 'XPM file'\nPASS E2 coverage/change/manufacturing audit; E1 files unchanged; nine E2 Gerber layers\n"
+    },
+    {
+      "command": "/usr/bin/python3 tools/m3be2_regressions.py",
+      "exit_code": 0,
+      "captured_combined_log": "0dfd224 0 m3_80m_checks.py\n0dfd224 0 m3a_r1_logic.py\n0dfd224 0 m3a_r1_driver_fault.py\n0dfd224 0 m3a_r1_report.py\n0dfd224 0 m3a_r1_documentation.py\nm3b-e1 0 m3b_verify.py\nm3b-e1 0 m3b_documentation.py\n"
+    },
+    {
+      "command": "python3 tools/m1_analysis.py --check",
+      "exit_code": 0,
+      "captured_combined_log": "{\n  \"markdown_files\": 92,\n  \"local_links_checked\": 626,\n  \"requirements_traced\": 73,\n  \"deliverables\": 12,\n  \"numeric_profile_rows_checked\": 9,\n  \"configuration_batch_totals_checked\": 3,\n  \"sprint_boundary_model\": \"passed, not firmware tested\",\n  \"errors\": []\n}\n"
+    }
+  ],
+  "hardware_links": {
+    "hardware_markdown_files": 7,
+    "local_links_checked": 124,
+    "errors": []
+  }
+}

@@ -1,5 +1,8 @@
 # M3B — staged laboratory bring-up plan
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Date: **2026-10-14**, M3B-E1. **PREPARATION ONLY: no board has been fabricated, assembled or energized. All result fields start NOT_RUN.** Each stage requires a recorded pass and reviewer sign-off before the next; a failure stops the dependent stage. The [safety gates](M3B_SAFETY_GATES.md) are part of this procedure, not optional background.
 
 ## Bench equipment and fixture

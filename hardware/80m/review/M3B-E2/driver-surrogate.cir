@@ -1,0 +1,16 @@
+RF80 M3B driver rail surrogate: imposed opening, no semiconductor timing guarantee
+VPA LOAD 0 PWL(0 8.6 1u 8.6 1.0001u 18 21u 18 21.0001u 0)
+L_LAYOUT LOAD DAMPER 1e-07
+R410 DAMPER VDRV 4.653
+C_HF VDRV 0 0.88u
+R_ESR VDRV BULK 0.5
+L_ESL BULK BULK_C 10n
+C404 BULK_C 0 37.6u
+.control
+set wr_singlescale
+set wr_vecnames
+tran 0.01u 250u
+wrdata result.dat v(VDRV) i(VPA)
+quit
+.endc
+.end

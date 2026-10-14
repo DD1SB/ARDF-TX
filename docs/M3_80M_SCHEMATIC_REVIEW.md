@@ -1,5 +1,8 @@
 # M3A-R1 — 80 m electrical schematic review
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Date: **2026-10-14**. Revision **M3A-R0**. **Review schematic; no hardware built or measured.** No previous ARDF-TX KiCad schematic existed in this repository; the M2 source designs were research material. The new design is under [hardware/80m](../hardware/80m/README.md), with a [KiCad project](../hardware/80m/RF80.kicad_pro), [editable root schematic](../hardware/80m/RF80.kicad_sch), [PDF](../hardware/80m/review/RF80.pdf), [netlist](../hardware/80m/review/RF80.xml), [electrical manifest](../hardware/80m/RF80.electrical.json) and project symbol/footprint libraries. There is **no PCB file**. Proposed ADR-0010/0011 remain proposed; this mission supplies narrowly scoped schematic authority.
 
 Current control verification: [R1 logic audit](M3A_R1_LOGIC_AUDIT.md), [simplification](M3A_R1_SIMPLIFICATION.md) and [verification](M3A_R1_VERIFICATION.md). R0 is retained in Git tag `m3a-r0`; no prior functional PASS applies to its incorrect timer polarity.

@@ -161,6 +161,11 @@ class Sheet:
                         elif prop[1]=='MPN':prop[2]=p['mpn']
                         elif prop[1]=='Footprint':prop[2]=p['footprint']
                         elif prop[1]=='Engineering_Note':prop[2]=p['note']
+                        elif prop[1]=='Datasheet'and p.get('manufacturer'):prop[2]=p['source_url']
+                    if p.get('manufacturer'):
+                        old=next((v for v in children(sx,'property')if v[1]=='Manufacturer'),None)
+                        if old:old[2]=p['manufacturer']
+                        else:sx.append(parse('(property \"Manufacturer\" '+q(p['manufacturer'])+' (at 0 0 0)(effects(font(size 1 1))(hide yes)))'))
                     item=dump(sx)
             revised.append(item)
         self.items=revised
@@ -176,6 +181,8 @@ class Design:
             self.lib.native(spec)
         self.lib.native('74xx:74LS174','74HC174'); self.lib.native('Device:C_Polarized'); self.lib.native('74xx:74LS08','74HC08'); self.lib.native('74xx:74LS32','74HC32'); self.lib.native('74xx:74LS74','74HC74'); self.lib.native('74xx:74LS21','74HC21'); self.lib.native('74xx:74LS11','74HC11')
         self.lib.native('74xx:74HC00','74AC00')
+        self.lib.native('Reference_Voltage:TL431DBZ','TL431_TI_DBZ') # TI SLVS543S Table5-1:1K2REF3A
+        self.lib.native('Transistor_BJT:BD140','BD140_ST',{'1':'3','3':'1'}) # ST Rev5 Fig1/p7:1B2C3E
         self.lib.native('Device:Q_PNP','MPS751',{'B':'2','C':'3','E':'1'}) # Central MPS751 physical1E2B3C
         self.lib.native('Device:D','BAT54WS')
         self.lib.native('Device:Q_NMOS','Q_NMOS_GDS',{'G':'1','D':'2','S':'3'})
@@ -219,7 +226,7 @@ def resistor_mpn(v):
 
 def build(m3b=False):
     d=Design()
-    if m3b:d.revision='M3B-E1'
+    if m3b:d.revision='M3B-E2'
     def r(s,ref,v,a,b,x,y,pop='BOTH',group='protection',note='',fp=FP_R,mpn=None,price=None):
         s.place(ref,'R',v,{'1':a,'2':b},x,y,fp,mpn or resistor_mpn(v),group,pop,note=note,price=price)
     caps={'100n':('CC0603KRX7R8BB104',FP_C,.024),'1n':('CC0603JRNPO9BN102',FP_C,.04),'10n':('CC0603KRX7R9BB103',FP_C,.035),'1u':('CC0805KKX7R9BB105','Capacitor_SMD:C_0805_2012Metric',.08),'470n':('C3216X7R2A474K160AB','Capacitor_SMD:C_1206_3216Metric',.22),'4.7n':('CC0603JRNPO9BN472',FP_C,.04),'4.7u':('GRM31CR71E475KA88L','Capacitor_SMD:C_1206_3216Metric',.16),'10u35':('C3225X7R1V106M250AC','Capacitor_SMD:C_1210_3225Metric',.45),'22u25':('GRM32ER71E226KE15L','Capacitor_SMD:C_1210_3225Metric',.45),'100p':('C0805C101J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1000p':('C0805C102J1GACTU','Capacitor_SMD:C_0805_2012Metric',.10),'1800p':('C0805C182J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12),'91p':('C0805C910J1GACTU','Capacitor_SMD:C_0805_2012Metric',.12)}
@@ -355,7 +362,7 @@ def build(m3b=False):
 
     s=d.sheet('06_analog_protection','06 Reference, pack voltage and thermal/current trips')
     s.text('Real electrical trips; no RF power detector or continuous telemetry. Comparator inputs stay below1.5V.\nShared reverse-protected J301 pack input retained for Fox-only; all PA converter/driver/final components DNP.',15,23)
-    s.place('U311','TL431DBZ','TL431AIDBZR',{'1':'VREF_2V5','2':'GND','3':'VREF_2V5'},45,60,'Package_TO_SOT_SMD:SOT-23','TL431AIDBZR','protection',price={'1':.25},source='https://www.ti.com/lit/ds/symlink/tl431.pdf',note='1 REF,2 anode,3 cathode. >=1mA reference bias; no capacitor directly across TL431 until stability region checked.')
+    s.place('U311','TL431_TI_DBZ'if m3b else'TL431DBZ','TL431AIDBZR',({'1':'VREF_2V5','2':'VREF_2V5','3':'GND'}if m3b else{'1':'VREF_2V5','2':'GND','3':'VREF_2V5'}),45,60,'Package_TO_SOT_SMD:SOT-23','TL431AIDBZR','protection',price={'1':.25},source='https://www.ti.com/lit/ds/symlink/tl431.pdf',note='1 REF,2 anode,3 cathode. >=1mA reference bias; no capacitor directly across TL431 until stability region checked.')
     r(s,'R310','180','V3V3','VREF_2V5',110,60);r(s,'R311','1.5k','VREF_2V5','VREF_TH',175,60);r(s,'R312','1k','VREF_TH','GND',240,60);c(s,'C310','100n','VREF_TH','GND',305,60)
     r(s,'R313','309k',pack_net,'V_PACK_SCALED',40,108);r(s,'R314','10k','V_PACK_SCALED','GND',100,108);c(s,'C311','10n','V_PACK_SCALED','GND',160,108)
 
@@ -411,7 +418,7 @@ def build(m3b=False):
     r(s,'R404','10k','GATE_PA','GND',120,126,'NORMAL','normal_driver')
     s.place('Q402','Q_NMOS_GDS','IRF610PBF-BE3',{'1':'GATE_PA','2':'DRAIN_PA','3':'GND'},55,190,'Package_TO_SOT_THT:TO-220-3_Vertical','IRF610PBF-BE3','normal_final','NORMAL',price={'1':1.11,'10':.622},evidence='OBSERVED_M2',supplier='Farnell',code='4853567',source='https://www.vishay.com/docs/91023/irf610.pdf',availability='614 DE indexed M2, exactBE3 lot/basket OPEN',note='200V VDS, +/-20V gate. Tab=drain; electrically insulating sink hardware required. Prototype drain peak gate<=100V, junctiontarget<=110C.')
     s.place('T401','Transformer_1P_1S','9T + 9T bifilar / FT-50A-43',{'1':'VPA_SHAPED','2':'DRAIN_PA','3':'DRAIN_PA','4':'RF_RAW'},165,190,'ARDF_TX:FT50A43_Bifilar_4Terminal','Amidon FT-50A-43 + AWG24 enamel Cu','normal_filter','NORMAL',price={'1':.95},source='https://www.amidoncorp.com/ft-50a-43/',supplier='Amidon/Akizuki',code='FT-50A-43 / Akizuki131662',note='Astart1 dot; Afinish2; Bstart3 dot; Bfinish4; 2 and3 join drain, series-aiding.9 passes each,24cm each AWG24 0.51mm. AL480nH ->38.9uH per winding; source geometryverify.')
-    s.place('Q403','BD140','BD140 / ST',{'1':'VPA_LOAD','2':'VPA_SHAPED','3':'SHAPE_BASE'},280,170,'Package_TO_SOT_THT:TO-126-3_Vertical','BD140','normal_shaper','NORMAL',price={'1':.585,'10':.264,'100':.232},evidence='OBSERVED_M3',supplier='Mouser',code='511-BD140',source='https://www.st.com/resource/en/datasheet/bd140.pdf',availability='STActive;MouserDEindexed5060;basketOPEN',note='ST1E2C3B,80V1.5A,TO126. ReplacesQCXMPS751mechanismwithoutchangingtopology;betterthermal/SOAdata. HF CWshaper only, NOT VHF AM substitute. MeasurehotSOAandedges.')
+    s.place('Q403','BD140_ST'if m3b else'BD140','BD140 / ST',({'1':'SHAPE_BASE','2':'VPA_SHAPED','3':'VPA_LOAD'}if m3b else{'1':'VPA_LOAD','2':'VPA_SHAPED','3':'SHAPE_BASE'}),280,170,'Package_TO_SOT_THT:TO-126-3_Vertical','BD140','normal_shaper','NORMAL',price={'1':.585,'10':.264,'100':.232},evidence='OBSERVED_M3',supplier='Mouser',code='511-BD140',source='https://www.st.com/resource/en/datasheet/bd140.pdf',availability='STActive;MouserDEindexed5060;basketOPEN',note=('ST1B2C3E Rev5 Fig1/p7 0016114E; correction of E1. 'if m3b else'HISTORICAL R1/E1 INCORRECT ST MAPPING:1E2C3B; DO NOT BUILD. ')+'80V1.5A,TO126. ReplacesQCXMPS751mechanismwithoutchangingtopology;betterthermal/SOAdata. HF CWshaper only, NOT VHF AM substitute. MeasurehotSOAandedges.')
     r(s,'R405','1k','VPA_LOAD','SHAPE_BASE',350,170,'NORMAL','normal_shaper')
     r(s,'R406','100','SHAPE_BASE','KEY_DRAIN',280,225,'NORMAL','normal_shaper',fp='Resistor_SMD:R_2512_6332Metric',mpn='CRCW2512100RFKEG',price={'1':.10},note='1W thin/thick-film qualified part; at8.98V approx0.65W. Adapted forced-beta10 base budget, not copied1.2k QCX.')
     fet(s,'Q404','PA_KEY','KEY_DRAIN','GND',350,225,'NORMAL','normal_shaper')

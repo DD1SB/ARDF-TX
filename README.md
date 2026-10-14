@@ -2,7 +2,7 @@
 
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 
-**Status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E1 now delivers a routed 80 m evaluation PCB and fabrication artifacts for engineering review.** ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
+**Status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
 
 **Power reassessment, 2026-10-14:** the user now requires **12 h full-power / 24 h competition-appropriate reduced-power** operation. The completed [2S/4S review](docs/M2_POWER_ARCHITECTURE_DECISION.md) proposes mode-dependent supplies and packs; [ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md) awaits review. Earlier 24 h maximum-power tables below and in M1/M2 remain historical calculations, not current pack recommendations.
 
@@ -11,6 +11,8 @@ A modular, cost-conscious, field-deployable transmitter platform for amateur rad
 **M3A-R1 correction:** [logic audit](docs/M3A_R1_LOGIC_AUDIT.md), [simplification](docs/M3A_R1_SIMPLIFICATION.md), [cost delta](docs/M3A_R1_COST_DELTA.md), [verification](docs/M3A_R1_VERIFICATION.md) and [review decision](docs/M3A_R1_REVIEW_DECISION.md). Physical timer polarity/startup/rearm defects are corrected; ERC and pin-derived digital checks pass. Driver-fault timing and all RF/thermal gates remain OPEN. R0 is preserved at Git tag `m3a-r0`.
 
 **M3B, 2026-10-14:** [evaluation PCB and review files](hardware/80m/README.md), [review decision](docs/M3B_REVIEW_DECISION.md), [layout](docs/M3B_PCB_LAYOUT_REVIEW.md), [critical packages](docs/M3B_COMPONENT_QUALIFICATION.md), [bring-up](docs/M3B_BRINGUP_PLAN.md), [safety gates](docs/M3B_SAFETY_GATES.md), [evaluation BOM](docs/M3B_EVALUATION_BOM.md) and [reproducible checks](docs/M3B_CHECKS.md). Two layers,210×160 mm; R1 safety logic preserved. Recommendation: independent review, then explicit user approval for a small bare-board batch; no unrestricted RF/hardware release.
+
+**M3B-E2, 2026-10-15:** [review decision](docs/M3B_E2_REVIEW_DECISION.md), [electrical corrections](docs/M3B_E2_CORRECTIONS.md), [manufacturer/footprint audit](docs/M3B_E2_FOOTPRINT_AUDIT.md), [DRC coverage](docs/M3B_E2_DRC_AUDIT.md), [bounded power gates](docs/M3B_E2_POWER_PROTECTION.md), [cost delta](docs/M3B_E2_COST_DELTA.md) and [new E2 package](hardware/80m/review/M3B-E2/README.md). Conditional bare-board review only; finished-hole capability, independent review and explicit manufacturing authorization remain pending.
 
 ## Planned configurations
 

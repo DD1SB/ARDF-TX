@@ -1,5 +1,8 @@
 # M3A dated source log
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Retrieved/reviewed **2026-10-14**. Existing M2 pinned revisions/hashes remain in [reference inventory](M2_80M_REFERENCE_INVENTORY.json), [source hashes](M2_80M_SOURCE_HASHES.json), [power sources](M2_POWER_ARCHITECTURE_SOURCES.md) and [Fox audit](FOXORING_COST_SOURCES.md). This is the narrow final component/circuit review, not a new M1 survey.
 
 | Evidence | Original source | What was established / access limitation |

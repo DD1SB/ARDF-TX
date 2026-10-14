@@ -1,5 +1,8 @@
 # M3B — component and footprint qualification
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Date: **2026-10-14**, M3B-E1. This is a package/pinout/landing review, **not incoming inspection or a released procurement list**. Current materials and exact supplier codes are in the generated [workbook](M3B_COMPONENT_WORKBOOK.md)/[CSV](M3B_BOM.csv). Historical indexed prices are not fresh stock reservations. The [dated source log](M3B_SOURCES.md) identifies inaccessible documents and model substitutions.
 
 ## Critical mappings

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "title": "ST BD140 May2008 Rev5 drawing0016114E",
+      "primary_url": "https://www.st.com/resource/en/datasheet/bd140.pdf",
+      "retrieved_from": "https://www.electrokit.com/upload/quick/12/96/0eac_40320006-tds.pdf",
+      "sha256": "04a5335014384fc2a59bf3514ac59bbf9612c0d2f9bfa3ee2c3adb857b17d9e4",
+      "bytes": 155930
+    },
+    {
+      "title": "TI TL431 SLVS543S May2024",
+      "primary_url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "retrieved_from": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "sha256": "ed2e90697de4e2c553195514adf1ee59cda42863716b6ef702b8304a5b921d22",
+      "bytes": 3087819
+    },
+    {
+      "title": "TI TPS22810 SLVSDH0C Jan2018",
+      "primary_url": "https://www.ti.com/lit/ds/symlink/tps22810.pdf",
+      "retrieved_from": "https://www.ti.com/lit/ds/symlink/tps22810.pdf",
+      "sha256": "10450eedecbc454291088e3c8cf0e177555814ac83be021448d1d16cba126c98",
+      "bytes": 2320958
+    },
+    {
+      "title": "Microchip MCP100 DS11187F",
+      "primary_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf",
+      "retrieved_from": "https://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf",
+      "sha256": "2e50e62b4cee492f2762da32e2c672099ccf2b23b1f0020ce72dbb2084f49fa2",
+      "bytes": 299819
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://www.st.com/resource/en/datasheet/bd140.pdf",
+      "result": "Direct HTTP1.1 official binary endpoint timed out twice; official indexed text matched actual ST-authored mirror PDF"
+    }
+  ]
+}

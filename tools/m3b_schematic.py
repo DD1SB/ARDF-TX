@@ -1,23 +1,28 @@
 #!/usr/bin/env python3
 """M3B evaluation additions to the existing RF80 hierarchy; no orders."""
 import json
+import m3_80m_design as base
 from pathlib import Path
 from m3_80m_design import build,footprints,parse,dump,child,children,Atom
 ROOT=Path(__file__).resolve().parents[1];HW=ROOT/'hardware/80m'
 def design():
+ base.DATE='2026-10-15'
  d=build(m3b=True)
  old={p['ref']:p for p in json.loads((HW/'review/M3A-R1/RF80.electrical.json').read_text())['parts']}
  # Retain dated sourcing observations; never relabel a historical price current.
  for r,p in d.parts.items():
   if r in old and p['mpn']==old[r]['mpn']:
    for k in ('price_breaks_eur','evidence','supplier','supplier_part_number','availability','source_url','moq','multiple'):p[k]=old[r][k]
+ d.parts['U311'].update(manufacturer='Texas Instruments',source_url='https://www.ti.com/lit/ds/symlink/tl431.pdf',note='TI TL431AIDBZR DBZ, SLVS543S May2024 Table5-1/p4:1CATHODE,2REF,3ANODE. E2 corrects E1 anode/reference pad reversal. K andREF tiedVREF_2V5; ANODE ground. Same actual MPN and2.495V functional circuit.')
+ d.parts['Q403'].update(footprint='ARDF_TX:ST_BD140_SOT32_1p3Drill',manufacturer='STMicroelectronics',note='ST BD140, May2008 Rev5 Fig1/p7 drawing0016114E:1BASE,2COLLECTOR,3EMITTER. Installed drawing face toward board+Y; PCB west3E,center2C,east1B. Footprint rotated180deg about collector. Native pad numbering unchanged;1.3mm drills/1.9mm lands for max0.88x0.63mm leads; stand body2mm above board. Not interchangeable with another vendor pinout.')
+ d.parts['D302'].update(manufacturer='Littelfuse',source_url='https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smbj_datasheet.pdf?assetguid=09a6ae9a-73cb-4ac4-acac-e6dab92ab953',note=d.parts['D302']['note']+' E2 exact vendor LittelfuseSMBJ17A:17V stand-off,18.9-20.9V breakdown at1mA,27.6V clamp at21.8A. Existing EUR0.35 remains unquoted estimate; not an18V limiter.')
  d.parts['F301'].update(footprint='ARDF_TX:Fuse_467_0603',note='CORRECTED R1 footprint: actual467 family is0603. Own maker reflow lands2.54x1.02mm outer/gap0.36mm; retain1.5A32V, nominalI2t0.0766A2s. Fuse nuisance/pack coordination physical gate.',source_url='https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d')
  d.parts['J101'].update(footprint='ARDF_TX:Wurth_61201621621',note='Maker61201621621:27.98mm length,17.78mm span,2.54mm pitch; hole recommendation1.1+/-0.15mm. M3B finished hole1.2mm/pads1.9mm, within recommendation; review board finished-hole tolerance. Same pinout/keying.')
  d.parts['Q402'].update(footprint='ARDF_TX:TO220_Vertical_1p3Drill',note=d.parts['Q402']['note']+' M3B:1.3mm finished holes/1.905mm lands,2.54mm pitch. Conservative fit against Vishay TO220AB envelope max lead1.01x0.61mm diagonal1.18mm; exact incoming IRF610 lead dry-fit still required.')
  d.parts['C314'].update(mpn='CC0603KRX7R9BB104',price_breaks_eur={'1':.035},evidence='ESTIMATE',source_url='https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104',supplier_part_number='OPEN',note='50V version on undamped VIN_PACK node; avoids crediting the downstream damper for upstream capacitor voltage.100n±10%X7R0603; price estimate, current basketOPEN.')
  d.parts['T401'].update(footprint='ARDF_TX:FT50A43_Inline_4Terminal',note=d.parts['T401']['note']+' M3B formed leads on one edge:1,2,3,4 at5.08mm pitch;2/3 adjacent for short center join. Same core, turns, polarity and ratio; mechanical forming only.')
  s=d.sheet('12_evaluation','12 Evaluation input damper and low-capacitance probe access')
- s.text('M3B-E1: bounded12.0-16.8V protected4S only; first bring-up uses a CURRENT-LIMITED LAB SUPPLY.\nR350/C350 damp cable L<=10uH; pack sense remains ahead of R350. TVS is NOT an18V clamp.\nNo driver fitted until power-only OV withdrawal test proves VDRV<=12.6V. No physical tests performed.',15,22)
+ s.text('M3B-E2: bounded12.0-16.8V protected4S only; first bring-up uses a CURRENT-LIMITED LAB SUPPLY.\nR350/C350 damp cable L<=10uH; pack sense remains ahead of R350. TVS is NOT an18V clamp.\nNo driver fitted until power-only OV withdrawal test proves VDRV<=12.6V. No physical tests performed.',15,22)
  s.place('R350','R','1.5 ohm / 1W',{'1':'VIN_PACK','2':'VIN_PA'},65,65,'Resistor_SMD:R_2512_6332Metric','CRCW25121R50FKEG','input_damper','NORMAL',price={'1':.15},source='https://www.vishay.com/docs/20035/dcrcwe3.pdf',supplier='Vishay/Mouser',code='OPEN',note='±1%; full PA supply damper.0.6A gives0.54W active/0.108W at20%; rated hot derating and insertion pulse must qualify. Not a universal overvoltage limiter.')
  s.place('C350','C_Polarized','100u / 35V',{'1':'VIN_PA','2':'GND'},175,65,'Capacitor_THT:CP_Radial_D8.0mm_P3.50mm','EEUFR1V101','input_damper','NORMAL',price={'1':.45},source='https://na.industrial.panasonic.com/products/capacitors/aluminum-electrolytic-capacitors/aluminum-electrolytic-capacitors-radial-lead-type/series/83367/model/83807',supplier='Panasonic/Mouser',code='OPEN; exact manufacturer MPN EEUFR1V101',note='FR100u35V±20%,8x11.5mm/P3.5mm,lead0.6mm. ESR/impedance0.056ohm at100kHz20C. Cmin80u used; no guaranteed extra ceramic capacitance credited. Inrush/ESR/temp remain physical gates.')
  s.place('C405','C','100n / 50V',{'1':'VPA_SHAPED','2':'GND'},285,65,'Capacitor_SMD:C_0805_2012Metric','GRM21BR71H104KA01L','normal_rf_bypass','NORMAL',price={'1':.10},source='https://www.murata.com/en-eu/products/productdetail?partno=GRM21BR71H104KA01L',note='Local transformer-feed RF bypass; NOT a drain reservoir.100n is negligible vs22u shaper integration but gives~0.45ohm at3.55MHz. RF ripple/heating/key-edge effect require measurement. X7R±10%; procurement quoteOPEN.')
@@ -27,6 +32,15 @@ def design():
   ref='TP'+str(700+i);col=i%9;row=i//9
   s.place(ref,'TestPoint',net,{'1':net},24+col*43,105+row*24,'ARDF_TX:Probe_Pad_0p8','PCB copper','evaluation_access','BOTH',price={'1':0},evidence='BOARD_FEATURE',note='Evaluation-only bare pad; active probe<=1pF for reset/drain, adjacent ground spring. No permanent connector purchase.')
  s.text('Population stages are assembly instructions, not bypasses of hardware interlocks.\nTH301 electrical sensor is remotely bonded to insulated PA case via test pads; do not fit a second NTC in parallel.\nR403 zero-ohm can be removed to isolate the gate driver during dummy-load tests.\nDo not inject28V into this board.16.8V failed-buck test uses rated surrogate load with U401/Q402 absent.',15,255,1.05)
+ # Replace inherited DIP/generic footprint filters with the exact approved lands.
+ bytype={}
+ for sh in d.sheets:
+  for v in sh.placements:
+   ref,typ=v['ref'],v['type'];ft=d.parts[ref]['footprint']
+   if ft:bytype.setdefault(typ,set()).add(ft)
+ for typ,fts in bytype.items():
+  sy=d.lib.defs[typ];pr=next((x for x in children(sy,'property')if x[1]=='ki_fp_filters'),None)
+  if pr:pr[2]=' '.join(sorted(fts))
  return d
 
 def main():
@@ -41,6 +55,13 @@ def main():
  f=parse(Path('/usr/share/kicad/footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod').read_text());f[1]='TO220_Vertical_1p3Drill'
  for pad in children(f,'pad'):child(pad,'drill')[1]=Atom('1.3')
  (HW/'ARDF_TX.pretty/TO220_Vertical_1p3Drill.kicad_mod').write_text(dump(f)+'\n')
+ # Exact ST numeric pin order is implemented in the symbol, never hidden in pads.
+ f=parse(Path('/usr/share/kicad/footprints/Package_TO_SOT_THT.pretty/TO-126-3_Vertical.kicad_mod').read_text());f[1]='ST_BD140_SOT32_1p3Drill'
+ child(f,'descr')[1]='ST BD140 SOT32, May2008 Rev5 drawing0016114E; physical1B2C3E; formed2.28mm pitch;1.3mm holes; own dimension envelope'
+ child(f,'model')[1]='${KIPRJMOD}/3dmodels/ST_BD140_envelope.wrl'
+ for pad in children(f,'pad'):
+  child(pad,'drill')[1]=Atom('1.3');sz=child(pad,'size');sz[1]=Atom('1.9');sz[2]=Atom('1.9')
+ (HW/'ARDF_TX.pretty/ST_BD140_SOT32_1p3Drill.kicad_mod').write_text(dump(f)+'\n')
  # Actual maker reflow land: length2.54, gap0.36, width1.02 mm.
  p=HW/'ARDF_TX.pretty/Fuse_467_0603.kicad_mod'
  (HW/'ARDF_TX.pretty/Probe_Pad_0p8.kicad_mod').write_text('''(footprint "Probe_Pad_0p8"(version 20240108)(generator "pcbnew")(layer "F.Cu")(attr smd exclude_from_bom exclude_from_pos_files)
@@ -69,5 +90,5 @@ def main():
 (pad "3" thru_hole circle(at 2.54 0)(size 2.2 2.2)(drill 1)(layers "*.Cu" "*.Mask"))
 (pad "4" thru_hole circle(at 7.62 0)(size 2.2 2.2)(drill 1)(layers "*.Cu" "*.Mask")))
 ''')
- print('M3B-E1 schematic:',len(d.sheets)+1,'pages;',len(d.parts),'references; original R1 control nets unchanged')
+ print('M3B-E2 schematic:',len(d.sheets)+1,'pages;',len(d.parts),'references; original R1 control nets unchanged')
 if __name__=='__main__':main()

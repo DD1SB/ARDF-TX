@@ -1,0 +1,613 @@
+{
+  "revision": "M3B-E2",
+  "baseline_tag": "m3b-e1",
+  "date": "2026-10-15",
+  "classification": "ENGINEERING REVIEW ONLY; NOT A MANUFACTURING RELEASE",
+  "files": [
+    {
+      "path": "docs/M3B_E2_BOM.csv",
+      "bytes": 221349,
+      "sha256": "7583405084bf038a989262b0d63e0a5c677cef9b7765108b1b98f3543bf71fc9"
+    },
+    {
+      "path": "docs/M3B_E2_CHECK_RESULTS.json",
+      "bytes": 3038,
+      "sha256": "c6f912bd28934ae9f28b232f0d667dcdee7db90df9a02503d1eee6f09fba06d5"
+    },
+    {
+      "path": "docs/M3B_E2_COMPONENT_WORKBOOK.md",
+      "bytes": 38220,
+      "sha256": "241bba2fdff4ad47674e5a0d7c930135e20ee50f1a1bba2c9f82b0e2c9d6b65a"
+    },
+    {
+      "path": "docs/M3B_E2_CORRECTIONS.md",
+      "bytes": 5403,
+      "sha256": "89ee4e42fe77ff29dac46e4b0db9cb8f14969cd4876e2e5bf0730ab72ee4637e"
+    },
+    {
+      "path": "docs/M3B_E2_COSTS.json",
+      "bytes": 637731,
+      "sha256": "fc5fe7d2075ac8dc17cd843837eda8707bce1f8f36cbb24a6f11a79126f9ad8b"
+    },
+    {
+      "path": "docs/M3B_E2_COST_DELTA.md",
+      "bytes": 5530,
+      "sha256": "924d74ba2a3e6e7b08a9decd8b53f2b233a75a1c0d0a03006ea8c42bd3cde532"
+    },
+    {
+      "path": "docs/M3B_E2_DRC_AUDIT.md",
+      "bytes": 6309,
+      "sha256": "24067af74284e026515a85e07fc82ac6d5012c8649587f1619366dcf7d53b430"
+    },
+    {
+      "path": "docs/M3B_E2_FOOTPRINT_AUDIT.md",
+      "bytes": 9690,
+      "sha256": "8a27d4a8c3591688a6a7b19831c73a553bf7da1f57639654c56764c21517900e"
+    },
+    {
+      "path": "docs/M3B_E2_LOGIC_RESULTS.json",
+      "bytes": 5136,
+      "sha256": "a9b866d61e8d9fb85408867f8e27dae0621fcaf860131266082cf7ac48f32188"
+    },
+    {
+      "path": "docs/M3B_E2_POWER_PROTECTION.md",
+      "bytes": 10755,
+      "sha256": "7f9d7fb44c57cf897ea2c3b37d72ea531ab35a5b7b72c461c260b7582058036b"
+    },
+    {
+      "path": "docs/M3B_E2_POWER_RESULTS.json",
+      "bytes": 16407,
+      "sha256": "1ef3b39460bfa85e59d77c5f582bd970f6cf693a1fa73dd7088f717c4315b577"
+    },
+    {
+      "path": "docs/M3B_E2_REVIEW_DECISION.md",
+      "bytes": 6409,
+      "sha256": "ff5556979fe4a24860bd6ad78da511a6294867254976e197c2a45d5c8314465d"
+    },
+    {
+      "path": "hardware/80m/01_source_interface.kicad_sch",
+      "bytes": 75118,
+      "sha256": "1d2129d941f2e62b6e0c4ea19313be026a822666d059ac52aacf48130b08eb32"
+    },
+    {
+      "path": "hardware/80m/02_interlocks.kicad_sch",
+      "bytes": 69957,
+      "sha256": "809c12e288fa7656b3aea6f16da407d09e3219579094223cf92a3f5904393d04"
+    },
+    {
+      "path": "hardware/80m/03_safety_logic.kicad_sch",
+      "bytes": 65650,
+      "sha256": "ed26e9fe241a8aa8a4b7d7efd1a22e0d384323d7f543ff5aeb7d7a44ad89aa56"
+    },
+    {
+      "path": "hardware/80m/04_arm_key.kicad_sch",
+      "bytes": 89289,
+      "sha256": "8e70fb541ea1b8bad9ca12fa1b4adf75c8f0b1f345d58cdf950e175301cf5c59"
+    },
+    {
+      "path": "hardware/80m/05_power.kicad_sch",
+      "bytes": 76186,
+      "sha256": "02c29e5a60684fc43755268819703efadaf46a8827896f1c78e6b6383a779aec"
+    },
+    {
+      "path": "hardware/80m/06_analog_protection.kicad_sch",
+      "bytes": 48839,
+      "sha256": "69306c08ef2eb89c709000a6443951c2e417fe150cb86201db8832e161ee4861"
+    },
+    {
+      "path": "hardware/80m/06b_thresholds.kicad_sch",
+      "bytes": 23062,
+      "sha256": "b141d947b614071521d13b9363e4214e1d18cca530295490b6cf5d82f6f68225"
+    },
+    {
+      "path": "hardware/80m/07_current_thermal.kicad_sch",
+      "bytes": 59780,
+      "sha256": "256951d77205cda98b1fe7aa99c52da121d04f5d921b9127822ab55dc27f10d5"
+    },
+    {
+      "path": "hardware/80m/08_normal_rf.kicad_sch",
+      "bytes": 79647,
+      "sha256": "6b8533a5a66acc7e40f097764fdfc3a4ef1690cddf797bd6bf8f84256e50bbcc"
+    },
+    {
+      "path": "hardware/80m/08b_key_tail.kicad_sch",
+      "bytes": 27491,
+      "sha256": "315f54e951461a6e599b8f44145d1a67257acf39ef651df95709a5c5857e8500"
+    },
+    {
+      "path": "hardware/80m/09_normal_filter.kicad_sch",
+      "bytes": 37157,
+      "sha256": "11d0c2d595c0449a34239345eba1a3edc084bfdb64ac48f8f9e822923741fdb3"
+    },
+    {
+      "path": "hardware/80m/10_fox_rf.kicad_sch",
+      "bytes": 78418,
+      "sha256": "903683ea08a88f3dbe2d3a1668fd40cc303d7c7c87fb7f29081d508baffea1d7"
+    },
+    {
+      "path": "hardware/80m/11_fox_filter.kicad_sch",
+      "bytes": 53415,
+      "sha256": "a20951f9ca020b3b1e93de33ed40cdffa887fcb96a99d7c1f455be6db247e537"
+    },
+    {
+      "path": "hardware/80m/12_evaluation.kicad_sch",
+      "bytes": 100928,
+      "sha256": "b8f54f1149878ae74a00004476d1928f8f1eba6ff87be410981120ed04a6f03b"
+    },
+    {
+      "path": "hardware/80m/3dmodels/78F_envelope.wrl",
+      "bytes": 334,
+      "sha256": "ec6ca6ef7584e9908f6da977c1353dfa16858521311b0c204fa01521f23bfe2a"
+    },
+    {
+      "path": "hardware/80m/3dmodels/ABM3B_envelope.wrl",
+      "bytes": 336,
+      "sha256": "d3845556645e80d93155fa92a501d8cbade46a9b769ddd51677a94754643bfd4"
+    },
+    {
+      "path": "hardware/80m/3dmodels/FT50A43_envelope.wrl",
+      "bytes": 9337,
+      "sha256": "de1a05c69290ab8d1faabdb53ddfc1613c1a6fb9dc091cb18d38dbc1de1e231c"
+    },
+    {
+      "path": "hardware/80m/3dmodels/Fuse467_envelope.wrl",
+      "bytes": 336,
+      "sha256": "625746a21590c9942e3113bb5699269667f5553b1e0eac775d72654741520f29"
+    },
+    {
+      "path": "hardware/80m/3dmodels/JST_VH_envelope.wrl",
+      "bytes": 366,
+      "sha256": "3cc64e60aafdc78fa7188ad8189432a7fc75c73e5f7c1fd812c8abf64e84f7e7"
+    },
+    {
+      "path": "hardware/80m/3dmodels/SRP7050TA_envelope.wrl",
+      "bytes": 333,
+      "sha256": "16a9cf9ce6e3f600142ae47d501bde4313f3d1f2cc6800160ac920f6df4e894e"
+    },
+    {
+      "path": "hardware/80m/3dmodels/ST_BD140_envelope.wrl",
+      "bytes": 1479,
+      "sha256": "a3ff2e296cc1d8e672c9b4674e11e029f2190386bc6d2321534190fa7f997be1"
+    },
+    {
+      "path": "hardware/80m/3dmodels/T60_2_flat_envelope.wrl",
+      "bytes": 9238,
+      "sha256": "850b0952fea290625b39dba8236c933f25d3dafeac6a8b1f700d1d3bc77a7fc2"
+    },
+    {
+      "path": "hardware/80m/3dmodels/T60_2_upright_envelope.wrl",
+      "bytes": 9242,
+      "sha256": "bbab46a61b64ff6a03a4d1eda0308cd90d81d66c54a64f27051382b71f24f9eb"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.kicad_sym",
+      "bytes": 152052,
+      "sha256": "3ce427ed4a9f1b35354759fb2b9c6b10ae73891ad82dfd49a19ddb7f9b49978e"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/78F_Axial.kicad_mod",
+      "bytes": 811,
+      "sha256": "4a310607ea0a076630106df958a2b5c10014e669c4237f12a0a5f0aadf376f88"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/FT50A43_Bifilar_4Terminal.kicad_mod",
+      "bytes": 1160,
+      "sha256": "1700a66f304fd3495097091650b0b194e2394f4921068181c0bd00285e0bd2b3"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/FT50A43_Inline_4Terminal.kicad_mod",
+      "bytes": 1062,
+      "sha256": "0aad11ce503dfcd00928590e70c89f105c99721c372c5b5c534e4f1fd3b90c86"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/Fuse_467_0603.kicad_mod",
+      "bytes": 782,
+      "sha256": "3428bca9e3092d52f60396c25d2554b876f24c5128a876688a1644e695c4220d"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/Probe_Pad_0p8.kicad_mod",
+      "bytes": 500,
+      "sha256": "0cb32295cb836e12bd525cb7d8eeda65266589e6d7c392433823e3a4702ce641"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/SRP7050TA.kicad_mod",
+      "bytes": 806,
+      "sha256": "2325bf86b3f57dc07219e4e5cf3abf4d763314db2438882861496030505b316b"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/ST_BD140_SOT32_1p3Drill.kicad_mod",
+      "bytes": 2273,
+      "sha256": "4506c33f5d1823e075dd8c11292048ba02814b9a35c89efd2748fb036e176b22"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/T60_2_20T.kicad_mod",
+      "bytes": 910,
+      "sha256": "0606b486c1499aa55ead6675c2087c161e79d670b8f72a575611907f62eed093"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/TO220_Vertical_1p3Drill.kicad_mod",
+      "bytes": 2475,
+      "sha256": "f74d6f8d6c6c4e0b1157f0b5086c618e3f1f36c4e083b533bea1b22dbd3801ca"
+    },
+    {
+      "path": "hardware/80m/ARDF_TX.pretty/Wurth_61201621621.kicad_mod",
+      "bytes": 5695,
+      "sha256": "e4ae277a7f3fdb3cd618fac021c1b80c5e11ef1e7d8aa40f27857e7d60ab026c"
+    },
+    {
+      "path": "hardware/80m/RF80.electrical.json",
+      "bytes": 241127,
+      "sha256": "1a68958091d3da6d10c622c32690d8ede01d2766043d7cf08c5368ff4ebd205c"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_dru",
+      "bytes": 237,
+      "sha256": "d33272f37aa6da9e42ae13fa4006ad2ed2314b723f2936e352a45aa0ce34309c"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_pcb",
+      "bytes": 2597922,
+      "sha256": "ed482ab5d4c0548747f765185d48cdbf3a17105ab9bfb924538e7249989480fc"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_pro",
+      "bytes": 9829,
+      "sha256": "d73225ec241def2440030fe0693e77ca05dc6aaefa5bfbcec924d445aaf2cfc8"
+    },
+    {
+      "path": "hardware/80m/RF80.kicad_sch",
+      "bytes": 7683,
+      "sha256": "28b5080354e17a39c62177dd89a4c3b83c5d7d9abc1c0ec14cf397a775dba62e"
+    },
+    {
+      "path": "hardware/80m/fp-lib-table",
+      "bytes": 169,
+      "sha256": "6f27fb5b105c132f6c5954da03854a62647618010da571bd7a733adf5014d59f"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/DRC.json",
+      "bytes": 384,
+      "sha256": "e690c7c42ad3b1bcc05b671d059221bdc063a7d9f2cb0b7b4fb9dbdb6eb4f300"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/DRC.rpt",
+      "bytes": 273,
+      "sha256": "0400c309a849e4b14dcd1c9ebea57dd179d5aa66e0188513c99a0ab20a2de7d9"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/E1_DRC_CONFIGURATION.json",
+      "bytes": 6799,
+      "sha256": "2947ef0df17806fc893f37a60d3dc1ce36f5d014a42fbd664e346fff0192c957"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/E1_EXPANDED_DRC.json",
+      "bytes": 37109,
+      "sha256": "725bd0eb55935feab6c31c5d2bb4dd3d110cfa6df3bfbabff466d129282f6156"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/ERC.json",
+      "bytes": 4084,
+      "sha256": "27e141ef201efcc5b675d6bf1e19c0c85efbf271cdc5214b6c25fe74ed4b3259"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/README.md",
+      "bytes": 3871,
+      "sha256": "02da5067001242397fd3ab215d956a718986df9c50b7eb7560c9c23cd2383de1"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80-3D-bottom.png",
+      "bytes": 217194,
+      "sha256": "46b671fb902244ff56b1fe3b7cbf3025fe2db3f0a8fd643bca88a58e7a6471e1"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80-3D-top.png",
+      "bytes": 638531,
+      "sha256": "1fd6f9d3ef36f1784514d8796b6362dd6a910829bac2dd576d395f6bc7a25045"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80-3D.png",
+      "bytes": 1558141,
+      "sha256": "4d6da5893aad0dc510e150c6153748cf54e3757aebc7954f14641a2b99bb4ffb"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80-Q403-3D.png",
+      "bytes": 1523687,
+      "sha256": "71dac73f3bcdb0b9955fb820c3ce8a468c056eea230d7813c0bd1642d1d58ece"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80-position-full.csv",
+      "bytes": 13835,
+      "sha256": "d7d1aa1185e985fdf19f2f0d8a6e14ffb35d9fca66cde821fac5fd24595d67ed"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80.ipc",
+      "bytes": 73825,
+      "sha256": "f98f27b81c51ac952f5e071550b61c24aa5656129b9d81850fbdf06e4dcfebc0"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80.pdf",
+      "bytes": 1036651,
+      "sha256": "766e43c9e87121d70842cfb8e9e3009ba2ce29a6d94ae0390b11a3c3f9108319"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/RF80.xml",
+      "bytes": 553840,
+      "sha256": "ef24f28b9a4fe324fe42353e8bd71c86b948f6390610e56de8a853b1cd2db993"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/assembly-bottom.pdf",
+      "bytes": 211026,
+      "sha256": "cf2cc992ae056f57b2e8a73fb086b1ff2c63716f8e68806a45589b803d68de18"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/assembly-bottom.svg",
+      "bytes": 38693,
+      "sha256": "d88da0f04ee42dc8a5211cf5ace885bad03c93a2572a9d2f9d9ec759c4422014"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/assembly.pdf",
+      "bytes": 399358,
+      "sha256": "90e56b67c97e56c12cf1539d933f836f5b0b38495a20da0ea596573dc3de5532"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/assembly.svg",
+      "bytes": 2956079,
+      "sha256": "edd125a89b755e5d0df4f28ece21443e7156f818b0993ba984c3f6bfd3bca372"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/bottom-copper.svg",
+      "bytes": 235097,
+      "sha256": "3d1b6059d818b340f436382c7b4f039a04c376d5854b8a9e01dfcd128280395d"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/connectivity-change-audit.json",
+      "bytes": 8527,
+      "sha256": "94f557d8225800d00c625d9ebcb333d953faf0179844e053d6b6ceb55a16680e"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/cost-delta.json",
+      "bytes": 1923,
+      "sha256": "c667ecb94d54be84802fa37188c74596c9a781b583e81230e86370828373f261"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/critical-pinouts.json",
+      "bytes": 122655,
+      "sha256": "18196822be9dc8bb75655402e89fc9026d9e4df0261b1b3bf168d93b6eb074ce"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/drc-coverage.csv",
+      "bytes": 2086,
+      "sha256": "e2d813bf6f86beb3e22518feca880707453f41e2b859f05377334f647c73b0d1"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/drc-coverage.json",
+      "bytes": 8381,
+      "sha256": "20bd4f36cf5045d29bfd672ff3cf6dfa022df61a4d20c78a277c166b0e3c7e87"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/drill-report.rpt",
+      "bytes": 937,
+      "sha256": "01f422d27f1ee1a07570f68f8882b8eafacf25a3e3caa688928624e04373da6a"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/driver-surrogate.cir",
+      "bytes": 380,
+      "sha256": "361410836b79f95de96f5ca237df98d8d5f4eda1eb17f3124753d46c4389b5c2"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/fabrication-audit.json",
+      "bytes": 1655,
+      "sha256": "9cfc77716fa5dd773f42641c412e11ccd4a746a08fd2e26bf70569d6113dda7e"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-B_Cu.gbl",
+      "bytes": 288887,
+      "sha256": "e942586bc12301d49ef580083316f99845093bb7318164e895a1a9bf3bb3f6d3"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-B_Mask.gbs",
+      "bytes": 44335,
+      "sha256": "3e4608f3f7538f6c3ff3ce9db74f5a89cc978e13dfc0f80807912d35a7232c9e"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-B_Paste.gbp",
+      "bytes": 493,
+      "sha256": "3762ce5219766cd74301c9d65023c68fbe8480b9fc05455aa2b51d9faaa096ad"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-B_Silkscreen.gbo",
+      "bytes": 44345,
+      "sha256": "b37be316cf2f222766037c9b7081f7127d6bc6b4e091cf2eb7ba4366790b9814"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-Edge_Cuts.gm1",
+      "bytes": 723,
+      "sha256": "0299a85f58eeed6d91fcabebed38b4164c714bcb35f7f0d8c91416088d4d929a"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-F_Cu.gtl",
+      "bytes": 777934,
+      "sha256": "eb8fc81aae5193904cdac48f79c6fedfc1faa3db47b70804e81de77ebd47fa8a"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-F_Mask.gts",
+      "bytes": 535822,
+      "sha256": "5aaafb86a0f7260cecb94d15763de428dcc39f32decf7ff2395ce79338eda740"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-F_Paste.gtp",
+      "bytes": 21185,
+      "sha256": "8181837bdc1d8f6fa2adb0b734c8fa142926fa8e4f42d628cdf08170c5c75d47"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-F_Silkscreen.gto",
+      "bytes": 1213090,
+      "sha256": "ee7685c7cfadc3504e7fa76864094bedfdd9ee94a13bffee7e389442658c5628"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-NPTH-drl_map.pdf",
+      "bytes": 12174,
+      "sha256": "35cc286b5c7c76797fb5e6698445a11894250e33a9b214ae5ec2780d63bc8d37"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-NPTH.drl",
+      "bytes": 422,
+      "sha256": "dd59aa0b65f0249b0cbe11202b2ce899be689ef0593bebe478ab4e81ed6a9640"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-PTH-drl_map.pdf",
+      "bytes": 26375,
+      "sha256": "24fbcc2e8214597f5df230b01c1b0a8f64cbb9050ff52dcdb2e8ce793487bd38"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-PTH.drl",
+      "bytes": 6601,
+      "sha256": "8b91e14001b9adfea17e421db25d974bdea9210fdf224b9c53de08ba71ea0dc9"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/gerbers/RF80-job.gbrjob",
+      "bytes": 2679,
+      "sha256": "75e6a417caa5a86f9819cfa6a870d035bd2eb462c49068204f9a5bd4935948ae"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/hardware-links.json",
+      "bytes": 81,
+      "sha256": "55e4f00cab1e6abd3f2355f456c27d2c33f798b698264e856f9a51234ea7565e"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/historical-version-regressions.json",
+      "bytes": 2815,
+      "sha256": "d514701024c4cf7470025ef35c234686863a585ecbfe30f746d589a6b4829e72"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/input-surrogate.cir",
+      "bytes": 362,
+      "sha256": "0f15969d21145acade06b6b4ce7f1a83a18589dca41b98f1d9e73c757ae97327"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/local-copper-changes.json",
+      "bytes": 2240,
+      "sha256": "75a0847d4ad9bd9187bfc6efba5b1e0a78d3709061c04ff81a3417e2bdf031aa"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/manufacturing-notes.md",
+      "bytes": 3981,
+      "sha256": "0a3b99294405d96eff0f2a57d8b76bf644c8cc46cede60f03f66c29ab05bd3e2"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/mechanical-stackup.json",
+      "bytes": 20942,
+      "sha256": "8f0ff262c3bec9cf7ec1d8c58b245f58adc6f8aa99ef3299823b3e8e0b09adb9"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/population-map.csv",
+      "bytes": 24598,
+      "sha256": "2eb3b99f859be7485b8ee6c42882d2063b5263594c52908bfca24cdcc695629a"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/preserved-model-regressions.json",
+      "bytes": 1969,
+      "sha256": "8591b2070973c0f4c7f98847c2de319e3574dfc0944fe915a9be679c54168798"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/probe-map.csv",
+      "bytes": 5752,
+      "sha256": "eeade2e1a1cd7de4112edf06a29fb727a1e137497e7343bb499db4fb422ed2bc"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/source-identities.json",
+      "bytes": 1580,
+      "sha256": "4cac546442bebc36ac495521b17eee88650197c96a03e2d8feeccb81651f79c9"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/top-copper.svg",
+      "bytes": 848413,
+      "sha256": "f064f900be7fbd5bd66f7c614f5cdd8146a8f95f591389640a1be195df30ac9f"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/verification-results.json",
+      "bytes": 5584,
+      "sha256": "d9fdf0dc4ad7e09724898229163e0d934f25b7716ba2e632aa3d84a951728f2a"
+    },
+    {
+      "path": "hardware/80m/review/M3B-E2/verification.md",
+      "bytes": 6985,
+      "sha256": "9defe41a581141e4585d8d89262ed13dfdc5682fa7c322998220a3a11aacd136"
+    },
+    {
+      "path": "hardware/80m/sym-lib-table",
+      "bytes": 172,
+      "sha256": "3da86303a0f7374f920266117f430e60381fd65e34f5f891571d451bc8e29887"
+    },
+    {
+      "path": "tools/m3_80m_design.py",
+      "bytes": 72977,
+      "sha256": "ac1b450145d1fb4487710f740ca79cd2ea138011d4e4693e1db762e4d6ab5729"
+    },
+    {
+      "path": "tools/m3a_r1_logic.py",
+      "bytes": 18951,
+      "sha256": "562f243de5c713803690b6f4579e1f53cfe104d1bfe30aa12de08f7021c19c86"
+    },
+    {
+      "path": "tools/m3b_bom.py",
+      "bytes": 4747,
+      "sha256": "090aed975ad3d2cb11bb740aa5d88cdf027fe5149bc73fd7fe03d7467c2efbb4"
+    },
+    {
+      "path": "tools/m3b_exports.py",
+      "bytes": 3276,
+      "sha256": "beda9ddb9c9ca231450024a0c356b15b28ecd974007d9f586926c7b4b672c138"
+    },
+    {
+      "path": "tools/m3b_models.py",
+      "bytes": 2050,
+      "sha256": "6b6284ba7400b4c334372b34ef715ef68c2956f6ee6bf51fc19a63e5c1730b20"
+    },
+    {
+      "path": "tools/m3b_power_analysis.py",
+      "bytes": 5749,
+      "sha256": "a7b1f8e31aaafb5a6babfcde77bd02e2f12259cf8cc31f80e81b1e064d469d1b"
+    },
+    {
+      "path": "tools/m3b_schematic.py",
+      "bytes": 11541,
+      "sha256": "563b673cff249f0f53b5c5b1e73ef2c51669815eed452e3acc99e68be58bffbf"
+    },
+    {
+      "path": "tools/m3b_verify.py",
+      "bytes": 6623,
+      "sha256": "ba52630a0e4c6d455611788164f490905aa0d039d6f056e5ef7f680ab7435cd4"
+    },
+    {
+      "path": "tools/m3be2_audit.py",
+      "bytes": 12801,
+      "sha256": "d6db6edede5d4d1969048d1b917a347c53d6fb6db5d7b031c3e16bdf613a3ecc"
+    },
+    {
+      "path": "tools/m3be2_models.py",
+      "bytes": 823,
+      "sha256": "dd1ff992c3e9a368c0f91df8ea399f62fc39d0eeb2facd5c7fc57e83108e9e91"
+    },
+    {
+      "path": "tools/m3be2_pcb.py",
+      "bytes": 7020,
+      "sha256": "3c911b02e067399a1d83f0a7812382f355aaad9a6cfbde4909f5a5428bba63be"
+    },
+    {
+      "path": "tools/m3be2_pinouts.py",
+      "bytes": 13204,
+      "sha256": "0517a4fda2aa7a2b9e915def747968909517a37aa05d310baf2364595ae97e76"
+    },
+    {
+      "path": "tools/m3be2_power.py",
+      "bytes": 3130,
+      "sha256": "817e5dc60d08c93dfad92d4d3bd5b7bd8b9bd2106c68be2f48e819a7a9e0cd9f"
+    },
+    {
+      "path": "tools/m3be2_regressions.py",
+      "bytes": 1638,
+      "sha256": "44e847e3bc9479c4a296416b73e9f709e1070a5da69cd8b8c9f2dd0c822d41f9"
+    }
+  ]
+}

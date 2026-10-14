@@ -1,5 +1,8 @@
 # M3B — evaluation PCB review decision
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Date: **2026-10-14**. Revision **M3B-E1**. **Proposed review disposition; no order or hardware operation authorized.** Baseline M3A-R1 commit`0dfd224` and R0 tag`m3a-r0` preserved.
 
 **CONDITIONAL GO for a small bare evaluation-PCB batch after the review, sourcing/fit checks and explicit approval below. NO-GO for production release or unrestricted4S/driver/RF operation.** The board is ready to review as a staged experiment; it is not a validated transmitter. No parts have been ordered, Gerbers sent to a manufacturer, hardware fabricated, assembled or energized.

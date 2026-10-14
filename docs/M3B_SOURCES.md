@@ -1,5 +1,8 @@
 # M3B — dated qualification and analysis source log
 
+> **2026-10-15 correction notice:** This is a historical pre-E2 record. E1/R1 ST BD140 pin/orientation claims and the E1 manufacturing recommendation are superseded by [M3B-E2 corrections](M3B_E2_CORRECTIONS.md) and the [E2 decision](M3B_E2_REVIEW_DECISION.md). Use E2 assembly/netlist files: Q403 **1B/2C/3E**, illustrated ST face toward **PCB+Y**, and U311 TI DBZ **1K/2REF/3A**. E1 drawings are not build instructions. Frozen historical checks are not current E2 verification.
+
+
 Date: **2026-10-14**. These entries supplement the retained [M3A sources](M3_80M_SOURCES.md), [R1 audit](M3A_R1_LOGIC_AUDIT.md) and M2 source registers. No published test result is relabeled as an ARDF-TX measurement. Prices in the M3B workbook inherit their original observation/estimate classifications; no fresh stock basket is claimed.
 
 | Primary source | Access/evidence used in M3B | Boundary |
