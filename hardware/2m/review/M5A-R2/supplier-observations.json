@@ -1,0 +1,103 @@
+{
+  "classification": "READ_ONLY_PUBLIC_OBSERVATIONS_NO_RESERVATION_NO_QUOTE",
+  "accessed": "2026-10-15",
+  "manufacturer_csv_rows": [
+    [
+      "RA07M1317M",
+      "RA07M1317M",
+      "/semiconductors/hf/products/datasheet/ra07m1317m.pdf",
+      "-",
+      "In production",
+      "7.2",
+      "135&#65374;175",
+      "6.5",
+      "H46S",
+      "20",
+      "45",
+      "-",
+      "Compliant with RoHS \uff082011/65/EU\u3001(EU) 2015/863\uff09"
+    ],
+    [
+      "RA08N1317M",
+      "RA08N1317M",
+      "/semiconductors/hf/products/datasheet/ra08n1317m.pdf",
+      "-",
+      "In production",
+      "9.6",
+      "135&#65374;175",
+      "8",
+      "H46S",
+      "20",
+      "50",
+      "-",
+      "Compliant with RoHS \uff082011/65/EU\u3001(EU) 2015/863\uff09"
+    ],
+    [
+      "RA08H1317M",
+      "RA08H1317M",
+      "/semiconductors/hf/products/datasheet/ra08h1317m.pdf",
+      "-",
+      "In production",
+      "12.5",
+      "135&#65374;175",
+      "8",
+      "H46S",
+      "20",
+      "40",
+      "-",
+      "Compliant with RoHS \uff082011/65/EU\u3001(EU) 2015/863\uff09"
+    ]
+  ],
+  "glyn_matching_stock_rows": [
+    [
+      "Mitsubishi",
+      "RA08N1317M-502",
+      "RF MOSFET Module 9.6V 8W(135-175MHz) H46S-Pkg.",
+      "40"
+    ]
+  ],
+  "ra07_glyn_stock_row": "NOT_LISTED_NOT_PROOF_OF_NO_STOCK",
+  "rfparts_ra07": {
+    "mpn": "RA07M1317M-501",
+    "price_usd": {
+      "1": 28.91,
+      "10": 27.46
+    },
+    "status": "In Stock",
+    "stock_count": null,
+    "catalog_title_legacy_suffix": "-101",
+    "actual_h1_sku_and_description_suffix": "-501",
+    "condition": "New; NOS No",
+    "global_order_minimum_usd": 15,
+    "moq_inferred_from_single_unit_offer": 1,
+    "lead_time": null,
+    "europe_delivery_and_landed_cost": "UNCONFIRMED"
+  },
+  "glyn_fleet_offer": {
+    "price_eur": null,
+    "moq": null,
+    "lead_time": null,
+    "spare_availability": null
+  },
+  "maav011017": {
+    "manufacturer_revision": "V4",
+    "mouser_code": "937-MAAV011017TR0500",
+    "eur_display": {
+      "1": 6.79,
+      "10": 5.24,
+      "25": 4.85
+    },
+    "current_eu_stock": 0,
+    "incoming_dates": [
+      "2026-12-21",
+      "2026-12-30",
+      "2027-01-20"
+    ],
+    "factory_lead_weeks": 24,
+    "moq": 1,
+    "multiple": 1,
+    "old_indexed_1603_stock": "STALE_CONFLICT_REJECTED_FOR_CURRENT_AVAILABILITY",
+    "digikey_moq": 2000,
+    "digikey_stock": "NON_STOCKED"
+  }
+}

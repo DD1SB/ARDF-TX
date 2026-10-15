@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-15",
+  "fleet_sourcing_gate": "OPEN",
+  "redistribution": "No third-party PDFs, artwork or full stock list redistributed. Facts/own calculations only; originals retained temporarily outside repository.",
+  "sources": [
+    {
+      "id": "MITSU-RA07",
+      "url": "https://www.mitsubishielectric.com/semiconductors/hf/products/datasheet/ra07m1317m.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY PDF downloaded; package p6 and curves p3 visually inspected",
+      "revision": "Jun2019",
+      "retrieval_sha256": "5a847a09c011c16454bdc0e5fe31c61ba65ac3ff3db6c945cef75eec2d7c88f3"
+    },
+    {
+      "id": "MITSU-LINEUP",
+      "url": "https://www.mitsubishielectric.com/semiconductors/data/silicon_rf_module.csv",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY CSV behind official lineup; all three allowed modules In production",
+      "retrieval_sha256": "f1c33d3518d975ed3015c4faea4286d41aa8a41c9617eedd71666cf597297ca1"
+    },
+    {
+      "id": "MITSU-LINEUP-PAGE",
+      "url": "https://www.mitsubishielectric.com/semiconductors/hf/products/lineup/index.html",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY HTML links CSV dynamically",
+      "retrieval_sha256": "c929daa3757f6f79cd9b9d5d9d2d7e9b200f2dd4a87d5f39ef0a72aeab16b01a"
+    },
+    {
+      "id": "GLYN-CATALOG",
+      "url": "https://www.glyn.de/produkte/leistungselektronik/hochfrequenz-transistoren/",
+      "accessed": "2026-10-15",
+      "status": "All three exact suffixes listed; no price/quantity/MOQ/lead time"
+    },
+    {
+      "id": "GLYN-STOCK",
+      "url": "https://www.glyn.de/support/kaufmaennischer-support/lagerliste/download/",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY supplier XLSX: RA08N1317M-502 quantity40; no RA07 or RA08H row",
+      "retrieval_sha256": "810634c146d21769b647ca4a95af31227a5ffaed4d1e180306f50eb5efac2356"
+    },
+    {
+      "id": "GLYN-LINECARD",
+      "url": "https://www.glyn.de/support/kaufmaennischer-support/lieferprogramm/",
+      "accessed": "2026-10-15",
+      "status": "Supplier identifies Mitsubishi RF line; exact manufacturer authorization not independently confirmed"
+    },
+    {
+      "id": "RFP-RA07",
+      "url": "https://www.rfparts.com/module/rfpower-mosfet/mosfetpowermod-vhflp/ra07m1317m-501.html",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY retailer live HTML: USD28.91/27.46 at1/10, InStock, no quantity/lead time",
+      "retrieval_sha256": "96a306b90b2fd7aab35b221169147e032c0edd0f4a1a7bf52229166735694d23"
+    },
+    {
+      "id": "RFP-RA08N",
+      "url": "https://www.rfparts.com/module/rfpower-mosfet/mosfetpowermod-vhflp/ra08n1317m-502.html",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY retailer live HTML and indexed listing: USD28.91/27.46 at1/10, no counted inventory",
+      "retrieval_sha256": "976120eee99393bb0fbee6ccd921e71e2c3b222ba4876ee977b9f2222303a06a"
+    },
+    {
+      "id": "RFP-RA08H",
+      "url": "https://www.rfparts.com/module/rfpower-mosfet/mosfetpowermod-vhflp.html",
+      "accessed": "2026-10-15",
+      "status": "Supplier category listing: USD32.91/as-low31.26; no exact tier/quantity confirmation"
+    },
+    {
+      "id": "MITSU-RA08N",
+      "url": "https://www.mitsubishielectric.com/semiconductors/hf/products/datasheet/ra08n1317m.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY PDF text read; 9.6V alternative; not selected",
+      "revision": "Jun2019"
+    },
+    {
+      "id": "MITSU-RA08H",
+      "url": "https://www.mitsubishielectric.com/semiconductors/hf/products/datasheet/ra08h1317m.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY PDF downloaded; narrow12.5V alternative not selected",
+      "retrieval_sha256": "55323494434d09a858ec22e6a09072906336940bbd67bbdb0a4cdc9951c2c445"
+    },
+    {
+      "id": "IARU",
+      "url": "https://www.iaru-r1.org/wp-content/uploads/2025/01/ARDF-Rules_B_2025.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY T2.4/T2.8 rules retained and rechecked; no legal authorization"
+    },
+    {
+      "id": "ECB",
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY 15Oct2026 EUR1=USD1.1208; informational conversion, not delivered quote"
+    },
+    {
+      "id": "MACOM-AM",
+      "url": "https://cdn.macom.com/datasheets/MAAV-011017.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY RevV4 downloaded; pin table/control/sequence, NOT built",
+      "retrieval_sha256": "e6a4b6ce4501ef6e1668575e75fb6d50fae3b54fe00f6417b42be591b994cefc"
+    },
+    {
+      "id": "MOUSER-AM",
+      "url": "https://eu.mouser.com/de/ProductDetail/MACOM/MAAV-011017-TR0500?qs=ZcfC38r4Poug7XjsykdSjQ%3D%3D",
+      "accessed": "2026-10-15",
+      "status": "Supplier EUR price/CT MOQ1; zero available stock, incomingDec2026/Jan2027"
+    },
+    {
+      "id": "DK-AM",
+      "url": "https://www.digikey.com/en/products/detail/macom-technology-solutions/MAAV-011017-TR0500/22607535",
+      "accessed": "2026-10-15",
+      "status": "Supplier Active but non-stocked; MOQ2000, not viable fleet channel"
+    },
+    {
+      "id": "MINI-EOL",
+      "url": "https://www.minicircuits.com/pcn/PCN24-012.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY discontinuation; RVA-33 and RVA-2000V35 rejected"
+    },
+    {
+      "id": "SKY-AM-NOTE",
+      "url": "https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/1-100/200327B.pdf",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY50ohmPINattenuator reference; selected diode now EOL, no substitution",
+      "retrieval_sha256": "72a737c90a55de140f923514910200a4487500adc38be8006b79094e70434347"
+    },
+    {
+      "id": "SKY-EOL",
+      "url": "https://www.mouser.com/en/ProductDetail/Skyworks-Solutions-Inc/SMP1307-027LF?qs=WMHGlxXAKT%2FchseEZ%252BgIpw%3D%3D",
+      "accessed": "2026-10-15",
+      "status": "Supplier EOL notices29Apr/15May2026; no preferred production selection"
+    },
+    {
+      "id": "NXP-EOL",
+      "url": "https://www.nxp.com/products/BAP64",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY obsolete; no BAP64 replacement in design"
+    },
+    {
+      "id": "BMF-VAT",
+      "url": "https://www.bundesfinanzministerium.de/Web/DE/Service/FAQ_Glossar/Glossar/Functions/glossar.html?lv2=176942&lv3=507052",
+      "accessed": "2026-10-15",
+      "status": "PRIMARY German standard VAT19%; applicability/import classification not determined. Direct law mirror timed out; BMF glossary retrieved instead."
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "classification": "INCOMPLETE_COUNTERFACTUAL_NOT_AN_ORDERING_BOM",
+  "currency": "EUR",
+  "fx_usd_per_eur": 1.1208,
+  "source_date": "2026-10-15",
+  "source_1": "RF Parts live HTML USD28.91/27.46 at1/10",
+  "source_2": "Mouser EU EUR6.79/5.24 at1/10; MAAV incoming, not stock",
+  "excluded": "Shipping, duty, broker fees, VAT, PCB, cooling, battery, controller, enclosure, labor",
+  "summary": [
+    {
+      "fleet": 6,
+      "variant": "BOOST2S",
+      "r0_eur": 74.60743858865546,
+      "r1_eur": 54.41270433229134,
+      "removed_r1_eur": 18.818977221974105,
+      "retained_r1_eur": 35.59372711031724,
+      "new_allowance_eur": 35.58407566024268,
+      "r2_accounting_bridge_eur": 71.17780277055992,
+      "delta_vs_r1_eur": 16.76509843826858,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 212,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 6,
+      "variant": "BUCK4S",
+      "r0_eur": 72.76743858865542,
+      "r1_eur": 52.482704332291334,
+      "removed_r1_eur": 18.818977221974105,
+      "retained_r1_eur": 33.663727110317225,
+      "new_allowance_eur": 35.58407566024268,
+      "r2_accounting_bridge_eur": 69.2478027705599,
+      "delta_vs_r1_eur": 16.765098438268566,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 206,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 6,
+      "variant": "TRAIN_ONLY",
+      "r0_eur": 16.372568110763723,
+      "r1_eur": 16.372568110763723,
+      "removed_r1_eur": 0,
+      "retained_r1_eur": 16.372568110763723,
+      "new_allowance_eur": 0,
+      "r2_accounting_bridge_eur": 16.372568110763723,
+      "delta_vs_r1_eur": 0.0,
+      "removed_r1_positions": 0,
+      "retained_r1_positions": 104,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 10,
+      "variant": "BOOST2S",
+      "r0_eur": 74.60743858865546,
+      "r1_eur": 52.633704332291344,
+      "removed_r1_eur": 17.0399772219741,
+      "retained_r1_eur": 35.59372711031724,
+      "new_allowance_eur": 32.74035688793719,
+      "r2_accounting_bridge_eur": 68.33408399825443,
+      "delta_vs_r1_eur": 15.700379665963084,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 212,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 10,
+      "variant": "BUCK4S",
+      "r0_eur": 72.76743858865542,
+      "r1_eur": 50.703704332291345,
+      "removed_r1_eur": 17.0399772219741,
+      "retained_r1_eur": 33.663727110317225,
+      "new_allowance_eur": 32.74035688793719,
+      "r2_accounting_bridge_eur": 66.40408399825441,
+      "delta_vs_r1_eur": 15.700379665963062,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 206,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 10,
+      "variant": "TRAIN_ONLY",
+      "r0_eur": 16.372568110763723,
+      "r1_eur": 16.372568110763723,
+      "removed_r1_eur": 0,
+      "retained_r1_eur": 16.372568110763723,
+      "new_allowance_eur": 0,
+      "r2_accounting_bridge_eur": 16.372568110763723,
+      "delta_vs_r1_eur": 0.0,
+      "removed_r1_positions": 0,
+      "retained_r1_positions": 104,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 20,
+      "variant": "BOOST2S",
+      "r0_eur": 74.60743858865546,
+      "r1_eur": 52.633704332291344,
+      "removed_r1_eur": 17.0399772219741,
+      "retained_r1_eur": 35.59372711031724,
+      "new_allowance_eur": 32.74035688793719,
+      "r2_accounting_bridge_eur": 68.33408399825443,
+      "delta_vs_r1_eur": 15.700379665963084,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 212,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 20,
+      "variant": "BUCK4S",
+      "r0_eur": 72.76743858865542,
+      "r1_eur": 50.703704332291345,
+      "removed_r1_eur": 17.0399772219741,
+      "retained_r1_eur": 33.663727110317225,
+      "new_allowance_eur": 32.74035688793719,
+      "r2_accounting_bridge_eur": 66.40408399825441,
+      "delta_vs_r1_eur": 15.700379665963062,
+      "removed_r1_positions": 52,
+      "retained_r1_positions": 206,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    },
+    {
+      "fleet": 20,
+      "variant": "TRAIN_ONLY",
+      "r0_eur": 16.372568110763723,
+      "r1_eur": 16.372568110763723,
+      "removed_r1_eur": 0,
+      "retained_r1_eur": 16.372568110763723,
+      "new_allowance_eur": 0,
+      "r2_accounting_bridge_eur": 16.372568110763723,
+      "delta_vs_r1_eur": 0.0,
+      "removed_r1_positions": 0,
+      "retained_r1_positions": 104,
+      "final_r2_component_count": null,
+      "final_r2_bom": "NOT_CREATED_SOURCING_GATE",
+      "landed_shipping_duty_eur": null,
+      "vat": "EXCLUDED; separate applicable VAT",
+      "heat_sink_external_estimate_eur": [
+        6,
+        12
+      ],
+      "pcb_external_estimate_eur": [
+        3,
+        8
+      ],
+      "rf_harness_estimate_eur": [
+        2,
+        4
+      ],
+      "antenna_feeder_estimate_eur": [
+        8,
+        15
+      ],
+      "assembly_test_labor_eur": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-15",
+  "status": "PRE_CAD_SOURCING_GATE_OPEN",
+  "antenna_net_gain_dbd": -1,
+  "normal_nominal_erp_w": 0.9,
+  "capability_erp_w": 1,
+  "reduced_nominal_erp_w": 0.3,
+  "calibration_uncertainty_example_db": 0.4,
+  "competition_duty": 0.2,
+  "normal_tone_hz": 800,
+  "controller_battery_assumption_w": 0.14,
+  "rf_idle_battery_assumption_w": 0.04,
+  "active_source_modulator_assumption_w": 0.15,
+  "nominal_module_drain_v": 7.2,
+  "linear_bias_assumed_a": 0.3,
+  "bias_sensitivity_a": [
+    0.15,
+    0.3,
+    0.75,
+    2.0
+  ],
+  "dynamic_efficiency_full_assumed": 0.4,
+  "dynamic_efficiency_reduced_assumed": 0.28,
+  "boost_efficiency_scenario": 0.87,
+  "buck_efficiency_scenario": 0.91,
+  "cell_energy_wh": {
+    "25R_min": 8.82,
+    "M35A_min": 11.9
+  },
+  "aging_factor": 0.8,
+  "temperature_factor": 0.9,
+  "endpoint_energy_window_assumption": 0.9,
+  "pack_endpoint_v_per_cell": 3,
+  "capacity_endpoints_warning": "Inherited cell capacity tests end at2.5V; 3.0V window not measured. No unqualified current/capacity equivalence."
+}

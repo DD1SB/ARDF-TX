@@ -1,0 +1,28 @@
+{
+  "python": "3.12.3",
+  "kicad": "10.0.6",
+  "scope": "Fresh R1 regression only; no R2 schematic or PCB",
+  "commands": [
+    [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--output",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5A-R2/r1-regression-erc.json",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+    ],
+    [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5A-R2/r1-regression.net.xml",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+    ]
+  ]
+}

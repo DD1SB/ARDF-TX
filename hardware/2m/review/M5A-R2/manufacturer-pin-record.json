@@ -1,0 +1,42 @@
+{
+  "status": "DATASHEET_TRANSCRIPTION_ONLY_NO_R2_CAD_ASSERTION",
+  "module": "RA07M1317M-501",
+  "source": "https://www.mitsubishielectric.com/semiconductors/hf/products/datasheet/ra07m1317m.pdf",
+  "revision": "Jun2019",
+  "drawing": "page6 H46S outline drawing, lead side/front view as printed",
+  "pins": {
+    "1": "RF_INPUT",
+    "2": "VGG",
+    "3": "VDD",
+    "4": "RF_OUTPUT",
+    "5": "GROUND_FLANGE"
+  },
+  "geometry_mm": {
+    "body": [
+      30,
+      10,
+      5.4
+    ],
+    "body_length_tolerance": 0.2,
+    "body_height_nominal_parenthesized": true,
+    "mount_slot_center_spacing": 26.6,
+    "mount_slot_center_spacing_tolerance": 0.2,
+    "slot_radius": 1.5,
+    "slot_radius_tolerance": 0.1,
+    "lead_x_from_left": [
+      6.1,
+      13.7,
+      18.8,
+      23.9
+    ],
+    "lead_x_tolerance": 1.0,
+    "lead_length": 6.0,
+    "lead_length_tolerance": 1.0,
+    "lead_drawing_width": 0.45,
+    "lead_drawing_width_tolerance": 0.15
+  },
+  "orientation": "Pins1..4 left-to-right with leads pointing down as p6; flange is5, NOT a fifth narrow lead. Mount before soldering.",
+  "footprint": "NOT_CREATED",
+  "installed_part_pin_net_check": "NOT_RUN_NO_R2_CAD",
+  "mechanical_gate": "Lead formation/board-to-heatsink stack and slot/ground construction must be dimensioned before footprint release. No generic module footprint assumed."
+}
