@@ -1,0 +1,29 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: m5a ideal one-pole opamp and transconductance pass plant, not a d45h11 rf model
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vcc                                        3.3
+upstream                                  13.5
+cmd                                      1.328
+internal                              0.738709
+fb                                     1.32799
+drive                                 0.738709
+envelope                               6.66652
+bdrive#branch                                0
+vcommand#branch                              0
+vrail#branch                         -0.541124
+vlogic#branch                                0
+
+ Reference value :  2.40435e-02
+No. of Data Rows : 20001
+ngspice-42 done

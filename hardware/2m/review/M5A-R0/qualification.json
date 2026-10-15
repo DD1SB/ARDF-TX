@@ -1,0 +1,102 @@
+{
+  "revision": "M5A-R0",
+  "physical_measurements": 0,
+  "gates": [
+    {
+      "id": "G0",
+      "name": "G0 package/inspection",
+      "status": "NOT_RUN",
+      "acceptance": "No OPEN critical footprint or pulse/current rating; independent review of physical orientation. No assembly based on generic pin count."
+    },
+    {
+      "id": "G1",
+      "name": "G1 low-voltage logic",
+      "status": "NOT_RUN",
+      "acceptance": "Reset default off; valid ARM only with PREPARE and KEY/SLOT low; settled measured ARM delay covers captured-output settling; no false permission on clear release/brownout."
+    },
+    {
+      "id": "G2",
+      "name": "G2 lease/config/fault state",
+      "status": "NOT_RUN",
+      "acceptance": "Missing progress disables both paths within250 ms including physical withdrawal. Any SCL low destroys ARM; health recovery while ARM high never rearms. KEY pause leaves intentional in-slot carrier. Capture must not transfer live RF paths."
+    },
+    {
+      "id": "G3",
+      "name": "G3 converter dummy load",
+      "status": "NOT_RUN",
+      "acceptance": "10 V/13.5 V profile rails within agreed\u00b13% target, no excessive startup/feedback-switch overshoot; actual raw UV/OV thresholds and4S full dropout documented. Input FET off for wrong pack; verify PA_RAIL_ADC accuracy and refusal to assert SLOT on missing/low converter rail. Boost compensation/current limit stable with chosen effective L/C."
+    },
+    {
+      "id": "G4",
+      "name": "G4 driver-fault fixture",
+      "status": "NOT_RUN",
+      "acceptance": "Driver plane remains\u22649.5 V, hard trip/disconnect including Q304\u226420 \u00b5s, no parasitic spike approaching10 V absolute maximum. Verify capacitor ESR\u22640.2 \u03a9 and resistor pulse rating; measure PACK_RUN/RAIL_RUN and actual gate decay under the relevant fault. Fail means NO-GO for driver connection."
+    },
+    {
+      "id": "G5",
+      "name": "G5 AF/series modulator",
+      "status": "NOT_RUN",
+      "acceptance": "Stable load/command steps and sine response with no sustained oscillation; no stored-command burst; correct no-tone baseline; supply feedback/command clipping documented. \u22645% engineering envelopeTHD,70\u201380% nominal depth after calibration. SOA trajectory/hot case acceptable. Inject the VPA sense threshold using a bounded source with the pass device absent; verify the nominal12.63 V equivalent trip and deliberate rearm."
+    },
+    {
+      "id": "G6",
+      "name": "G6 synthesizer/source",
+      "status": "NOT_RUN",
+      "acceptance": "Championship range and better50 ppm over qualified temperature/supply/aging budget. Source fundamental sufficient for calculated driver input without violating continuous input ratings. Close-in products/phase noise recorded; harmonic filtering/clock-disable behavior demonstrated."
+    },
+    {
+      "id": "G7",
+      "name": "G7 driver standalone",
+      "status": "NOT_RUN",
+      "acceptance": "Across band/hot samples: P1dB\u226527.2 dBm or recalculated gain/backoff gate; required output24.11 dBm at conservative15 dB PA gain has\u22653 dB compression reserve. Measure actual compression/spurs and source-drive adequacy. No reliance on bracketing typical data alone."
+    },
+    {
+      "id": "G8",
+      "name": "G8 PA/matching standalone",
+      "status": "NOT_RUN",
+      "acceptance": "No oscillation during biased/muted/drive/source/load sweeps. Establish\u22656.103 W capability before output-filter loss, or recompute for measured filter;\u22655.135 W connector capability. Record gain vs drain voltage, drive, temperature and mismatch. Native matching is EVAL TUNE."
+    },
+    {
+      "id": "G9",
+      "name": "G9 integrated trueAM",
+      "status": "NOT_RUN",
+      "acceptance": "At full sizing plane,1.259 W carrier/4.079 W PEP at80% is an investigation target; actual operatingERP guarded by measured antenna/uncertainty. Depth70\u201380%, initial envelopeTHD\u22645%, sideband symmetry\u22641 dB; no flattened crests or unacceptable AM-to-PM. Measure carrier-only and all PWM/tone profiles."
+    },
+    {
+      "id": "G10",
+      "name": "G10 spectrum/shaping",
+      "status": "NOT_RUN",
+      "acceptance": "National mask must be selected before compliance claim. Provisional internal harmonic/spur objective\u2264\u221260 dBc; close-in products recorded separately. No unapproved keying bursts, PWM sidebands or retune chirp. Reference analyzer dynamic range and attenuation."
+    },
+    {
+      "id": "G11",
+      "name": "G11 thermal/mismatch",
+      "status": "NOT_RUN",
+      "acceptance": "PA/pass/helper estimated junction\u2264125\u00b0C design gate and within exact SOA; no driver ground lead above95\u00b0C. MOSFET drain waveform\u226432 V engineering ceiling, never40 V absmax. Current/thermal trip deterministic, no automatic rearm. Mechanically intact thermal contact verified."
+    },
+    {
+      "id": "G12",
+      "name": "G12 training",
+      "status": "NOT_RUN",
+      "acceptance": "Calibrate nominal1 \u00b5W carrier, optional1\u201310 \u00b5W pads; record PEP/mean/depth and emission spectrum. Unarmed/between-slot output target<0.1 \u00b5W and<\u221260 dBc where measurement permits; this finite threshold is not an IARU exemption. Correct keyed sine waveform."
+    },
+    {
+      "id": "G13",
+      "name": "G13 port isolation/faults",
+      "status": "NOT_RUN",
+      "acceptance": "No conductive watt path; off-port measured below the agreed training ceiling, no damaging power. Initialnormal-to-training isolation target\u226580 dB and off-slot silence test with sensitive receiver. PCB/antenna coupling cannot be proven by Boolean or netlist tests."
+    },
+    {
+      "id": "G14",
+      "name": "G14 endurance/system",
+      "status": "NOT_RUN",
+      "acceptance": "\u226512 h selected maximum and\u226524 h selected reduced setting still meeting ERP minimum/modulation; no automatic power reduction. Log every rail/current/temperature and full4S accessible energy. Beacons tested against a separate duration requirement."
+    },
+    {
+      "id": "G15",
+      "name": "G15 radiated field/legal",
+      "status": "NOT_RUN",
+      "acceptance": "ERP uncertainty supports selected0.25\u20131 W interval; no off-slot antenna radiation; country/profile permission valid; correct>200 kHz simultaneous separation. Training field criteria recorded separately."
+    }
+  ]
+}

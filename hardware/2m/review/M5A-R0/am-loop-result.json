@@ -1,0 +1,18 @@
+{
+  "classification": "SIMULATION ideal one-pole opamp/transconductance plant, not vendor semiconductor model or hardware",
+  "mean_v": 6.66652291673483,
+  "min_v": 1.5776941335199999,
+  "max_v": 11.755351688400001,
+  "depth": 0.7633407768049196,
+  "fundamental": 5.088833470699893,
+  "thd_h2_h8": 3.196272489013072e-10,
+  "ngspice": "42",
+  "plant_pass_beta_assumption": 50,
+  "driver_gm_a_per_v": 6.1,
+  "limitations": [
+    "No RF/nonlinear PD model",
+    "No BJT capacitance, beta rolloff, hot SOA or stored charge",
+    "No actual opamp output/load stability model",
+    "No analog startup/fault proof"
+  ]
+}
