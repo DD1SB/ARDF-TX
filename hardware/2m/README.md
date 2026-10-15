@@ -1,30 +1,13 @@
-# RF2M — M5A-R0 electrical evaluation candidate
+# RF2M — M5A-R1 electrical evaluation candidate
 
-**NOT RELEASED. No PCB, fabrication, purchasing, assembly or RF activation is authorized. All physical tests NOT_RUN.**
+**NOT RELEASED. No layout, purchasing, fabrication, assembly or RF operation.**
 
-Open [RF2M.kicad_pro](RF2M.kicad_pro) in KiCad10. The [complete schematic PDF](review/M5A-R0/RF2M.pdf) and [review decision](../../docs/M5_2M_REVIEW_DECISION.md) explain open RF, power and package conditions. RF80/M4A files are unchanged.
+The existing [editable project](RF2M.kicad_pro) now contains the PD54008L-E/PHA-1+ evaluation candidate, revised true-AM supply, unchanged hardware fail-off and independent training branch. Read the [R1 decision](../../docs/M5A_R1_REVIEW_DECISION.md) and [schematic PDF](review/M5A-R1/RF2M.pdf).
 
-Implemented: local Si5351, filtered single-MMIC drive, PD55008-E final, ST D45H11/BD139 series sine AM, exclusive2S-boost/4S-buck supply populations, captured hardware ARM/lease/fault gating, separate3.3 V-onlyµW training branch. No local MCU/RTC or RF power detector. Functional RF terminal symbols and empty critical footprints are deliberately OPEN, not fake qualified land patterns.
+**Coupon layout is NO-GO:** the original ST matching drawings and final-device physical landing remain OPEN. The schematic deliberately exposes those gaps. ERC and digital tests do not qualify RF, thermal, analog startup or package geometry.
 
-The default schematic population is full2S. The [itemized variant BOM](review/M5A-R0/RF2M_BOM.csv) governs BOOST2S,BUCK4S andTRAIN_ONLY. Population fields and R101/R807/R809 substitutions must be honored. TRAIN_ONLY fits R517/R518/R519 and omits U207/C208 and all normal power parts. These are assembly definitions, not evidence that an assembled variant works.
+R0 remains at Git tag `m5a-r0` / commit `ea671c1`, in [native archive](archive/M5A-R0/) and [historical review package](review/M5A-R0/). R0 documents describe that revision; the active native project is R1. Use the R1 tools in [reproduction instructions](review/M5A-R1/README.md); running R0 generators against the current tree would overwrite R1.
 
-Reproduce from repository root, using the actual tools installed here:
+[Variant BOM](review/M5A-R1/RF2M_BOM.csv) covers BOOST2S, BUCK4S and TRAIN_ONLY. Only one converter population is fitted. Normal MODULE_ID values are 12.1 kΩ / 27.4 kΩ; training remains 47 kΩ. Training omits normal power components and fits its documented health/input terminations. Calibration, exact parts and physical variant operation remain unqualified.
 
-```sh
-/usr/bin/python3 tools/m5_freeze.py
-/usr/bin/python3 tools/m5_2m_design.py
-kicad-cli sch export netlist --format kicadxml --output hardware/2m/review/M5A-R0/RF2M.net.xml hardware/2m/RF2M.kicad_sch
-kicad-cli sch erc --format json --output hardware/2m/review/M5A-R0/erc.json hardware/2m/RF2M.kicad_sch
-kicad-cli sch export pdf --output hardware/2m/review/M5A-R0/RF2M.pdf hardware/2m/RF2M.kicad_sch
-/usr/bin/python3 tools/m5_2m_verify.py
-/usr/bin/python3 tools/m5_2m_analysis.py
-/usr/bin/python3 tools/m5_2m_costs.py
-/usr/bin/python3 tools/m5_2m_document_tables.py
-ngspice -b analysis/m5_2m/am_loop_behavioral.cir
-/usr/bin/python3 tools/m5_2m_sim_report.py
-/usr/bin/python3 tools/m5_2m_finish.py
-```
-
-The generator rebuilds native schematic/library/manifest files; preserve reviewer edits before regeneration. The default ngspice deck writes only the stated analysis output. Never regenerate RF80 to update this project. The final finish script checks documents and artifacts; it does not qualify hardware or create a PCB.
-
-KiCad library material is copied/flattened from the installed official libraries, including explicit manufacturer-specific pin remaps. See the supplied [KiCad library CC-BY-SA4.0 license and design exception](LICENSE-KICAD-SYMBOLS.md). The new circuit/analysis is project-authored, with primary reference attribution in [M5 sources](../../docs/M5_2M_SOURCES.md). No proprietary third-party schematic/PCB, firmware or PDF was copied into this project. Empty footprints have not been filled with unverified substitute package geometry.
+RF80/M4A and accepted architecture files are unchanged. No additional MCU or primary PCB is introduced. Local symbols retain the supplied [KiCad library license/design exception](LICENSE-KICAD-SYMBOLS.md). ST references are attributed in the [source audit](../../docs/M5A_R1_ST_REFERENCE_AUDIT.md); unread proprietary artwork is not copied or represented as inspected.

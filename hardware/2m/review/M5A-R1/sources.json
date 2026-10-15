@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "id": "ST_BOARD",
+      "url": "https://www.st.com/en/evaluation-tools/steval-tdr003v1.html",
+      "status": "PRIMARY_TEXT_RETRIEVED",
+      "revision": "NRND page, historical reference",
+      "scope": "Original complete board claims, not derivative"
+    },
+    {
+      "id": "ST_DS",
+      "url": "https://www.st.com.cn/resource/en/datasheet/steval-tdr003v1.pdf",
+      "status": "TEXT_TABLES_ONLY_IMAGES_NOT_INSPECTED",
+      "revision": "DocID17343Rev1 31Mar2010",
+      "scope": "Figures12-20 OPEN"
+    },
+    {
+      "id": "ST_SCHEMATIC",
+      "url": "https://www.st.com/resource/en/schematic_pack/steval-tdr003v1_schematic.pdf",
+      "status": "BINARY_UNAVAILABLE_RASTER_NOT_INSPECTED",
+      "scope": "HTTP2/403/timeouts; approved retries also failed"
+    },
+    {
+      "id": "ST_BOM",
+      "url": "https://www.st.com/resource/en/bill_of_materials/steval-tdr003v1_bom.pdf",
+      "status": "TEXT_RETRIEVED",
+      "scope": "PD54003L code conflict; not a netlist"
+    },
+    {
+      "id": "ST_GERBER",
+      "url": "https://www.st.com/resource/en/board_manufacturing_specification/steval-tdr003v1_gerber.zip",
+      "status": "LINK_FOUND_BINARY_NOT_RETRIEVED",
+      "scope": "No original Gerber geometry inspected or copied"
+    },
+    {
+      "id": "PD54008_DS",
+      "url": "https://www.st.com/resource/en/datasheet/pd54008l-e.pdf",
+      "status": "TEXT_RETRIEVED_PIN_IMAGE_OPEN",
+      "revision": "Jan2007Rev2",
+      "scope": "No numeric PowerFLAT map fabricated"
+    },
+    {
+      "id": "PHA1",
+      "url": "https://www.minicircuits.com/pdfs/PHA-1%2B.pdf",
+      "status": "PRIMARY_SEARCHABLE_TEXT_DIRECT_BINARY403",
+      "scope": "5Vcurrent/P1dB tables;144MHz compression and landing OPEN"
+    },
+    {
+      "id": "TLV761",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv761.pdf",
+      "status": "PRIMARY_TEXT_RETRIEVED",
+      "revision": "SBVS349DMay2025",
+      "scope": "DCYpin1GND2OUT/tab3IN,voltage/capacitance/ESR/reverse-current/thermal data"
+    },
+    {
+      "id": "IARU",
+      "url": "https://www.iaru-r1.org/wp-content/uploads/2025/01/ARDF-Rules_B_2025.pdf",
+      "status": "PRIMARY_TEXT_RETRIEVED",
+      "scope": "T2.8 event requirements, not legal authorization"
+    },
+    {
+      "id": "FUSE466",
+      "url": "https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f",
+      "revision": "GD21Jun2023",
+      "status": "PRIMARY_TEXT_RETRIEVED",
+      "scope": "4A32V50Ainterrupt1206 candidate; stock/quote/land and actual battery interruption coordination OPEN"
+    }
+  ],
+  "third_party_license": "Original documents linked/attributed; no relicensing or unread artwork claimed."
+}

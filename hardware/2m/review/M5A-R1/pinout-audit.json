@@ -1,0 +1,516 @@
+{
+  "date": "2026-10-15",
+  "scope": "Schematic only. No PCB or qualified footprint geometry implied.",
+  "physical_release": "BLOCKED",
+  "blocking_open": [
+    "Q501 numeric physical G/D/S pad mapping and source thermal landing",
+    "U501 DF782/PL523 landing",
+    "U302 RNW footprint",
+    "C409 exact MPN/package/ESR",
+    "J301/J701 exact mating geometry"
+  ],
+  "devices": [
+    {
+      "ref": "U101",
+      "mpn": "TPS22919DCKR",
+      "source": "TI TPS22919 SLVSEN5B p3",
+      "pins": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "SRC_ON",
+        "4": null,
+        "5": "VCLK",
+        "6": "VCLK"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+    },
+    {
+      "ref": "U102",
+      "mpn": "SN74LVC2G66DCUR",
+      "source": "TI SN74LVC2G66 SCES325N p3",
+      "pins": {
+        "1": "I2C_SCL",
+        "2": "SCL_CLK",
+        "3": "SRC_ON",
+        "4": "GND",
+        "5": "I2C_SDA",
+        "6": "SDA_CLK",
+        "7": "SRC_ON",
+        "8": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
+    },
+    {
+      "ref": "U103",
+      "mpn": "Si5351A-B-GT",
+      "source": "Skyworks Si5351-B Rev1.3 table20",
+      "pins": {
+        "1": "VCLK",
+        "2": "XTAL1",
+        "3": "XTAL2",
+        "4": "SCL_CLK",
+        "5": "SDA_CLK",
+        "6": "CLK_TRAIN",
+        "7": "VCLK",
+        "8": "GND",
+        "9": null,
+        "10": "CLK_NORMAL"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm"
+    },
+    {
+      "ref": "U201",
+      "mpn": "TPS3431SDRBR",
+      "source": "TI TPS3431 SNVSB66A table5-1",
+      "pins": {
+        "1": "V3V3",
+        "2": "CWD",
+        "3": "V3V3",
+        "4": "GND",
+        "5": "V3V3",
+        "6": "PROGRESS",
+        "7": "SAFE_N",
+        "8": "SAFE_N",
+        "9": "GND"
+      },
+      "status": "NUMERIC_VERIFIED_PAD_GEOMETRY_OPEN",
+      "footprint": "Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm"
+    },
+    {
+      "ref": "U202",
+      "mpn": "74HC174D,653",
+      "source": "Nexperia 74HC174 pin configuration",
+      "pins": {
+        "1": "CLR_N",
+        "2": "VALID_ARM",
+        "3": "ARM_CONTEXT",
+        "4": "PATH_TRAIN",
+        "5": "PATH_Q",
+        "6": "PROFILE_FULL",
+        "7": "PROFILE_Q",
+        "8": "GND",
+        "9": "ARM",
+        "10": null,
+        "11": "GND",
+        "12": null,
+        "13": "GND",
+        "14": "GND",
+        "15": null,
+        "16": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+    },
+    {
+      "ref": "U304",
+      "mpn": "SN74LVC2G08DCUR",
+      "source": "TI SN74LVC2G08 SCES198N DCU",
+      "pins": {
+        "1": "CONV_EN",
+        "2": "PACK_OK_N",
+        "3": "RAIL_RUN",
+        "4": "GND",
+        "5": "CONV_EN",
+        "6": "HARD_OK_N",
+        "7": "PACK_RUN",
+        "8": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
+    },
+    {
+      "ref": "U209",
+      "mpn": "SN74LVC2G08DCUR",
+      "source": "TI SN74LVC2G08 SCES198 DBV/DCU pin table",
+      "pins": {
+        "1": "NORMAL_RAW",
+        "2": "CLEAR_A",
+        "3": "TRAIN_PERMIT",
+        "4": "GND",
+        "5": "TRAIN_RAW",
+        "6": "CLEAR_A",
+        "7": "NORMAL_PERMIT",
+        "8": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
+    },
+    {
+      "ref": "U208",
+      "mpn": "TLV803EA29DBZR",
+      "source": "TI TLV803E SLVSES2J table6-1 standard DBZ, no V/R pinout suffix",
+      "pins": {
+        "1": "GND",
+        "2": "SAFE_N",
+        "3": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "U301",
+      "mpn": "TPS54302DDCR",
+      "source": "TI TPS54302 SLVSDG6C table4-1",
+      "pins": {
+        "1": "GND",
+        "2": "SW4S",
+        "3": "VIN_CONV",
+        "4": "FB4S",
+        "5": "CONV_EN",
+        "6": "BOOT4S"
+      },
+      "status": "NUMERIC_VERIFIED_GEOMETRY_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+    },
+    {
+      "ref": "U302",
+      "mpn": "TPS611781RNWR",
+      "source": "TI TPS61178 SLVSDA7E table6 pin functions",
+      "pins": {
+        "1": "BOOST_FREQ",
+        "2": "GND",
+        "3": "BOOST_ILIM",
+        "4": "BOOST_COMP",
+        "5": "BOOST_FB",
+        "6": "GND",
+        "7": "BOOST_SW",
+        "8": "VBOOST",
+        "9": null,
+        "10": "BOOST_VCC",
+        "11": "CONV_EN",
+        "12": "VIN_CONV",
+        "13": "BOOST_BST"
+      },
+      "status": "NUMERIC_VERIFIED_FOOTPRINT_OPEN",
+      "footprint": ""
+    },
+    {
+      "ref": "U303",
+      "mpn": "TLV76150DCYR",
+      "source": "TI TLV761 SBVS349D May2025 table4-1 DCY1GND2OUT/TAB3IN",
+      "pins": {
+        "1": "GND",
+        "2": "VDRV_FILTER",
+        "3": "VDRV_LDO_IN"
+      },
+      "status": "NUMERIC_VERIFIED_LANDING_THERMAL_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+    },
+    {
+      "ref": "U401",
+      "mpn": "TLV9004IDR",
+      "source": "TI TLV9004 SBOS833R table6-5 SOIC14",
+      "pins": {
+        "1": "LEVEL_DC",
+        "2": "LEVEL_DC",
+        "3": "LEVEL_F2",
+        "4": "V3V3",
+        "5": "AF_F2",
+        "6": "AF_DC",
+        "7": "AF_DC",
+        "8": "MOD_DRIVE",
+        "9": "VPA_FB",
+        "10": "MOD_COMMAND",
+        "11": "GND",
+        "12": "TRAIN_COMMAND",
+        "13": "TRAIN_EMITTER_DC",
+        "14": "TRAIN_BASE_DRIVE"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    {
+      "ref": "U402",
+      "mpn": "SN74LVC1G3157DBVR",
+      "source": "TI SN74LVC1G3157 SCES424O table4-1 DBV",
+      "pins": {
+        "1": "AF_DC",
+        "2": "GND",
+        "3": "LEVEL_DC",
+        "4": "AM_COMMAND",
+        "5": "V3V3",
+        "6": "KEY"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "ref": "U501",
+      "mpn": "PHA-1+",
+      "source": "Mini-Circuits PHA-1+ RevE M151107150924 p2; PL523 landing OPEN",
+      "pins": {
+        "1": "DRIVER_IN",
+        "2": "GND",
+        "3": "MMIC_RF_DC",
+        "4": "GND"
+      },
+      "status": "NUMERIC_VERIFIED_FOOTPRINT_OPEN",
+      "footprint": ""
+    },
+    {
+      "ref": "Q501",
+      "mpn": "PD54008L-E",
+      "source": "ST PD54008L-E January2007Rev2; functional-only G/S/D; numeric package map NOT_VERIFIED",
+      "pins": {
+        "G": "PA_GATE",
+        "D": "PA_DRAIN",
+        "S": "GND"
+      },
+      "status": "FUNCTIONAL_ONLY_NUMERIC_FOOTPRINT_OPEN",
+      "footprint": ""
+    },
+    {
+      "ref": "Q401",
+      "mpn": "D45H11",
+      "source": "ST D45H11 DocID4213 Rev5 Figure1 B1 C2/TAB E3",
+      "pins": {
+        "1": "PASS_BASE",
+        "2": "VPA",
+        "3": "VMOD"
+      },
+      "status": "NUMERIC_VERIFIED_TAB_LIVE",
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical"
+    },
+    {
+      "ref": "Q402",
+      "mpn": "BD139",
+      "source": "ST BD139/140 May2008 Rev5 Figure1 B1 C2 E3",
+      "pins": {
+        "1": "MOD_BASE",
+        "2": "MOD_SINK",
+        "3": "MOD_E"
+      },
+      "status": "NUMERIC_VERIFIED_ASSEMBLY_CONSTRAINT",
+      "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical"
+    },
+    {
+      "ref": "U701",
+      "mpn": "SN74LVC1G125DBVR",
+      "source": "TI SN74LVC1G125 SCES223U DBV pin functions",
+      "pins": {
+        "1": "TRAIN_OFF",
+        "2": "CLK_TRAIN",
+        "3": "GND",
+        "4": "TRAIN_CLOCK_BUF",
+        "5": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    {
+      "ref": "Q701",
+      "mpn": "MMBTH10LT1G",
+      "source": "onsemi MMBTH10LT1/D CASE318 STYLE6",
+      "pins": {
+        "1": "TRAIN_BASE",
+        "2": "TRAIN_EMITTER",
+        "3": "TRAIN_COLLECTOR"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "U801",
+      "mpn": "TL431BIDBZR",
+      "source": "TI TL431 DBZ SLVS543 manufacturer-specific1K2REF3A",
+      "pins": {
+        "1": "VREF2V5",
+        "2": "VREF2V5",
+        "3": "GND"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "U804",
+      "mpn": "INA180A1IDBVR",
+      "source": "TI INA180A1 SBOS741H DBV1OUT2GND3IN+4IN-5VS",
+      "pins": {
+        "1": "ISENSE",
+        "2": "GND",
+        "3": "VREG_SWITCH",
+        "4": "VMOD",
+        "5": "V3V3"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    {
+      "ref": "Q309",
+      "mpn": "AO3401A",
+      "source": "AOS AO3401A SOT23 1G2S3D, reverse blocking body diode D->S",
+      "pins": {
+        "1": "REVERSE_GATE",
+        "2": "VIN_PROT",
+        "3": "BAT_FUSED"
+      },
+      "status": "NUMERIC_MAPPING_ASSEMBLY_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "Q302",
+      "mpn": "AO3401A",
+      "source": "AOS AO3401A SOT23 1G2S3D",
+      "pins": {
+        "1": "REG_GATE",
+        "2": "VREG_RAW",
+        "3": "VREG_SWITCH"
+      },
+      "status": "NUMERIC_MAPPING_ASSEMBLY_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "Q304",
+      "mpn": "AO3401A",
+      "source": "AOS AO3401A SOT23 1G2S3D",
+      "pins": {
+        "1": "DRV_GATE",
+        "2": "VDRV_FILTER",
+        "3": "VDRV_RF"
+      },
+      "status": "NUMERIC_MAPPING_ASSEMBLY_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "Q305",
+      "mpn": "AO3401A",
+      "source": "AOS AO3401A SOT23 1G2S3D",
+      "pins": {
+        "1": "INPUT_GATE",
+        "2": "VIN_PROT",
+        "3": "VIN_CONV"
+      },
+      "status": "NUMERIC_MAPPING_ASSEMBLY_OPEN",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "D302",
+      "mpn": "SMBJ18A-E3/52",
+      "source": "Vishay SMBJ18A cathode stripe, positive clamp",
+      "pins": {
+        "1": "VIN_PROT",
+        "2": "GND"
+      },
+      "status": "POLARITY_VERIFIED",
+      "footprint": "Diode_SMD:D_SMB"
+    },
+    {
+      "ref": "D304",
+      "mpn": "BZT52H-C10,115",
+      "source": "Nexperia BZT52H-C10 K1 A2 SOD123F",
+      "pins": {
+        "1": "VREG_RAW",
+        "2": "REG_GATE"
+      },
+      "status": "POLARITY_VERIFIED",
+      "footprint": "Diode_SMD:D_SOD-123F"
+    },
+    {
+      "ref": "F301",
+      "mpn": "0466004.NRHF",
+      "source": "Littelfuse466 RevGD21Jun2023 nonpolar series fuse;4A32V50Ainterrupt rating",
+      "pins": {
+        "1": "BAT_RAW",
+        "2": "BAT_FUSED"
+      },
+      "status": "NONPOLAR_CONTINUITY_VERIFIED_INTERRUPTION_AND_LANDING_OPEN",
+      "footprint": "Fuse:Fuse_1206_3216Metric"
+    },
+    {
+      "ref": "U802",
+      "mpn": "LM339BDR",
+      "source": "TI LM339B SOIC14 pin functions",
+      "pins": {
+        "1": "PACK_OK_N",
+        "2": "PACK_OK_N",
+        "3": "V3V3",
+        "4": "UV_REF",
+        "5": "VBAT_S",
+        "6": "VBAT_S",
+        "7": "OV_REF",
+        "8": "DRV_S",
+        "9": "DRV_OV_REF",
+        "10": "VREG_S",
+        "11": "REG_OV_REF",
+        "12": "GND",
+        "13": "HARD_OK_N",
+        "14": "HARD_OK_N"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    {
+      "ref": "U803",
+      "mpn": "LM339BDR",
+      "source": "TI LM339B SOIC14 pin functions",
+      "pins": {
+        "1": "HARD_OK_N",
+        "2": "HARD_OK_N",
+        "3": "V3V3",
+        "4": "ISENSE_F",
+        "5": "VREF1V0",
+        "6": "TEMP_LOW",
+        "7": "TEMP_S",
+        "8": "VPA_S",
+        "9": "VPA_OV_REF",
+        "10": "TEMP_S",
+        "11": "TEMP_HIGH",
+        "12": "GND",
+        "13": "HARD_OK_N",
+        "14": "HARD_OK_N"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    {
+      "ref": "Q403",
+      "mpn": "MMBT3904,215",
+      "source": "Nexperia MMBT3904 SOT23 1B2E3C",
+      "pins": {
+        "1": "MOD_E",
+        "2": "GND",
+        "3": "MOD_BASE"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "Q308",
+      "mpn": "MMBT3904,215",
+      "source": "Nexperia MMBT3904 SOT23 1B2E3C",
+      "pins": {
+        "1": "DRV_ENABLE_BASE",
+        "2": "GND",
+        "3": "DRV_SINK"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "Q307",
+      "mpn": "2N7002,215",
+      "source": "Nexperia2N7002 SOT23 1G2S3D",
+      "pins": {
+        "1": "PROFILE_Q",
+        "2": "GND",
+        "3": "BOOST_FB_SWITCH"
+      },
+      "status": "NUMERIC_VERIFIED",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "D308",
+      "mpn": "BZT52H-C10,115",
+      "source": "Nexperia BZT52H source/cathode gate/anode",
+      "pins": {
+        "1": "VDRV_FILTER",
+        "2": "DRV_GATE"
+      },
+      "status": "POLARITY_VERIFIED",
+      "footprint": "Diode_SMD:D_SOD-123F"
+    }
+  ]
+}
