@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "revision": "M5A-R1",
+  "revision": "M5A-R3",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -48,12 +48,12 @@
     {
       "ref": "R101",
       "sheet": "01_interface_source",
-      "value": "12.1k",
-      "mpn": "RC0603FR-0712K1L",
+      "value": "15k",
+      "mpn": "RC0603FR-0715KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "interface",
       "population": "ALL",
-      "note": "",
+      "note": "R3 distinct passive ID:15k2S,33.2k4S,75ktraining. Do not arm using old R1ID/calibration; R3 normal clock is half the RF. Controller ADC windows/tolerances remain to qualify.",
       "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -69,8 +69,8 @@
         "2": "GND"
       },
       "variant_values": {
-        "BUCK4S": "27.4k",
-        "TRAIN_ONLY": "47k"
+        "BUCK4S": "33.2k",
+        "TRAIN_ONLY": "75k"
       }
     },
     {
@@ -451,7 +451,7 @@
       "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
       "group": "source",
       "population": "ALL",
-      "note": "Divide-by-6 MS0 and MS2, shared PLL 6*f; CLK1 disabled. Internal crystal load selected/calibrated. Initial/temp/aging total gate <50ppm.",
+      "note": "R3: PLL_A=6*desired RF; MS0=12 -> RF/2 for retained DL3BBX T3 doubler. MS2=6 -> RF for training. CLK1 disabled. Source purity and doubler drive NOT_MEASURED.",
       "source_url": "https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -793,7 +793,7 @@
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "interlock",
       "population": "ALL",
-      "note": "3.3 V CMOS. Each physical package counted once; every unused input tied.",
+      "note": "Last Schmitt inverter receives RC-delayed normal permission: delayed RF-clock start, diode-accelerated withdrawal. Other five gates unchanged. RC timing is not hardware-qualified.",
       "source_url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -815,7 +815,7 @@
         "8": "ARM_DELAY_N",
         "11": "ARM_DELAY_N",
         "10": "ARM_DELAY",
-        "13": "NORMAL_PERMIT",
+        "13": "NORMAL_RC",
         "12": "NORMAL_OFF",
         "7": "GND",
         "14": "V3V3"
@@ -931,7 +931,7 @@
     },
     {
       "ref": "U207",
-      "sheet": "02_interlocks",
+      "sheet": "02_interlocksb1",
       "value": "74HC32D,653",
       "mpn": "74HC32D,653",
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
@@ -1453,7 +1453,7 @@
       "footprint": "Fuse:Fuse_1206_3216Metric",
       "group": "input",
       "population": "NORMAL",
-      "note": "Littelfuse466series32VAC/DC50Ainterrupt,1206,4A code004. Candidate selected from manufacturer2023table; stock/price/landing and prospective fault-current coordination OPEN. Old2A lacks low-battery transmit-slot margin.0.50EUR ESTIMATE, not quote. Local1.8A PA trip retained; fuse is wiring/secondary fault protection, not PA current control.",
+      "note": "Wiring/secondary protection only; 4A fuse does not protect the RF final at0.6A. INA180/comparator trip is separate. Exact battery prospective fault coordination OPEN.",
       "source_url": "https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -1792,7 +1792,7 @@
       "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
       "group": "supply_isolation",
       "population": "NORMAL",
-      "note": "Direct comparator logic-low to defined NPN-base low; replaces diode clamps whose residual VBE was not guaranteed off at temperature.",
+      "note": "R3: physical5/6->3 RAIL_RUN requires NORMAL_PERMIT and HARD_OK_N. Physical1/2->7 PACK_RUN still CONV_EN and PACK_OK_N. Source blanking plus drain isolation addresses original self-oscillation warning.",
       "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g08.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -1808,7 +1808,7 @@
         "2": "PACK_OK_N",
         "3": "RAIL_RUN",
         "4": "GND",
-        "5": "CONV_EN",
+        "5": "NORMAL_PERMIT",
         "6": "HARD_OK_N",
         "7": "PACK_RUN",
         "8": "V3V3"
@@ -1990,12 +1990,12 @@
     {
       "ref": "R301",
       "sheet": "03_input_power",
-      "value": "116k",
-      "mpn": "RC0603FR-07116KL",
+      "value": "171k",
+      "mpn": "RC0603FR-07171KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "converter",
       "population": "BUCK4S",
-      "note": "",
+      "note": "Buck reduced10.7876V nominal. Full PROFILE_Q shunts34k into feedback bottom ->13.7851V. 4S full requires adequate battery headroom; controller must refuse SLOT on low rail.",
       "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2038,8 +2038,8 @@
     {
       "ref": "R303",
       "sheet": "03_input_power",
-      "value": "27.8k",
-      "mpn": "RC0603FR-0727K8L",
+      "value": "34k",
+      "mpn": "RC0603FR-0734KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "converter",
       "population": "BUCK4S",
@@ -2286,7 +2286,7 @@
       "footprint": "Resistor_SMD:R_2512_6332Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": "",
+      "note": "0.1ohm high-side normal-rail sense. Approx0.6A trip. Exact resistor MPN/Kelvin landing and fault latency remain OPEN.",
       "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2305,19 +2305,19 @@
     {
       "ref": "C306",
       "sheet": "03_input_powerb1",
-      "value": "22u",
-      "mpn": "GRM32ER71E226KE15L",
-      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "value": "1u",
+      "mpn": "CC0805KKX7R9BB105",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "group": "power",
       "population": "NORMAL",
-      "note": "",
+      "note": "R3 switched-rail local1uF; original470uF bulk is upstream of isolation/sense. Effective DC-bias capacitance and inrush require measurement.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
       "availability": "Not independently basket-confirmed",
       "evidence": "ESTIMATE",
       "price_breaks_eur": {
-        "1": 0.28
+        "1": 0.08
       },
       "moq": 1,
       "multiple": 1,
@@ -2421,7 +2421,7 @@
     },
     {
       "ref": "U302",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "TPS611781RNWR",
       "mpn": "TPS611781RNWR",
       "footprint": "",
@@ -2456,7 +2456,7 @@
     },
     {
       "ref": "L302",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "4.7u",
       "mpn": "OPEN: shielded power inductor 4.7u",
       "footprint": "Inductor_SMD:L_Bourns_SRR1260",
@@ -2480,7 +2480,7 @@
     },
     {
       "ref": "C401",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "100n",
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -2504,7 +2504,7 @@
     },
     {
       "ref": "C402",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "4.7u",
       "mpn": "GRM31CR71E475KA88L",
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
@@ -2528,7 +2528,7 @@
     },
     {
       "ref": "C403",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "22u",
       "mpn": "GRM32ER71E226KE15L",
       "footprint": "Capacitor_SMD:C_1210_3225Metric",
@@ -2552,7 +2552,7 @@
     },
     {
       "ref": "C404",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "22u",
       "mpn": "GRM32ER71E226KE15L",
       "footprint": "Capacitor_SMD:C_1210_3225Metric",
@@ -2576,13 +2576,13 @@
     },
     {
       "ref": "R401",
-      "sheet": "04_boost_driver_supply",
-      "value": "510k",
-      "mpn": "RC0603FR-07510KL",
+      "sheet": "04_boost",
+      "value": "787k",
+      "mpn": "RC0603FR-07787KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "converter",
       "population": "BOOST2S",
-      "note": "",
+      "note": "Boost reduced10.90123V nominal. PROFILE_Q332k shunt ->13.8145V. No assumption that RF power scales linearly with rail.",
       "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -2600,7 +2600,7 @@
     },
     {
       "ref": "R402",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "100k",
       "mpn": "RC0603FR-07100KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -2624,9 +2624,9 @@
     },
     {
       "ref": "R414",
-      "sheet": "04_boost_driver_supply",
-      "value": "250k",
-      "mpn": "RC0603FR-07250KL",
+      "sheet": "04_boost",
+      "value": "332k",
+      "mpn": "RC0603FR-07332KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "converter",
       "population": "BOOST2S",
@@ -2648,7 +2648,7 @@
     },
     {
       "ref": "Q307",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "2N7002",
       "mpn": "2N7002,215",
       "footprint": "Package_TO_SOT_SMD:SOT-23",
@@ -2673,7 +2673,7 @@
     },
     {
       "ref": "R403",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "150k",
       "mpn": "RC0603FR-07150KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -2697,7 +2697,7 @@
     },
     {
       "ref": "R404",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "340k",
       "mpn": "RC0603FR-07340KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -2721,7 +2721,7 @@
     },
     {
       "ref": "R405",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -2745,7 +2745,7 @@
     },
     {
       "ref": "C405",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "4.7n",
       "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -2769,7 +2769,7 @@
     },
     {
       "ref": "C406",
-      "sheet": "04_boost_driver_supply",
+      "sheet": "04_boost",
       "value": "100p",
       "mpn": "OPEN: 0603 C0G50V 100p",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -2792,354 +2792,14 @@
       }
     },
     {
-      "ref": "R413",
-      "sheet": "04_boost_driver_supply",
-      "value": "2.2",
-      "mpn": "OPEN2.2ohm1%0.5W",
-      "footprint": "Resistor_SMD:R_1206_3216Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "Input damping before LDO. At180mA0.071W; fault-pulse rating and<=20us external disconnect qualification required.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.08
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VMOD",
-        "2": "VDRV_LDO_IN"
-      }
-    },
-    {
-      "ref": "C407",
-      "sheet": "04_boost_driver_supply",
-      "value": "1u",
-      "mpn": "CC0805KKX7R9BB105",
-      "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "Effective>=1uF at10.5V input; choose25V X7R with DC-bias qualification.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_LDO_IN",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "U303",
-      "sheet": "04_boost_driver_supply",
-      "value": "TLV76150DCYR",
-      "mpn": "TLV76150DCYR",
-      "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "SBVS349D May2025 DCY1GND2OUT/tab3IN.18V recommended20V absolute. Fixed5V +/-1.75% full temperature. Require thermal path<=80C/W at180mA/10.5V upstream. Mating manufacturer landing dimensions OPEN before layout. Replaces second buck and magnetics.",
-      "source_url": "https://www.ti.com/lit/ds/symlink/tlv761.pdf",
-      "supplier": "DigiKey DE indexed EUR net",
-      "supplier_part_number": "296-TLV76150DCYRCT-ND",
-      "availability": "8483 indexed;CT MOQ1;EUR0.47/0.334 at1/10;2026-10-15 observation, no reservation",
-      "evidence": "OBSERVED_EUR_NET",
-      "price_breaks_eur": {
-        "1": 0.47,
-        "10": 0.334,
-        "25": 0.2988
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "GND",
-        "2": "VDRV_FILTER",
-        "3": "VDRV_LDO_IN"
-      }
-    },
-    {
-      "ref": "C409",
-      "sheet": "04_boost_driver_supply",
-      "value": "150u",
-      "mpn": "OPEN150uF25V ESR<=0.1ohm min120uF",
-      "footprint": "",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "Exact package/MPN OPEN. LDO recommended1-220uF capacitance and ESR2-500mohm: require120-180uF, ESR2-100mohm. Conditional LDO-short fault:initial5.0875V,step10.5V,Rmin2.178ohm,Cmin120uF,ESRmax0.1ohm,disconnect<=20us. Measure Vdriver<=5.9V; no simulated hardware guarantee.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.45
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_FILTER",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "D309",
-      "sheet": "04_boost_driver_supply",
-      "value": "SS14 LDO reverse discharge",
-      "mpn": "SS14-E3/61T",
-      "footprint": "Diode_SMD:D_SMA",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "Cathode1 at IN, anode2 at OUT; external bypass per TLV761 section7.1.3. Exact suffix/package/surge confirmation OPEN. Limits reverse-current stress during reservoir discharge, not an OV clamp; measure reverse transient.",
-      "source_url": "https://www.vishay.com/docs/88746/ss12.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.18
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_LDO_IN",
-        "2": "VDRV_FILTER"
-      }
-    },
-    {
-      "ref": "Q304",
-      "sheet": "04_boost_driver_supply",
-      "value": "AO3401A",
-      "mpn": "AO3401A",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "AO3401A -30V, +/-12VGS; clamp required. Exact manufacturer/suffix before ordering.",
-      "source_url": "https://www.aosmd.com/res/data_sheets/AO3401A.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.18
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_GATE",
-        "2": "VDRV_FILTER",
-        "3": "VDRV_RF"
-      }
-    },
-    {
-      "ref": "R408",
-      "sheet": "04_boost_driver_supply",
-      "value": "4.7k",
-      "mpn": "RC0603FR-074K7L",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_GATE",
-        "2": "VDRV_FILTER"
-      }
-    },
-    {
-      "ref": "R409",
-      "sheet": "04_boost_driver_supply",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_GATE",
-        "2": "DRV_SINK"
-      }
-    },
-    {
-      "ref": "Q308",
-      "sheet": "04_boost_driver_supply",
-      "value": "MMBT3904,215",
-      "mpn": "MMBT3904,215",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.07
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_ENABLE_BASE",
-        "2": "GND",
-        "3": "DRV_SINK"
-      }
-    },
-    {
-      "ref": "R410",
-      "sheet": "04_boost_driver_supply",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "NORMAL_PERMIT",
-        "2": "DRV_ENABLE_BASE"
-      }
-    },
-    {
-      "ref": "R411",
-      "sheet": "04_boost_driver_supply",
-      "value": "100k",
-      "mpn": "RC0603FR-07100KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_ENABLE_BASE",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R412",
-      "sheet": "04_boost_driver_supply",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "TP401",
-      "sheet": "04_boost_driver_supply",
-      "value": "VDRV_RF",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF"
-      }
-    },
-    {
-      "ref": "D308",
-      "sheet": "04_boost_driver_supply",
-      "value": "10V driver-switch gate clamp",
-      "mpn": "BZT52H-C10,115",
-      "footprint": "Diode_SMD:D_SOD-123F",
-      "group": "driver_supply",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.05
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_FILTER",
-        "2": "DRV_GATE"
-      }
-    },
-    {
       "ref": "U401",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "TLV9004IDR",
       "mpn": "TLV9004IDR",
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "am",
       "population": "ALL",
-      "note": "RRIO1MHz3.3V; quad SOIC. Exact IDR orderable suffix verify. Loop compensation/load stability OPEN.",
+      "note": "A/B unity Sallen-Key PWM reconstruction; C unused follower at ground; D training emitter-current servo. NO high-power supply feedback op-amp in R3.",
       "source_url": "https://www.ti.com/lit/ds/symlink/tlv9004.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -3158,9 +2818,9 @@
         "5": "AF_F2",
         "6": "AF_DC",
         "7": "AF_DC",
-        "8": "MOD_DRIVE",
-        "9": "VPA_FB",
-        "10": "MOD_COMMAND",
+        "8": "UNUSED_OP_OUT",
+        "9": "UNUSED_OP_OUT",
+        "10": "GND",
         "11": "GND",
         "12": "TRAIN_COMMAND",
         "13": "TRAIN_EMITTER_DC",
@@ -3169,7 +2829,7 @@
     },
     {
       "ref": "R501",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3193,7 +2853,7 @@
     },
     {
       "ref": "R502",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3217,7 +2877,7 @@
     },
     {
       "ref": "C501",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "4.7n",
       "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3241,7 +2901,7 @@
     },
     {
       "ref": "C502",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "4.7n",
       "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3265,7 +2925,7 @@
     },
     {
       "ref": "R503",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3289,7 +2949,7 @@
     },
     {
       "ref": "R504",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3313,7 +2973,7 @@
     },
     {
       "ref": "C503",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "4.7n",
       "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3337,7 +2997,7 @@
     },
     {
       "ref": "C504",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "4.7n",
       "mpn": "CC0603JRNPO9BN472",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3361,7 +3021,7 @@
     },
     {
       "ref": "U402",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "SN74LVC1G3157DBVR",
       "mpn": "SN74LVC1G3157DBVR",
       "footprint": "Package_TO_SOT_SMD:SOT-23-6",
@@ -3388,469 +3048,8 @@
       }
     },
     {
-      "ref": "R516",
-      "sheet": "05_am",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "AM_COMMAND",
-        "2": "MOD_COMMAND"
-      }
-    },
-    {
-      "ref": "Q405",
-      "sheet": "05_am",
-      "value": "MMBT3904,215",
-      "mpn": "MMBT3904,215",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.07
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_OFF_BASE",
-        "2": "GND",
-        "3": "MOD_COMMAND"
-      }
-    },
-    {
-      "ref": "Q401",
-      "sheet": "05_am",
-      "value": "D45H11",
-      "mpn": "D45H11",
-      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.st.com/resource/en/datasheet/d45h11.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.95
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PASS_BASE",
-        "2": "VPA",
-        "3": "VMOD"
-      }
-    },
-    {
-      "ref": "R505",
-      "sheet": "05_am",
-      "value": "4.7k",
-      "mpn": "RC0603FR-074K7L",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PASS_BASE",
-        "2": "VMOD"
-      }
-    },
-    {
-      "ref": "R506",
-      "sheet": "05_am",
-      "value": "10",
-      "mpn": "OPEN10ohm1W2010",
-      "footprint": "Resistor_SMD:R_2010_5025Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "At73mA helper limit:0.053W.1W pulse allowance retained;10ohm instead100ohm restores low-voltage pass headroom. Hot beta/SOA remain OPEN.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PASS_BASE",
-        "2": "MOD_SINK"
-      }
-    },
-    {
-      "ref": "Q402",
-      "sheet": "05_am",
-      "value": "BD139",
-      "mpn": "BD139",
-      "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.st.com/resource/en/datasheet/bd139.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.34
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_BASE",
-        "2": "MOD_SINK",
-        "3": "MOD_E"
-      }
-    },
-    {
-      "ref": "R507",
-      "sheet": "05_am",
-      "value": "8.2",
-      "mpn": "RC0805FR-078R2L",
-      "footprint": "Resistor_SMD:R_0805_2012Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.035
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_E",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R508",
-      "sheet": "05_am",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_DRIVE",
-        "2": "MOD_BASE"
-      }
-    },
-    {
-      "ref": "Q403",
-      "sheet": "05_am",
-      "value": "MMBT3904,215",
-      "mpn": "MMBT3904,215",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.07
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_E",
-        "2": "GND",
-        "3": "MOD_BASE"
-      }
-    },
-    {
-      "ref": "Q404",
-      "sheet": "05_am",
-      "value": "MMBT3904,215",
-      "mpn": "MMBT3904,215",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.07
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_OFF_BASE",
-        "2": "GND",
-        "3": "MOD_BASE"
-      }
-    },
-    {
-      "ref": "R509",
-      "sheet": "05_am",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "NORMAL_OFF",
-        "2": "MOD_OFF_BASE"
-      }
-    },
-    {
-      "ref": "R510",
-      "sheet": "05_am",
-      "value": "100k",
-      "mpn": "RC0603FR-07100KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_BASE",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R511",
-      "sheet": "05_am",
-      "value": "18k",
-      "mpn": "RC0603FR-0718KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA",
-        "2": "VPA_FB"
-      }
-    },
-    {
-      "ref": "R512",
-      "sheet": "05_am",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA_FB",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C505",
-      "sheet": "05_am",
-      "value": "4.7n",
-      "mpn": "CC0603JRNPO9BN472",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "Dominant compensation candidate; loop dynamics OPEN, test with bounded dummy current load.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_DRIVE",
-        "2": "VPA_FB"
-      }
-    },
-    {
-      "ref": "C506",
-      "sheet": "05_am",
-      "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R513",
-      "sheet": "05_am",
-      "value": "1k",
-      "mpn": "RC1206FR-071KL",
-      "footprint": "Resistor_SMD:R_1206_3216Metric",
-      "group": "modulator",
-      "population": "NORMAL",
-      "note": "0.144W at12Vdc capability test; require>=0.25W.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.035
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R517",
-      "sheet": "05_am",
-      "value": "100k",
-      "mpn": "RC0603FR-07100KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "am",
-      "population": "TRAIN_ONLY",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA_FB",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R518",
-      "sheet": "05_am",
-      "value": "100k",
-      "mpn": "RC0603FR-07100KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "am",
-      "population": "TRAIN_ONLY",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_COMMAND",
-        "2": "GND"
-      }
-    },
-    {
       "ref": "R514",
-      "sheet": "05_am",
+      "sheet": "05_pwm_training_command",
       "value": "27k",
       "mpn": "RC0603FR-0727KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3874,7 +3073,7 @@
     },
     {
       "ref": "R515",
-      "sheet": "05_amb1",
+      "sheet": "05_pwm_training_command",
       "value": "10k",
       "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
@@ -3898,7 +3097,7 @@
     },
     {
       "ref": "C507",
-      "sheet": "05_amb1",
+      "sheet": "05_pwm_training_command",
       "value": "100n",
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3922,7 +3121,7 @@
     },
     {
       "ref": "C508",
-      "sheet": "05_amb1",
+      "sheet": "05_pwm_training_command",
       "value": "100n",
       "mpn": "CC0603KRX7R8BB104",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -3942,1255 +3141,6 @@
       "pins": {
         "1": "V3V3",
         "2": "GND"
-      }
-    },
-    {
-      "ref": "TP501",
-      "sheet": "05_amb1",
-      "value": "AM_COMMAND",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "AM_COMMAND"
-      }
-    },
-    {
-      "ref": "TP502",
-      "sheet": "05_amb1",
-      "value": "VPA",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA"
-      }
-    },
-    {
-      "ref": "TP503",
-      "sheet": "05_amb1",
-      "value": "MOD_E",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MOD_E"
-      }
-    },
-    {
-      "ref": "C601",
-      "sheet": "06_normal_rf",
-      "value": "100p",
-      "mpn": "OPEN: 0603 C0G50V 100p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "CLK_NORMAL",
-        "2": "SRC_RF"
-      }
-    },
-    {
-      "ref": "L611",
-      "sheet": "06_normal_rf",
-      "value": "56n",
-      "mpn": "0805HP-56NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-56NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "SRC_RF",
-        "2": "61A"
-      }
-    },
-    {
-      "ref": "L612",
-      "sheet": "06_normal_rf",
-      "value": "91n",
-      "mpn": "0805CS-910XJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805cs/0805cs-910/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805CS-910XJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "61A",
-        "2": "61B"
-      }
-    },
-    {
-      "ref": "L613",
-      "sheet": "06_normal_rf",
-      "value": "56n",
-      "mpn": "0805HP-56NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-56NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "61B",
-        "2": "SRC_FILT"
-      }
-    },
-    {
-      "ref": "C611",
-      "sheet": "06_normal_rf",
-      "value": "8.2p",
-      "mpn": "OPEN: 0603 C0G50V 8.2p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "SRC_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C612",
-      "sheet": "06_normal_rf",
-      "value": "33p",
-      "mpn": "OPEN: 0603 C0G50V 33p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "61A",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C613",
-      "sheet": "06_normal_rf",
-      "value": "33p",
-      "mpn": "OPEN: 0603 C0G50V 33p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "61B",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C614",
-      "sheet": "06_normal_rf",
-      "value": "8.2p",
-      "mpn": "OPEN: 0603 C0G50V 8.2p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "SRC_FILT",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R602",
-      "sheet": "06_normal_rf",
-      "value": "17.8",
-      "mpn": "RC0603FR-0717R8L",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "3dB pi-pad candidate17.6/292.4 theoretical, rounded17.8/287. First characterization uses external generator and/or12dB pad, then measured3-12dB calibration. Si5351 fundamental power and MMIC gain must meet drive budget; no guaranteed source power assumed. PHA-1+ input absolute24dBm is not operating target.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.03
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "SRC_FILT",
-        "2": "DRIVER_PAD"
-      }
-    },
-    {
-      "ref": "R603",
-      "sheet": "06_normal_rf",
-      "value": "287",
-      "mpn": "RC0603FR-07287RL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "SRC_FILT",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R604",
-      "sheet": "06_normal_rf",
-      "value": "287",
-      "mpn": "RC0603FR-07287RL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "source_filter",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRIVER_PAD",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C615",
-      "sheet": "06_normal_rf",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": "Immediate MMIC input DC block after shunt pi-pad; prevents pad from clamping internal input bias. VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRIVER_PAD",
-        "2": "DRIVER_IN"
-      }
-    },
-    {
-      "ref": "U501",
-      "sheet": "06_normal_rf",
-      "value": "PHA-1+",
-      "mpn": "PHA-1+",
-      "footprint": "",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": "PHA-1+ DF782:1IN2GND3OUT/DC4paddleGND. Exact landing OPEN.5V146mA catalog. Selected economical EVALUATION driver;144MHz measured P1dB and final gain must close3dB backoff before acceptance. Not PHA-1H+ data.",
-      "source_url": "https://www.minicircuits.com/WebStore/dashboardPdf?model=PHA-1%2B",
-      "supplier": "Mouser EU observed EUR display; tax confirmation OPEN",
-      "supplier_part_number": "139-PHA-1",
-      "availability": "EUR2.82 at1;2.11 at50;cut-tape MOQ1;4662 indexed stock;2026-10-15 observation, no reservation",
-      "evidence": "OBSERVED_EUR_PROVISIONAL_NET",
-      "price_breaks_eur": {
-        "1": 2.82,
-        "50": 2.11
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRIVER_IN",
-        "2": "GND",
-        "3": "MMIC_RF_DC",
-        "4": "GND"
-      }
-    },
-    {
-      "ref": "L604",
-      "sheet": "06_normal_rf",
-      "value": "180n",
-      "mpn": "0805HP-181XJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-181XJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF",
-        "2": "MMIC_RF_DC"
-      }
-    },
-    {
-      "ref": "C602",
-      "sheet": "06_normal_rf",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "MMIC_RF_DC",
-        "2": "PA_IN50"
-      }
-    },
-    {
-      "ref": "C603",
-      "sheet": "06_normal_rf",
-      "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C604",
-      "sheet": "06_normal_rf",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "driver",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C605",
-      "sheet": "06_normal_rf",
-      "value": "OPEN 59.6p TUNE",
-      "mpn": "OPEN: OPEN 59.6p TUNE voltage/ESR qualification",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_IN50",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "L605",
-      "sheet": "06_normal_rf",
-      "value": "OPEN 28.9n TUNE",
-      "mpn": "OPEN: RF tuning inductor OPEN 28.9n TUNE",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_IN50",
-        "2": "GATE_AC"
-      }
-    },
-    {
-      "ref": "C606",
-      "sheet": "06_normal_rf",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "GATE_AC",
-        "2": "GATE_STOP"
-      }
-    },
-    {
-      "ref": "R605",
-      "sheet": "06_normal_rf",
-      "value": "1",
-      "mpn": "RC0603FR-071RL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "Stability stopper; exact loss included in measured gain qualification.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.035
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "GATE_STOP",
-        "2": "PA_GATE"
-      }
-    },
-    {
-      "ref": "Q501",
-      "sheet": "06_normal_rf",
-      "value": "PD54008L-E",
-      "mpn": "PD54008L-E",
-      "footprint": "",
-      "group": "pa",
-      "population": "NORMAL",
-      "note": "PD54008L-E PowerFLAT5x5. Functional G/D/S only until original package drawing can be visually inspected. Numeric pad map and source thermal landing OPEN; never use a generic powerMOSFET pad map. ST VHF reference fixed-supply5W is not AM qualification.",
-      "source_url": "https://www.st.com/resource/en/datasheet/pd54008l-e.pdf",
-      "supplier": "DigiKey IT EUR net display",
-      "supplier_part_number": "497-6471-1-ND",
-      "availability": "1988 indexed stock;CT MOQ1,multiple1;EUR7.32/5.677 at1/10;2026-10-15, not reserved",
-      "evidence": "OBSERVED_EUR_NET",
-      "price_breaks_eur": {
-        "1": 7.32,
-        "10": 5.677,
-        "25": 5.266
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "G": "PA_GATE",
-        "D": "PA_DRAIN",
-        "S": "GND"
-      }
-    },
-    {
-      "ref": "R606",
-      "sheet": "06_normal_rf",
-      "value": "1k",
-      "mpn": "RC0603FR-071KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VMOD",
-        "2": "BIAS_TOP"
-      }
-    },
-    {
-      "ref": "RV501",
-      "sheet": "06_normal_rf",
-      "value": "10k bias trim",
-      "mpn": "3296W-1-103LF",
-      "footprint": "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "Pot represented by explicit end/wiper pins. Start wiper grounded. Start Idq50mA; investigate100-200mA only after drain rail qualification.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.42
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "BIAS_TOP",
-        "2": "BIAS_WIPER",
-        "3": "GND"
-      }
-    },
-    {
-      "ref": "D501",
-      "sheet": "06_normal_rf",
-      "value": "6.2V bias ceiling",
-      "mpn": "BZT52H-C6V2,115",
-      "footprint": "Diode_SMD:D_SOD-123F",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.05
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "BIAS_TOP",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "L606",
-      "sheet": "06_normal_rf",
-      "value": "180n",
-      "mpn": "0805HP-181XJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-181XJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "BIAS_WIPER",
-        "2": "PA_GATE"
-      }
-    },
-    {
-      "ref": "C607",
-      "sheet": "06_normal_rf",
-      "value": "100n",
-      "mpn": "CC0603KRX7R8BB104",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "BIAS_WIPER",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "Q502",
-      "sheet": "06_normal_rf",
-      "value": "2N7002",
-      "mpn": "2N7002,215",
-      "footprint": "Package_TO_SOT_SMD:SOT-23",
-      "group": "bias",
-      "population": "NORMAL",
-      "note": "1G 2S 3D; manufacturer fixed before ordering.",
-      "source_url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.07
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "NORMAL_OFF",
-        "2": "GND",
-        "3": "BIAS_WIPER"
-      }
-    },
-    {
-      "ref": "L607",
-      "sheet": "06_normal_rf",
-      "value": "180n",
-      "mpn": "0805HP-181XJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-181XJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA",
-        "2": "PA_DRAIN"
-      }
-    },
-    {
-      "ref": "C608",
-      "sheet": "06_normal_rf",
-      "value": "1n",
-      "mpn": "CC0603JRNPO9BN102",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C609",
-      "sheet": "06_normal_rfb1",
-      "value": "1n",
-      "mpn": "C0805C102J1GACTU",
-      "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "100V C0G candidate inherited qualified family; exact stock OPEN. VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_DRAIN",
-        "2": "OUT_MATCH"
-      }
-    },
-    {
-      "ref": "L608",
-      "sheet": "06_normal_rfb1",
-      "value": "OPEN output-L TUNE",
-      "mpn": "OPEN: RF tuning inductor OPEN output-L TUNE",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT_MATCH",
-        "2": "OUT50"
-      }
-    },
-    {
-      "ref": "C610",
-      "sheet": "06_normal_rfb1",
-      "value": "OPEN output-C TUNE",
-      "mpn": "OPEN: OPEN output-C TUNE voltage/ESR qualification",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "pa_match",
-      "population": "NORMAL",
-      "note": "OPEN: actual ST output-match topology not retrieved. Empty tuning positions do not authorize PA energization. Assumed3.5ohm load/60pF Coss calculation is only a feasibility illustration; no144MHz large-signal evidence. VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.045
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT50",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "L621",
-      "sheet": "06_normal_rfb1",
-      "value": "47n",
-      "mpn": "0805HP-47NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-47NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT50",
-        "2": "OUT9A"
-      }
-    },
-    {
-      "ref": "L622",
-      "sheet": "06_normal_rfb1",
-      "value": "82n",
-      "mpn": "0805HP-82NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-82NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9A",
-        "2": "OUT9AB"
-      }
-    },
-    {
-      "ref": "L625",
-      "sheet": "06_normal_rfb1",
-      "value": "11n",
-      "mpn": "0805HP-11NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-11NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9AB",
-        "2": "OUT9B"
-      }
-    },
-    {
-      "ref": "L623",
-      "sheet": "06_normal_rfb1",
-      "value": "82n",
-      "mpn": "0805HP-82NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-82NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9B",
-        "2": "OUT9BC"
-      }
-    },
-    {
-      "ref": "L626",
-      "sheet": "06_normal_rfb1",
-      "value": "11n",
-      "mpn": "0805HP-11NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-11NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9BC",
-        "2": "OUT9C"
-      }
-    },
-    {
-      "ref": "L624",
-      "sheet": "06_normal_rfb1",
-      "value": "47n",
-      "mpn": "0805HP-47NXJRC",
-      "footprint": "Inductor_SMD:L_0805_2012Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": "Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck.",
-      "source_url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/",
-      "supplier": "Coilcraft / authorized distributor",
-      "supplier_part_number": "0805HP-47NXJRC",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.8217954443948192
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9C",
-        "2": "NORMAL_RF"
-      }
-    },
-    {
-      "ref": "C621",
-      "sheet": "06_normal_rfb1",
-      "value": "6.8p",
-      "mpn": "OPEN: C0G100V 6.8p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT50",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C622",
-      "sheet": "06_normal_rfb1",
-      "value": "27p",
-      "mpn": "OPEN: C0G100V 27p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9A",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C623",
-      "sheet": "06_normal_rfb1",
-      "value": "33p",
-      "mpn": "OPEN: C0G100V 33p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9B",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C624",
-      "sheet": "06_normal_rfb1",
-      "value": "27p",
-      "mpn": "OPEN: C0G100V 27p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT9C",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "C625",
-      "sheet": "06_normal_rfb1",
-      "value": "6.8p",
-      "mpn": "OPEN: C0G100V 6.8p",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "group": "output_filter",
-      "population": "NORMAL",
-      "note": " VHF C0G; Q/SRF and exact MPN OPEN.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "NORMAL_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "J501",
-      "sheet": "06_normal_rfb1",
-      "value": "NORMAL 50ohm SMA",
-      "mpn": "132134",
-      "footprint": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
-      "group": "connector",
-      "population": "NORMAL",
-      "note": "Exact vendor geometry/price OPEN; evaluate horizontal omnidirectional antenna separately.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 1.1
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "NORMAL_RF",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "TP601",
-      "sheet": "06_normal_rf",
-      "value": "PA_GATE",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_GATE"
-      }
-    },
-    {
-      "ref": "TP602",
-      "sheet": "06_normal_rf",
-      "value": "PA_DRAIN",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_DRAIN"
-      }
-    },
-    {
-      "ref": "TP603",
-      "sheet": "06_normal_rfb1",
-      "value": "OUT50",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "OUT50"
-      }
-    },
-    {
-      "ref": "TP604",
-      "sheet": "06_normal_rf",
-      "value": "PA_IN50",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "PA_IN50"
       }
     },
     {
@@ -6531,8 +4481,8 @@
     {
       "ref": "R811",
       "sheet": "08_protection",
-      "value": "120k",
-      "mpn": "RC0603FR-07120KL",
+      "value": "160k",
+      "mpn": "RC0603FR-07160KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
@@ -6579,8 +4529,8 @@
     {
       "ref": "R813",
       "sheet": "08_protection",
-      "value": "20.9k",
-      "mpn": "RC0603FR-0720K9L",
+      "value": "18.2k",
+      "mpn": "RC0603FR-0718K2L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
@@ -6625,106 +4575,10 @@
       }
     },
     {
-      "ref": "R815",
-      "sheet": "08_protection",
-      "value": "80.6k",
-      "mpn": "RC0603FR-0780K6L",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_FILTER",
-        "2": "DRV_S"
-      }
-    },
-    {
-      "ref": "R816",
-      "sheet": "08_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_S",
-        "2": "GND"
-      }
-    },
-    {
-      "ref": "R817",
-      "sheet": "08_protection",
-      "value": "29.4k",
-      "mpn": "RC0603FR-0729K4L",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VREF2V5",
-        "2": "DRV_OV_REF"
-      }
-    },
-    {
-      "ref": "R818",
-      "sheet": "08_protection",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "protection",
-      "population": "NORMAL",
-      "note": "",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "DRV_OV_REF",
-        "2": "GND"
-      }
-    },
-    {
       "ref": "R819",
       "sheet": "08_protection",
-      "value": "110k",
-      "mpn": "RC0603FR-07110KL",
+      "value": "160k",
+      "mpn": "RC0603FR-07160KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
@@ -6771,8 +4625,8 @@
     {
       "ref": "R821",
       "sheet": "08_protection",
-      "value": "26.5k",
-      "mpn": "RC0603FR-0726K5L",
+      "value": "18.2k",
+      "mpn": "RC0603FR-0718K2L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
@@ -6968,7 +4822,7 @@
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "protection",
       "population": "NORMAL",
-      "note": "3.3V; reference nodes below1.135V hot common-mode limit at3.135V supply; current reference~1.03V. One input must remain valid during positive overvoltage. Severe overvoltage beyond sense range must be bounded externally.",
+      "note": "R3 unused former MMIC-OV comparator tied to valid common-mode references; regulator-OV nominal15.04V. No extra MMIC regulator/supervisor fitted.",
       "source_url": "https://www.ti.com/lit/ds/symlink/lm339b.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -6989,8 +4843,8 @@
         "11": "REG_OV_REF",
         "10": "VREG_S",
         "13": "HARD_OK_N",
-        "9": "DRV_OV_REF",
-        "8": "DRV_S",
+        "9": "VREF1V0",
+        "8": "GND",
         "14": "HARD_OK_N",
         "3": "V3V3",
         "12": "GND"
@@ -7004,7 +4858,7 @@
       "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "group": "protection",
       "population": "NORMAL",
-      "note": "3.3V; reference nodes below1.135V hot common-mode limit at3.135V supply; current reference~1.03V. One input must remain valid during positive overvoltage. Severe overvoltage beyond sense range must be bounded externally.",
+      "note": "R3: approximately0.593A current trip; original ~66C NTC window unchanged. Sensor coupling, lag, DC SOA and thermal rise remain unmeasured.",
       "source_url": "https://www.ti.com/lit/ds/symlink/lm339b.pdf",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -7203,12 +5057,12 @@
     {
       "ref": "R828",
       "sheet": "08_protectionb1",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
+      "value": "1.5k",
+      "mpn": "RC0603FR-071K5L",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
-      "note": "",
+      "note": "R3 total normal-rail current trip approximately0.593A using loaded reference. Conservative original500-600mA adjustment ceiling, not proof of attainable target PEP.",
       "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -7227,8 +5081,8 @@
     {
       "ref": "R829",
       "sheet": "08_protectionb1",
-      "value": "4.02k",
-      "mpn": "RC0603FR-074K02L",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "group": "protection",
       "population": "NORMAL",
@@ -7391,8 +5245,1530 @@
       }
     },
     {
-      "ref": "#FLG901",
-      "sheet": "09_test_power",
+      "ref": "U901",
+      "sheet": "06_dl3_rf",
+      "value": "SN74LVC1G125DBVR",
+      "mpn": "SN74LVC1G125DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "Physical active-low OE, disabled independent of clock register state. 72MHz drive/purity require acceptance measurement.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_OFF",
+        "2": "CLK_NORMAL",
+        "3": "GND",
+        "4": "CLK72_BUF",
+        "5": "V3V3"
+      }
+    },
+    {
+      "ref": "R900",
+      "sheet": "06_dl3_rf",
+      "value": "47",
+      "mpn": "RC0603FR-0747RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLK72_BUF",
+        "2": "CLK72_LIMIT"
+      }
+    },
+    {
+      "ref": "C900",
+      "sheet": "06_dl3_rf",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLK72_LIMIT",
+        "2": "LP72_IN"
+      }
+    },
+    {
+      "ref": "L900",
+      "sheet": "06_dl3_rf",
+      "value": "110n",
+      "mpn": "OPEN: VHF high-Q 110n",
+      "footprint": "Inductor_SMD:L_0805_2012Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "Calculated seven-pole90MHz Butterworth50ohm. Exact MPN/Q/SRF and terminated insertion loss OPEN.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.82
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_IN",
+        "2": "LP72_A"
+      }
+    },
+    {
+      "ref": "L901",
+      "sheet": "06_dl3_rf",
+      "value": "180n",
+      "mpn": "OPEN: VHF high-Q 180n",
+      "footprint": "Inductor_SMD:L_0805_2012Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "Calculated seven-pole90MHz Butterworth50ohm. Exact MPN/Q/SRF and terminated insertion loss OPEN.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.82
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_A",
+        "2": "LP72_B"
+      }
+    },
+    {
+      "ref": "L902",
+      "sheet": "06_dl3_rf",
+      "value": "110n",
+      "mpn": "OPEN: VHF high-Q 110n",
+      "footprint": "Inductor_SMD:L_0805_2012Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "Calculated seven-pole90MHz Butterworth50ohm. Exact MPN/Q/SRF and terminated insertion loss OPEN.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.82
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_B",
+        "2": "LP72_OUT"
+      }
+    },
+    {
+      "ref": "C901",
+      "sheet": "06_dl3_rf",
+      "value": "16p",
+      "mpn": "OPEN: 16p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_IN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C902",
+      "sheet": "06_dl3_rf",
+      "value": "68p",
+      "mpn": "OPEN: 68p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_A",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C903",
+      "sheet": "06_dl3_rf",
+      "value": "68p",
+      "mpn": "OPEN: 68p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C904",
+      "sheet": "06_dl3_rf",
+      "value": "16p",
+      "mpn": "OPEN: 16p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_OUT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R901",
+      "sheet": "06_dl3_rf",
+      "value": "51.1",
+      "mpn": "RC0603FR-0751R1L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "source_filter",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_OUT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C911",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1.2p",
+      "mpn": "OPEN: 1.2p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LP72_OUT",
+        "2": "T3_G1"
+      }
+    },
+    {
+      "ref": "L904",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "170n original L4 green",
+      "mpn": "00511732",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original L04 Neosid7.1E. No generic chip substitute. Manufacturer bottom-view A/E geometry and can clearance require local footprint and exact purchased part confirmation.",
+      "source_url": "https://neosid.de/import-data/product-pdf/neoFilterspulen_5_7_10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_G1",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C913",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "18p",
+      "mpn": "OPEN: 18p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_G1",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q901",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "BF981 Philips",
+      "mpn": "BF981",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original T3, Philips SOT103 Dec1990. Physical1S2D3G2 4G1. NOS; supplier lists PHILIPS. Five-piece lot, fleet stock/reserve OPEN.",
+      "source_url": "https://datasheet.octopart.com/BF981-NXP-Semiconductors-datasheet-180991380.pdf",
+      "supplier": "D\u00f6nberg",
+      "supplier_part_number": "BF981 / pack5",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "OBSERVED_NET_PACK5_MANUFACTURER_LISTED",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 5,
+      "multiple": 5,
+      "pins": {
+        "1": "T3_S",
+        "2": "T3_D",
+        "3": "T3_G2",
+        "4": "T3_G1"
+      }
+    },
+    {
+      "ref": "R909",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "33k",
+      "mpn": "RC0603FR-0733KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_G2",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R910",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "33k",
+      "mpn": "RC0603FR-0733KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VMOD",
+        "2": "T3_G2"
+      }
+    },
+    {
+      "ref": "C912",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_G2",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R911",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "47",
+      "mpn": "RC0603FR-0747RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TP5_ORIGINAL",
+        "2": "T3_D"
+      }
+    },
+    {
+      "ref": "R912",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_S",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C916",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_S",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R914",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VMOD",
+        "2": "T3_FEED"
+      }
+    },
+    {
+      "ref": "C914",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_FEED",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "L905",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "51n original L5 red; catalog55-70n",
+      "mpn": "00511830",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original L05 Neosid7.1E. No generic chip substitute. Manufacturer bottom-view A/E geometry and can clearance require local footprint and exact purchased part confirmation.",
+      "source_url": "https://neosid.de/import-data/product-pdf/neoFilterspulen_5_7_10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T3_FEED",
+        "2": "TP5_ORIGINAL"
+      }
+    },
+    {
+      "ref": "C915",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "15p",
+      "mpn": "OPEN: 15p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "TP5_ORIGINAL",
+        "2": "T4_B"
+      }
+    },
+    {
+      "ref": "R913",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q902",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "2N4427 Central",
+      "mpn": "2N4427",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original T4. Central datasheet1E2B3C but supplier manufacturer unspecified. Central PDN01114 2019EOL. Raise body>=10mm per article; heat sink if required. No manufacturer interchangeability approved.",
+      "source_url": "https://my.centralsemi.com/datasheets/2n4427.PDF",
+      "supplier": "D\u00f6nberg",
+      "supplier_part_number": "2N 4427",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "OBSERVED_NET_MANUFACTURER_UNRESOLVED",
+      "price_breaks_eur": {
+        "1": 5.9
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_E",
+        "2": "T4_B",
+        "3": "T4_C"
+      }
+    },
+    {
+      "ref": "R915",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "47",
+      "mpn": "RC0603FR-0747RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_E",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C918",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_E",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "L909",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "10u original DR2",
+      "mpn": "OPEN: RF choke10uH >=0.3A",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original DR2 allows6.8-10uH. Actual self-resonance/lead geometry/stock OPEN; not tuning coil.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.4
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VMOD",
+        "2": "T4_FEED"
+      }
+    },
+    {
+      "ref": "C917",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_FEED",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "L906",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "34n original L6 yellow",
+      "mpn": "00511631",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original L06 Neosid7.1E. No generic chip substitute. Manufacturer bottom-view A/E geometry and can clearance require local footprint and exact purchased part confirmation.",
+      "source_url": "https://neosid.de/import-data/product-pdf/neoFilterspulen_5_7_10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_FEED",
+        "2": "T4_C"
+      }
+    },
+    {
+      "ref": "C919",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "25p original C19",
+      "mpn": "OPEN: C0G/air RF trimmer25p",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original interstage coupling trimmer. Exact capacitance range, Q, footprint and genuine supplier OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.9
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_C",
+        "2": "T5_B"
+      }
+    },
+    {
+      "ref": "R916",
+      "sheet": "06b_dl3_doubler_driver",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T5_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q903",
+      "sheet": "06c_dl3_final",
+      "value": "MRF237 ASI candidate",
+      "mpn": "MRF237 ASI",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "ASI RevA 1E2B3C. NOT assumed identical to Motorola case79-03 STYLE5. EUR31.90 is an unbranded listing comparator, not an ASI quote. No qualified physical footprint. Final procurement/manufacturer/layout blocker.",
+      "source_url": "https://pdf.dzsc.com/F23/MRF237.pdf",
+      "supplier": "D\u00f6nberg price comparator ONLY",
+      "supplier_part_number": "MRF 237 (manufacturer unspecified)",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "OBSERVED_NET_MANUFACTURER_UNRESOLVED",
+      "price_breaks_eur": {
+        "1": 31.9
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "T5_B",
+        "3": "T5_C"
+      }
+    },
+    {
+      "ref": "L910",
+      "sheet": "06c_dl3_final",
+      "value": "4.7u original DR3",
+      "mpn": "OPEN: RF choke4.7uH >=0.8A",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original2.2-6.8uH range; exact SRF/current/geometry OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.4
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T5_FEED",
+        "2": "T5_C"
+      }
+    },
+    {
+      "ref": "L911",
+      "sheet": "06c_dl3_final",
+      "value": "VK200 original DR4",
+      "mpn": "OPEN: VK200 current manufacturer",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original six-hole ferrite choke, not a generic4.7uH replacement. Exact construction/source OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.5
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA",
+        "2": "T5_FEED"
+      }
+    },
+    {
+      "ref": "C920",
+      "sheet": "06c_dl3_final",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C922",
+      "sheet": "06c_dl3_final",
+      "value": "1n",
+      "mpn": "OPEN: 1n C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T5_FEED",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C921",
+      "sheet": "06c_dl3_final",
+      "value": "33p",
+      "mpn": "OPEN: 33p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T5_C",
+        "2": "OUT_MID"
+      }
+    },
+    {
+      "ref": "L907",
+      "sheet": "06c_dl3_final",
+      "value": "51n original L7 red; catalog55-70n",
+      "mpn": "00511830",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original L07 Neosid7.1E. No generic chip substitute. Manufacturer bottom-view A/E geometry and can clearance require local footprint and exact purchased part confirmation.",
+      "source_url": "https://neosid.de/import-data/product-pdf/neoFilterspulen_5_7_10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "OUT_MID",
+        "2": "OUT_TRIM"
+      }
+    },
+    {
+      "ref": "C923",
+      "sheet": "06c_dl3_final",
+      "value": "39p",
+      "mpn": "OPEN: 39p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "OUT_TRIM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C924",
+      "sheet": "06c_dl3_final",
+      "value": "45p original C23",
+      "mpn": "OPEN: RF trimmer45p",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "In parallel with39p C23x. Article adjustment text calls C20 a trimmer once, but schematic/BOM identify C23. Never replace1n C20 with a trimmer.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.9
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "OUT_TRIM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "L908",
+      "sheet": "06c_dl3_final",
+      "value": "34n original L8 yellow",
+      "mpn": "00511631",
+      "footprint": "",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "Original L08 Neosid7.1E. No generic chip substitute. Manufacturer bottom-view A/E geometry and can clearance require local footprint and exact purchased part confirmation.",
+      "source_url": "https://neosid.de/import-data/product-pdf/neoFilterspulen_5_7_10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 3.0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "OUT_TRIM",
+        "2": "NORMAL_RF"
+      }
+    },
+    {
+      "ref": "C925",
+      "sheet": "06c_dl3_final",
+      "value": "33p",
+      "mpn": "OPEN: 33p C0G50V 0603",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_RF",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C926",
+      "sheet": "06c_dl3_final",
+      "value": "5.6p optional original correction",
+      "mpn": "OPEN:5.6p C0G50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "reference_rf",
+      "population": "OPTIONAL",
+      "note": "Documented DL3BBX off-state oscillation correction, normally DNP; fit only under recorded alignment/quiet acceptance.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "T4_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J501",
+      "sheet": "06c_dl3_final",
+      "value": "NORMAL50ohm SMA",
+      "mpn": "132134",
+      "footprint": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+      "group": "connector",
+      "population": "NORMAL",
+      "note": "Preserved normal port. Exact incoming drawing/board-fit qualification OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 1.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_RF",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q904",
+      "sheet": "10_original_modulator",
+      "value": "TIP127 ST",
+      "mpn": "TIP127",
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "ST DS0854 Rev5May2021:1B2C/tab3E. Tab at modulatedVPA, electrically isolate sink. Hot DC SOA/sensor contact not qualified. Original BD676 pin1E2C3B is NOT drop-in.",
+      "source_url": "https://www.st.com/resource/en/datasheet/tip127.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.75
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PASS_BASE",
+        "2": "VPA",
+        "3": "VMOD"
+      }
+    },
+    {
+      "ref": "R926",
+      "sheet": "10_original_modulator",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VMOD",
+        "2": "PASS_BASE"
+      }
+    },
+    {
+      "ref": "RV902",
+      "sheet": "10_original_modulator",
+      "value": "100k original VR2",
+      "mpn": "3296W-1-104LF",
+      "footprint": "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "Wiper2 tied to base-side end1. Before power measure approximately100k PASS_BASE-to-VPA (wiper at1) for minimum conduction. A zero-ohm setting INCREASES conduction. Trim is not an RF-off interlock. Original8V center is not automatically valid for80% sine; calibrate actual RF envelope.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.42
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PASS_BASE",
+        "2": "PASS_BASE",
+        "3": "VPA"
+      }
+    },
+    {
+      "ref": "RV901",
+      "sheet": "10_original_modulator",
+      "value": "47k original VR1",
+      "mpn": "3296W-1-473LF",
+      "footprint": "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "Minimum audio at wiper ground. Controller scales AF sine separately by profile; no-tone command same DC offset, C26 blocks steadyDC.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.42
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "AM_COMMAND",
+        "2": "AF_ATTEN",
+        "3": "GND"
+      }
+    },
+    {
+      "ref": "R924",
+      "sheet": "10_original_modulator",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "AF_ATTEN",
+        "2": "AF_RC"
+      }
+    },
+    {
+      "ref": "C927",
+      "sheet": "10_original_modulator",
+      "value": "100n",
+      "mpn": "OPEN:100nF MKH film>=50V",
+      "footprint": "",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "Original C27 is film; keep dielectric/function, exact package and source OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.15
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "AF_RC",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R925",
+      "sheet": "10_original_modulator",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "AF_RC",
+        "2": "AF_COUPLE"
+      }
+    },
+    {
+      "ref": "C928",
+      "sheet": "10_original_modulator",
+      "value": "330n film original C26",
+      "mpn": "OPEN:330nF film>=50V",
+      "footprint": "",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "Original MKH330nF; film preserves intended characteristics. Exact package/MPN OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.2
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "AF_COUPLE",
+        "2": "PASS_BASE"
+      }
+    },
+    {
+      "ref": "C929",
+      "sheet": "10_original_modulator",
+      "value": "470u25V original C25",
+      "mpn": "OPEN:470u25V radial",
+      "footprint": "",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "Original upstream470uF reservoir placed BEFORE slot isolation/sense. Not across modulatedVPA or switchedVMOD. Effective ESR and converter response OPEN.",
+      "source_url": "https://www.robkalmeijer.nl/techniek/electronica/radiotechniek/hambladen/cq-dl/1992/page289/index.html",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.35
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VREG_RAW",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C930",
+      "sheet": "10_original_modulator",
+      "value": "1u gate slew",
+      "mpn": "CC0805KKX7R9BB105",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "group": "supply_isolation",
+      "population": "NORMAL",
+      "note": "Added isolation-FET slew control. SimpleRC estimates do NOT bound Miller plateau/inrush. Measure startup and turn-off before RF. Gate pullup4.7k gives several-ms withdrawal, source blanking is faster.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "REG_GATE",
+        "2": "VREG_RAW"
+      }
+    },
+    {
+      "ref": "R930",
+      "sheet": "10_original_modulator",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlock",
+      "population": "NORMAL",
+      "note": "WithC931 nominal1ms RF source startup delay, Schmitt U203 pin13/12. Physical timing and race gate OPEN.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_PERMIT",
+        "2": "NORMAL_RC"
+      }
+    },
+    {
+      "ref": "C931",
+      "sheet": "10_original_modulator",
+      "value": "100n",
+      "mpn": "CC0603KRX7R8BB104",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "interlock",
+      "population": "NORMAL",
+      "note": "Source startup delay only; not an independent watchdog.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.045
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_RC",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D901",
+      "sheet": "10_original_modulator",
+      "value": "BAT54WS-7-F",
+      "mpn": "BAT54WS-7-F",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "group": "interlock",
+      "population": "NORMAL",
+      "note": "Cathode1 toward permission through330ohm; anode2 atRC. Accelerates source inhibit on falling permission without overloading HC output.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_FAST_OFF",
+        "2": "NORMAL_RC"
+      }
+    },
+    {
+      "ref": "R931",
+      "sheet": "10_original_modulator",
+      "value": "330",
+      "mpn": "RC0603FR-07330RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlock",
+      "population": "NORMAL",
+      "note": "Bounds initial capacitor discharge toapproximately10mA; propagation/brownout behavior unmeasured.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_FAST_OFF",
+        "2": "NORMAL_PERMIT"
+      }
+    },
+    {
+      "ref": "R932",
+      "sheet": "10_original_modulator",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "group": "interlock",
+      "population": "ALL",
+      "note": "Required even in training-only population: no floating unused Schmitt input when normal RC/diode parts are omitted.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_RC",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R927",
+      "sheet": "10_original_modulator",
+      "value": "1k",
+      "mpn": "OPEN:1k 1% >=0.5W 1206",
+      "footprint": "Resistor_SMD:R_1206_3216Metric",
+      "group": "modulator",
+      "population": "NORMAL",
+      "note": "R3 added discharge/load, rated>=0.5W1206 rather than0603.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.06
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "#FLG950",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7402,8 +6778,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7414,8 +6790,8 @@
       }
     },
     {
-      "ref": "#FLG902",
-      "sheet": "09_test_power",
+      "ref": "#FLG951",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7425,8 +6801,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7437,8 +6813,8 @@
       }
     },
     {
-      "ref": "#FLG903",
-      "sheet": "09_test_power",
+      "ref": "#FLG952",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7448,8 +6824,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7460,8 +6836,8 @@
       }
     },
     {
-      "ref": "#FLG904",
-      "sheet": "09_test_power",
+      "ref": "#FLG953",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7471,8 +6847,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7483,8 +6859,8 @@
       }
     },
     {
-      "ref": "#FLG905",
-      "sheet": "09_test_power",
+      "ref": "#FLG954",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7494,8 +6870,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7506,8 +6882,8 @@
       }
     },
     {
-      "ref": "#FLG906",
-      "sheet": "09_test_power",
+      "ref": "#FLG955",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7517,8 +6893,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7529,8 +6905,8 @@
       }
     },
     {
-      "ref": "#FLG907",
-      "sheet": "09_test_power",
+      "ref": "#FLG956",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7540,8 +6916,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7552,8 +6928,8 @@
       }
     },
     {
-      "ref": "#FLG908",
-      "sheet": "09_test_power",
+      "ref": "#FLG957",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7563,8 +6939,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7575,8 +6951,8 @@
       }
     },
     {
-      "ref": "#FLG909",
-      "sheet": "09_test_power",
+      "ref": "#FLG958",
+      "sheet": "11_external_contract",
       "value": "PWR_FLAG",
       "mpn": "NOT_PURCHASED",
       "footprint": "",
@@ -7586,8 +6962,8 @@
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
+      "availability": "Exact stocked manufacturer/lot/quantity not verified",
+      "evidence": "ESTIMATE",
       "price_breaks_eur": {
         "1": 0
       },
@@ -7595,260 +6971,6 @@
       "multiple": 1,
       "pins": {
         "1": "VBOOST"
-      }
-    },
-    {
-      "ref": "#FLG910",
-      "sheet": "09_test_power",
-      "value": "PWR_FLAG",
-      "mpn": "NOT_PURCHASED",
-      "footprint": "",
-      "group": "declaration",
-      "population": "ALL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_LDO_IN"
-      }
-    },
-    {
-      "ref": "#FLG911",
-      "sheet": "09_test_power",
-      "value": "PWR_FLAG",
-      "mpn": "NOT_PURCHASED",
-      "footprint": "",
-      "group": "declaration",
-      "population": "ALL",
-      "note": "",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "NON_PHYSICAL",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_RF"
-      }
-    },
-    {
-      "ref": "TP901",
-      "sheet": "09_test_power",
-      "value": "V3V3",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3"
-      }
-    },
-    {
-      "ref": "TP902",
-      "sheet": "09_test_power",
-      "value": "GND",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "GND"
-      }
-    },
-    {
-      "ref": "TP903",
-      "sheet": "09_test_power",
-      "value": "VPA",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA"
-      }
-    },
-    {
-      "ref": "TP904",
-      "sheet": "09_test_power",
-      "value": "VDRV_LDO_IN",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VDRV_LDO_IN"
-      }
-    },
-    {
-      "ref": "TP905",
-      "sheet": "09_test_power",
-      "value": "LEVEL_DC",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "LEVEL_DC"
-      }
-    },
-    {
-      "ref": "TP906",
-      "sheet": "09_test_power",
-      "value": "AF_DC",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "AF_DC"
-      }
-    },
-    {
-      "ref": "TP907",
-      "sheet": "09_test_power",
-      "value": "VPA_FB",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "VPA_FB"
-      }
-    },
-    {
-      "ref": "TP908",
-      "sheet": "09_test_power",
-      "value": "TRAIN_EMITTER",
-      "mpn": "PCB feature",
-      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-      "group": "test",
-      "population": "ALL",
-      "note": "High impedance probing. No terminated 50-ohm scope on logic/PA drain.",
-      "source_url": "",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "BOARD_FEATURE",
-      "price_breaks_eur": {
-        "1": 0
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "TRAIN_EMITTER"
-      }
-    },
-    {
-      "ref": "R519",
-      "sheet": "09_test_power",
-      "value": "0",
-      "mpn": "RC0603JR-070RL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "group": "interlock",
-      "population": "TRAIN_ONLY",
-      "note": "Fit only with U207 and every normal power-stage part omitted. Equivalent to POWER_FAULT_N=1; watchdog/mute/SCL/fresh ARM still active.",
-      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
-      "supplier": "OPEN",
-      "supplier_part_number": "OPEN",
-      "availability": "Not independently basket-confirmed",
-      "evidence": "ESTIMATE",
-      "price_breaks_eur": {
-        "1": 0.02
-      },
-      "moq": 1,
-      "multiple": 1,
-      "pins": {
-        "1": "V3V3",
-        "2": "RUN_HEALTH"
       }
     }
   ],
@@ -8675,7 +7797,7 @@
         "type": "TestPoint"
       }
     ],
-    "04_boost_driver_supply": [
+    "04_boost": [
       {
         "ref": "U302",
         "unit": 1,
@@ -8780,107 +7902,9 @@
         "x": 510.54,
         "y": 179.07,
         "type": "C"
-      },
-      {
-        "ref": "R413",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "C407",
-        "unit": 1,
-        "x": 173.99,
-        "y": 236.22,
-        "type": "C"
-      },
-      {
-        "ref": "U303",
-        "unit": 1,
-        "x": 285.75,
-        "y": 236.22,
-        "type": "TLV761"
-      },
-      {
-        "ref": "C409",
-        "unit": 1,
-        "x": 397.51,
-        "y": 236.22,
-        "type": "C_Polarized"
-      },
-      {
-        "ref": "D309",
-        "unit": 1,
-        "x": 510.54,
-        "y": 236.22,
-        "type": "D"
-      },
-      {
-        "ref": "Q304",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 293.37,
-        "type": "AO3401A"
-      },
-      {
-        "ref": "R408",
-        "unit": 1,
-        "x": 173.99,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "R409",
-        "unit": 1,
-        "x": 285.75,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "Q308",
-        "unit": 1,
-        "x": 397.51,
-        "y": 293.37,
-        "type": "MMBT3904"
-      },
-      {
-        "ref": "R410",
-        "unit": 1,
-        "x": 510.54,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "R411",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 350.52,
-        "type": "R"
-      },
-      {
-        "ref": "R412",
-        "unit": 1,
-        "x": 173.99,
-        "y": 350.52,
-        "type": "R"
-      },
-      {
-        "ref": "TP401",
-        "unit": 1,
-        "x": 285.75,
-        "y": 350.52,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "D308",
-        "unit": 1,
-        "x": 397.51,
-        "y": 350.52,
-        "type": "D_Zener"
       }
     ],
-    "05_am": [
+    "05_pwm_training_command": [
       {
         "ref": "U401",
         "unit": 1,
@@ -8952,535 +7976,32 @@
         "type": "LVC3157"
       },
       {
-        "ref": "R516",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 179.07,
-        "type": "R"
-      },
-      {
-        "ref": "Q405",
-        "unit": 1,
-        "x": 173.99,
-        "y": 179.07,
-        "type": "MMBT3904"
-      },
-      {
-        "ref": "Q401",
-        "unit": 1,
-        "x": 285.75,
-        "y": 179.07,
-        "type": "D45H11_ST"
-      },
-      {
-        "ref": "R505",
-        "unit": 1,
-        "x": 397.51,
-        "y": 179.07,
-        "type": "R"
-      },
-      {
-        "ref": "R506",
-        "unit": 1,
-        "x": 510.54,
-        "y": 179.07,
-        "type": "R"
-      },
-      {
-        "ref": "Q402",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 236.22,
-        "type": "BD139_ST"
-      },
-      {
-        "ref": "R507",
-        "unit": 1,
-        "x": 173.99,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "R508",
-        "unit": 1,
-        "x": 285.75,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "Q403",
-        "unit": 1,
-        "x": 397.51,
-        "y": 236.22,
-        "type": "MMBT3904"
-      },
-      {
-        "ref": "Q404",
-        "unit": 1,
-        "x": 510.54,
-        "y": 236.22,
-        "type": "MMBT3904"
-      },
-      {
-        "ref": "R509",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "R510",
-        "unit": 1,
-        "x": 173.99,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "R511",
-        "unit": 1,
-        "x": 285.75,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "R512",
-        "unit": 1,
-        "x": 397.51,
-        "y": 293.37,
-        "type": "R"
-      },
-      {
-        "ref": "C505",
-        "unit": 1,
-        "x": 510.54,
-        "y": 293.37,
-        "type": "C"
-      },
-      {
-        "ref": "C506",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 350.52,
-        "type": "C"
-      },
-      {
-        "ref": "R513",
-        "unit": 1,
-        "x": 173.99,
-        "y": 350.52,
-        "type": "R"
-      },
-      {
-        "ref": "R517",
-        "unit": 1,
-        "x": 285.75,
-        "y": 350.52,
-        "type": "R"
-      },
-      {
-        "ref": "R518",
-        "unit": 1,
-        "x": 397.51,
-        "y": 350.52,
-        "type": "R"
-      },
-      {
         "ref": "R514",
         "unit": 1,
-        "x": 510.54,
-        "y": 350.52,
+        "x": 62.230000000000004,
+        "y": 179.07,
         "type": "R"
-      }
-    ],
-    "05_amb1": [
+      },
       {
         "ref": "R515",
         "unit": 1,
-        "x": 62.230000000000004,
-        "y": 64.77,
+        "x": 173.99,
+        "y": 179.07,
         "type": "R"
       },
       {
         "ref": "C507",
         "unit": 1,
-        "x": 173.99,
-        "y": 64.77,
+        "x": 285.75,
+        "y": 179.07,
         "type": "C"
       },
       {
         "ref": "C508",
         "unit": 1,
-        "x": 285.75,
-        "y": 64.77,
-        "type": "C"
-      },
-      {
-        "ref": "TP501",
-        "unit": 1,
         "x": 397.51,
-        "y": 64.77,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP502",
-        "unit": 1,
-        "x": 510.54,
-        "y": 64.77,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP503",
-        "unit": 1,
-        "x": 62.230000000000004,
-        "y": 121.92,
-        "type": "TestPoint"
-      }
-    ],
-    "06_normal_rf": [
-      {
-        "ref": "C601",
-        "unit": 1,
-        "x": 39.37,
-        "y": 80.01,
+        "y": 179.07,
         "type": "C"
-      },
-      {
-        "ref": "L611",
-        "unit": 1,
-        "x": 80.01,
-        "y": 80.01,
-        "type": "L"
-      },
-      {
-        "ref": "L612",
-        "unit": 1,
-        "x": 119.38,
-        "y": 80.01,
-        "type": "L"
-      },
-      {
-        "ref": "L613",
-        "unit": 1,
-        "x": 160.02,
-        "y": 80.01,
-        "type": "L"
-      },
-      {
-        "ref": "C611",
-        "unit": 1,
-        "x": 59.69,
-        "y": 110.49,
-        "type": "C"
-      },
-      {
-        "ref": "C612",
-        "unit": 1,
-        "x": 100.33,
-        "y": 110.49,
-        "type": "C"
-      },
-      {
-        "ref": "C613",
-        "unit": 1,
-        "x": 139.7,
-        "y": 110.49,
-        "type": "C"
-      },
-      {
-        "ref": "C614",
-        "unit": 1,
-        "x": 180.34,
-        "y": 110.49,
-        "type": "C"
-      },
-      {
-        "ref": "R602",
-        "unit": 1,
-        "x": 214.63,
-        "y": 80.01,
-        "type": "R"
-      },
-      {
-        "ref": "R603",
-        "unit": 1,
-        "x": 195.58,
-        "y": 110.49,
-        "type": "R"
-      },
-      {
-        "ref": "R604",
-        "unit": 1,
-        "x": 234.95000000000002,
-        "y": 110.49,
-        "type": "R"
-      },
-      {
-        "ref": "C615",
-        "unit": 1,
-        "x": 260.35,
-        "y": 80.01,
-        "type": "C"
-      },
-      {
-        "ref": "U501",
-        "unit": 1,
-        "x": 309.88,
-        "y": 80.01,
-        "type": "PHA1"
-      },
-      {
-        "ref": "L604",
-        "unit": 1,
-        "x": 59.69,
-        "y": 214.63,
-        "type": "L"
-      },
-      {
-        "ref": "C602",
-        "unit": 1,
-        "x": 359.41,
-        "y": 80.01,
-        "type": "C"
-      },
-      {
-        "ref": "C603",
-        "unit": 1,
-        "x": 170.18,
-        "y": 214.63,
-        "type": "C"
-      },
-      {
-        "ref": "C604",
-        "unit": 1,
-        "x": 279.4,
-        "y": 214.63,
-        "type": "C"
-      },
-      {
-        "ref": "C605",
-        "unit": 1,
-        "x": 379.73,
-        "y": 110.49,
-        "type": "C"
-      },
-      {
-        "ref": "L605",
-        "unit": 1,
-        "x": 410.21,
-        "y": 80.01,
-        "type": "L"
-      },
-      {
-        "ref": "C606",
-        "unit": 1,
-        "x": 449.58,
-        "y": 80.01,
-        "type": "C"
-      },
-      {
-        "ref": "R605",
-        "unit": 1,
-        "x": 490.22,
-        "y": 80.01,
-        "type": "R"
-      },
-      {
-        "ref": "Q501",
-        "unit": 1,
-        "x": 539.75,
-        "y": 80.01,
-        "type": "PD54008_Functional"
-      },
-      {
-        "ref": "R606",
-        "unit": 1,
-        "x": 389.89,
-        "y": 214.63,
-        "type": "R"
-      },
-      {
-        "ref": "RV501",
-        "unit": 1,
-        "x": 500.38,
-        "y": 214.63,
-        "type": "R_Potentiometer"
-      },
-      {
-        "ref": "D501",
-        "unit": 1,
-        "x": 59.69,
-        "y": 279.4,
-        "type": "D_Zener"
-      },
-      {
-        "ref": "L606",
-        "unit": 1,
-        "x": 170.18,
-        "y": 279.4,
-        "type": "L"
-      },
-      {
-        "ref": "C607",
-        "unit": 1,
-        "x": 279.4,
-        "y": 279.4,
-        "type": "C"
-      },
-      {
-        "ref": "Q502",
-        "unit": 1,
-        "x": 389.89,
-        "y": 279.4,
-        "type": "2N7002"
-      },
-      {
-        "ref": "L607",
-        "unit": 1,
-        "x": 500.38,
-        "y": 279.4,
-        "type": "L"
-      },
-      {
-        "ref": "C608",
-        "unit": 1,
-        "x": 59.69,
-        "y": 345.44,
-        "type": "C"
-      },
-      {
-        "ref": "TP601",
-        "unit": 1,
-        "x": 170.18,
-        "y": 345.44,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP602",
-        "unit": 1,
-        "x": 279.4,
-        "y": 345.44,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP604",
-        "unit": 1,
-        "x": 389.89,
-        "y": 345.44,
-        "type": "TestPoint"
-      }
-    ],
-    "06_normal_rfb1": [
-      {
-        "ref": "C609",
-        "unit": 1,
-        "x": 44.45,
-        "y": 100.33,
-        "type": "C"
-      },
-      {
-        "ref": "L608",
-        "unit": 1,
-        "x": 90.17,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "C610",
-        "unit": 1,
-        "x": 110.49,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "L621",
-        "unit": 1,
-        "x": 160.02,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "L622",
-        "unit": 1,
-        "x": 214.63,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "L625",
-        "unit": 1,
-        "x": 255.27,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "L623",
-        "unit": 1,
-        "x": 309.88,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "L626",
-        "unit": 1,
-        "x": 350.52,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "L624",
-        "unit": 1,
-        "x": 410.21,
-        "y": 100.33,
-        "type": "L"
-      },
-      {
-        "ref": "C621",
-        "unit": 1,
-        "x": 129.54,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "C622",
-        "unit": 1,
-        "x": 185.42000000000002,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "C623",
-        "unit": 1,
-        "x": 279.4,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "C624",
-        "unit": 1,
-        "x": 379.73,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "C625",
-        "unit": 1,
-        "x": 439.42,
-        "y": 129.54,
-        "type": "C"
-      },
-      {
-        "ref": "J501",
-        "unit": 1,
-        "x": 495.3,
-        "y": 100.33,
-        "type": "Conn_Coaxial"
-      },
-      {
-        "ref": "TP603",
-        "unit": 1,
-        "x": 59.69,
-        "y": 214.63,
-        "type": "TestPoint"
       }
     ],
     "07_training": [
@@ -9902,34 +8423,6 @@
         "type": "R"
       },
       {
-        "ref": "R815",
-        "unit": 1,
-        "x": 173.99,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "R816",
-        "unit": 1,
-        "x": 285.75,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "R817",
-        "unit": 1,
-        "x": 397.51,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
-        "ref": "R818",
-        "unit": 1,
-        "x": 510.54,
-        "y": 236.22,
-        "type": "R"
-      },
-      {
         "ref": "R819",
         "unit": 1,
         "x": 62.230000000000004,
@@ -10177,146 +8670,518 @@
         "type": "R"
       }
     ],
-    "09_test_power": [
+    "06_dl3_rf": [
       {
-        "ref": "#FLG901",
+        "ref": "U901",
         "unit": 1,
-        "x": 62.230000000000004,
+        "x": 64.77,
+        "y": 85.09,
+        "type": "LVC125"
+      },
+      {
+        "ref": "R900",
+        "unit": 1,
+        "x": 119.38,
+        "y": 100.33,
+        "type": "R"
+      },
+      {
+        "ref": "C900",
+        "unit": 1,
+        "x": 154.94,
+        "y": 100.33,
+        "type": "C"
+      },
+      {
+        "ref": "L900",
+        "unit": 1,
+        "x": 209.55,
+        "y": 100.33,
+        "type": "L"
+      },
+      {
+        "ref": "L901",
+        "unit": 1,
+        "x": 289.56,
+        "y": 100.33,
+        "type": "L"
+      },
+      {
+        "ref": "L902",
+        "unit": 1,
+        "x": 369.57,
+        "y": 100.33,
+        "type": "L"
+      },
+      {
+        "ref": "C901",
+        "unit": 1,
+        "x": 180.34,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "C902",
+        "unit": 1,
+        "x": 250.19,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "C903",
+        "unit": 1,
+        "x": 330.2,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "C904",
+        "unit": 1,
+        "x": 410.21,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "R901",
+        "unit": 1,
+        "x": 449.58,
+        "y": 185.42000000000002,
+        "type": "R"
+      }
+    ],
+    "06b_dl3_doubler_driver": [
+      {
+        "ref": "C911",
+        "unit": 1,
+        "x": 54.61,
+        "y": 139.7,
+        "type": "C"
+      },
+      {
+        "ref": "L904",
+        "unit": 1,
+        "x": 90.17,
+        "y": 199.39000000000001,
+        "type": "L"
+      },
+      {
+        "ref": "C913",
+        "unit": 1,
+        "x": 110.49,
+        "y": 199.39000000000001,
+        "type": "C"
+      },
+      {
+        "ref": "Q901",
+        "unit": 1,
+        "x": 129.54,
+        "y": 139.7,
+        "type": "BF981_PHILIPS"
+      },
+      {
+        "ref": "R909",
+        "unit": 1,
+        "x": 35.56,
+        "y": 199.39000000000001,
+        "type": "R"
+      },
+      {
+        "ref": "R910",
+        "unit": 1,
+        "x": 35.56,
+        "y": 80.01,
+        "type": "R"
+      },
+      {
+        "ref": "C912",
+        "unit": 1,
+        "x": 44.45,
+        "y": 199.39000000000001,
+        "type": "C"
+      },
+      {
+        "ref": "R911",
+        "unit": 1,
+        "x": 132.08,
+        "y": 105.41,
+        "type": "R"
+      },
+      {
+        "ref": "R912",
+        "unit": 1,
+        "x": 132.08,
+        "y": 185.42000000000002,
+        "type": "R"
+      },
+      {
+        "ref": "C916",
+        "unit": 1,
+        "x": 154.94,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "R914",
+        "unit": 1,
+        "x": 132.08,
+        "y": 48.26,
+        "type": "R"
+      },
+      {
+        "ref": "C914",
+        "unit": 1,
+        "x": 160.02,
+        "y": 85.09,
+        "type": "C"
+      },
+      {
+        "ref": "L905",
+        "unit": 1,
+        "x": 132.08,
+        "y": 74.93,
+        "type": "L"
+      },
+      {
+        "ref": "C915",
+        "unit": 1,
+        "x": 224.79,
+        "y": 139.7,
+        "type": "C"
+      },
+      {
+        "ref": "R913",
+        "unit": 1,
+        "x": 260.35,
+        "y": 199.39000000000001,
+        "type": "R"
+      },
+      {
+        "ref": "Q902",
+        "unit": 1,
+        "x": 294.64,
+        "y": 139.7,
+        "type": "2N4427_CENTRAL"
+      },
+      {
+        "ref": "R915",
+        "unit": 1,
+        "x": 297.18,
+        "y": 185.42000000000002,
+        "type": "R"
+      },
+      {
+        "ref": "C918",
+        "unit": 1,
+        "x": 320.04,
+        "y": 185.42000000000002,
+        "type": "C"
+      },
+      {
+        "ref": "L909",
+        "unit": 1,
+        "x": 297.18,
+        "y": 49.53,
+        "type": "L"
+      },
+      {
+        "ref": "C917",
+        "unit": 1,
+        "x": 330.2,
+        "y": 100.33,
+        "type": "C"
+      },
+      {
+        "ref": "L906",
+        "unit": 1,
+        "x": 297.18,
+        "y": 100.33,
+        "type": "L"
+      },
+      {
+        "ref": "C919",
+        "unit": 1,
+        "x": 369.57,
+        "y": 134.62,
+        "type": "C_Trim"
+      },
+      {
+        "ref": "R916",
+        "unit": 1,
+        "x": 420.37,
+        "y": 199.39000000000001,
+        "type": "R"
+      }
+    ],
+    "06c_dl3_final": [
+      {
+        "ref": "Q903",
+        "unit": 1,
+        "x": 85.09,
+        "y": 144.78,
+        "type": "MRF237_ASI"
+      },
+      {
+        "ref": "L910",
+        "unit": 1,
+        "x": 87.63,
+        "y": 100.33,
+        "type": "L"
+      },
+      {
+        "ref": "L911",
+        "unit": 1,
+        "x": 87.63,
+        "y": 59.69,
+        "type": "L"
+      },
+      {
+        "ref": "C920",
+        "unit": 1,
+        "x": 105.41,
+        "y": 59.69,
+        "type": "C"
+      },
+      {
+        "ref": "C922",
+        "unit": 1,
+        "x": 119.38,
+        "y": 90.17,
+        "type": "C"
+      },
+      {
+        "ref": "C921",
+        "unit": 1,
+        "x": 154.94,
+        "y": 139.7,
+        "type": "C"
+      },
+      {
+        "ref": "L907",
+        "unit": 1,
+        "x": 214.63,
+        "y": 139.7,
+        "type": "L"
+      },
+      {
+        "ref": "C923",
+        "unit": 1,
+        "x": 260.35,
+        "y": 190.5,
+        "type": "C"
+      },
+      {
+        "ref": "C924",
+        "unit": 1,
+        "x": 284.48,
+        "y": 190.5,
+        "type": "C_Trim"
+      },
+      {
+        "ref": "L908",
+        "unit": 1,
+        "x": 340.36,
+        "y": 139.7,
+        "type": "L"
+      },
+      {
+        "ref": "C925",
+        "unit": 1,
+        "x": 384.81,
+        "y": 190.5,
+        "type": "C"
+      },
+      {
+        "ref": "C926",
+        "unit": 1,
+        "x": 485.14,
+        "y": 190.5,
+        "type": "C"
+      },
+      {
+        "ref": "J501",
+        "unit": 1,
+        "x": 430.53000000000003,
+        "y": 139.7,
+        "type": "Conn_Coaxial"
+      }
+    ],
+    "10_original_modulator": [
+      {
+        "ref": "Q904",
+        "unit": 1,
+        "x": 59.69,
         "y": 64.77,
-        "type": "PWR_FLAG"
+        "type": "TIP127_ST"
       },
       {
-        "ref": "#FLG902",
+        "ref": "R926",
         "unit": 1,
-        "x": 173.99,
+        "x": 170.18,
         "y": 64.77,
-        "type": "PWR_FLAG"
+        "type": "R"
       },
       {
-        "ref": "#FLG903",
+        "ref": "RV902",
         "unit": 1,
-        "x": 285.75,
+        "x": 279.4,
         "y": 64.77,
-        "type": "PWR_FLAG"
+        "type": "R_Potentiometer"
       },
       {
-        "ref": "#FLG904",
+        "ref": "RV901",
         "unit": 1,
-        "x": 397.51,
+        "x": 389.89,
         "y": 64.77,
-        "type": "PWR_FLAG"
+        "type": "R_Potentiometer"
       },
       {
-        "ref": "#FLG905",
+        "ref": "R924",
         "unit": 1,
-        "x": 510.54,
+        "x": 500.38,
         "y": 64.77,
-        "type": "PWR_FLAG"
+        "type": "R"
       },
       {
-        "ref": "#FLG906",
+        "ref": "C927",
         "unit": 1,
-        "x": 62.230000000000004,
+        "x": 59.69,
         "y": 121.92,
-        "type": "PWR_FLAG"
+        "type": "C"
       },
       {
-        "ref": "#FLG907",
+        "ref": "R925",
         "unit": 1,
-        "x": 173.99,
+        "x": 170.18,
         "y": 121.92,
-        "type": "PWR_FLAG"
+        "type": "R"
       },
       {
-        "ref": "#FLG908",
+        "ref": "C928",
         "unit": 1,
-        "x": 285.75,
+        "x": 279.4,
         "y": 121.92,
-        "type": "PWR_FLAG"
+        "type": "C"
       },
       {
-        "ref": "#FLG909",
+        "ref": "C929",
         "unit": 1,
-        "x": 397.51,
+        "x": 389.89,
         "y": 121.92,
-        "type": "PWR_FLAG"
+        "type": "C_Polarized"
       },
       {
-        "ref": "#FLG910",
+        "ref": "C930",
         "unit": 1,
-        "x": 510.54,
+        "x": 500.38,
         "y": 121.92,
-        "type": "PWR_FLAG"
+        "type": "C"
       },
       {
-        "ref": "#FLG911",
+        "ref": "R930",
         "unit": 1,
-        "x": 62.230000000000004,
+        "x": 59.69,
         "y": 179.07,
-        "type": "PWR_FLAG"
+        "type": "R"
       },
       {
-        "ref": "TP901",
+        "ref": "C931",
         "unit": 1,
-        "x": 173.99,
+        "x": 170.18,
         "y": 179.07,
-        "type": "TestPoint"
+        "type": "C"
       },
       {
-        "ref": "TP902",
+        "ref": "D901",
         "unit": 1,
-        "x": 285.75,
+        "x": 279.4,
         "y": 179.07,
-        "type": "TestPoint"
+        "type": "D"
       },
       {
-        "ref": "TP903",
+        "ref": "R931",
         "unit": 1,
-        "x": 397.51,
+        "x": 389.89,
         "y": 179.07,
-        "type": "TestPoint"
+        "type": "R"
       },
       {
-        "ref": "TP904",
+        "ref": "R932",
         "unit": 1,
-        "x": 510.54,
+        "x": 500.38,
         "y": 179.07,
-        "type": "TestPoint"
+        "type": "R"
       },
       {
-        "ref": "TP905",
+        "ref": "R927",
         "unit": 1,
-        "x": 62.230000000000004,
-        "y": 236.22,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP906",
-        "unit": 1,
-        "x": 173.99,
-        "y": 236.22,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP907",
-        "unit": 1,
-        "x": 285.75,
-        "y": 236.22,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "TP908",
-        "unit": 1,
-        "x": 397.51,
-        "y": 236.22,
-        "type": "TestPoint"
-      },
-      {
-        "ref": "R519",
-        "unit": 1,
-        "x": 510.54,
+        "x": 59.69,
         "y": 236.22,
         "type": "R"
+      }
+    ],
+    "11_external_contract": [
+      {
+        "ref": "#FLG950",
+        "unit": 1,
+        "x": 59.69,
+        "y": 64.77,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG951",
+        "unit": 1,
+        "x": 170.18,
+        "y": 64.77,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG952",
+        "unit": 1,
+        "x": 279.4,
+        "y": 64.77,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG953",
+        "unit": 1,
+        "x": 389.89,
+        "y": 64.77,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG954",
+        "unit": 1,
+        "x": 500.38,
+        "y": 64.77,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG955",
+        "unit": 1,
+        "x": 59.69,
+        "y": 121.92,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG956",
+        "unit": 1,
+        "x": 170.18,
+        "y": 121.92,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG957",
+        "unit": 1,
+        "x": 279.4,
+        "y": 121.92,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG958",
+        "unit": 1,
+        "x": 389.89,
+        "y": 121.92,
+        "type": "PWR_FLAG"
       }
     ]
   }

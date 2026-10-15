@@ -1,0 +1,323 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T23:34:00",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9",
+            "violations": [
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J301 [Conn_01x02]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.6477
+                            },
+                            "uuid": "9f9bb782-c8ff-55f4-8a11-0bdd81955224"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L904 [L]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 1.9939
+                            },
+                            "uuid": "d5ead8e4-40cc-5f70-825c-7d796f8c69f0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (SOT*103*)",
+                    "items": [
+                        {
+                            "description": "Symbol Q901 [BF981_PHILIPS]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 1.397
+                            },
+                            "uuid": "c2beabbd-48fd-59fd-9365-716d41bf919e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L905 [L]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.7493
+                            },
+                            "uuid": "5a38382b-f685-5c5e-b987-0b36d55c2fc3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L909 [L]",
+                            "pos": {
+                                "x": 2.9718,
+                                "y": 0.4953
+                            },
+                            "uuid": "86cc65cb-ea38-5d4e-b33a-02c0ce1f353c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L906 [L]",
+                            "pos": {
+                                "x": 2.9718,
+                                "y": 1.0033
+                            },
+                            "uuid": "e442d476-3fda-525f-8160-740a94ead172"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L911 [L]",
+                            "pos": {
+                                "x": 0.8763,
+                                "y": 0.5969
+                            },
+                            "uuid": "569e9f97-4a73-5e93-b303-8e78dab65baa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L910 [L]",
+                            "pos": {
+                                "x": 0.8763,
+                                "y": 1.0033
+                            },
+                            "uuid": "3d46bd18-43a5-5a54-9e79-db9acf954e57"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L907 [L]",
+                            "pos": {
+                                "x": 2.1463,
+                                "y": 1.397
+                            },
+                            "uuid": "5bbfa924-8fe6-55b3-8f37-929b7bb06dc8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L908 [L]",
+                            "pos": {
+                                "x": 3.4036,
+                                "y": 1.397
+                            },
+                            "uuid": "5b0e1f45-f685-5dfd-a9c3-3692bd158055"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*)",
+                    "items": [
+                        {
+                            "description": "Symbol J701 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 1.7907
+                            },
+                            "uuid": "2b3216fe-bf95-5e89-a82d-3453240fd8b1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C927 [C]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 1.2192
+                            },
+                            "uuid": "2f470ebb-37e4-5c13-9401-187fc187e16e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C928 [C]",
+                            "pos": {
+                                "x": 2.794,
+                                "y": 1.2192
+                            },
+                            "uuid": "6f1967e3-45be-583c-9eda-ff9366579d8e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (CP_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C929 [C_Polarized]",
+                            "pos": {
+                                "x": 3.8989,
+                                "y": 1.2192
+                            },
+                            "uuid": "f2d9fbd9-3012-5b97-af36-22018be8d09e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                }
+            ]
+        },
+        {
+            "path": "/01 Interface and local Si5351 source/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/2a1f106b-9c4a-5bd2-8c24-ce6f27c25520",
+            "violations": []
+        },
+        {
+            "path": "/02 Minimal independent fail-off and captured ARM context/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/666aa08f-2a4c-5190-b559-24638d35045b",
+            "violations": []
+        },
+        {
+            "path": "/02 Minimal independent fail-off and captured ARM context continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/ae5ee1f3-957b-5d18-bef5-bd1bf5e58314",
+            "violations": []
+        },
+        {
+            "path": "/03 External protected pack and exclusive conversion populations/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/7c3d4273-ab57-51d3-ad79-5f47ab8bdb74",
+            "violations": []
+        },
+        {
+            "path": "/03 External protected pack and exclusive conversion populations continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/a25e8187-d540-59d9-87fc-638820b2b717",
+            "violations": []
+        },
+        {
+            "path": "/04 2S boost,10.9/13.8V candidate/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/550ad7c0-1339-59d9-a620-a7c876ba47b8",
+            "violations": []
+        },
+        {
+            "path": "/05 Sine reconstruction and training command/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/d64ef378-0f70-59c5-8ce5-78fb7445c1f6",
+            "violations": []
+        },
+        {
+            "path": "/07 Independent very-low-power sine-AM training path/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/4aef4335-d244-5347-97fb-8b6e1f57c5ac",
+            "violations": []
+        },
+        {
+            "path": "/07 Independent very-low-power sine-AM training path continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/e3c6d3a6-2714-5297-b6d3-c729cfcec42b",
+            "violations": []
+        },
+        {
+            "path": "/08 Local voltage, current and thermal trip/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/bb381643-7bc9-579c-809d-59c2ac7b9e95",
+            "violations": []
+        },
+        {
+            "path": "/08 Local voltage, current and thermal trip continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/4b7e4e79-23a7-545d-be74-3644d72fa757",
+            "violations": []
+        },
+        {
+            "path": "/06 DL3BBX retained72MHz doubler, driver, final and output network/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/2eede5e2-5be0-5caa-9ef9-3009ca111887",
+            "violations": []
+        },
+        {
+            "path": "/06b Retained DL3BBX T3 doubler and T4 driver/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/afd6405f-cf53-5e6e-a1c4-f88474cef063",
+            "violations": []
+        },
+        {
+            "path": "/06c Retained DL3BBX MRF237 final and output matching/filter/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/60acdbf6-71a9-5957-8d09-bcd2acf35954",
+            "violations": []
+        },
+        {
+            "path": "/10 Original Darlington collector-supply AM, PWM sine input/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/a1ec8e5b-0f94-5640-92ff-8ba89b6641b4",
+            "violations": []
+        },
+        {
+            "path": "/11 External supply declarations and qualification boundary/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/0eaf39a9-2c7f-52f8-ae8a-7710f79839cd",
+            "violations": []
+        }
+    ],
+    "source": "RF2M.kicad_sch"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS archivedR1 regression; historical reports unchanged",
+  "logic_combinations": 4096,
+  "state_scenarios": 36,
+  "mutations": [
+    "U303:3",
+    "Q501:D",
+    "Q501:S",
+    "Q401:1",
+    "U101:6",
+    "U202:1",
+    "U501:4",
+    "Q701:2",
+    "U209:2",
+    "path",
+    "switch",
+    "R506",
+    "C409",
+    "F301"
+  ],
+  "pin_maps": 34,
+  "power_switch_checks": {
+    "switch_truth_rows": 8,
+    "training_inhibit_min_calculated_v": 2.8447754353803845,
+    "inhibit_required_vih_v": 2.0,
+    "loaded_current_reference_v": 1.0323298582039298,
+    "current_trip_nominal_a": 1.8001572900521263,
+    "scope": "Static logic and DC bounds only; turn-off timing NOT_VERIFIED"
+  },
+  "erc_errors": 0,
+  "erc_open_warnings": 3
+}

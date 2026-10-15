@@ -1,0 +1,10 @@
+requirement,meaning,status,evidence
+RF2-001/RF2-004,"CarrierERP,70-80% sineAM,PEP margin",OPEN,"RFpower JSON, original>3W lower bound, one end-to-end RF acceptance required"
+RF2-002/RF2-005,Independent low-power training output,SCHEMATIC_RETAINED_PHYSICAL_OPEN,Separate CLK2/buffer/BJT/filter/MCX; radiation/isolation NOT_RUN
+RF2-006/CTRL-005,Independent fail-off and rearm,STATIC_PASS_TIMING_OPEN,"4096 combinations/36scenarios, real POR/reset/RC/driver withdrawal not measured"
+RF2-007,Programmable legal frequencies,CONTRACT_ONLY_NO_FIRMWARE,CLK0=RF/2; CLK2=RF; country/championship restrictions require controller validation
+PWR-003/SYS-008,12h full24h reduced,MODELED_ONLY,"Actual output,current,cell energy and4Swindow NOT_RUN"
+COST-001/COST-002,Low-cost6/10/20 reproducible source,NO_GO,Legacy device price/maker/stock; coil quotes OPEN;93.16EUR at10 conditional2S
+M5A-R3 CAD,Editable schematic and integrated PCB,SCHEMATIC_DONE_PCB_BLOCKED,Exact manufacturer/landings unresolved; no guessed PCB
+Change control,RF80/R1/ADRs preserved,HASH_PASS,"Starting467files, R1archive and review retained"
+Permissions,Private construction; no commercial rights assumed,DOCUMENTED,DL3BBX written permission needed before commercial exploitation

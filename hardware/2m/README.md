@@ -1,13 +1,24 @@
-# RF2M — M5A-R1 electrical evaluation candidate
+# RF2M electrical candidates
 
-**NOT RELEASED. No layout, purchasing, fabrication, assembly or RF operation.**
+The active editable project is **M5A-R3**, a private-construction DL3BBX-derived schematic. It is **NOT RELEASED** and **NO_GO for PCB commitment**: exact legacy RF-device supply/manufacturer, some physical landings, upper-power AM headroom and thermal behavior remain unresolved. There is no RF2M PCB or manufacturing package.
 
-The existing [editable project](RF2M.kicad_pro) now contains the PD54008L-E/PHA-1+ evaluation candidate, revised true-AM supply, unchanged hardware fail-off and independent training branch. Read the [R1 decision](../../docs/M5A_R1_REVIEW_DECISION.md) and [schematic PDF](review/M5A-R1/RF2M.pdf).
+Start with [the R3 review decision](../../docs/M5A_R3_REVIEW_DECISION.md) and [schematic PDF](review/M5A-R3/RF2M.pdf). The [itemized BOM](review/M5A-R3/RF2M_BOM.csv) is a conditional allowance, not an order list. Source rights are recorded in [LICENSE-REFERENCE-DL3BBX.md](LICENSE-REFERENCE-DL3BBX.md).
 
-**Coupon layout is NO-GO:** the original ST matching drawings and final-device physical landing remain OPEN. The schematic deliberately exposes those gaps. ERC and digital tests do not qualify RF, thermal, analog startup or package geometry.
+R1 remains at Git tag `m5a-r1` and [its native archive](archive/M5A-R1/README.md); its review exports remain unchanged under `review/M5A-R1/`. R0 is similarly archived. R2 produced research documents only. Do not run the historical R0/R1 generator against the active project to review an older revision; open its archive instead.
 
-R0 remains at Git tag `m5a-r0` / commit `ea671c1`, in [native archive](archive/M5A-R0/) and [historical review package](review/M5A-R0/). R0 documents describe that revision; the active native project is R1. Use the R1 tools in [reproduction instructions](review/M5A-R1/README.md); running R0 generators against the current tree would overwrite R1.
+Reproduce the R3 artifacts from the repository root:
 
-[Variant BOM](review/M5A-R1/RF2M_BOM.csv) covers BOOST2S, BUCK4S and TRAIN_ONLY. Only one converter population is fitted. Normal MODULE_ID values are 12.1 kΩ / 27.4 kΩ; training remains 47 kΩ. Training omits normal power components and fits its documented health/input terminations. Calibration, exact parts and physical variant operation remain unqualified.
+```sh
+python3 tools/m5a_r3_design.py
+kicad-cli sch erc --format json --output hardware/2m/review/M5A-R3/erc.json hardware/2m/RF2M.kicad_sch
+kicad-cli sch export netlist --format kicadxml --output hardware/2m/review/M5A-R3/RF2M.net.xml hardware/2m/RF2M.kicad_sch
+kicad-cli sch export pdf --output hardware/2m/review/M5A-R3/RF2M.pdf hardware/2m/RF2M.kicad_sch
+python3 tools/m5a_r3_verify.py
+python3 tools/m5a_r3_models.py
+python3 tools/m5a_r3_docs.py
+kicad-cli sch erc --format json --output hardware/2m/review/M5A-R3/fallback-r1-erc.json hardware/2m/archive/M5A-R1/RF2M.kicad_sch
+kicad-cli sch export netlist --format kicadxml --output hardware/2m/review/M5A-R3/fallback-r1.net.xml hardware/2m/archive/M5A-R1/RF2M.kicad_sch
+python3 tools/m5a_r3_checks.py
+```
 
-RF80/M4A and accepted architecture files are unchanged. No additional MCU or primary PCB is introduced. Local symbols retain the supplied [KiCad library license/design exception](LICENSE-KICAD-SYMBOLS.md). ST references are attributed in the [source audit](../../docs/M5A_R1_ST_REFERENCE_AUDIT.md); unread proprietary artwork is not copied or represented as inspected.
+KiCad CLI 10.0.6, Python 3.12 and Poppler were used. Only standard installed symbol/footprint libraries and the local symbol file are needed. The inherited R1 generator is imported into a temporary directory for template reuse; R1 review artifacts are not overwritten. External source hashes/access failures are in the R3 review package. No calculation or CAD check is an RF, analog startup, thermal or endurance measurement.

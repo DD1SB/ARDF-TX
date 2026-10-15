@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "IDEAL resistive/current-proportional example, not MRF237 transfer model.0.60A center case is an overload illustration, NOT a permitted AM operating profile.",
+    "vin_v": 13.8,
+    "center_v": 6.555555555555555,
+    "trough_v": 1.3111111111111111,
+    "crest_v": 11.8,
+    "carrier_current_a_assumed": 0.3,
+    "crest_current_a_assumed": 0.54,
+    "pass_average_am_w": 1.544,
+    "pass_no_tone_w": 2.1733333333333333,
+    "maximum_instantaneous_pass_w": 2.178762711864407,
+    "TIP127_RthJC_C_per_W": 1.92,
+    "estimated_case_C_at40C_3CperW_sink_plus1CperW_interface": 48.693333333333335,
+    "estimated_junction_C_same": 52.86613333333334
+  },
+  {
+    "scope": "IDEAL resistive/current-proportional example, not MRF237 transfer model.0.60A center case is an overload illustration, NOT a permitted AM operating profile.",
+    "vin_v": 13.8,
+    "center_v": 6.555555555555555,
+    "trough_v": 1.3111111111111111,
+    "crest_v": 11.8,
+    "carrier_current_a_assumed": 0.6,
+    "crest_current_a_assumed": 1.08,
+    "pass_average_am_w": 3.088,
+    "pass_no_tone_w": 4.346666666666667,
+    "maximum_instantaneous_pass_w": 4.357525423728814,
+    "TIP127_RthJC_C_per_W": 1.92,
+    "estimated_case_C_at40C_3CperW_sink_plus1CperW_interface": 57.38666666666667,
+    "estimated_junction_C_same": 65.73226666666667
+  }
+]
