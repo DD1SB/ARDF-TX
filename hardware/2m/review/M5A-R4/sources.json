@@ -1,0 +1,211 @@
+{
+  "date": "2026-10-16",
+  "entries": [
+    {
+      "id": "ST_VHF",
+      "accessed": "2026-10-16",
+      "url": "https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf",
+      "evidence": "DocID17343Rev1March2010;printedpp9-11visuallyinspected;26matching/filter positions transcribed",
+      "note": "Recovered manufacturer PDF via DatasheetArchive distributors/Datasheets-DGA5/438709.pdf;mirror appends one archive page. Direct ST PDF/schematic binary HTTP2/HTTP1 failures. No original GerberZIP obtained.",
+      "retrieved_binary_sha256": "dac2eedc538dc77d4678c29c246e4fc86ec28a4224a9e353e9d81d54e9256414",
+      "temporary_original_file": "/tmp/ardf-m5ar4/st-full.pdf"
+    },
+    {
+      "id": "ST_PD54008",
+      "accessed": "2026-10-16",
+      "url": "https://www.st.com/resource/en/datasheet/pd54008l-e.pdf",
+      "evidence": "Jan2007Rev2pp1/11/13;pinregions/mechanical/landing visuallyinspected",
+      "note": "Manufacturer-authored PDF retrieved from https://media.pneda.com/datasheetfiles/pd54008l-e.pdf ;not sourcing from that broker.",
+      "retrieved_binary_sha256": "6e90e2af61a811bee2b62be6f62a3b0fea32d0a8ab6567ddc3fcae87a880fdcb",
+      "temporary_original_file": "/tmp/ardf-m5ar4/pd54008.pdf"
+    },
+    {
+      "id": "ST_status",
+      "accessed": "2026-10-16",
+      "url": "https://www.st.com/en/radio-frequency-transistors/pd54008l-e.html",
+      "evidence": "Active;volumeproduction;PowerFLAT5x5HV",
+      "note": "Manufacturer page read;does not establish stock.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "PD_price",
+      "accessed": "2026-10-16",
+      "url": "https://www.mouser.de/de/ProductDetail/STMicroelectronics/PD54008L-E?qs=sGAEpiMZZMsPo2fL1zXfdqEwePZnwSUq%2Fv1gNDbGsv4%3D",
+      "evidence": "EUR7.35@1/5.30@10/4.78@100;CTMOQ1;indexed3430stock",
+      "note": "Indexed/cached dated lookup,not reserved quote. Manufacturer tray/reel3000 is not customer MOQ.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "PHA_datasheet",
+      "accessed": "2026-10-16",
+      "url": "https://pccomponents.com/datasheets/MINI_-PHA1.pdf",
+      "evidence": "Mini-CircuitsRevDoriginalpin/operatingtable",
+      "note": "Manufacturer-authored distributor mirror;main Mini-CircuitsPDFreturned403.",
+      "retrieved_binary_sha256": "a1f8926a046133634bcd67d6ea7985949e859b5685de70250a4902972a5fed5b",
+      "temporary_original_file": "/tmp/ardf-m5ar4/pha1.pdf"
+    },
+    {
+      "id": "PHA_extended",
+      "accessed": "2026-10-16",
+      "url": "https://filur.net/userdata/modules/productFiles/file_v0DXDEJ.pdf",
+      "evidence": "ManufacturerRevD+2011typicaldata+DF782RevG2017drawing;31page distributor bundle inspected",
+      "note": "5V50/200MHzexamples22.70/22.64dBm;not a guaranteed144MHzminimum. Suggested land transcribed and dimensions asserted;ground stencil/vias/assembly remain OPEN.",
+      "retrieved_binary_sha256": "bce0f38bc0be964e635fd937fea8f943b11c62c78b6694dc0b65edd6eb15a509",
+      "temporary_original_file": "/tmp/ardf-m5ar4/pha1-layout.pdf"
+    },
+    {
+      "id": "PHA_price",
+      "accessed": "2026-10-16",
+      "url": "https://www.digikey.es/es/products/detail/mini-circuits/PHA-1/13928098",
+      "evidence": "EUR2.88@1/2.351@50;CTMOQ1;indexed12794stock",
+      "note": "Other regional caches differ,including an anomalousFRMouser1pieceprice. SelectedDigiKeyEURnetbasket,not cross-mixed quantities.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "RF_L56",
+      "accessed": "2026-10-16",
+      "url": "https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179",
+      "evidence": "EUR.120@1/.102@10/.0839@100;indexed28315;RFwirewound56nH",
+      "note": "Exact56nH observation.91/180nH costs remain estimates;no silent application of56n price to allRFinductors.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "RF_L_specs",
+      "accessed": "2026-10-16",
+      "url": "https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf",
+      "evidence": "Murata-authoredQ/SRF/currentfamilytable read via browser",
+      "note": "Binaryfailed;91nHspec33Q,1.9GHz,520mA frommanufacturer table.180nHcomplete qualificationOPEN.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "Coilcraft_LPF",
+      "accessed": "2026-10-16",
+      "url": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/1008-%282520%29/1008cs/1008cs-390/",
+      "evidence": "39nH,Q60@350MHz,SRF1500MHz,1Arise-currentbasis",
+      "note": "Manufacturer family/current suffix confirmed;EUR0.75prices for LPFvalues remain estimates,not USDconversion claims.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "Coilcraft_A05T",
+      "accessed": "2026-10-16",
+      "url": "https://www.coilcraft.com/en-us/products/rf/air-core-inductors/mini-spring/axxt-bxxt/a05t/",
+      "evidence": "5turns18.5nH,Q132@150MHz,SRF2.5GHz,4Arise-currentbasis",
+      "note": "OriginalSTcoil family. Exact land to be transcribed;no inventedDIY geometry.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "Coilcraft_bias_feed",
+      "accessed": "2026-10-16",
+      "url": "https://www.coilcraft.com/en-us/products/rf/air-core-inductors/midi-spring/1812sms/1812sms-33n/",
+      "evidence": "Current1812SMS-33NJLC/GLC33nH,Qmin100@150MHz,SRF2.5GHz,3Arisebasis",
+      "note": "Manufacturer selected configuration not directly purchasable. Exact CT EUR quote/landing still OPEN.0.80EUR remains estimate,not stock-backed.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "Panasonic_reservoir",
+      "accessed": "2026-10-16",
+      "url": "https://industrial.panasonic.com/sa/products/pt/os-con/models/25SVPG150M",
+      "evidence": "150uF25V+/-20percent,ESR13mohm@100kHz,4.2Arms@105C,C10diameter6.3mm/height9.9mm",
+      "note": "Exact candidate replaces generic OPEN MPN. CT catalog entry exists at DigiKey26003740;EUR price,available stock,temperature ESR and exact land not closed. No500factoryMOQ assumption.1.50EUR estimate unchanged.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "A05T_price",
+      "accessed": "2026-10-16",
+      "url": "https://eu.mouser.com/ProductDetail/Coilcraft/A05TJLC?qs=zCSbvcPd3pYJqqPlmZ4EHA%3D%3D",
+      "evidence": "EUR1.51@1/1.28@10/1.18@25;CTMOQ1;stock110EU/331ATcaches",
+      "note": "Not factory700MOQ. Dates/caches/stock not reservation.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "TPS611781_price",
+      "accessed": "2026-10-16",
+      "url": "https://www.digikey.fr/en/products/detail/texas-instruments/TPS611781RNWR/7056156",
+      "evidence": "EUR2.71@1/2.031@10/1.86@25;CTMOQ1;indexed4371",
+      "note": "Replaces carried2.25EURestimate. Manufacturer RNW land now recovered separately.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "TPS611781_drawing",
+      "accessed": "2026-10-16",
+      "url": "https://www.ti.com/lit/ds/symlink/tps61178.pdf",
+      "evidence": "SLVSDA7E,August2019;RNW0013A4222804/C11/2019board/stencil drawings visually inspected",
+      "note": "13 physical terminals include independent center6PGND7SW8VOUT bars. Local candidate copper/mask/paste land dimensions asserted;no common grounded EP invented.",
+      "retrieved_binary_sha256": "0613b2c59bab6374654c736e21b90021506a04d4f83183c887bd38376cf527a3",
+      "temporary_original_file": "/tmp/ardf-m5ar4/tps61178.pdf"
+    },
+    {
+      "id": "TPS54302_price",
+      "accessed": "2026-10-16",
+      "url": "https://www.digikey.de/en/products/detail/texas-instruments/TPS54302DDCR/6572466",
+      "evidence": "EUR1.21@1/.879@10/.796@25;CTMOQ1;indexed6904",
+      "note": "SameDDCRsilicon/ordercode,not a nonexistent CT assumption. Replaces0.55EURestimate;otherregionalcachesvary.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "HC21",
+      "accessed": "2026-10-16",
+      "url": "https://assets.nexperia.com/documents/data-sheet/74HC21.pdf",
+      "evidence": "Rev10Jan17,2024;dual4inputANDphysicalpinmap",
+      "note": "CurrentmanufacturerPDFtext inspected;old74HC_HCT21URLfailed. No discontinued652 suffix selected.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "D45H11",
+      "accessed": "2026-10-16",
+      "url": "https://www.st.com/resource/en/datasheet/d45h11.pdf",
+      "evidence": "DocID4213Rev5Oct2009;RthJC2.5K/W;hotSOAgraphqualificationOPEN",
+      "note": "Manufacturerpinmap inheritedR1assertion;thermal rating is not hot linear SOA proof.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    },
+    {
+      "id": "RD06HVF1",
+      "accessed": "2026-10-16",
+      "url": "https://www.rfparts.com/old_site/pdf_docs/RD/rd06hvf1.pdf",
+      "evidence": "Mitsubishi175MHz6W12.5Vactualtestcircuit",
+      "note": "OriginalmanufacturerPDFdistributormirror. Finite-stock alternative not selected;175MHzperformance not144MHzAMproof.",
+      "retrieved_binary_sha256": "5768313d9e3dfe9425fedf983078e25e3a9752bbe02ed6aa78c204b33fee0a4b",
+      "temporary_original_file": "/tmp/ardf-m5ar4/rd06.pdf"
+    },
+    {
+      "id": "RD06_EOL",
+      "accessed": "2026-10-16",
+      "url": "https://www.anglia.com/registration/pcn_ptn/docs/ptn/SiRF%20TO-220%20EOL%20announcement_20220511.pdf",
+      "evidence": "MitsubishiMay11,2022TO220discontinuation,Dec2022lastorders",
+      "note": "Originalmanufacturer notice obtained. SDR-Kits listing alone cannot confirm25+sparesallocation.",
+      "retrieved_binary_sha256": "eb13286a55988b26ced6d6d84dfa014820dbcc689c7a472c1a9aadaf756f4631",
+      "temporary_original_file": "/tmp/ardf-m5ar4/rd06-eol.pdf"
+    },
+    {
+      "id": "IARU",
+      "accessed": "2026-10-16",
+      "url": "https://www.iaru-r1.org/wp-content/uploads/2025/01/ARDF-Rules_B_2025.pdf",
+      "evidence": "2025Appendix1T2.8andT2.4",
+      "note": "Primaryrulesread;not legal transmitter authorization.",
+      "retrieved_binary_sha256": null,
+      "temporary_original_file": null
+    }
+  ],
+  "third_party_files": "Not vendored/relicensed. Temporary originals used for inspection;stable publisher URLs and retrieval hashes retained.",
+  "failed_originals": [
+    "ST standalone schematic binary",
+    "ST standalone BOM binary",
+    "ST Gerber ZIP main/regional servers",
+    "Mini-Circuits directPDF403",
+    "several archive/download mirrors;usable manufacturer-authored PDFs recovered as stated"
+  ]
+}

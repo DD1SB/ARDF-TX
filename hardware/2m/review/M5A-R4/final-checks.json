@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DOCUMENT_CAD_LEDGER_CHECKS_ONLY",
+  "ERC_errors": 0,
+  "ERC_warnings": 7,
+  "ERC_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    }
+  ],
+  "local_links": 45,
+  "documents": 6,
+  "historical_R3_files_in_tag": 64,
+  "archived_R1_combinations": 4096,
+  "archived_R1_scenarios": 36,
+  "preserved_files": 511,
+  "population_cost_baskets": 9,
+  "driver_model": "Conditional RC upper arithmetic<5.9V;not physical qualification",
+  "RF_energy_sanity": "PASS for stated efficiency assumptions",
+  "PCB_DRC": "NOT_RUN_NO_PCB",
+  "physical_tests": "NOT_RUN"
+}

@@ -1,0 +1,6 @@
+{
+  "tool": "KiCad10.0.6 pcbnew.FootprintLoad",
+  "status": "ALL_3_CANDIDATE_LAND_FILES_LOAD",
+  "output_and_diagnostics": "[('PD54008L_ST_GDS_5x5', 3), ('PHA1_DF782_RevG', 4), ('TI_RNW0013A_4222804C', 22)]\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined",
+  "note": "Headless KiCad emits PROPERTY_ENUM No enum choices defined diagnostics while loading;files load and pad counts are asserted separately. This is not PCB DRC or physical footprint qualification."
+}

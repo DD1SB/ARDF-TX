@@ -1,0 +1,319 @@
+ref,value,mpn,footprint,group,population,evidence,source_url,note
+J101,Controller 20 pin,OPEN keyed 20pin 2.54mm,Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical,connector,ALL,ESTIMATE,,Controller input maximum 3.465V; power/ground sequencing in interface document. No battery current in this header.
+R101,18.2k,RC0603FR-0718K2L,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,R4-only IDs18.2k2S/39.2k4S/82ktrain. Bind calibration/firmware contract; never accept R3 half-frequency setup.
+R102,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R103,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R104,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R105,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R106,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R107,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R108,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R109,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R110,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R111,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R112,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R115,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R116,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+U101,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,source,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tps22919.pdf,SLVSEN5B table:1IN2GND3ON4NC5QOD6OUT; no substituted similar switch pinout.
+U102,SN74LVC2G66DCUR,SN74LVC2G66DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,source,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf,"OFF isolation avoids Si5351 I2C backpower; bus <400kHz, pullups host side."
+U103,Si5351A-B-GT,Si5351A-B-GT,Package_SO:MSOP-10_3x3mm_P0.5mm,source,ALL,ESTIMATE,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,"R4 PLL_A=6*fRF, both MS0 and MS2 divide6; CLK1 disabled. Local Si5351 remains, no crystal multipliers. Real VHF spurs/stability NOT_RUN."
+Y101,25MHz CL10p 10/10ppm,ABM8-25.000MHZ-10-B1U-T,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,source,ALL,ESTIMATE,,"10pF load matches Si5351 setting; 10ppm initial/10ppm temperature listing, aging/pulling calibration and manufacturer footprint confirmation OPEN."
+C101,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C102,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C103,1u,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,decoupling,ALL,ESTIMATE,,
+TP101,CLK_NORMAL,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP102,CLK_TRAIN,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+U201,TPS3431SDRBR,TPS3431SDRBR,Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm,interlock,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tps3431.pdf,Fixed 200ms via CWD 10k to VDD. Falling WDI every <=100ms; tWD170-230ms. No first-edge witness claim; 170-230ms startup reset.
+R201,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,passive,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R202,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,passive,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C201,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+U208,TLV803EA29DBZR,TLV803EA29DBZR,Package_TO_SOT_SMD:SOT-23,interlock,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tlv803e.pdf,Open-drain reset; exact A29 threshold/delay and 1GND2RESET3VDD table verification required.
+U202,"74HC174D,653","74HC174D,653",Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,interlock,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf,3.3 V CMOS. Each physical package counted once; every unused input tied.
+U203,"74HC14D,653","74HC14D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,interlock,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf,"R4 final inverter: RC delayed clock startup, diode accelerated inhibit. Hardware analog timing NOT_RUN."
+U204,"74HC11D,653","74HC11D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,interlock,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC_HCT11.pdf,"Three triple AND gates: valid ARM context, direct shared inhibit, source permission. Scheduling remains in controller."
+U207,"74HC32D,653","74HC32D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,interlock,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf,3.3 V CMOS. Each physical package counted once; every unused input tied.
+R203,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,passive,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C202,1u,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,decoupling,ALL,ESTIMATE,,
+R204,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,passive,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R205,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,passive,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C203,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C204,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C205,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C206,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C207,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C208,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,NORMAL,ESTIMATE,,
+R206,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,interlock,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+TP201,SAFE_N,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP202,CLR_N,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP203,VALID_ARM,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP204,ARM_DELAY,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP205,NORMAL_PERMIT,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP206,TRAIN_PERMIT,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+J301,Protected pack,OPEN keyed 2S/4S power connector,,connector,NORMAL,ESTIMATE,,
+F301,4A fast / qualify I2t,0466004.NRHF,Fuse:Fuse_1206_3216Metric,input,NORMAL,ESTIMATE,https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f,"Littelfuse466series32VAC/DC50Ainterrupt,1206,4A code004. Candidate selected from manufacturer2023table; stock/price/landing and prospective fault-current coordination OPEN. Old2A lacks low-battery transmit-slot margin.0.50EUR ESTIMATE, not quote. Local1.8A PA trip retained; fuse is wiring/secondary fault protection, not PA current control."
+Q309,AO3401A,AO3401A,Package_TO_SOT_SMD:SOT-23,input,NORMAL,ESTIMATE,https://www.aosmd.com/res/data_sheets/AO3401A.pdf,"AO3401A -30V, +/-12VGS; clamp required. Exact manufacturer/suffix before ordering."
+R314,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,input,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+D307,10V reverse-FET gate clamp,"BZT52H-C10,115",Diode_SMD:D_SOD-123F,input,NORMAL,ESTIMATE,,Source-to-gate clamp; raw16.8V never applied as full VGS. Reverse body diode oriented BAT_FUSED->VIN_PROT.
+D302,SMBJ18A,SMBJ18A-E3/52,Diode_SMD:D_SMB,input,NORMAL,ESTIMATE,https://www.vishay.com/docs/88392/smbj.pdf,Not guaranteed to clamp below 20V. 30V frontend/fault test gate; no direct unrestricted Li-ion bringup.
+C301,10u,C3225X7R1V106M250AC,Capacitor_SMD:C_1210_3225Metric,input,NORMAL,ESTIMATE,,
+C302,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,input,NORMAL,ESTIMATE,,
+Q305,AO3401A,AO3401A,Package_TO_SOT_SMD:SOT-23,input,NORMAL,ESTIMATE,https://www.aosmd.com/res/data_sheets/AO3401A.pdf,"AO3401A -30V, +/-12VGS; clamp required. Exact manufacturer/suffix before ordering."
+R310,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,input,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R311,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,input,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q306,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,input,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+R312,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,input,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R313,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,input,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+D306,10V input gate clamp,"BZT52H-C10,115",Diode_SMD:D_SOD-123F,input,NORMAL,ESTIMATE,,
+U304,SN74LVC2G08DCUR,SN74LVC2G08DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,supply_isolation,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/sn74lvc2g08.pdf,1/2->7 PACK_RUN=CONV_EN&PACK_OK_N;5/6->3 RAIL_RUN=CONV_EN&HARD_OK_N. Precharge driver BEFORE ARM; slot shutdown is pass-command clamp+helper clamp+gate-bias clamp+driver switch+clock mute. Faults independently disconnect9V. No heavy reservoir charging each slot.
+C310,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,NORMAL,ESTIMATE,,
+J302,Exclusive converter link,OPEN keyed exclusive shunt,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,input,NORMAL,ESTIMATE,,1-2 BOOST (2S); 2-3 BUCK (4S). Never bridge both; DNP other converter. Incoming pack window population must agree.
+U301,TPS54302DDCR,TPS54302DDCR,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,converter,BUCK4S,OBSERVED_2026_10_16_NET,https://www.digikey.de/en/products/detail/texas-instruments/TPS54302DDCR/6572466,Exact DDCR available in cut tape; no3000reel MOQ assumed. Replaces carried0.55EUR estimate with actual indexed CT break. TI DDC pin mapping unchanged.
+L301,10u,OPEN: shielded power inductor 10u,Inductor_SMD:L_Bourns_SRR1260,converter,BUCK4S,ESTIMATE,,"Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck."
+C303,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,converter,BUCK4S,ESTIMATE,,
+C304,22u,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,converter,BUCK4S,ESTIMATE,,
+C305,22u,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,converter,BUCK4S,ESTIMATE,,
+R301,116k,RC0603FR-07116KL,Resistor_SMD:R_0603_1608Metric,converter,BUCK4S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,R4 4S buck7.5096V reduced;capturedPROFILE_Q shunts46.4k ->8.9996V full. Both remain attainable across protected4S12-16.8V. RF calibration remains independent.
+R302,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,converter,BUCK4S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R303,46.4k,RC0603FR-0746K4L,Resistor_SMD:R_0603_1608Metric,converter,BUCK4S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q301,2N7002,"2N7002,215",Package_TO_SOT_SMD:SOT-23,converter,BUCK4S,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,1G 2S 3D; manufacturer fixed before ordering.
+R304,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,converter,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q302,AO3401A,AO3401A,Package_TO_SOT_SMD:SOT-23,supply_isolation,NORMAL,ESTIMATE,https://www.aosmd.com/res/data_sheets/AO3401A.pdf,"AO3401A -30V, +/-12VGS; clamp required. Exact manufacturer/suffix before ordering."
+R305,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,supply_isolation,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R306,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,supply_isolation,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q303,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,supply_isolation,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+R307,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,supply_isolation,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R308,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,supply_isolation,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+D304,10V gate clamp,"BZT52H-C10,115",Diode_SMD:D_SOD-123F,supply_isolation,NORMAL,ESTIMATE,,
+R309,0.1,OPEN 0.1ohm 1% 1W Kelvin layout,Resistor_SMD:R_2512_6332Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,High-side0.1ohm sense; nominal1.80A analog trip retained. Verify AM crest/inrush and actual fault latency; no fuse-as-PA-limiter assumption.
+C306,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,power,NORMAL,ESTIMATE,,"Protected9V local bypass; converter bulk upstream, driver reservoirs after8.2ohm. Startup/loop stability NOT_RUN."
+C307,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,power,NORMAL,ESTIMATE,,
+TP301,VIN_PROT,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP302,VREG_RAW,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP303,VMOD,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+U302,TPS611781RNWR,TPS611781RNWR,ARDF_2M:TI_RNW0013A_4222804C,converter,BOOST2S,OBSERVED_2026_10_16_NET,https://www.digikey.fr/en/products/detail/texas-instruments/TPS611781RNWR/7056156,"TI SLVSDA7E p3 top view, package drawing4222804/C11/2019 visually inspected. Separate center bars6PGND7SW8VOUT, no fictitious common grounded EP. Candidate local copper/mask/paste geometry checked; board integration/assembly qualification OPEN."
+L302,4.7u,OPEN: shielded power inductor 4.7u,Inductor_SMD:L_Bourns_SRR1260,converter,BOOST2S,ESTIMATE,,"Manufacturer family verified.USD0.92 family price /ECB1.1195 conversion is an allowance, exact value checkout OPEN; footprint pad geometry OPEN before layout.91n CS used only low-drive filters. Power inductors require Isat>=6A boost or>=3A buck."
+C401,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,converter,BOOST2S,ESTIMATE,,
+C402,4.7u,GRM31CR71E475KA88L,Capacitor_SMD:C_1206_3216Metric,converter,BOOST2S,ESTIMATE,,
+C403,22u,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,converter,BOOST2S,ESTIMATE,,
+C404,22u,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,converter,BOOST2S,ESTIMATE,,
+R401,634k,RC0603FR-07634KL,Resistor_SMD:R_0603_1608Metric,converter,BOOST2S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"R4 fixed9.02086V nominal, above fully charged2S8.4V. Removes invalid boost-only7.5V reduced setting. Both profiles use calibrated AF/LEVEL PWM."
+R402,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,converter,BOOST2S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,VREF1.229V ->7.4969V reduced; PROFILE_Q250k shunt gives10.004V full. Tolerance/calibration gate.
+R403,150k,RC0603FR-07150KL,Resistor_SMD:R_0603_1608Metric,converter,BOOST2S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,745/Rk ~4.97A nominal switch-current limit; duty/tolerance verification gate.
+R404,340k,RC0603FR-07340KL,Resistor_SMD:R_0603_1608Metric,converter,BOOST2S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,342k corresponds typical500kHz;340k E96 starting value. Tolerance400-600kHz characterization; measure spread/noise.
+R405,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,converter,BOOST2S,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C405,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,converter,BOOST2S,ESTIMATE,,
+C406,100p,OPEN: 0603 C0G50V 100p,Capacitor_SMD:C_0603_1608Metric,converter,BOOST2S,ESTIMATE,,"Starting compensation, not validated for selected L/C/load."
+R413,8.2,OPEN:8.2ohm1percent1W2512,Resistor_SMD:R_2512_6332Metric,driver_supply,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,0.266W at180mA;initial reservoir current<=1.14A at9.2V/8.118ohm. Preserves5V LDO headroom with7.5V4S reduced rail. Exact MPN/derating quote OPEN. Also bounds LDO-short rise during conditional20us shutdown.
+C407,1u,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,driver_supply,NORMAL,ESTIMATE,,Effective>=1uF at10.5V input; choose25V X7R with DC-bias qualification.
+U303,TLV76150DCYR,TLV76150DCYR,Package_TO_SOT_SMD:SOT-223-3_TabPin2,driver_supply,NORMAL,OBSERVED_EUR_NET,https://www.ti.com/lit/ds/symlink/tlv761.pdf,"Fixed5V TI DCY1GND2OUT/tab3IN. After8.2ohm at180mA input~7.54V full or~6.03V reduced,before switch/sense drops;LDO~0.46W full,feed resistor0.266W. Verify worst dropout/ripple. No converter failure qualification from ERC."
+C409,150u,25SVPG150M,,driver_supply,NORMAL,ESTIMATE,https://industrial.panasonic.com/sa/products/pt/os-con/models/25SVPG150M,"Panasonic25SVPG150M150uF25V+/-20percent,ESR13mohm@100kHz,4.2Arms@105C,C10 diameter6.3mm height9.9mm. Effective>=120uF andESR<=100mohm over temperature still qualification assumptions. Exact land OPEN.1.50EUR estimated;not observed price. Isolation<=20us remains unmeasured."
+D309,SS14 LDO reverse discharge,SS14-E3/61T,Diode_SMD:D_SMA,driver_supply,NORMAL,ESTIMATE,https://www.vishay.com/docs/88746/ss12.pdf,"Cathode1 at IN, anode2 at OUT; external bypass per TLV761 section7.1.3. Exact suffix/package/surge confirmation OPEN. Limits reverse-current stress during reservoir discharge, not an OV clamp; measure reverse transient."
+TP401,VDRV_RF,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+U401,TLV9004IDR,TLV9004IDR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,am,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tlv9004.pdf,RRIO1MHz3.3V; quad SOIC. Exact IDR orderable suffix verify. Loop compensation/load stability OPEN.
+R501,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,am,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R502,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,am,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C501,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,am,ALL,ESTIMATE,,
+C502,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,am,ALL,ESTIMATE,,
+R503,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,am,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R504,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,am,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C503,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,am,ALL,ESTIMATE,,
+C504,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,am,ALL,ESTIMATE,,
+U402,SN74LVC1G3157DBVR,SN74LVC1G3157DBVR,Package_TO_SOT_SMD:SOT-23-6,am,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf,
+R516,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q405,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,modulator,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+Q401,D45H11,D45H11,Package_TO_SOT_THT:TO-220-3_Vertical,modulator,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/d45h11.pdf,
+R505,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R506,10,OPEN10ohm1W2010,Resistor_SMD:R_2010_5025Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,At73mA helper limit:0.053W.1W pulse allowance retained;10ohm instead100ohm restores low-voltage pass headroom. Hot beta/SOA remain OPEN.
+Q402,BD139,BD139,Package_TO_SOT_THT:TO-126-3_Vertical,modulator,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/bd139.pdf,
+R507,8.2,RC0805FR-078R2L,Resistor_SMD:R_0805_2012Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R508,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q403,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,modulator,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+Q404,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,modulator,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+R509,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R510,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R511,18k,RC0603FR-0718KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R512,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C505,4.7n,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,modulator,NORMAL,ESTIMATE,,"Dominant compensation candidate; loop dynamics OPEN, test with bounded dummy current load."
+C506,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,modulator,NORMAL,ESTIMATE,,
+R513,1k,RC1206FR-071KL,Resistor_SMD:R_1206_3216Metric,modulator,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,0.144W at12Vdc capability test; require>=0.25W.
+R517,0,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,am,TRAIN_ONLY,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,TRAIN_ONLY0ohm closes negative feedback around otherwise-unusedU401C; NEVER fit in full assembly. Positive input MOD_COMMAND grounded viaR518. Avoid floating unused quad-opamp inputs.
+R518,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,am,TRAIN_ONLY,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R514,27k,RC0603FR-0727KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R515,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C507,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+C508,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,ALL,ESTIMATE,,
+TP501,AM_COMMAND,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP502,VPA,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP503,MOD_E,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+C601,100p,OPEN: 0603 C0G50V 100p,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+L611,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,source_filter,NORMAL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L612,91n,LQW18AN91NG80D,Inductor_SMD:L_0603_1608Metric,source_filter,NORMAL,ESTIMATE,https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L613,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,source_filter,NORMAL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+C611,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C612,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C613,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C614,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+R602,17.8,RC0603FR-0717R8L,Resistor_SMD:R_0603_1608Metric,source_filter,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"3dB pi-pad candidate17.6/292.4 theoretical, rounded17.8/287. First characterization uses external generator and/or12dB pad, then measured3-12dB calibration. Si5351 fundamental power and MMIC gain must meet drive budget; no guaranteed source power assumed. PHA-1+ input absolute24dBm is not operating target."
+R603,287,RC0603FR-07287RL,Resistor_SMD:R_0603_1608Metric,source_filter,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R604,287,RC0603FR-07287RL,Resistor_SMD:R_0603_1608Metric,source_filter,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C615,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,driver,NORMAL,ESTIMATE,,Immediate MMIC input DC block after shunt pi-pad; prevents pad from clamping internal input bias. VHF C0G; Q/SRF and exact MPN OPEN.
+U501,PHA-1+,PHA-1+,ARDF_2M:PHA1_DF782_RevG,driver,NORMAL,OBSERVED_2026_10_16_NET,https://pccomponents.com/datasheets/MINI_-PHA1.pdf,"Mini-Circuits PHA-1+ RevD;1IN2GND3OUT/DC4paddleGND. DF782RevG02/08/17 suggested land transcribed in local library; ground stencil/vias/incoming dimensions still require review. 19dBm CW output and3dB compression backoff are qualification targets, not measured."
+L604,180n,LQW18ANR18G80D,Inductor_SMD:L_0603_1608Metric,driver,NORMAL,ESTIMATE,https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+C602,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,driver,NORMAL,ESTIMATE,,"MMIC output DC block; connects to ST interstage derivative, not a verified50ohm final input."
+C603,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,driver,NORMAL,ESTIMATE,,
+C604,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,driver,NORMAL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+Q501,PD54008L-E,PD54008L-E,ARDF_2M:PD54008L_ST_GDS_5x5,pa,NORMAL,OBSERVED_2026_10_16_NET,https://www.st.com/resource/en/datasheet/pd54008l-e.pdf,"ST January2007Rev2p1 TOP VIEW: four G contacts left, four D right, center SOURCE. p13 recommends continuous0.5x5mm G/D strips and2.7x5mm SOURCE. Local landing uses manufacturer G,D,S region names, NOT invented numeric pin groups. Thermal via/stencil qualification still OPEN."
+R606,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,bias,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"Fixed gate bias from upstream VMOD, not modulated VPA. Start trim grounded;50mA initial Idq, max200mA only after thermal/AM acceptance. Clamp and mute independent."
+RV501,10k bias trim,3296W-1-103LF,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,bias,NORMAL,ESTIMATE,,Pot represented by explicit end/wiper pins. Start wiper grounded. Start Idq50mA; investigate100-200mA only after drain rail qualification.
+D501,6.2V bias ceiling,"BZT52H-C6V2,115",Diode_SMD:D_SOD-123F,bias,NORMAL,ESTIMATE,,
+L606,33n,1812SMS-33NJLC,,bias,NORMAL,ESTIMATE,https://www.coilcraft.com/en-us/products/rf/air-core-inductors/midi-spring/1812sms/1812sms-33n/,"ST Fig13 L2 final gate feed33nH retained; participates in input match. Current manufacturer JLC suffix verified, Qmin100@150MHz,SRF2.5GHz,Irms3A rise basis. Manufacturer online selected configuration not purchasable; exact CT quote/landing OPEN.0.80EUR is an estimate,not stock-backed price."
+C607,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,bias,NORMAL,ESTIMATE,,
+Q502,2N7002,"2N7002,215",Package_TO_SOT_SMD:SOT-23,bias,NORMAL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,1G 2S 3D; manufacturer fixed before ordering.
+J501,NORMAL 50ohm SMA,132134,Connector_Coaxial:SMA_Amphenol_132134_Vertical,connector,NORMAL,ESTIMATE,,Normal SMA remains physically separate from training MCX. Exact drawing/incoming fit and RF launch qualification required.
+TP601,PA_GATE,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP602,PA_DRAIN,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP603,ST_LPF_IN,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP604,MMIC_AC,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+U701,SN74LVC1G125DBVR,SN74LVC1G125DBVR,Package_TO_SOT_SMD:SOT-23-5,training,ALL,ESTIMATE,https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf,"OE_N high unless TRAIN_PERMIT; TTL input, partial-power-down/Ioff; measured144MHz edge/purity gate."
+R714,100,RC0603FR-07100RL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C701,100p,OPEN: 0603 C0G50V 100p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+L711,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L712,91n,LQW18AN91NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,ESTIMATE,https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L713,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+C711,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C712,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C713,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C714,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+R715,51.1,RC0603FR-0751R1L,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R702,680,RC0603FR-07680RL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R703,10,RC0603FR-0710RL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C702,100p,OPEN: 0603 C0G50V 100p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+Q701,MMBTH10LT1G,MMBTH10LT1G,Package_TO_SOT_SMD:SOT-23,training,ALL,ESTIMATE,https://www.onsemi.com/download/data-sheet/pdf/mmbth10lt1-d.pdf,1B2E3C verified onsemi CASE318 STYLE6 manufacturer PDF; exact suffix/temperature stock gate remains. fT>=650MHz published family; no measured144MHz performance.
+R704,100,RC1206FR-07100RL,Resistor_SMD:R_1206_3216Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,Collector-short dissipation up to0.121W at3.465V/99ohm; require>=0.25W.
+R705,47,RC0603FR-0747RL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C703,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+R706,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+L704,180n,LQW18ANR18G80D,Inductor_SMD:L_0603_1608Metric,training,ALL,ESTIMATE,https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+C704,100p,OPEN: 0603 C0G50V 100p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,,
+R707,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C705,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,,
+Q704,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,training,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+Q702,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,training,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+R708,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R709,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R710,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+Q703,"MMBT3904,215","MMBT3904,215",Package_TO_SOT_SMD:SOT-23,training,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf,
+C706,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+L721,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L722,91n,LQW18AN91NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,ESTIMATE,https://www.mouser.com/datasheet/2/281/1/JELF243A_0102-3158940.pdf,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+L723,56n,LQW18AN56NG80D,Inductor_SMD:L_0603_1608Metric,training,ALL,OBSERVED_2026_10_16_NET,https://www.digikey.fr/fr/products/detail/murata-electronics/LQW18AN56NG80D/4422179,Low-power RF path only.56n Q>=38@200MHz SRF2.6GHz Imax770mA;91n Q33 SRF1.9GHz Imax520mA manufacturer family table.180n exact Q/current/SRF must close before layout; do not apply these prices/ratings to high-power LPF.
+C721,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C722,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C723,33p,OPEN: 0603 C0G50V 33p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+C724,8.2p,OPEN: 0603 C0G50V 8.2p,Capacitor_SMD:C_0603_1608Metric,training,ALL,ESTIMATE,, VHF C0G; Q/SRF and exact MPN OPEN.
+R711,154,RC0603FR-07154RL,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"16dB pi-pad candidate:154/68.1 rounded. Calibrate nominal1uW carrier; optional1-10uW by fixed pad population, no1mW guarantee."
+R712,68.1,RC0603FR-0768R1L,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R713,68.1,RC0603FR-0768R1L,Resistor_SMD:R_0603_1608Metric,training,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+J701,TRAIN MCX 50ohm,OPEN MCX 50ohm PCB connector,,connector,ALL,ESTIMATE,,Physically incompatible with normal SMA. Exact manufacturer MPN/geometry OPEN. No RF switch bridges normal port.
+TP701,TRAIN_OUT_RAW,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP702,TRAIN_RF,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+U801,TL431BIDBZR,TL431BIDBZR,Package_TO_SOT_SMD:SOT-23,protection,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tl431.pdf,TI DBZ1K2REF3A; manufacturer-specific mapping retained from E2.
+R801,150,RC0603FR-07150RL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R802,620,RC0603FR-07620RL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R803,470,RC0603FR-07470RL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+U804,INA180A1IDBVR,INA180A1IDBVR,Package_TO_SOT_SMD:SOT-23-5,protection,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/ina180.pdf,"A1gain20 x0.1ohm =>2V/A; ISENSE divider10k/4.02k against loaded~1.03V reference gives nominal1.80A trip, including driver current. 5us RC limits RF pickup; no Morse/AM crest averaging credit."
+R804,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,ALL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R805,160k,RC0603FR-07160KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R806,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R807,58.3k,RC0603FR-0758K3L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"2S58.3k gives6.210V raw UV. BUCK4S24.9k gives12.15V for both profiles; no full-power voltage-window shunt, nominal tolerance guard required."
+R808,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R809,39.2k,RC0603FR-0739K2L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,2S:8.621V raw trip. 4S:14.7k ->17.172V. Exact variant threshold stuffing mandatory.
+R810,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R811,120k,RC0603FR-07120KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,Raw upstream rail sense; controller confirms settled9V before slot. Independent OV comparator retained for converter faults.
+R812,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R813,20.9k,RC0603FR-0720K9L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R814,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R815,75k,RT0603BRD0775KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"R4 driver OV divider:0.1percent thin film required, not1percent substitution. Nominal trip5.383V; calculate threshold extremes withreference drift. Shutdown<=20us anddriver<=5.9V still physical gates. Exact stock/quote OPEN."
+R816,10k,RT0603BRD0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"R4 driver OV divider:0.1percent thin film required, not1percent substitution. Nominal trip5.383V; calculate threshold extremes withreference drift. Shutdown<=20us anddriver<=5.9V still physical gates. Exact stock/quote OPEN."
+R817,29.4k,RT0603BRD0729K4L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"R4 driver OV divider:0.1percent thin film required, not1percent substitution. Nominal trip5.383V; calculate threshold extremes withreference drift. Shutdown<=20us anddriver<=5.9V still physical gates. Exact stock/quote OPEN."
+R818,10k,RT0603BRD0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,"R4 driver OV divider:0.1percent thin film required, not1percent substitution. Nominal trip5.383V; calculate threshold extremes withreference drift. Shutdown<=20us anddriver<=5.9V still physical gates. Exact stock/quote OPEN."
+R819,110k,RC0603FR-07110KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R820,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R821,26.5k,RC0603FR-0726K5L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,VPA overvoltage8.20V nominal: catches pass E-C short independently of commanded zero. Converter readiness is a controller ADC pre-SLOT function after captured profile settles.
+R822,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R823,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+TH801,10k NTC B3950,OPEN insulated contact NTC10k B3950,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,protection,NORMAL,ESTIMATE,,Bond to PA/modulator thermal spreader; open and short detected by window. Geometry/adhesive/placement OPEN.
+R824,49.9k,RC0603FR-0749K9L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R825,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R826,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R827,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+U802,LM339BDR,LM339BDR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,protection,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/lm339b.pdf,3.3V; reference nodes below1.135V hot common-mode limit at3.135V supply; current reference~1.03V. One input must remain valid during positive overvoltage. Severe overvoltage beyond sense range must be bounded externally.
+U803,LM339BDR,LM339BDR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,protection,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/lm339b.pdf,3.3V; reference nodes below1.135V hot common-mode limit at3.135V supply; current reference~1.03V. One input must remain valid during positive overvoltage. Severe overvoltage beyond sense range must be bounded externally.
+R832,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R833,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+D801,BAT54 fault AND,BAT54WS-7-F,Diode_SMD:D_SOD-323,protection,NORMAL,ESTIMATE,,Low-level max comparatorVOL+diodeVf must remain <0.3VDD; no converter-startup deadlock from rail undervoltage.
+D802,BAT54 fault AND,BAT54WS-7-F,Diode_SMD:D_SOD-323,protection,NORMAL,ESTIMATE,,Low-level max comparatorVOL+diodeVf must remain <0.3VDD; no converter-startup deadlock from rail undervoltage.
+C801,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,NORMAL,ESTIMATE,,
+C802,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,NORMAL,ESTIMATE,,
+C803,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,decoupling,NORMAL,ESTIMATE,,
+R828,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R829,4.02k,RC0603FR-074K02L,Resistor_SMD:R_0603_1608Metric,protection,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C804,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,protection,NORMAL,ESTIMATE,,
+TP801,ISENSE,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+TP802,POWER_FAULT_N,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,BOARD_FEATURE,,High impedance probing. No terminated 50-ohm scope on logic/PA drain.
+R117,1k,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,interface,NORMAL,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+C104,1n,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,interface,NORMAL,ESTIMATE,,Controller ADC acquisition/attenuation calibrated for ~10k source impedance. Read before ARM and SLOT; no I2C transaction needed.
+R118,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interface,TRAIN_ONLY,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,
+R519,0,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,interlock,TRAIN_ONLY,ESTIMATE,https://www.yageo.com/en/ProductCategory/Resistors,Fit only with U207 and every normal power-stage part omitted. Equivalent to POWER_FAULT_N=1; watchdog/mute/SCL/fresh ARM still active.
+TL603,50R 6.23mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L6.23mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+C631,56p,GRM1885C1H560JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C632,330p,GRM1885C1H331JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+TL604,50R 6.62mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L6.62mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+C633,27p,GRM1885C1H270JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+L634,18n,0603HC-18NXJLU,,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,Original ST RF value/function. Exact manufacturer land/current stock OPEN; tune/validate on the ONE integrated transmitter. Not an ordinary power inductor.
+TL605,50R 5.8mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L5.8mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+L635,33n,1812SMS-33NJLC,,pa_match,NORMAL,ESTIMATE,https://www.coilcraft.com/en-us/products/rf/air-core-inductors/midi-spring/1812sms/1812sms-33n/,"Final drain feed only: ST L3 nominal35.5nH conflicts with1812SMS-22NJ code.33nH is EXPLICIT nearby engineering starting substitution, not silently resolved BOM. RF isolation/stability to qualify; do not substitute output matching L5."
+C634,330p,GRM1885C1H331JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C635,1u,OPEN: 1u rating/MPN,Capacitor_SMD:C_0603_1608Metric,modulator,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+TL606,50R 2.2mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L2.2mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+C636,33p,GRM1885C1H330JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+TL607,50R 11mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L11mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+C637,100p,GRM1885C1H101JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+L638,18.5n,A05TJLC,,pa_match,NORMAL,OBSERVED_2026_10_16_NET,https://eu.mouser.com/ProductDetail/Coilcraft/A05TJLC?qs=zCSbvcPd3pYJqqPlmZ4EHA%3D%3D,"Original ST A05T nominal18.5nH. Coilcraft confirms5turns,Qmin132@150MHz,SRF2.5GHz,Irms4A. Factory air-core part, not an invented DIY winding. Exact manufacturer mounting dimensions/landing must be transcribed before layout; distributor dimension fields conflict in axis ordering."
+C638,39p,GRM1885C1H390JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+TL608,50R 12.4mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L12.4mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+C639,330p,GRM1885C1H331JA01D,Capacitor_SMD:C_0603_1608Metric,pa_match,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+TL609,50R 2mm,PCB microstrip feature,,transmission_line,NORMAL,BOARD_FEATURE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,"Original ST0.508mm FR4,70umCu,W0.92mm,L2mm. Reference electrical geometry; not zero-length wire. Recalculate for actual stackup. Not a purchased part."
+L641,39n,1008CS-390XJLC,Inductor_SMD:L_1008_2520Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,Original ST RF value/function. Exact manufacturer land/current stock OPEN; tune/validate on the ONE integrated transmitter. Not an ordinary power inductor.
+C641,3.3p,GRM1885C1H3R3CA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+L642,22n,1008CS-220XJLC,Inductor_SMD:L_1008_2520Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,Original ST RF value/function. Exact manufacturer land/current stock OPEN; tune/validate on the ONE integrated transmitter. Not an ordinary power inductor.
+C642,18p,GRM1885C1H180JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+L643,27n,1008CS-270XJLC,Inductor_SMD:L_1008_2520Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,Original ST RF value/function. Exact manufacturer land/current stock OPEN; tune/validate on the ONE integrated transmitter. Not an ordinary power inductor.
+C643,12p,GRM1885C1H120JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C644,22p,GRM1885C1H220JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C645,27p,GRM1885C1H270JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C646,22p,GRM1885C1H220JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+C647,15p,GRM1885C1H150JA01D,Capacitor_SMD:C_0603_1608Metric,output_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,ST nominal value; exact suffix/current stock and RF Q/voltage qualification OPEN. C0G50V RF; do not silently order conflicting391-code330pF.
+U205,"74HC21D,653","74HC21D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,interlock,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC21.pdf,"Nexperia Rev10 17Jan2024: physical1,2,4,5->6 four-input AND. Replaces cascaded redundant two-input permissions."
+U206,"74HC11D,653","74HC11D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,interlock,ALL,ESTIMATE,https://assets.nexperia.com/documents/data-sheet/74HC_HCT11.pdf,Final permissions retain direct CLEAR_A; analog faults clear latch and independently cut RAIL_RUN. Real propagation/reset races remain OPEN.
+U305,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,driver_supply,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/tps22919.pdf,"TI physical1VIN2GND3ON4NC5QOD6VOUT.5V switch only, never9V/rawpack.6V absolute; LDO-short rail qualification still required."
+C940,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,driver_supply,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+R940,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,driver_supply,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+R930,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,interlock,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+C931,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,interlock,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+R932,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,interlock,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+D930,BAT54WS,BAT54WS-7-F,Diode_SMD:D_SOD-323,interlock,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,Cathode1 through330R to permission; anode2 RC. Fast discharge; no false inversion.
+R931,330,RC0603FR-07330RL,Resistor_SMD:R_0603_1608Metric,interlock,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+U601,SN74LVC1G125DBVR,SN74LVC1G125DBVR,Package_TO_SOT_SMD:SOT-23-5,source_filter,NORMAL,ESTIMATE,https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf,
+C941,100n,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,source_filter,NORMAL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+TP940,Captured profile,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,test,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG950,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG951,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG952,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG953,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG954,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG955,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG956,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG957,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG958,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,
+#FLG959,PWR_FLAG,NOT_PURCHASED,,declaration,ALL,ESTIMATE,https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf,

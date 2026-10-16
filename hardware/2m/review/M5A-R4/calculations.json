@@ -1,0 +1,18 @@
+{
+  "buck_reduced_nominal_V": 7.5096,
+  "buck_full_nominal_V": 8.9996,
+  "boost_nominal_V": 9.02086,
+  "AM_reference_scale": 2.8,
+  "full_80pct_ideal_reference_center_V": 1.4285714285714286,
+  "full_80pct_ideal_reference_trough_V": 0.28571428571428575,
+  "full_80pct_ideal_reference_crest_V": 2.5714285714285716,
+  "helper_current_limit_A": 0.07317073170731708,
+  "driver_OV_nominal_V": 5.38261421319797,
+  "driver_OV_min_V_under_assumed_1p5percent_reference": 5.284633490387072,
+  "driver_OV_max_V_under_same": 5.4811761467064475,
+  "driver_20us_RC_plus_ESR_upper_calculation_V": 5.850616867896895,
+  "driver_fault_model_assumptions": "16.8V sustained source;Rmin8.118ohm;Cmin120uF;ESRmax0.1ohm;0.1percent dividers;reference +/-1.5percent;20us FROM threshold crossing to isolation. No inductive overshoot or hardware timing proof.",
+  "pass_SOA": "ST D45H11 RthJC2.5K/W;hot DC/repetitive SOA NOT established by power rating",
+  "all_hardware_tests": "NOT_RUN",
+  "source_and_training_overhead": "RF_idle40mW and controller140mW assumptions from existing models. Measure3.3Vrail states, no invented measured currents."
+}
