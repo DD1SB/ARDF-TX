@@ -1,1 +1,172 @@
-(footprint "Coilcraft_1008CS_Doc101" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr smd) (descr "Coilcraft101-1Rev08/05/22;H2.54 I1.02 J1.27;body2.92x2.79 H2.03 plus solder.152") (fp_rect (start -1.46 -1.395) (end 1.46 1.395) (stroke (width .1) (type default)) (layer "F.Fab")) (fp_rect (start -1.81 -1.745) (end 1.81 1.745) (stroke (width .05) (type default)) (layer "F.CrtYd")) (fp_text reference "REF**" (at 0 -2.295) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12)))) (fp_text value "Coilcraft_1008CS_Doc101" (at 0 2.295) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12)))) (pad "1" smd rect (at -1.145 0) (size 1.02 2.54) (layers "F.Cu" "F.Paste" "F.Mask")) (pad "2" smd rect (at 1.145 0) (size 1.02 2.54) (layers "F.Cu" "F.Paste" "F.Mask")) (model "${KIPRJMOD}/ARDF_2M.3dshapes/Coilcraft_1008CS_Doc101.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))
+(footprint "Coilcraft_1008CS_Doc101"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Coilcraft101-1Rev08/05/22;H2.54 I1.02 J1.27;body2.92x2.79 H2.03 plus solder.152")
+	(property "Reference" "REF**"
+		(at 0 -2.05 0)
+		(layer "F.Fab")
+		(uuid "ee961431-6a10-4dec-a951-c053b50b1c89")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Coilcraft_1008CS_Doc101"
+		(at 0 2.05 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56f7cd41-5586-45d2-aec0-f362d3133bfd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.st.com/resource/en/datasheet/steval-tdr003v1.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "baa82d38-5713-467e-8751-02990d664b8a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "442f5712-c31f-462f-bb8e-43a1690b6644")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c68818c-4abb-48a8-996c-32d20c30abab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "1008CS-390XJLC"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a5d03cc-bb05-4cd7-8b42-36b5e9587732")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "NORMAL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7cb49e6-b567-4502-ad96-f335a5054894")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "output_filter"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9285b56-3c32-4af0-9bbf-a576db63366c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Original ST RF value/function. Exact manufacturer land/current stock OPEN; tune/validate on the ONE integrated transmitter. Not an ordinary power inductor. M5B actualDoc101-1 land H2.54 I1.02 J1.27mm;body2.92x2.79,H2.03+.152solder. Values unchanged;1A rise-current,not measured RF RMS margin."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c6eda1a-bc8e-418a-b761-c856f8ba9e3d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa978949-7ff7-4213-b375-2735710ec531")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.81 -1.745)
+		(end 1.81 1.745)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7e872cc7-c2ec-4a24-8043-1cd8e0afbf55")
+	)
+	(fp_rect
+		(start -1.46 -1.395)
+		(end 1.46 1.395)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a95a8a5a-ddd4-4668-925b-5b7059d04655")
+	)
+	(pad "1" smd rect
+		(at -1.145 0)
+		(size 1.02 2.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d8379664-9e56-410e-a96a-bb9cc90f1836")
+	)
+	(pad "2" smd rect
+		(at 1.145 0)
+		(size 1.02 2.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6b705fb8-0021-41c2-8c29-445489d7ca5f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ARDF_2M.3dshapes/Coilcraft_1008CS_Doc101.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,927 @@
+{
+  "revision": "M5B-E3",
+  "moved_RF_parts": [
+    {
+      "ref": "L634",
+      "dx_mm": 0.10899999999999466
+    },
+    {
+      "ref": "C632",
+      "dx_mm": 0.23340000000000316
+    },
+    {
+      "ref": "C633",
+      "dx_mm": 0.10899999999999466
+    },
+    {
+      "ref": "R650",
+      "dx_mm": 0.3505000000000109
+    },
+    {
+      "ref": "C602",
+      "dx_mm": 0.3505000000000109
+    },
+    {
+      "ref": "R651",
+      "dx_mm": 0.3505000000000109
+    },
+    {
+      "ref": "C631",
+      "dx_mm": 0.23340000000000316
+    },
+    {
+      "ref": "C636",
+      "dx_mm": -0.041300000000006776
+    },
+    {
+      "ref": "L638",
+      "dx_mm": -0.24800000000000466
+    },
+    {
+      "ref": "C637",
+      "dx_mm": -0.24800000000000466
+    },
+    {
+      "ref": "C638",
+      "dx_mm": -0.24800000000000466
+    },
+    {
+      "ref": "C639",
+      "dx_mm": -0.481000999999992
+    },
+    {
+      "ref": "L641",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "L642",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "L643",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C641",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C642",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C643",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C644",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C645",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C646",
+      "dx_mm": -0.5186009999999897
+    },
+    {
+      "ref": "C647",
+      "dx_mm": -0.5186009999999897
+    }
+  ],
+  "RF_width_mm": 2.741,
+  "lengths_mm": {
+    "TL603": 6.1129,
+    "TL604": 6.4956,
+    "TL605": 5.691,
+    "TL606": 2.1587,
+    "TL607": 10.7933,
+    "TL608": 12.167,
+    "TL609": 1.9624
+  },
+  "source_vias": 32,
+  "ordinary_vias": "0.8/0.3",
+  "power_trunks": [
+    {
+      "net": "VBOOST",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.143787159109406
+    },
+    {
+      "net": "VBOOST",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.4
+    },
+    {
+      "net": "VBOOST",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.0
+    },
+    {
+      "net": "VBOOST",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.5633230385575674
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.307359150630868
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.6769552621700474
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 13.010764773832475
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.1112698372208096
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.5,
+      "original_length_mm": 15.414927122759972
+    },
+    {
+      "net": "VIN_CONV",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.4
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.7702
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.3941125496954285
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.1213210506665416
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 23.6446
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.0845507909379424
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 7.0
+    },
+    {
+      "net": "VREG_RAW",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 31.5
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.8
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.656854249492381
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.2
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.2627416997969525
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 12.400025201587294
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.199999
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 9.05096679918781
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.2894117694289946
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.639204287840617
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.2
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.525482692487178
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 16.60001882529053
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.9597979746446663
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.384062043356595
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 10.182337649086286
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 90.0
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.0
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 35.2
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 18.2
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.8
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.9597979746446663
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.625
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.000234365845442
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.121320343559643
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.3
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 8.62670273047588
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 13.293608193413892
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 9.475230867899738
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.525483399593905
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.5154328932550705
+    },
+    {
+      "net": "VMOD",
+      "old_width_mm": 0.6,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.5
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.9597979746446663
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.2627424069038438
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 39.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.0
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.0
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.5455844122715714
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8284271247461903
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.600480724789169
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8284271247461903
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.091168824543143
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8284271247461903
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 20.2
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 14.0
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 4.808326819175356
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.199999
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 15.2
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.463007582205341
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.091168824543143
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.4
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.9597979746446663
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.374011537017762
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.95
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.656854956599206
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.6
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.6769552621700474
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 7.636753236814714
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 7.636753236814714
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.232590180780452
+    },
+    {
+      "net": "VIN_PROT",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 5.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 21.496046855177838
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.6004999652825993
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.2
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.2
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 19.400016108240735
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 18.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 7.4
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.6
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.939696961967
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 4.0
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 6.222539674441619
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 13.2
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 8.4
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.2627416997969525
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.2
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.0
+    },
+    {
+      "net": "VPA",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 5.656854249492381
+    },
+    {
+      "net": "VREG_SWITCH",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.721411862452207
+    },
+    {
+      "net": "VREG_SWITCH",
+      "old_width_mm": 0.5,
+      "new_width_mm": 1.0,
+      "original_length_mm": 3.2002187190879625
+    },
+    {
+      "net": "VREG_SWITCH",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8284271247461903
+    },
+    {
+      "net": "VREG_SWITCH",
+      "old_width_mm": 0.5,
+      "new_width_mm": 1.0,
+      "original_length_mm": 6.2225403815484395
+    },
+    {
+      "net": "BAT_FUSED",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 7.6
+    },
+    {
+      "net": "BAT_FUSED",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 3.9597979746446663
+    },
+    {
+      "net": "BAT_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.5455844122715714
+    },
+    {
+      "net": "BAT_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 2.2627416997969525
+    },
+    {
+      "net": "BAT_RAW",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.5,
+      "original_length_mm": 4.6
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.400001
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 7.72
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 8.675
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 6.505381679809495
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8819481258343287
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.8
+    },
+    {
+      "net": "VBUCK",
+      "old_width_mm": 0.75,
+      "new_width_mm": 1.0,
+      "original_length_mm": 2.400130204801398
+    }
+  ],
+  "values_changed": [
+    "TL603",
+    "TL604",
+    "TL605",
+    "TL606",
+    "TL607",
+    "TL608",
+    "TL609"
+  ],
+  "circuit_topology_changes": []
+}

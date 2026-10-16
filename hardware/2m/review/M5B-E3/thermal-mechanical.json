@@ -1,0 +1,89 @@
+{
+  "status": "ANALYTIC_AND_DIMENSIONAL_REVIEW_ONLY",
+  "source_array": {
+    "count": 32,
+    "land_mm": 0.8,
+    "drill_mm": 0.3,
+    "pitch_mm": 0.6,
+    "rows": 8,
+    "columns": 4,
+    "PCB_mm": 1.6,
+    "barrel_K_per_W_by_plating_um": {
+      "10": 13.77964875254505,
+      "15": 9.1864325016967,
+      "18": 7.655360418080584,
+      "25": 5.511859501018021
+    },
+    "source_copper_mm": [
+      2.7,
+      5
+    ],
+    "bottom_window_mm": [
+      14,
+      12
+    ],
+    "source_mask": "0.4mmsquaremaskcapsoverholes;ordinarytentingisnotplugging. Openbottomvias. Sourcepastegridreduced25umperedge.",
+    "minimum_barrel_scenario_um": 10,
+    "claim": "Noassuranceofminimumbarrelplatingfrompublished18umaverage;measurethermalpath. No solder-fillcredit."
+  },
+  "PA_RF_average_model_W": 1.9750310660446522,
+  "PA_heat_model_by_efficiency": {
+    "0.3": 4.608405820770855,
+    "0.35": 3.6679148369400685,
+    "0.4": 2.9625465990669784,
+    "0.5": 1.9750310660446522
+  },
+  "assumed_other_thermal_K_per_W": {
+    "junction_to_case": 3,
+    "spreading_and_contact": 2,
+    "TIM": 1,
+    "sink": 3.5
+  },
+  "qualification_heat_budget_W": 4,
+  "engineering_Tj_limit_C": 125,
+  "ambient_design_C": 40,
+  "NTC_nominal_trip_C": 65.85219529913104,
+  "pass_device": {
+    "RthJC": 2.5,
+    "sink_max_K_per_W": 3.5,
+    "interface_K_per_W": 1,
+    "case_acceptance_C": 60,
+    "NTC": "Bondinsulatedbeadtolivepasscase;do notraisetrip. Mechanicaldetachmentwithintactwireisnotdetected.",
+    "insulation": "ST D45H11 pin2/tabVPA andSTBD139pin2/tabMOD_SINKarelive. Separateinsulatedsinks/shoulderwashers;no baremetalconnectiontogroundedPAspreader."
+  },
+  "mechanical": {
+    "outline_mm": [
+      180,
+      140
+    ],
+    "spreader_mm": [
+      16,
+      44,
+      8
+    ],
+    "window_coordinates_mm": [
+      105,
+      49,
+      119,
+      61
+    ],
+    "spreader_holes_mm": [
+      [
+        112,
+        32
+      ],
+      [
+        112,
+        68
+      ]
+    ],
+    "corner_standoffs_mm": 40,
+    "sink_below_spreader_mm": 20,
+    "minimum_bottom_lead_clearance_mm": 5,
+    "maximum_trimmed_leads_mm": 2.5,
+    "thickness_change_mm": 0.8,
+    "fixture": "Adjustclampingstackby+0.8mm;no1.6mmboardbendingloadonQ501. 0.15-0.25mmTIMk>=3W/mK,>=100Vinsulation,groundstrapindependentofTIM."
+  },
+  "qualification": "At18umaveragebarrelmodel4Wheatpredicts~109Cjunction. At10um4Wexceeds125C;thisisameasuredthermalgate,notaminimumplatingrequest. Stagewithreducedenergy;stopifcase60C/passlimit,PAcalculatedTj125C or4Wheatbudgetexceeded. Do not rely on dutycycletohidecontinuousfaultheat.",
+  "all_hardware_tests": "NOT_RUN"
+}

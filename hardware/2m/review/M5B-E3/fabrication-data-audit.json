@@ -1,0 +1,97 @@
+{
+  "status": "PASS_NATIVE_DRILL_AND_EXPORT_CONSISTENCY",
+  "PTH_unique_hits": 659,
+  "NPTH_unique_hits": 6,
+  "drill_counts_native_and_export_match": true,
+  "drill_coordinate_max_rounding_mm": 0.0007071067811999724,
+  "drill_coordinate_note": "KiCadExcellondecimal3places(1um);maximumradialrounding<=0.00072mm,farbelowstandarddrillregistrationtolerance.",
+  "job_stackup_and_revision_match": true,
+  "job_size_note": "Jobboundsinclude0.05mmedgepen;actualroutedoutlinecenter180x140mm.",
+  "Gerber_drill_E2_comparison": [
+    {
+      "file": "RF2M-B_Paste.gbp",
+      "E3_SHA256": "3ba0927911f8663924d06eca627ba9549752d56dc00df66865b57864ed69e840",
+      "E2_SHA256": "31fa2e2768f026b4340452a472fbc5f0a6272356d4d91208c95c502baff123fb",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-B_Cu.gbl",
+      "E3_SHA256": "76494748bcde0e3de4443a147c481879cd0abd8bbb003cbd85bcd72f795c1bd7",
+      "E2_SHA256": "a9890e5ad023e6ffe8adfb2d9646a7213e0875f1c374005e324f84328f8aed0f",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-F_Cu.gtl",
+      "E3_SHA256": "a5f7eda029fb1ccaf18cc577fa93d55749bb1c8c76b46e82ebdcef5be3469a51",
+      "E2_SHA256": "784ca75540987db428773a886fd0e007d868a866aadd20a198ee63d821ae4dcc",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-B_Silkscreen.gbo",
+      "E3_SHA256": "0cbf5357c3144e278256a28ad149435f3fd944e00fb0bfcdf9671c53fb3aa12a",
+      "E2_SHA256": "55e9a834ff1b304135956638c7bcd93b30c4a90cf6d06c5c5ce1e42f68f90839",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-F_Paste.gtp",
+      "E3_SHA256": "38d73ae45630f7563a73ddc2633f144efad3bc68017f82466c87cf20d05b9568",
+      "E2_SHA256": "abe7ce0dd3e4046cac0b7d8784ad8a76752eb58540e0dcba0c5846e2a97da6b8",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-Edge_Cuts.gm1",
+      "E3_SHA256": "10694e124992124250061c7659c9cd5c21d0cd05ac134993086d7ba9bb20e88f",
+      "E2_SHA256": "1fc8ab57f4f457324f6b11a4e54580415de3586adc62b912626b17d4cc9241c4",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-F_Mask.gts",
+      "E3_SHA256": "bae567caa66f6038cf36a6bca2a507cc78916a633d0486056b3ca319a9d0c09f",
+      "E2_SHA256": "014f2ab315aae5d65f6475888777110a526bf3a3c16d9f8d6ca53795b60d3587",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-NPTH.drl",
+      "E3_SHA256": "d5116189ccfb9dc4544d8d9dafcbdbdaea3b1699e8dba9dd2db9ac473e6037f6",
+      "E2_SHA256": "630d287e2a778777826f238a9575e4edc00d3b1145f85488605814ddb493ffe9",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-PTH.drl",
+      "E3_SHA256": "848c78f50ed9201a331a228139f8e282fea87e1f91abf217ba5923a373a2c942",
+      "E2_SHA256": "a940c823bacdd0a7620fc5f122a3849115051adbea431965571aa1762f84f3a9",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-B_Mask.gbs",
+      "E3_SHA256": "a3bad6b349e734fb8750fc4bbb6069c23c25aaa86a5f7fd0618887eb44a8bd8f",
+      "E2_SHA256": "8fd3a76f9dd2fe3891f4e8703fc0e7dffb89d75a8b9debbcb691a7994bb084a2",
+      "identical_to_E2": false
+    },
+    {
+      "file": "RF2M-F_Silkscreen.gto",
+      "E3_SHA256": "b6b3b895e8a761290fc7c3ec445f4433cc10d857122e10a08b3ab7e32c3e6138",
+      "E2_SHA256": "f525a0cf6d168008b38635773e61a1af06e9a09606a915f9774824476aefe567",
+      "identical_to_E2": false
+    }
+  ],
+  "upload_archive_files": [
+    "RF2M-B_Cu.gbl",
+    "RF2M-B_Mask.gbs",
+    "RF2M-B_Paste.gbp",
+    "RF2M-B_Silkscreen.gbo",
+    "RF2M-Edge_Cuts.gm1",
+    "RF2M-F_Cu.gtl",
+    "RF2M-F_Mask.gts",
+    "RF2M-F_Paste.gtp",
+    "RF2M-F_Silkscreen.gto",
+    "RF2M-NPTH.drl",
+    "RF2M-PTH.drl"
+  ],
+  "upload_archive_note": "Reviewonly;exactly9Gerbers+2drills,nojobcustomstackmetadataoranalysisincluded. Do not uploadwithoutauthorization.",
+  "native_source_archive": true,
+  "all_hardware_tests": "NOT_RUN",
+  "commercial_CAM_acceptance": null,
+  "actual_quote": null,
+  "uploaded": false
+}

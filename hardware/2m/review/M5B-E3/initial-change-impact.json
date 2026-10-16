@@ -1,0 +1,76 @@
+{
+  "before_native_SHA256": "d2ae00d45da3861417b61e87b48d5f46524cf789eea80a09b07808d27fea9141",
+  "baseline_commit": "2ca4c8e",
+  "baseline_tag": "m5b-e2",
+  "captured_before_layout_edit": true,
+  "inventory": [
+    {
+      "block": "RF transmission lines",
+      "E2": "1.102mm widths;0.64mm dielectric/70um copper,Dk4.3",
+      "E3": "Recalculate conventional microstrip on ordinary1.6mm/1oz,mask andFR4 tolerance sweep;butt-ended transitions",
+      "effect": "Placement and endpoint adjustment;top-ground keepout follows widened conductors"
+    },
+    {
+      "block": "Power paths",
+      "E2": "0.5mm or short necks,70um",
+      "E3": "1.5mm input/1.0mm rail trunks where applicable;short package necks individually calculated",
+      "effect": "Local rerouting and copper resistance/heating audit"
+    },
+    {
+      "block": "Vias",
+      "E2": "587 x0.60/0.30mm",
+      "E3": "Target0.80/0.30mm,individually resolve congestion;32sourcevias",
+      "effect": "Connectivity/clearance/mask and hole spacing must be rechecked"
+    },
+    {
+      "block": "PA thermal",
+      "E2": "12sourcevias,0.8mm board,25um assumedbarrel",
+      "E3": "32sourcevias,1.6mm,18um average/10\u201325um sweep,explicit heat-budget model",
+      "effect": "Revise top/bottom thermal mask;no filled/cappedvias or hermetic-tent assumption"
+    },
+    {
+      "block": "Legend",
+      "E2": "0.8mmtext/.12stroke/.10graphics",
+      "E3": ">=1.0mm/.15mm,relocate labels and polarity marks",
+      "effect": "Native geometric DFM andmask-clearance checks"
+    },
+    {
+      "block": "Mechanical",
+      "E2": "1.1mmIDC,1.5/1.7SMA holes;thinboard heatfixture",
+      "E3": "Preserve hole centers;verify lead projection on1.6mm andfit thermalfixture",
+      "effect": "No enclosure redesign;insulated live tabs retained"
+    },
+    {
+      "block": "Finish/mask",
+      "E2": "ENIGproposed,small maskwebs",
+      "E3": "Ordinary lead-freeHASL/green/white;segmented source mask andpaste reviewed",
+      "effect": "Manual reflow flatness/void inspection,notfactoryfilledvias"
+    },
+    {
+      "block": "Electrical functions",
+      "E2": "320schematicpackages,178nets,exclusive3populations",
+      "E3": "Preserve values,devices,logicalpins;new TLfootprint identities only",
+      "effect": "Compare against immutableE2;retainalllogic/pin/mutationcoverage"
+    },
+    {
+      "block": "Fabrication/E-test",
+      "E2": "Special core/70um confirmation pending",
+      "E3": "StandardJLCcheckboxes,no customdielectric/impedance/tolerance;rebuildphysicalnetaliases",
+      "effect": "VersionednativegeometryDFM+freshGerbers/drills;quoteisnotCAMacceptance"
+    }
+  ],
+  "RF_nominal": {
+    "width_mm": 2.741,
+    "length_scale": 0.9812056759020715,
+    "lengths_mm": {
+      "TL603": 6.1129,
+      "TL604": 6.4956,
+      "TL605": 5.691,
+      "TL606": 2.1587,
+      "TL607": 10.7933,
+      "TL608": 12.167,
+      "TL609": 1.9624
+    }
+  },
+  "preexisting_user_changes": "README M4A block and untrackedRF80/M4Acontent retained;not part ofE3"
+}

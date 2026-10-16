@@ -1,0 +1,225 @@
+{
+  "status": "PASS_STATIC_NETLIST_AND_NATIVE_PAD_CHECKS",
+  "manifest_positions": 330,
+  "logic": {
+    "combinations": 4096,
+    "scenarios": [
+      "arm_path0_profile0",
+      "watchdog_path0_profile0",
+      "mute_path0_profile0",
+      "i2c_stuck_low_path0_profile0",
+      "reset_path0_profile0",
+      "live_selection_path0_profile0",
+      "arm_path0_profile1",
+      "watchdog_path0_profile1",
+      "mute_path0_profile1",
+      "i2c_stuck_low_path0_profile1",
+      "reset_path0_profile1",
+      "live_selection_path0_profile1",
+      "arm_path1_profile0",
+      "watchdog_path1_profile0",
+      "mute_path1_profile0",
+      "i2c_stuck_low_path1_profile0",
+      "reset_path1_profile0",
+      "live_selection_path1_profile0",
+      "arm_path1_profile1",
+      "watchdog_path1_profile1",
+      "mute_path1_profile1",
+      "i2c_stuck_low_path1_profile1",
+      "reset_path1_profile1",
+      "live_selection_path1_profile1",
+      "normal_analog_fault",
+      "invalid_arm_key0_slot0_config0",
+      "invalid_arm_key0_slot1_config0",
+      "invalid_arm_key0_slot1_config1",
+      "invalid_arm_key1_slot0_config0",
+      "invalid_arm_key1_slot0_config1",
+      "invalid_arm_key1_slot1_config0",
+      "invalid_arm_key1_slot1_config1",
+      "keyed_AF_continuous_carrier_path0",
+      "keyed_AF_continuous_carrier_path1",
+      "reset_release_ARM_held_high",
+      "training_without_raw_PA_power",
+      "powered_source_configuration_ARM_SLOT_low",
+      "physical_normal_clock_bias_driver_controls_path0",
+      "physical_normal_clock_bias_driver_controls_path1"
+    ]
+  },
+  "mutation_tests": [
+    "Q501:G",
+    "Q501:S",
+    "Q401:1",
+    "U501:1",
+    "U205:1",
+    "U205:5",
+    "U206:13",
+    "U206:4",
+    "U304:5",
+    "U305:3",
+    "U601:1",
+    "C642:2",
+    "C632:2",
+    "TL607:2",
+    "R517:1",
+    "ST_G_landing_wrong_physical_side",
+    "ST_330p_versus_conflicting_391_code",
+    "PHA1_DF782_RevG.kicad_mod:physical_pad_displacement",
+    "TI_RNW0013A_4222804C.kicad_mod:physical_pad_displacement"
+  ],
+  "ST_reference_positions": 26,
+  "physical_switch_truth_rows": [
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 0,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": true
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 0,
+      "PACK_RUN": false,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 0,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 1,
+      "PACK_RUN": false,
+      "RAIL_RUN": true
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 0,
+      "PACK_RUN": true,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 0,
+      "HARD_OK_N": 1,
+      "PACK_RUN": true,
+      "RAIL_RUN": true
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 0,
+      "PACK_RUN": true,
+      "RAIL_RUN": false
+    },
+    {
+      "CONV_EN": 1,
+      "PACK_OK_N": 1,
+      "NORMAL_PERMIT": 1,
+      "HARD_OK_N": 1,
+      "PACK_RUN": true,
+      "RAIL_RUN": true
+    }
+  ],
+  "unchanged_files": 639,
+  "physical_measurements": "NOT_RUN",
+  "timing": "Datasheet/RC estimates only; no new analog/timing simulation or hardware timing pass claimed",
+  "M5B_additional_mutations": [
+    "U950:6",
+    "U950:7",
+    "U303:3",
+    "R952:2",
+    "R650:2",
+    "U305:3",
+    "Q501:S",
+    "C960:1",
+    "Q502:2",
+    "J101:3",
+    "J302:1",
+    "R309:value",
+    "R828:value",
+    "L604:value",
+    "L634:value",
+    "C633:value",
+    "C631:value",
+    "PCB_Q501_gate_to_drain"
+  ],
+  "native_PCB_package_checks": 320,
+  "hardware_tests": "NOT_RUN"
+}

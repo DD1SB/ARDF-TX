@@ -2,7 +2,9 @@
 
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 
-**Status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
+**Current 2 m CAD status — M5B-E3:** the [RF2M evaluation PCB](hardware/2m/README.md) now uses ordinary **two-layer 1.6 mm / 1 oz FR4**, with recalculated RF geometry, revised power/thermal copper and an automated native-geometry JLCPCB DFM gate. See the [review decision](docs/M5B_E3_REVIEW_DECISION.md) and [review package](hardware/2m/review/M5B-E3/README.md). **CAD review only; physical tests NOT_RUN. No upload, purchasing or manufacturing is authorized.** Earlier hardware milestones are retained below.
+
+**Earlier 80 m status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
 
 **Power reassessment, 2026-10-14:** the user now requires **12 h full-power / 24 h competition-appropriate reduced-power** operation. The completed [2S/4S review](docs/M2_POWER_ARCHITECTURE_DECISION.md) proposes mode-dependent supplies and packs; [ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md) awaits review. Earlier 24 h maximum-power tables below and in M1/M2 remain historical calculations, not current pack recommendations.
 

@@ -1,1 +1,160 @@
-(footprint "Coilcraft_A05T_Doc107" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr smd) (descr "Coilcraft107-1Rev07/23/21 size A;staggered .050x.130 inch lands,.065 gap,.110 vertical offset;body3.94x4.45 H3.15max") (fp_rect (start -2.3 -3.15) (end 2.3 3.15) (stroke (width .1) (type default)) (layer "F.Fab")) (fp_rect (start -2.65 -3.5) (end 2.65 3.5) (stroke (width .05) (type default)) (layer "F.CrtYd")) (fp_text reference "REF**" (at 0 -4.05) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12)))) (fp_text value "Coilcraft_A05T_Doc107" (at 0 4.05) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12)))) (pad "1" smd rect (at -1.4605 1.397) (size 1.27 3.302) (layers "F.Cu" "F.Paste" "F.Mask")) (pad "2" smd rect (at 1.4605 -1.397) (size 1.27 3.302) (layers "F.Cu" "F.Paste" "F.Mask")) (model "${KIPRJMOD}/ARDF_2M.3dshapes/Coilcraft_A05T_Doc107.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))
+(footprint "Coilcraft_A05T_Doc107"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Coilcraft107-1Rev07/23/21 size A;staggered .050x.130 inch lands,.065 gap,.110 vertical offset;body3.94x4.45 H3.15max")
+	(property "Reference" "REF**"
+		(at 0 -4.05 0)
+		(layer "F.Fab")
+		(uuid "57dc9fca-b138-445b-8369-e42c3f64d58a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Coilcraft_A05T_Doc107"
+		(at 0 4.05 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e7f6843a-5034-4dce-bc48-09163fd5fae7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" "https://eu.mouser.com/ProductDetail/Coilcraft/A05TJLC?qs=zCSbvcPd3pYJqqPlmZ4EHA%3D%3D"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e9a091d2-aeff-43cf-987a-db4353304038")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "090ecf80-5242-4111-812c-bf76605758de")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "A05TJLC"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "71afa8ce-bcf8-4c5c-af41-51e7a8d6f418")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "NORMAL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0055e99-faca-4a2b-b77c-5ae320a43817")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "pa_match"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af2b0bab-b008-4152-8d81-705e423e9847")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Actual Doc107-1 sizeA staggered lands,not generic axial pads. 18.5nH5turns,Q132@150MHz,SRF2.5GHz,4Arisebasis;3.94x4.45body,H3.15max. Reference output match unchanged."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd2dab0b-6762-418e-93b8-e800cacfa15b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b39b89d-a756-4a8b-b9c8-b36bb643e88a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.65 -3.5)
+		(end 2.65 3.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "566afea4-9e08-4551-8a5f-bf7de7a42ba1")
+	)
+	(fp_rect
+		(start -2.3 -3.15)
+		(end 2.3 3.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "469eb14d-2725-42e4-afa8-f30ec71c8aa0")
+	)
+	(pad "1" smd rect
+		(at -1.4605 1.397)
+		(size 1.27 3.302)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ccfec4f2-6dfb-44b9-9850-b03ad0545a6a")
+	)
+	(pad "2" smd rect
+		(at 1.4605 -1.397)
+		(size 1.27 3.302)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8ee272d9-e245-4263-9f0e-5b268daf156c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ARDF_2M.3dshapes/Coilcraft_A05T_Doc107.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,8 +1,153 @@
-(footprint "NTC_Remote_2Wire" (version 20241229)(generator "pcbnew")
- (layer "F.Cu")(attr through_hole)(descr "Insulated VishayNTCLE100E3103JB0 remote sensor wire termination;NOT axial resistor body;mount sensor on pass case")
- (fp_rect(start -3.0 -1.5)(end 3.0 1.5)(stroke(width .1)(type default))(layer "F.Fab"))
- (fp_rect(start -3.35 -1.85)(end 3.35 1.85)(stroke(width .05)(type default))(layer "F.CrtYd"))
- (fp_text reference "REF**"(at 0 -2.4)(layer "F.SilkS")(effects(font(size .8 .8)(thickness .12))))
- (fp_text value "NTC_Remote_2Wire"(at 0 2.4)(layer "F.Fab")(effects(font(size .8 .8)(thickness .12))))
- (pad "1" thru_hole rect(at 0 0)(size 1.5 1.5)(drill .8)(layers "*.Cu" "*.Mask"))
- (pad "2" thru_hole circle(at 2.54 0)(size 1.5 1.5)(drill .8)(layers "*.Cu" "*.Mask")))
+(footprint "NTC_Remote_2Wire"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Insulated VishayNTCLE100E3103JB0 remote sensor wire termination;NOT axial resistor body;mount sensor on pass case")
+	(property "Reference" "REF**"
+		(at 0 -2.4 0)
+		(layer "F.Fab")
+		(uuid "ae96b504-96f1-4ebc-b739-527f3a4ff3f6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "NTC_Remote_2Wire"
+		(at 0 2.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a2d368d-1cf9-4630-850e-40079938a594")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "69a01d31-ef9c-4cb2-ac74-f5d7e7fa06b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7f0ef0f-b7b4-46d9-a3e2-0bd8dccb8883")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "NTCLE100E3103JB0"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "884d3b58-23e6-48ae-b0c1-ab2336edd535")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "NORMAL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e1212db-7a30-456e-b1ed-69402098b56c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "protection"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8420075-d20d-4e7a-a23e-7dd9b47b096f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Vishay10k25C bead B25/853977K,not3950. Insulated wires to pass case;2.54mmwire termination,NOT axial-resistor body. Recalculate thermal trip for actual beta/tolerance;nominal66C shifts <1C. Sensor open/short window retained;detachment requires mounting inspection."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5515c0a3-14ca-4bc0-ae0c-c258f5857380")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b134056-6458-4029-bb1c-324243cf612e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.35 -1.85)
+		(end 3.35 1.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cfe1bf28-e126-4a55-b23c-443ab886ee9b")
+	)
+	(fp_rect
+		(start -3 -1.5)
+		(end 3 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "177bb0f1-9403-45c9-a902-e2fa9dd2b89a")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e7babe37-861f-46c6-923c-7f80a56ce9f8")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "904855a8-4bce-4258-92a5-847f68527a73")
+	)
+	(embedded_fonts no)
+)

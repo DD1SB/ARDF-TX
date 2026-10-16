@@ -1,0 +1,132 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T00:11:12",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9",
+            "violations": []
+        },
+        {
+            "path": "/01 Interface and local Si5351 source/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/2a1f106b-9c4a-5bd2-8c24-ce6f27c25520",
+            "violations": []
+        },
+        {
+            "path": "/02 Minimal independent fail-off and captured ARM context/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/666aa08f-2a4c-5190-b559-24638d35045b",
+            "violations": []
+        },
+        {
+            "path": "/02 Minimal independent fail-off and captured ARM context continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/ae5ee1f3-957b-5d18-bef5-bd1bf5e58314",
+            "violations": []
+        },
+        {
+            "path": "/03 External protected pack and exclusive conversion populations/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/7c3d4273-ab57-51d3-ad79-5f47ab8bdb74",
+            "violations": []
+        },
+        {
+            "path": "/03 External protected pack and exclusive conversion populations continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/a25e8187-d540-59d9-87fc-638820b2b717",
+            "violations": []
+        },
+        {
+            "path": "/04 2S boost and regulated MMIC rail/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/7c3e361e-90b5-5337-bada-357b09e28ff2",
+            "violations": []
+        },
+        {
+            "path": "/05 Sine reconstruction and series AM modulator/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/3e95f587-8f59-5a08-bb78-2da1392d71d5",
+            "violations": []
+        },
+        {
+            "path": "/05 Sine reconstruction and series AM modulator continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/d5c9ce1b-af7e-5db7-9ad6-750549e0bdab",
+            "violations": []
+        },
+        {
+            "path": "/06 Source filter, economical driver and fixed bias/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/a28bcafb-6825-5ce0-9590-2b05db4a7037",
+            "violations": []
+        },
+        {
+            "path": "/06 Source filter, economical driver and fixed bias continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/3cf67dd2-80c8-5c81-8407-672e30958d1d",
+            "violations": []
+        },
+        {
+            "path": "/07 Independent very-low-power sine-AM training path/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/4aef4335-d244-5347-97fb-8b6e1f57c5ac",
+            "violations": []
+        },
+        {
+            "path": "/07 Independent very-low-power sine-AM training path continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/e3c6d3a6-2714-5297-b6d3-c729cfcec42b",
+            "violations": []
+        },
+        {
+            "path": "/08 Local voltage, current and thermal trip/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/bb381643-7bc9-579c-809d-59c2ac7b9e95",
+            "violations": []
+        },
+        {
+            "path": "/08 Local voltage, current and thermal trip continued/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/4b7e4e79-23a7-545d-be74-3644d72fa757",
+            "violations": []
+        },
+        {
+            "path": "/06b ST final-stage matching derivative/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/a6c77237-a893-5fe0-a22a-7d74bc7f849d",
+            "violations": []
+        },
+        {
+            "path": "/06c Original ST elliptic harmonic LPF/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/d04d523a-e569-5fc3-b671-4cb9ef468305",
+            "violations": []
+        },
+        {
+            "path": "/10 Local physical switches and clock sequencing/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/215ae3c7-c638-5e10-982c-62284c91ee49",
+            "violations": []
+        },
+        {
+            "path": "/11 External supplies and integrated commissioning/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/0eaf39a9-2c7f-52f8-ae8a-7710f79839cd",
+            "violations": []
+        },
+        {
+            "path": "/12 Independent driver regulator and integrated alignment links/",
+            "uuid_path": "/0b429563-f10b-58d0-8bc8-da0d2efc69f9/95e2a02b-2bb7-523e-b500-22ae1e6efe2b",
+            "violations": []
+        }
+    ],
+    "source": "RF2M.kicad_sch"
+}

@@ -1,0 +1,115 @@
+{
+  "status": "CALCULATED_NOT_MEASURED",
+  "copper_um": 35,
+  "resistivity_80C_ohm_m": 2.1305192000000003e-08,
+  "net_bounds": {
+    "VBOOST": {
+      "current_A": 2.0,
+      "R": 0.04657685294042495,
+      "loss": 0.1863074117616998,
+      "drop": 0.0931537058808499,
+      "length": 38.735806723278046,
+      "minw": 0.15,
+      "maxrise": 151.73850502685437
+    },
+    "VIN_CONV": {
+      "current_A": 3.0,
+      "R": 0.09458463935769279,
+      "loss": 0.8512617542192364,
+      "drop": 0.28375391807307865,
+      "length": 64.10716635791803,
+      "minw": 0.15,
+      "maxrise": 381.33196195603955
+    },
+    "VREG_RAW": {
+      "current_A": 2.0,
+      "R": 0.07728021822755154,
+      "loss": 0.3091208729102062,
+      "drop": 0.1545604364551031,
+      "length": 100.14729473457176,
+      "minw": 0.15,
+      "maxrise": 151.73850502685437
+    },
+    "VMOD": {
+      "current_A": 2.0,
+      "R": 0.21769832210881646,
+      "loss": 0.8707932884352658,
+      "drop": 0.4353966442176329,
+      "length": 358.87318667630115,
+      "minw": 0.3,
+      "maxrise": 48.42620845822254
+    },
+    "VIN_PROT": {
+      "current_A": 3.0,
+      "R": 0.18941169069033262,
+      "loss": 1.7047052162129939,
+      "drop": 0.5682350720709978,
+      "length": 281.5914363185598,
+      "minw": 0.15,
+      "maxrise": 381.33196195603955
+    },
+    "VPA": {
+      "current_A": 1.8,
+      "R": 0.18539278843301227,
+      "loss": 0.6006726345229602,
+      "drop": 0.3337070191794223,
+      "length": 191.86510734748805,
+      "minw": 0.15,
+      "maxrise": 119.4267198493159
+    },
+    "VREG_SWITCH": {
+      "current_A": 2.0,
+      "R": 0.01677825022295927,
+      "loss": 0.06711300089183708,
+      "drop": 0.03355650044591854,
+      "length": 19.691137765501562,
+      "minw": 0.5,
+      "maxrise": 20.870566237086123
+    },
+    "BAT_FUSED": {
+      "current_A": 3.0,
+      "R": 0.0047389738109105016,
+      "loss": 0.04265076429819452,
+      "drop": 0.014216921432731506,
+      "length": 11.677722738795374,
+      "minw": 1.5,
+      "maxrise": 8.581751511145193
+    },
+    "BAT_RAW": {
+      "current_A": 3.0,
+      "R": 0.0044470331774520665,
+      "loss": 0.040023298597068595,
+      "drop": 0.0133410995323562,
+      "length": 9.808326112068524,
+      "minw": 1.2,
+      "maxrise": 12.395304688226664
+    },
+    "VBUCK": {
+      "current_A": 2.0,
+      "R": 0.024366121051901758,
+      "loss": 0.09746448420760703,
+      "drop": 0.048732242103803516,
+      "length": 43.58147254746475,
+      "minw": 0.8,
+      "maxrise": 9.620555950889495
+    }
+  },
+  "method": "Sumallwide/shortnecktrackresistancespernet;thisovercountsparallel/unloadedbranchesandboundsaresistivepathbecauseindependentwidepathconnectivitypasses. Fullboundcurrentisassignedtoeacheligiblesegment. Thinlongsensebranchesexcludedonlyfromloadmodel,notDRC.",
+  "ground_return_model": {
+    "effective_length_mm": 150,
+    "effective_width_mm": 10,
+    "copper_um": 35,
+    "R_at80C_ohm": 0.009130796571428573,
+    "I2R_at2A_W": 0.03652318628571429,
+    "qualification": "Conservativegeometryallowance;nativeGNDzonecontinuitychecked. Currentdistribution/neckspreadingnotafield-solvedresult."
+  },
+  "via_electrical": {
+    "length_mm": 1.6,
+    "drill_mm": 0.3,
+    "plating_um": 18,
+    "R_80C_each_ohm": 0.0020093787379685366
+  },
+  "R309_shunt_W_at2A": 0.272,
+  "R413_W_at180mA": 0.15228,
+  "qualification": "SupplydroopandtemperatureunderactualAMloadNOT_RUN;commissionfirstatboundedcurrent,nounrestrictedLiionfaulttest."
+}

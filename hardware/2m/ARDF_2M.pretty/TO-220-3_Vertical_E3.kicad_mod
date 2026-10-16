@@ -1,0 +1,296 @@
+(footprint "TO-220-3_Vertical_E3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf")
+	(tags "TO-220-3 Vertical RM 2.54mm")
+	(property "Reference" "REF**"
+		(at 2.54 -4.1 0)
+		(layer "F.Fab")
+		(uuid "309b3e80-a6f5-4d11-83d4-005fc7c12eb3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "TO-220-3_Vertical_E3"
+		(at 2.54 2.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7957b6f9-a9da-49c7-9a4c-8f01f3ecc93a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.st.com/resource/en/datasheet/d45h11.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43d6e785-cd17-46aa-9fba-f6f4033f90fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cbec5560-d79d-4857-afc7-fbc841284234")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/TO_SOT/THT"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0b667eb-58ad-40ae-bced-8542b990b021")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "D45H11"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "feaa3b4b-70ca-4146-a251-5baede0eb855")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "NORMAL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "768439a3-27b8-40fe-a648-beec1472e792")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "modulator"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf060ed9-ef6a-479b-bd6a-5414b0a38cfb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd273204-d03c-4385-bea9-9e5c7af040a2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ee07300-1a93-419b-98d2-9ec11967cca3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.71 -3.4)
+		(end 7.79 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "434d51bb-7b95-4dcc-a3ec-a48517f37dd5")
+	)
+	(fp_line
+		(start -2.57 -3.26)
+		(end 7.65 -3.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4ff35387-f266-43ed-a576-59222ba57b92")
+	)
+	(fp_line
+		(start -2.57 -1.88)
+		(end 7.65 -1.88)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7aed5a07-d30e-4051-aea7-2e9f8e63909e")
+	)
+	(fp_line
+		(start -2.57 1.36)
+		(end -2.57 -3.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ab8508c5-3ae4-4471-a4de-7ce4941d5402")
+	)
+	(fp_line
+		(start -2.46 -1.88)
+		(end 7.54 -1.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7a2589da-8073-432b-bc91-8611899d026b")
+	)
+	(fp_line
+		(start 0.69 -3.26)
+		(end 0.69 -1.88)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "044e6362-59d5-4ab1-8d38-0601a4d2ca85")
+	)
+	(fp_line
+		(start 0.69 -3.15)
+		(end 0.69 -1.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5248bfe8-6297-4030-9bf3-4067ee4b4eb2")
+	)
+	(fp_line
+		(start 4.39 -3.26)
+		(end 4.39 -1.88)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c57101d7-2c0a-473d-b6a2-fa5b650c390c")
+	)
+	(fp_line
+		(start 4.39 -3.15)
+		(end 4.39 -1.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6ac7d2d3-a695-4e9f-bd9b-ddcc24a3f1b7")
+	)
+	(fp_line
+		(start 7.65 -3.26)
+		(end 7.65 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "274acfb4-4026-4bd4-b760-8d47d8c47d9e")
+	)
+	(fp_line
+		(start 7.65 1.36)
+		(end -2.57 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8712ec32-deb0-4e4e-ab91-be0c96674510")
+	)
+	(fp_rect
+		(start -2.46 -3.15)
+		(end 7.54 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "beb9b3dc-2d69-4b24-9677-a038b903f5e6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 -0.95 0)
+		(layer "F.Fab")
+		(uuid "1104da43-02a0-4236-b844-56545c207b44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.905 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7eeb72a0-17b8-4de2-8fe8-866e3285937d")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 0)
+		(size 1.905 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dde573cf-c787-4161-8263-4c1b548c9663")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 0)
+		(size 1.905 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "122083df-fcba-44ed-8bf3-3aae81687315")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

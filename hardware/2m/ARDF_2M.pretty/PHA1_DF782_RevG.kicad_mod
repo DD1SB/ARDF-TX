@@ -1,1 +1,230 @@
-(footprint "PHA1_DF782_RevG" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr smd) (descr "Mini-Circuits DF782 RevG 02/08/17 suggested land. 2/4 common GND. REF shoulder dimension and stencil/vias require review.") (fp_rect (start -2.6 -5.65) (end 2.6 .3) (stroke (width .05) (type default)) (layer "F.CrtYd")) (fp_circle (center -2.65 -.2) (end -2.5 -.2) (stroke (width .1) (type default)) (fill none) (layer "F.SilkS")) (fp_text reference "REF**" (at 0 -6.1) (layer "F.SilkS") (effects (font (size 1 1) (thickness .15)))) (fp_text value "PHA-1+" (at 0 .9) (layer "F.Fab") (effects (font (size 1 1) (thickness .15)))) (pad "1" smd rect (at -1.4986 -0.7493) (size 0.7111999999999999 1.4986) (layers "F.Cu" "F.Paste" "F.Mask")) (pad "3" smd rect (at 1.4986 -0.7493) (size 0.7111999999999999 1.4986) (layers "F.Cu" "F.Paste" "F.Mask")) (pad "2" smd rect (at 0 -0.7493) (size 0.9143999999999999 1.4986) (layers "F.Cu" "F.Paste" "F.Mask")) (pad "4" smd custom (at 0 -3) (size .1 .1) (layers "F.Cu" "F.Mask") (options (clearance outline) (anchor rect)) (primitives (gr_poly (pts (xy -0.457200 1.501400) (xy 0.457200 1.501400) (xy 0.457200 1.082300) (xy 0.952500 0.587000) (xy 0.952500 -1.838700) (xy 0.457200 -2.334000) (xy -0.457200 -2.334000) (xy -0.952500 -1.838700) (xy -0.952500 0.587000) (xy -0.457200 1.082300)) (width 0) (fill yes)))) (fp_rect (start -0.8 -4.575) (end -0.39999999999999997 -2.625) (stroke (width 0) (type default)) (fill solid) (layer "F.Paste")) (fp_rect (start 0.39999999999999997 -4.575) (end 0.8 -2.625) (stroke (width 0) (type default)) (fill solid) (layer "F.Paste")) (fp_rect (start -0.65 -5.15) (end 0.65 -4.75) (stroke (width 0) (type default)) (fill solid) (layer "F.Paste")) (fp_rect (start -0.325 -1.905) (end 0.325 -1.655) (stroke (width 0) (type default)) (fill solid) (layer "F.Paste")) (model "${KIPRJMOD}/ARDF_2M.3dshapes/PHA1_DF782_RevG.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))
+(footprint "PHA1_DF782_RevG"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Mini-Circuits DF782 RevG 02/08/17 suggested land. 2/4 common GND. REF shoulder dimension and stencil/vias require review.")
+	(property "Reference" "REF**"
+		(at 0 -6.1 0)
+		(layer "F.Fab")
+		(uuid "7dc6d058-7ddf-441f-b2de-65e68d26855a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "PHA1_DF782_RevG"
+		(at 0 0.9 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7e4a251-b5d3-46b6-8771-9b64b1ff9195")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://pccomponents.com/datasheets/MINI_-PHA1.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e84f5d7e-d460-4c59-9525-7d32a1eac3d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8e9d2f46-87de-476e-9321-384b50e93ff6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "PHA-1+"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16df8b9c-6c5a-4e7f-b97f-10c8dfd08ba5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "NORMAL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c9f4ae8-b5bf-45bf-85ea-5965e2492c97")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "driver"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1e539c8-8eff-4653-909f-e8f790e4c3c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Mini-Circuits PHA-1+ RevD;1IN2GND3OUT/DC4paddleGND. DF782RevG02/08/17 suggested land transcribed in local library; ground stencil/vias/incoming dimensions still require review. 19dBm CW output and3dB compression backoff are qualification targets, not measured."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2a3e113-8909-4df9-afe4-e7c6da161307")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8bb7c368-7de5-464b-a1ea-69ff3213d774")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.8 -4.575)
+		(end -0.4 -2.625)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "e23900ea-3654-4867-a2f1-beebf37f8b87")
+	)
+	(fp_rect
+		(start -0.65 -5.15)
+		(end 0.65 -4.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "3e7d8c57-0d92-4c1e-8119-efcf5fc3de48")
+	)
+	(fp_rect
+		(start -0.325 -1.905)
+		(end 0.325 -1.655)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "10e81157-1c78-42ac-af56-f168e5ac7d1c")
+	)
+	(fp_rect
+		(start 0.4 -4.575)
+		(end 0.8 -2.625)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "215a6f33-26f0-4a32-9c37-8a85299c6df6")
+	)
+	(fp_rect
+		(start -2.6 -5.65)
+		(end 2.6 0.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "49e53a41-3b05-451e-a841-e7c062d80921")
+	)
+	(fp_circle
+		(center -2.65 -0.2)
+		(end -2.5 -0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6914e910-92f8-4458-9370-151bbb9e3201")
+	)
+	(pad "1" smd rect
+		(at -1.4986 -0.7493)
+		(size 0.7112 1.4986)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c5c1a5b5-0d31-4ea6-8b34-f15ebd49331f")
+	)
+	(pad "2" smd rect
+		(at 0 -0.7493)
+		(size 0.9144 1.4986)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "41f04e36-2a6b-46fe-9079-b4ae45d2671f")
+	)
+	(pad "3" smd rect
+		(at 1.4986 -0.7493)
+		(size 0.7112 1.4986)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fa0c2339-e601-48b6-a0a5-ce0fc4307437")
+	)
+	(pad "4" smd custom
+		(at 0 -3)
+		(size 0.1 0.1)
+		(layers "F.Cu" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.4572 1.5014) (xy 0.4572 1.5014) (xy 0.4572 1.0823) (xy 0.9525 0.587) (xy 0.9525 -1.8387)
+					(xy 0.4572 -2.334) (xy -0.4572 -2.334) (xy -0.9525 -1.8387) (xy -0.9525 0.587) (xy -0.4572 1.0823)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "32e24fdf-e8ac-4b58-a448-3f3f74bb9c9e")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ARDF_2M.3dshapes/PHA1_DF782_RevG.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

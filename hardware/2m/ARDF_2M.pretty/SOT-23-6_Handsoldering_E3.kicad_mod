@@ -1,0 +1,316 @@
+(footprint "SOT-23-6_Handsoldering_E3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "6-pin SOT-23 package, Handsoldering")
+	(tags "SOT-23-6 Handsoldering")
+	(property "Reference" "REF**"
+		(at 0 -2.9 0)
+		(layer "F.Fab")
+		(uuid "ec80704b-9c00-418a-835a-61c6761636cc")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "SOT-23-6_Handsoldering_E3"
+		(at 0 2.9 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dbd5e663-ad4f-45ba-afc2-7f4c7837bba3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.digikey.de/en/products/detail/texas-instruments/TPS54302DDCR/6572466"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b7eec7d-c175-45c2-b068-932371ee4e8e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf902cc2-9532-4c47-a48f-e3539770c36b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "TPS54302DDCR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e44ddc9e-1264-4838-9ea4-cab2830c9d23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "BUCK4S"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9a5ba14-805e-404a-bcb3-2acc30c169a2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "converter"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "441500d8-2313-4d89-a8aa-6c8a8621159d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Exact DDCR available in cut tape; no3000reel MOQ assumed. Replaces carried0.55EUR estimate with actual indexed CT break. TI DDC pin mapping unchanged."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8479fd2-104d-4ab9-a2ff-f2f0dbb67a06")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b527b089-a881-431c-aae5-214529cc7bd2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.4 -1.8)
+		(end 2.4 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e7dcbca2-00a6-4d4a-a37b-04ae5bc199cd")
+	)
+	(fp_line
+		(start -2.4 1.8)
+		(end -2.4 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "94f602c0-cbf6-4e89-b2b6-badb85415432")
+	)
+	(fp_line
+		(start 2.4 -1.8)
+		(end 2.4 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "88854f01-451d-4e8e-bf8f-2205a875c315")
+	)
+	(fp_line
+		(start 2.4 1.8)
+		(end -2.4 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "914e43e9-4d79-44a5-89fd-4343b499d99a")
+	)
+	(fp_line
+		(start -0.9 -0.9)
+		(end -0.9 1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6d9e46f4-ebd8-4cdf-adce-331ce6bc2c71")
+	)
+	(fp_line
+		(start -0.9 -0.9)
+		(end -0.25 -1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3b11fcd2-495c-4336-a7e6-46659e3c6da4")
+	)
+	(fp_line
+		(start -0.9 1.61)
+		(end 0.9 1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "65bcbf58-cc93-4db7-8302-89f5fc9c30e5")
+	)
+	(fp_line
+		(start 0.1 -1.61)
+		(end -0.7 -1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4808a46-5809-444b-b589-34f928be1e85")
+	)
+	(fp_line
+		(start 0.1 -1.61)
+		(end 0.9 -1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fd7eb5b1-b0e8-470d-bae9-b458f36c83f1")
+	)
+	(fp_line
+		(start 0.9 -1.55)
+		(end -0.25 -1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "927a4ee6-7937-4632-9cdb-2f984ea3006d")
+	)
+	(fp_line
+		(start 0.9 -1.55)
+		(end 0.9 1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41503185-273e-4791-9598-a96e1e4a45b5")
+	)
+	(fp_line
+		(start 0.9 1.55)
+		(end -0.9 1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e655b2ff-246a-4b5d-8f81-8d9fc55612c4")
+	)
+	(fp_poly
+		(pts
+			(xy -1.2 -1.56) (xy -1.44 -1.89) (xy -0.96 -1.89) (xy -1.2 -1.56)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "dd1a7f01-246f-4338-b88c-2a0843f8aad6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "436b2b1b-e6ce-4c99-99de-9a386e0f9b27")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.35 -0.95)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d1f4f57a-ef59-467a-bdcf-828bfda60e85")
+	)
+	(pad "2" smd roundrect
+		(at -1.35 0)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "6a0c5b1e-d01b-4685-9f8d-19dc169700e0")
+	)
+	(pad "3" smd roundrect
+		(at -1.35 0.95)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c7041595-31c1-479f-9f9d-404a2b7a5969")
+	)
+	(pad "4" smd roundrect
+		(at 1.35 0.95)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c89ba62b-2a3a-4554-bb43-9b3a9b2f7992")
+	)
+	(pad "5" smd roundrect
+		(at 1.35 0)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "857eb2f4-8cf5-405d-b869-3d59656eae21")
+	)
+	(pad "6" smd roundrect
+		(at 1.35 -0.95)
+		(size 1.56 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "1b7f6ccd-8ba4-4f4a-9640-eb42bd3afd38")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

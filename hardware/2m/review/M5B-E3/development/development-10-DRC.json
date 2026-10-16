@@ -1,0 +1,567 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-16T23:54:14",
+    "ignored_checks": [
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RF2M.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 0.2813 mm",
+                    "pos": {
+                        "x": 36.225,
+                        "y": 74.9
+                    },
+                    "uuid": "25930adc-f4d5-48ec-9bdb-ab59e07c2266"
+                },
+                {
+                    "description": "Track [V3V3] on F.Cu, length 0.4263 mm",
+                    "pos": {
+                        "x": 31.27,
+                        "y": 79.5737
+                    },
+                    "uuid": "02c00f4e-25f2-4443-b802-831e85ddfeba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 1.9799 mm",
+                    "pos": {
+                        "x": 44.3,
+                        "y": 79.4
+                    },
+                    "uuid": "7560762a-f6e6-4cd6-bb3d-69bc4d434c6a"
+                },
+                {
+                    "description": "Track [V3V3] on F.Cu, length 1.7500 mm",
+                    "pos": {
+                        "x": 36.225,
+                        "y": 74.9
+                    },
+                    "uuid": "14d783a1-05fe-4ed2-90e8-f11a0059a0b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [PA_RAIL_ADC] on B.Cu, length 0.9609 mm",
+                    "pos": {
+                        "x": 32.54,
+                        "y": 91.1209
+                    },
+                    "uuid": "679eda74-6590-497e-9afb-91488ae43165"
+                },
+                {
+                    "description": "Track [PA_RAIL_ADC] on B.Cu, length 39.9015 mm",
+                    "pos": {
+                        "x": 33.7128,
+                        "y": 120.4198
+                    },
+                    "uuid": "739eb469-adf1-45b0-b765-5ef09e9ef64c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [PATH_TRAIN] on F.Cu, length 3.3231 mm",
+                    "pos": {
+                        "x": 38.6593,
+                        "y": 90.8498
+                    },
+                    "uuid": "fb2f0001-647e-4136-8f81-8db64a6511ed"
+                },
+                {
+                    "description": "Track [PATH_TRAIN] on F.Cu, length 1.6586 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 92.7
+                    },
+                    "uuid": "cbc2deb1-6f8e-45c0-889e-6c6b72d571d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [AF_PWM] on F.Cu, length 1.6914 mm",
+                    "pos": {
+                        "x": 36.379,
+                        "y": 96.396
+                    },
+                    "uuid": "d77d48f8-99c2-47d3-8393-dcf14f1ed541"
+                },
+                {
+                    "description": "Track [AF_PWM] on F.Cu, length 1.6348 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 95.24
+                    },
+                    "uuid": "ae8273f8-2f4e-407b-9b5c-c5fd3f2e63b4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [I2C_SDA] on B.Cu, length 1.5556 mm",
+                    "pos": {
+                        "x": 30.3,
+                        "y": 82.5
+                    },
+                    "uuid": "20586909-a8bb-4a14-b54d-00b6348e2a8f"
+                },
+                {
+                    "description": "Track [I2C_SDA] on B.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 33.1,
+                        "y": 81.4
+                    },
+                    "uuid": "107bad49-be07-416e-b9e8-0f10f33b54fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [MUTE_N] on B.Cu, length 1.6971 mm",
+                    "pos": {
+                        "x": 31.2,
+                        "y": 89.0
+                    },
+                    "uuid": "2a5c5ae4-a7da-473e-a59b-82053d731e3a"
+                },
+                {
+                    "description": "Track [MUTE_N] on B.Cu, length 22.2032 mm",
+                    "pos": {
+                        "x": 49.4,
+                        "y": 107.4
+                    },
+                    "uuid": "88fc36a1-5f62-4433-8b75-37eed51c6b3f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL605",
+                    "pos": {
+                        "x": 104.059,
+                        "y": 55.0
+                    },
+                    "uuid": "2cdf6512-a65c-4507-a9d5-9ae77e9c03b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL604",
+                    "pos": {
+                        "x": 96.2834,
+                        "y": 55.0
+                    },
+                    "uuid": "2e3b4885-3189-4ae7-b573-57e54dd96fcf"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP602",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 55.0
+                    },
+                    "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL603",
+                    "pos": {
+                        "x": 88.6205,
+                        "y": 55.0
+                    },
+                    "uuid": "40a201b2-8ba1-47db-a377-a2848bac4300"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP604",
+                    "pos": {
+                        "x": 89.1,
+                        "y": 55.0
+                    },
+                    "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP601",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 55.0
+                    },
+                    "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL608",
+                    "pos": {
+                        "x": 130.122999,
+                        "y": 52.206
+                    },
+                    "uuid": "5ad3f253-99f2-482a-baca-fa0878f0356a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL607",
+                    "pos": {
+                        "x": 116.4087,
+                        "y": 55.0
+                    },
+                    "uuid": "5ffb7848-7fb3-4254-a234-3a3d5993202c"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP603",
+                    "pos": {
+                        "x": 145.3,
+                        "y": 52.206
+                    },
+                    "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL606",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "96802c13-f414-419c-9a0f-9c7676cb0e96"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL609",
+                    "pos": {
+                        "x": 143.839999,
+                        "y": 52.206
+                    },
+                    "uuid": "d9c89f37-63a5-45c6-b203-daa7a71e6c0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 0.4263 mm",
+                    "pos": {
+                        "x": 31.27,
+                        "y": 79.5737
+                    },
+                    "uuid": "02c00f4e-25f2-4443-b802-831e85ddfeba"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 0.2813 mm",
+                    "pos": {
+                        "x": 36.225,
+                        "y": 74.9
+                    },
+                    "uuid": "25930adc-f4d5-48ec-9bdb-ab59e07c2266"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 2.8540 mm",
+                    "pos": {
+                        "x": 31.27,
+                        "y": 80.0
+                    },
+                    "uuid": "f671c58e-5ab9-4679-9cf8-04c8d8061b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 1.6539 mm",
+                    "pos": {
+                        "x": 38.6055,
+                        "y": 83.6695
+                    },
+                    "uuid": "fc580a4c-77b9-47d8-b9da-412162e378bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PA_RAIL_ADC] on B.Cu, length 39.9015 mm",
+                    "pos": {
+                        "x": 33.7128,
+                        "y": 120.4198
+                    },
+                    "uuid": "739eb469-adf1-45b0-b765-5ef09e9ef64c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PATH_TRAIN] on F.Cu, length 1.6586 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 92.7
+                    },
+                    "uuid": "cbc2deb1-6f8e-45c0-889e-6c6b72d571d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PATH_TRAIN] on F.Cu, length 3.3231 mm",
+                    "pos": {
+                        "x": 38.6593,
+                        "y": 90.8498
+                    },
+                    "uuid": "fb2f0001-647e-4136-8f81-8db64a6511ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AF_PWM] on F.Cu, length 1.6348 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 95.24
+                    },
+                    "uuid": "ae8273f8-2f4e-407b-9b5c-c5fd3f2e63b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AF_PWM] on F.Cu, length 1.6914 mm",
+                    "pos": {
+                        "x": 36.379,
+                        "y": 96.396
+                    },
+                    "uuid": "d77d48f8-99c2-47d3-8393-dcf14f1ed541"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [I2C_SDA] on B.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 33.1,
+                        "y": 81.4
+                    },
+                    "uuid": "107bad49-be07-416e-b9e8-0f10f33b54fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [I2C_SDA] on B.Cu, length 1.5556 mm",
+                    "pos": {
+                        "x": 30.3,
+                        "y": 82.5
+                    },
+                    "uuid": "20586909-a8bb-4a14-b54d-00b6348e2a8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [MUTE_N] on B.Cu, length 1.6971 mm",
+                    "pos": {
+                        "x": 31.2,
+                        "y": 89.0
+                    },
+                    "uuid": "2a5c5ae4-a7da-473e-a59b-82053d731e3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [MUTE_N] on B.Cu, length 22.2032 mm",
+                    "pos": {
+                        "x": 49.4,
+                        "y": 107.4
+                    },
+                    "uuid": "88fc36a1-5f62-4433-8b75-37eed51c6b3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

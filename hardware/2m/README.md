@@ -1,18 +1,11 @@
-# RF2M electrical candidates
+# RF2M — M5B-E3 evaluation PCB
 
-The active editable project is **M5A-R4**, a lower-cost PD54008L-E/PHA-1+ true-AM schematic with traced ST output matching and elliptic filtering. **NOT RELEASED; pre-layout electrical/physical holds remain.** No RF2M PCB, DRC report, Gerbers or hardware results are claimed.
+The active editable design is **M5B-E3**, an integrated **180 × 140 mm, two-layer, 1.6 mm / 1 oz FR4** 144 MHz true-AM evaluation board. It uses ordinary JLCPCB options: green mask, white legend, lead-free HASL, standard through-vias and no controlled impedance or special process. **NOT RELEASED; all physical qualification remains NOT_RUN.**
 
-Start with the [review decision](../../docs/M5A_R4_REVIEW_DECISION.md), [schematic PDF](review/M5A-R4/RF2M.pdf), [reference audit](../../docs/M5A_R4_RF_STAGE.md), [costed population BOM](review/M5A-R4/RF2M_BOM.csv) and [controller/variant contract](../../docs/M5A_R4_MODERNIZATION.md). All prices are dated observations or explicit estimates; this is not a released order list.
+Start with the [review decision](../../docs/M5B_E3_REVIEW_DECISION.md), [engineering changes](../../docs/M5B_E3_ENGINEERING_CHANGE.md), [RF/stackup analysis](../../docs/M5B_E3_RF_STACKUP.md), [thermal/mechanical review](../../docs/M5B_E3_THERMAL_MECHANICAL.md), [DFM audit](../../docs/M5B_E3_JLCPCB_DFM.md), [manufacturing/cost report](../../docs/M5B_E3_MANUFACTURING_COST.md) and [bring-up procedure](../../docs/M5B_E3_BRINGUP.md).
 
-R3 is preserved at tag `m5a-r3` (`daf994c`). R0/R1 tags and the [R1 native archive](archive/M5A-R1/README.md) remain intact. R2 produced no new CAD. Historical review exports are unchanged. To inspect/reproduce old CAD, use its tag/archive rather than running a historical generator against this active project. The old DL3BBX permission file applies to the historical derivative; manufacturer ST/Mini-Circuits documents retain publisher rights. R4 drawings are independently generated engineering schematics, not redistributed original artwork or a blanket commercial-rights claim.
+The [current review package](review/M5B-E3/README.md) contains fresh schematic, copper/assembly/placement views, actual KiCad 3D renders, BOMs, logical/physical netlists, ERC/DRC, native-geometry DFM and regression reports, proposed Gerbers/drills and checksums. The native project remains `RF2M.kicad_pro`, `RF2M.kicad_sch` and `RF2M.kicad_pcb` in this directory. Full BOOST2S, BUCK4S and TRAIN_ONLY assemblies use this same PCB; the two converters are mutually exclusive.
 
-Reproduce the complete current review, using installed KiCad 10.0.6 and Python 3.12:
+E2 is preserved at **m5b-e2 / 2ca4c8e**. Its manufacturing-review recommendation is superseded by the standard-process E3 redesign. E1, R4 and earlier tags/archives remain historical references. Do not run historical CAD generators or point-in-time development aids against the finished board. Reproduce current checks using the commands in the package README and `tools/m5b_e3.py`.
 
-```sh
-python3 tools/m5a_r4_review.py
-python3 tools/m5a_r4_review.py --check
-```
-
-The pipeline generates native sheets, exports XML/PDF, runs ERC, netlist-derived logic/pin/variant tests, recalculates costs and power, regenerates six review documents, checks local links and preserved history, and seals hashes. Its R1 template generation occurs only in a temporary directory. RF80, M4A, root README and accepted ADRs are hash-preserved.
-
-Current blockers are the changed 50 Ω MMIC/ST interstage definition, drive margin and the listed exact physical landings/thermal implementation. All analog timing, RF, AM, thermal and endurance tests remain **NOT_RUN**. No manufacture, procurement or RF operation is authorized.
+Calculated line impedance, power losses and thermal models are engineering estimates. Actual RF gain, carrier/PEP, sine-AM depth, emissions, isolation, protection timing and endurance remain unmeasured. No upload, order, procurement, manufacture, assembly, power-up or RF operation is authorized. Independent review and explicit user authorization precede any external fabrication submission.

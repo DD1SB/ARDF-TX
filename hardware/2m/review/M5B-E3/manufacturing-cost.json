@@ -1,0 +1,66 @@
+{
+  "status": "ESTIMATE_NOT_QUOTATION",
+  "standard_options": {
+    "layers": 2,
+    "thickness_mm": 1.6,
+    "copper_oz": 1,
+    "mask": "green",
+    "legend": "white",
+    "finish": "lead-freeHASL",
+    "impedance_control": false,
+    "special_process": false
+  },
+  "estimates": [
+    {
+      "boards": 5,
+      "width_mm": 180,
+      "height_mm": 140,
+      "area_m2_each": 0.0252,
+      "E3_bare_batch_low_EUR": 41.5,
+      "E3_bare_batch_high_EUR": 83.0,
+      "E3_each_low_EUR": 8.3,
+      "E3_each_high_EUR": 16.6,
+      "shipping_separate_EUR_low": 10,
+      "shipping_separate_EUR_high": 25,
+      "VAT": "excluded",
+      "basis": "Unquotedsupplier-neutralbudget10-20setup+250-500EUR/m2;NOTJLCpublishedpriceorquote"
+    },
+    {
+      "boards": 10,
+      "width_mm": 180,
+      "height_mm": 140,
+      "area_m2_each": 0.0252,
+      "E3_bare_batch_low_EUR": 73.0,
+      "E3_bare_batch_high_EUR": 146.0,
+      "E3_each_low_EUR": 7.3,
+      "E3_each_high_EUR": 14.6,
+      "shipping_separate_EUR_low": 10,
+      "shipping_separate_EUR_high": 25,
+      "VAT": "excluded",
+      "basis": "Unquotedsupplier-neutralbudget10-20setup+250-500EUR/m2;NOTJLCpublishedpriceorquote"
+    },
+    {
+      "boards": 20,
+      "width_mm": 180,
+      "height_mm": 140,
+      "area_m2_each": 0.0252,
+      "E3_bare_batch_low_EUR": 136.0,
+      "E3_bare_batch_high_EUR": 272.0,
+      "E3_each_low_EUR": 6.8,
+      "E3_each_high_EUR": 13.6,
+      "shipping_separate_EUR_low": 10,
+      "shipping_separate_EUR_high": 25,
+      "VAT": "excluded",
+      "basis": "Unquotedsupplier-neutralbudget10-20setup+250-500EUR/m2;NOTJLCpublishedpriceorquote"
+    }
+  ],
+  "E2_five_board_estimate_EUR": [
+    60,
+    100
+  ],
+  "E2_confirmation_dependencies": "0.8mmcore0.64+-0.05/70umfinished/.15mmfeatures;superseded",
+  "interpretation": "E3standardconfigurationremovesnegotiatedstack/processdependencies;nosavingbookeduntilactualautomatedquote. BoardarearetainedforRFreturn,separateportsandtwothermalassemblies.",
+  "actual_quote": null,
+  "factory_CAM_acceptance": null,
+  "submitted_files": false
+}

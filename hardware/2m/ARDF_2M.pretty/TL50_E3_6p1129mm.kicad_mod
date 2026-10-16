@@ -1,0 +1,7 @@
+(footprint "TL50_E3_6p1129mm"(version 20241229)(generator "pcbnew")(layer "F.Cu")
+ (attr smd exclude_from_bom exclude_from_pos_files)
+ (descr "M5B-E3 ordinary1.6mm1oz FR4 nominalh1.50 er4.5;butt-ended microstrip;NOT measured")
+ (pad "1" smd rect(at 0 0)(size .2 2.741)(layers "F.Cu"))
+ (pad "2" smd rect(at 6.1129 0)(size .2 2.741)(layers "F.Cu"))
+ (fp_rect(start 0 -1.3705)(end 6.1129 1.3705)(stroke(width 0)(type solid))(fill solid)(layer "F.Cu"))
+ (net_tie_pad_groups "1,2"))

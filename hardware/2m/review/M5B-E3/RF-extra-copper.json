@@ -1,0 +1,59 @@
+{
+  "rectangles": [
+    {
+      "net": "ST_LPF_IN",
+      "start_mm": [
+        145.802399,
+        52.206
+      ],
+      "end_mm": [
+        147.932399,
+        52.206
+      ],
+      "width_mm": 2.741,
+      "type": "butt-ended50ohm_nominal"
+    },
+    {
+      "net": "ST_F1",
+      "start_mm": [
+        150.222399,
+        52.206
+      ],
+      "end_mm": [
+        152.282399,
+        52.206
+      ],
+      "width_mm": 2.741,
+      "type": "butt-ended50ohm_nominal"
+    },
+    {
+      "net": "ST_F2",
+      "start_mm": [
+        154.572399,
+        52.206
+      ],
+      "end_mm": [
+        156.632399,
+        52.206
+      ],
+      "width_mm": 2.741,
+      "type": "butt-ended50ohm_nominal"
+    }
+  ],
+  "normal_launch": {
+    "start_mm": [
+      158.922399,
+      52.206
+    ],
+    "end_mm": [
+      185.0,
+      52.206
+    ],
+    "width_mm": 2.741,
+    "first_taper_mm": 1,
+    "last_taper_mm": 8,
+    "end_width_mm": 1
+  },
+  "source_and_drain_bias_routes": "Retained reference points and values;single coherent routes replace obsolete duplicate copper",
+  "physical": "NOT_RUN"
+}

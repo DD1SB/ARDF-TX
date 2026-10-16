@@ -1,0 +1,3533 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-16T23:42:35",
+    "ignored_checks": [
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C101",
+                    "pos": {
+                        "x": 37.0,
+                        "y": 70.0
+                    },
+                    "uuid": "a1c0db25-5f18-482d-9ca1-37dad3de04aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C102",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 46.0
+                    },
+                    "uuid": "7084e58d-e3ba-4528-b507-3afabc3e7fe5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0805_2012Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C103",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 50.0
+                    },
+                    "uuid": "098bcfd8-5923-4537-83dc-fdd0d4278390"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R101",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 109.9
+                    },
+                    "uuid": "dd7448a5-2122-446e-b01d-967a30f31ed5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R102",
+                    "pos": {
+                        "x": 40.6,
+                        "y": 82.5
+                    },
+                    "uuid": "428ecce9-613c-4cc1-b5e7-ee97877f089a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R103",
+                    "pos": {
+                        "x": 38.8,
+                        "y": 74.9
+                    },
+                    "uuid": "eadd0f7a-5ec9-4bbe-802e-5333c2192f99"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R104",
+                    "pos": {
+                        "x": 25.5,
+                        "y": 114.5
+                    },
+                    "uuid": "de3eeba1-9721-4b0f-814e-fa1408540006"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R105",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 85.1
+                    },
+                    "uuid": "9efff2e5-0c5e-4c23-ba22-98c10813a87b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R106",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 84.0
+                    },
+                    "uuid": "c72b3c18-da91-41e2-8d9f-e16567af0874"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R107",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 85.5
+                    },
+                    "uuid": "c6254c74-6b2c-4300-866c-537cc875105c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R108",
+                    "pos": {
+                        "x": 83.35,
+                        "y": 85.0
+                    },
+                    "uuid": "eb08c947-3cd4-4c48-a39c-92212469feb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R109",
+                    "pos": {
+                        "x": 44.3,
+                        "y": 88.5
+                    },
+                    "uuid": "fa1b7a14-e582-40ac-a0e2-6e77308e8d0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R110",
+                    "pos": {
+                        "x": 45.5,
+                        "y": 91.2
+                    },
+                    "uuid": "38067977-a8d6-4f50-9041-c70bfed7c809"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R111",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 87.5
+                    },
+                    "uuid": "950d0b73-4400-433f-80e8-946946fce987"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R112",
+                    "pos": {
+                        "x": 54.8,
+                        "y": 103.2
+                    },
+                    "uuid": "44ebf99c-8f6e-4a2d-9a9d-4174ae143a1b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R115",
+                    "pos": {
+                        "x": 38.4,
+                        "y": 95.2
+                    },
+                    "uuid": "4eaabb6e-61cd-492e-b0c9-53f5d4e84da2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R116",
+                    "pos": {
+                        "x": 38.8,
+                        "y": 92.4
+                    },
+                    "uuid": "3af58ccf-ff4f-46d5-9cb8-ab462133f2e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_SO_MSOP_10_3x3mm_P0_5mm doesn't match symbol's footprint filters (MSOP*3x3mm*P0.5mm*)",
+            "items": [
+                {
+                    "description": "Footprint U103",
+                    "pos": {
+                        "x": 42.0,
+                        "y": 48.0
+                    },
+                    "uuid": "fe2e398a-9173-4d1b-9d61-e38822ff448d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Crystal_Crystal_SMD_3225_4Pin_3_2x2_5mm doesn't match symbol's footprint filters (Crystal*)",
+            "items": [
+                {
+                    "description": "Footprint Y101",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 40.0
+                    },
+                    "uuid": "f6f28891-d107-4e76-955a-e0db915f09f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C201",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 40.5
+                    },
+                    "uuid": "0146a178-cc21-4dfc-951c-471c39e16453"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R201",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 29.0
+                    },
+                    "uuid": "d29f24c7-0b3e-4918-91e5-9810638b1ef1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R202",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 30.0
+                    },
+                    "uuid": "4fd1bc38-d796-472a-997c-e1e5753413e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_SO_SOIC_16_3_9x9_9mm_P1_27mm doesn't match symbol's footprint filters (SOIC*3.9x9.9mm*)",
+            "items": [
+                {
+                    "description": "Footprint U202",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 85.0
+                    },
+                    "uuid": "22cd247c-51c0-4d94-901f-0ddbbca632e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_SO_SOIC_14_3_9x8_7mm_P1_27mm doesn't match symbol's footprint filters (SOIC*3.9x8.7mm*)",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 85.0
+                    },
+                    "uuid": "ab009569-2767-4244-a21c-b5d04d47ab5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_SO_SOIC_14_3_9x8_7mm_P1_27mm doesn't match symbol's footprint filters (SOIC*3.9x8.7mm*)",
+            "items": [
+                {
+                    "description": "Footprint U204",
+                    "pos": {
+                        "x": 91.0,
+                        "y": 85.0
+                    },
+                    "uuid": "ee4a3b40-5de8-4c9b-9cff-d2ee5d342397"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_SO_SOIC_14_3_9x8_7mm_P1_27mm doesn't match symbol's footprint filters (SOIC*3.9x8.7mm*)",
+            "items": [
+                {
+                    "description": "Footprint U207",
+                    "pos": {
+                        "x": 91.0,
+                        "y": 101.0
+                    },
+                    "uuid": "4f0880e6-1be2-4d34-8a0f-86e46fb84cea"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0805_2012Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C202",
+                    "pos": {
+                        "x": 71.4,
+                        "y": 91.3
+                    },
+                    "uuid": "150cb747-d29d-4d41-be78-07e8bc368a8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C203",
+                    "pos": {
+                        "x": 66.375,
+                        "y": 80.555
+                    },
+                    "uuid": "7f233da0-fe3c-48fb-8ef3-3a7c5bafaa3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C204",
+                    "pos": {
+                        "x": 81.375,
+                        "y": 81.19
+                    },
+                    "uuid": "bd8eaf48-770e-4914-b71d-59030c1e0247"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C205",
+                    "pos": {
+                        "x": 96.375,
+                        "y": 81.19
+                    },
+                    "uuid": "571a4ed5-fff9-441a-b924-b52d6f5495d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C206",
+                    "pos": {
+                        "x": 66.375,
+                        "y": 99.73
+                    },
+                    "uuid": "521b760d-3622-4855-9e2c-395a2bd073d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C207",
+                    "pos": {
+                        "x": 81.375,
+                        "y": 101.0
+                    },
+                    "uuid": "c1744738-487d-424b-9aa0-77d348441e9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C208",
+                    "pos": {
+                        "x": 99.175,
+                        "y": 95.09
+                    },
+                    "uuid": "b452f7bd-47ba-452a-89d4-456e929e918d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R203",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 92.2
+                    },
+                    "uuid": "1239d26b-8435-4839-8f35-b2a0f8bba63b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R204",
+                    "pos": {
+                        "x": 89.2,
+                        "y": 107.3
+                    },
+                    "uuid": "5a07ce9a-b9c2-41b3-93af-f54987e515cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R205",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 103.5
+                    },
+                    "uuid": "22a485f3-08e9-4bbf-947f-8f8284aee0bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R206",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 89.5
+                    },
+                    "uuid": "6df91324-8aa0-4bb0-9ec2-38aef1b752d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R519",
+                    "pos": {
+                        "x": 77.4,
+                        "y": 107.1
+                    },
+                    "uuid": "839a126d-6ff9-4616-b70d-00cae10a2914"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1210_3225Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C301",
+                    "pos": {
+                        "x": 35.0,
+                        "y": 120.0
+                    },
+                    "uuid": "7cd3a4de-cb6a-4667-8f17-bd2b036f3b4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C302",
+                    "pos": {
+                        "x": 37.0,
+                        "y": 115.3
+                    },
+                    "uuid": "b6a87c0b-bff5-4a6b-9c57-3581e7de3f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C303",
+                    "pos": {
+                        "x": 50.7,
+                        "y": 118.3
+                    },
+                    "uuid": "3be67050-6f72-4e78-a4a5-5ee413a8bb55"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1210_3225Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C304",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 143.5
+                    },
+                    "uuid": "d11afb86-3208-4e59-b6e5-b4c1140403c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1210_3225Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C305",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 145.0
+                    },
+                    "uuid": "b7383fcc-0080-40d8-93a5-928a9c4b56d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C310",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 64.0
+                    },
+                    "uuid": "f9a624fd-37cb-47a1-a970-67ee863751e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Connector_JST_JST_VH_B2P_VH_1x02_P3_96mm_Vertical doesn't match symbol's footprint filters (Connector*:*_1x??_*)",
+            "items": [
+                {
+                    "description": "Footprint J301",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 139.0
+                    },
+                    "uuid": "bd4cea3d-a0b9-49ab-a39d-8b62731f15cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Connector_PinHeader_2_54mm_PinHeader_1x03_P2_54mm_Vertical doesn't match symbol's footprint filters (Connector*:*_1x??_*)",
+            "items": [
+                {
+                    "description": "Footprint J302",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 117.0
+                    },
+                    "uuid": "bc2b6e4b-2714-4ca2-ae25-5d53c205278f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q301",
+                    "pos": {
+                        "x": 59.8,
+                        "y": 108.1
+                    },
+                    "uuid": "a6cfaa77-e135-4655-a851-4e93a8701034"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q302",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 120.0
+                    },
+                    "uuid": "53518de3-cb7c-45e9-8207-bc3976d9804e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q305",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 124.0
+                    },
+                    "uuid": "1ee13051-b082-40b9-8b5e-f6c719ad9447"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q306",
+                    "pos": {
+                        "x": 40.9,
+                        "y": 115.0
+                    },
+                    "uuid": "26e0746c-1014-467d-8639-a0d8c612420b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q309",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 132.3
+                    },
+                    "uuid": "3b9f5900-0447-447c-bd68-d21ab46ea5fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R301",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 138.6
+                    },
+                    "uuid": "4bbf5993-0e9a-4cce-9b68-83a0ede837ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R302",
+                    "pos": {
+                        "x": 60.3,
+                        "y": 130.8
+                    },
+                    "uuid": "8536684b-6bf3-463e-b305-a10f335e4ae4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R303",
+                    "pos": {
+                        "x": 60.2,
+                        "y": 128.0
+                    },
+                    "uuid": "7f4fc379-c273-4480-84cd-2a5f848d4a63"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R304",
+                    "pos": {
+                        "x": 50.2,
+                        "y": 115.5
+                    },
+                    "uuid": "0d84acb9-7297-46b8-99fa-4ca7ef9c05e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R305",
+                    "pos": {
+                        "x": 114.1,
+                        "y": 116.9
+                    },
+                    "uuid": "d7f31519-b4ee-4c90-b147-a39f4c80f4ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R310",
+                    "pos": {
+                        "x": 39.1,
+                        "y": 120.9
+                    },
+                    "uuid": "421cf526-c41f-4469-9303-b491d8a86a0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R311",
+                    "pos": {
+                        "x": 39.4,
+                        "y": 118.5
+                    },
+                    "uuid": "ee916848-625c-47a1-81cc-07c1f12202c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R312",
+                    "pos": {
+                        "x": 45.5,
+                        "y": 113.8
+                    },
+                    "uuid": "2f51a69d-fda7-4e4c-a9f1-c0044f1df752"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R313",
+                    "pos": {
+                        "x": 38.9,
+                        "y": 111.8
+                    },
+                    "uuid": "3ba9985e-e453-4890-9a07-323fc0433226"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R314",
+                    "pos": {
+                        "x": 40.1,
+                        "y": 129.2
+                    },
+                    "uuid": "e0097d9b-b9fa-4900-9b8c-cb5fa1978629"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23_6_Handsoldering doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint U301",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 122.0
+                    },
+                    "uuid": "c85296d8-d206-4c00-b0c9-5667a0de9ab1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C306",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 120.3
+                    },
+                    "uuid": "76a7285e-a349-4166-a107-7fc979189d73"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C307",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 126.0
+                    },
+                    "uuid": "120afcda-283b-411d-a374-9f499fa8557a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q303",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 115.5
+                    },
+                    "uuid": "adfb26a6-8400-4141-bc54-251de2ec3e2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R306",
+                    "pos": {
+                        "x": 119.4,
+                        "y": 119.0
+                    },
+                    "uuid": "312a19fd-5764-442f-8b5b-e13fcdf741e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R307",
+                    "pos": {
+                        "x": 80.2,
+                        "y": 112.9
+                    },
+                    "uuid": "33da67b6-0c42-4e4a-ab3c-e874dc9fec8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R308",
+                    "pos": {
+                        "x": 96.6,
+                        "y": 111.6
+                    },
+                    "uuid": "2a233659-d930-44d6-a3c7-fb83bbd16463"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_2512_6332Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R309",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 125.0
+                    },
+                    "uuid": "3762c190-42e8-41f3-b458-91692551dd44"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C401",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 124.0
+                    },
+                    "uuid": "1b4fb8c5-e18e-484d-bcb8-afc29e2b284a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1206_3216Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C402",
+                    "pos": {
+                        "x": 79.7,
+                        "y": 125.0
+                    },
+                    "uuid": "fff1c0e6-cbc0-41c3-9c08-c4d3cdd4d7b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1210_3225Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C403",
+                    "pos": {
+                        "x": 84.4,
+                        "y": 128.3
+                    },
+                    "uuid": "c29c2928-ce68-4932-bea3-19af9356156a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_1210_3225Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C404",
+                    "pos": {
+                        "x": 88.4,
+                        "y": 132.0
+                    },
+                    "uuid": "ad8369d7-dae7-4d26-845a-fed98a9f0b8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C405",
+                    "pos": {
+                        "x": 73.8,
+                        "y": 119.7
+                    },
+                    "uuid": "a9f81034-5587-428f-9a97-2b36b4f3c2d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C406",
+                    "pos": {
+                        "x": 69.1,
+                        "y": 123.9
+                    },
+                    "uuid": "5a2bde9c-4bfd-4451-9d2e-65d858b46cbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0805_2012Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C407",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 131.0
+                    },
+                    "uuid": "7cc81745-1ae6-4ad2-965a-dd75cce8d95c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R401",
+                    "pos": {
+                        "x": 80.5,
+                        "y": 129.9
+                    },
+                    "uuid": "b6c89e8f-2bbe-49fb-8d71-b61517a9af3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R402",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 125.0
+                    },
+                    "uuid": "1edc3d76-f5ed-4a10-8a7f-6cd818d80fe5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R403",
+                    "pos": {
+                        "x": 70.9,
+                        "y": 129.0
+                    },
+                    "uuid": "a9cfc325-7335-4d93-b83e-100381cf31f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R404",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 126.6
+                    },
+                    "uuid": "ef734d02-8100-41c4-93cd-a97c1026614c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R405",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 122.5
+                    },
+                    "uuid": "398e9d65-21a7-4154-b944-898b201be4f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_2512_6332Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R413",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 138.0
+                    },
+                    "uuid": "81a22e77-4530-4cf1-af3a-085b182a8713"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C501",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 88.1
+                    },
+                    "uuid": "c0e89e70-c164-45e1-9ace-26237f99a728"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C502",
+                    "pos": {
+                        "x": 117.8,
+                        "y": 90.9
+                    },
+                    "uuid": "752dd683-9887-4faa-a6d5-3d5b80d6b2b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C503",
+                    "pos": {
+                        "x": 117.3,
+                        "y": 93.7
+                    },
+                    "uuid": "9c8fec73-d996-4a74-acc5-737c345d0944"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C504",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 91.3
+                    },
+                    "uuid": "cad07f51-607a-457a-bfce-38e200afb675"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C505",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 78.6
+                    },
+                    "uuid": "37aed611-3e35-42dc-8962-06b6f95d7936"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C506",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 33.0
+                    },
+                    "uuid": "24fb1ea8-22cd-408c-8bf1-aab6d97ea9d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_THT_TO_126_3_Vertical doesn't match symbol's footprint filters (TO?126*)",
+            "items": [
+                {
+                    "description": "Footprint Q402",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 39.0
+                    },
+                    "uuid": "c37039eb-373f-4482-9ed1-76c5e07d4c0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q403",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 40.3
+                    },
+                    "uuid": "d33443d5-cb59-4fc9-9030-56ba9ef848ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q404",
+                    "pos": {
+                        "x": 133.4,
+                        "y": 42.5
+                    },
+                    "uuid": "12da99f6-1620-4e52-b0d1-0456e0509d37"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q405",
+                    "pos": {
+                        "x": 130.7,
+                        "y": 84.0
+                    },
+                    "uuid": "02a1e446-c3bc-411a-a369-efc3f78ac7b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R501",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 94.0
+                    },
+                    "uuid": "23368b06-9526-4569-abc8-ff908d1a067b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R502",
+                    "pos": {
+                        "x": 121.7,
+                        "y": 91.0
+                    },
+                    "uuid": "891bcd5e-5e6d-4947-8606-6a4a6f3a3c92"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R503",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 96.8
+                    },
+                    "uuid": "3aff590a-ff55-4171-9ecc-da414ea6c194"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R504",
+                    "pos": {
+                        "x": 125.2,
+                        "y": 93.6
+                    },
+                    "uuid": "bb87a3b8-c52d-4a88-8c61-b67859a3d79b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R505",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 35.0
+                    },
+                    "uuid": "bdafdc6f-39f1-4ef5-a29d-9df648f2fd5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_2512_6332Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R506",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 31.0
+                    },
+                    "uuid": "80872aff-bed9-453f-b6ef-b4ffdafe3394"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0805_2012Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R507",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 42.0
+                    },
+                    "uuid": "7ca83503-cd16-41f7-8af8-17907bf435e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R508",
+                    "pos": {
+                        "x": 138.8,
+                        "y": 43.9
+                    },
+                    "uuid": "ab3b1cb4-b758-4a33-a4d5-84fa78acade6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R509",
+                    "pos": {
+                        "x": 131.1,
+                        "y": 64.4
+                    },
+                    "uuid": "57a95cbe-b8b1-4473-8f4e-a58d229ddf8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R510",
+                    "pos": {
+                        "x": 142.9,
+                        "y": 39.3
+                    },
+                    "uuid": "68b2c36e-a927-4f97-a24c-c36f0dc1ca7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R511",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 77.0
+                    },
+                    "uuid": "880baac6-2850-4cc4-9b69-6e1d3b558cfa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R512",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 80.0
+                    },
+                    "uuid": "f1404bf4-2be8-45d5-b8ea-fd8ddf33856c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_1206_3216Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R513",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 29.7
+                    },
+                    "uuid": "2b0c207a-ba95-4219-828d-22caeb559ed8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R514",
+                    "pos": {
+                        "x": 113.4,
+                        "y": 81.6
+                    },
+                    "uuid": "184bfb30-bb29-4305-842d-1b5ce50ee371"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R516",
+                    "pos": {
+                        "x": 117.7,
+                        "y": 81.9
+                    },
+                    "uuid": "e645fc7c-03c2-4741-a22a-577afa53665e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R517",
+                    "pos": {
+                        "x": 126.1,
+                        "y": 75.8
+                    },
+                    "uuid": "3c0d1048-9ce2-46cb-bc9a-e9753e786181"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R518",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 87.5
+                    },
+                    "uuid": "353ccda3-3fac-4981-90b4-f9516ab7359c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C507",
+                    "pos": {
+                        "x": 118.825,
+                        "y": 85.0
+                    },
+                    "uuid": "10848f3c-7ee4-4a21-b826-5ceb4f5a4bcc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C508",
+                    "pos": {
+                        "x": 116.0375,
+                        "y": 85.0
+                    },
+                    "uuid": "6fe2d71c-4108-43e2-b95c-510635036dc0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R515",
+                    "pos": {
+                        "x": 122.3,
+                        "y": 78.8
+                    },
+                    "uuid": "2233b077-e3e4-4de9-9c27-d4451457e2a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C601",
+                    "pos": {
+                        "x": 55.8728,
+                        "y": 55.0
+                    },
+                    "uuid": "b5c36618-531f-4818-9c80-a06541b9fc4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C602",
+                    "pos": {
+                        "x": 84.4955,
+                        "y": 55.0
+                    },
+                    "uuid": "ee928134-4c4f-4b61-a928-05effa38f223"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C603",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 39.0
+                    },
+                    "uuid": "fae5daf6-85ee-41f2-b2a8-cf20b4d584d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C604",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 43.0
+                    },
+                    "uuid": "ac605589-c33d-4be3-8616-50c26c366d39"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C607",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 44.0
+                    },
+                    "uuid": "fbe442ed-1b0a-4a2f-8a02-1910fb589f05"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C611",
+                    "pos": {
+                        "x": 58.9478,
+                        "y": 51.625
+                    },
+                    "uuid": "69a89529-a3d3-41c8-8ca7-e38b8fd28fe8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C612",
+                    "pos": {
+                        "x": 62.8228,
+                        "y": 58.375
+                    },
+                    "uuid": "458a00d0-00a7-4977-86a6-76b6ea86d726"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C613",
+                    "pos": {
+                        "x": 66.6978,
+                        "y": 51.625
+                    },
+                    "uuid": "8a67fbb6-fbe4-4c36-92f2-1aad0a7e144b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C614",
+                    "pos": {
+                        "x": 70.5728,
+                        "y": 51.625
+                    },
+                    "uuid": "19c62b60-ef4b-466b-95b0-ccc0a31f9016"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C615",
+                    "pos": {
+                        "x": 75.2978,
+                        "y": 55.0
+                    },
+                    "uuid": "9640f4be-3775-48a1-a8b2-85a3024446e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L611",
+                    "pos": {
+                        "x": 59.7353,
+                        "y": 55.0
+                    },
+                    "uuid": "4dbe18e2-69a6-43a8-af1a-9660b66afafa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L612",
+                    "pos": {
+                        "x": 63.6103,
+                        "y": 55.0
+                    },
+                    "uuid": "df86ae67-50c2-4e67-bb64-abfead8d3a79"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L613",
+                    "pos": {
+                        "x": 67.4853,
+                        "y": 55.0
+                    },
+                    "uuid": "3cfe7a6e-c157-4dd7-9e0a-b1d237bba271"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q502",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 40.0
+                    },
+                    "uuid": "bd52bf08-5d7d-43cb-af1f-fd4ffd65e6ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R602",
+                    "pos": {
+                        "x": 71.3978,
+                        "y": 55.0
+                    },
+                    "uuid": "ddea9021-a4cf-409d-be3d-1f86cca74f3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R603",
+                    "pos": {
+                        "x": 70.5728,
+                        "y": 58.425
+                    },
+                    "uuid": "6a333ec0-bb74-460a-8948-e315565db165"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R604",
+                    "pos": {
+                        "x": 72.2228,
+                        "y": 58.425
+                    },
+                    "uuid": "d5b526ea-105c-4308-bea8-6ff7f6c5e328"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R606",
+                    "pos": {
+                        "x": 96.6,
+                        "y": 38.0
+                    },
+                    "uuid": "d0ac7647-33c1-4d9e-99ee-6d3623e9afdd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Potentiometer_THT_Potentiometer_Bourns_3296W_Vertical doesn't match symbol's footprint filters (Potentiometer*)",
+            "items": [
+                {
+                    "description": "Footprint RV501",
+                    "pos": {
+                        "x": 93.0,
+                        "y": 32.0
+                    },
+                    "uuid": "c28155c6-1847-461b-8037-870a658947bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C701",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 140.0
+                    },
+                    "uuid": "4eb894e3-0823-4748-afac-25297e77695f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C702",
+                    "pos": {
+                        "x": 172.7,
+                        "y": 145.9
+                    },
+                    "uuid": "014d48f9-b103-49c5-8185-ded62bad07bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C703",
+                    "pos": {
+                        "x": 167.9,
+                        "y": 137.4
+                    },
+                    "uuid": "6ec28fb7-1576-4e31-a42a-2f624f16969a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C704",
+                    "pos": {
+                        "x": 146.7,
+                        "y": 105.6
+                    },
+                    "uuid": "4b4dba49-c9ac-4948-af31-5d73cfba4958"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C705",
+                    "pos": {
+                        "x": 147.1,
+                        "y": 112.9
+                    },
+                    "uuid": "614c8a62-e377-4bf9-8554-483cbbb893cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C706",
+                    "pos": {
+                        "x": 176.7,
+                        "y": 139.0
+                    },
+                    "uuid": "80e62a91-d3b9-42f5-8831-1c7c3e17bc2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C711",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 144.0
+                    },
+                    "uuid": "57dbb864-f82e-48bd-ac59-c60b17221851"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C712",
+                    "pos": {
+                        "x": 159.0,
+                        "y": 144.0
+                    },
+                    "uuid": "e790a947-905e-4c46-9fbf-e0718fb88995"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C713",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 144.0
+                    },
+                    "uuid": "dcb8414e-890e-45de-be44-4c45f56cb6cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C714",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 144.0
+                    },
+                    "uuid": "999182f6-8ca1-4283-add8-e773d445e673"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L704",
+                    "pos": {
+                        "x": 171.1,
+                        "y": 134.9
+                    },
+                    "uuid": "609b8a0f-4873-4553-9b99-254df17c3ac0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L711",
+                    "pos": {
+                        "x": 159.7,
+                        "y": 140.0
+                    },
+                    "uuid": "f24e49f2-a3c6-4746-9370-f704b26113a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L712",
+                    "pos": {
+                        "x": 163.4,
+                        "y": 140.0
+                    },
+                    "uuid": "db0b8fb1-e4b6-4479-8ffa-8057194fb75d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L713",
+                    "pos": {
+                        "x": 167.1,
+                        "y": 140.0
+                    },
+                    "uuid": "1856d44a-4338-429c-ae0c-9c80cc8b3f48"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q701",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 140.0
+                    },
+                    "uuid": "1bfd2e99-6e4a-4a8b-8502-c607199d0b66"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q702",
+                    "pos": {
+                        "x": 170.8,
+                        "y": 131.4
+                    },
+                    "uuid": "d898b64c-a11d-476a-9598-922182354a7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q703",
+                    "pos": {
+                        "x": 150.4,
+                        "y": 129.6
+                    },
+                    "uuid": "2d8a685c-6481-42f8-9b1a-b05a80e9edd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint Q704",
+                    "pos": {
+                        "x": 130.7,
+                        "y": 90.7
+                    },
+                    "uuid": "d0b48f84-3d92-4c3a-a40b-e79a59007dd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R702",
+                    "pos": {
+                        "x": 168.4,
+                        "y": 145.9
+                    },
+                    "uuid": "a41a9f4b-18b7-4098-b4cd-5892c1a66865"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R703",
+                    "pos": {
+                        "x": 169.2,
+                        "y": 148.7
+                    },
+                    "uuid": "1e24abbf-e3ce-4024-8257-6761148a053b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_1206_3216Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R704",
+                    "pos": {
+                        "x": 177.2,
+                        "y": 141.6
+                    },
+                    "uuid": "235fb5fe-28bf-49c9-ba40-d3733d7b925e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R705",
+                    "pos": {
+                        "x": 172.5,
+                        "y": 143.7
+                    },
+                    "uuid": "8f002235-0317-4f4e-9160-b4dcfa2a20d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R706",
+                    "pos": {
+                        "x": 122.3,
+                        "y": 76.3
+                    },
+                    "uuid": "383ba178-23d6-4d7e-a6b7-9a43581022d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R707",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 135.0
+                    },
+                    "uuid": "a56bae97-fcdc-4ec8-8a8c-83d8330970e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R708",
+                    "pos": {
+                        "x": 154.9,
+                        "y": 130.4
+                    },
+                    "uuid": "422665a0-f738-4609-b29b-3d1d62ec942d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R709",
+                    "pos": {
+                        "x": 151.7,
+                        "y": 133.1
+                    },
+                    "uuid": "d8752b20-850f-45ae-93fb-c1f9a5744834"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R710",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 107.0
+                    },
+                    "uuid": "8d20c16d-1b16-43d0-b62e-abc1fbc9dace"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R714",
+                    "pos": {
+                        "x": 156.2,
+                        "y": 137.5
+                    },
+                    "uuid": "8af83c24-86cc-44e8-8197-ca669a03f17f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R715",
+                    "pos": {
+                        "x": 168.5,
+                        "y": 143.1
+                    },
+                    "uuid": "d44f1713-0412-4698-b58b-86743d489077"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C721",
+                    "pos": {
+                        "x": 174.6,
+                        "y": 135.0
+                    },
+                    "uuid": "de574a37-43a8-4561-8191-d9fce4943a9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C722",
+                    "pos": {
+                        "x": 179.0,
+                        "y": 132.9
+                    },
+                    "uuid": "0b81414b-0986-4ac7-8d47-9a53ded38680"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C723",
+                    "pos": {
+                        "x": 182.0,
+                        "y": 135.0
+                    },
+                    "uuid": "072ed548-7916-48a7-8df4-cc305fb3a86b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Capacitor_SMD_C_0603_1608Metric doesn't match symbol's footprint filters (C_*)",
+            "items": [
+                {
+                    "description": "Footprint C724",
+                    "pos": {
+                        "x": 185.0,
+                        "y": 132.9
+                    },
+                    "uuid": "c02e161d-e11a-411a-900a-c891ec4b323c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L721",
+                    "pos": {
+                        "x": 178.0,
+                        "y": 136.2
+                    },
+                    "uuid": "cc58201c-cc64-41bc-a48a-48d8586ab685"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L722",
+                    "pos": {
+                        "x": 181.0,
+                        "y": 139.0
+                    },
+                    "uuid": "7fe49fa0-c532-4021-98de-6981279951b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Inductor_SMD_L_0603_1608Metric doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_* ARDF_2M:Bourns_SRP1265A)",
+            "items": [
+                {
+                    "description": "Footprint L723",
+                    "pos": {
+                        "x": 184.7,
+                        "y": 139.0
+                    },
+                    "uuid": "6bd5bd3c-e29d-4161-9a0b-997919f6f26c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R711",
+                    "pos": {
+                        "x": 184.9,
+                        "y": 136.2
+                    },
+                    "uuid": "d573f9de-ee2a-4016-a22e-f30ce62fc375"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R712",
+                    "pos": {
+                        "x": 188.4,
+                        "y": 135.0
+                    },
+                    "uuid": "cac6b774-8c1a-44f0-afdf-fd4d93bed420"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R713",
+                    "pos": {
+                        "x": 190.7,
+                        "y": 135.0
+                    },
+                    "uuid": "05c3b9bd-4438-4e34-86f4-2a21bc7af046"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R801",
+                    "pos": {
+                        "x": 142.0,
+                        "y": 124.0
+                    },
+                    "uuid": "7eb06d31-e710-4f87-a3b3-62120d646521"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R802",
+                    "pos": {
+                        "x": 142.0,
+                        "y": 121.2
+                    },
+                    "uuid": "119a193c-5bb4-472e-abbd-20c76a9d220f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R803",
+                    "pos": {
+                        "x": 142.0,
+                        "y": 126.8
+                    },
+                    "uuid": "c424e15e-4e77-4ab2-a533-ab818fef1c36"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R804",
+                    "pos": {
+                        "x": 137.8,
+                        "y": 124.0
+                    },
+                    "uuid": "84087574-1b47-47d6-9a13-9bc8f3305697"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R805",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 112.9
+                    },
+                    "uuid": "7a760aa3-053b-4671-9281-4ba2b9138392"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R806",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 115.7
+                    },
+                    "uuid": "4cc8d42a-b75e-4a65-af72-ba026b4838ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R807",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 106.8
+                    },
+                    "uuid": "c89f76fd-8075-4944-8685-b2f5e31b69c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R808",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 104.7
+                    },
+                    "uuid": "4bee0639-239e-49c8-a4b4-1fdcd8143f79"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R809",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 117.6
+                    },
+                    "uuid": "2f01c8e5-aee2-4632-9f80-432500232f72"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R810",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 120.4
+                    },
+                    "uuid": "de06f1ac-4472-4700-9501-dfcf1c820d5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R811",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 115.1
+                    },
+                    "uuid": "d251a389-6593-434b-8dd3-7c41ba1ea40d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R812",
+                    "pos": {
+                        "x": 144.6,
+                        "y": 117.9
+                    },
+                    "uuid": "d64dc870-10c4-44e4-a22e-bc9e343386eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R813",
+                    "pos": {
+                        "x": 142.5,
+                        "y": 104.7
+                    },
+                    "uuid": "5cee5639-2c2d-4d62-8066-ade30153df9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R814",
+                    "pos": {
+                        "x": 146.4,
+                        "y": 102.9
+                    },
+                    "uuid": "6b548cbd-9531-4c99-bb37-0360fb5f55ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R815",
+                    "pos": {
+                        "x": 110.3,
+                        "y": 121.9
+                    },
+                    "uuid": "3831879b-fa65-4770-88ac-3ba96711a316"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R816",
+                    "pos": {
+                        "x": 124.7,
+                        "y": 121.2
+                    },
+                    "uuid": "871f9633-4fe5-46fe-8918-db71990e6379"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R817",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 117.7
+                    },
+                    "uuid": "f0b10d45-ac8a-47aa-a4a7-e8837ab15ab3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R818",
+                    "pos": {
+                        "x": 146.1,
+                        "y": 120.5
+                    },
+                    "uuid": "e93b817f-5000-48f5-9cf4-caa2295975c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R819",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 117.6
+                    },
+                    "uuid": "56646b4f-bc85-407d-ae3b-e38f93a2fc1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R820",
+                    "pos": {
+                        "x": 160.4,
+                        "y": 116.2
+                    },
+                    "uuid": "e66433ea-0993-4701-b749-653cd136bcaa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R821",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 113.5
+                    },
+                    "uuid": "73dc8c83-9575-422e-ab12-ef573e2c1982"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R822",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 110.7
+                    },
+                    "uuid": "0c89f04d-a0c7-442e-a932-811c43464925"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R823",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 108.1
+                    },
+                    "uuid": "0eeb8e5d-7b7f-4d48-b3ca-48b688bc8c01"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R824",
+                    "pos": {
+                        "x": 145.9,
+                        "y": 110.7
+                    },
+                    "uuid": "1415c146-bbc9-40ab-a85e-b76dfc23ed25"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R825",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 117.0
+                    },
+                    "uuid": "6bc2a924-493a-4e66-9c4c-56520c36b8b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R826",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 105.4
+                    },
+                    "uuid": "7725cb1f-0e13-46c9-ba7d-7c8addef84f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Resistor_SMD_R_0603_1608Metric doesn't match symbol's footprint filters (R_*)",
+            "items": [
+                {
+                    "description": "Footprint R827",
+                    "pos": {
+                        "x": 155.8,
+                        "y": 104.7
+                    },
+                    "uuid": "3f055926-3f6b-4d9a-acd7-89c8399943a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint U801",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 118.0
+                    },
+                    "uuid": "9b2c8738-58d2-48a3-904c-3f37ebe6d800"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:E3_Package_TO_SOT_SMD_SOT_23_5 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint U804",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 133.0
+                    },
+                    "uuid": "c48a8829-484d-4242-a78a-4039fb9e5bc4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        }
+    ],
+    "source": "RF2M.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP503",
+                    "pos": {
+                        "x": 152.56,
+                        "y": 42.7
+                    },
+                    "uuid": "06073b44-3332-43f3-af79-d2bd5394ab38"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP201",
+                    "pos": {
+                        "x": 49.45,
+                        "y": 89.175
+                    },
+                    "uuid": "3b0b3397-bd6c-4851-96e7-133465e329d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP802",
+                    "pos": {
+                        "x": 130.85,
+                        "y": 112.2
+                    },
+                    "uuid": "45089605-c207-4b56-ac31-f5783aae0ea2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP303",
+                    "pos": {
+                        "x": 156.625,
+                        "y": 38.0
+                    },
+                    "uuid": "47046d64-83d0-4666-8dd9-63590b032d02"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP102",
+                    "pos": {
+                        "x": 44.1,
+                        "y": 54.1
+                    },
+                    "uuid": "4cf35e4c-dae9-4f17-a88b-0eb6fb7e4bb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP101",
+                    "pos": {
+                        "x": 44.1,
+                        "y": 51.4
+                    },
+                    "uuid": "5383d895-6045-49ca-b687-c554a275ba23"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP301",
+                    "pos": {
+                        "x": 37.2,
+                        "y": 132.75
+                    },
+                    "uuid": "5cc98996-759b-4b8f-9cef-1224767ebfa1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP940",
+                    "pos": {
+                        "x": 55.025,
+                        "y": 92.575
+                    },
+                    "uuid": "64e2c74e-570f-4f97-9678-b0368c80c8ff"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP401",
+                    "pos": {
+                        "x": 90.5375,
+                        "y": 70.0
+                    },
+                    "uuid": "665ba268-e60e-4874-810a-e2fc0eb5a4c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP206",
+                    "pos": {
+                        "x": 69.175,
+                        "y": 106.5
+                    },
+                    "uuid": "75471415-9487-4bc4-a34f-4fdca51a2e02"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP202",
+                    "pos": {
+                        "x": 63.475,
+                        "y": 107.81
+                    },
+                    "uuid": "7ee59f15-b1eb-4a55-9589-c05295156ba4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP204",
+                    "pos": {
+                        "x": 55.025,
+                        "y": 97.26
+                    },
+                    "uuid": "a94d2855-81d8-4a7d-ac26-79fc3ffba61c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP701",
+                    "pos": {
+                        "x": 177.475,
+                        "y": 144.8
+                    },
+                    "uuid": "c00f656a-1690-468b-9e9c-aa2eba59d5f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP501",
+                    "pos": {
+                        "x": 113.1375,
+                        "y": 88.95
+                    },
+                    "uuid": "c8d2fa42-6e9b-488c-9abf-d1d996e86b17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP502",
+                    "pos": {
+                        "x": 156.54,
+                        "y": 29.7
+                    },
+                    "uuid": "cc235b2a-e446-4ce4-bee5-a6a585772da0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP702",
+                    "pos": {
+                        "x": 190.0,
+                        "y": 144.4
+                    },
+                    "uuid": "ccfee3f5-432e-4ab1-bc5b-6697b4a820d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP302",
+                    "pos": {
+                        "x": 117.5625,
+                        "y": 123.95
+                    },
+                    "uuid": "cf919270-5ca5-428c-974d-574b7c472ecf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP801",
+                    "pos": {
+                        "x": 126.8625,
+                        "y": 136.45
+                    },
+                    "uuid": "d8b11bc2-6aa1-4a7c-b72b-50adb00ca007"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP951",
+                    "pos": {
+                        "x": 87.9,
+                        "y": 66.775
+                    },
+                    "uuid": "e6451831-e9da-4d4c-b491-d92588e77fec"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP203",
+                    "pos": {
+                        "x": 55.025,
+                        "y": 100.19
+                    },
+                    "uuid": "e73e57dc-ee38-4bac-b0fa-8753a1e027c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP205",
+                    "pos": {
+                        "x": 88.375,
+                        "y": 110.3
+                    },
+                    "uuid": "fa5ebd73-b151-4f6c-b184-117cff8e8cb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP950",
+                    "pos": {
+                        "x": 117.65,
+                        "y": 129.7
+                    },
+                    "uuid": "facaf6c2-def7-4dea-905a-5fab197ebf61"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL605",
+                    "pos": {
+                        "x": 104.059,
+                        "y": 55.0
+                    },
+                    "uuid": "2cdf6512-a65c-4507-a9d5-9ae77e9c03b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL604",
+                    "pos": {
+                        "x": 96.2834,
+                        "y": 55.0
+                    },
+                    "uuid": "2e3b4885-3189-4ae7-b573-57e54dd96fcf"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP602",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 55.0
+                    },
+                    "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL603",
+                    "pos": {
+                        "x": 88.6205,
+                        "y": 55.0
+                    },
+                    "uuid": "40a201b2-8ba1-47db-a377-a2848bac4300"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP604",
+                    "pos": {
+                        "x": 89.1,
+                        "y": 55.0
+                    },
+                    "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP601",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 55.0
+                    },
+                    "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL608",
+                    "pos": {
+                        "x": 130.122999,
+                        "y": 52.206
+                    },
+                    "uuid": "5ad3f253-99f2-482a-baca-fa0878f0356a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL607",
+                    "pos": {
+                        "x": 116.4087,
+                        "y": 55.0
+                    },
+                    "uuid": "5ffb7848-7fb3-4254-a234-3a3d5993202c"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP603",
+                    "pos": {
+                        "x": 145.3,
+                        "y": 52.206
+                    },
+                    "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL606",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "96802c13-f414-419c-9a0f-9c7676cb0e96"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL609",
+                    "pos": {
+                        "x": 143.839999,
+                        "y": 52.206
+                    },
+                    "uuid": "d9c89f37-63a5-45c6-b203-daa7a71e6c0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 61.425
+                    },
+                    "uuid": "1d3ffeea-fc9f-45d7-af64-b6819778e8d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 61.425
+                    },
+                    "uuid": "c09cc6bd-4a4e-46bd-9922-1068538be5e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}
