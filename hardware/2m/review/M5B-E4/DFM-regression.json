@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "mutations": [
+    {
+      "mutation": "wrong_thickness",
+      "detected": "standard_1p6mm"
+    },
+    {
+      "mutation": "subminimum_track",
+      "detected": "actual_track_width"
+    },
+    {
+      "mutation": "insufficient_annulus",
+      "detected": "via_annulus_design_minimum"
+    },
+    {
+      "mutation": "filled_via",
+      "detected": "no_premium_via_protection"
+    },
+    {
+      "mutation": "blind_via",
+      "detected": "ordinary_through_via"
+    },
+    {
+      "mutation": "premium_micro_drill",
+      "detected": "no_premium_micro_drill_or_small_land"
+    },
+    {
+      "mutation": "undersize_legend",
+      "detected": "legend_height"
+    },
+    {
+      "mutation": "real0p05mmcoppergap",
+      "detected": "native_foreign_copper_clearance"
+    },
+    {
+      "mutation": "real0p05mmmaskweb",
+      "detected": "native_mask_web"
+    },
+    {
+      "mutation": "2oz",
+      "detected": "standard_1oz"
+    },
+    {
+      "mutation": "special_finish",
+      "detected": "ordinary_finish"
+    }
+  ],
+  "E2_rejected_checks": [
+    "legend_graphic_stroke",
+    "legend_height",
+    "legend_stroke",
+    "ordinary_finish",
+    "standard_1oz",
+    "standard_1p6mm"
+  ],
+  "E3_status": "PASS_AUTOMATED_NATIVE_GEOMETRY"
+}

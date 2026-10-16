@@ -1,0 +1,129 @@
+{
+  "status": "GEOMETRY_VERIFIED_AND_SENSITIVITY_ONLY",
+  "all_signal_and_power_tracks_identical_E3": true,
+  "TL_width_mm": 2.741,
+  "lengths_mm": {
+    "TL603": 6.1129,
+    "TL604": 6.4956,
+    "TL605": 5.691,
+    "TL606": 2.1587,
+    "TL607": 10.7933,
+    "TL608": 12.167,
+    "TL609": 1.9624
+  },
+  "Q501_fixed_mm": [
+    112,
+    55
+  ],
+  "old_source_pad_mm": [
+    2.7,
+    5
+  ],
+  "new_manufacturer_source_pad_mm": [
+    2.7,
+    5
+  ],
+  "local_source_copper_via_lands_width_mm": 3.2,
+  "gate_drain_to_local_GND_nominal_gap_mm": 0.4,
+  "old_nominal_gap_mm": 0.65,
+  "metalwork": "Grounded stock bar10mm under board; grounded sink beyond. Solid bottom RF return remains; no gate/drain contact permitted.",
+  "sensitivity": [
+    {
+      "MHz": 144.5,
+      "assumed_extra_shunt_pF": 0.1,
+      "loss_50ohm_dB": 2.237477314808937e-05,
+      "phase_50ohm_deg": -0.13004977666169923
+    },
+    {
+      "MHz": 144.5,
+      "assumed_extra_shunt_pF": 0.25,
+      "loss_50ohm_dB": 0.00013984044098991927,
+      "phase_50ohm_deg": -0.32512151039568205
+    },
+    {
+      "MHz": 144.5,
+      "assumed_extra_shunt_pF": 0.5,
+      "loss_50ohm_dB": 0.0005593347492753943,
+      "phase_50ohm_deg": -0.6502220847833596
+    },
+    {
+      "MHz": 144.5,
+      "assumed_extra_shunt_pF": 1.0,
+      "loss_50ohm_dB": 0.0022369069012933398,
+      "phase_50ohm_deg": -1.3002767300219316
+    },
+    {
+      "MHz": 144.7,
+      "assumed_extra_shunt_pF": 0.1,
+      "loss_50ohm_dB": 2.2436752938616298e-05,
+      "phase_50ohm_deg": -0.13022977573306074
+    },
+    {
+      "MHz": 144.7,
+      "assumed_extra_shunt_pF": 0.25,
+      "loss_50ohm_dB": 0.0001402278041929633,
+      "phase_50ohm_deg": -0.32557149588609874
+    },
+    {
+      "MHz": 144.7,
+      "assumed_extra_shunt_pF": 0.5,
+      "loss_50ohm_dB": 0.0005608840522245176,
+      "phase_50ohm_deg": -0.651121968717921
+    },
+    {
+      "MHz": 144.7,
+      "assumed_extra_shunt_pF": 1.0,
+      "loss_50ohm_dB": 0.0022431017164073674,
+      "phase_50ohm_deg": -1.3020758018575167
+    },
+    {
+      "MHz": 144.9,
+      "assumed_extra_shunt_pF": 0.1,
+      "loss_50ohm_dB": 2.2498818455562015e-05,
+      "phase_50ohm_deg": -0.13040977480185167
+    },
+    {
+      "MHz": 144.9,
+      "assumed_extra_shunt_pF": 0.25,
+      "loss_50ohm_dB": 0.0001406157031340932,
+      "phase_50ohm_deg": -0.32602148133635206
+    },
+    {
+      "MHz": 144.9,
+      "assumed_extra_shunt_pF": 0.5,
+      "loss_50ohm_dB": 0.0005624354974994879,
+      "phase_50ohm_deg": -0.6520218523312361
+    },
+    {
+      "MHz": 144.9,
+      "assumed_extra_shunt_pF": 1.0,
+      "loss_50ohm_dB": 0.002249305090874444,
+      "phase_50ohm_deg": -1.3038748711251191
+    },
+    {
+      "MHz": 434.1,
+      "assumed_extra_shunt_pF": 0.1,
+      "loss_50ohm_dB": 0.00020192660367045022,
+      "phase_50ohm_deg": -0.39068394494279274
+    },
+    {
+      "MHz": 434.1,
+      "assumed_extra_shunt_pF": 0.25,
+      "loss_50ohm_dB": 0.0012618872679861894,
+      "phase_50ohm_deg": -0.9766304035851522
+    },
+    {
+      "MHz": 434.1,
+      "assumed_extra_shunt_pF": 0.5,
+      "loss_50ohm_dB": 0.0050453506363934905,
+      "phase_50ohm_deg": -1.9526936241950557
+    },
+    {
+      "MHz": 434.1,
+      "assumed_extra_shunt_pF": 1.0,
+      "loss_50ohm_dB": 0.02014632942861712,
+      "phase_50ohm_deg": -3.9008616107417367
+    }
+  ],
+  "limitations": "Added GND is a local discontinuity, not a requalified 50ohm coplanar line. Extra capacitance values are sensitivity assumptions, NOT extracted parasitics. Real PA impedance is not50ohms; above table cannot establish matching, stability or emissions. Source-via mutual inductance prevents simple1/N inductance claims. RF gain/AM/oscillation/harmonic tests remain NOT_RUN."
+}

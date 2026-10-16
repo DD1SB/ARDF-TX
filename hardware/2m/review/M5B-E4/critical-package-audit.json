@@ -1,0 +1,668 @@
+{
+  "revision": "M5B-E4",
+  "devices": [
+    {
+      "ref": "J101",
+      "MPN": "61202021621",
+      "footprint": "ARDF_2M:WR_BHD_61202021621",
+      "pads": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "I2C_SDA",
+        "4": "I2C_SCL",
+        "5": "ARM",
+        "6": "SLOT",
+        "7": "KEY",
+        "8": "PROGRESS",
+        "9": "MUTE_N",
+        "10": "PA_RAIL_ADC",
+        "11": "PATH_TRAIN",
+        "12": "PROFILE_FULL",
+        "13": "AF_PWM",
+        "14": "LEVEL_PWM",
+        "15": "PREPARE",
+        "16": "FAULT_N",
+        "17": "GND",
+        "18": "GND",
+        "19": "MODULE_ID",
+        "20": "PA_PREPARE"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U101",
+      "MPN": "TPS22919DCKR",
+      "footprint": "ARDF_2M:SOT-363_SC-70-6_E3",
+      "pads": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "SRC_ON",
+        "4": "unconnected-(U101-NC-Pad4)",
+        "5": "VCLK",
+        "6": "VCLK"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U102",
+      "MPN": "SN74LVC2G66DCUR",
+      "footprint": "ARDF_2M:VSSOP-8_2.3x2mm_P0.5mm_E3",
+      "pads": {
+        "1": "I2C_SCL",
+        "2": "SCL_CLK",
+        "3": "SRC_ON",
+        "4": "GND",
+        "5": "I2C_SDA",
+        "6": "SDA_CLK",
+        "7": "SRC_ON",
+        "8": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U103",
+      "MPN": "Si5351A-B-GT",
+      "footprint": "ARDF_2M:MSOP-10_3x3mm_P0.5mm_E3",
+      "pads": {
+        "1": "VCLK",
+        "2": "XTAL1",
+        "3": "XTAL2",
+        "4": "SCL_CLK",
+        "5": "SDA_CLK",
+        "6": "CLK_TRAIN",
+        "7": "VCLK",
+        "8": "GND",
+        "9": "unconnected-(U103-CLK1-Pad9)",
+        "10": "CLK_NORMAL"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U201",
+      "MPN": "TPS3431SDRBR",
+      "footprint": "ARDF_2M:VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm_E3",
+      "pads": {
+        "1": "V3V3",
+        "2": "CWD",
+        "3": "V3V3",
+        "4": "GND",
+        "5": "V3V3",
+        "6": "PROGRESS",
+        "7": "SAFE_N",
+        "8": "SAFE_N",
+        "9": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U208",
+      "MPN": "TLV803EA29DBZR",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "GND",
+        "2": "SAFE_N",
+        "3": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U202",
+      "MPN": "74HC174D,653",
+      "footprint": "ARDF_2M:SOIC-16_3.9x9.9mm_P1.27mm_E3",
+      "pads": {
+        "1": "CLR_N",
+        "2": "VALID_ARM",
+        "3": "ARM_CONTEXT",
+        "4": "PATH_TRAIN",
+        "5": "PATH_Q",
+        "6": "PROFILE_FULL",
+        "7": "PROFILE_Q",
+        "8": "GND",
+        "9": "ARM",
+        "10": "unconnected-(U202-Q3-Pad10)",
+        "11": "GND",
+        "12": "unconnected-(U202-Q4-Pad12)",
+        "13": "GND",
+        "14": "GND",
+        "15": "unconnected-(U202-Q5-Pad15)",
+        "16": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U203",
+      "MPN": "74HC14D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "KEY",
+        "2": "KEY_N",
+        "3": "SLOT",
+        "4": "SLOT_N",
+        "5": "PATH_Q",
+        "6": "NORMAL_Q",
+        "7": "GND",
+        "8": "ARM_DELAY_N",
+        "9": "ARM_RC",
+        "10": "ARM_DELAY",
+        "11": "ARM_DELAY_N",
+        "12": "NORMAL_OFF",
+        "13": "NORMAL_RC",
+        "14": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U204",
+      "MPN": "74HC11D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "PREPARE",
+        "2": "KEY_N",
+        "3": "SAFE_N",
+        "4": "MUTE_N",
+        "5": "I2C_SCL",
+        "6": "CLEAR_A",
+        "7": "GND",
+        "8": "SRC_ON",
+        "9": "PREPARE",
+        "10": "SAFE_N",
+        "11": "MUTE_N",
+        "12": "ARM_CONTEXT",
+        "13": "SLOT_N",
+        "14": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "J301",
+      "MPN": "B2P-VH(LF)(SN)",
+      "footprint": "ARDF_2M:JST_VH_B2P-VH_1x02_P3.96mm_Vertical_E3",
+      "pads": {
+        "1": "BAT_RAW",
+        "2": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "F301",
+      "MPN": "0466004.NRHF",
+      "footprint": "ARDF_2M:Fuse_1206_3216Metric_E3",
+      "pads": {
+        "1": "BAT_RAW",
+        "2": "BAT_FUSED"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q309",
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "REVERSE_GATE",
+        "2": "VIN_PROT",
+        "3": "BAT_FUSED"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "D302",
+      "MPN": "SMBJ18A-E3/52",
+      "footprint": "ARDF_2M:D_SMB_E3",
+      "pads": {
+        "1": "VIN_PROT",
+        "2": "GND"
+      },
+      "orientation_deg": 90.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q305",
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "INPUT_GATE",
+        "2": "VIN_PROT",
+        "3": "VIN_CONV"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U304",
+      "MPN": "SN74LVC2G08DCUR",
+      "footprint": "ARDF_2M:VSSOP-8_2.3x2mm_P0.5mm_E3",
+      "pads": {
+        "1": "CONV_EN",
+        "2": "PACK_OK_N",
+        "3": "RAIL_RUN",
+        "4": "GND",
+        "5": "CONV_EN",
+        "6": "HARD_OK_N",
+        "7": "PACK_RUN",
+        "8": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "J302",
+      "MPN": "TSW-103-07-G-S",
+      "footprint": "ARDF_2M:PinHeader_1x03_P2.54mm_Vertical_E3",
+      "pads": {
+        "1": "VBOOST",
+        "2": "VREG_RAW",
+        "3": "VBUCK"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U301",
+      "MPN": "TPS54302DDCR",
+      "footprint": "ARDF_2M:SOT-23-6_Handsoldering_E3",
+      "pads": {
+        "1": "GND",
+        "2": "SW4S",
+        "3": "VIN_CONV",
+        "4": "FB4S",
+        "5": "CONV_EN",
+        "6": "BOOT4S"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q302",
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "REG_GATE",
+        "2": "VREG_RAW",
+        "3": "VREG_SWITCH"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "D304",
+      "MPN": "BZT52H-C10,115",
+      "footprint": "ARDF_2M:D_SOD-123F_E3",
+      "pads": {
+        "1": "VREG_RAW",
+        "2": "REG_GATE"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U302",
+      "MPN": "TPS611781RNWR",
+      "footprint": "ARDF_2M:TI_RNW0013A_4222804C",
+      "pads": {
+        "1": "BOOST_FREQ",
+        "2": "GND",
+        "3": "BOOST_ILIM",
+        "4": "BOOST_COMP",
+        "5": "BOOST_FB",
+        "6": "GND",
+        "7": "BOOST_SW",
+        "8": "VBOOST",
+        "9": "unconnected-(U302-DISDRV-Pad9)",
+        "10": "BOOST_VCC",
+        "11": "CONV_EN",
+        "12": "VIN_CONV",
+        "13": "BOOST_BST"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U303",
+      "MPN": "TLV76150DCYR",
+      "footprint": "ARDF_2M:SOT-223-3_TabPin2_E3",
+      "pads": {
+        "1": "GND",
+        "2": "VDRV_FILTER",
+        "3": "VDRV_PREREG"
+      },
+      "orientation_deg": 180.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U401",
+      "MPN": "TLV9004IDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "LEVEL_DC",
+        "2": "LEVEL_DC",
+        "3": "LEVEL_F2",
+        "4": "V3V3",
+        "5": "AF_F2",
+        "6": "AF_DC",
+        "7": "AF_DC",
+        "8": "MOD_DRIVE",
+        "9": "VPA_FB",
+        "10": "MOD_COMMAND",
+        "11": "GND",
+        "12": "TRAIN_COMMAND",
+        "13": "TRAIN_EMITTER_DC",
+        "14": "TRAIN_BASE_DRIVE"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U402",
+      "MPN": "SN74LVC1G3157DBVR",
+      "footprint": "ARDF_2M:SOT-23-6_E3",
+      "pads": {
+        "1": "AF_DC",
+        "2": "GND",
+        "3": "LEVEL_DC",
+        "4": "AM_COMMAND",
+        "5": "V3V3",
+        "6": "KEY"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q401",
+      "MPN": "D45H11",
+      "footprint": "ARDF_2M:TO-220-3_Vertical_E3",
+      "pads": {
+        "1": "PASS_BASE",
+        "2": "VPA",
+        "3": "VMOD"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q402",
+      "MPN": "BD139",
+      "footprint": "ARDF_2M:TO-126-3_Vertical_E3",
+      "pads": {
+        "1": "MOD_BASE",
+        "2": "MOD_SINK",
+        "3": "MOD_E"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q403",
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "MOD_E",
+        "2": "GND",
+        "3": "MOD_BASE"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U501",
+      "MPN": "PHA-1+",
+      "footprint": "ARDF_2M:PHA1_DF782_RevG",
+      "pads": {
+        "1": "DRIVER_IN",
+        "2": "GND",
+        "3": "MMIC_RF_DC",
+        "4": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q501",
+      "MPN": "PD54008L-E",
+      "footprint": "ARDF_2M:PD54008L_ST_GDS_5x5",
+      "pads": {
+        "D": "PA_DRAIN",
+        "G": "PA_GATE",
+        "S": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q502",
+      "MPN": "2N7002,215",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "NORMAL_OFF",
+        "2": "GND",
+        "3": "BIAS_WIPER"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "J501",
+      "MPN": "132134",
+      "footprint": "ARDF_2M:SMA_Amphenol_132134_Vertical_E3",
+      "pads": {
+        "1": "NORMAL_RF",
+        "2": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U701",
+      "MPN": "SN74LVC1G125DBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3",
+      "pads": {
+        "1": "TRAIN_OFF",
+        "2": "CLK_TRAIN",
+        "3": "GND",
+        "4": "TRAIN_CLOCK_BUF",
+        "5": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "Q701",
+      "MPN": "MMBTH10LT1G",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "TRAIN_BASE",
+        "2": "TRAIN_EMITTER",
+        "3": "TRAIN_COLLECTOR"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "J701",
+      "MPN": "66012102111404",
+      "footprint": "ARDF_2M:WR-MMCX_Wuerth_66012102111404_Vertical_E3",
+      "pads": {
+        "1": "TRAIN_RF",
+        "2": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U801",
+      "MPN": "TL431BIDBZR",
+      "footprint": "ARDF_2M:SOT-23_E3",
+      "pads": {
+        "1": "VREF2V5",
+        "2": "VREF2V5",
+        "3": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U804",
+      "MPN": "INA180A1IDBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3",
+      "pads": {
+        "1": "ISENSE",
+        "2": "GND",
+        "3": "VREG_SWITCH",
+        "4": "VMOD",
+        "5": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U802",
+      "MPN": "LM339BDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "PACK_OK_N",
+        "2": "PACK_OK_N",
+        "3": "V3V3",
+        "4": "UV_REF",
+        "5": "VBAT_S",
+        "6": "VBAT_S",
+        "7": "OV_REF",
+        "8": "DRV_S",
+        "9": "DRV_OV_REF",
+        "10": "VREG_S",
+        "11": "REG_OV_REF",
+        "12": "GND",
+        "13": "HARD_OK_N",
+        "14": "HARD_OK_N"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U803",
+      "MPN": "LM339BDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "HARD_OK_N",
+        "2": "HARD_OK_N",
+        "3": "V3V3",
+        "4": "ISENSE_F",
+        "5": "VREF1V0",
+        "6": "TEMP_LOW",
+        "7": "TEMP_S",
+        "8": "VPA_S",
+        "9": "VPA_OV_REF",
+        "10": "TEMP_S",
+        "11": "TEMP_HIGH",
+        "12": "GND",
+        "13": "HARD_OK_N",
+        "14": "HARD_OK_N"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U205",
+      "MPN": "74HC21D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "VALID_ARM",
+        "2": "ARM_DELAY",
+        "4": "SLOT",
+        "5": "ARM",
+        "6": "TX_OK",
+        "7": "GND",
+        "8": "CLR_N",
+        "9": "CLEAR_A",
+        "10": "RUN_HEALTH",
+        "12": "V3V3",
+        "13": "V3V3",
+        "14": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U206",
+      "MPN": "74HC11D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3",
+      "pads": {
+        "1": "TX_OK",
+        "2": "NORMAL_Q",
+        "3": "TX_OK",
+        "4": "PATH_Q",
+        "5": "CLEAR_A",
+        "6": "TRAIN_PERMIT",
+        "7": "GND",
+        "8": "CONV_EN",
+        "9": "PA_PREPARE",
+        "10": "SRC_ON",
+        "11": "V3V3",
+        "12": "NORMAL_PERMIT",
+        "13": "CLEAR_A",
+        "14": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U305",
+      "MPN": "TPS22810DBVR",
+      "footprint": "ARDF_2M:SOT-23-6_E3",
+      "pads": {
+        "1": "VDRV_FILTER",
+        "2": "GND",
+        "3": "NORMAL_PERMIT",
+        "4": "unconnected-(U305-CT-Pad4)",
+        "5": "VDRV_RF",
+        "6": "VDRV_RF"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U601",
+      "MPN": "SN74LVC1G125DBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3",
+      "pads": {
+        "1": "NORMAL_OFF",
+        "2": "CLK_NORMAL",
+        "3": "GND",
+        "4": "NORMAL_CLOCK_BUF",
+        "5": "V3V3"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    },
+    {
+      "ref": "U950",
+      "MPN": "TLV76701DRVR",
+      "footprint": "ARDF_2M:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_E3",
+      "pads": {
+        "1": "VDRV_PREREG",
+        "2": "DRV_PRE_FB",
+        "3": "GND",
+        "4": "CONV_EN",
+        "5": "GND",
+        "6": "VDRV_LDO_IN",
+        "7": "GND"
+      },
+      "orientation_deg": 0.0,
+      "status": "EXPORTED_NETLIST_AND_NATIVE_PCB_MATCH"
+    }
+  ],
+  "pad_sets": 320,
+  "landing_copper_and_pad_nets": "Unchanged from E3. Q501 mask/paste and surrounding GND artwork changed; no manufacturer pad renamed/moved.",
+  "source": "../M5B-E1/source-log.json",
+  "physical": "NOT_RUN"
+}

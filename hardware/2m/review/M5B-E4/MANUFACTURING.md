@@ -1,0 +1,7 @@
+# E4 candidate fabrication specification — HOLD
+
+No submission/order authorized. Resolve source-joint assembly reproducibility and independent review first. Standard JLCPCB:5bareboards,180x140mm,2layerFR4,1.6mm±10%,1oznominal finished external copper,greenLPI,whitelegend,lead-freeHASL,ordinary through-vias,standard electrical test, no controlled impedance/custom core/filled-plugged-capped vias/assembly service/customer panel. The analytical1.50mm core is not a separate purchase specification. Preferred vias0.80/0.30;54 additional thermal-wing holes1.10/0.50. Retained local0.70/0.30 and0.60/0.30 vias are ordinary-process exceptions to preferred margin, not fabrication defects.
+
+Actual native DFM and KiCad coverage are in JLCPCB-DFM.json and DRC-coverage.json. Existing process minima/tolerances remain in JLCPCB-standard-profile.json. Dimensions of routed outline are centerline180x140; Gerber job bounds include outline pen width. Six3.2NPTH mounts unchanged. No slots/cutouts or special process added. Ordinary mask tenting must not be represented as plugging, guaranteed hole closure or electrical insulation. Source assembly remains HOLD despite passing bare-board geometry.
+
+Fresh Gerbers and separatePTH/NPTH drill files are review data only. Logical IPC includes schematic TL aliases; physical-netties IPC merges intentional copper ties for bare-board electrical test. Do not infer an external CAM acceptance or quotation. The dedicated archive has DRAFT-HOLD in its filename; analysis/development files are excluded.

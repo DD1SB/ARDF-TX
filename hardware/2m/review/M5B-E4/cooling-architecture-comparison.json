@@ -1,0 +1,42 @@
+{
+  "status": "CALCULATED_NOT_MEASURED",
+  "A_unchanged_E3_vias_with_same_new_grease_bar_and_sink": {
+    "source_to_bar_K_W": 18.1441615191869,
+    "total_JA_K_W": 27.4441615191869,
+    "junction_at40C_4W_C": 149.7766460767476,
+    "solver": {
+      "nodes": 4564,
+      "iterations": 73,
+      "relative_residual": 2.822399964599844e-09,
+      "grid_mm": 0.2
+    }
+  },
+  "B_implemented_wings_and_more_vias": {
+    "source_to_bar_K_W": 8.079078443542333,
+    "total_JA_K_W": 17.379078443542333,
+    "junction_40C_4W_C": 109.51631377416933,
+    "solver": {
+      "nodes": 6992,
+      "iterations": 144,
+      "relative_residual": 2.7472255763293885e-09,
+      "grid_mm": 0.2
+    },
+    "Cu_um": 30,
+    "TIM_mm": 0.15,
+    "TIM_k_W_mK": 6,
+    "joint_K_W": 1.0,
+    "bar_and_second_interface_K_W": 0.7,
+    "sink_K_W": 4.0,
+    "missing_inner_vias": 4,
+    "mesh_allowance_K_W": 0.6
+  },
+  "C_solder_filled_vias": {
+    "selected": false,
+    "solder_volume32_holes_mm3": 3.619114736935442,
+    "reason": "No reliable fill/void bound; no credited solder-fill conduction. Ordinary manual assembly must not be treated as factory plugged/capped vias."
+  },
+  "top_package_contact": {
+    "selected": false,
+    "reason": "No qualified plastic-top Rjc path. No unsupported package force or altered under-pad metal bridge."
+  }
+}

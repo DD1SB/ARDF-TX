@@ -1,0 +1,52 @@
+{
+  "status": "PASS_CAD_GEOMETRY_AND_CALCULATION_CHECKS",
+  "electrical_net_membership_equal_E3": true,
+  "all_320_pad_sets_positions_and_sizes_preserved": true,
+  "all_signal_and_power_tracks_preserved": true,
+  "RF_lines_preserved": [
+    "TL603",
+    "TL604",
+    "TL605",
+    "TL606",
+    "TL607",
+    "TL608",
+    "TL609"
+  ],
+  "thermal_vias": 104,
+  "E3_mutation_classes_preserved": [
+    "TL608_length",
+    "source_to_drain",
+    "undersize_thermal_land"
+  ],
+  "additional_native_mutations": [
+    "bottom_contact_tented",
+    "source_mask_open_over_holes",
+    "mislocated_M3_mount"
+  ],
+  "additional_thermal_mutations": [
+    {
+      "mutation": "reduced_barrel_5um",
+      "detected": "110C_design_target_exceeded",
+      "calculated_junction_C": 128.3434746030516
+    },
+    {
+      "mutation": "missing_contact",
+      "detected": "110C_design_target_exceeded",
+      "calculated_junction_C": null
+    },
+    {
+      "mutation": "wrong_sink_8K_W",
+      "detected": "110C_design_target_exceeded",
+      "calculated_junction_C": 125.51631377416933
+    },
+    {
+      "mutation": "poor_joint",
+      "detected": "110C_design_target_exceeded",
+      "calculated_junction_C": 121.6706775805693
+    }
+  ],
+  "purchased_parts_and_populations_unchanged": true,
+  "DRC_configuration_identical_to_E3": true,
+  "physical": "NOT_RUN",
+  "assembly_gate": "OPEN / HOLD; see thermal-assembly-audit.json"
+}

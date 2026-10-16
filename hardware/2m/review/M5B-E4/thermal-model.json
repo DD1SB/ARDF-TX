@@ -1,0 +1,280 @@
+{
+  "status": "CALCULATED_NOT_PHYSICALLY_QUALIFIED",
+  "method": "Two copper-sheet resistor network. No FR4/solder-fill/air credit.\n\nFinite volumes solve -div(k*t*grad(T)) + g_TIM*T + via couplings = Q.\nSource land is isothermal at 1 K; conductance gives source-to-bar R.\nExplicit solder, bar/interface and sink terms are then added in SERIES.\nNo second spreading term is added to the solved copper/TIM path.\nOnly Python standard library is required; native geometry checked separately.\n",
+  "cases": {
+    "nominal": {
+      "10": {
+        "source_to_bar_K_W": 6.826018735319067,
+        "total_JA_K_W": 12.526018735319067,
+        "junction_40C_4W_C": 90.10407494127627,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 142,
+          "relative_residual": 3.0674428630605185e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "15": {
+        "source_to_bar_K_W": 5.092970722718591,
+        "total_JA_K_W": 10.79297072271859,
+        "junction_40C_4W_C": 83.17188289087436,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 135,
+          "relative_residual": 3.106939455422646e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "18": {
+        "source_to_bar_K_W": 4.4645590763934955,
+        "total_JA_K_W": 10.164559076393495,
+        "junction_40C_4W_C": 80.65823630557398,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 132,
+          "relative_residual": 2.575099055319834e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "25": {
+        "source_to_bar_K_W": 3.5269745138968,
+        "total_JA_K_W": 9.2269745138968,
+        "junction_40C_4W_C": 76.9078980555872,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 124,
+          "relative_residual": 2.835485941793161e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      }
+    },
+    "conservative": {
+      "10": {
+        "source_to_bar_K_W": 8.079078443542333,
+        "total_JA_K_W": 17.379078443542333,
+        "junction_40C_4W_C": 109.51631377416933,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 144,
+          "relative_residual": 2.7472255763293885e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "15": {
+        "source_to_bar_K_W": 6.237276673837449,
+        "total_JA_K_W": 15.537276673837448,
+        "junction_40C_4W_C": 102.14910669534979,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 138,
+          "relative_residual": 2.6807287795557408e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "18": {
+        "source_to_bar_K_W": 5.572633331544214,
+        "total_JA_K_W": 14.872633331544213,
+        "junction_40C_4W_C": 99.49053332617686,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 134,
+          "relative_residual": 2.8571983955911128e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "25": {
+        "source_to_bar_K_W": 4.585854989028023,
+        "total_JA_K_W": 13.885854989028022,
+        "junction_40C_4W_C": 95.54341995611209,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 128,
+          "relative_residual": 3.096344014235001e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      }
+    },
+    "poor_joint": {
+      "10": {
+        "source_to_bar_K_W": 9.117669395142327,
+        "total_JA_K_W": 20.417669395142326,
+        "junction_40C_4W_C": 121.6706775805693,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 151,
+          "relative_residual": 2.895973934510284e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "15": {
+        "source_to_bar_K_W": 7.236531821051918,
+        "total_JA_K_W": 18.53653182105192,
+        "junction_40C_4W_C": 114.14612728420768,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 146,
+          "relative_residual": 2.772237572498399e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "18": {
+        "source_to_bar_K_W": 6.557913088434849,
+        "total_JA_K_W": 17.85791308843485,
+        "junction_40C_4W_C": 111.4316523537394,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 143,
+          "relative_residual": 3.0999971806699136e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "25": {
+        "source_to_bar_K_W": 5.550415840710499,
+        "total_JA_K_W": 16.8504158407105,
+        "junction_40C_4W_C": 107.401663362842,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 139,
+          "relative_residual": 3.081029750732177e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      }
+    }
+  },
+  "convergence": [
+    {
+      "source_to_bar_K_W": 8.329767150765068,
+      "nodes": 1776,
+      "iterations": 72,
+      "relative_residual": 2.4538851886997068e-09,
+      "grid_mm": 0.4
+    },
+    {
+      "source_to_bar_K_W": 8.079078443542333,
+      "nodes": 6992,
+      "iterations": 144,
+      "relative_residual": 2.7472255763293885e-09,
+      "grid_mm": 0.2
+    },
+    {
+      "source_to_bar_K_W": 8.432746309388092,
+      "nodes": 27824,
+      "iterations": 285,
+      "relative_residual": 3.032507060818823e-09,
+      "grid_mm": 0.1
+    },
+    {
+      "source_to_bar_K_W": 8.512439065728799,
+      "nodes": 111296,
+      "iterations": 565,
+      "relative_residual": 2.9415669626056432e-09,
+      "grid_mm": 0.05
+    }
+  ],
+  "E3_10um_40C_4W_C": 133.1185950101802,
+  "E3_18um_40C_4W_C": 108.62144167232233,
+  "all_hardware_tests": "NOT_RUN",
+  "limitations": [
+    "Copper sheets homogeneous; omitted board FR4/air paths cannot improve claimed bound",
+    "Source land is isothermal: real die/solder heat spreading and localized voids remain unknown",
+    "Via-to-sheet transitions discretized; mesh sensitivity is reported, not calibrated against hardware",
+    "Sink catalogue rating depends on orientation, temperature rise and unrestricted airflow; enclosure not qualified",
+    "Grease bond line, bar flatness and surviving solder joint are assembly acceptance conditions, not guaranteed manufacturing specifications"
+  ]
+}

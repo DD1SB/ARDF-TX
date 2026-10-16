@@ -1,0 +1,12 @@
+{
+  "native_bare_board_geometry": "PASS_AUTOMATED_NATIVE_GEOMETRY",
+  "mask_and_paste_geometry": "PASS_DIMENSIONAL_ONLY",
+  "source_joint": "HOLD",
+  "guaranteed_via_tents": false,
+  "premium_via_treatment": false,
+  "source_mask_minimum_channel_mm": 0.15,
+  "paste_minimum_slot_mm": 0.15,
+  "proposed_stencil_mm": 0.1,
+  "paste_long_slot_area_ratio_approx": 0.75,
+  "limitation": "Stencil release, registration, ordinary LPI tents, HASL nonplanarity and solder voids require assembly-process acceptance; neither DRC nor thermal solver establishes it."
+}

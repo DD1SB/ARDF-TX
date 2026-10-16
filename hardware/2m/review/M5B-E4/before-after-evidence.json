@@ -1,0 +1,178 @@
+{
+  "baseline_native_SHA256": "061f099668632853081943ebedc996f9105be696f59be09fb23eab93ad77ff4b",
+  "current_native_SHA256": "2fcc2c5f4f55b4bcbabb4623f67e6a1b2accaf7fd7c5ea284792d0f6a4afbaf4",
+  "commands": [
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E3-F-Cu.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/E3-native.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Mask",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E3-F-Mask.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/E3-native.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Paste",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E3-F-Paste.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/E3-native.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "B.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E3-B-Cu.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/E3-native.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "B.Mask",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E3-B-Mask.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/E3-native.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E4-F-Cu.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Mask",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E4-F-Mask.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "F.Paste",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E4-F-Paste.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "B.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E4-B-Cu.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--mode-single",
+        "--fit-page-to-board",
+        "--exclude-drawing-sheet",
+        "--layers",
+        "B.Mask",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4/development/evidence/E4-B-Mask.svg",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0
+    }
+  ],
+  "viewBox": "Native local area x~105..120/y~47..63; SVG origin translated by board minimum.",
+  "physical": "NOT_RUN"
+}

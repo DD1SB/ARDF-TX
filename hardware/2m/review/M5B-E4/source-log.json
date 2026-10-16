@@ -1,0 +1,69 @@
+{
+  "retrieved": "2026-10-17",
+  "sources": [
+    {
+      "topic": "ST package/thermal",
+      "url": "https://www.st.com/resource/en/datasheet/pd54008l-e.pdf",
+      "revision": "January2007 Rev2 pp3,11,13",
+      "facts": "Rjc3K/W,Tjmax150C,body5x5,Amax1.0,continuous source2.7x5"
+    },
+    {
+      "topic": "Fischer SK81 manufacturer curve and profile",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/C800/OJSK81_D_E_F.pdf",
+      "location": "PDF p14 / catalogueA34",
+      "facts": "100wide,15high,4base; approximately2.2K/W at100mm from graph; no fan"
+    },
+    {
+      "topic": "Fischer current dimensional sheet",
+      "url": "https://www.farnell.com/datasheets/3625639.pdf",
+      "facts": "SK81 100 SA dimensions and series resistance range, not tolerance at one length"
+    },
+    {
+      "topic": "Heatsink sourcing",
+      "url": "https://www.reichelt.de/de/de/shop/produkt/kuehlkoerper_100_mm_alu_2_2_k_w-227984",
+      "facts": "7.30EUR incl19%VAT; listed in stock1-2days, no quantity reserved;0.214kg is packaging weight, not certified net mass. Page title2.2, description2.0; use manufacturer graph2.2"
+    },
+    {
+      "topic": "Alternative sink",
+      "url": "https://de.farnell.com/fischer-elektronik/sk-92-100-sa/k-hlk-rper-100mm-1-4-c-w/dp/4621580",
+      "facts": "100x100x40,1.4catalogue; more costly/heavier and +25mm clearance. Same flat-face fastening concept; not automatic assembly equivalence"
+    },
+    {
+      "topic": "Stock bar",
+      "url": "https://www.atreon.de/aluminium-flachstange-15x10--en-aw-6060-/",
+      "facts": "15x10mm6060T6 stock section, no price asserted"
+    },
+    {
+      "topic": "KP12",
+      "url": "https://www.kerafol.com/wp-content/uploads/2026/06/Kerafol_Keratherm_Datenblatt_KP97_98_99_12_14_06-26.pdf",
+      "facts": "10W/mK reference at25um; engineering guidance, not guaranteed bond-line performance. Use derated6W/mK and150um scenario"
+    },
+    {
+      "topic": "Grease insulation limitation",
+      "url": "https://www.kerafol.com/en/thermal-management/thermally-conductive-pastes/",
+      "facts": "Thermal grease is not electrical insulation"
+    },
+    {
+      "topic": "IB6 manufacturer drawing",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/C800/FISCHERELEKTRONIK_IB_6.pdf",
+      "facts": "TO220 sleeve3.5OD/3.1ID,6flange,2.2height; inspect sleeve/tab stack. Not automatically suitable for smaller BD139 hole"
+    },
+    {
+      "topic": "Mica manufacturer sheet",
+      "url": "https://www.farnell.com/datasheets/3190623.pdf",
+      "facts": "GS220P TO220 mica0.05mm,18x12; reference0.4K/W; grease/interfaces/fit additional"
+    },
+    {
+      "topic": "GS32P supply",
+      "url": "https://www.reichelt.de/de/de/shop/produkt/glimmerscheibe_fuer_gehaeuse_sot_32-8191",
+      "facts": "GS32P mica for SOT32; retained helper live-collector isolation"
+    },
+    {
+      "topic": "Standard process",
+      "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "facts": "Ordinary two-layer1.6/1oz,18um average plating,+.13/-.08 through-hole size,+/-.075 position; not guaranteed tent closure"
+    }
+  ],
+  "manufacturing_submission": false,
+  "physical": "NOT_RUN"
+}

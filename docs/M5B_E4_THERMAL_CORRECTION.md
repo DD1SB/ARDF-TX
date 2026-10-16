@@ -1,0 +1,32 @@
+# M5B-E4 PA thermal correction — implemented candidate, HOLD
+
+E3 `95f189c` / `m5b-e3` remains immutable. E4 changes local source-ground copper, ordinary vias, source mask/paste and mechanical documentation. No purchased electrical value, pin map, RF signal track, matching component position, connector, controller contract or population rule changes. Standard JLCPCB **180 ×140, two-layer FR4,1.6 mm,1 oz,green/white,lead-free HASL** remains mandatory. No premium via process, insert or package substitution is used.
+
+The implemented source array is **40 vias in5×8 at0.6 pitch**,0.80/0.30 mm. Ten similar near vias and54 larger1.10/0.50 mm vias connect two small ground wings. Source lands remain the ST2.7×5 mm recommendation; G/D contacts and source orientation are unchanged. Source copper extends0.25 mm each side through via lands; top wings are stepped around existing gate/drain conductors. Total104 thermal/ground vias replace32, adding72 ordinary holes. The bottom contact opening grows14×12→14×16 mm. [Native geometry](../hardware/2m/review/M5B-E4/implemented-geometry.json) and [regression](../hardware/2m/review/M5B-E4/engineering-regression.json) identify exact coordinates. No signal routing is altered.
+
+Three approaches were evaluated. A larger sink on the E3 barrel path cannot meet110°C conservatively: its original10µm model is133.1°C, and even an optimistic1K/W sink gives123.1°C at4W/40°C. Better grease does not remove the13.78K/W barrel bottleneck. A top-plastic clamp has no qualified heat path; an under-package metal bridge would alter mounting and solder geometry, so neither is implemented. The selected approach improves the parallel copper/via path, retains ordinary unfilled holes and uses a stock bar plus commercial passive sink. Solder-filled via conduction is deliberately excluded:32 open0.3 holes can consume approximately3.62mm³ solder, much more than a thin source joint. Reliable filling cannot be assumed.
+
+The reproducible model solves coupled top/bottom copper sheets and individual barrel conductances, with a distributed bottom TIM connection. FR4/air cooling, solder filling and additional board copper outside the defined wings/contact receive no credit. Copper spreading and TIM are inside the solved network; no duplicate series spreading term is added. Rjc3K/W is from [ST Rev2](https://www.st.com/resource/en/datasheet/pd54008l-e.pdf), with separate solder, stock-bar/second-interface and sink terms. The isothermal source-land approximation and contact bounds remain unvalidated. [Model and mesh results](../hardware/2m/review/M5B-E4/thermal-model.json), [full25/40°C,2/3/4/5W sensitivity](../hardware/2m/review/M5B-E4/thermal-sensitivity.csv).
+
+| Case | Barrel µm | Total model K/W | Tj at40°C/4W, °C |
+| --- | --- | --- | --- |
+| nominal | 10 | 12.53 | 90.1 |
+| nominal | 15 | 10.79 | 83.2 |
+| nominal | 18 | 10.16 | 80.7 |
+| nominal | 25 | 9.23 | 76.9 |
+| conservative | 10 | 17.38 | 109.5 |
+| conservative | 15 | 15.54 | 102.1 |
+| conservative | 18 | 14.87 | 99.5 |
+| conservative | 25 | 13.89 | 95.5 |
+| poor_joint | 10 | 20.42 | 121.7 |
+| poor_joint | 15 | 18.54 | 114.1 |
+| poor_joint | 18 | 17.86 | 111.4 |
+| poor_joint | 25 | 16.85 | 107.4 |
+
+Nominal assumptions:35µm sheet copper,50µm grease at10W/mK,0.25K/W solder,0.25K/W bar/interface and2.2K/W catalogue sink. Conservative assumptions:30µm copper,150µm grease derated to6W/mK, four source vias ineffective,1K/W solder,0.7K/W bar/interface,4K/W sink and0.6K/W mesh allowance. The4K/W sink assumption is about82% above the catalogue curve to expose orientation/low-temperature-rise uncertainty; it is not a manufacturer guarantee. Meshes0.4/0.2/0.1/0.05mm are reported. Nominal18µm predicts80.7°C; conservative10µm predicts109.5°C versus110°C target. Poor-joint/contact conditions predict121.7°C and fail the design target. The4W qualification heat remains fixed. At5W the conservative scenario exceeds the intended target; no extra dissipation allowance is implied.
+
+**The source solder joint remains a blocker.** E4 mask islands increase0.40→0.45mm and leave0.15mm mask/paste channels. Open source area is approximately5.94mm² (44%). A0.10mm stencil gives a long-slot area ratio near0.75, but release, alignment and voiding are not qualified. A0.45mm mask island cannot guarantee covering a hole allowed to reach0.43mm with±0.075mm position tolerance, even before mask registration. These are tolerance-envelope calculations, not a claim that every delivered via will be open. Ordinary tenting is not plugging. Inspectable bare-board caps do not prove survival during reflow. Neither clean DFM nor the thermal solver establishes source-joint reproducibility. See [assembly audit](../hardware/2m/review/M5B-E4/thermal-assembly-audit.json).
+
+The smallest remaining correction is an independently accepted ordinary-board/manual-reflow source-joint process with adequate solder coverage and a credible first-build inspection method. It must avoid solder-starved joints without premium filling or relying on solder-filled thermal conduction. First-board X-ray or an equivalent qualified method plus measured heat transfer may be needed; availability/cost are unresolved. No separate PA PCB or new RF architecture is proposed. If that process cannot be established, the dense under-pad approach cannot be accepted; a separately approved package/thermal-path change would be necessary. **No m5b-e4 acceptance tag is justified now.** All actual RF and thermal measurements remain NOT_RUN.
+
+RF review: all seven TL bodies retain the exact E3 width/length and every signal/power track and component pose is byte-coordinate equivalent in the native comparison. The source via lands extend the local ground width2.7→3.2mm, reducing nominal adjacent gate/drain-to-source copper gap0.65→0.40mm. The ground wings are stepped away from existing bias/drain feeds; native clearances pass. `RF-ground-change.json` discloses the resulting local discontinuity and illustrative extra-shunt-capacitance sensitivity. Those are assumed sensitivities, not extracted parasitics. The unchanged microstrip model is not an EM model of the new wings/package. Added vias can improve source return, but mutual inductance precludes a simple1/N claim. Bottom ground continuity and normal/training separation remain; real matching/stability/AM and metalwork coupling still require the same integrated-board acceptance.
