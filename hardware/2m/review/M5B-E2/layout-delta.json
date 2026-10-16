@@ -1,0 +1,286 @@
+{
+  "baseline_commit": "6931260",
+  "baseline_tag": "m5b-e1",
+  "modified_tracks": {
+    "70b009b9-a023-416e-b4f0-a03dd7208999": {
+      "before": {
+        "net": "V3V3",
+        "layer": "F.Cu",
+        "start": [
+          57225000,
+          36850000
+        ],
+        "end": [
+          58100000,
+          35975000
+        ],
+        "width": 150000
+      },
+      "after": {
+        "net": "V3V3",
+        "layer": "F.Cu",
+        "start": [
+          57225000,
+          36850000
+        ],
+        "end": [
+          57450000,
+          35975000
+        ],
+        "width": 150000
+      }
+    },
+    "62c24e8d-cdd2-46ed-a062-f5dba1cb82c0": {
+      "before": {
+        "net": "PACK_OK_N",
+        "layer": "F.Cu",
+        "start": [
+          57900000,
+          68750000
+        ],
+        "end": [
+          55500000,
+          68000000
+        ],
+        "width": 150000
+      },
+      "after": {
+        "net": "PACK_OK_N",
+        "layer": "F.Cu",
+        "start": [
+          57900000,
+          68750000
+        ],
+        "end": [
+          57000000,
+          68000000
+        ],
+        "width": 150000
+      }
+    },
+    "ad10ef61-9d87-4da5-b25f-ed14c7b1ad29": {
+      "before": {
+        "net": "V3V3",
+        "layer": "F.Cu",
+        "start": [
+          63700000,
+          64400000
+        ],
+        "end": [
+          63800000,
+          64400000
+        ],
+        "width": 150000
+      },
+      "after": {
+        "net": "V3V3",
+        "layer": "F.Cu",
+        "start": [
+          63700000,
+          64400000
+        ],
+        "end": [
+          63800000,
+          64400000
+        ],
+        "width": 200000
+      }
+    },
+    "d9a54bae-b91b-4870-893c-d0f4fa8c3639": {
+      "before": {
+        "net": "TRAIN_COMMAND",
+        "layer": "F.Cu",
+        "start": [
+          128400000,
+          82700000
+        ],
+        "end": [
+          128300000,
+          82700000
+        ],
+        "width": 150000
+      },
+      "after": {
+        "net": "TRAIN_COMMAND",
+        "layer": "F.Cu",
+        "start": [
+          128400000,
+          82700000
+        ],
+        "end": [
+          128100000,
+          82400000
+        ],
+        "width": 200000
+      }
+    }
+  },
+  "removed_tracks": {
+    "7625047e-c9e5-414d-823b-1fe499eb1bee": {
+      "net": "V3V3",
+      "layer": "F.Cu",
+      "start": [
+        57325000,
+        36100000
+      ],
+      "end": [
+        57450000,
+        35975000
+      ],
+      "width": 150000
+    },
+    "8f0ab51e-61d1-4b2a-aac6-0aa2233f5854": {
+      "net": "V3V3",
+      "layer": "F.Cu",
+      "start": [
+        57325000,
+        36375000
+      ],
+      "end": [
+        57325000,
+        36100000
+      ],
+      "width": 150000
+    },
+    "3c662c47-3943-4820-a3ba-13068219c422": {
+      "net": "TRAIN_COMMAND",
+      "layer": "F.Cu",
+      "start": [
+        128100000,
+        82500000
+      ],
+      "end": [
+        128100000,
+        82400000
+      ],
+      "width": 150000
+    },
+    "328099ce-dc09-49aa-a643-68ffce92864d": {
+      "net": "TRAIN_COMMAND",
+      "layer": "F.Cu",
+      "start": [
+        128300000,
+        82700000
+      ],
+      "end": [
+        128300000,
+        82600000
+      ],
+      "width": 150000
+    },
+    "a6349226-e655-461c-b43a-2c4d167812d2": {
+      "net": "TRAIN_COMMAND",
+      "layer": "F.Cu",
+      "start": [
+        128199999,
+        82500000
+      ],
+      "end": [
+        128100000,
+        82500000
+      ],
+      "width": 150000
+    },
+    "deabdd94-a712-440c-b152-694a92481f7e": {
+      "net": "PACK_OK_N",
+      "layer": "F.Cu",
+      "start": [
+        55500000,
+        68000000
+      ],
+      "end": [
+        57000000,
+        68000000
+      ],
+      "width": 150000
+    },
+    "7ad57a14-8a9b-477f-b794-ce066b0429a2": {
+      "net": "V3V3",
+      "layer": "F.Cu",
+      "start": [
+        57450000,
+        35975000
+      ],
+      "end": [
+        58100000,
+        35975000
+      ],
+      "width": 150000
+    }
+  },
+  "added_tracks": {
+    "71d945c8-e553-5eec-8d42-bb2252a887f8": {
+      "net": "V3V3",
+      "layer": "F.Cu",
+      "start": [
+        174900000,
+        140800000
+      ],
+      "end": [
+        175500000,
+        141100000
+      ],
+      "width": 300000
+    }
+  },
+  "all_other_tracks_vias_identical": true,
+  "rule_change": "min_connection0.0->0.15mm;all severities unchanged",
+  "zone_change": "0.4mm square fill-only keepout x128..128.4/y126.9..127.3mm",
+  "all_footprint_positions_and_pads_identical": true,
+  "schematic_manifest_libraries_unchanged": [
+    "hardware/2m/06_source_driver_bias.kicad_sch",
+    "hardware/2m/02_interlocks.kicad_sch",
+    "hardware/2m/RF2M.kicad_sch",
+    "hardware/2m/06b_st_matching.kicad_sch",
+    "hardware/2m/10_enable_detail.kicad_sch",
+    "hardware/2m/05_am.kicad_sch",
+    "hardware/2m/06c_st_lpf.kicad_sch",
+    "hardware/2m/04_boost_driver_supply.kicad_sch",
+    "hardware/2m/05_amb1.kicad_sch",
+    "hardware/2m/01_interface_source.kicad_sch",
+    "hardware/2m/11_external_contract.kicad_sch",
+    "hardware/2m/06_source_driver_biasb1.kicad_sch",
+    "hardware/2m/08_protection.kicad_sch",
+    "hardware/2m/03_input_powerb1.kicad_sch",
+    "hardware/2m/12_m5b_qualification.kicad_sch",
+    "hardware/2m/02_interlocksb1.kicad_sch",
+    "hardware/2m/03_input_power.kicad_sch",
+    "hardware/2m/08_protectionb1.kicad_sch",
+    "hardware/2m/07_trainingb1.kicad_sch",
+    "hardware/2m/07_training.kicad_sch",
+    "hardware/2m/RF2M.electrical.json",
+    "hardware/2m/ARDF_2M.kicad_sym",
+    "hardware/2m/ARDF_2M.pretty/TL50_12p4mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/WR_BHD_61202021621.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/KICAD-LIBRARY-LICENSE.md",
+    "hardware/2m/ARDF_2M.pretty/Probe_Pad_0p6.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/PD54008L_ST_GDS_5x5.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_6p62mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/CP_Panasonic_OSCON_C10.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_6p23mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/Bourns_SRP1265A.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/PHA1_DF782_RevG.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/Coilcraft_1812SMS_Doc184.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_5p8mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/RF_GSG_Test.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_2p0mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_11p0mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TL50_2p2mm.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/ATTRIBUTION.md",
+    "hardware/2m/ARDF_2M.pretty/Coilcraft_1008CS_Doc101.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/TI_RNW0013A_4222804C.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/NTC_Remote_2Wire.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/Coilcraft_A05T_Doc107.kicad_mod",
+    "hardware/2m/ARDF_2M.pretty/Coilcraft_0603HC_Doc218.kicad_mod",
+    "hardware/2m/ARDF_2M.3dshapes/Bourns_SRP1265A.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/TI_RNW0013A_4222804C.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/PD54008L_ST_GDS_5x5.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/Coilcraft_0603HC_Doc218.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/Coilcraft_A05T_Doc107.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/Coilcraft_1812SMS_Doc184.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/CP_Panasonic_OSCON_C10.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/WR_BHD_61202021621.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/Coilcraft_1008CS_Doc101.wrl",
+    "hardware/2m/ARDF_2M.3dshapes/PHA1_DF782_RevG.wrl"
+  ]
+}

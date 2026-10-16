@@ -1,0 +1,26 @@
+{
+  "revision": "M5B-E2",
+  "baseline_commit": "6931260",
+  "baseline_tag": "m5b-e1",
+  "KiCad": "10.0.6",
+  "ERC_errors": 0,
+  "ERC_warnings": 0,
+  "DRC_errors": 0,
+  "DRC_warnings": 11,
+  "unrouted": 0,
+  "schematic_parity_issues": 0,
+  "exclusions": 0,
+  "disabled": [
+    "tuning_profile_track_geometries"
+  ],
+  "connection_width_min_mm": 0.15,
+  "logic_combinations": 4096,
+  "state_scenarios": 39,
+  "mutations": 37,
+  "critical_pin_maps": 42,
+  "native_pad_packages": 320,
+  "ST_network_positions": 26,
+  "physical_acceptance": "NOT_RUN",
+  "decision": "GO for independent small bare-evaluation-board manufacturing review and quotation preparation;no order authorization",
+  "preserved_files": 700
+}

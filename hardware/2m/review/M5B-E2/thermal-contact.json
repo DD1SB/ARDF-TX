@@ -1,0 +1,58 @@
+{
+  "mask_openings_mm": [
+    [
+      105,
+      49,
+      110.95,
+      61
+    ],
+    [
+      111.75,
+      49,
+      112.25,
+      61
+    ],
+    [
+      113.05,
+      49,
+      119,
+      61
+    ],
+    [
+      110.95,
+      49,
+      113.05,
+      52.6
+    ],
+    [
+      110.95,
+      57.4,
+      113.05,
+      61
+    ]
+  ],
+  "overall_contact_mm": [
+    105,
+    49,
+    119,
+    61
+  ],
+  "source_via_tented_strips_mm": [
+    [
+      110.95,
+      52.6,
+      111.75,
+      57.4
+    ],
+    [
+      112.25,
+      52.6,
+      113.05,
+      57.4
+    ]
+  ],
+  "reason": "Expose ground copper for thin TIM/spreader;do not press a bare spreader against live tracks or untented solder-filled barrels.",
+  "interface": "Electrically insulating thermal sheet0.15-0.25mm,k>=3W/mK,dielectric>=100V across16x44x8mm spreader face;exact external material OPEN. Separate verified ground strap;do not rely on solder mask insulation.40mm bench supports.",
+  "physical": "NOT_RUN;via conduction/solder voids/TIM/contact resistance require thermal measurement",
+  "E2_native_window_recheck": "PASS_no_foreign_B.Cu_in_14x12_window"
+}

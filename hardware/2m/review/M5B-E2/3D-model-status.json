@@ -1,0 +1,131 @@
+{
+  "custom_models": [
+    {
+      "footprint": "PD54008L_ST_GDS_5x5",
+      "model": "PD54008L_ST_GDS_5x5.wrl",
+      "dimensions_mm": [
+        5,
+        5,
+        1
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "ST PD54008L-E Rev2 package; max envelope"
+    },
+    {
+      "footprint": "PHA1_DF782_RevG",
+      "model": "PHA1_DF782_RevG.wrl",
+      "dimensions_mm": [
+        4.6,
+        4.24,
+        1.6
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Mini-Circuits DF782 RevG max overall envelope; lead/flange detail omitted"
+    },
+    {
+      "footprint": "TI_RNW0013A_4222804C",
+      "model": "TI_RNW0013A_4222804C.wrl",
+      "dimensions_mm": [
+        3.5,
+        3,
+        0.8
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "TI RNW0013A package max envelope; isolated lands remain real copper"
+    },
+    {
+      "footprint": "Bourns_SRP1265A",
+      "model": "Bourns_SRP1265A.wrl",
+      "dimensions_mm": [
+        14,
+        12.8,
+        6.5
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Bourns SRP1265A maximum dimensions"
+    },
+    {
+      "footprint": "Coilcraft_1812SMS_Doc184",
+      "model": "Coilcraft_1812SMS_Doc184.wrl",
+      "dimensions_mm": [
+        4.95,
+        6.35,
+        4.2
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Coilcraft Doc184 overall coil envelope; solid box is not core material"
+    },
+    {
+      "footprint": "Coilcraft_A05T_Doc107",
+      "model": "Coilcraft_A05T_Doc107.wrl",
+      "dimensions_mm": [
+        3.94,
+        4.45,
+        3.15
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Coilcraft Doc107 A05T overall coil envelope"
+    },
+    {
+      "footprint": "Coilcraft_0603HC_Doc218",
+      "model": "Coilcraft_0603HC_Doc218.wrl",
+      "dimensions_mm": [
+        1.8,
+        1.12,
+        1.172
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Coilcraft Doc218 body plus 0.152mm solder allowance"
+    },
+    {
+      "footprint": "Coilcraft_1008CS_Doc101",
+      "model": "Coilcraft_1008CS_Doc101.wrl",
+      "dimensions_mm": [
+        2.92,
+        2.79,
+        2.182
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Coilcraft Doc101 body plus 0.152mm solder allowance"
+    },
+    {
+      "footprint": "CP_Panasonic_OSCON_C10",
+      "model": "CP_Panasonic_OSCON_C10.wrl",
+      "dimensions_mm": [
+        6.3,
+        6.3,
+        9.9
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Panasonic25SVPG150M C10 maximum cylindrical envelope represented by box"
+    },
+    {
+      "footprint": "WR_BHD_61202021621",
+      "model": "WR_BHD_61202021621.wrl",
+      "dimensions_mm": [
+        9.1,
+        33.06,
+        8.75
+      ],
+      "status": "SOURCED_DIMENSIONAL_ENVELOPE_NOT_QUALIFIED_STEP",
+      "source": "Wurth61202021621 drawing002.001 body envelope; cable/mate additional"
+    }
+  ],
+  "standard_models": "Installed KiCad10 library models are visualization aids, not manufacturer dimensional qualification.",
+  "remote_sensor": "TH801 is two wires to a separately bonded insulated bead; no fictitious axial body.",
+  "missing_standard_connector_models": [
+    {
+      "ref": "J301",
+      "status": "Installed KiCad10 STEP model absent;render shows pads/outline only. Exact2Dmanufacturer landing is separately qualified;not a critical package-connectivity OPEN."
+    },
+    {
+      "ref": "J501",
+      "status": "Installed KiCad10 STEP model absent;render shows pads/outline only. Exact2Dmanufacturer landing is separately qualified;not a critical package-connectivity OPEN."
+    },
+    {
+      "ref": "J701",
+      "status": "Installed KiCad10 STEP model absent;render shows pads/outline only. Exact2Dmanufacturer landing is separately qualified;not a critical package-connectivity OPEN."
+    }
+  ],
+  "E2_reaudit": "All embedded model placement and footprint geometry byte-equivalent to E1;fresh KiCad renders,not newvendor qualification."
+}

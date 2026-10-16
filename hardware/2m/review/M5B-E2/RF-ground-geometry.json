@@ -1,0 +1,27 @@
+{
+  "status": "PASS_NATIVE_FILLED_COPPER_COMPARISON",
+  "regions": [
+    {
+      "layer": "F.Cu",
+      "window_mm": [
+        49,
+        43,
+        190,
+        63
+      ],
+      "symmetric_difference_area_mm2": 0.0
+    },
+    {
+      "layer": "B.Cu",
+      "window_mm": [
+        49,
+        43,
+        190,
+        65
+      ],
+      "symmetric_difference_area_mm2": 0.0
+    }
+  ],
+  "all_RF_footprints_and_tracks_unchanged": true,
+  "limitation": "CAD geometry invariance is not physical RF qualification. Control-side plane refill and the documented notch are outside these regions."
+}

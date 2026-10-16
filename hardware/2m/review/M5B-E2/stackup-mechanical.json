@@ -1,0 +1,113 @@
+{
+  "revision": "M5B-E2",
+  "outline_mm": [
+    180,
+    140
+  ],
+  "layers": 2,
+  "finished_thickness_nominal_mm": 0.8,
+  "dielectric_nominal_mm": 0.64,
+  "finished_copper_each_um": 70,
+  "mask_nominal_each_um": 10,
+  "Dk_ASSUMED": 4.3,
+  "Df_ASSUMED": 0.02,
+  "finish": "ENIG proposed",
+  "fabricator_acceptance": "PENDING_WRITTEN_CONFIRMATION;no files sent",
+  "request_core_thickness_mm": [
+    0.59,
+    0.69
+  ],
+  "request_finished_copper_um": [
+    60,
+    80
+  ],
+  "Dk_analysis_window": [
+    4.1,
+    4.5
+  ],
+  "track_clearance_min_mm": 0.15,
+  "connection_width_min_mm": 0.15,
+  "via_land_drill_mm": [
+    0.6,
+    0.3
+  ],
+  "annular_nominal_mm": 0.15,
+  "Cu_edge_min_mm": 0.5,
+  "hole_clearance_min_mm": 0.25,
+  "mask_web_min_mm": 0.1,
+  "mask_expansion_mm": 0.0,
+  "finished_component_holes": [
+    {
+      "diameter_mm": 0.8,
+      "plating": "PTH",
+      "count": 5
+    },
+    {
+      "diameter_mm": 1.0,
+      "plating": "PTH",
+      "count": 6
+    },
+    {
+      "diameter_mm": 1.1,
+      "plating": "PTH",
+      "count": 23
+    },
+    {
+      "diameter_mm": 1.5,
+      "plating": "PTH",
+      "count": 1
+    },
+    {
+      "diameter_mm": 1.7,
+      "plating": "PTH",
+      "count": 6
+    }
+  ],
+  "via_count": 587,
+  "source_vias": 12,
+  "mounts": [
+    {
+      "ref": "H1",
+      "x_mm": 25,
+      "y_mm": 25,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H2",
+      "x_mm": 195,
+      "y_mm": 25,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H3",
+      "x_mm": 195,
+      "y_mm": 155,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H4",
+      "x_mm": 25,
+      "y_mm": 155,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H5",
+      "x_mm": 112,
+      "y_mm": 32,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H6",
+      "x_mm": 112,
+      "y_mm": 68,
+      "NPTH_mm": 3.2
+    }
+  ],
+  "supplier_confirmations": [
+    "Actual dielectric and laminate Dk;finished not starting copper",
+    "0.15mm features at70um Cu;0.15mm nominal annulus with hole registration",
+    "0.1mm mask webs andRNW isolated6/7/8 lands",
+    "Connector finished hole tolerance and lead diagonal",
+    "Source-via tents and segmented paste;no unsolicited RF CAM changes"
+  ]
+}

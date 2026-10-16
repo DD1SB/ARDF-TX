@@ -1,0 +1,76 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/ERC.json",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/ERC.json\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M.net.xml",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "--schematic-parity",
+      "--refill-zones",
+      "--save-board",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/DRC.json",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 5,
+    "stdout": "Found 11 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/DRC.json\nSaved board\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "report",
+      "--severity-all",
+      "--schematic-parity",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/DRC.rpt",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Found 11 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/DRC.rpt\n",
+    "stderr": "",
+    "render_environment": null
+  }
+]

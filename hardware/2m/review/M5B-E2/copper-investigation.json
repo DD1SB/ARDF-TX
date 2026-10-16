@@ -1,0 +1,157 @@
+{
+  "layer": "F.Cu",
+  "net": "PACK_OK_N",
+  "point_mm": [
+    55.991446,
+    68.075
+  ],
+  "angle_deg": 17.354033132080808,
+  "track_width_mm": 0.15,
+  "minimum_clearance_requirement_mm": 0.15,
+  "original_tip_width_mm": "Tapers toward zero at an acute polygon vertex;not a subminimum nominal track",
+  "root_cause": "Overlapping doubled-back control tracks create an acute union tip. No isolated ground wedge.",
+  "original_warning_count": 12,
+  "corrected_warning_count": 11,
+  "copper_sliver_before": 1,
+  "copper_sliver_after": 0,
+  "native_Gerber_track_draws_confirmed": true,
+  "commands": [
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before-DRC.json",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 12 violations\nFound 0 unconnected items\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before-DRC.json\nSaved board\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before-gerbers/",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/before-gerbers/before-F_Cu.gtl'.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only-DRC.json",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 11 violations\nFound 0 unconnected items\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only-DRC.json\nSaved board\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only-gerbers/",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/sliver-only-gerbers/sliver-only-F_Cu.gtl'.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before-DRC.json",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 16 violations\nFound 0 unconnected items\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before-DRC.json\nSaved board\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before-gerbers/",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/strict-before-gerbers/strict-before-F_Cu.gtl'.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after-DRC.json",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 11 violations\nFound 0 unconnected items\nSaved DRC Report to /home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after-DRC.json\nSaved board\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu",
+        "-o",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after-gerbers/",
+        "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/copper-investigation/after-gerbers/after-F_Cu.gtl'.\n",
+      "stderr": ""
+    }
+  ],
+  "all_physical_measurements": "NOT_RUN"
+}

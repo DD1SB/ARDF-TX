@@ -1,0 +1,371 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M.pdf",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-F_Cu.gtl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-B_Cu.gbl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-F_Paste.gtp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-B_Paste.gbp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-F_Silkscreen.gto'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-B_Silkscreen.gbo'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-F_Mask.gts'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-B_Mask.gbs'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-Edge_Cuts.gm1'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/",
+      "--format",
+      "excellon",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/drill-report.rpt",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-PTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-NPTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-PTH-drl_map.pdf'.\nCreated file '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/gerbers/RF2M-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M-logical.ipc",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Cu,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/top-copper.svg",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/top-copper.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/bottom-copper.svg",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/bottom-copper.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-top.svg",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-top.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Fab,B.Silkscreen,B.Mask,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-bottom.svg",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-bottom.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "B.Fab,B.Silkscreen,B.Mask,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-bottom.pdf",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-bottom.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-BOOST2S.pdf",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_BOOST2S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-BOOST2S.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-BOOST2S.csv",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_BOOST2S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-BOOST2S.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-BUCK4S.pdf",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_BUCK4S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-BUCK4S.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-BUCK4S.csv",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_BUCK4S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-BUCK4S.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-TRAIN_ONLY.pdf",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_TRAIN_ONLY_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/assembly-TRAIN_ONLY.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-TRAIN_ONLY.csv",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M_TRAIN_ONLY_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/placement-TRAIN_ONLY.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "--rotate",
+      "325,0,25",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M-3D.png",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 1.577 s\nRendering: 9 %\nRendering: 15 %\nRendering: 20 %\nRendering: 26 %\nRendering: 34 %\nRendering: 47 %\nRendering: 55 %\nRendering: 66 %\nRendering: 75 %\nRendering: 82 %\nRendering: 88 %\nRendering: 96 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 9.748 s\nSuccessfully created 3D render image\n",
+    "stderr": "",
+    "render_environment": {
+      "DISPLAY": ":97",
+      "LIBGL_ALWAYS_SOFTWARE": "1"
+    }
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M-3D-top.png",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 1.575 s\nRendering: 10 %\nRendering: 17 %\nRendering: 22 %\nRendering: 28 %\nRendering: 37 %\nRendering: 48 %\nRendering: 54 %\nRendering: 64 %\nRendering: 75 %\nRendering: 81 %\nRendering: 87 %\nRendering: 96 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 9.744 s\nSuccessfully created 3D render image\n",
+    "stderr": "",
+    "render_environment": {
+      "DISPLAY": ":97",
+      "LIBGL_ALWAYS_SOFTWARE": "1"
+    }
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "--side",
+      "bottom",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E2/RF2M-3D-bottom.png",
+      "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 1.575 s\nRendering: 11 %\nRendering: 20 %\nRendering: 29 %\nRendering: 39 %\nRendering: 50 %\nRendering: 60 %\nRendering: 71 %\nRendering: 79 %\nRendering: 86 %\nRendering: 96 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 8.220 s\nSuccessfully created 3D render image\n",
+    "stderr": "",
+    "render_environment": {
+      "DISPLAY": ":97",
+      "LIBGL_ALWAYS_SOFTWARE": "1"
+    }
+  }
+]

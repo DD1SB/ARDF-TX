@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-16",
+  "retained_component_evidence": "../M5B-E1/source-log.json",
+  "retained_SHA256": "eb151a6fc70ee425c27d61456ade42f20ac2d2e491a6b02981bd9d28d9e0ae0d",
+  "new_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/KiCad/kicad-source-mirror/10.0.6/pcbnew/drc/drc_test_provider_sliver_checker.cpp",
+      "scope": "GPL2+algorithm;defaults20deg,.08mm,.0008mm",
+      "local_source_SHA256": "d9df8f5c7867a1305969223c30332ae40df5ae75e468e42dc627eaee07568672"
+    },
+    {
+      "url": "https://jlcpcb.com/help/article/jlcpcb-copper-weight",
+      "scope": "2026-09-09 guide;2oz minimum.16mm;therefore NOT automaticacceptance ofthis.15mmboard"
+    },
+    {
+      "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "scope": "0.8mmboardoverallthicknesstolerance\u00b1.1mm,notcorethicknessguarantee"
+    },
+    {
+      "url": "https://www.pcbway.com/capabilities.html",
+      "scope": "Published0.8mm/70um options,.15mmannulus,PTH\u00b1.08/NPTH\u00b1.05;combinedprocessrequiresquoteconfirmation"
+    }
+  ],
+  "no_supplier_contact_or_upload": true
+}

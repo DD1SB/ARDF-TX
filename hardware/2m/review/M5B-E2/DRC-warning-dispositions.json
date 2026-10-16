@@ -1,0 +1,152 @@
+[
+  {
+    "ref": "TL603",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      88.27,
+      55.0
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "MMIC_AC",
+      "ST_IS_A"
+    ]
+  },
+  {
+    "ref": "TL604",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      96.05,
+      55.0
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_IS_B",
+      "ST_IS_C"
+    ]
+  },
+  {
+    "ref": "TP602",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      115.2,
+      55.0
+    ],
+    "geometry": "0.60mm inline bare probe pad,mask opening intentional,no paste;contained within1.102mm line,not a coax stub",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "PA_DRAIN"
+    ]
+  },
+  {
+    "ref": "TP604",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      89.1,
+      55.0
+    ],
+    "geometry": "0.60mm inline bare probe pad,mask opening intentional,no paste;contained within1.102mm line,not a coax stub",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "MMIC_AC"
+    ]
+  },
+  {
+    "ref": "TL605",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      103.95,
+      55.0
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_IS_D",
+      "PA_GATE"
+    ]
+  },
+  {
+    "ref": "TL606",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      114.25,
+      55.0
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "PA_DRAIN",
+      "ST_O_A"
+    ]
+  },
+  {
+    "ref": "TP601",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      108.5,
+      55.0
+    ],
+    "geometry": "0.60mm inline bare probe pad,mask opening intentional,no paste;contained within1.102mm line,not a coax stub",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "PA_GATE"
+    ]
+  },
+  {
+    "ref": "TP603",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      145.3,
+      52.206
+    ],
+    "geometry": "0.60mm inline bare probe pad,mask opening intentional,no paste;contained within1.102mm line,not a coax stub",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_LPF_IN"
+    ]
+  },
+  {
+    "ref": "TL608",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      130.371,
+      52.206
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_O_C",
+      "ST_O_D"
+    ]
+  },
+  {
+    "ref": "TL609",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      144.321,
+      52.206
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_DC_BLOCK",
+      "ST_LPF_IN"
+    ]
+  },
+  {
+    "ref": "TL607",
+    "classification": "B_INTENTIONAL_NON_COMPONENT",
+    "position_mm": [
+      116.45,
+      55.0
+    ],
+    "geometry": "1.102mm-wide real F.Cu line;endpoints are an intentional net tie;mask-covered,no paste,no body",
+    "reason": "No purchased body or assembly volume;component courtyard inapplicable. Copper/mask/edge checks remain active. Adjacent assembly clearances evaluated using actual component courtyards.",
+    "net_or_tie": [
+      "ST_O_A",
+      "ST_O_B"
+    ]
+  }
+]

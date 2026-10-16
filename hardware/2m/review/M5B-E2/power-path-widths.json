@@ -1,0 +1,94 @@
+{
+  "policy": "Main current paths retain >=0.5mm tracks or individual <=2mm pad necks;70um copper. Sense/control branches excluded from main load path, not from DRC.",
+  "paths": [
+    {
+      "from_ref": "J301",
+      "from_pad": "1",
+      "to_ref": "F301",
+      "to_pad": "1",
+      "net": "BAT_RAW",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "F301",
+      "from_pad": "2",
+      "to_ref": "Q309",
+      "to_pad": "3",
+      "net": "BAT_FUSED",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "Q309",
+      "from_pad": "2",
+      "to_ref": "Q305",
+      "to_pad": "2",
+      "net": "VIN_PROT",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "Q305",
+      "from_pad": "3",
+      "to_ref": "L302",
+      "to_pad": "1",
+      "net": "VIN_CONV",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "Q305",
+      "from_pad": "3",
+      "to_ref": "U301",
+      "to_pad": "3",
+      "net": "VIN_CONV",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "U302",
+      "from_pad": "8",
+      "to_ref": "J302",
+      "to_pad": "1",
+      "net": "VBOOST",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "L301",
+      "from_pad": "2",
+      "to_ref": "J302",
+      "to_pad": "3",
+      "net": "VBUCK",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "J302",
+      "from_pad": "2",
+      "to_ref": "Q302",
+      "to_pad": "2",
+      "net": "VREG_RAW",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "Q302",
+      "from_pad": "3",
+      "to_ref": "R309",
+      "to_pad": "1",
+      "net": "VREG_SWITCH",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "R309",
+      "from_pad": "2",
+      "to_ref": "Q401",
+      "to_pad": "3",
+      "net": "VMOD",
+      "wide_or_short_neck_connected": true
+    },
+    {
+      "from_ref": "Q401",
+      "from_pad": "2",
+      "to_ref": "L635",
+      "to_pad": "1",
+      "net": "VPA",
+      "wide_or_short_neck_connected": true
+    }
+  ],
+  "pass_all": true
+}
