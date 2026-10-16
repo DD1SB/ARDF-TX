@@ -1,0 +1,907 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-16T12:15:06",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RF2M.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 46.55,
+                        "y": 84.774999
+                    },
+                    "uuid": "88a3f5db-8ea7-4ad1-8f80-99e39cb64a1d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 51.55,
+                        "y": 80.45
+                    },
+                    "uuid": "d3553d78-0629-44d0-9dbe-1db1431a9f21"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "ad0087f7-db23-4969-b350-e6954b11d8fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "ad0087f7-db23-4969-b350-e6954b11d8fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [CLK_TRAIN] on B.Cu, length 7.7350 mm",
+                    "pos": {
+                        "x": 45.5622,
+                        "y": 54.3199
+                    },
+                    "uuid": "14ec31e3-30ce-4696-aa2e-c60197c0f627"
+                },
+                {
+                    "description": "Track [CLK_TRAIN] on B.Cu, length 1.3432 mm",
+                    "pos": {
+                        "x": 69.9074,
+                        "y": 86.4001
+                    },
+                    "uuid": "bf116729-b0cb-4f0b-9cf6-35b652c241d4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Copper sliver (F.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 46.55,
+                        "y": 84.774999
+                    },
+                    "uuid": "88a3f5db-8ea7-4ad1-8f80-99e39cb64a1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 51.55,
+                        "y": 80.45
+                    },
+                    "uuid": "d3553d78-0629-44d0-9dbe-1db1431a9f21"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CONV_EN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 75.4
+                    },
+                    "uuid": "19e357f8-f266-46d5-989d-55c0a01a6789"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CONV_EN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.5,
+                        "y": 66.5
+                    },
+                    "uuid": "6df3082b-5983-4ac8-ba68-3a8c486555d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CONV_EN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 71.5
+                    },
+                    "uuid": "fa3d21e8-bea1-4687-a531-2cce761c6c2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [VIN_CONV] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 133.675
+                    },
+                    "uuid": "af6186f3-fd61-436e-9d0b-975226339da7"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VIN_CONV] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 50.9,
+                        "y": 122.525
+                    },
+                    "uuid": "c3990116-c25f-436d-8d75-f820402235a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 58.0
+                    },
+                    "uuid": "03c416de-d61d-45c0-b0d3-c2a2ed7004a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 44.825,
+                        "y": 82.15
+                    },
+                    "uuid": "05793972-2edd-49a3-a39b-4044b5d410c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [V3V3] on F.Cu, length 2.3424 mm",
+                    "pos": {
+                        "x": 44.6346,
+                        "y": 83.6791
+                    },
+                    "uuid": "869eeb6e-e0c3-4b5a-98f6-1c78ceb403e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [V3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 37.5
+                    },
+                    "uuid": "114ca324-c70d-4bab-a2cf-9f4d43fa4ec3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [V3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 32.5
+                    },
+                    "uuid": "47849347-8ef5-441d-817f-d2391afa2d79"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [V3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 66.5
+                    },
+                    "uuid": "77a12343-3cfa-44db-a45e-ff7294a661dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [V3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 51.5,
+                        "y": 36.0
+                    },
+                    "uuid": "899c334f-594d-48f9-bef4-fbd4d51312b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [V3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 52.575,
+                        "y": 83.825
+                    },
+                    "uuid": "c0744485-ab15-4ee3-9c54-29432d1a9d5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [SRC_ON] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 75.3412,
+                        "y": 70.4129
+                    },
+                    "uuid": "70ffaa52-c0d4-4970-b79d-16c35d50b779"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [SAFE_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 32.5
+                    },
+                    "uuid": "768311f3-d55e-4182-a638-c6af203c7447"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [SAFE_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 34.0
+                    },
+                    "uuid": "d708f33f-16b5-4b90-bc86-415bd3b6f181"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VIN_PROT] on F.Cu, length 4.4000 mm",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 125.4
+                    },
+                    "uuid": "0d0040af-95ae-4519-8e63-8259f27f053a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VIN_PROT] on F.Cu, length 2.2000 mm",
+                    "pos": {
+                        "x": 52.2,
+                        "y": 114.2
+                    },
+                    "uuid": "389dfa4c-041e-44ba-b5ca-43d53fc1026b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PACK_OK_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 68.0
+                    },
+                    "uuid": "80483544-e13a-47f8-b8ba-4b2fe814f235"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [HARD_OK_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 70.0
+                    },
+                    "uuid": "bcc327e2-b808-4d95-ba6e-7cd04a6b8c14"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PACK_RUN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 68.0
+                    },
+                    "uuid": "595a3671-c591-4865-b96c-999c84440855"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PACK_RUN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.3229,
+                        "y": 110.3448
+                    },
+                    "uuid": "5ee174f1-c612-4d81-9def-a204efd55d91"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CLK_TRAIN] on B.Cu, length 7.7350 mm",
+                    "pos": {
+                        "x": 45.5622,
+                        "y": 54.3199
+                    },
+                    "uuid": "14ec31e3-30ce-4696-aa2e-c60197c0f627"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CLK_TRAIN] on B.Cu, length 1.3432 mm",
+                    "pos": {
+                        "x": 69.9074,
+                        "y": 86.4001
+                    },
+                    "uuid": "bf116729-b0cb-4f0b-9cf6-35b652c241d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [RAIL_RUN] on F.Cu, length 0.5346 mm",
+                    "pos": {
+                        "x": 43.6507,
+                        "y": 111.6409
+                    },
+                    "uuid": "3ebf6141-1307-4a1d-8998-73b1430f3827"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RAIL_RUN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 70.0
+                    },
+                    "uuid": "25c6a3eb-b814-4438-aceb-0dfeaa3713ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [TRAIN_BASE_DRIVE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 128.475,
+                        "y": 81.19
+                    },
+                    "uuid": "d05384a7-7689-4577-bbbf-54c55620c83e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [NORMAL_OFF] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.7863,
+                        "y": 41.7025
+                    },
+                    "uuid": "a8a38757-5947-4d5a-af78-3d564d6a404f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [NORMAL_OFF] on B.Cu, length 3.3623 mm",
+                    "pos": {
+                        "x": 67.451,
+                        "y": 83.1634
+                    },
+                    "uuid": "8acb7dcc-715e-467c-9801-60eb23d0958f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [FB4S] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.35,
+                        "y": 122.95
+                    },
+                    "uuid": "8ddd8a45-eba2-4b2a-8334-1a4d461cada6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PROGRESS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 50.55,
+                        "y": 82.125
+                    },
+                    "uuid": "ba987f93-c09a-4fac-9443-cd3c77a74ade"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PROGRESS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 36.0
+                    },
+                    "uuid": "e866beee-dc15-4cd5-a167-80d0fab28ccd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PROGRESS] on B.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 48.6,
+                        "y": 42.4
+                    },
+                    "uuid": "e042f04b-eaab-4f76-9069-bcc106f2f21e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CWD] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 51.5,
+                        "y": 34.0
+                    },
+                    "uuid": "31740809-738a-40c9-8b77-6cf819829598"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

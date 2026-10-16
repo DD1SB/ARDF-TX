@@ -1,0 +1,77 @@
+{
+  "revision": "M5B-E1",
+  "status": "PASS_FILE_AND_POPULATION_CONSISTENCY",
+  "checks": [
+    {
+      "file": "RF2M-B_Cu.gbl",
+      "size": 374780,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-B_Mask.gbs",
+      "size": 44679,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-B_Paste.gbp",
+      "size": 493,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-B_Silkscreen.gbo",
+      "size": 44689,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-Edge_Cuts.gm1",
+      "size": 723,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-F_Cu.gtl",
+      "size": 1025539,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-F_Mask.gts",
+      "size": 536942,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-F_Paste.gtp",
+      "size": 34460,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-F_Silkscreen.gto",
+      "size": 1414736,
+      "check": "GerberX2 mm/header/revision/end present"
+    },
+    {
+      "file": "RF2M-PTH.drl",
+      "check": "Excellon metric/separate plating/header/end present"
+    },
+    {
+      "file": "RF2M-NPTH.drl",
+      "check": "Excellon metric/separate plating/header/end present"
+    },
+    {
+      "population": "BOOST2S",
+      "placed_purchased_parts": 272,
+      "check": "Exact BOM reference/value set matches native variant export"
+    },
+    {
+      "population": "BUCK4S",
+      "placed_purchased_parts": 268,
+      "check": "Exact BOM reference/value set matches native variant export"
+    },
+    {
+      "population": "TRAIN_ONLY",
+      "placed_purchased_parts": 103,
+      "check": "Exact BOM reference/value set matches native variant export"
+    }
+  ],
+  "scope": "Local export consistency and syntax markers;NOT independent CAM/physical/RF acceptance. DRC retained warnings remain in final-checks.json.",
+  "native_SHA_matches": true,
+  "historical_RF80_preserved": true
+}

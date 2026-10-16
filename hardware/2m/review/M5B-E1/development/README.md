@@ -1,0 +1,1 @@
+Development routing diagnostics and intermediate results only. These do not describe final acceptance. Use ../DRC.json, ../ERC.json and ../final-checks.json for the reviewed native revision. No manufacturing release is implied.

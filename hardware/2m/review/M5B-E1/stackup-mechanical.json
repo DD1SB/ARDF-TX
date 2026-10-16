@@ -1,0 +1,72 @@
+{
+  "revision": "M5B-E1",
+  "outline_mm": [
+    180,
+    140
+  ],
+  "layers": 2,
+  "finished_thickness_mm": 0.8,
+  "dielectric_mm": 0.64,
+  "copper_each_um": 70,
+  "mask_each_um": 10,
+  "material": "FR4 Dk4.3/tand.02 ASSUMED;fabricator actual stackup confirmation required",
+  "finish": "ENIG proposed",
+  "minimum_track_clearance_mm": [
+    0.15,
+    0.15
+  ],
+  "ordinary_via_diameter_drill_mm": [
+    0.6,
+    0.3
+  ],
+  "min_annular_ring_mm": 0.15,
+  "copper_edge_mm": 0.5,
+  "hole_clearance_mm": 0.25,
+  "finished_component_holes_mm": {
+    "0.8": 5,
+    "1.1": 23,
+    "1.5": 1,
+    "1.7": 6,
+    "1.0": 6
+  },
+  "mounts": [
+    {
+      "ref": "H1",
+      "x_mm": 25,
+      "y_mm": 25,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H2",
+      "x_mm": 195,
+      "y_mm": 25,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H3",
+      "x_mm": 195,
+      "y_mm": 155,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H4",
+      "x_mm": 25,
+      "y_mm": 155,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H5",
+      "x_mm": 112,
+      "y_mm": 32,
+      "NPTH_mm": 3.2
+    },
+    {
+      "ref": "H6",
+      "x_mm": 112,
+      "y_mm": 68,
+      "NPTH_mm": 3.2
+    }
+  ],
+  "thermal": "See thermal-contact.json and M5B_E1_POWER_AND_THERMAL.md;external independent sinks/40mm bench support;not a qualified thermal assembly",
+  "manufacturer_confirmation": "0.8mm2oz stackup,0.15mm features,0.30mm PTH/annular ring,0.1mm mask webs,finished connector holes/tolerances,via tents/stencil and electrical-test net aliases"
+}

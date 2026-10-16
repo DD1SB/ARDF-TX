@@ -1,0 +1,454 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-16T12:34:00",
+    "ignored_checks": [
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RF2M.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [ARM] of R104 on F.Cu",
+                    "pos": {
+                        "x": 27.175,
+                        "y": 110.0
+                    },
+                    "uuid": "c0d28a69-2e84-40b4-888b-20b0f3f867f1"
+                },
+                {
+                    "description": "Track [ARM] on B.Cu, length 9.5000 mm",
+                    "pos": {
+                        "x": 31.4,
+                        "y": 86.3
+                    },
+                    "uuid": "6e1488ec-a3b2-493b-8620-467c4eaacced"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [MODULE_ID] on F.Cu, length 6.2150 mm",
+                    "pos": {
+                        "x": 29.175,
+                        "y": 103.685
+                    },
+                    "uuid": "ca222150-dbb1-4061-a8d5-4ea23dd60b07"
+                },
+                {
+                    "description": "Pad 2 [GND] of R104 on F.Cu",
+                    "pos": {
+                        "x": 28.825,
+                        "y": 110.0
+                    },
+                    "uuid": "7c6092c6-495b-49d8-aac2-56fa53b187b6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [MODULE_ID] of R101 on F.Cu",
+                    "pos": {
+                        "x": 29.175,
+                        "y": 109.9
+                    },
+                    "uuid": "6fd163b5-1e81-4565-ac27-0c1dfd565fb1"
+                },
+                {
+                    "description": "Pad 2 [GND] of R104 on F.Cu",
+                    "pos": {
+                        "x": 28.825,
+                        "y": 110.0
+                    },
+                    "uuid": "7c6092c6-495b-49d8-aac2-56fa53b187b6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Pad 2 [GND] of R104 on F.Cu",
+                    "pos": {
+                        "x": 28.825,
+                        "y": 110.0
+                    },
+                    "uuid": "7c6092c6-495b-49d8-aac2-56fa53b187b6"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R101",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 109.9
+                    },
+                    "uuid": "dd7448a5-2122-446e-b01d-967a30f31ed5"
+                },
+                {
+                    "description": "Footprint R104",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 110.0
+                    },
+                    "uuid": "de3eeba1-9721-4b0f-814e-fa1408540006"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and MODULE_ID)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R104 on F.Cu",
+                    "pos": {
+                        "x": 28.825,
+                        "y": 110.0
+                    },
+                    "uuid": "7c6092c6-495b-49d8-aac2-56fa53b187b6"
+                },
+                {
+                    "description": "Track [MODULE_ID] on F.Cu, length 6.2150 mm",
+                    "pos": {
+                        "x": 29.175,
+                        "y": 103.685
+                    },
+                    "uuid": "ca222150-dbb1-4061-a8d5-4ea23dd60b07"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets MODULE_ID and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [MODULE_ID] of R101 on F.Cu",
+                    "pos": {
+                        "x": 29.175,
+                        "y": 109.9
+                    },
+                    "uuid": "6fd163b5-1e81-4565-ac27-0c1dfd565fb1"
+                },
+                {
+                    "description": "Pad 2 [GND] of R104 on F.Cu",
+                    "pos": {
+                        "x": 28.825,
+                        "y": 110.0
+                    },
+                    "uuid": "7c6092c6-495b-49d8-aac2-56fa53b187b6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Copper sliver (F.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1392 mm)",
+            "items": [
+                {
+                    "description": "Segment of R104 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.762742,
+                        "y": 110.5225
+                    },
+                    "uuid": "01df21ae-057f-4562-99bd-22e53d2de10b"
+                },
+                {
+                    "description": "PCB text 'R101' on F.Silkscreen",
+                    "pos": {
+                        "x": 26.355,
+                        "y": 109.9
+                    },
+                    "uuid": "6d3307f4-ee8e-4019-ae51-03c68ab5c7cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1258 mm)",
+            "items": [
+                {
+                    "description": "Segment of R104 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.762742,
+                        "y": 109.4775
+                    },
+                    "uuid": "58a94c3a-b5f7-496f-9115-22ceae6dab35"
+                },
+                {
+                    "description": "PCB text 'R101' on F.Silkscreen",
+                    "pos": {
+                        "x": 26.355,
+                        "y": 109.9
+                    },
+                    "uuid": "6d3307f4-ee8e-4019-ae51-03c68ab5c7cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'R101' on F.Silkscreen",
+                    "pos": {
+                        "x": 26.355,
+                        "y": 109.9
+                    },
+                    "uuid": "6d3307f4-ee8e-4019-ae51-03c68ab5c7cb"
+                },
+                {
+                    "description": "Pad 1 [ARM] of R104 on F.Cu",
+                    "pos": {
+                        "x": 27.175,
+                        "y": 110.0
+                    },
+                    "uuid": "c0d28a69-2e84-40b4-888b-20b0f3f867f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R104",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 110.0
+                    },
+                    "uuid": "de3eeba1-9721-4b0f-814e-fa1408540006"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL603",
+                    "pos": {
+                        "x": 88.27,
+                        "y": 55.0
+                    },
+                    "uuid": "07402b50-0942-4bae-a774-447e0a97da6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL604",
+                    "pos": {
+                        "x": 96.05,
+                        "y": 55.0
+                    },
+                    "uuid": "2077228b-c3bc-4902-b892-07443f55787e"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP602",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP604",
+                    "pos": {
+                        "x": 88.27,
+                        "y": 55.0
+                    },
+                    "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL605",
+                    "pos": {
+                        "x": 103.95,
+                        "y": 55.0
+                    },
+                    "uuid": "49ee00e2-af9d-447f-977b-e38061e61253"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL606",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "4aeda808-47fe-4db8-b6b7-54b3abdf2198"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP601",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 55.0
+                    },
+                    "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP603",
+                    "pos": {
+                        "x": 146.321,
+                        "y": 52.206
+                    },
+                    "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL608",
+                    "pos": {
+                        "x": 130.371,
+                        "y": 52.206
+                    },
+                    "uuid": "a8562b86-c89d-403f-a6d9-cd9694efa945"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL609",
+                    "pos": {
+                        "x": 144.321,
+                        "y": 52.206
+                    },
+                    "uuid": "c093d7bd-5e16-4032-8f4a-2b0f3674a216"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL607",
+                    "pos": {
+                        "x": 116.45,
+                        "y": 55.0
+                    },
+                    "uuid": "eebe51c0-8886-4fd4-8258-9b0ce22bdbb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [ARM] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 57.675,
+                        "y": 92.2
+                    },
+                    "uuid": "6802cdeb-1468-4faf-93e0-94af28ef5cb3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

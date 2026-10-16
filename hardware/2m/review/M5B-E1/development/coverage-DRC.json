@@ -1,0 +1,393 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-16T12:26:44",
+    "ignored_checks": [
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "ARDF_2M:Probe_Pad_0p6 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP601",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 55.0
+                    },
+                    "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:Probe_Pad_0p6 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP602",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:Probe_Pad_0p6 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP603",
+                    "pos": {
+                        "x": 146.321,
+                        "y": 52.206
+                    },
+                    "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_2M:Probe_Pad_0p6 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP604",
+                    "pos": {
+                        "x": 88.27,
+                        "y": 55.0
+                    },
+                    "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        }
+    ],
+    "source": "RF2M.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "ad0087f7-db23-4969-b350-e6954b11d8fb"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 20.5,
+                        "y": 20.5
+                    },
+                    "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [VIN_CONV] of U302 on F.Cu",
+                    "pos": {
+                        "x": 77.6,
+                        "y": 128.5
+                    },
+                    "uuid": "d41db330-4590-487d-8aae-9c2ec7a05c2d"
+                },
+                {
+                    "description": "Track [VIN_CONV] on F.Cu, length 0.9250 mm",
+                    "pos": {
+                        "x": 66.8,
+                        "y": 134.475
+                    },
+                    "uuid": "2970ca71-3c5a-4c2c-ab7a-b2e455edb4f9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Copper sliver (F.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL603",
+                    "pos": {
+                        "x": 88.27,
+                        "y": 55.0
+                    },
+                    "uuid": "07402b50-0942-4bae-a774-447e0a97da6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL604",
+                    "pos": {
+                        "x": 96.05,
+                        "y": 55.0
+                    },
+                    "uuid": "2077228b-c3bc-4902-b892-07443f55787e"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP602",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP604",
+                    "pos": {
+                        "x": 88.27,
+                        "y": 55.0
+                    },
+                    "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL605",
+                    "pos": {
+                        "x": 103.95,
+                        "y": 55.0
+                    },
+                    "uuid": "49ee00e2-af9d-447f-977b-e38061e61253"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL606",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 55.0
+                    },
+                    "uuid": "4aeda808-47fe-4db8-b6b7-54b3abdf2198"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP601",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 55.0
+                    },
+                    "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TP603",
+                    "pos": {
+                        "x": 146.321,
+                        "y": 52.206
+                    },
+                    "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL608",
+                    "pos": {
+                        "x": 130.371,
+                        "y": 52.206
+                    },
+                    "uuid": "a8562b86-c89d-403f-a6d9-cd9694efa945"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL609",
+                    "pos": {
+                        "x": 144.321,
+                        "y": 52.206
+                    },
+                    "uuid": "c093d7bd-5e16-4032-8f4a-2b0f3674a216"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint TL607",
+                    "pos": {
+                        "x": 116.45,
+                        "y": 55.0
+                    },
+                    "uuid": "eebe51c0-8886-4fd4-8258-9b0ce22bdbb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [PROGRESS] on F.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 50.55,
+                        "y": 83.325
+                    },
+                    "uuid": "231450bd-70c1-46f0-bcb5-d8c5d386b2d7"
+                },
+                {
+                    "description": "Via [PROGRESS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 50.375,
+                        "y": 83.15
+                    },
+                    "uuid": "8fc95fec-da2c-438b-9acd-938c960f8b07"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [PROGRESS] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 83.3
+                    },
+                    "uuid": "706f2cab-b409-4467-b640-45f23f38b598"
+                },
+                {
+                    "description": "Via [PROGRESS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 50.375,
+                        "y": 83.15
+                    },
+                    "uuid": "8fc95fec-da2c-438b-9acd-938c960f8b07"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [PROGRESS] on F.Cu, length 0.0559 mm",
+                    "pos": {
+                        "x": 50.55,
+                        "y": 83.325
+                    },
+                    "uuid": "d2f70b42-0f40-4cc0-9d3d-0f9c7d7a633b"
+                },
+                {
+                    "description": "Via [PROGRESS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 50.375,
+                        "y": 83.15
+                    },
+                    "uuid": "8fc95fec-da2c-438b-9acd-938c960f8b07"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        }
+    ]
+}

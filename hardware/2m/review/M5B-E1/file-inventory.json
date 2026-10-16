@@ -1,0 +1,1272 @@
+{
+  "revision": "M5B-E1",
+  "authority": "Review only,no manufacture authorization",
+  "files": [
+    {
+      "path": "docs/M5B_E1_BOM.md",
+      "bytes": 5252,
+      "SHA256": "f5d86228e56d13b8175b3398baea718191f481eeed8ccbed3e33974438f59c0e",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_BRINGUP.md",
+      "bytes": 11376,
+      "SHA256": "42ac197be5dfa13b323f2464514d43d8b4dce3017a0b025964ec640e869c8b53",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_COMPONENT_QUALIFICATION.md",
+      "bytes": 7705,
+      "SHA256": "9c81c57282fc2563441e9c81dbfea56b4d22839ddb8142fc077b8e7cb1c032aa",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_ELECTRICAL_CORRECTIONS.md",
+      "bytes": 8229,
+      "SHA256": "a2dd40339053a63abb2af09c80f37cc1de99fb43d44576492bed1c6d5a4c16a8",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_POWER_AND_THERMAL.md",
+      "bytes": 12292,
+      "SHA256": "123eced98622826713db39d5bc3978c6eea280f31298e0d52f808d1544f5370c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_REVIEW_DECISION.md",
+      "bytes": 4439,
+      "SHA256": "71012ffbf6848c99679033210100b67b2aca4a48e27e97b0a93c6f3efe69913f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "docs/M5B_E1_RF_LAYOUT.md",
+      "bytes": 8472,
+      "SHA256": "c838f11f942845f599da7fec3df3ac74f9b03a2ddd641382d8e698dd8f087a21",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/01_interface_source.kicad_sch",
+      "bytes": 83909,
+      "SHA256": "5099156917b0dfbe731e4c5e45e8df5a392eb51b9f7755d998be1d8d22170442",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/02_interlocks.kicad_sch",
+      "bytes": 85753,
+      "SHA256": "7e3d04c04b690831244dab0241bdb7706c5eb4f969e7686eb501113d223eb6a7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/02_interlocksb1.kicad_sch",
+      "bytes": 55925,
+      "SHA256": "0ce95c7a3e0d7f2ae51d2b5b2c46f3de9da030bf4fb6f8bddd0e3c338673af5d",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/03_input_power.kicad_sch",
+      "bytes": 96686,
+      "SHA256": "25bd304850d157b204f9ee7dbab9d40cb70239c64261dd1da00b13aaf952598a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/03_input_powerb1.kicad_sch",
+      "bytes": 32807,
+      "SHA256": "22d21ba8e5e121b82c37ef93fac52e870bc9d72849f3d15690679ae9ea6c8128",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/04_boost_driver_supply.kicad_sch",
+      "bytes": 59475,
+      "SHA256": "153188d455cd4ada7c856477b6dd8cfa4fc6ea0dd3855e2acb45f37a6e9f467f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/05_am.kicad_sch",
+      "bytes": 86971,
+      "SHA256": "c58c779738c0e28f71f3b139e5d4b91eb601af3e519b1c0d1d9a9b5c339a36b3",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/05_amb1.kicad_sch",
+      "bytes": 17070,
+      "SHA256": "195f36d776213f2ed01020af0cb233f6692234144a769371c7367d3a3ff62425",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/06_source_driver_bias.kicad_sch",
+      "bytes": 76607,
+      "SHA256": "46b5267401c2769bb51c12a16c9ba716a2555d82c6b7028e8166f4ce4c80525c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/06_source_driver_biasb1.kicad_sch",
+      "bytes": 11761,
+      "SHA256": "f3a8b017a8aa60df81ebca25473a168094f61bfa00fcb354521e7733e9bba6bb",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/06b_st_matching.kicad_sch",
+      "bytes": 46190,
+      "SHA256": "48070210d792d9ed42cf3386652d8de67036b5ab2da01450b38998a3e4375aee",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/06c_st_lpf.kicad_sch",
+      "bytes": 25227,
+      "SHA256": "4064bac1cc2b6b3596785c4fbdbc3f729362b542e039070bcd99b478377fe190",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/07_training.kicad_sch",
+      "bytes": 80905,
+      "SHA256": "d758a1720b6ba702553cac55afa21519e10b0f2aabcb6ec3238720cbdda7aa98",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/07_trainingb1.kicad_sch",
+      "bytes": 37939,
+      "SHA256": "306c78cd8a860775efce3ea63960b5664e86e64e7daf3a0b0797e5328cc1f0e3",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/08_protection.kicad_sch",
+      "bytes": 77973,
+      "SHA256": "48b4324fbb871f68a8a23375137587bbe8d355df8dc05119e08953f5e6526c21",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/08_protectionb1.kicad_sch",
+      "bytes": 67994,
+      "SHA256": "4e89c9cdfc7c0e74bf332abbd0a0a0cf14a12871a6f9c32d531d5f59114d8c84",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/10_enable_detail.kicad_sch",
+      "bytes": 70006,
+      "SHA256": "ba5fa7e22a06ba31cdd0557df926a5cc3319f14e09f283ee7385143504237c1b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/11_external_contract.kicad_sch",
+      "bytes": 19407,
+      "SHA256": "40df63f463dea7730f0207e0e43dc4631665684c56b555b556a3595a396fdc65",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/12_m5b_qualification.kicad_sch",
+      "bytes": 34615,
+      "SHA256": "35528960f1202a5d7ea9c9c9c66cd3ab00feb20aba417c31306a75d1d0e55f92",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/Bourns_SRP1265A.wrl",
+      "bytes": 272,
+      "SHA256": "bd8f3e92f8e872ba2ec373cc447fbf25537d1b8f4015f417b61d644de0194aea",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/CP_Panasonic_OSCON_C10.wrl",
+      "bytes": 272,
+      "SHA256": "23fbcb941571ba147eb4bdfda97a2ac9570c32d514be79272f1f3baa297fed83",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/Coilcraft_0603HC_Doc218.wrl",
+      "bytes": 272,
+      "SHA256": "1a530cd63624d6049ff08cd8dca5cb0bf43c9a1101072d023684b16615f4ef08",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/Coilcraft_1008CS_Doc101.wrl",
+      "bytes": 272,
+      "SHA256": "0bd48a7bda86ead732652d6ec9ab494cb05444d9a700a47e47ba0144f3b4f5a7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/Coilcraft_1812SMS_Doc184.wrl",
+      "bytes": 272,
+      "SHA256": "cd22a4e95be0fff3adb9a99ca624016e1b9442819f960e957f0070d94b65c1eb",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/Coilcraft_A05T_Doc107.wrl",
+      "bytes": 272,
+      "SHA256": "9d6898343cfca4de03ad23ffa7af0847b1ecf2ea049a0844782dedb2237b0362",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/PD54008L_ST_GDS_5x5.wrl",
+      "bytes": 272,
+      "SHA256": "c3797b178f72517a9a23d0f2c5141053709c1a1a07d119eca7936ce24c68985b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/PHA1_DF782_RevG.wrl",
+      "bytes": 272,
+      "SHA256": "a2d1e028405c05fde055127d12646f97b4c57af6de6c63e01f9887ecc1d24a39",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/TI_RNW0013A_4222804C.wrl",
+      "bytes": 272,
+      "SHA256": "1609cb4d2f0b7503864079d78fea802535dd5875333513990bd764bad69b4a26",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.3dshapes/WR_BHD_61202021621.wrl",
+      "bytes": 274,
+      "SHA256": "51f263d23639034588644b0c29a62582bf09daece0038af4fd1690eddafea2a1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.kicad_sym",
+      "bytes": 153266,
+      "SHA256": "84cec632e8ea23b96f6763076085a06217f1171ba852cc99a20b1904bcfd88af",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/ATTRIBUTION.md",
+      "bytes": 1313,
+      "SHA256": "05d863023f1ac919614baf24520d597f4e82fb3708a7cbf4944f2fecf06164bf",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Bourns_SRP1265A.kicad_mod",
+      "bytes": 930,
+      "SHA256": "631af1d9da890fdbc45bea553edabe99acdfc8f223621e22b196012eefca5ec5",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/CP_Panasonic_OSCON_C10.kicad_mod",
+      "bytes": 985,
+      "SHA256": "cea41da8a31107cec27c966ac376ddbfeb7395edbbc7f3d9d5c4a88d6ba4946b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Coilcraft_0603HC_Doc218.kicad_mod",
+      "bytes": 936,
+      "SHA256": "85d9ef9f193f1cfc96dd3b53240306c8bc8bbed6e93ee18b87dce95acf3b7523",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Coilcraft_1008CS_Doc101.kicad_mod",
+      "bytes": 916,
+      "SHA256": "2e10367fc70cb39220b879d60282c5d7ebddd79473d02f9e99890d3ddbf776c7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Coilcraft_1812SMS_Doc184.kicad_mod",
+      "bytes": 955,
+      "SHA256": "7dfcf0e8cf8224b71864fe52ae3fd15f88f5e88e046bfd862faeeaa404cdb6f1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Coilcraft_A05T_Doc107.kicad_mod",
+      "bytes": 950,
+      "SHA256": "287707b990db5c0c7114eaee584a0a28d2a132452a075702f1d07f485746f9d2",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/KICAD-LIBRARY-LICENSE.md",
+      "bytes": 2101,
+      "SHA256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/NTC_Remote_2Wire.kicad_mod",
+      "bytes": 782,
+      "SHA256": "5f6160d1ee068e42d3d153158e66dca129f571f17abb372e99575980f7dbd4eb",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/PD54008L_ST_GDS_5x5.kicad_mod",
+      "bytes": 1595,
+      "SHA256": "aea76472327285152f15a1664426a02187de3d194534197e8b5f315ef1122404",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/PHA1_DF782_RevG.kicad_mod",
+      "bytes": 1956,
+      "SHA256": "02cd0a8ae7a4ee8f801057eb9efa98969b541d0053f9730f1795f0ad52349bac",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/Probe_Pad_0p6.kicad_mod",
+      "bytes": 292,
+      "SHA256": "7aed57db931d34bfa138068583f81cc48b7e75c0b9d2c9e821285679e990327a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/RF_GSG_Test.kicad_mod",
+      "bytes": 778,
+      "SHA256": "30e4df2af0cb0212b152384661d54ae8ebe7da62cb98b7e57e696a54722bcdca",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TI_RNW0013A_4222804C.kicad_mod",
+      "bytes": 3356,
+      "SHA256": "a341256ad7d59104a9b0be28597b2f500332c74059fc98ccf95ed9f0709555d0",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_11p0mm.kicad_mod",
+      "bytes": 407,
+      "SHA256": "c29a8328c3e3a0eb092abe0aed7d7f9defca602f4e2678cc1f6b0cf495585541",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_12p4mm.kicad_mod",
+      "bytes": 407,
+      "SHA256": "205576a1de5ae6be820bbdf9e280c690837fffebf9ac2da2223559647a7b4ef3",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_2p0mm.kicad_mod",
+      "bytes": 404,
+      "SHA256": "1eab07a226cc5b01fb903ab7976318b5dab3c3aacf609ef4e28602940e53a3a2",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_2p2mm.kicad_mod",
+      "bytes": 404,
+      "SHA256": "e3a3afe364f1c340e5b8f80321af8881bd149c4320348ac0641e15eb6f0e6dde",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_5p8mm.kicad_mod",
+      "bytes": 404,
+      "SHA256": "5df43493dcd7b5b8c5ef0433fba223ee59c328e13f71b07d7a27eb9cdd38811e",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_6p23mm.kicad_mod",
+      "bytes": 407,
+      "SHA256": "5529b7dad3188c32fe1eb38b276fd73090ccaaa9e11c002892dc66c7460b6f9e",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/TL50_6p62mm.kicad_mod",
+      "bytes": 407,
+      "SHA256": "6abda49ded8cdee483f57ef20aa039e9a4bfc3e90d8f5c6d89f2732efec9d280",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/ARDF_2M.pretty/WR_BHD_61202021621.kicad_mod",
+      "bytes": 6982,
+      "SHA256": "7a2b3ec26e5c4080eca60a7881e3ce0e6704f9ece2fec8076252bcd2bbaf5cf9",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/RF2M.electrical.json",
+      "bytes": 284837,
+      "SHA256": "6679a67ffc76700bb216733b653f31bd69f53567c8f095a5b54d777ccd969f75",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/RF2M.kicad_pcb",
+      "bytes": 3421638,
+      "SHA256": "91b138335f03caa0b2851d4dc3dc71f746546a6b1f430a36cf244ee5dcc638c9",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/RF2M.kicad_pro",
+      "bytes": 9745,
+      "SHA256": "d6fff8cece3c884d6919f369a439db3ee80d5b51eb5f7e811596c14751e5e979",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/RF2M.kicad_sch",
+      "bytes": 10587,
+      "SHA256": "eacaae284d54f01c53a1c92233dcf8aec1a1004346d33c268280f7d2bc11b1d8",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/fp-lib-table",
+      "bytes": 179,
+      "SHA256": "ab6ca913cfb1288ca1ef2777a0345aff742dcfa5b1bce1ff9d4a7c1afe9da1b6",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/3D-model-status.json",
+      "bytes": 4092,
+      "SHA256": "e42fe4c7acc861a8664f2f2ac0afbdc8c22f0ebd927cc8c236b3144f2c9e8be2",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/BOM_BOOST2S.csv",
+      "bytes": 67972,
+      "SHA256": "e7da84df06cfe70e5489c6b740810ac0a509d3d4f5c9266ba0f898262aad8155",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/BOM_BUCK4S.csv",
+      "bytes": 66994,
+      "SHA256": "7c61e5dc3f53eaad681fe2567c0043c5b35df117315037954339eb22dd6d7cfa",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/BOM_TRAIN_ONLY.csv",
+      "bytes": 26025,
+      "SHA256": "658e6dd8f959f2513cfd8c9a6c04bdf592e9a825293717ac158b6b3dbf532e2a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/DRC-coverage.json",
+      "bytes": 9100,
+      "SHA256": "4a3e71d3500b478ecce7aa2cdb2b807dc1a7f4a7c5bba922a454e5cded1a4820",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/DRC.json",
+      "bytes": 5966,
+      "SHA256": "c729af4da34f364892951cee70ec681efa6a508021db8df8950c1f0df6632629",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/DRC.rpt",
+      "bytes": 1816,
+      "SHA256": "5a6982bda6243ac39f27a1531a57ee29ecf75d2e4047825c2d530e2614f259d0",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/ERC.json",
+      "bytes": 5379,
+      "SHA256": "fddb5903081deba5b6a4a9f7a1a018fc94dd3c8008c3efa74a13c73a44afe072",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/MANUFACTURING.md",
+      "bytes": 1730,
+      "SHA256": "694982f4b5edce4f055895d254e2dd27af53d95449a8bc79df2c401d6b7459e4",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/README.md",
+      "bytes": 2920,
+      "SHA256": "0980ea46eec18f3608be0542af85c64106a42359f499bea12e9f87a8c82955a9",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M-3D-bottom.png",
+      "bytes": 304062,
+      "SHA256": "e5ea3d24078e70a91c5872f3725e59dcb13da703e118d52e057cb9ed222a8bfd",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M-3D-top.png",
+      "bytes": 775547,
+      "SHA256": "b9971d0f65f132569440cd01faaecd0ce5dce582c582ca522294e50a79761d45",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M-3D.png",
+      "bytes": 1824315,
+      "SHA256": "80b6435ccfd62acdc2921e54375813c98fc9a0ee858cba3320b47da047057496",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M-logical.ipc",
+      "bytes": 106163,
+      "SHA256": "39155ef26a750d56328a323c1e0add9d2ca7ec0c116c2416f82b54277705718f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M-physical-netties.ipc",
+      "bytes": 106163,
+      "SHA256": "05b54add962a90fe5781d9a1b39d4215db6fa8f301e13a1ef1111694958ab366",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M.net.xml",
+      "bytes": 691242,
+      "SHA256": "03da5624f2a44ee7db470a3a547d3c71729b5b46a6459b129a8035eaf1e79779",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M.pdf",
+      "bytes": 1201964,
+      "SHA256": "a79ee84979c6945faf274c3877ea32487216650cf8a5006bb1bf1088b7c11fb9",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF2M_BOM.csv",
+      "bytes": 482335,
+      "SHA256": "841ec59f9bef98e928d293f028ec0a58c53db0d7bd539b205ce27a286cb4be88",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/RF_power.csv",
+      "bytes": 1188,
+      "SHA256": "cd3767bc5a1d8251a75674821108c89a5164c4c81ef80449361c5df787235460",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/acceptance-register.csv",
+      "bytes": 1146,
+      "SHA256": "9638e0300383a7e51ed2ef8c3e741b4ccdb0af30a6511aa9ca01c6812ea6757c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/artifact-audit.json",
+      "bytes": 2149,
+      "SHA256": "6537f37e1330dd96649dd98e1f966b01420325155781bd5ce23a42d7fdf0fedc",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-BOOST2S.pdf",
+      "bytes": 570634,
+      "SHA256": "01c10a01b434a44c4d9ffc7ce5d68432bb8704babb566b22aa8bfe1c57c76ab5",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-BUCK4S.pdf",
+      "bytes": 570955,
+      "SHA256": "9d19166ac0da5edafb56bd0b500bc4de05939a1d99899d21cf3373adfabe707a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-TRAIN_ONLY.pdf",
+      "bytes": 586671,
+      "SHA256": "0403d1a93d90053b59ed910e212f6d2c935917e0f98af466358417ed0189e8c1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-bottom.pdf",
+      "bytes": 278169,
+      "SHA256": "205fc99aa6c475ec0699fc7faac7710c5ee55a818fe64afd8b2df926ced63232",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-bottom.svg",
+      "bytes": 38434,
+      "SHA256": "c288833946efaaee6ed7786586aa33506913b41080e1f7726e2768fddb1058d1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-top.svg",
+      "bytes": 3940625,
+      "SHA256": "01e4a58f1b47587673a093590a740f1e33cbea671d4d4c05fe9d0eb1eb1fee1d",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/bottom-copper.svg",
+      "bytes": 337827,
+      "SHA256": "e6d04c82a951c0869056e96169aa5df449d4b00d96ea125c0c40bf954c70c64b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/calculations.json",
+      "bytes": 4136,
+      "SHA256": "127001da2b6b0ba7dd20c9a77c2e90164365d05a49696e6d1061609b289defc1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/check-commands.json",
+      "bytes": 6055,
+      "SHA256": "d4f37976dbafdd79daccac4aa6f14fcb01c9be0a63022baf166f2db9b160f074",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/component-fields.csv",
+      "bytes": 65742,
+      "SHA256": "f59d0948c4b7a54d9eaf39d62ae7ea3c5eaad1a249121328674ca1a27b859c44",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/cost-delta.csv",
+      "bytes": 812,
+      "SHA256": "d70f1629904351a0804949ad493c2a29981f6074e9b980ea5ebd948bf35dffc4",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/costs.json",
+      "bytes": 11136,
+      "SHA256": "4c6a6ebd196dcb06124de8acd744f2b5898c3602a87969c57a52968211cfa734",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/README.md",
+      "bytes": 228,
+      "SHA256": "45f767c89eab5ead36e3547e7f6633eaf7e2b152e76d62120325e687611e4004",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/RF2M.dsn",
+      "bytes": 168321,
+      "SHA256": "5e51ae74ada9ad8fd0f27fd03073e5bbe1bfec17f1a1f657ba0adba2a4e6c872",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/bus-gaps.json",
+      "bytes": 383,
+      "SHA256": "480fc42566d5ec1edad15ce6f67e572dad7b92a9d5413e6cfe382841f1ac8d22",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/clean-gaps.json",
+      "bytes": 27659,
+      "SHA256": "1af8b727c3af5713c4274434168df1a1379cd8c6ef708954132935a21042eab7",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control-final.json",
+      "bytes": 15102,
+      "SHA256": "cde6cf71ecae7ff85936fa5b18553802e6b01ac71dabede8b53430a9034a4dcb",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control-gaps.json",
+      "bytes": 60475,
+      "SHA256": "babea2e2b5640656355f48841d5e5adc8de635dac778b223e1e106fb3bb0910c",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control-ground-placement.json",
+      "bytes": 309,
+      "SHA256": "8bcfe6084cea80ee4705b07beabc31ae680406a6aafbaa071f7382245e0fe4a5",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control-placement-refinement.json",
+      "bytes": 988,
+      "SHA256": "bba9ffe3423d7a196edbcaf5b55656757445a7177d7398c4357e1830cfd73ea8",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control2-gaps.json",
+      "bytes": 47842,
+      "SHA256": "039666dff316d5565949beb54045d56ae5f32687d205b80551a4c495e8b0ae27",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/control3-gaps.json",
+      "bytes": 47877,
+      "SHA256": "68a0c955f66568fc7a58d0354b073687b2facd1ea7e78234d5385e5bf1759d6b",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/copper-cleanup.json",
+      "bytes": 1938,
+      "SHA256": "5a5ccc5482db22d8d81084faccbd68d56fe5d90de2183ff415efa7648f3bf9c4",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/coverage-DRC.json",
+      "bytes": 12892,
+      "SHA256": "0b9b4ee2743ba8ecd542e46fff26272881c0bc6bf2d163a6ea13118bc58eda8b",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/current-DRC.json",
+      "bytes": 30265,
+      "SHA256": "5249d9a1af5cd78f16b450ccb4c7ac98e3077f5fd642b0ff15ed65d245f7e94f",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/escape-gaps.json",
+      "bytes": 20242,
+      "SHA256": "e78b59a79ad2374a353961ac65ca2839f57717cce59e6e3280ed75e10fcc13eb",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/escape2-gaps.json",
+      "bytes": 40102,
+      "SHA256": "263919a667f1ea74b1c7e495fec77469de8cf43df379d85491ef3e60f5c1b1fe",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/fine-gaps.json",
+      "bytes": 31076,
+      "SHA256": "8bfda3f9822ce113f3b61b21f9d5bd4bb40124b9ea80283b5e7dd2a068b7b66a",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/finish-gaps.json",
+      "bytes": 33743,
+      "SHA256": "b2ca866359303088fd8b2337ef46799e843483950a44a18fde446ef9964da524",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/finished-route-DRC.json",
+      "bytes": 14162,
+      "SHA256": "00948cd6be4c786fff14d69cd3ab7bd6f7bf47778e16f71c628b6a69df0c40ba",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/ground-escape-DRC.json",
+      "bytes": 21665,
+      "SHA256": "97abdf8ad66ff28952bba61de35eb202ec384d2237bd91e7b6546543b9a866fc",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/ground-fine-gaps.json",
+      "bytes": 429,
+      "SHA256": "5f94f3aa24057609d5c307feb373975a0a058555f811a05dddebb8ea82778f2e",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/ground-link-gaps.json",
+      "bytes": 1554,
+      "SHA256": "0925925569c31a3344857bf96964668d3233a552cdf4acb64d5c653b84e95f96",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/ground-region-stitching.json",
+      "bytes": 8872,
+      "SHA256": "79f1985df7a05350170e49d81788ed82879aa9ff460f67b6da78998cfa146160",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/ground90-DRC.json",
+      "bytes": 6712,
+      "SHA256": "ffd4961a62c8cf8baef5e5b9502377d54c6c972feac0c85e58317a088eee78b8",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/last-arm-gap.json",
+      "bytes": 7253,
+      "SHA256": "29d1b3ad38c94f3b388993ee18e530fe68c4da2ec70918b150e9a764d79a0478",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/last-gaps.json",
+      "bytes": 17840,
+      "SHA256": "52a621bf575b5273783eeff4ff5fe537986ad8a7f36e10c9c64e8e8dd9550543",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/local-pin-escapes.json",
+      "bytes": 7727,
+      "SHA256": "a986d3bba17361814ba48ebe5217c29225d35ad3c489bc0ef2f04b062f6f7670",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/local-route-completion.json",
+      "bytes": 420948,
+      "SHA256": "2a543078a517f11c0c95821910eaa50c12bd2c0d9eb72d6220797097232fdbac",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/localized-placement-changes.json",
+      "bytes": 401,
+      "SHA256": "ecf88f2cfba4772e3ef0d7f2e2c7701a7d839cda4e312ec62ec5cd17f37639bb",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/manual-routes.json",
+      "bytes": 46761,
+      "SHA256": "6f77d4ff61b96902c8308ec9cc0df46458561f08295100c9430e03ad67ffacd8",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/placement-DRC.json",
+      "bytes": 496354,
+      "SHA256": "da72c8b279020421651eef566034e7326ba954acfa5c089622bb29a03bef4655",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/placement.json",
+      "bytes": 59432,
+      "SHA256": "e27abc02a2790a40a6c26bb2b136b75a1090bd58ab7703fdcce1b28499d1243c",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/power-routes.json",
+      "bytes": 79632,
+      "SHA256": "4bc2fd0e11f7a2691de682a2956ba7f3d3e31c0e3b9fa60297b3272e5e5cae6d",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/power-width-gaps.json",
+      "bytes": 929,
+      "SHA256": "326cec002860583a9bae6d03f999c9ee4d29bd485678fd7b183ef597595ed9de",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/pre-route-DRC.json",
+      "bytes": 499892,
+      "SHA256": "73b97d0ac688e5fdd74d6225c8b22ada07bff0cf7da2defc26852234833979a0",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/remaining-gaps.json",
+      "bytes": 27635,
+      "SHA256": "92bfb36aef85be17df92b486ffe470bdb7deda4b6bab53c9dda3b860c0ef942d",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/route-check.json",
+      "bytes": 10169,
+      "SHA256": "2499193e348cefa9456204192a45bc702a39fd4bc430a67b39dbae3c944ab424",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/route-gaps.json",
+      "bytes": 75497,
+      "SHA256": "cc42bd236622253904c5e41ab7afcef3a861bbdaf8b0a03204dce5dcfaf05bad",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/routed-DRC.json",
+      "bytes": 75642,
+      "SHA256": "e441f20f2e4b75e3bddfd40db7ffcb1d617613a517e45a67f6e6e768848e2c80",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/routing-remnant-trim.json",
+      "bytes": 4238,
+      "SHA256": "38b279f9dc5a662db2e63d2feda93de55d6825651106cdc2e2e57de9cb00d128",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/routing-repair.json",
+      "bytes": 2739,
+      "SHA256": "70a991f3926d3480844d24f372b9fb776614ae2df5c7292ad5df455c64c84dbf",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/small-reroute.json",
+      "bytes": 7793,
+      "SHA256": "40c712cdcf69dcbf281189a39df7cffc646ee683031b96281d0386ce53c50585",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-0-DRC.json",
+      "bytes": 16737,
+      "SHA256": "72fea6878af85d6dd77f652d7f615f4605b999f7158ebe082b8e546f103858f6",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-1-DRC.json",
+      "bytes": 15257,
+      "SHA256": "da843b6e2c4ccd31a7fa2212f99b163ccf3e36059e6cabadb72c6d923bc303d4",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-10-DRC.json",
+      "bytes": 11972,
+      "SHA256": "be019e24c073ab617146260332ce985d4f7ac951bdd953fe1fbc1ea70901093e",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-11-DRC.json",
+      "bytes": 11968,
+      "SHA256": "10152755f7bc0074a285064c9bad38f7a27584f7db2c0d140d541b64ce0e3a3b",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-2-DRC.json",
+      "bytes": 14781,
+      "SHA256": "0baa1232bb8467564edd08d907dd9b1579aa53fca20debfebb551443a5a58cd3",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-3-DRC.json",
+      "bytes": 14267,
+      "SHA256": "539a8ac2978e528a8140c5bcdc3ee6de712211849aac4095ff35059d283f70bc",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-4-DRC.json",
+      "bytes": 12950,
+      "SHA256": "d52ae65725f56ebf68614cefe71e9bff49cb90efc18171253ca997965d0bd93f",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-5-DRC.json",
+      "bytes": 12964,
+      "SHA256": "e3ec552b60b559a806a2ea844fdf3054d3842530ed766e59cb4a493c08be97cf",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-6-DRC.json",
+      "bytes": 12471,
+      "SHA256": "4ea3ffc63efb7763f9c39d2e3a9b8dd7c1b990be8669ccc1187d7ba914a6e6b5",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-7-DRC.json",
+      "bytes": 12469,
+      "SHA256": "3705e265d9a1c4d8a0f18293f316c84c45085329782b5fe7f8e00ca41ce8c0df",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-8-DRC.json",
+      "bytes": 11968,
+      "SHA256": "c1263b6018a3676450910f1943a1eaa6c208c82f2eb53a652ceee5a130636aba",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/trim-9-DRC.json",
+      "bytes": 11980,
+      "SHA256": "0524f6843ad462e14bcaeadc0e0c19c3458e480dfd6fc0570140442411612936",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/development/width-DRC.json",
+      "bytes": 37625,
+      "SHA256": "29d8990a2c5db4b83585266e79d516742b3b83d17ea2f62b71da0ff78dd54ce4",
+      "role": "NON_FINAL_DEVELOPMENT"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/drill-report.rpt",
+      "bytes": 824,
+      "SHA256": "cdddf0e46c4cd17ccd25312adc4311e1bb9fe624211d357ef2ca981d4f52a80f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/endurance.csv",
+      "bytes": 8683,
+      "SHA256": "9156b4da1534419cad4774f2e3e98ec4910a76b678dc92cf24c4d49876351e4e",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/export-commands.json",
+      "bytes": 32249,
+      "SHA256": "a6156fa7abc1b9d638409f080e99abe153016a93b582976ebd95bd2f5e149e30",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/fabrication-net-aliases.json",
+      "bytes": 545,
+      "SHA256": "0345e9e9c76b8f0b24327f9242c907d1f40bde3e8ece8ab6423fe65dbd5d2621",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/final-checks.json",
+      "bytes": 728,
+      "SHA256": "b8eae7f6e0580b83093e410579df6e2eaf44dc2cdf3f611b8a016d5c8f322f12",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-B_Cu.gbl",
+      "bytes": 374780,
+      "SHA256": "c9dc82f888d7e36013762cfe80132e00d9d447fd208c65b671f332c38a993c72",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-B_Mask.gbs",
+      "bytes": 44679,
+      "SHA256": "c1a09ece3f6503a4e06be4e7b384549f7132317fc21a403b03a7fe1947f23b6d",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-B_Paste.gbp",
+      "bytes": 493,
+      "SHA256": "2599e220ce9ab96f63e4d45b6bff58c9ccfc52e66babe4c806e38906948bff44",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-B_Silkscreen.gbo",
+      "bytes": 44689,
+      "SHA256": "a68b5711f2e939eea46729979c334ce65be4badaca649a23b6489009e6ace667",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-Edge_Cuts.gm1",
+      "bytes": 723,
+      "SHA256": "7910af8332b4cfe64e0a654c4acdc23d6c1f6a589125332b3ff54ae494c33c61",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-F_Cu.gtl",
+      "bytes": 1025539,
+      "SHA256": "21d8721e64edd4143706115d4251d2e952020dcc2d4c465609fa9f1be042c953",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-F_Mask.gts",
+      "bytes": 536942,
+      "SHA256": "ffd74f562404b53519386871d0b8393f1004b3c1b2081787fc07dfe212081a35",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-F_Paste.gtp",
+      "bytes": 34460,
+      "SHA256": "4c27493df9eb4bcada35d8af9b83bafac625f00bbdc7b12149b357d299aa46f0",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-F_Silkscreen.gto",
+      "bytes": 1414736,
+      "SHA256": "5f5213cde521e22a60f22fae8285689f7927bf8b386fced9b8ec38eac35f9c45",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-NPTH-drl_map.pdf",
+      "bytes": 11968,
+      "SHA256": "e241d561a06b5bf637ac6cf168bef5dc65b09b66d360960b28dbd1bcd87e13ff",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-NPTH.drl",
+      "bytes": 448,
+      "SHA256": "2ef4d9038135863e9747eba3786fde83d705cde635cd3531e6e55868035c2b0a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-PTH-drl_map.pdf",
+      "bytes": 32883,
+      "SHA256": "c3c90975b7972b69baee1fdebd539b344dac359701705f6ef02d913f2b83b4ca",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-PTH.drl",
+      "bytes": 9690,
+      "SHA256": "b3f8c2b781a1e60c27c9faa524ff546d6b77b39bef5a046772a69f91d8d4855a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/gerbers/RF2M-job.gbrjob",
+      "bytes": 2677,
+      "SHA256": "6b2034e560ef09c4bb6e378f7346e496c9c749276d2aa18f06180721c3f5bfe1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/input-match-sensitivity.csv",
+      "bytes": 1885,
+      "SHA256": "4c98db8f8adc139416bbac72d0c46bee55b5777ce62a0a0eb6c05e83f0a5ee9b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/native-inputs.json",
+      "bytes": 6865,
+      "SHA256": "e637b202311e440864deb5473a5ffbdb15deae75ba3841dc6c5e7dc8ffbe8a48",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/pad-connectivity.csv",
+      "bytes": 58469,
+      "SHA256": "9a3e09e6d81f38c91e371a1658bf80ef303371025844aa581bc695ff775d6e05",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/pinout-audit.json",
+      "bytes": 35184,
+      "SHA256": "c673641a0a466f682170c8de8ef97a8fc25fa9db3c5901389347d10481bf3492",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/placement-BOOST2S.csv",
+      "bytes": 19308,
+      "SHA256": "5fe42383a19d136285210067a32903e6f5a54a6014293e9238ead57f2311c0ed",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/placement-BUCK4S.csv",
+      "bytes": 19024,
+      "SHA256": "83afdaa342cdd978430d7765b0274d26dcba5a40bbe9517a6615b1beea373ccf",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/placement-TRAIN_ONLY.csv",
+      "bytes": 7337,
+      "SHA256": "06855438a7a32fabb7f1de2930c83d08aacbdeb8f9081c525d15691f1c8a43c1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/power-path-widths.json",
+      "bytes": 2120,
+      "SHA256": "b726d303812ad34e4a2f7af6694690cd4b1f55d2d9b1d5ebcd267724ec3dde84",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/power-states.csv",
+      "bytes": 775,
+      "SHA256": "d385248e5fa54ea3098d93d510f05c86331dca655056293c6e419609eac4ad00",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/preserved-baseline.json",
+      "bytes": 66167,
+      "SHA256": "b2f586853533edc559d5fb36654dca81520ceafe8be8d66362f887f2442c36c0",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/schematic-delta.json",
+      "bytes": 105109,
+      "SHA256": "c32189f1c8998ff60859235bdaa1d5fc1af99c9ff00f2ed28cc0d690834075b8",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/sensitivity.csv",
+      "bytes": 2945,
+      "SHA256": "0b670f7f7903c7bcda48ba68473ef6b76a3e3b8206dadc248e489bf5d5ae4bf7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/silkscreen-disposition.json",
+      "bytes": 432,
+      "SHA256": "a26013ec83c00d54344b4cca1b53e33ed0c7a2635ac7ee02d64c44b2c6c2d5d1",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/source-log.json",
+      "bytes": 7590,
+      "SHA256": "eb151a6fc70ee425c27d61456ade42f20ac2d2e491a6b02981bd9d28d9e0ae0d",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/stackup-mechanical.json",
+      "bytes": 1521,
+      "SHA256": "80e58a581bea19853b0271bccd0bf26b50d5e0e0afd0432f3f2332ec4956564c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/thermal-contact.json",
+      "bytes": 1049,
+      "SHA256": "2468fcc5b56bd8392b8e85b0b3aa703a2e5c8cd271b4533645b43b66d82bc61c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/thermal.csv",
+      "bytes": 818,
+      "SHA256": "07092b9918d70dba7592efae00c4a67acccfd948e59a79f4d33379572f2f9c7c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/top-copper.svg",
+      "bytes": 1183197,
+      "SHA256": "60d279c73a5ab54531c9d3d7a608bda344dbbbb23330a02cd8c629336ecc8382",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/transmission-lines.csv",
+      "bytes": 1157,
+      "SHA256": "a716d1871e76c27eeb5854ec2355377ccf2a4713dfb780fd3d943f3698903ce2",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/verification.json",
+      "bytes": 5088,
+      "SHA256": "79743f03b288f01124f16fad983f513d40d9a42592ce06af49996bb0cba490e7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "hardware/2m/sym-lib-table",
+      "bytes": 172,
+      "SHA256": "ddd1aa9efdd5dc8a6a09838385575cb38167690541bfe62915c0e970acd92bc9",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_3d.py",
+      "bytes": 3401,
+      "SHA256": "68b10139b0a7ef375117d2077d8a08ffca2e413f074990c516d3428d34fe232a",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_artifacts.py",
+      "bytes": 4313,
+      "SHA256": "b5f2dc82edc7c00870294c380ac0eb4f2b2b566f3c7fc69ac0d6c307b86e71cb",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_cleanup.py",
+      "bytes": 1548,
+      "SHA256": "8553545f62da6c45b0ba5956684882a7e0434727ba9e76b2c0fda8467f12cc27",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_control_fanout.py",
+      "bytes": 2871,
+      "SHA256": "79c6f8580bb20ae98abe802069823e9e0ad5c295831f9d5d7cc9523991fecef3",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_design.py",
+      "bytes": 18940,
+      "SHA256": "ab36381376977f49dff1e58b1b0dea996b7287df77ac2574d80a9925869118f0",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_exports.py",
+      "bytes": 4456,
+      "SHA256": "42955948342576eff0f383d1ed1505e675b02297442a2ca7ea5bd286331b8a6e",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_finish.py",
+      "bytes": 10030,
+      "SHA256": "f432e738099aaf3c2927b307e6af98af454f174b7ae6c0eb6e0d4d38151bd169",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_footprints.py",
+      "bytes": 6528,
+      "SHA256": "eba05a37047c1e3d49ba1185e8193de3f88bbde44dbb311e62e60b79dd020f7b",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_ground_links.py",
+      "bytes": 1490,
+      "SHA256": "1759ea444e5b1d6a1cf2abf00cca01232fec1f89fc74a7328684a6d80fde2aeb",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_models.py",
+      "bytes": 14736,
+      "SHA256": "6d3c9329a4492a1afbc47b517981dc3e899b4e6025371bd932c68de7caf48a39",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_pcb.py",
+      "bytes": 26843,
+      "SHA256": "641d375f9b553a8203309b942005b34854e8185a9faadc5f3d1623a40db832af",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_pin_escape.py",
+      "bytes": 3104,
+      "SHA256": "7eb5e167b925e360c3a498549481dfeeec547616580cb3661f4e5d6414ade271",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_power_widths.py",
+      "bytes": 1306,
+      "SHA256": "37d66f2d5eb57a9f183daac14aa93d1506bbdee345d952a32ca57e6b2a824a97",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_repair.py",
+      "bytes": 927,
+      "SHA256": "8ca52c7a9e3a119afd23b6bc2e06882dadf7e46aa0348437abd3190b84e39949",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_review.py",
+      "bytes": 21393,
+      "SHA256": "c8b0261919c9ebda407a57133984fc42a987d1b665d886d201b61af1c3d1517c",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_route_completion.py",
+      "bytes": 10848,
+      "SHA256": "01beb918b4587672eacb025d35cd5dd27e08c0f6e2e46a561451a178a5599075",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_stitch.py",
+      "bytes": 4384,
+      "SHA256": "33017b7ac88c0a4c1a8aa5256e78e91f17f58d04f97e363a544fb37bfa3dc966",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_thermal_window.py",
+      "bytes": 2219,
+      "SHA256": "b936012cd581a4e38c954f7d260b8a6c3b32fde599e9cbb588360629c646110f",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_trim.py",
+      "bytes": 1161,
+      "SHA256": "f1b3300df0ba5929abe14a104acdc1a14d007132350e861c242c31a07db7e8b7",
+      "role": "FINAL_REVIEW"
+    },
+    {
+      "path": "tools/m5b_verify.py",
+      "bytes": 9163,
+      "SHA256": "e9beaa0b9b73b23283827a4f9eb60ec61fce8633e8abef5737810bfa9034ed36",
+      "role": "FINAL_REVIEW"
+    }
+  ]
+}

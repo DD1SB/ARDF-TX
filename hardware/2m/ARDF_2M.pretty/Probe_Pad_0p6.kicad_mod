@@ -1,0 +1,3 @@
+(footprint "Probe_Pad_0p6"(version 20241229)(generator "pcbnew")(layer "F.Cu")
+ (attr board_only exclude_from_bom exclude_from_pos_files)(descr "Bare0.6mm probe contact;no physical component/courtyard;inline RF observation")
+ (pad "1" smd circle(at 0 0)(size .6 .6)(layers "F.Cu" "F.Mask")))

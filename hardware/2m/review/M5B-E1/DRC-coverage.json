@@ -1,0 +1,271 @@
+{
+  "tool": "10.0.6",
+  "rules": {
+    "max_error": 0.005,
+    "min_clearance": 0.15,
+    "min_connection": 0.0,
+    "min_copper_edge_clearance": 0.5,
+    "min_groove_width": 0.0,
+    "min_hole_clearance": 0.25,
+    "min_hole_to_hole": 0.25,
+    "min_microvia_diameter": 0.2,
+    "min_microvia_drill": 0.1,
+    "min_resolved_spokes": 2,
+    "min_silk_clearance": 0.15,
+    "min_text_height": 0.8,
+    "min_text_thickness": 0.08,
+    "min_through_hole_diameter": 0.3,
+    "min_track_width": 0.15,
+    "min_via_annular_width": 0.15,
+    "min_via_diameter": 0.6,
+    "solder_mask_to_copper_clearance": 0.0,
+    "use_height_for_length_calcs": true
+  },
+  "rule_severities": {
+    "annular_width": "error",
+    "clearance": "error",
+    "connection_width": "warning",
+    "copper_edge_clearance": "error",
+    "copper_sliver": "warning",
+    "courtyards_overlap": "error",
+    "creepage": "error",
+    "diff_pair_gap_out_of_range": "error",
+    "diff_pair_uncoupled_length_too_long": "error",
+    "drill_out_of_range": "error",
+    "duplicate_footprints": "warning",
+    "extra_footprint": "warning",
+    "footprint": "error",
+    "footprint_filters_mismatch": "warning",
+    "footprint_symbol_field_mismatch": "warning",
+    "footprint_symbol_mismatch": "warning",
+    "footprint_type_mismatch": "warning",
+    "hole_clearance": "error",
+    "hole_to_hole": "warning",
+    "holes_co_located": "warning",
+    "invalid_outline": "error",
+    "isolated_copper": "warning",
+    "item_on_disabled_layer": "error",
+    "items_not_allowed": "error",
+    "length_out_of_range": "error",
+    "lib_footprint_issues": "warning",
+    "lib_footprint_mismatch": "warning",
+    "malformed_courtyard": "error",
+    "microvia_drill_out_of_range": "error",
+    "mirrored_text_on_front_layer": "warning",
+    "missing_courtyard": "warning",
+    "missing_footprint": "warning",
+    "missing_tuning_profile": "warning",
+    "net_conflict": "warning",
+    "nonmirrored_text_on_back_layer": "warning",
+    "npth_inside_courtyard": "error",
+    "padstack": "warning",
+    "pth_inside_courtyard": "error",
+    "shorting_items": "error",
+    "silk_edge_clearance": "warning",
+    "silk_over_copper": "warning",
+    "silk_overlap": "warning",
+    "skew_out_of_range": "error",
+    "solder_mask_bridge": "error",
+    "starved_thermal": "error",
+    "text_height": "warning",
+    "text_on_edge_cuts": "error",
+    "text_thickness": "warning",
+    "through_hole_pad_without_hole": "error",
+    "too_many_vias": "error",
+    "track_angle": "error",
+    "track_dangling": "warning",
+    "track_not_centered_on_via": "warning",
+    "track_on_post_machined_layer": "error",
+    "track_segment_length": "error",
+    "track_width": "error",
+    "tracks_crossing": "error",
+    "tuning_profile_track_geometries": "ignore",
+    "unconnected_items": "error",
+    "unresolved_variable": "error",
+    "via_dangling": "warning",
+    "zones_intersect": "error"
+  },
+  "exclusions": [],
+  "disabled": {
+    "tuning_profile_track_geometries": "ignore"
+  },
+  "disabled_rationale": "Only tuning_profile_track_geometries is irrelevant: no tuning profiles, delay lines or differential pairs are used. Courtyard, footprint filters/type, via centering, mask, silk, drill, thermal, copper and parity checks are enabled.",
+  "results": {
+    "copper_sliver": 1,
+    "missing_courtyard": 11
+  },
+  "dispositions": [
+    {
+      "type": "copper_sliver",
+      "severity": "warning",
+      "items": [],
+      "disposition": "Unlocated F.Cu sliver warning: KiCad JSON/report provides no item UUID or coordinate. Not waived or called false-positive. Independent native/Gerber CAM inspection must close it before ordering; do not alter RF copper without review."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL603",
+          "pos": {
+            "x": 88.27,
+            "y": 55.0
+          },
+          "uuid": "07402b50-0942-4bae-a774-447e0a97da6a"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL604",
+          "pos": {
+            "x": 96.05,
+            "y": 55.0
+          },
+          "uuid": "2077228b-c3bc-4902-b892-07443f55787e"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TP602",
+          "pos": {
+            "x": 115.2,
+            "y": 55.0
+          },
+          "uuid": "3db2a4e0-8178-4c06-83ea-c6428b8f9e4d"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TP604",
+          "pos": {
+            "x": 89.1,
+            "y": 55.0
+          },
+          "uuid": "44edc493-1811-49d1-88ba-d58594fc6251"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL605",
+          "pos": {
+            "x": 103.95,
+            "y": 55.0
+          },
+          "uuid": "49ee00e2-af9d-447f-977b-e38061e61253"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL606",
+          "pos": {
+            "x": 114.25,
+            "y": 55.0
+          },
+          "uuid": "4aeda808-47fe-4db8-b6b7-54b3abdf2198"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TP601",
+          "pos": {
+            "x": 108.5,
+            "y": 55.0
+          },
+          "uuid": "58c96c87-ddea-4368-9069-95c2770b3408"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TP603",
+          "pos": {
+            "x": 145.3,
+            "y": 52.206
+          },
+          "uuid": "91ddd4bf-6cf4-415f-a198-425cf69594dc"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL608",
+          "pos": {
+            "x": 130.371,
+            "y": 52.206
+          },
+          "uuid": "a8562b86-c89d-403f-a6d9-cd9694efa945"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL609",
+          "pos": {
+            "x": 144.321,
+            "y": 52.206
+          },
+          "uuid": "c093d7bd-5e16-4032-8f4a-2b0f3674a216"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    },
+    {
+      "type": "missing_courtyard",
+      "severity": "warning",
+      "items": [
+        {
+          "description": "Footprint TL607",
+          "pos": {
+            "x": 116.45,
+            "y": 55.0
+          },
+          "uuid": "eebe51c0-8886-4fd4-8258-9b0ce22bdbb4"
+        }
+      ],
+      "disposition": "Bare copper transmission-line/probe feature, no purchased body or assembly collision volume. Relevant copper/mask/edge checks stay enabled."
+    }
+  ],
+  "supplemental_marker_API": "KiCad10.0.6 pcbnew.WriteDRCReport read-only localization attempt failed with missing Pgm process/context (exit139). Not used for final acceptance. CLI DRC is the reproduced authoritative check;GUI/CAM localization still needed."
+}

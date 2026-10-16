@@ -1,0 +1,443 @@
+[
+  {
+    "ref": "U201",
+    "pin": "2",
+    "net": "CWD",
+    "pin_mm": [
+      46.55,
+      82.675
+    ],
+    "escape_via_mm": [
+      44.55,
+      82.675
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "9e14fb15-5d5a-42b7-bf79-aed4c6ad2308",
+        "net": "V3V3",
+        "start": [
+          45.8,
+          82.2
+        ],
+        "end": [
+          45.8,
+          83.2
+        ]
+      },
+      {
+        "uuid": "b9414aea-b3ea-4f42-bd7b-ef13c53aab2e",
+        "net": "V3V3",
+        "start": [
+          46.2887,
+          82.025
+        ],
+        "end": [
+          44.6346,
+          83.6791
+        ]
+      },
+      {
+        "uuid": "87547a1d-2e18-404e-8cdc-3efe129fbb00",
+        "net": "PREPARE",
+        "start": [
+          52.0,
+          75.8
+        ],
+        "end": [
+          43.9,
+          83.9
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U201",
+    "pin": "6",
+    "net": "PROGRESS",
+    "pin_mm": [
+      49.45,
+      83.325
+    ],
+    "escape_via_mm": [
+      50.550000000000004,
+      82.125
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "a528f733-574d-4cd1-a7e3-45f1c11efd82",
+        "net": "V3V3",
+        "start": [
+          50.2609,
+          81.5109
+        ],
+        "end": [
+          51.55,
+          82.8
+        ]
+      },
+      {
+        "uuid": "1a244973-6f9a-44b2-8aa3-17c82a1f8406",
+        "net": "V3V3",
+        "start": [
+          50.35,
+          81.6
+        ],
+        "end": [
+          50.35,
+          81.6
+        ]
+      },
+      {
+        "uuid": "30265f8f-db9c-474d-bdaf-ef91b31ea548",
+        "net": "V3V3",
+        "start": [
+          52.575,
+          83.825
+        ],
+        "end": [
+          50.35,
+          81.6
+        ]
+      },
+      {
+        "uuid": "16953f88-dc82-4158-af75-aba82fc0b0e9",
+        "net": "SAFE_N",
+        "start": [
+          50.1889,
+          83.6987
+        ],
+        "end": [
+          50.334,
+          83.5536
+        ]
+      },
+      {
+        "uuid": "68c9b0b3-df37-4f21-9931-9f397fa8722b",
+        "net": "SAFE_N",
+        "start": [
+          51.4032,
+          83.5536
+        ],
+        "end": [
+          50.334,
+          83.5536
+        ]
+      },
+      {
+        "uuid": "7ef3fa13-e13b-49ed-8aaf-ce55d0f147b0",
+        "net": "SAFE_N",
+        "start": [
+          50.3198,
+          82.8995
+        ],
+        "end": [
+          49.6745,
+          82.8995
+        ]
+      },
+      {
+        "uuid": "8f146014-fdd3-4358-9f5e-53b3239aafc9",
+        "net": "SAFE_N",
+        "start": [
+          50.3198,
+          83.5394
+        ],
+        "end": [
+          50.3198,
+          82.8995
+        ]
+      },
+      {
+        "uuid": "a2353edd-68e1-414c-8c02-050e39c9923c",
+        "net": "SAFE_N",
+        "start": [
+          50.334,
+          83.5536
+        ],
+        "end": [
+          50.3198,
+          83.5394
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U304",
+    "pin": "8",
+    "net": "V3V3",
+    "pin_mm": [
+      45.4,
+      110.25
+    ],
+    "escape_via_mm": [
+      49.4,
+      110.25
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "2071a711-b30b-423f-adfa-7e19b8ea2b27",
+        "net": "VIN_PROT",
+        "start": [
+          47.0,
+          112.4
+        ],
+        "end": [
+          47.0,
+          109.4
+        ]
+      },
+      {
+        "uuid": "cd0bc31d-7e3b-416b-8a6a-948b67599228",
+        "net": "VIN_PROT",
+        "start": [
+          46.8,
+          109.2
+        ],
+        "end": [
+          46.8,
+          112.2
+        ]
+      },
+      {
+        "uuid": "d492e150-88e9-401c-a764-68d6b8bcfa02",
+        "net": "VIN_PROT",
+        "start": [
+          46.8,
+          112.2
+        ],
+        "end": [
+          46.8,
+          109.2
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U304",
+    "pin": "2",
+    "net": "PACK_OK_N",
+    "pin_mm": [
+      42.6,
+      110.75
+    ],
+    "escape_via_mm": [
+      40.6,
+      110.75
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "4b49f092-d79d-4b6f-a036-69735aba5ea0",
+        "net": "VIN_PROT",
+        "start": [
+          36.8,
+          110.4
+        ],
+        "end": [
+          40.0,
+          110.4
+        ]
+      },
+      {
+        "uuid": "8461b6ac-d38f-4c74-a544-02c94cdc0968",
+        "net": "VIN_PROT",
+        "start": [
+          40.0,
+          110.4
+        ],
+        "end": [
+          36.8,
+          110.4
+        ]
+      },
+      {
+        "uuid": "bf1603af-0591-4ffa-95ad-f3d1db99367e",
+        "net": "VIN_PROT",
+        "start": [
+          40.0,
+          110.4
+        ],
+        "end": [
+          36.8,
+          110.4
+        ]
+      },
+      {
+        "uuid": "c3c0a44d-4a3c-435a-97f6-20e318c73200",
+        "net": "VIN_PROT",
+        "start": [
+          41.2,
+          109.2
+        ],
+        "end": [
+          40.0,
+          110.4
+        ]
+      },
+      {
+        "uuid": "c9d3fef7-d6cf-4574-9da1-853a84a5cfaa",
+        "net": "VIN_PROT",
+        "start": [
+          40.0,
+          110.4
+        ],
+        "end": [
+          41.2,
+          109.2
+        ]
+      },
+      {
+        "uuid": "ff41f9d8-c50f-44b2-989c-e89e3baf442c",
+        "net": "VIN_PROT",
+        "start": [
+          41.2,
+          109.2
+        ],
+        "end": [
+          40.0,
+          110.4
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U304",
+    "pin": "6",
+    "net": "HARD_OK_N",
+    "pin_mm": [
+      45.4,
+      111.25
+    ],
+    "escape_via_mm": [
+      46.5,
+      110.05
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "37ca494f-0440-4ac7-a421-adb9e0dd69d0",
+        "net": "V3V3",
+        "start": [
+          45.4,
+          110.25
+        ],
+        "end": [
+          49.4,
+          110.25
+        ]
+      },
+      {
+        "uuid": "9f02d03c-d48e-4363-b304-33e6751d8ddb",
+        "net": "VIN_PROT",
+        "start": [
+          47.0,
+          109.4
+        ],
+        "end": [
+          46.8,
+          109.2
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U401",
+    "pin": "14",
+    "net": "TRAIN_BASE_DRIVE",
+    "pin_mm": [
+      126.475,
+      81.19
+    ],
+    "escape_via_mm": [
+      128.475,
+      81.19
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "32dd0beb-1363-4225-b5e2-419ae4a15c24",
+        "net": "TRAIN_COMMAND",
+        "start": [
+          127.8,
+          82.1
+        ],
+        "end": [
+          127.8,
+          80.6
+        ]
+      },
+      {
+        "uuid": "67e36f63-8d42-4b4d-a38e-9382423c969b",
+        "net": "VPA",
+        "start": [
+          128.6,
+          82.0
+        ],
+        "end": [
+          131.4,
+          82.0
+        ]
+      },
+      {
+        "uuid": "ff5ebb1e-0a0f-49ae-9f86-b37a8bb681f2",
+        "net": "VPA",
+        "start": [
+          128.6,
+          78.0
+        ],
+        "end": [
+          128.6,
+          82.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U301",
+    "pin": "4",
+    "net": "FB4S",
+    "pin_mm": [
+      52.35,
+      122.95
+    ],
+    "escape_via_mm": [
+      54.35,
+      122.95
+    ],
+    "removed_conflicting_segments": [
+      {
+        "uuid": "0ebb281d-ba0b-4a00-83e1-a64514a726c0",
+        "net": "VIN_CONV",
+        "start": [
+          50.975,
+          122.55
+        ],
+        "end": [
+          54.875,
+          122.55
+        ]
+      },
+      {
+        "uuid": "01be5e04-1d71-4f47-8f84-afee685891a2",
+        "net": "VIN_PROT",
+        "start": [
+          54.8,
+          119.0
+        ],
+        "end": [
+          54.8,
+          125.0
+        ]
+      },
+      {
+        "uuid": "3d36d15e-fea2-42ad-9186-54875bf8993b",
+        "net": "SW4S",
+        "start": [
+          53.8,
+          124.0
+        ],
+        "end": [
+          53.8,
+          120.0
+        ]
+      }
+    ]
+  }
+]

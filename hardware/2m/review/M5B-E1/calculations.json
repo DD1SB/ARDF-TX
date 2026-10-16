@@ -1,0 +1,114 @@
+{
+  "current_protection": {
+    "old_required_INA_output_V": 3.7520089917385553,
+    "INA_supply_V": 3.3,
+    "new_required_INA_output_V": 2.4433553562462915,
+    "new_trip_A": 1.7965848207693318,
+    "new_shunt_ohm": 0.068,
+    "new_divider_top_ohm": 5110,
+    "new_divider_lower_ohm": 4020,
+    "qualification": "Static scale correction only;dynamic response NOT_RUN"
+  },
+  "MMIC_bias": {
+    "old_choke_max_DCR_ohm": 1.65,
+    "new_choke_max_DCR_ohm": 0.033,
+    "new_choke_nH": 150,
+    "at180mA_old_drop_V": 0.297,
+    "at180mA_new_drop_V": 0.00594,
+    "bias_min_before_switch_trace_loss_V": 4.904778,
+    "qualification": "DC tolerance model only;measure MMIC bias and RF output under load"
+  },
+  "status": "ANALYTIC_ESTIMATES_ONLY",
+  "microstrip": {
+    "finished_mm": 0.8,
+    "h_mm": 0.64,
+    "t_mm": 0.07,
+    "FR4_Dk_assumed": 4.3,
+    "width_mm": 1.102,
+    "Z0_ohm": 50.00015889372497,
+    "effective_Dk": 3.2682916717375705,
+    "approximation": "Hammerstad/Jensen quasi-static, soldermask/pads/fringing not included"
+  },
+  "initial_ST_input_network_50ohm_target_load": {
+    "real_ohm": 9.644037816939734,
+    "imag_ohm": -24.389071316635277,
+    "interpretation": "Inverse network calculation INCLUDING the retained33nH gate-feed shunt in the assumed load;NOT manufacturer144MHzimpedance or a measured50ohm interstage",
+    "assumed_intrinsic_R_ohm": 3,
+    "assumed_intrinsic_C_pF": 80,
+    "assumed_gate_with_feed_real_ohm": 9.884847181510901,
+    "assumed_gate_with_feed_imag_ohm": -23.553721408167526,
+    "assumed_source_Zin_real_ohm": 52.10939527037032,
+    "assumed_source_Zin_imag_ohm": -4.025824412541502,
+    "assumed_model_return_loss_dB": 27.037427078278483,
+    "limitations": "Lossless lumped model;CISS is1MHz/zero-bias value,not144MHzlarge-signal;pad/bias-decoupler ESL/device feedback omitted. Physical tuning mandatory."
+  },
+  "driver": {
+    "target_dBm": 19,
+    "target_mW": 79.43282347242814,
+    "P1dB_typical_nearby_MHz": [
+      50,
+      200
+    ],
+    "P1dB_typical_dBm": [
+      22.7,
+      22.64
+    ],
+    "initial_pi_series_ohm": 71.5,
+    "initial_pi_shunts_ohm": 96.5,
+    "initial_pad_dB": 10,
+    "calibration_pad_options_dB": [
+      6,
+      8,
+      10
+    ],
+    "required_PA_gain_dB_at_minus1dBd": 18.85553705317095,
+    "source_budget_assumed": {
+      "buffer_fundamental_dBm": 10.4,
+      "filter_loss_dB": 1.0,
+      "pad6dB_driver_input_dBm": 3.4,
+      "MMIC_gain_dB": 16,
+      "MMIC_output_dBm": 19.4
+    },
+    "all_RF_measurements": "NOT_RUN"
+  },
+  "driver_protection": {
+    "prereg_nominal_V": 5.456,
+    "prereg_min_V": 5.392230329670331,
+    "prereg_max_V": 5.519974534534534,
+    "driver_OV_nominal_V": 5.268629441624366,
+    "driver_OV_min_V": 5.172749956597538,
+    "driver_OV_max_V": 5.365076891065047,
+    "nominal_output_min_max_V": [
+      4.8,
+      5.2
+    ],
+    "MMIC_absmax_V": 6,
+    "TPS22810_recommended_max_V": 18,
+    "TPS22810_absmax_V": 20,
+    "TLV767_recommended_input_max_V": 16,
+    "TLV767_absmax_input_V": 18,
+    "TLV761_recommended_input_max_V": 18,
+    "TLV761_absmax_input_V": 20,
+    "fault_source_max_AT_PIN_V": 16.8,
+    "fault_test_acceptance_MMIC_node_max_V": 5.7,
+    "current_test_A": 0.18,
+    "old_20us_assumption": "NOT relied upon as sole voltage barrier;fault detector/isolation times still measured",
+    "fault_limits": "16.8Vfault exceeds TLV76716Vrecommended VIN;within18Vabs ONLY. Power-only bounded test and single-failure backupLDO;not normal operation or proof of unrestricted surge immunity."
+  },
+  "thermal": {
+    "NTC_B_K": 3977,
+    "NTC_low_trip_ohm": 2004.0080160320642,
+    "NTC_nominal_trip_C": 65.85219529913104,
+    "pass_RthJC_K_per_W": 2.5,
+    "pass_sink_max_K_per_W": 3.5,
+    "pass_interface_assumed_K_per_W": 1,
+    "case_acceptance_C": 60,
+    "junction_engineering_limit_C": 125,
+    "ambient_C": 40,
+    "PA_RthJC_K_per_W": 3,
+    "thermal_via_model_K_per_W_each": 88.18975201628831,
+    "thermal_vias": 12,
+    "qualification": "NOT_RUN;plating/solder voids/spreading/contact are not proven by cylindrical-via model. Sensor lag/hot SOA remain open."
+  },
+  "physical_tests": "NOT_RUN"
+}
