@@ -1,0 +1,36 @@
+{
+  "revision": "M5B-E4R1",
+  "baseline_commit": "920da7b6326764980cd4a9e2d4d2135d6635a5d0",
+  "KiCad": "10.0.6",
+  "ERC_errors": 0,
+  "ERC_warnings": 0,
+  "DRC_errors": 0,
+  "DRC_warnings": 11,
+  "unrouted": 0,
+  "parity": 0,
+  "exclusions": 0,
+  "disabled": {
+    "tuning_profile_track_geometries": "ignore"
+  },
+  "logic_combinations": 4096,
+  "states": 39,
+  "baseline_mutations": 37,
+  "manufacturer_pin_maps": 42,
+  "ST_positions": 26,
+  "native_package_pad_sets": 320,
+  "DFM_mutations": 11,
+  "E4R1_native_and_input_mutations": 16,
+  "E4R1_thermal_mutations": 4,
+  "gates": {
+    "A": "PASS_LOCAL_STANDARD_PCB_GEOMETRY",
+    "B": "CREDIBLE_PROTOTYPE_PROCESS_DEFINED_NOT_QUALIFIED",
+    "C": "GO_INDEPENDENT_FIVE_BARE_BOARD_REVIEW_ONLY",
+    "D": "NOT_RUN",
+    "E": "NOT_RUN"
+  },
+  "thermal110C_target": "NOT_MET",
+  "thermal125C_gate": "OPEN",
+  "decision": "GO_INDEPENDENT_BARE_BOARD_REVIEW_ONLY",
+  "physical": "NOT_RUN",
+  "uploaded": false
+}

@@ -1,0 +1,56 @@
+{
+  "retrieved": "2026-10-17",
+  "sources": [
+    {
+      "id": "PD54008",
+      "url": "https://www.st.com/resource/en/datasheet/pd54008l-e.pdf",
+      "revision": "January2007 Rev2",
+      "locations": "p1topview,p11package,p13Table11",
+      "finding": "Exact RF Gleft/Dright/centralS2.7x5 drawing;3x6=18 illustrated vias,no via bore/pitch dimension specified."
+    },
+    {
+      "id": "AN5046",
+      "url": "https://www.st.com/resource/en/application_note/an5046-printed-circuit-board-assembly-recommendations-for-stmicroelectronics-powerflat-packages-stmicroelectronics.pdf",
+      "revision": "Rev4 March2019",
+      "locations": "pp4,8-13,19",
+      "finding": "PowerFLAT5x6 assembly guidance,not an exact RF5x5 land prescription. Closed vias preferred;segmented paste/manual placement deviation explicitly disclosed."
+    },
+    {
+      "id": "AN1703",
+      "url": "https://www.st.com/resource/en/application_note/cd00004438-guidelines-for-using-st-s-mosfet-smd-packages-stmicroelectronics.pdf",
+      "finding": "Generic powerMOS PowerFLAT5x5 has different electrical terminal functions. NOT the RF package pin authority."
+    },
+    {
+      "id": "JLCcap",
+      "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "finding": "Standard2L1.6/1oz,ordinaryvia and mask/drill constraints.18um plating is average,not minimum."
+    },
+    {
+      "id": "JLCvias",
+      "url": "https://jlcpcb.com/blog/five-via-finishes",
+      "finding": "Exposed/tented vias can retain solder beads. Via holes are not controlled like component holes;PTH+0.13/-0.08 is used only as sensitivity,not guaranteed via envelope."
+    },
+    {
+      "id": "JLCstencil",
+      "url": "https://jlcpcb.com/capabilities/pcb-stencil-manufacturing",
+      "finding": "0.12mm304HTAstainless is a standard thickness;frameless laser-cut Gerber stencils offered."
+    },
+    {
+      "id": "TIattachment",
+      "url": "https://www.ti.com/lit/an/slua271b/slua271b.pdf",
+      "revision": "Resolved SLUA271C December2023",
+      "finding": "Supporting general QFN guidance:small thermal holes,windowed paste,initial Xray/profile qualification. Different package/finish tests are not proof for this board."
+    },
+    {
+      "id": "AIMV9",
+      "url": "https://www.aimsolder.com/wp-content/uploads/v9_solder_paste_tds.pdf",
+      "finding": "Example commercialSAC305T4 stencil paste. No vendor low-void performance transferred to our build."
+    },
+    {
+      "id": "cooling",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/C800/OJSK81_D_E_F.pdf",
+      "finding": "RetainedSK81manufacturer dimensions/rating,see preservedE4source-log.KP12/bar/hardware unchanged. No refreshed price or stock claim."
+    }
+  ],
+  "authority": "Exact datasheet controls pinout;general assembly notes guide an unqualified prototype process. No supplier CAM acceptance."
+}

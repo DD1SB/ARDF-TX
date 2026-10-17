@@ -1,0 +1,47 @@
+{
+  "status": "PASS_CAD_AND_CREDIBLE_PROTOTYPE_PROCESS_NOT_PHYSICAL_QUALIFICATION",
+  "native_SHA256": "a05a990726311675ccbb8262617c8e5ea2923703eceeea464445779d411ea77c",
+  "native_errors": [],
+  "source_pad_area_mm2": 13.5,
+  "mask_open_mm2": 10.499999999999972,
+  "nominal_solderable_source_area_mm2": 9.369026644707645,
+  "maximum_hole_envelope_solderable_area_mm2": 8.176478073404962,
+  "paste_aperture_area_mm2": 6.765000000000002,
+  "paste_percent_manufacturer_source": 50.11111111111113,
+  "stencil_mm": 0.12,
+  "deposited_paste_geometric_mm3": 0.8118000000000003,
+  "transfer_efficiency_sensitivity": [
+    0.8,
+    1.0
+  ],
+  "metal_volume_fraction_sensitivity": [
+    0.45,
+    0.6
+  ],
+  "solid_solder_volume_sensitivity_mm3": [
+    0.2922480000000001,
+    0.4870800000000002
+  ],
+  "open_joint_hole_capacity_nominal_mm3": 1.809557368467721,
+  "wicking_guaranteed_zero": false,
+  "guaranteed_hole_closure": false,
+  "mask_islands": 0,
+  "open_joint_vias": 16,
+  "external_side_vias": 20,
+  "near_vias": 8,
+  "wing_vias": 54,
+  "source_isotherm_is_model_assumption": true,
+  "external_hole_to_mask_opening_worst_gap_mm": 0.11,
+  "external_gap_basis": "0.43mm hole envelope,+/-0.075holeposition,+/-0.05maskregistration engineering sensitivity, NOT a supplier via-hole guarantee. Incoming check before assembly.",
+  "bottom_nominal_hole_area_mm2": 13.713051932919447,
+  "bottom_window_area_mm2": 224,
+  "bottom_geometric_contact_fraction_excluding_holes": 0.9387810181566096,
+  "physical": "NOT_RUN",
+  "required_initial_qualification": [
+    "Recorded actual reflow profile and print inspection",
+    "First populated Q501 X-ray for wetting/void distribution plus conservative thermal measurement",
+    "Source solder effective wet area>=4mm2,standoff<=0.1mm,k>=25W/mK is the conditional1K/W model acceptance envelope,not demonstrated",
+    "No bottom solder protrusion>0.05mm,clean flat TIM contact",
+    "Correlated calibrated thermal response at 25/40C; no inferred Tj from plastic top alone"
+  ]
+}

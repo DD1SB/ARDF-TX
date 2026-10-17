@@ -1,0 +1,1 @@
+E4/E4R1 fresh native plots. Colored mask is OPENING,not ink. E4R1hasone source opening,no islands. Automatic via-land circles are suppressed by the per-via setting;explicit source opening exposes all16joint holes. The Gerber union governs physical openings,not the via tent flag. Cropping only changes viewport. Analysis,not fabrication data.

@@ -1,5 +1,5 @@
-# RF2M active design
+# RF2M active source-joint candidate
 
-**M5B-E4 thermal candidate — HOLD, not released.** Native schematic/PCB include local source-ground/via/mask and stock-heatsink provisions. E3 remains frozen at `m5b-e3` / `95f189c`. No E4 acceptance tag is warranted until a reproducible source-joint assembly process is accepted.
+M5B-E4R1 implements an intentionally open-via hybrid source joint and controlled prototype reflow process. GO for independent bare-board review only; not released. Conservative110 °C thermal target is missed; physical125 °C qualification and RF/AM/endurance remainOPEN/NOT_RUN. No acceptance tag is authorized before independent review.
 
-See [decision](../../docs/M5B_E4_REVIEW_DECISION.md) and [review package](review/M5B-E4/README.md). Standard JLC2L1.6mm/1oz process, RF architecture, controller contract and population variants are retained. Physical RF/AM/thermal tests NOT_RUN. No procurement, fabrication or power-up authorized.
+See [decision](../../docs/M5B_E4R1_REVIEW_DECISION.md) and [package](review/M5B-E4R1/README.md). E4/920da7bHOLD and acceptedE3/m5b-e3are immutable history. Standard2L1.6 mm/1oz180×140board and electrical architecture are retained. No upload, procurement, assembly, power-up or RF operation authorized.

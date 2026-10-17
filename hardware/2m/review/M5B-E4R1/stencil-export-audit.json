@@ -1,0 +1,22 @@
+{
+  "native_Q501_preserved": true,
+  "command": [
+    "kicad-cli",
+    "pcb",
+    "export",
+    "gerbers",
+    "--layers",
+    "F.Paste",
+    "-o",
+    "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4R1/stencil/",
+    "/home/stefan/src/ardf-tx/hardware/2m/review/M5B-E4R1/development/Q501-stencil-native.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stencil_mm": 0.12,
+  "source_windows": 5,
+  "source_total_area_mm2": 6.765,
+  "source_geometric_paste_mm3": 0.8118,
+  "standard_process": true,
+  "assembly": "NOT_RUN",
+  "included_in_bare_board_ZIP": false
+}

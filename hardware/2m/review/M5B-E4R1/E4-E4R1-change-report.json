@@ -1,0 +1,1337 @@
+{
+  "baseline_commit": "920da7b6326764980cd4a9e2d4d2135d6635a5d0",
+  "candidate_revision": "M5B-E4R1",
+  "baseline_native_SHA256": "2fcc2c5f4f55b4bcbabb4623f67e6a1b2accaf7fd7c5ea284792d0f6a4afbaf4",
+  "candidate_native_SHA256": "a05a990726311675ccbb8262617c8e5ea2923703eceeea464445779d411ea77c",
+  "electrical_changes": [],
+  "signal_and_power_track_changes": [],
+  "purchased_component_changes": [],
+  "component_moves": [],
+  "removed_vias": {
+    "21086c38-3c69-4545-8b1b-f9d7ccc99fdf": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        57.1
+      ],
+      "end_mm": [
+        112.0,
+        57.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "592b12ba-fbcc-4329-888c-e10187dd1ec8": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        56.5
+      ],
+      "end_mm": [
+        111.399999,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "4d8d06c6-ceb8-5092-9145-91f45127ca79": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        54.1
+      ],
+      "end_mm": [
+        113.2,
+        54.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "b6bd1d0b-906f-4018-8aff-0f6535c1aaf0": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        52.9
+      ],
+      "end_mm": [
+        112.0,
+        52.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "11e34ca2-7be3-568d-a3b9-a6d0e0d85ec6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        55.3
+      ],
+      "end_mm": [
+        113.2,
+        55.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "4b31c758-21e9-4eb8-a264-2852bc3dbc20": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        55.3
+      ],
+      "end_mm": [
+        110.8,
+        55.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "768cd488-b30c-40d3-96f3-58b2fb9bc98d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        57.1
+      ],
+      "end_mm": [
+        111.399999,
+        57.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "fe9d52dd-8e6c-5084-a53d-f6ce97c9c1f7": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        52.9
+      ],
+      "end_mm": [
+        113.2,
+        52.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "0fe36668-8e3b-4009-a7e9-5e81c315995b": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        56.5
+      ],
+      "end_mm": [
+        110.8,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "a80c47bf-fba7-4659-8a53-4463eee8ab4e": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        52.9
+      ],
+      "end_mm": [
+        112.6,
+        52.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "aa7436d8-1332-4287-8e30-177ad8ba9100": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        55.3
+      ],
+      "end_mm": [
+        112.6,
+        55.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "5a23b147-0730-4324-a27e-efc297549a5d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        54.1
+      ],
+      "end_mm": [
+        111.399999,
+        54.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "037ae6e7-4afb-4258-a4b4-62893dc3eb0f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        55.3
+      ],
+      "end_mm": [
+        112.0,
+        55.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "9dd33c51-1be5-49f2-aeb1-b46c1099554f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        57.1
+      ],
+      "end_mm": [
+        110.8,
+        57.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "60e03092-5079-43b7-a539-4836d08c2bd1": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        53.5
+      ],
+      "end_mm": [
+        112.0,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "b7a9d2fc-d7da-453c-8fa5-18dcf9240c50": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        54.1
+      ],
+      "end_mm": [
+        112.0,
+        54.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "43027ddb-8eda-44c4-8964-93bc5a413ef0": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        56.5
+      ],
+      "end_mm": [
+        112.6,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "0835fae1-4239-5a43-a662-e810ea507779": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        57.1
+      ],
+      "end_mm": [
+        113.2,
+        57.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "64793775-489a-4e23-a44a-7afd2de24ad0": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        53.5
+      ],
+      "end_mm": [
+        111.399999,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "3eafb70e-9100-46ac-af29-8f78b5e891ec": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        55.9
+      ],
+      "end_mm": [
+        111.399999,
+        55.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "8ae0dfe4-95be-4902-84f3-2a8d1e178c3a": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        53.5
+      ],
+      "end_mm": [
+        110.8,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "7f923268-f91e-57bf-8cf4-e59fbf4761ed": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        53.5
+      ],
+      "end_mm": [
+        113.2,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "a38a5dca-b43c-4048-b828-890713449b3d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        57.1
+      ],
+      "end_mm": [
+        112.6,
+        57.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "cdb1b7eb-22b3-48b6-966f-65b93ce3d961": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        52.9
+      ],
+      "end_mm": [
+        110.8,
+        52.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "fc87bdad-3da4-4997-8430-e3e732a9bd71": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        54.1
+      ],
+      "end_mm": [
+        112.6,
+        54.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "e037dedc-0583-4570-8509-4f720b253b13": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        55.3
+      ],
+      "end_mm": [
+        111.399999,
+        55.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "0725751e-ae82-480e-b0c7-44eab5ab0d68": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        55.9
+      ],
+      "end_mm": [
+        112.0,
+        55.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "cfd0e605-f5a3-41fa-a2f5-799aeb274b7d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        54.699999
+      ],
+      "end_mm": [
+        111.399999,
+        54.699999
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "55ccb560-e838-5886-921d-2de6e3197e7d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        52.3
+      ],
+      "end_mm": [
+        113.2,
+        52.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "ef9c78ef-f341-453a-a1fa-6909148a15ce": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        54.699999
+      ],
+      "end_mm": [
+        110.8,
+        54.699999
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "1d96d15e-7eb7-54a0-96ad-1eba1299da5b": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        55.9
+      ],
+      "end_mm": [
+        113.2,
+        55.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "1ca1a33d-c452-5cdc-91e6-f8e83d883767": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        52.3
+      ],
+      "end_mm": [
+        112.6,
+        52.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "6aeaec3d-9e64-5ac9-acdc-264d5b82807a": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        54.699999
+      ],
+      "end_mm": [
+        113.2,
+        54.699999
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "e75542de-9e60-5316-b4e6-23fd735bc426": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        57.7
+      ],
+      "end_mm": [
+        113.2,
+        57.7
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "8edaf7d9-5d68-4fee-8054-58f8fc83db7c": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        54.699999
+      ],
+      "end_mm": [
+        112.0,
+        54.699999
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "caeaaa04-dd7f-41fa-94a9-eba3897a218d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        55.9
+      ],
+      "end_mm": [
+        112.6,
+        55.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "63656165-cf57-5c99-b3b3-64653b68308c": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        57.7
+      ],
+      "end_mm": [
+        110.8,
+        57.7
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "4f35b638-9247-47f6-8802-9111b2c2e864": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        55.9
+      ],
+      "end_mm": [
+        110.8,
+        55.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "f17bb36d-8035-5f2b-bdb7-6f6d405f0ec8": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        56.5
+      ],
+      "end_mm": [
+        113.2,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "3c8acb23-0d00-4710-84d2-4f29ac12d80b": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        54.699999
+      ],
+      "end_mm": [
+        112.6,
+        54.699999
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "fcd901d8-59f9-5e54-8fc2-0631a7117002": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        52.3
+      ],
+      "end_mm": [
+        112.0,
+        52.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "3e98cebd-2a2e-569c-9856-9f66e4b07935": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        52.3
+      ],
+      "end_mm": [
+        111.399999,
+        52.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "421c7dc1-110a-5001-8ade-d76101ba9b33": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        57.7
+      ],
+      "end_mm": [
+        112.0,
+        57.7
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "5b9e6bcc-7709-4365-8093-3e07cdd576a6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        52.9
+      ],
+      "end_mm": [
+        111.399999,
+        52.9
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "097a10ec-07f4-4ea0-ae50-7cdec98f2eb9": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        54.1
+      ],
+      "end_mm": [
+        110.8,
+        54.1
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "c452b64d-77ea-4d4e-8eb7-1d10b47a9655": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.0,
+        56.5
+      ],
+      "end_mm": [
+        112.0,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "a6457993-921c-5a59-a27a-84fe1a48791e": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        52.3
+      ],
+      "end_mm": [
+        110.8,
+        52.3
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "41936d44-0c99-58ed-882f-0ecf35889d6e": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.399999,
+        57.7
+      ],
+      "end_mm": [
+        111.399999,
+        57.7
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "fdeb21dd-7248-5b3a-941c-fefeb09c88d6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        57.7
+      ],
+      "end_mm": [
+        112.6,
+        57.7
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "63fab595-55f2-42d9-8f0d-083609a99f78": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.6,
+        53.5
+      ],
+      "end_mm": [
+        112.6,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    }
+  },
+  "added_vias": {
+    "9f536560-3349-5b9b-bc7f-04c121a000a3": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        55.75
+      ],
+      "end_mm": [
+        110.5,
+        55.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "de7b0f00-ee00-52fc-bdc7-d4edeb0400fd": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.175,
+        53.5
+      ],
+      "end_mm": [
+        111.175,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "10735d2c-aeb8-5627-9bb9-1517a482782a": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.6,
+        58.0
+      ],
+      "end_mm": [
+        111.6,
+        58.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "fd3214d3-9f86-5a91-b4c2-4ce51e78cbd0": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.825,
+        53.5
+      ],
+      "end_mm": [
+        112.825,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "948bd845-8291-5dec-bf2b-b9fc16278096": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        52.0
+      ],
+      "end_mm": [
+        110.8,
+        52.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "177111cf-b369-50e6-99d3-d186d8411aa6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.175,
+        56.5
+      ],
+      "end_mm": [
+        111.175,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "51532da9-78d5-5b40-bc4d-a27b07f22b61": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.274999,
+        56.5
+      ],
+      "end_mm": [
+        112.274999,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "8dbfee20-f61a-5fe8-aa39-b10d832e6832": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.725,
+        55.5
+      ],
+      "end_mm": [
+        111.725,
+        55.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "b4af91bb-8a7a-525a-9391-42dd5c83a1c6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        56.75
+      ],
+      "end_mm": [
+        110.5,
+        56.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "8d81d342-1f78-594d-906e-098e4e9d7e8f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        57.25
+      ],
+      "end_mm": [
+        110.5,
+        57.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "2f93cae0-2742-5b02-ba7b-153aaae1c98f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.399999,
+        58.0
+      ],
+      "end_mm": [
+        112.399999,
+        58.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "22d2eb61-cc83-5dcc-9721-6b65273d5581": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        52.0
+      ],
+      "end_mm": [
+        113.2,
+        52.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "5d895b60-6a37-5abf-9812-740b9fdf1153": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.725,
+        54.5
+      ],
+      "end_mm": [
+        111.725,
+        54.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "80da5d68-6670-5116-a002-b649014b485b": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        57.25
+      ],
+      "end_mm": [
+        113.5,
+        57.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "3b203a06-0a90-566a-9139-0a2191451379": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        52.75
+      ],
+      "end_mm": [
+        113.5,
+        52.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "626f019b-c87d-57d0-936d-4d4f592dbc29": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.399999,
+        52.0
+      ],
+      "end_mm": [
+        112.399999,
+        52.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "b7d20fc2-6dc4-5cc6-b9c8-6c2b593c3f2b": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.2,
+        58.0
+      ],
+      "end_mm": [
+        113.2,
+        58.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "81a6f15e-4d5a-5514-b908-5f69567f5e47": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        55.25
+      ],
+      "end_mm": [
+        113.5,
+        55.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "73e5e82f-495b-566f-91c0-4e17bfb473c6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        55.25
+      ],
+      "end_mm": [
+        110.5,
+        55.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "652c897b-3e67-52a7-9bc6-79d065664386": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.274999,
+        53.5
+      ],
+      "end_mm": [
+        112.274999,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "6451da7b-6c16-5951-a31e-a1386733056e": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.725,
+        53.5
+      ],
+      "end_mm": [
+        111.725,
+        53.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "d51a3fd6-b4d1-5534-a038-626663d504cb": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.825,
+        55.5
+      ],
+      "end_mm": [
+        112.825,
+        55.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "9d66fd42-3d6a-5e9f-b84a-2c7cd4110b44": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.274999,
+        55.5
+      ],
+      "end_mm": [
+        112.274999,
+        55.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "93ff310e-6b41-5150-b1b7-4a97cf612464": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.175,
+        55.5
+      ],
+      "end_mm": [
+        111.175,
+        55.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "5c257cfc-79ee-5763-a996-4374641d723d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        53.75
+      ],
+      "end_mm": [
+        113.5,
+        53.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "ebc4430a-cd89-5d70-b8a1-9a79c9502daa": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.6,
+        52.0
+      ],
+      "end_mm": [
+        111.6,
+        52.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "5e6157a7-96b7-5ac7-acac-d47d3cc50f3e": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.825,
+        54.5
+      ],
+      "end_mm": [
+        112.825,
+        54.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "c6687bc9-279d-5e71-96ba-27760e281c1f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        54.25
+      ],
+      "end_mm": [
+        113.5,
+        54.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "b9818082-8eab-584a-97ac-57107141733d": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.825,
+        56.5
+      ],
+      "end_mm": [
+        112.825,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "20774f6d-364d-5ff1-96cc-ab89db4c969f": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        55.75
+      ],
+      "end_mm": [
+        113.5,
+        55.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "bfa11adc-1cb2-5c92-98a0-1994c53e2c13": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        52.75
+      ],
+      "end_mm": [
+        110.5,
+        52.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "d7cd177f-f659-5fa9-ba06-71b5df905d45": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.8,
+        58.0
+      ],
+      "end_mm": [
+        110.8,
+        58.0
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "7d061c4e-43ba-5a62-98f0-79b1d991b5ef": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        54.75
+      ],
+      "end_mm": [
+        110.5,
+        54.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "ab72342a-5079-5fcb-97d7-9e1f1fe5e0f5": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        112.274999,
+        54.5
+      ],
+      "end_mm": [
+        112.274999,
+        54.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "9efb2d29-5206-53c6-b0c4-3f67928a7d29": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.725,
+        56.5
+      ],
+      "end_mm": [
+        111.725,
+        56.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "1fe98de4-980d-5739-a99e-e66f4cf9ba14": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        53.25
+      ],
+      "end_mm": [
+        110.5,
+        53.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "3f0e731b-870d-5438-b356-2d1903a95122": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        53.75
+      ],
+      "end_mm": [
+        110.5,
+        53.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "321ca91b-9b90-55db-b476-faa1ea0ff5f6": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        54.25
+      ],
+      "end_mm": [
+        110.5,
+        54.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "345ae400-6be4-52cd-ab3b-771e167f1f55": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        111.175,
+        54.5
+      ],
+      "end_mm": [
+        111.175,
+        54.5
+      ],
+      "width_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    "b1f50b89-f9d0-5793-9e4e-aecc23a06ce1": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        54.75
+      ],
+      "end_mm": [
+        113.5,
+        54.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "8e4dac91-0cb1-5f9b-9840-f416e3976a45": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        56.75
+      ],
+      "end_mm": [
+        113.5,
+        56.75
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "4e5b1aed-77a1-5682-89a3-e7dbf1f67992": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        110.5,
+        56.25
+      ],
+      "end_mm": [
+        110.5,
+        56.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "ac662973-871b-5320-821a-daffa6559eb9": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        56.25
+      ],
+      "end_mm": [
+        113.5,
+        56.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    "db04d746-a5fa-5ea5-84ec-9d26d1c1a176": {
+      "net": "GND",
+      "layer": 0,
+      "start_mm": [
+        113.5,
+        53.25
+      ],
+      "end_mm": [
+        113.5,
+        53.25
+      ],
+      "width_mm": 0.6,
+      "drill_mm": 0.3
+    }
+  },
+  "other_changes": [
+    "40 underpad+10 end vias replaced by16 open joint+20 side+8 relocated end vias;54 wings retained",
+    "Source opening2.1x5;five2.05-wide paste windows;no mask islands",
+    "Local top source ground width3.2 to3.6mm;bottom14x16window and bar/sink unchanged",
+    "Revision labels and source footprint description only;all pad contacts/sizes/nets unchanged"
+  ],
+  "physical": "NOT_RUN"
+}

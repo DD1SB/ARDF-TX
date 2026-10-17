@@ -1,0 +1,27 @@
+{
+  "status": "NATIVE_GEOMETRY_PRESERVED_EXCEPT_LOCAL_SOURCE_GND",
+  "RF_width_mm": 2.741,
+  "lengths_mm": {
+    "TL603": 6.1129,
+    "TL604": 6.4956,
+    "TL605": 5.691,
+    "TL606": 2.1587,
+    "TL607": 10.7933,
+    "TL608": 12.167,
+    "TL609": 1.9624
+  },
+  "signal_tracks_identical_E4": true,
+  "component_pad_sets_and_positions_equal_E4": 320,
+  "local_ground_width_before_mm": 3.2,
+  "local_ground_width_after_mm": 3.6,
+  "minimum_nominal_G_D_gap_to_source_rail_mm": 0.2,
+  "source_joint_area": "Smaller mask opening;short broad Cu reaches20 side/8 end vias. Source return impedance is not established by DC continuity.",
+  "single_via_partial_inductance_estimate_nH": 1.28,
+  "method": "Straight barrel approximation L=0.2*h*(ln(4h/d)+1),h1.6/d0.3mm. Not circuit loop inductance;no1/N scaling because mutual terms and return planes matter.",
+  "single_via_reactance_at144p7MHz_ohm": 1.1637464498545742,
+  "limitations": [
+    "Bottom GND and normal/training separation retained",
+    "Closer ground changes local G/D parasitics;unchanged50ohm microstrip model is not EM extraction of source rails",
+    "Gate/input/output match,oscillation,AM and emissions with metalwork remain NOT_RUN"
+  ]
+}

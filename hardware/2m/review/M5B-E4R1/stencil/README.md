@@ -1,0 +1,1 @@
+Q501-onlyF.Paste exportedfromtheactualnativefootprint. Standard0.12mmframeless304stainless,laser-cut. Source5windows+G/Dpaste,nootherparts. NOTpartofbare-PCBfabricationZIP. Verifyalignment/depositsandqualifyprofile/firstjointbeforeenergy. Noorderauthorized.
