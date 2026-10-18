@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-15",
+  "scope": "M4A-V1 compact candidate",
+  "classification": "Physical measurements only; design calculations/logic simulation do not change status",
+  "tests": [
+    {
+      "id": "P01",
+      "test": "Input insertion/disconnect/transient and ground-bounce",
+      "gate": "TPS22810 VIN within recommended bounds; no 18/20V immunity inferred from TVS rating",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P02",
+      "test": "Buck rail startup/profile selection and load regulation",
+      "gate": "Qualified voltages/current and no overshoot outside device bounds at12/14.4/16.8V",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P03",
+      "test": "Driver-absent failed-buck surrogate",
+      "gate": "Board isolation\u226420us and VDRV\u226412.6V; capacitor hot ESR qualified; fixture cutoff is not board cutoff",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P04",
+      "test": "Driver inhibit/discharge after fault",
+      "gate": "Physical inhibit and rail collapse measured; no persistent gate drive",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P05",
+      "test": "Power-on/brownout/reset/ARM feedback timing",
+      "gate": "No false permission; required reset pulse widths and propagation margins proven",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P06",
+      "test": "Heartbeat/bus/KEY/path/profile and deliberate rearm",
+      "gate": "No unwanted TX; watchdog loss inhibits both; all fault sequences require deliberate ARM cycle",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P07",
+      "test": "Current,UV/OV,thermal and sensor detachment",
+      "gate": "Thresholds/delay/latched withdrawal measured; no automatic rearm",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P08",
+      "test": "BD140/IRF610 hot SOA and cooling",
+      "gate": "Safe measured voltage/current/temperature under worst duty/mismatch and thermal contact",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P09",
+      "test": "Normal RF targets and calibrated Sprint",
+      "gate": "3W/1.2W at defined50ohm load over3.510\u20133.600MHz; Sprint0.3\u20131W selected independently",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P10",
+      "test": "CW edges/clicks/retuning",
+      "gate": "Measured envelope and emissions meet retained acceptance methods; no retune burst",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P11",
+      "test": "Harmonics/spurious/frequency",
+      "gate": "Retained spectrum/drift acceptance methods pass on real unit",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P12",
+      "test": "Fox RF calibration and disable leakage",
+      "gate": "Nominal10mW reference-load output,9\u201311mW project calibration window; source alone cannot drive unarmed port",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P13",
+      "test": "Normal-to-Fox isolation",
+      "gate": "\u226466uW at compact port at maximum normalRF and faults,\u224847dB for3W; no direct watt transfer",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P14",
+      "test": "Compact Fox antenna/return/loading and field",
+      "gate": "Separate matching; reproducible30m audible /250m not-audible criteria under documented receiver/environment",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P15",
+      "test": "Battery life/full and extended",
+      "gate": "12h maximum and24h mode-appropriate reduced setting, aging/temp/LoRa condition recorded; continuous beacons separate",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P16",
+      "test": "Actual mating/hole/winding/thermal mechanical fit",
+      "gate": "Incoming manufacturer-specific parts, insulation, pin1/face, connector retention and coil stabilization",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    },
+    {
+      "id": "P17",
+      "test": "Compact layout comparison",
+      "gate": "V1 repeats E2 protection/RF/thermal/isolation tests; netlist match alone insufficient",
+      "status": "NOT_RUN",
+      "measurement_record": null
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T10:23:08",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943",
+            "violations": []
+        },
+        {
+            "path": "/01 Controller interface and local source/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/8eda9d6e-7356-5aa7-a59a-a3573d539526",
+            "violations": []
+        },
+        {
+            "path": "/02 Autonomous lease, inhibit and rearm/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/6cadfc8c-987d-58e8-9a40-f63c9c9b46cf",
+            "violations": []
+        },
+        {
+            "path": "/03 Reduced permission logic and population-specific guards/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/eb846655-e372-5549-945c-b3f61c9dbabc",
+            "violations": []
+        },
+        {
+            "path": "/04 Deliberate rearm, witnessed heartbeat and captured configuration/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/2564cd7a-d73b-5f5d-b6c6-cd990e68387d",
+            "violations": []
+        },
+        {
+            "path": "/05 4S input, one buck and independent rail isolation/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/ef9d6d34-0e8d-563a-9e18-25cfa5053f26",
+            "violations": []
+        },
+        {
+            "path": "/06 Reference, pack voltage and thermal/current trips/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/c2031074-328b-5c80-8a77-3788080808c2",
+            "violations": []
+        },
+        {
+            "path": "/06b Independent threshold dividers/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/c768797e-45b9-54e7-aa76-03076e643c8e",
+            "violations": []
+        },
+        {
+            "path": "/07 PA current trip and case-temperature interlock/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/afa08fea-13ca-5dce-b158-0e5f1a50160c",
+            "violations": []
+        },
+        {
+            "path": "/08 Proven normal RF core and QCX-derived drain shaping/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/097f71b4-ce62-57fe-87b9-02666d86e55f",
+            "violations": []
+        },
+        {
+            "path": "/08b Shared key-tail and disarm reset/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/2fe0c46d-581c-5d43-ae8a-77d5cce55194",
+            "violations": []
+        },
+        {
+            "path": "/09 Original 80 m elliptic filter and normal port/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/85d3bf1f-3295-5c64-9c22-b37623637312",
+            "violations": []
+        },
+        {
+            "path": "/10 Independent Foxoring shaper and rail-following clock buffer/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/a6517892-48a8-5409-897e-d9ce4be9b593",
+            "violations": []
+        },
+        {
+            "path": "/11 Separate Foxoring filter, calibration pad and protected compact port/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/97adb0fd-314c-544b-9a8e-c838b239617b",
+            "violations": []
+        },
+        {
+            "path": "/12 Retained input damper and production test access/",
+            "uuid_path": "/59eaa956-ce21-5c93-9bf7-627a5ed8b943/86d6c478-042d-5ac7-8369-533bf8133ccd",
+            "violations": []
+        }
+    ],
+    "source": "RF80_V1.kicad_sch"
+}

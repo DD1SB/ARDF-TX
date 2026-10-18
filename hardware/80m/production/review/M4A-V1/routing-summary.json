@@ -1,0 +1,861 @@
+{
+  "nets": {
+    "VDRV": {
+      "length_mm": 38.788,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 0
+    },
+    "GND": {
+      "length_mm": 235.309,
+      "widths_mm": [
+        0.15,
+        0.25,
+        0.28
+      ],
+      "vias": 112
+    },
+    "V3V3": {
+      "length_mm": 534.549,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 34
+    },
+    "FOX_LPF1": {
+      "length_mm": 16.334,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "FOX_LPF2": {
+      "length_mm": 22.769,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "VPA_SHAPED": {
+      "length_mm": 60.595,
+      "widths_mm": [
+        0.75
+      ],
+      "vias": 0
+    },
+    "SHAPE_BASE": {
+      "length_mm": 23.568,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 1
+    },
+    "VPA": {
+      "length_mm": 51.797,
+      "widths_mm": [
+        0.3,
+        0.55,
+        0.75
+      ],
+      "vias": 0
+    },
+    "V_PA_OV": {
+      "length_mm": 8.031,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "FOX_BASE": {
+      "length_mm": 17.109,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "FOX_FEED": {
+      "length_mm": 15.354,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "VFOX": {
+      "length_mm": 63.532,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "LPF_N1": {
+      "length_mm": 138.519,
+      "widths_mm": [
+        0.55
+      ],
+      "vias": 0
+    },
+    "LPF_N2": {
+      "length_mm": 31.273,
+      "widths_mm": [
+        0.55
+      ],
+      "vias": 0
+    },
+    "BUS_RC": {
+      "length_mm": 7.586,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "VREF_2V5": {
+      "length_mm": 75.12,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "PA_OV_REF": {
+      "length_mm": 12.48,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_GATE_EN": {
+      "length_mm": 32.783,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 5
+    },
+    "PACK_2S_REF": {
+      "length_mm": 8.195,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "PACK4_OK": {
+      "length_mm": 84.517,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "PA_GUARD_RAW": {
+      "length_mm": 85.207,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "TEMP_HOT_REF": {
+      "length_mm": 44.209,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "TEMP_SENSE": {
+      "length_mm": 110.813,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 6
+    },
+    "PACK_4S_REF": {
+      "length_mm": 5.317,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "V_PACK_SCALED": {
+      "length_mm": 22.233,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "I_PA_FILTER": {
+      "length_mm": 18.5,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "PA_OC_REF": {
+      "length_mm": 9.855,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "I_PA_RAW": {
+      "length_mm": 14.798,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "SENSE_PLUS": {
+      "length_mm": 7.267,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 2
+    },
+    "SENSE_MINUS": {
+      "length_mm": 21.783,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 2
+    },
+    "GATE_DRV": {
+      "length_mm": 6.214,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 0
+    },
+    "PA_INB": {
+      "length_mm": 26.093,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 3
+    },
+    "CLK_PA": {
+      "length_mm": 72.172,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "SW_PA": {
+      "length_mm": 18.547,
+      "widths_mm": [
+        0.55
+      ],
+      "vias": 0
+    },
+    "VIN_PA": {
+      "length_mm": 40.593,
+      "widths_mm": [
+        0.3,
+        0.55,
+        0.75
+      ],
+      "vias": 2
+    },
+    "FB_PA": {
+      "length_mm": 30.493,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "PA_PERMIT": {
+      "length_mm": 192.986,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 10
+    },
+    "BOOT_PA": {
+      "length_mm": 5.62,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "ARM_RC": {
+      "length_mm": 45.205,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 3
+    },
+    "VIN_PACK": {
+      "length_mm": 86.405,
+      "widths_mm": [
+        0.75
+      ],
+      "vias": 0
+    },
+    "VBAT_FUSED": {
+      "length_mm": 3.672,
+      "widths_mm": [
+        0.75
+      ],
+      "vias": 0
+    },
+    "FOX_PAD_IN": {
+      "length_mm": 31.459,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "ARM_ACCEPT": {
+      "length_mm": 123.918,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 5
+    },
+    "DROP_RETURN": {
+      "length_mm": 18.171,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "RF_NORMAL": {
+      "length_mm": 51.339,
+      "widths_mm": [
+        0.55
+      ],
+      "vias": 0
+    },
+    "FOX_MUTE_B": {
+      "length_mm": 5.087,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "VREF_TH": {
+      "length_mm": 57.912,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 6
+    },
+    "TEMP_OPEN_REF": {
+      "length_mm": 25.185,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "LEASE": {
+      "length_mm": 102.278,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_CLK_B": {
+      "length_mm": 20.789,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_CLK": {
+      "length_mm": 27.697,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 2
+    },
+    "VBAT": {
+      "length_mm": 9.503,
+      "widths_mm": [
+        0.75
+      ],
+      "vias": 0
+    },
+    "SCL": {
+      "length_mm": 122.843,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "SDA": {
+      "length_mm": 109.207,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 1
+    },
+    "ARM": {
+      "length_mm": 103.959,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "CW_KEY": {
+      "length_mm": 115.266,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 5
+    },
+    "PA_REQ": {
+      "length_mm": 125.949,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 8
+    },
+    "FOX_REQ": {
+      "length_mm": 136.623,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 8
+    },
+    "PWR0": {
+      "length_mm": 92.599,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "PWR1": {
+      "length_mm": 116.569,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "MUTE_N": {
+      "length_mm": 26.157,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "FAULT_N": {
+      "length_mm": 57.962,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 1
+    },
+    "UV_POR_N": {
+      "length_mm": 81.019,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_ID": {
+      "length_mm": 95.154,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 1
+    },
+    "VPA_LOAD": {
+      "length_mm": 60.038,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 4
+    },
+    "PA_MUTE_MID": {
+      "length_mm": 16.281,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "RF_RAW": {
+      "length_mm": 15.882,
+      "widths_mm": [
+        0.55
+      ],
+      "vias": 0
+    },
+    "PA_CONDITION_OK": {
+      "length_mm": 48.528,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "DRAIN_PA": {
+      "length_mm": 20.834,
+      "widths_mm": [
+        1.0
+      ],
+      "vias": 0
+    },
+    "RF_FOX": {
+      "length_mm": 24.813,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "HEALTH_N": {
+      "length_mm": 65.628,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "SEL_EXT": {
+      "length_mm": 88.114,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "SEL_FULL": {
+      "length_mm": 98.691,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "PATH_PA": {
+      "length_mm": 68.952,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "PATH_FOX": {
+      "length_mm": 65.643,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "KEY_N": {
+      "length_mm": 72.167,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_REQ_N": {
+      "length_mm": 80.56,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_DROP_MID": {
+      "length_mm": 8.269,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "GATE_PA": {
+      "length_mm": 10.113,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "FOX_GATE2": {
+      "length_mm": 7.328,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "FOX_SUM": {
+      "length_mm": 52.74,
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "vias": 0
+    },
+    "CT_PA": {
+      "length_mm": 4.358,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "RESET_N": {
+      "length_mm": 29.724,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "PA_KEY": {
+      "length_mm": 51.136,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "FOX_KEY": {
+      "length_mm": 53.706,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_PERMIT": {
+      "length_mm": 51.262,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 3
+    },
+    "BUS_LINES_HIGH": {
+      "length_mm": 22.499,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "ARM_DELAY_N": {
+      "length_mm": 1.27,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "ARM_CLK": {
+      "length_mm": 83.805,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "PA_REQ_N": {
+      "length_mm": 89.323,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 3
+    },
+    "KEY_TAIL_N": {
+      "length_mm": 30.412,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "KEY_TAIL_C": {
+      "length_mm": 38.737,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_MUTE": {
+      "length_mm": 103.121,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "KEY_DRAIN": {
+      "length_mm": 10.674,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "EXCLUSIVE_OK": {
+      "length_mm": 16.184,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "MODE_OK": {
+      "length_mm": 28.2,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 4
+    },
+    "KEY_TAIL": {
+      "length_mm": 79.531,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 8
+    },
+    "KEY_TAIL_SRC": {
+      "length_mm": 7.99,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "KEY_TAIL_RESET_D": {
+      "length_mm": 9.568,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "LEASE_RC": {
+      "length_mm": 12.384,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "CLK_FOX": {
+      "length_mm": 14.117,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "POR_N": {
+      "length_mm": 106.253,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 3
+    },
+    "LEASE_SEEN_N": {
+      "length_mm": 82.483,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "BUS_HOLDOFF_N": {
+      "length_mm": 49.383,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "LEASE_OK": {
+      "length_mm": 31.265,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FB_FULL": {
+      "length_mm": 4.995,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "VPA_ISO": {
+      "length_mm": 22.238,
+      "widths_mm": [
+        0.3,
+        0.55
+      ],
+      "vias": 2
+    },
+    "ARMED": {
+      "length_mm": 48.748,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "BUS_QUIET": {
+      "length_mm": 27.15,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "NOT_ARMED": {
+      "length_mm": 93.886,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "QOD_PA": {
+      "length_mm": 7.405,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_GATE3": {
+      "length_mm": 10.681,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "PA_DROP_MID": {
+      "length_mm": 8.269,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "CORE_OK": {
+      "length_mm": 4.95,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "SAFE_RAW": {
+      "length_mm": 26.802,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_GATE1": {
+      "length_mm": 7.999,
+      "widths_mm": [
+        0.3
+      ],
+      "vias": 0
+    },
+    "FB_EXT": {
+      "length_mm": 5.941,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    },
+    "XA": {
+      "length_mm": 12.013,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "XB": {
+      "length_mm": 13.219,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 2
+    },
+    "FOX_KEY_D": {
+      "length_mm": 5.367,
+      "widths_mm": [
+        0.15
+      ],
+      "vias": 0
+    }
+  },
+  "ordinary_vias": 354,
+  "min_trace_mm": 0.15,
+  "RF_limitation": "Summed trace length is not an RF impedance/loop-inductance or thermal measurement. Ground plane continuity and compact coupling require physical qualification."
+}

@@ -1,0 +1,520 @@
+[
+  {
+    "reference": "TP101",
+    "net": "V3V3",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP102",
+    "net": "CLK_PA",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP103",
+    "net": "CLK_FOX",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP104",
+    "net": "SCL",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP105",
+    "net": "GND",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP401",
+    "net": "GATE_PA",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP402",
+    "net": "DRAIN_PA",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP403",
+    "net": "VPA_SHAPED",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP404",
+    "net": "RF_RAW",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP450",
+    "net": "KEY_TAIL_C",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP451",
+    "net": "KEY_TAIL",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP410",
+    "net": "RF_RAW",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP411",
+    "net": "LPF_N1",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP412",
+    "net": "LPF_N2",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP413",
+    "net": "RF_NORMAL",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Existing RF connector"
+  },
+  {
+    "reference": "TP414",
+    "net": "GND",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP501",
+    "net": "VFOX",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP502",
+    "net": "FOX_CLK",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP510",
+    "net": "FOX_SUM",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP511",
+    "net": "FOX_PAD_IN",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP512",
+    "net": "RF_FOX",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Existing RF connector"
+  },
+  {
+    "reference": "TP513",
+    "net": "GND",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP700",
+    "net": "VBAT",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP701",
+    "net": "VIN_PACK",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP702",
+    "net": "VIN_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP703",
+    "net": "VPA",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP704",
+    "net": "VPA_ISO",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP705",
+    "net": "VPA_LOAD",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP706",
+    "net": "VDRV",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP707",
+    "net": "I_PA_RAW",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP708",
+    "net": "I_PA_FILTER",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP709",
+    "net": "FB_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP710",
+    "net": "PA_PERMIT",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP711",
+    "net": "FOX_PERMIT",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP712",
+    "net": "PA_INB",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP713",
+    "net": "ARM",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP714",
+    "net": "ARM_ACCEPT",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP715",
+    "net": "ARM_CLK",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP716",
+    "net": "ARMED",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP717",
+    "net": "RESET_N",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP718",
+    "net": "HEALTH_N",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP719",
+    "net": "POR_N",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP720",
+    "net": "LEASE",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP721",
+    "net": "LEASE_OK",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP722",
+    "net": "BUS_QUIET",
+    "classification": "Useful optional service access",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP723",
+    "net": "PA_GUARD_RAW",
+    "classification": "Essential production test access",
+    "retained": true,
+    "alternative": "Compact local bare pad"
+  },
+  {
+    "reference": "TP724",
+    "net": "PWR0",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP725",
+    "net": "PWR1",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP726",
+    "net": "SEL_EXT",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP727",
+    "net": "SEL_FULL",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP728",
+    "net": "PATH_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP729",
+    "net": "PATH_FOX",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP730",
+    "net": "KEY_TAIL",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP731",
+    "net": "FAULT_N",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP732",
+    "net": "CLK_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP733",
+    "net": "CLK_FOX",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP734",
+    "net": "GATE_DRV",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP735",
+    "net": "GATE_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP736",
+    "net": "DRAIN_PA",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP737",
+    "net": "VPA_SHAPED",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP738",
+    "net": "RF_RAW",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP739",
+    "net": "RF_NORMAL",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Existing RF connector"
+  },
+  {
+    "reference": "TP740",
+    "net": "FOX_SUM",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP741",
+    "net": "FOX_PAD_IN",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP742",
+    "net": "RF_FOX",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Existing RF connector"
+  },
+  {
+    "reference": "TP743",
+    "net": "VFOX",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP744",
+    "net": "TEMP_SENSE",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP745",
+    "net": "TEMP_HOT_REF",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP746",
+    "net": "V_PA_OV",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP747",
+    "net": "V_PACK_SCALED",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP748",
+    "net": "GND",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP749",
+    "net": "GND",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP750",
+    "net": "GND",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  },
+  {
+    "reference": "TP751",
+    "net": "GND",
+    "classification": "Evaluation-only",
+    "retained": false,
+    "alternative": "Controller connector or accessible component pad"
+  }
+]

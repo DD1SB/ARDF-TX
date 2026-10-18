@@ -1,0 +1,59 @@
+$ /usr/bin/python3 tools/m4a_verify.py --logic
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+10:32:21: Debug: Adding duplicate image handler for 'PNG file'
+10:32:21: Debug: Adding duplicate image handler for 'JPEG file'
+10:32:21: Debug: Adding duplicate image handler for 'TIFF file'
+10:32:21: Debug: Adding duplicate image handler for 'GIF file'
+10:32:21: Debug: Adding duplicate image handler for 'PNM file'
+10:32:21: Debug: Adding duplicate image handler for 'PCX file'
+10:32:21: Debug: Adding duplicate image handler for 'IFF file'
+10:32:21: Debug: Adding duplicate image handler for 'Windows icon file'
+10:32:21: Debug: Adding duplicate image handler for 'Windows cursor file'
+10:32:21: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+10:32:21: Debug: Adding duplicate image handler for 'TGA file'
+10:32:21: Debug: Adding duplicate image handler for 'XPM file'
+PASS: E2 non-TP manifest/XML equivalence; 604 native pads; 55 manufacturer devices; 12 mutants rejected; full/Fox 196 115
+EXIT0
+
+$ /usr/bin/python3 tools/m4a_artifact_audit.py
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS V1 manufacturing exports/coverage; 401 drills; 354 vias; no via-in-SMD-pad
+EXIT0
+
+$ /usr/bin/python3 tools/m4a_geometry_review.py
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS one connected ground network; 41 filled polygons; 112 ground vias; 199 3D model references resolve
+EXIT0
+
+$ /usr/bin/python3 tools/m4a_costs.py
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS: actual V1 full/Fox BOM equals E2 material scopes at6/10/20; installed estimates exclude all shared controller/battery/charger costs
+EXIT0
+
+$ /usr/bin/python3 tools/m4a_handoff.py
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Prepared byte-identical E2 handoff; five bare boards / one staged population; all five authorizations NOT_AUTHORIZED
+EXIT0
+
+$ /usr/bin/python3 tools/m4a_document_checks.py
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS 120 local links; 147 frozen/archive hardware files; 56 E2 review copies; costs and all NOT_RUN/NOT_AUTHORIZED gates
+EXIT0
+
+$ /usr/bin/python3 --version
+Python 3.12.3
+
+$ kicad-cli version
+10.0.6

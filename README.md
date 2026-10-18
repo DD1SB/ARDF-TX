@@ -15,6 +15,20 @@ A modular, cost-conscious, field-deployable transmitter platform for amateur rad
 
 **Earlier 80 m status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
 
+**M4A, 2026-10-15:** the frozen **1245023 / m3b-e2** reference now has a
+[self-contained five-bare-board prototype handoff](docs/M4A_E2_PROTOTYPE_HANDOFF.md).
+A separate **150 × 110 mm** [RF80 V1 KiCad candidate](hardware/80m/production/README.md)
+reduces board area **50.9%**, preserves both populations and all functional
+components/connections, and retains 14 of 74 test pads. See the
+[review decision](docs/M4A_REVIEW_DECISION.md), [layout](docs/M4A_COMPACT_LAYOUT.md),
+[mechanical interface](docs/M4A_MECHANICAL_INTERFACE.md),
+[variant BOM/costs](docs/M4A_VARIANT_BOM.md),
+[electrical equivalence](docs/M4A_ELECTRICAL_EQUIVALENCE.md) and
+[production test plan](docs/M4A_PRODUCTION_TEST_PLAN.md).
+**PRODUCTION-INTENT — NOT RELEASED; all physical qualification remains NOT_RUN.**
+Purchasing, fabrication, population, power-up and RF activation need distinct
+explicit authorization; none has occurred.
+
 **Power reassessment, 2026-10-14:** the user now requires **12 h full-power / 24 h competition-appropriate reduced-power** operation. The completed [2S/4S review](docs/M2_POWER_ARCHITECTURE_DECISION.md) proposes mode-dependent supplies and packs; [ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md) awaits review. Earlier 24 h maximum-power tables below and in M1/M2 remain historical calculations, not current pack recommendations.
 
 **M3A, 2026-10-14:** [schematic project and PDF](hardware/80m/README.md), [review decision](docs/M3_80M_REVIEW_DECISION.md), [circuit explanation](docs/M3_80M_SCHEMATIC_REVIEW.md), [PA choice](docs/M3_80M_PA_SELECTION.md), [BOM](docs/M3_80M_BOM.md), [prototype gates](docs/M3_80M_TEST_PLAN.md) and [checks](docs/M3_80M_CHECKS.md). Selected IRF610 normal path targets approximately3 W full /1.2 W extended on4S; separate10 mW Fox path supports2S reduced population. 2 m remains genuine A2A,1 W carrierERP with required AM PEP.

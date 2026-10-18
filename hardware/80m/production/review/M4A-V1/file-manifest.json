@@ -1,0 +1,667 @@
+{
+  "revision": "M4A-V1",
+  "reference_commit": "1245023",
+  "classification": "PRODUCTION-INTENT - NOT RELEASED",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 12564,
+      "sha256": "74fccfbba60003c2a6109ba9d92275e9f6ee6445e4d8948de1599fdd9e26ec96"
+    },
+    {
+      "path": "docs/M4A_COMPACT_LAYOUT.md",
+      "bytes": 5936,
+      "sha256": "de575a07b15203df5aeb0e7d4cb6d855ca6c3438e21b1bf4ccbaf1715366b8d5"
+    },
+    {
+      "path": "docs/M4A_COSTS.json",
+      "bytes": 312256,
+      "sha256": "858c2e3d3e20a3fddb7ebb280aec080a1ca151b36d7d12afa80908c429c62535"
+    },
+    {
+      "path": "docs/M4A_E2_PROTOTYPE_HANDOFF.md",
+      "bytes": 8818,
+      "sha256": "c920cd567aea47aa7cfc6581f17963ac4e3e76b51fc0f2ddbe8a4b109f365958"
+    },
+    {
+      "path": "docs/M4A_ELECTRICAL_EQUIVALENCE.md",
+      "bytes": 4917,
+      "sha256": "1f06e089bf0f9aade97c645f4713e3f0ea91fd8e75c275a6941e0239eb2420d5"
+    },
+    {
+      "path": "docs/M4A_MECHANICAL_INTERFACE.md",
+      "bytes": 5010,
+      "sha256": "4881d831187e63bb7d2fb0996179275b64174bf9a4578aa5c4bb1985fc2f1744"
+    },
+    {
+      "path": "docs/M4A_PRODUCTION_TEST_PLAN.md",
+      "bytes": 7459,
+      "sha256": "149b4ef41bda9ee7dae7177cc1a814a4c55608d73197e1beeb23b010a95e377f"
+    },
+    {
+      "path": "docs/M4A_REVIEW_DECISION.md",
+      "bytes": 7381,
+      "sha256": "744fa7bb5110d7d3d911010e5788bb2d9125ef477719cef9ef233bfedabadc75"
+    },
+    {
+      "path": "docs/M4A_VARIANT_BOM.csv",
+      "bytes": 111211,
+      "sha256": "311a2b68a5223de2fa7f55e4d7bdd3cef1dc40ac16f5ae173ae23adf7f3ef823"
+    },
+    {
+      "path": "docs/M4A_VARIANT_BOM.md",
+      "bytes": 8394,
+      "sha256": "affc1c7f36693bf0ca766ac3f4e886868749672022c41c0c5359171c9379296b"
+    },
+    {
+      "path": "hardware/80m/production/.gitignore",
+      "bytes": 67,
+      "sha256": "63e962c2b017df5c6c699b426d452b90abf2002a61f6945b8351487bd544e712"
+    },
+    {
+      "path": "hardware/80m/production/01_source_interface.kicad_sch",
+      "bytes": 73585,
+      "sha256": "5d35cc90efbd447f2444f7e85d5fe98c8910b925c43ae5253760aaed78176d4e"
+    },
+    {
+      "path": "hardware/80m/production/02_interlocks.kicad_sch",
+      "bytes": 70020,
+      "sha256": "b83212f382ca15af0b1fab530f0aceb6e5533d8a4723237401d1dc0e9c5d45ba"
+    },
+    {
+      "path": "hardware/80m/production/03_safety_logic.kicad_sch",
+      "bytes": 65704,
+      "sha256": "ef75261ac31845697b00afc922d63c8d78df51d2c7c375908f518d0dc34d1e2a"
+    },
+    {
+      "path": "hardware/80m/production/04_arm_key.kicad_sch",
+      "bytes": 89349,
+      "sha256": "893b4e48ae98f2fc3d500a66e05bf2c44e2fff974296dc5450a15dba2ed688b6"
+    },
+    {
+      "path": "hardware/80m/production/05_power.kicad_sch",
+      "bytes": 76255,
+      "sha256": "d0b6b8d052ca60af532cee4e8bde1cfbdfcf2f8ed2ec6a8fe6ab332198688f4a"
+    },
+    {
+      "path": "hardware/80m/production/06_analog_protection.kicad_sch",
+      "bytes": 48887,
+      "sha256": "3da2f9a64a5f96dde8924a7ae161a456447305cee817e3fa1c590b81f696c7fd"
+    },
+    {
+      "path": "hardware/80m/production/06b_thresholds.kicad_sch",
+      "bytes": 23083,
+      "sha256": "5e306c463a82b48aa21983807ae0fdc47ef72cb06098acbcb1a4277931706207"
+    },
+    {
+      "path": "hardware/80m/production/07_current_thermal.kicad_sch",
+      "bytes": 59840,
+      "sha256": "d38e16fc4680036bf82063ab92f27cf0b6ae86c5bd7d459b07a8a509b2b8bde8"
+    },
+    {
+      "path": "hardware/80m/production/08_normal_rf.kicad_sch",
+      "bytes": 74875,
+      "sha256": "708c96da41772b729cef327776a55e1c01a745e778b8ab3f81f0d4ecffac7abe"
+    },
+    {
+      "path": "hardware/80m/production/08b_key_tail.kicad_sch",
+      "bytes": 24290,
+      "sha256": "46cea5746355e6b0be8df682a7de415c531dec1dbbad7230adeca596d9d45700"
+    },
+    {
+      "path": "hardware/80m/production/09_normal_filter.kicad_sch",
+      "bytes": 30768,
+      "sha256": "6ae85d42eaeb131d2f8810c5b36a61579f2fbdc152d03698c79741a7be3785de"
+    },
+    {
+      "path": "hardware/80m/production/10_fox_rf.kicad_sch",
+      "bytes": 76874,
+      "sha256": "964b4050c915b38f70927dbd107a0de71d658b07bace72b630315e7146a52443"
+    },
+    {
+      "path": "hardware/80m/production/11_fox_filter.kicad_sch",
+      "bytes": 48547,
+      "sha256": "bfb40e52465fac3c8c9cba0327505ed3cd91c513ee1572b27d75fbdfcbb3c6c7"
+    },
+    {
+      "path": "hardware/80m/production/12_evaluation.kicad_sch",
+      "bytes": 25146,
+      "sha256": "e2378ac0887318422da068b241fbd1f20c703a40ca3650627fde6bacbe7b141d"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/78F_envelope.wrl",
+      "bytes": 334,
+      "sha256": "ec6ca6ef7584e9908f6da977c1353dfa16858521311b0c204fa01521f23bfe2a"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/ABM3B_envelope.wrl",
+      "bytes": 336,
+      "sha256": "d3845556645e80d93155fa92a501d8cbade46a9b769ddd51677a94754643bfd4"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/FT50A43_envelope.wrl",
+      "bytes": 9337,
+      "sha256": "de1a05c69290ab8d1faabdb53ddfc1613c1a6fb9dc091cb18d38dbc1de1e231c"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/Fuse467_envelope.wrl",
+      "bytes": 336,
+      "sha256": "625746a21590c9942e3113bb5699269667f5553b1e0eac775d72654741520f29"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/JST_VH_envelope.wrl",
+      "bytes": 366,
+      "sha256": "3cc64e60aafdc78fa7188ad8189432a7fc75c73e5f7c1fd812c8abf64e84f7e7"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/SRP7050TA_envelope.wrl",
+      "bytes": 333,
+      "sha256": "16a9cf9ce6e3f600142ae47d501bde4313f3d1f2cc6800160ac920f6df4e894e"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/ST_BD140_envelope.wrl",
+      "bytes": 1479,
+      "sha256": "a3ff2e296cc1d8e672c9b4674e11e029f2190386bc6d2321534190fa7f997be1"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/T60_2_flat_envelope.wrl",
+      "bytes": 9238,
+      "sha256": "850b0952fea290625b39dba8236c933f25d3dafeac6a8b1f700d1d3bc77a7fc2"
+    },
+    {
+      "path": "hardware/80m/production/3dmodels/T60_2_upright_envelope.wrl",
+      "bytes": 9242,
+      "sha256": "bbab46a61b64ff6a03a4d1eda0308cd90d81d66c54a64f27051382b71f24f9eb"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.kicad_sym",
+      "bytes": 152052,
+      "sha256": "3ce427ed4a9f1b35354759fb2b9c6b10ae73891ad82dfd49a19ddb7f9b49978e"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/78F_Axial.kicad_mod",
+      "bytes": 811,
+      "sha256": "4a310607ea0a076630106df958a2b5c10014e669c4237f12a0a5f0aadf376f88"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/FT50A43_Bifilar_4Terminal.kicad_mod",
+      "bytes": 1160,
+      "sha256": "1700a66f304fd3495097091650b0b194e2394f4921068181c0bd00285e0bd2b3"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/FT50A43_Inline_4Terminal.kicad_mod",
+      "bytes": 1062,
+      "sha256": "0aad11ce503dfcd00928590e70c89f105c99721c372c5b5c534e4f1fd3b90c86"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/Fuse_467_0603.kicad_mod",
+      "bytes": 782,
+      "sha256": "3428bca9e3092d52f60396c25d2554b876f24c5128a876688a1644e695c4220d"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/Probe_Pad_0p8.kicad_mod",
+      "bytes": 500,
+      "sha256": "0cb32295cb836e12bd525cb7d8eeda65266589e6d7c392433823e3a4702ce641"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/SRP7050TA.kicad_mod",
+      "bytes": 806,
+      "sha256": "2325bf86b3f57dc07219e4e5cf3abf4d763314db2438882861496030505b316b"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/ST_BD140_SOT32_1p3Drill.kicad_mod",
+      "bytes": 2273,
+      "sha256": "4506c33f5d1823e075dd8c11292048ba02814b9a35c89efd2748fb036e176b22"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/T60_2_20T.kicad_mod",
+      "bytes": 910,
+      "sha256": "0606b486c1499aa55ead6675c2087c161e79d670b8f72a575611907f62eed093"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/TO220_Vertical_1p3Drill.kicad_mod",
+      "bytes": 2475,
+      "sha256": "f74d6f8d6c6c4e0b1157f0b5086c618e3f1f36c4e083b533bea1b22dbd3801ca"
+    },
+    {
+      "path": "hardware/80m/production/ARDF_TX.pretty/Wurth_61201621621.kicad_mod",
+      "bytes": 5695,
+      "sha256": "e4ae277a7f3fdb3cd618fac021c1b80c5e11ef1e7d8aa40f27857e7d60ab026c"
+    },
+    {
+      "path": "hardware/80m/production/LICENSES.md",
+      "bytes": 2668,
+      "sha256": "8fa356a07c0eed8a75e4be648a946bb6b1a39eb0b5eae97c82ea44d016670085"
+    },
+    {
+      "path": "hardware/80m/production/README.md",
+      "bytes": 2153,
+      "sha256": "2d86789fbd0c014bb0af4e265f7ad6ec0f706e07ff046619711def732d542a9e"
+    },
+    {
+      "path": "hardware/80m/production/RF80_V1.electrical.json",
+      "bytes": 201599,
+      "sha256": "3db4393eea88cd7d015f31924f3f61b945c18bb2c253d2603101f378b548597b"
+    },
+    {
+      "path": "hardware/80m/production/RF80_V1.kicad_dru",
+      "bytes": 237,
+      "sha256": "d33272f37aa6da9e42ae13fa4006ad2ed2314b723f2936e352a45aa0ce34309c"
+    },
+    {
+      "path": "hardware/80m/production/RF80_V1.kicad_pcb",
+      "bytes": 2501627,
+      "sha256": "4a23d9f8144ccb350718d798fad410279ea31ad63cda6e826637a312fcfcd2e6"
+    },
+    {
+      "path": "hardware/80m/production/RF80_V1.kicad_pro",
+      "bytes": 9838,
+      "sha256": "8562137e4044e03c5624d7f59d843dce78e654989ec08fbbb093c3a66e8325f5"
+    },
+    {
+      "path": "hardware/80m/production/RF80_V1.kicad_sch",
+      "bytes": 7835,
+      "sha256": "d1a8582fccee66a65af68470a9e1d82319295ba88e93c53e687ce7132a47aef9"
+    },
+    {
+      "path": "hardware/80m/production/fp-lib-table",
+      "bytes": 169,
+      "sha256": "6f27fb5b105c132f6c5954da03854a62647618010da571bd7a733adf5014d59f"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/DRC.json",
+      "bytes": 387,
+      "sha256": "c6c038da5b2eff59e97605e5f8bdd9e59ec6c4004ceebf41af84f4753b4a127e"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/DRC.rpt",
+      "bytes": 276,
+      "sha256": "d51a9a996f7893e611b97a56260eeab1027cba81bf90b5f284df778c24b15fca"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/ERC.json",
+      "bytes": 4079,
+      "sha256": "efdd8d8443b0708d4fab4fc3eab80620507931a3db4dab7663b03e7ae9a3372a"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/README.md",
+      "bytes": 3924,
+      "sha256": "82ff5e5d41ac1d85f2a59b212d96df51fa1491ad6679633be8491620c47b608b"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-3D-bottom.png",
+      "bytes": 288562,
+      "sha256": "bd8e8b32087061c8f11271414ea1adb7cfe21b7743e13a556603b16f0c76d6b9"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-3D-top.png",
+      "bytes": 834132,
+      "sha256": "96392281e51b1090e7b265bfc214e404fdee8b7888cc0441940f450a6ec9dc7b"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-3D.png",
+      "bytes": 1650334,
+      "sha256": "88ef4be1603123c1def48da123f181118f644ca604317ff1538893724a036d65"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-position-all.csv",
+      "bytes": 13972,
+      "sha256": "3870172399b019fbc03b9eedabb2d52930f7c110f72db020e2fd4c36b0e79c40"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-position-fox.csv",
+      "bytes": 7457,
+      "sha256": "756817a960b6cd2b5f70608eb1f577c0a5e2c51bb93c22af745ecf0ca34bf678"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1-position-full.csv",
+      "bytes": 13775,
+      "sha256": "bf84f3ecc7b06dc6007d6651adb79d48db9ae6fb4b3afa344f2308fa37507c5c"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1.dsn",
+      "bytes": 303720,
+      "sha256": "616de57654a5e17e58015acebda911b874c441cf68fbee37d73e138681e71084"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1.ipc",
+      "bytes": 71235,
+      "sha256": "8208c40037981f218a292fb0b243f771719745794a15cd119fe46fa43753ac1e"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1.pdf",
+      "bytes": 938078,
+      "sha256": "e071ebb8e0c1f5b8b11b4d0b009b39e3782f171806f8b0d9991b6deabe4e1106"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/RF80_V1.xml",
+      "bytes": 449076,
+      "sha256": "b1dbcf86e859f7ba3c1d1cfa2f13b280f21014b41a65b2a1e4a4cef39e5402c3"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/assembly-bottom.pdf",
+      "bytes": 175011,
+      "sha256": "83061a66969c4edbf084f55e9cd98aa56d9c09c37e55b11cacc12a76d0c36172"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/assembly-bottom.svg",
+      "bytes": 51455,
+      "sha256": "78c8a91d3749a2d9419b9b76416cf518764d79c450cd06f3f2495236df51de14"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/assembly-markings.json",
+      "bytes": 577,
+      "sha256": "315132712ae61cbed1bc3b19015f18adda5be16e2c4f05c621d39a9bf4cff37a"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/assembly.pdf",
+      "bytes": 364284,
+      "sha256": "b52756827164efb66bd0a21e0b4ed7ad7489b1420fb2197c0ad94183d2bfa56f"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/assembly.svg",
+      "bytes": 2492322,
+      "sha256": "f8d975880e7746ed091524d0050bfd27b1642dde8e0fde36290d5049c7ac60e8"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/bottom-copper.svg",
+      "bytes": 285508,
+      "sha256": "203b4fa3176e1dcdd18c162db6a212255fb58c1328b800f6907503eca6bdade7"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/critical-routes.json",
+      "bytes": 28334,
+      "sha256": "fe62c868b1fc36f78f1110743824a34fb002ecb783a21a1001e1f249f4a278da"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/documentation-checks.json",
+      "bytes": 10618,
+      "sha256": "6f18d5d562574712e1eead753e306fae4a3e56f6a865436189397b571766db2e"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/drc-coverage.json",
+      "bytes": 8265,
+      "sha256": "9fafd50f3f4feebd013123955e324662a202dcdc01331222461238bc84eeb14e"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/drill-report.rpt",
+      "bytes": 946,
+      "sha256": "38a651354a8f7546c9f56bca7ceca9e75e6625eb88142c79f34d925a0febe43b"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/electrical-equivalence.json",
+      "bytes": 37361,
+      "sha256": "72d6b905a3488eb8edbd9bdf387d676523c0b11b6cf6c68b10248d26725150ad"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/export-commands.log",
+      "bytes": 13078,
+      "sha256": "faebcbca796a9ab6664803acd4ad8373bfa8b0d5f38e40a43c83bd4bdcab1471"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/fabrication-audit.json",
+      "bytes": 1289,
+      "sha256": "e662ee37fd9ca3401c08c4d13496991ef4dd650873bf16d8c23c7db7deae968b"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-B_Cu.gbl",
+      "bytes": 366434,
+      "sha256": "81a1d809a3f393e129b7c209795def3cfc14a44c309b4c140a0b839103a540b9"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-B_Mask.gbs",
+      "bytes": 65304,
+      "sha256": "0f65f6341f99675319369c3a36747dc0482df9b664776e8d65876dab518616df"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-B_Paste.gbp",
+      "bytes": 496,
+      "sha256": "807e9b51519151488a24d57651c80514f2e988a16e067d0c630021788f85f2bf"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-B_Silkscreen.gbo",
+      "bytes": 65314,
+      "sha256": "6c6d4d387c474162b453da4ddc1e75f330ab7b0f6bea9accca952d038237305b"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-Edge_Cuts.gm1",
+      "bytes": 726,
+      "sha256": "746d7d596904fa6a66f961771a15f18b332c7b5b498153bba8b754a161ad1a6d"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-F_Cu.gtl",
+      "bytes": 760312,
+      "sha256": "b6c338c6b88d783e86f70528f1bd95a6bc26431d0c2798403286a717e74584eb"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-F_Mask.gts",
+      "bytes": 513070,
+      "sha256": "8ba76e4cdc497f4a4fc163daa92de4ba3c6b0e01cba7215712697880e0bf2109"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-F_Paste.gtp",
+      "bytes": 21013,
+      "sha256": "efa86676dd3ac58558b3a85003cbfab20a1c4202f610d9db103a15325d767c86"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-F_Silkscreen.gto",
+      "bytes": 994070,
+      "sha256": "f0fbd373a64f07d60856dbf530b5b0517278787c5d8074f3cb46d0e67a9260fb"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-NPTH-drl_map.pdf",
+      "bytes": 12181,
+      "sha256": "4eb41075974853f571ea4c61c73fba06623080d4e8d4132d3e89b424109c1397"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-NPTH.drl",
+      "bytes": 422,
+      "sha256": "906b8f750f742dddfdb322bd93707328aaecf18f4f48619c6297e27a2f75f680"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-PTH-drl_map.pdf",
+      "bytes": 27628,
+      "sha256": "3d79d4ff4d7b941a4171ccadfb737be68233fb9d7eb933fe56aa775921dbdf07"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-PTH.drl",
+      "bytes": 6706,
+      "sha256": "fc63c7f7e8aadf845b9d238d1049157eeb309a8bc8c013f0538cd750e1169348"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/gerbers/RF80_V1-job.gbrjob",
+      "bytes": 2709,
+      "sha256": "4fb8f124f925bb11c4103bdaa6e5043e955c6396bc496f8211cfb95b1e4aab45"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/ground-connectivity.json",
+      "bytes": 50689,
+      "sha256": "c1375f08693188e4c13d180e39e1fa4033a57d8270bb1a2635daf35c2d27266c"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/historical-version-regressions.json",
+      "bytes": 2815,
+      "sha256": "d514701024c4cf7470025ef35c234686863a585ecbfe30f746d589a6b4829e72"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/logic-results.json",
+      "bytes": 4697,
+      "sha256": "b8857961b0b7c1b83d2873a5a80c9cc63732d1727b18ec4c1128f8dbf9220e2c"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/logic-source.json",
+      "bytes": 406,
+      "sha256": "14e23fcedbde4e07f4f048a18d0a1306c8b6e4aa695c22acabb384b070bf419c"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/manufacturing-notes.md",
+      "bytes": 2099,
+      "sha256": "7bdf6b50f4ff4959d4e1b01e11b005388aae2693c52f8f38e1d1cbdb0c877e13"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/mechanical-interface.svg",
+      "bytes": 3356,
+      "sha256": "3bbbc453fefa244a4ecbf69fe243b121ef2ce02bc213351224f92e47df1fb731"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/mechanical-stackup.json",
+      "bytes": 20706,
+      "sha256": "73c836cadc054b28316a44431d97d4761d7fd3e1dfb6fd2805e1d746527cf114"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/physical-qualification.json",
+      "bytes": 4540,
+      "sha256": "f18541a3727a052971eb452cf1a3a261bade183cc96900d8d927d1c769f6bb03"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/placement-plan.json",
+      "bytes": 19593,
+      "sha256": "44e551364ddde47e79dc94cb2ec5a669c8e56e6d1ff682a505ec48a4c1ce67d3"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/population.csv",
+      "bytes": 15098,
+      "sha256": "52bd2112e60a7c8f15eda9c04ef9ededdb4bc8975384be7e136d56e44c25d796"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/production-test-pads.csv",
+      "bytes": 396,
+      "sha256": "116fd65f7b7211bc12afa5aae8d4c96ecf7d73ebcadab9f860629272296c11e9"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/README.md",
+      "bytes": 488,
+      "sha256": "f89ccb71c81f257ad8cf83a346ee9619902a519952d8b6ce524d614556c9d810"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/final-clearance-adjustments.json",
+      "bytes": 590,
+      "sha256": "30f52f59fe6a0fcb06b3043dd2650fbea45f9ea32aeabaa9a54ae623dbcb8c63"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/ground-region-stitching.json",
+      "bytes": 3464,
+      "sha256": "812f45f4db5c8bb3761ad8fa40f19aa6a46cc1a2ea7e4c554e1f563e59f64096"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/ground-return.json",
+      "bytes": 24020,
+      "sha256": "1811f3c8d38e5b27576ab72be96ca0660f40c07b0c2e0173679f848141923d49"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/local-ground-openings.json",
+      "bytes": 1397,
+      "sha256": "9aab5aba03a8e6af244de3309d737ca2f862367cdf85aaebd18c9e1fb4f0de94"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/local-ground-signal-gaps.json",
+      "bytes": 1752,
+      "sha256": "b07a6f7953261230e7f2b3d984491e49d496613bf133bc9fdf415bcc498b2879"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-history/local-route-completion.json",
+      "bytes": 122248,
+      "sha256": "d36bf3d3e1323a6c88970fb8cd1873dde78c89a3878b2fe940e6f8b27b35e5a2"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/routing-summary.json",
+      "bytes": 13717,
+      "sha256": "7af4eafb1b75247e5fca3f8709c5326bf079fb282091d91491af6c2da7b51769"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/source-status.json",
+      "bytes": 1962,
+      "sha256": "3c029a3a5fb24923f638dbb50da2de350752be0bf7adc27154cf4828567e3fe8"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/test-feature-disposition.json",
+      "bytes": 14053,
+      "sha256": "2fbf2c7f22fdbde442ae3c8c73c3d97e17440e78f5e58f417fe691749b9ca285"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/top-copper.svg",
+      "bytes": 785361,
+      "sha256": "8059c91e83a9686f2ab69fbaa44258031db960f9f29f4c5b6925751d50efd833"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/verification-commands.log",
+      "bytes": 4183,
+      "sha256": "baf927892c4a7c2eb757fb6383c6fb63fe2e7226c66d2bd7056cd72793198b4e"
+    },
+    {
+      "path": "hardware/80m/production/review/M4A-V1/verification.md",
+      "bytes": 4488,
+      "sha256": "ea32fc5c8ba6b9994a55349e0a51784cc31da3b75cde48bb2eb57c44ccda529e"
+    },
+    {
+      "path": "hardware/80m/production/sym-lib-table",
+      "bytes": 172,
+      "sha256": "3da86303a0f7374f920266117f430e60381fd65e34f5f891571d451bc8e29887"
+    },
+    {
+      "path": "tools/m4a_artifact_audit.py",
+      "bytes": 9474,
+      "sha256": "6a628a88736447de8b7ba65dff0ecb9ffc36cf261ede2a4c7c31d9ad1c5e70a2"
+    },
+    {
+      "path": "tools/m4a_costs.py",
+      "bytes": 4535,
+      "sha256": "f1685bf8c15280eef3dbf6ddd9115ad4d8814fd60f4caa53945b0a3f7642a99d"
+    },
+    {
+      "path": "tools/m4a_design.py",
+      "bytes": 12499,
+      "sha256": "590f9084bfd35a111055b486c6186bf2dc5ab9aefb44149d5f0fc96e36b34763"
+    },
+    {
+      "path": "tools/m4a_document_checks.py",
+      "bytes": 4222,
+      "sha256": "1875d437af8816af4c714812a44ff798f72e7dbbdcf8e610518ffea4df210d35"
+    },
+    {
+      "path": "tools/m4a_exports.py",
+      "bytes": 4801,
+      "sha256": "8dfa9bd08517852d1b6f9a578ae49eabd2fea5ecc20b99c1e1d76e34d036049b"
+    },
+    {
+      "path": "tools/m4a_finish.py",
+      "bytes": 6715,
+      "sha256": "4878a3ff15a828da8683cf42c987bcdde7998a18db4b72cb34268cf5dfb21be6"
+    },
+    {
+      "path": "tools/m4a_geometry_review.py",
+      "bytes": 5058,
+      "sha256": "9a86bd774c2889f901a6db00e987761612cba81908a38849687d3929a7497caa"
+    },
+    {
+      "path": "tools/m4a_handoff.py",
+      "bytes": 4982,
+      "sha256": "de65895cc5fa18094262c772725be841c8eea867f1055c3ff9f3b12e0eec25a7"
+    },
+    {
+      "path": "tools/m4a_local_ground_repair.py",
+      "bytes": 2406,
+      "sha256": "2a1696d09dae867650ba7e80d49d5d5218ae6981f9100d9ec95906c93fb93818"
+    },
+    {
+      "path": "tools/m4a_patch_route.py",
+      "bytes": 7714,
+      "sha256": "5a551e1f5ac86604d6216319ba767705f3573d97c945ce27c22c7895989eb8ae"
+    },
+    {
+      "path": "tools/m4a_route.py",
+      "bytes": 4758,
+      "sha256": "3341a8dc22b7b072c97578a875162046e696b7070b3361c62b200c955fcad352"
+    },
+    {
+      "path": "tools/m4a_stitch.py",
+      "bytes": 4913,
+      "sha256": "87392b4eac3222a612a8ccefc9d4ae0c668858c933efa0f4696b031effe97b40"
+    },
+    {
+      "path": "tools/m4a_verify.py",
+      "bytes": 8375,
+      "sha256": "a8b666400ba90277571e5a3438054f68d5185503212bc2ae6087c22e11862713"
+    }
+  ]
+}

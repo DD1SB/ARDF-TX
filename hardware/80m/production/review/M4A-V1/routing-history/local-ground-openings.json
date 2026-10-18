@@ -1,0 +1,82 @@
+[
+  {
+    "reason": "U501 return",
+    "new_ground_via_mm": [
+      112.5,
+      113.6
+    ],
+    "removed_signal_segment": {
+      "uuid": "d8dea6fa-1654-45c3-aff1-bcacaa7c76ca",
+      "net": "FOX_SUM",
+      "start": [
+        113.1,
+        113.45
+      ],
+      "end": [
+        112.15,
+        114.4
+      ],
+      "layer": "F.Cu"
+    }
+  },
+  {
+    "reason": "R112 return",
+    "new_ground_via_mm": [
+      55.9,
+      68.9
+    ],
+    "removed_signal_segment": {
+      "uuid": "27d02a67-3c5c-4da1-ac69-5484246a78e7",
+      "net": "FOX_REQ",
+      "start": [
+        55.8725,
+        59.5037
+      ],
+      "end": [
+        55.8725,
+        69.7209
+      ],
+      "layer": "B.Cu"
+    }
+  },
+  {
+    "reason": "U312 return",
+    "new_ground_via_mm": [
+      96.7,
+      59.3
+    ],
+    "removed_signal_segment": {
+      "uuid": "8687dbdd-a785-4425-af92-4dc363da491c",
+      "net": "PA_OV_REF",
+      "start": [
+        97.1277,
+        59.6644
+      ],
+      "end": [
+        97.1277,
+        57.8925
+      ],
+      "layer": "F.Cu"
+    }
+  },
+  {
+    "reason": "U401 return",
+    "new_ground_via_mm": [
+      121.5,
+      36.3
+    ],
+    "removed_signal_segment": {
+      "uuid": "dcacc6a0-bb25-4509-95d9-f9b539382fc8",
+      "net": "PA_INB",
+      "start": [
+        120.876,
+        35.6167
+      ],
+      "end": [
+        124.224,
+        38.9647
+      ],
+      "layer": "B.Cu"
+    }
+  }
+]

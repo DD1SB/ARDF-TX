@@ -1,0 +1,64 @@
+{
+  "status": "CAD/export checks PASS; PRODUCTION-INTENT NOT RELEASED",
+  "Gerber_layers": 9,
+  "separate_PTH_NPTH": true,
+  "native_drill_coordinates_verified": 401,
+  "maximum_drill_coordinate_quantization_mm": 0.0005,
+  "corrected_pin_copper_flashes_and_IPC": {
+    "Q403": {
+      "1": {
+        "net": "SHAPE_BASE",
+        "position_mm": [
+          114.56,
+          75.0
+        ]
+      },
+      "2": {
+        "net": "VPA_SHAPED",
+        "position_mm": [
+          112.28,
+          75.0
+        ]
+      },
+      "3": {
+        "net": "VPA_LOAD",
+        "position_mm": [
+          110.0,
+          75.0
+        ]
+      }
+    },
+    "U311": {
+      "1": {
+        "net": "VREF_2V5",
+        "position_mm": [
+          88.0625,
+          72.05
+        ]
+      },
+      "2": {
+        "net": "VREF_2V5",
+        "position_mm": [
+          88.0625,
+          73.95
+        ]
+      },
+      "3": {
+        "net": "GND",
+        "position_mm": [
+          89.9375,
+          73.0
+        ]
+      }
+    }
+  },
+  "placement_rows": {
+    "full": 195,
+    "fox": 115
+  },
+  "limitations": "No independent raster/etch simulation, physical dimensional/RF/thermal tests or supplier approval",
+  "tool_versions": {
+    "kicad_cli": "10.0.6",
+    "pcbnew": "10.0.6-10.0.6~ubuntu24.04.1"
+  }
+}

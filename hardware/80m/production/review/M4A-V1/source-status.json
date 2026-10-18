@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "scope": "Targeted sourcing/manufacturing checks only; no new RF architecture research, no supplier communication or quote",
+  "observations": [
+    {
+      "url": "https://www.ti.com/product/LM5134/part-details/LM5134BMF/NOPB",
+      "status": "Accessed manufacturer page",
+      "finding": "Active DBV6 part; public page out of stock; no guaranteed distributor cut-tape availability or new EUR price"
+    },
+    {
+      "url": "https://www.st.com/en/power-transistors/bd140.html",
+      "status": "Accessed manufacturer page",
+      "finding": "Active volume production; ST-only pin mapping retained; no new price observation"
+    },
+    {
+      "url": "https://www.digikey.de/en/products/detail/texas-instruments/LM5134BMF-NOPB/3727251",
+      "status": "Retrieval failed",
+      "finding": "No current inventory or price claimed; search-index stock snapshots not used"
+    },
+    {
+      "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "status": "Accessed supplier capability page",
+      "finding": "Ordinary PTH+0.13/-0.08mm is insufficient for all frozen critical holes; separate controlled-hole process needs explicit confirmation/quote"
+    },
+    {
+      "url": "https://www.pcbway.com/capabilities.html",
+      "status": "Accessed supplier capability page",
+      "finding": "Ordinary PTH+/-0.08mm is insufficient for all critical holes; no quote"
+    },
+    {
+      "url": "https://www.pcbway.com/advanced-pcb-capabilities.html",
+      "status": "Accessed supplier capability page",
+      "finding": "Tighter diameter-dependent tolerances in advanced table; not confirmed board-specific capability or repeatable price"
+    }
+  ],
+  "component_prices": "Preserved E2 dated distributor observations and estimates, exact MPN/MOQ/multiple in M4A_VARIANT_BOM.csv. Not refreshed stock/price.",
+  "PCB_prices": "Unquoted area/setup planning assumptions; mandatory tolerance surcharge, freight and yield OPEN"
+}

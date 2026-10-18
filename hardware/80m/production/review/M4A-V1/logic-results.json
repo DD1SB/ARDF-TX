@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-14",
+  "revision": "M3A-R1",
+  "classification": "PIN-DERIVED STATIC LOGIC AND IDEAL EVENT/RC SIMULATION; NO HARDWARE VALIDATION",
+  "truth_cases": 256,
+  "state_scenarios": [
+    "startup and stuck heartbeat, no fabricated reset-release progress",
+    "PA CW rise, pause and retained fall tail",
+    "PA fault POR_N and deliberate rearm",
+    "PA fault uv and deliberate rearm",
+    "PA fault MUTE_N and deliberate rearm",
+    "PA fault SCL and deliberate rearm",
+    "PA fault SDA and deliberate rearm",
+    "PA watchdog timeout, progress restoration does not rearm",
+    "PA I2C activity and quiet interval",
+    "PA captured path, withdrawal fault, opposite path requires rearm",
+    "FOX CW rise, pause and retained fall tail",
+    "FOX fault POR_N and deliberate rearm",
+    "FOX fault uv and deliberate rearm",
+    "FOX fault MUTE_N and deliberate rearm",
+    "FOX fault SCL and deliberate rearm",
+    "FOX fault SDA and deliberate rearm",
+    "FOX watchdog timeout, progress restoration does not rearm",
+    "FOX I2C activity and quiet interval",
+    "FOX captured path, withdrawal fault, opposite path requires rearm",
+    "PA local trip local4",
+    "PA local trip ov",
+    "PA local trip oc",
+    "PA local trip hot",
+    "PA local trip sensor",
+    "PA local trip PACK4_OK",
+    "PA local trip FOX_ID",
+    "conflicting paths and invalid power code cannot arm or recover automatically",
+    "profile held during ARM, deliberate cycle captures new profile",
+    "KEY held high cannot arm",
+    "fault before or during delayed ARM is not recovered by a pending clock",
+    "healthy idle bus plus fresh ARM still cannot arm without progress"
+  ],
+  "timing_corners": [
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.45,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 0.891,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.55,
+      "VTminus_ratio_assumed": 0.4
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.25
+    },
+    {
+      "K_assumed": 0.6,
+      "RC_multiplier": 1.1110000000000002,
+      "VTplus_ratio_assumed": 0.75,
+      "VTminus_ratio_assumed": 0.4
+    }
+  ],
+  "polarity_mutations_rejected": [
+    [
+      "13",
+      "4"
+    ],
+    [
+      "12",
+      "5"
+    ]
+  ],
+  "inverted_watchdog_no_progress_unsafe_permission_reproduced": true,
+  "watchdog_ms_design_range": [
+    132.3135,
+    219.978
+  ],
+  "quiet_ms_design_range": [
+    1.884465,
+    3.13302
+  ],
+  "not_proved": [
+    "K range is a design sensitivity envelope, not manufacturer guaranteed bounds",
+    "Propagation delays, races, asynchronous reset recovery and metastability",
+    "RC bias/leakage/Schmitt temperature corners and fast supply collapse",
+    "Driver OV interruption timing, shaper SOA, RF leakage/emissions/power/field/thermal/endurance"
+  ]
+}
