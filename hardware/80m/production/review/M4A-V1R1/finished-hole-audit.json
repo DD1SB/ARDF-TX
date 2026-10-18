@@ -1,0 +1,204 @@
+{
+  "status": "PASS_NATIVE_GEOMETRY_WITH_DISCLOSED_INCOMING_SCREEN_LIMITS",
+  "native_sha256": "b8695218798690759bc9145ebbe8893f6d402d09a971ba9332207d45d3924ef7",
+  "component_PTH_tolerance_mm": [
+    -0.08,
+    0.13
+  ],
+  "minimum_insertion_target_mm": 0.1,
+  "holes_audited": 29,
+  "rows": [
+    {
+      "ref": "J101",
+      "mpn": "61201621621",
+      "lead_nominal_mm": [
+        0.64,
+        0.64
+      ],
+      "lead_max_mm": [
+        0.79,
+        0.79
+      ],
+      "limit_kind": "MANUFACTURER: square0.64+/-0.15",
+      "source": "https://www.we-online.com/components/products/datasheet/61201621621.pdf",
+      "drawing": "002.001,2026-08-30,p1",
+      "hole": 1.4,
+      "pad_count": 16,
+      "native_finished_hole_mm": 1.4,
+      "ordinary_finished_range_mm": [
+        1.32,
+        1.53
+      ],
+      "maximum_lead_diagonal_mm": 1.1172287142747452,
+      "minimum_diametric_insertion_clearance_mm": 0.2027712857252546,
+      "native_lands_mm": [
+        1.9,
+        1.9
+      ],
+      "nominal_artwork_annulus_mm": 0.25,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.11000000000000006,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    },
+    {
+      "ref": "J502",
+      "mpn": "B3B-XH-A(LF)(SN)",
+      "lead_nominal_mm": [
+        0.64,
+        0.64
+      ],
+      "lead_max_mm": [
+        0.79,
+        0.79
+      ],
+      "limit_kind": "ENGINEERING INCOMING SCREEN, not manufacturer guaranteed maximum. Published lead tolerance missing; accept <=0.79mm square and dry-fit.",
+      "source": "https://www.jst.co.uk/downloads/series/eXH_1.pdf",
+      "drawing": "XH top-entry header/circuit3: square0.64; note2 hard-FR4 holes may need enlargement. Individual2D drawing requires email request; not requested.",
+      "hole": 1.3,
+      "pad_count": 3,
+      "native_finished_hole_mm": 1.3,
+      "ordinary_finished_range_mm": [
+        1.22,
+        1.43
+      ],
+      "maximum_lead_diagonal_mm": 1.1172287142747452,
+      "minimum_diametric_insertion_clearance_mm": 0.10277128572525474,
+      "native_lands_mm": [
+        1.9,
+        1.95
+      ],
+      "nominal_artwork_annulus_mm": 0.29999999999999993,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.15999999999999986,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    },
+    {
+      "ref": "Q402",
+      "mpn": "IRF610PBF-BE3",
+      "lead_nominal_mm": null,
+      "lead_max_mm": [
+        0.91,
+        0.61
+      ],
+      "limit_kind": "MANUFACTURER: external b/c maxima, not base-metal b1/c1",
+      "source": "https://www.vishay.com/docs/92506/packageinformation_to-220ab_highvoltage.pdf",
+      "drawing": "92506,6031,S24-0989 RevF,2024-09-30,p2; linked from exact IRF610 product91023",
+      "hole": 1.4,
+      "pad_count": 3,
+      "native_finished_hole_mm": 1.4,
+      "ordinary_finished_range_mm": [
+        1.32,
+        1.53
+      ],
+      "maximum_lead_diagonal_mm": 1.0955363982999378,
+      "minimum_diametric_insertion_clearance_mm": 0.22446360170006208,
+      "native_lands_mm": [
+        1.905,
+        2.0
+      ],
+      "nominal_artwork_annulus_mm": 0.25250000000000006,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.11250000000000011,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    },
+    {
+      "ref": "Q403",
+      "mpn": "BD140",
+      "lead_nominal_mm": null,
+      "lead_max_mm": [
+        0.88,
+        0.63
+      ],
+      "limit_kind": "MANUFACTURER: SOT32 B/B1 maxima",
+      "source": "https://www.st.com/resource/en/datasheet/bd140.pdf",
+      "drawing": "0016114E,May2008 Rev5,p7; pin1B/2C/3E",
+      "hole": 1.4,
+      "pad_count": 3,
+      "native_finished_hole_mm": 1.4,
+      "ordinary_finished_range_mm": [
+        1.32,
+        1.53
+      ],
+      "maximum_lead_diagonal_mm": 1.082266141020775,
+      "minimum_diametric_insertion_clearance_mm": 0.23773385897922483,
+      "native_lands_mm": [
+        1.9,
+        1.9
+      ],
+      "nominal_artwork_annulus_mm": 0.25,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.11000000000000006,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    },
+    {
+      "ref": "J301",
+      "mpn": "B2P-VH(LF)(SN)",
+      "lead_nominal_mm": [
+        1.14,
+        1.14
+      ],
+      "lead_max_mm": [
+        1.19,
+        1.19
+      ],
+      "limit_kind": "ENGINEERING INCOMING SCREEN, not manufacturer guaranteed maximum. Square1.14 published; lead tolerance missing. Added0.05mm to each full lead dimension as a screening bound and dry-fit.",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "drawing": "VH header square1.14; same part and mating VHR-2N retained",
+      "hole": 1.9,
+      "pad_count": 2,
+      "native_finished_hole_mm": 1.9,
+      "ordinary_finished_range_mm": [
+        1.82,
+        2.03
+      ],
+      "maximum_lead_diagonal_mm": 1.682914139223983,
+      "minimum_diametric_insertion_clearance_mm": 0.1370858607760168,
+      "native_lands_mm": [
+        2.7,
+        2.7
+      ],
+      "nominal_artwork_annulus_mm": 0.40000000000000013,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.2600000000000002,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    },
+    {
+      "ref": "J401",
+      "mpn": "1727010",
+      "lead_nominal_mm": [
+        0.5,
+        0.9
+      ],
+      "lead_max_mm": [
+        0.55,
+        0.95
+      ],
+      "limit_kind": "ENGINEERING INCOMING SCREEN, not manufacturer guaranteed maximum. Published0.5x0.9 without lead tolerance; added0.05mm each dimension.",
+      "source": "https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mkds-1-2-381-1727010?type=pdf",
+      "drawing": "MKDS1/2-3.81,1727010,p4 pin dimensions; ordinary1.1mm suggested hole does not cover JLC negative tolerance",
+      "hole": 1.3,
+      "pad_count": 2,
+      "native_finished_hole_mm": 1.3,
+      "ordinary_finished_range_mm": [
+        1.22,
+        1.43
+      ],
+      "maximum_lead_diagonal_mm": 1.0977249200050074,
+      "minimum_diametric_insertion_clearance_mm": 0.12227507999499254,
+      "native_lands_mm": [
+        2.0,
+        2.0
+      ],
+      "nominal_artwork_annulus_mm": 0.35,
+      "geometric_residual_annulus_at_max_hole_and075_offset_mm": 0.2099999999999999,
+      "residual_limit": "Sensitivity only; nominal CAD annulus is the vendor DFM quantity. Drill registration/etch/finished copper require incoming inspection.",
+      "solderability": "Hand solder with fixture support; full barrel wetting/fillets inspected. Max hole is not a precision mechanical locator. No forced insertion or drilling after plating."
+    }
+  ],
+  "missing_manufacturer_tolerances": [
+    "J301",
+    "J401",
+    "J502"
+  ],
+  "assembly_fit": "NOT_RUN. Missing supplier tolerances are not invented guarantees; measure/screen actual parts and dry-fit before any staged soldering. No special board tolerance required."
+}

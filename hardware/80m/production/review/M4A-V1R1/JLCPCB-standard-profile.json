@@ -1,0 +1,66 @@
+{
+  "revision": "M4A-V1R1",
+  "retrieved": "2026-10-18",
+  "source_urls": [
+    "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "https://jlcpcb.com/help/article/difference-and-tolerance-explanation-between-via-and-pad-holes",
+    "https://jlcpcb.com/help/article/instructions-for-ordering",
+    "https://jlcpcb.com/help/article/jlcpcb-copper-weight"
+  ],
+  "order": {
+    "quantity": 5,
+    "individual_boards": true,
+    "layers": 2,
+    "thickness_mm": 1.6,
+    "material": "standard FR4",
+    "copper_oz": 1,
+    "mask": "green",
+    "legend": "white",
+    "finish": "Lead-free HASL",
+    "controlled_impedance": false,
+    "special_drilling": false,
+    "press_fit": false,
+    "premium_via_treatment": false
+  },
+  "vendor_absolute": {
+    "track_space_mm": 0.1,
+    "SMD_pad_space_mm": 0.15,
+    "component_PTH_annulus_mm": 0.18,
+    "via_annulus_mm": 0.15,
+    "component_PTH_finished_tolerance_mm": [
+      -0.08,
+      0.13
+    ],
+    "hole_position_mm": 0.075,
+    "via_hole_tolerance": "Electrical via, not a controlled component insertion hole; no finished-fit guarantee",
+    "via_hole_spacing_mm": 0.2,
+    "component_hole_spacing_mm": 0.45,
+    "mask_web_mm": 0.1,
+    "mask_to_foreign_copper_mm": 0.09,
+    "PTH_to_track_mm": 0.28,
+    "via_to_track_mm": 0.2,
+    "copper_to_edge_mm": 0.2,
+    "legend_height_mm": 1,
+    "legend_stroke_mm": 0.15,
+    "legend_to_mask_mm": 0.15,
+    "outline_tolerance_mm": 0.2
+  },
+  "design_margins": {
+    "track_space_min_mm": 0.15,
+    "component_PTH_annulus_mm": 0.25,
+    "existing_vias_mm": [
+      0.6,
+      0.3
+    ],
+    "mask_expansion_mm": 0.025,
+    "mask_web_mm": 0.1,
+    "edge_clearance_mm": 0.5,
+    "finished_hole_min_insertion_clearance_mm": 0.1
+  },
+  "manual_review": [
+    "Actual incoming JST/Phoenix lead tolerance not published; engineering screening envelopes and dry-fit required, no factory special process",
+    "Ordinary HASL flatness/solder quality, winding forming and heatsink insulation remain physical checks",
+    "No guaranteed tent closure or plated-via thermal fill assumed",
+    "Quote/CAM and prototype transition require separate review and authorization"
+  ]
+}

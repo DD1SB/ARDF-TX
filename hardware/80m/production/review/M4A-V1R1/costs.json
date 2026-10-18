@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-18",
+  "currency": "EUR net planning; supplier VAT treatment/cart must be checked",
+  "classification": "NO_QUOTE_NO_CAM_ACCEPTANCE",
+  "batch_sizes": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "populations": {
+    "FULL": {
+      "1": {
+        "components_eur_per_board": 35.94,
+        "batch_eur": 35.94,
+        "recent_indexed_EUR_eur_per_board": 3.04,
+        "historical_observed_unrequoted_eur_per_board": 10.631,
+        "unquoted_including_FX_estimates_eur_per_board": 22.269,
+        "M4A_V1_historical_component_eur": 32.317,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 3.623
+      },
+      "5": {
+        "components_eur_per_board": 34.284,
+        "batch_eur": 171.42,
+        "recent_indexed_EUR_eur_per_board": 2.774,
+        "historical_observed_unrequoted_eur_per_board": 10.295,
+        "unquoted_including_FX_estimates_eur_per_board": 21.215,
+        "M4A_V1_historical_component_eur": 31.981,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 2.303
+      },
+      "10": {
+        "components_eur_per_board": 29.233,
+        "batch_eur": 292.33,
+        "recent_indexed_EUR_eur_per_board": 2.488,
+        "historical_observed_unrequoted_eur_per_board": 7.347,
+        "unquoted_including_FX_estimates_eur_per_board": 19.398,
+        "M4A_V1_historical_component_eur": 27.311,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 1.922
+      },
+      "20": {
+        "components_eur_per_board": 29.233,
+        "batch_eur": 584.66,
+        "recent_indexed_EUR_eur_per_board": 2.488,
+        "historical_observed_unrequoted_eur_per_board": 7.347,
+        "unquoted_including_FX_estimates_eur_per_board": 19.398,
+        "M4A_V1_historical_component_eur": 27.311,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 1.922
+      }
+    },
+    "FOX_ONLY": {
+      "1": {
+        "components_eur_per_board": 15.202,
+        "batch_eur": 15.2,
+        "recent_indexed_EUR_eur_per_board": 2.08,
+        "historical_observed_unrequoted_eur_per_board": 5.331,
+        "unquoted_including_FX_estimates_eur_per_board": 7.791,
+        "M4A_V1_historical_component_eur": 13.759,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 1.443
+      },
+      "5": {
+        "components_eur_per_board": 12.924,
+        "batch_eur": 64.62,
+        "recent_indexed_EUR_eur_per_board": 1.814,
+        "historical_observed_unrequoted_eur_per_board": 4.621,
+        "unquoted_including_FX_estimates_eur_per_board": 6.489,
+        "M4A_V1_historical_component_eur": 12.081,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 0.843
+      },
+      "10": {
+        "components_eur_per_board": 11.502,
+        "batch_eur": 115.02,
+        "recent_indexed_EUR_eur_per_board": 1.7,
+        "historical_observed_unrequoted_eur_per_board": 3.478,
+        "unquoted_including_FX_estimates_eur_per_board": 6.324,
+        "M4A_V1_historical_component_eur": 10.815,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 0.687
+      },
+      "20": {
+        "components_eur_per_board": 11.155,
+        "batch_eur": 223.11,
+        "recent_indexed_EUR_eur_per_board": 1.7,
+        "historical_observed_unrequoted_eur_per_board": 3.443,
+        "unquoted_including_FX_estimates_eur_per_board": 6.012,
+        "M4A_V1_historical_component_eur": 10.468,
+        "engineering_component_delta_eur": 0,
+        "repricing_and_realistic_core_material_delta_eur": 0.687
+      }
+    }
+  },
+  "bare_PCB": {
+    "5": {
+      "total_bare_board_eur_range": [
+        26.85,
+        53.88
+      ],
+      "method": "Unquoted area/setup planning model, NOT JLCPCB price; setupEUR12-25 +EUR180-350/m2;150x110mm each, standard process. ShippingEUR10-25 separate. Tax/import/payment not included."
+    },
+    "10": {
+      "total_bare_board_eur_range": [
+        41.7,
+        82.75
+      ],
+      "method": "Unquoted area/setup planning model, NOT JLCPCB price; setupEUR12-25 +EUR180-350/m2;150x110mm each, standard process. ShippingEUR10-25 separate. Tax/import/payment not included."
+    },
+    "20": {
+      "total_bare_board_eur_range": [
+        71.4,
+        140.5
+      ],
+      "method": "Unquoted area/setup planning model, NOT JLCPCB price; setupEUR12-25 +EUR180-350/m2;150x110mm each, standard process. ShippingEUR10-25 separate. Tax/import/payment not included."
+    }
+  },
+  "USD_conversion": "0.90EUR/USD planning assumption +/-10%; not an observed exchange rate or EUR quote",
+  "engineering_material_delta": "0.00EUR: same MPNs/quantities; only PTH/legend/native manufacturing settings changed. Repricing separated from design delta.",
+  "extras": {
+    "controller": "Excluded;M6-L1 separately",
+    "battery_charger": "Excluded",
+    "antenna_coax": "Excluded",
+    "harness_connectors_crimps": "UnquotedEUR3-6/unit allowance, not PCB BOM",
+    "IRF610_heatsink_insulator_hardware": "UnquotedEUR3-7/FULL allowance, not a guaranteed cooling rating",
+    "remote_sensor_attachment": "UnquotedEUR0.5-1.5/FULL attachment in addition to TH301 component",
+    "winding_labor": "Excluded; hand20T+20T and9+9 bifilar as documented",
+    "assembly_test_labor": "Not priced or invented",
+    "PCB_stencil": "Optional manual assembly consumable, not a required PCB service"
+  }
+}

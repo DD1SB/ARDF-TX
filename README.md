@@ -15,6 +15,16 @@ A modular, cost-conscious, field-deployable transmitter platform for amateur rad
 
 **Earlier 80 m status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
 
+**M4A-V1R1, 2026-10-18:** the active **150 × 110 mm RF80** candidate now uses
+ordinary JLCPCB finished-hole tolerances and readable standard silkscreen.
+[Current decision](docs/M4A_V1R1_REVIEW_DECISION.md),
+[five-board fabrication review](hardware/80m/production/review/M4A-V1R1/README.md)
+and [three-board order preparation](hardware/80m/production/review/M4A-V1R1/THREE_BOARD_ORDER_READINESS.md)
+are available. GO is for independent manufacturing review only. The
+[V1R1-first prototype transition](docs/M4A_V1R1_PROTOTYPE_TRANSITION.md)
+is proposed for review; the original E2-first decision below remains preserved.
+No upload, purchase, assembly, power-up or RF activation is authorized.
+
 **M4A, 2026-10-15:** the frozen **1245023 / m3b-e2** reference now has a
 [self-contained five-bare-board prototype handoff](docs/M4A_E2_PROTOTYPE_HANDOFF.md).
 A separate **150 × 110 mm** [RF80 V1 KiCad candidate](hardware/80m/production/README.md)

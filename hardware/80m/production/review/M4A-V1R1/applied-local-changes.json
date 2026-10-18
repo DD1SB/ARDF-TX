@@ -1,0 +1,298 @@
+{
+  "baseline": "4d2f592",
+  "land_changes": [
+    {
+      "ref": "J101",
+      "old_footprint": "ARDF_TX:Wurth_61201621621",
+      "new_footprint": "ARDF_TX:Wurth_61201621621",
+      "old_hole_mm": 1.2,
+      "new_hole_mm": 1.4,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    },
+    {
+      "ref": "J301",
+      "old_footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "new_footprint": "ARDF_TX:JST_VH_B2P_StandardPTH",
+      "old_hole_mm": 1.7,
+      "new_hole_mm": 1.9,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    },
+    {
+      "ref": "J401",
+      "old_footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
+      "new_footprint": "ARDF_TX:Phoenix_1727010_StandardPTH",
+      "old_hole_mm": 1.1,
+      "new_hole_mm": 1.3,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    },
+    {
+      "ref": "J502",
+      "old_footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "new_footprint": "ARDF_TX:JST_XH_B3B_StandardPTH",
+      "old_hole_mm": 0.95,
+      "new_hole_mm": 1.3,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    },
+    {
+      "ref": "Q402",
+      "old_footprint": "ARDF_TX:TO220_Vertical_1p3Drill",
+      "new_footprint": "ARDF_TX:Vishay_IRF610_TO220_StandardPTH",
+      "old_hole_mm": 1.3,
+      "new_hole_mm": 1.4,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    },
+    {
+      "ref": "Q403",
+      "old_footprint": "ARDF_TX:ST_BD140_SOT32_1p3Drill",
+      "new_footprint": "ARDF_TX:ST_BD140_SOT32_StandardPTH",
+      "old_hole_mm": 1.3,
+      "new_hole_mm": 1.4,
+      "pad_centres": "UNCHANGED",
+      "nets": "UNCHANGED"
+    }
+  ],
+  "nonessential_silk_items_moved_to_fab": 2034,
+  "essential_labels": [
+    {
+      "text": "RF80 V1R1 / EVAL - NOT RELEASED",
+      "xy_mm": [
+        99.0,
+        22.1
+      ],
+      "height_mm": 1.2,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "FULL:4S  FOX:2S",
+      "xy_mm": [
+        52.0,
+        22.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J101 CTRL 3V3",
+      "xy_mm": [
+        43.5,
+        70.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J301 1=BAT+ 2=GND",
+      "xy_mm": [
+        73.0,
+        22.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J401 NORMAL RF",
+      "xy_mm": [
+        160.0,
+        98.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J502 FOX 10mW",
+      "xy_mm": [
+        150.0,
+        128.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "FOX: R228 R348 R349",
+      "xy_mm": [
+        90.7,
+        126.1
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "INSULATE DRAIN TAB",
+      "xy_mm": [
+        135.0,
+        22.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J101-1",
+      "xy_mm": [
+        24.0,
+        48.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J301-1",
+      "xy_mm": [
+        74.5,
+        25.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J401-1",
+      "xy_mm": [
+        152.5,
+        88.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "J502-1",
+      "xy_mm": [
+        146.0,
+        115.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP101",
+      "xy_mm": [
+        36.0,
+        60.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP102",
+      "xy_mm": [
+        120.3625,
+        42.45
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP103",
+      "xy_mm": [
+        110.1,
+        99.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP105",
+      "xy_mm": [
+        34.0,
+        85.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP403",
+      "xy_mm": [
+        111.78,
+        82.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP414",
+      "xy_mm": [
+        128.5,
+        59.0
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP501",
+      "xy_mm": [
+        124.975,
+        107.19
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP513",
+      "xy_mm": [
+        120.0,
+        118.5
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP703",
+      "xy_mm": [
+        107.8625,
+        62.05
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP706",
+      "xy_mm": [
+        131.1375,
+        37.95
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP716",
+      "xy_mm": [
+        42.525,
+        117.27
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP717",
+      "xy_mm": [
+        42.525,
+        101.19
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP721",
+      "xy_mm": [
+        50.475,
+        42.865
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "TP723",
+      "xy_mm": [
+        86.525,
+        57.19
+      ],
+      "height_mm": 1.0,
+      "stroke_mm": 0.15
+    }
+  ],
+  "trace_via_placement_changes": "NONE",
+  "component_MPN_changes": "NONE"
+}

@@ -1,0 +1,235 @@
+{
+  "status": "THREE_SEPARATE_ORDER_ITEMS_PREPARED_FOR_REVIEW_ONLY",
+  "records": [
+    {
+      "PCB": "RF80-V1R1",
+      "authoritative_revision": "M4A-V1R1 candidate; baseline4d2f592",
+      "native": "hardware/80m/production/RF80_V1.kicad_pcb",
+      "native_sha256": "b8695218798690759bc9145ebbe8893f6d402d09a971ba9332207d45d3924ef7",
+      "dimensions_mm": [
+        150,
+        110
+      ],
+      "quantity": 5,
+      "process": "2L standard FR4 /1.6mm/1oz/green/white/lead-free HASL/ordinary PTH/no impedance control/no premium process",
+      "artifact_action": "Fresh RF80 export",
+      "archive": "fabrication/RF80-V1R1_JLCPCB_5boards.zip",
+      "sha256": "8cdb21e278e9120abc81b594516f8498a1110df3ce50d845d4922c161f510a92",
+      "entries": [
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Cu.gbl",
+          "name": "RF80_V1-B_Cu.gbl",
+          "sha256": "98bff70033708017e4f888445954f0d721ed49d6b820a3ffb982c2257786760f"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Mask.gbs",
+          "name": "RF80_V1-B_Mask.gbs",
+          "sha256": "27256c08ac8e60a3267f7c5473b62460a3e751f105b072488b7c2d552dfc5fa3"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Paste.gbp",
+          "name": "RF80_V1-B_Paste.gbp",
+          "sha256": "db1a06b80191ec7ad8219a1b0d9e71d1c9afa8931dbe56e02f4c4dac365b17e7"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Silkscreen.gbo",
+          "name": "RF80_V1-B_Silkscreen.gbo",
+          "sha256": "83ba0c38e9ad7e680cecb914c3dc53cc8aed288d68f9c0937d27f5ca411ddd5d"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-Edge_Cuts.gm1",
+          "name": "RF80_V1-Edge_Cuts.gm1",
+          "sha256": "b029ac3fd0b5b1550128ae4677c0b1ae9ef3f6beb14ca35bb9f10e01c5bfcead"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Cu.gtl",
+          "name": "RF80_V1-F_Cu.gtl",
+          "sha256": "dd891de59ac2240280058b6954896ca7d50a95f99891867f27ae3c5cc51beff4"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Mask.gts",
+          "name": "RF80_V1-F_Mask.gts",
+          "sha256": "c19c0505c0f3075013f91d6c002b8486c99fa3fdaaca3e51e33e5f77cddc642d"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Paste.gtp",
+          "name": "RF80_V1-F_Paste.gtp",
+          "sha256": "240bc763afb62252667cb447174ea4af46ff3b891701f11fdd73adcf5234ded8"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Silkscreen.gto",
+          "name": "RF80_V1-F_Silkscreen.gto",
+          "sha256": "4f061f1be80afecc86549d3606dd0945b39f4dd25b020013376eaa9de26e8c32"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-NPTH.drl",
+          "name": "RF80_V1-NPTH.drl",
+          "sha256": "0f9185ed3437bb38190d3b1d47db47cb5998bf315b161c7d48b97840b1b3d616"
+        },
+        {
+          "source": "hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-PTH.drl",
+          "name": "RF80_V1-PTH.drl",
+          "sha256": "544448650fd4fd084772fa1e64d0c246cc80d678dbd8a04e846129fb435a66cb"
+        }
+      ],
+      "classification": "Nine production Gerbers and separatePTH/NPTH only. No report, drill map, job, alternative design or panel.",
+      "CAM_and_quotation": "NOT_SUBMITTED_NOT_QUOTED",
+      "physical_qualification": "NOT_RUN",
+      "remaining_review": "RF80 first-evaluation transition proposal requires review; incoming lead fit, winding/heatsink/protection commissioning"
+    },
+    {
+      "PCB": "Controller",
+      "authoritative_revision": "M6-L1 / d94dabd0e40137dc44b2bb94f3707ad4636ca65f",
+      "native": "hardware/controller/CTRL.kicad_pcb",
+      "native_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+      "dimensions_mm": [
+        100,
+        100
+      ],
+      "quantity": 5,
+      "process": "2L standard FR4 /1.6mm/1oz/green/white/lead-free HASL/ordinary PTH/no impedance control/no premium process",
+      "artifact_action": "Existing manufacturer layers and drills copied byte-for-byte into an isolated ZIP; NOT regenerated",
+      "archive": "three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip",
+      "sha256": "e1745a8b8b42c15e024315d58749bbdfe019745e0e48bf055e65a02977dd36e6",
+      "entries": [
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-B_Cu.gbl",
+          "name": "CTRL-B_Cu.gbl",
+          "sha256": "7e43a40c000d31acda43002caf2efc1cb55d72c0071cb6ba83e89b27b8e07542"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-B_Mask.gbs",
+          "name": "CTRL-B_Mask.gbs",
+          "sha256": "c97162b2fc61ce80e3491f85310b64c542e6f820946e0825988f4331e55efcc1"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-B_Paste.gbp",
+          "name": "CTRL-B_Paste.gbp",
+          "sha256": "2bcf01a3c43557719e15595508fa5714faffdca0b457228fc7896a8285bf2bb7"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-B_Silkscreen.gbo",
+          "name": "CTRL-B_Silkscreen.gbo",
+          "sha256": "b24750e935fd8cc377170fca53cba48200448b1cc77031d85947831a3d81f2bd"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-Edge_Cuts.gm1",
+          "name": "CTRL-Edge_Cuts.gm1",
+          "sha256": "8c22f3f105acfdc4b6016a3af3544f4b9b7cb2dfbed58ed2fdb4bd35e72fc34e"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-F_Cu.gtl",
+          "name": "CTRL-F_Cu.gtl",
+          "sha256": "a9f47d107efc1eec9669172a19f6cc52e4aa1129875da4773bf2a05a7b47e95e"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-F_Mask.gts",
+          "name": "CTRL-F_Mask.gts",
+          "sha256": "910903e210679f2c6b1a6f876aad56a0d3a986918ef74e8e277cd6d57db8273c"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-F_Paste.gtp",
+          "name": "CTRL-F_Paste.gtp",
+          "sha256": "4786a8b50ea9e73c6b476ef4a84f244b637de8a935c340e54b63ac5bfc4de6fc"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-F_Silkscreen.gto",
+          "name": "CTRL-F_Silkscreen.gto",
+          "sha256": "3c8b7ceda1cbac566363d56a7881a127e0c9a7f9b0348457282a51bb4c48c914"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-NPTH.drl",
+          "name": "CTRL-NPTH.drl",
+          "sha256": "a81b73c07dc1430ad8b97032922aabd53744921c9e3d61415428030ad700b4b0"
+        },
+        {
+          "source": "hardware/controller/review/M6-L1/fabrication/CTRL-PTH.drl",
+          "name": "CTRL-PTH.drl",
+          "sha256": "40d93fb101eaab864803f61b516ff78c9313f5b0fa52b9b759bc866f93fca7b0"
+        }
+      ],
+      "classification": "Nine production Gerbers and separatePTH/NPTH only. No report, drill map, job, alternative design or panel.",
+      "CAM_and_quotation": "NOT_SUBMITTED_NOT_QUOTED",
+      "physical_qualification": "NOT_RUN",
+      "remaining_review": "Controller USB/pack-ID/power sequencing/RTC/failoff and optionalLoRa RF qualification"
+    },
+    {
+      "PCB": "RF2M",
+      "authoritative_revision": "M5B-E4R1 / 2f9982c1b72cd97ba4dad6c992143032b309cca7",
+      "native": "hardware/2m/RF2M.kicad_pcb",
+      "native_sha256": "a05a990726311675ccbb8262617c8e5ea2923703eceeea464445779d411ea77c",
+      "dimensions_mm": [
+        180,
+        140
+      ],
+      "quantity": 5,
+      "process": "2L standard FR4 /1.6mm/1oz/green/white/lead-free HASL/ordinary PTH/no impedance control/no premium process",
+      "artifact_action": "Existing manufacturer layers and drills copied byte-for-byte into an isolated ZIP; NOT regenerated",
+      "archive": "three-board-order/RF2M_M5B-E4R1_JLCPCB_5boards.zip",
+      "sha256": "29506bce6b451cd83ecd430d52ec1331c8098ee8082790a20c4ad4c3c548566f",
+      "entries": [
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-B_Cu.gbl",
+          "name": "RF2M-B_Cu.gbl",
+          "sha256": "5ce6d7b3dfab14d3d23a65ea60881af884b479b4e9dacd5e54bf21ad56f6cd4c"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-B_Mask.gbs",
+          "name": "RF2M-B_Mask.gbs",
+          "sha256": "a57f00cd84efb896b7218552599ba6da2f9007c9273da0aeb8a4ba9a23b260ce"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-B_Paste.gbp",
+          "name": "RF2M-B_Paste.gbp",
+          "sha256": "dce98f0379a92ff0981d458c44a48622e22ca7abcaf1898d868738a63c9281b9"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-B_Silkscreen.gbo",
+          "name": "RF2M-B_Silkscreen.gbo",
+          "sha256": "9953e92584c1ac6149e56b93ef437bf51b62560f5b0c20bce5cce9445196bf96"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-Edge_Cuts.gm1",
+          "name": "RF2M-Edge_Cuts.gm1",
+          "sha256": "59b333d517ff3effd38af763fa8a11282845efca7e1534a256efffaee9cf130e"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-F_Cu.gtl",
+          "name": "RF2M-F_Cu.gtl",
+          "sha256": "1c416456484a253213ff4378487e01760e518509e101e1850d487c34731c222a"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-F_Mask.gts",
+          "name": "RF2M-F_Mask.gts",
+          "sha256": "06232bff9c49d7e7dc30fc191b753270c1ccbcb327f099acd3c18b778a0edced"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-F_Paste.gtp",
+          "name": "RF2M-F_Paste.gtp",
+          "sha256": "90b7bd6f6d21a07d8b977b068e891ecbc2775294c1ef70af4787cca755bb9964"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-F_Silkscreen.gto",
+          "name": "RF2M-F_Silkscreen.gto",
+          "sha256": "0f3c10f3990d9e2c9671d6fca14de15f019a250143fc054a712ba50fdf65342f"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-NPTH.drl",
+          "name": "RF2M-NPTH.drl",
+          "sha256": "11a18f4e24e24fdfb979725f6b8e7098dc760940e85d41d64dd925a5310b14d9"
+        },
+        {
+          "source": "hardware/2m/review/M5B-E4R1/gerbers/RF2M-PTH.drl",
+          "name": "RF2M-PTH.drl",
+          "sha256": "5d634e4bcc1a489f95349d8c6b510e026edec1400b5c00b6e2e78ae8596107ab"
+        }
+      ],
+      "classification": "Nine production Gerbers and separatePTH/NPTH only. No report, drill map, job, alternative design or panel.",
+      "CAM_and_quotation": "NOT_SUBMITTED_NOT_QUOTED",
+      "physical_qualification": "NOT_RUN",
+      "remaining_review": "Hidden source-joint process and conservative thermal assembly qualification; RF/AM/PEP/isolation/endurance NOT_RUN"
+    }
+  ],
+  "authorization": "No supplier upload/order/assembly/power/RF. Each item five individual boards; never one shared promotion or two-up panel.",
+  "supplier_CAM": "File recognition, outline centreline dimensions,1oz ordinaryPTH hole compensation and standard green mask/HASL to be checked after separately authorized upload. No special hole tolerance requested."
+}

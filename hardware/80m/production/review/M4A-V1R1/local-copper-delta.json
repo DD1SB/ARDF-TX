@@ -1,0 +1,45 @@
+{
+  "status": "PASS_ONLY_J502_LOCAL_CLEARANCE_CHANGE",
+  "baseline": "4d2f592",
+  "layer_deltas": [
+    {
+      "layer": "F.Cu",
+      "symmetric_difference_mm2": 0.556370678258,
+      "all_difference_bounds_mm": [
+        25.899499,
+        25.719978,
+        156.163916,
+        123.2995
+      ],
+      "local_J502_region_mm": [
+        148,
+        120,
+        157,
+        124
+      ],
+      "outside_region_difference_mm2": 4.61168e-07,
+      "comparison_resolution": "Native1nm integer polygon roundoff produces zero-width-to-nm edge strips elsewhere; total outside delta <0.00001mm2, not a DRC exclusion. Tracks/vias/pads compared exactly separately."
+    },
+    {
+      "layer": "B.Cu",
+      "symmetric_difference_mm2": 0.633963932315,
+      "all_difference_bounds_mm": [
+        25.565597,
+        57.578459,
+        156.1005,
+        123.1255
+      ],
+      "local_J502_region_mm": [
+        148,
+        120,
+        157,
+        124
+      ],
+      "outside_region_difference_mm2": 3.19674e-07,
+      "comparison_resolution": "Native1nm integer polygon roundoff produces zero-width-to-nm edge strips elsewhere; total outside delta <0.00001mm2, not a DRC exclusion. Tracks/vias/pads compared exactly separately."
+    }
+  ],
+  "all_signal_tracks_and_vias": "Byte-value geometry identical; V1-layout-preservation.json",
+  "reason": "Three J502 lands enlarged by0.20mm in X to preserve0.30mm nominal annulus around1.30mm holes. Refilled GND clearance local to J502. No RF topology/value/return-path relocation.",
+  "physical_RF": "NOT_RUN"
+}

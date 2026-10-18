@@ -1,0 +1,360 @@
+V1 local exports; frozen reference not changed
+kicad-cli sch erc --format json --severity-all --exit-code-violations --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/ERC.json /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_sch
+Found 0 violations
+Saved ERC Report to /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/ERC.json
+
+EXIT 0
+kicad-cli sch export netlist --format kicadxml --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1.xml /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_sch
+
+EXIT 0
+kicad-cli sch export pdf --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1.pdf /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_sch
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1.pdf'.
+Done.
+
+EXIT 0
+kicad-cli pcb drc --format json --all-track-errors --severity-all --exit-code-violations --schematic-parity --refill-zones --save-board --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/DRC.json /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/DRC.json
+Saved board
+
+EXIT 0
+kicad-cli pcb drc --format report --all-track-errors --severity-all --exit-code-violations --schematic-parity --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/DRC.rpt /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/DRC.rpt
+
+EXIT 0
+kicad-cli pcb export gerbers --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/ --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts --subtract-soldermask /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Cu.gtl'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Cu.gbl'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Paste.gtp'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Paste.gbp'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Silkscreen.gto'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Silkscreen.gbo'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-F_Mask.gts'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-B_Mask.gbs'.
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-Edge_Cuts.gm1'.
+
+EXIT 0
+kicad-cli pcb export drill --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/ --format excellon --excellon-units mm --excellon-separate-th --generate-map --map-format pdf --generate-report --report-path /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/drill-report.rpt /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Created file '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-PTH.drl'
+Created file '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-NPTH.drl'
+Created file '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-PTH-drl_map.pdf'.
+Created file '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/gerbers/RF80_V1-NPTH-drl_map.pdf'.
+Done.
+
+EXIT 0
+kicad-cli pcb export ipcd356 --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1.ipc /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Successfully created IPC-D-356 file
+
+EXIT 0
+kicad-cli pcb export pos --format csv --units mm --exclude-dnp --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-position-full.csv /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Wrote position data to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-position-full.csv'.
+
+EXIT 0
+kicad-cli pcb export pos --format csv --units mm --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-position-all.csv /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Wrote position data to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-position-all.csv'.
+
+EXIT 0
+kicad-cli pcb export svg --mode-single --fit-page-to-board --exclude-drawing-sheet --layers F.Cu,Edge.Cuts --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/top-copper.svg /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/top-copper.svg'.
+Done.
+
+EXIT 0
+kicad-cli pcb export svg --mode-single --fit-page-to-board --exclude-drawing-sheet --layers B.Cu,Edge.Cuts --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/bottom-copper.svg /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/bottom-copper.svg'.
+Done.
+
+EXIT 0
+kicad-cli pcb export svg --mode-single --fit-page-to-board --exclude-drawing-sheet --layers F.Fab,F.Silkscreen,Edge.Cuts --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly.svg --sketch-pads-on-fab-layers --crossout-DNP-footprints-on-fab-layers /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly.svg'.
+Done.
+
+EXIT 0
+kicad-cli pcb export svg --mode-single --fit-page-to-board --exclude-drawing-sheet --layers B.Fab,B.Silkscreen,B.Mask,Edge.Cuts --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly-bottom.svg /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly-bottom.svg'.
+Done.
+
+EXIT 0
+kicad-cli pcb export pdf --layers F.Fab,F.Silkscreen,Edge.Cuts --sketch-pads-on-fab-layers --crossout-DNP-footprints-on-fab-layers --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly.pdf /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly.pdf'.
+Done.
+
+EXIT 0
+kicad-cli pcb export pdf --layers B.Fab,B.Silkscreen,B.Mask,Edge.Cuts --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly-bottom.pdf /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Plotted to '/home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/assembly-bottom.pdf'.
+Done.
+
+EXIT 0
+kicad-cli pcb render --width 2100 --height 1500 --quality high --background opaque --rotate 325,0,25 --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-3D.png /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 1.626 s
+Rendering: 9 %
+Rendering: 15 %
+Rendering: 20 %
+Rendering: 26 %
+Rendering: 35 %
+Rendering: 48 %
+Rendering: 59 %
+Rendering: 70 %
+Rendering: 78 %
+Rendering: 84 %
+Rendering: 92 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 9.388 s
+Successfully created 3D render image
+
+EXIT 0
+kicad-cli pcb render --width 2100 --height 1500 --quality high --background opaque --rotate 0,0,0 --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-3D-top.png /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 1.646 s
+Rendering: 11 %
+Rendering: 18 %
+Rendering: 23 %
+Rendering: 29 %
+Rendering: 40 %
+Rendering: 49 %
+Rendering: 58 %
+Rendering: 69 %
+Rendering: 77 %
+Rendering: 83 %
+Rendering: 93 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 9.195 s
+Successfully created 3D render image
+
+EXIT 0
+kicad-cli pcb render --width 2100 --height 1500 --quality high --background opaque --side bottom --output /home/stefan/src/ardf-tx/hardware/80m/production/review/M4A-V1R1/RF80_V1-3D-bottom.png /home/stefan/src/ardf-tx/hardware/80m/production/RF80_V1.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 1.654 s
+Rendering: 11 %
+Rendering: 20 %
+Rendering: 29 %
+Rendering: 40 %
+Rendering: 50 %
+Rendering: 61 %
+Rendering: 71 %
+Rendering: 78 %
+Rendering: 85 %
+Rendering: 96 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 8.148 s
+Successfully created 3D render image
+
+EXIT 0

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "mutations": [
+    {
+      "mutation": "BD140_base_emitter_swapped",
+      "detected": "Q403:physical_pin_map"
+    },
+    {
+      "mutation": "TL431_reference_anode_swapped",
+      "detected": "U311:physical_pin_map"
+    },
+    {
+      "mutation": "IDC_mirrored",
+      "detected": "J101:physical_orientation"
+    },
+    {
+      "mutation": "IDC_SDA_SCL_swapped",
+      "detected": "J101:physical_pin_map"
+    },
+    {
+      "mutation": "battery_reversed",
+      "detected": "J301:physical_pin_map"
+    },
+    {
+      "mutation": "RF_output_swapped",
+      "detected": "J401:physical_pin_map"
+    },
+    {
+      "mutation": "R228_Fox_link_removed",
+      "detected": "R228:FOX_only_population_link"
+    },
+    {
+      "mutation": "R348_Fox_link_removed",
+      "detected": "R348:FOX_only_population_link"
+    },
+    {
+      "mutation": "R349_Fox_link_removed",
+      "detected": "R349:FOX_only_population_link"
+    }
+  ]
+}

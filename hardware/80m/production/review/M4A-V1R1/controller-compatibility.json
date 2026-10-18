@@ -1,0 +1,94 @@
+{
+  "status": "PASS_16_NATIVE_AND_EXPORTED_PINS",
+  "controller_revision": "d94dabd0e40137dc44b2bb94f3707ad4636ca65f / M6-L1, read-only",
+  "RF80_native_sha256": "b8695218798690759bc9145ebbe8893f6d402d09a971ba9332207d45d3924ef7",
+  "controller_native_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+  "rows": [
+    {
+      "pin": 1,
+      "RF80_J101": "V3V3",
+      "controller_J4": "V3V3_RF80"
+    },
+    {
+      "pin": 2,
+      "RF80_J101": "GND",
+      "controller_J4": "GND"
+    },
+    {
+      "pin": 3,
+      "RF80_J101": "SCL",
+      "controller_J4": "RF80_SCL"
+    },
+    {
+      "pin": 4,
+      "RF80_J101": "GND",
+      "controller_J4": "GND"
+    },
+    {
+      "pin": 5,
+      "RF80_J101": "SDA",
+      "controller_J4": "RF80_SDA"
+    },
+    {
+      "pin": 6,
+      "RF80_J101": "LEASE",
+      "controller_J4": "RF80_LEASE"
+    },
+    {
+      "pin": 7,
+      "RF80_J101": "ARM",
+      "controller_J4": "RF80_ARM"
+    },
+    {
+      "pin": 8,
+      "RF80_J101": "CW_KEY",
+      "controller_J4": "RF80_CW_KEY"
+    },
+    {
+      "pin": 9,
+      "RF80_J101": "PA_REQ",
+      "controller_J4": "RF80_PA_REQ"
+    },
+    {
+      "pin": 10,
+      "RF80_J101": "FOX_REQ",
+      "controller_J4": "RF80_FOX_REQ"
+    },
+    {
+      "pin": 11,
+      "RF80_J101": "PWR0",
+      "controller_J4": "RF80_PWR0"
+    },
+    {
+      "pin": 12,
+      "RF80_J101": "PWR1",
+      "controller_J4": "RF80_PWR1"
+    },
+    {
+      "pin": 13,
+      "RF80_J101": "MUTE_N",
+      "controller_J4": "RF80_MUTE_N"
+    },
+    {
+      "pin": 14,
+      "RF80_J101": "FAULT_N",
+      "controller_J4": "RF80_FAULT_N"
+    },
+    {
+      "pin": 15,
+      "RF80_J101": "PACK4_OK",
+      "controller_J4": "RF80_PACK4_OK"
+    },
+    {
+      "pin": 16,
+      "RF80_J101": "GND",
+      "controller_J4": "GND"
+    }
+  ],
+  "mating": "Wurth61201623021 female IDC; keyed straight-through ribbon pin1-to-pin1. Verify cable continuity at both ends, not red stripe alone.",
+  "geometry": "RF80 J101 component top view, rotation0: pin1 at(27,55),pin2 at(29.54,55); odd pins along+Y at2.54mm. No footprint flip or pad-centre change.",
+  "electrical": "3.3V nominal,3.135-3.465V; connector abs3.6V. FAULT_N open drain, low while disarmed; controller input is not module-presence proof. Native local pulldowns and controller isolation unchanged.",
+  "protocol": "LEASE application progress; ARM0/MUTE_N0 before retune/path changes; I2C clocks while armed disarm locally; >=1.5ms quiet then deliberate ARM cycle, valid PACK4_OK only after pack validation. PA_REQ/FOX_REQ exclusive, PWR truth table retained in logic-results.json.",
+  "power": "J301 separate fused protected pack:1VBAT/2GND. No PA current through ribbon. Full population requires4S/PACK4_OK; Fox-only2S or4S bounded by existing contract.",
+  "backfeed": "Controller branch isolation and local RF80 input topology unchanged and regressions retained. Cable/power-sequencing measurements NOT_RUN."
+}

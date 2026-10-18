@@ -1,0 +1,200 @@
+ref,MPN,footprint,FULL,FOX_ONLY,population,note
+J101,Wurth 61201621621,ARDF_TX:Wurth_61201621621,FIT,FIT,BOTH,"V1R1:1.40mm ordinary finished PTH,1.90mm lands. Maker square0.64+/-0.15mm; max diagonal1.117mm, min finished1.32mm. No press-fit tolerance; inspect all16 contacts/key/cable pin1."
+U101,SI5351A-B-GT,Package_SO:MSOP-10_3x3mm_P0.5mm,FIT,FIT,BOTH,"0x60; CLK0 PA, CLK2 FOX; CLK1 disabled/NC; blank factory part, no preprogrammed outputs. Internal crystal load 10 pF starting setting."
+Y101,ABM3B-25.000MHZ-10-1-U-T,Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm,FIT,FIT,BOTH,"Active manufacturer: +/-10ppm initial and stability, -10 to +60 C. Calibration/aging/loading remain measured. Not a TCXO."
+R101,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R102,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R103,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R110,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R111,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R112,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R113,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R114,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R115,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R116,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R117,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+R118,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Local default-off pull-down; do not remove in reduced population
+C101,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C102,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C103,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+U201,MCP100T-300I/TT,Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"SOT23 pin1 RESET,2 VDD,3 VSS; nominal3.0V. Controller POR cannot replace unplugged-module local reset."
+U202,"74HC123D,653",Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+R201,RC0603FR-07330KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C201,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,"t=KRC approx0.165s at assumedK0.50; characterize 3.3V,tolerance,temperature. Hardware silence<=250ms requirement."
+R202,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C202,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,Approx2.35ms quiet delay at assumedK0.50; risingSCL and qualifiedRD-release trigger; test actual bound.
+R203,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C203,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+U203,"74HC14D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+C210,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C211,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C212,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+Q201,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"Open-drain status; unarmed, not only faults. Pull on controller rail. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+D201,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,HC123 manufacturer Fig13 discharge clamp across external timing R; anodeRC/cathodeVCC. Fig11 CEXT6/14 directlygrounded fornoiseimmunity. Qualifypowerdownsurgewithactual3.3Vreservoirandcable.
+D202,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,HC123 manufacturer Fig13 discharge clamp across external timing R; anodeRC/cathodeVCC. Fig11 CEXT6/14 directlygrounded fornoiseimmunity. Qualifypowerdownsurgewithactual3.3Vreservoirandcable.
+U211,"74HC21D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+U212,"74HC00D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+R219,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R220,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R225,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+D219,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,"AND reset/POR with direct UV open collector; a low POR sinks through diode. pin1K/pin2A; price estimate, MOQ1 assumed."
+D220,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,"Independent open-drain request-withdrawal faults may clamp RESET_N; CMOS CLR_CORE_N is isolated. pin1K/pin2A; price estimate, MOQ1 assumed."
+D221,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,DNP,NORMAL,"Controller pack qualification AND local analog trips. pin1K/pin2A; price estimate, MOQ1 assumed."
+D222,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,DNP,NORMAL,"Compact accessory present inhibits the watt path. pin1K/pin2A; price estimate, MOQ1 assumed."
+D223,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,"Diode OR allows the low path when PA request is absent. pin1K/pin2A; price estimate, MOQ1 assumed."
+D224,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,"Diode OR requires all watt guards when PA request is present. pin1K/pin2A; price estimate, MOQ1 assumed."
+C220,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C222,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+R228,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,DNP,FIT,FOX,Fox-only: forces watt guard invalid. Full population MUST omit this link.
+U221,"74HC11D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+U222,"74HC08D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+U223,"74HC74D,653",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+U224,"74HC174D,653",Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,FIT,FIT,BOTH,CMOS 3.3 V. Supply unit and all unused gates explicitly connected.
+C230,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C231,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C232,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+C233,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+Q225,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+Q226,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+Q227,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+Q228,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+Q229,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"Request faults only when captured context valid. HEALTH MR clears acceptance, independently masking RF; no implicit rearm. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+J301,B2P-VH(LF)(SN),ARDF_TX:JST_VH_B2P_StandardPTH,FIT,FIT,BOTH,"V1R1:1.90mm ordinary finished PTH. Maker1.14mm square, tolerance not published; incoming assembly envelope<=1.19mm square is an engineering screening limit. Separate fused pack input1VBAT/2GND."
+F301,Littelfuse 046701.5NR,ARDF_TX:Fuse_467_0603,FIT,FIT,BOTH,"CORRECTED R1 footprint: actual467 family is0603. Own maker reflow lands2.54x1.02mm outer/gap0.36mm; retain1.5A32V, nominalI2t0.0766A2s. Fuse nuisance/pack coordination physical gate."
+D301,SS34-E3/57T,Diode_SMD:D_SMC,FIT,FIT,BOTH,Schottky reverse polarity barrier. M3B sense is ahead of added input damper; no load-dependent UV threshold shift.
+D302,SMBJ17A,Diode_SMD:D_SMB,FIT,DNP,NORMAL,"Secondary surge absorber only; NOT an18/20V precision clamp. M3B R350/C350 damp specified cable hot-plug; TVS is downstream of damper. External sources restricted to qualified4S envelope. E2 exact vendor LittelfuseSMBJ17A:17V stand-off,18.9-20.9V breakdown at1mA,27.6V clamp at21.8A. Existing EUR0.35 remains unquoted estimate; not an18V limiter."
+C301,C3225X7R1V106M250AC,Capacitor_SMD:C_1210_3225Metric,FIT,DNP,NORMAL,
+C302,C3225X7R1V106M250AC,Capacitor_SMD:C_1210_3225Metric,FIT,DNP,NORMAL,
+U301,TPS54302DDCT,Package_TO_SOT_SMD:TSOT-23-6,FIT,DNP,NORMAL,"4.5-28V/3A; EN max7V, local47k pull-down. 400kHz. No raw16.8V on EN."
+C303,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+R301,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+L301,SRP7050TA-100M,ARDF_TX:SRP7050TA,FIT,DNP,NORMAL,"10uH +/-20%,4Athermal,7.5AIsat (-20%L),69mohmmax. Exceeds TPS54302 worstcurrent-limitpeak (verifyhot). SRP5030TA-100M rejected:3.5AIsat insufficient faultmargin."
+C304,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,FIT,DNP,NORMAL,
+C305,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,FIT,DNP,NORMAL,
+R302,RC0603FR-07137KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,0.596V feedback typical; not RF power calibration. Base20k gives4.6786V start.
+R303,RC0603FR-0720KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Sprint calibration by selected fixed E96 value after RF measurement. Open lower resistor is hazardous: OV/latch/isolation are indispensable.
+R304,RC0603FR-0791KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,"Extended calibration starting value, no DAC/trimmer."
+Q301,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,DNP,NORMAL," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+R305,RC0603FR-0724K9L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,"Full calibration starting value; max target3W, not a5W carrier adaptation."
+Q302,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,DNP,NORMAL," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+U302,TPS22810DBVR,Package_TO_SOT_SMD:SOT-23-6,FIT,DNP,NORMAL,Independent physical load switch after buck. Shorted buck high-side can still be disconnected. Not reverse-blocking; no external rail injection.
+C306,CC0603JRNPO9BN472,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,4.7n slows initial47uFdrivercharge; measure inrush belowOC threshold and outputsettling. OFF latency is separately<=20us gate.
+R306,RC0603FR-07100RL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R307,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+U311,TL431AIDBZR,Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"TI TL431AIDBZR DBZ, SLVS543S May2024 Table5-1/p4:1CATHODE,2REF,3ANODE. E2 corrects E1 anode/reference pad reversal. K andREF tiedVREF_2V5; ANODE ground. Same actual MPN and2.495V functional circuit."
+R310,RC0603FR-07180RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R311,RC0603FR-071K5L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R312,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+C310,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+R313,RC0603FR-07309KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R314,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C311,CC0603KRX7R9BB103,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+U312,LM339BIDR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,DNP,NORMAL,
+R321,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+C313,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+C314,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,"50V version on undamped VIN_PACK node; avoids crediting the downstream damper for upstream capacitor voltage.100n±10%X7R0603; price estimate, current basketOPEN."
+R324,RC0603FR-07309KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R325,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R315,RC0603FR-07127KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R316,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C312,CC0603KRX7R9BB103,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+R317,RC0603FR-0761K9L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R318,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R326,RC0603FR-0778K7L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R327,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R328,RC0603FR-0769K8L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R329,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R330,WSL2512R0500FEA,Resistor_SMD:R_2512_6332Metric,FIT,DNP,NORMAL,High-side Kelvin shunt. No low-side bypass through grounded RF instruments.
+U313,INA180A1IDBVT,Package_TO_SOT_SMD:SOT-23-5,FIT,DNP,NORMAL,"Gain20V/V; pin3 IN+,4 IN-,5 VS for DBV. 26V CM. A1T packaging differs from unavailable A1R, same pinout."
+R331,RC0603FR-0710RL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R332,RC0603FR-0710RL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+C320,CC0603KRX7R9BB103,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+R333,RC0603FR-0730KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+C321,CC0603JRNPO9BN102,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+R334,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Shared default0V OC input with sensor DNP; valid only when watt stage DNP.
+C322,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+R335,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Pull from bounded<1.0V reference keeps comparator inputs in range at cold/open NTC.
+TH301,NCP18XH103F03RB,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,"B25/50=3380K;3434K25/85referenceusedforapproximate80Ctrip,notconstantovertemperature. Manufacturerproductpageunavailable; supplier-hostedMuratasheetreviewrequired. Attach sensor thermally to IRF610 case; board0603 placement cannot substitute case sensing. Fox-only DNP; normal PA and thermal sensing absent; unused dual-comparator inputs grounded via R348/R349."
+R337,RC0603FR-0760K4L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R338,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R339,RC0603FR-071K3L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R340,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+U314,LM393BIDR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,FIT,FIT,BOTH,
+C323,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+R348,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,DNP,FIT,FOX,Unused LM393 half input low in Fox-only; full DNP.
+R349,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,DNP,FIT,FOX,Unused LM393 half input low in Fox-only; full DNP.
+U401,LM5134BMF/NOPB,Package_TO_SOT_SMD:SOT-23-6,FIT,DNP,NORMAL,"B only: VIH2.4V, VIL0.8V. VDD4-12.6V; no raw4S. IN can be powered while VDD off per14V input rating; verify leakage."
+R401,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+Q401,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,DNP,NORMAL," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+R402,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+Q405,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,DNP,NORMAL,"Series driver-mute sink requires genuineKEYtail aswellasPApermission; prevents shaperstartup burst. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+C401,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,DNP,NORMAL,
+C402,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+R410,CRCW25124R70FKEG,Resistor_SMD:R_2512_6332Metric,FIT,DNP,NORMAL,1W/pulse-rated candidate; with C404 limits driver dV/dt during buck failure. Pulse energy/part qualification OPEN.
+C404,25SVPF47M,Capacitor_SMD:CP_Elec_6.3x5.9,FIT,DNP,NORMAL,"Panasonic polymer47u25V +/-20%,30mohm max100kHz20C;235uA leakage max. C6 maker land gap2.1/outer9.1/width1.6 agrees native pads. Cmin37.6u, ESR<=0.5ohm over0-50C and isolation<=20us must qualify; no safety proof from ideal RC."
+R409,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Deterministic intermediate source bias; inhibit FETs now +/-20VGS rated.
+R403,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Default0ohm like reference; optionally2.2ohm for ringing ONLY after waveforms. Do not attach50ohm scope termination.
+R408,RC0603FR-0747KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,Local low default on driver input if shared source is unplugged/unpowered.
+R404,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+Q402,IRF610PBF-BE3,ARDF_TX:Vishay_IRF610_TO220_StandardPTH,FIT,DNP,NORMAL,"V1R1:Vishay IRF610PbF-BE3, exact Siliconix92506 drawing.1G/2D/3S,tabD;1.40mm ordinary finished holes,1.905x2.0mm lands. External b/c maxima0.91x0.61mm; larger generic diode TO220 drawing not used as identity. Insulate sink/thermocouple; physical hot SOA NOT_RUN."
+T401,Amidon FT-50A-43 + AWG24 enamel Cu,ARDF_TX:FT50A43_Inline_4Terminal,FIT,DNP,NORMAL,"Astart1 dot; Afinish2; Bstart3 dot; Bfinish4; 2 and3 join drain, series-aiding.9 passes each,24cm each AWG24 0.51mm. AL480nH ->38.9uH per winding; source geometryverify. M3B formed leads on one edge:1,2,3,4 at5.08mm pitch;2/3 adjacent for short center join. Same core, turns, polarity and ratio; mechanical forming only."
+Q403,BD140,ARDF_TX:ST_BD140_SOT32_StandardPTH,FIT,DNP,NORMAL,"V1R1:ST BD140 SOT32 drawing0016114E,1B/2C/3E;180deg/illustrated face+PCB Y retained.1.40mm ordinary finished holes/1.90mm lands. Max lead0.88x0.63mm.2mm body stand-off; conductive case is collector. No generic-vendor substitution."
+R405,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,
+R406,CRCW2512100RFKEG,Resistor_SMD:R_2512_6332Metric,FIT,DNP,NORMAL,"1W thin/thick-film qualified part; at8.98V approx0.65W. Adapted forced-beta10 base budget, not copied1.2k QCX."
+Q404,DMN2056U-7,Package_TO_SOT_SMD:SOT-23,FIT,DNP,NORMAL," 45mohm at2.5V, +/-8VGS; retained for70mA shaper base sink."
+C403,GRM32ER71E226KE15L,Capacitor_SMD:C_1210_3225Metric,FIT,DNP,NORMAL,Nonpolar X7R Miller integration starting value; bias-dependent effectiveC and measured3-8ms edges OPEN.
+R407,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,FIT,DNP,NORMAL,"Discharge only, not bulk PA capacitor; do not add reservoir after shaper."
+R451,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+D451,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,SchottkyfastchargepreservesHC14VIHmargin;hotleakagemustbemeasured.Anodefrompermittedkey; cathodeatcapacitor. Fixed100nF/330ktailneedshot/coldSchmittthresholdmeasurement.
+R452,RC0603FR-07330KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Sharedkeytaildefaultlow; no RF untilagenuinepermittedkey.
+C451,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+R453,RC0603FR-07100RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+Q406,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"10usresetRCclampsrawKEYevenifheldhigh; KEYhighcannotarm. Verify thresholds/leakage attemperature. 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+C410,C3216X7R2A474K160AB,Capacitor_SMD:C_1206_3216Metric,FIT,DNP,NORMAL,
+C411,C0805C102J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+C412,C0805C101J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+L410,Micrometals T60-2 + AWG24 Cu,ARDF_TX:T60_2_20T,FIT,DNP,NORMAL,"20T throughholepasses,46cm wire starting. AL6.5nH ->2.60uH nominal; authorlabels2.7uH, measure and trim for passband. OD15.24/15.75max,ID8.53/8.03min,height5.94/6.45maxmm."
+C413,C0805C182J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+L411,Micrometals T60-2 + AWG24 Cu,ARDF_TX:T60_2_20T,FIT,DNP,NORMAL,Same20T recipe; keep inductors apart/non-coplanar for parasitic coupling evaluation. Material/source identity must be retained.
+C414,C0805C910J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+C415,C0805C102J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+C416,C0805C101J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,
+J401,1727010,ARDF_TX:Phoenix_1727010_StandardPTH,FIT,DNP,NORMAL,"V1R1:1.30mm ordinary finished PTH. Maker0.5x0.9mm pins; no published tolerance, incoming engineering envelope<=0.55x0.95mm.1RF_NORMAL/2GND; hand solder, strain relieve coax."
+R501,RC2512FR-0727RL,Resistor_SMD:R_2512_6332Metric,FIT,FIT,BOTH,"Maximum available resistive DC power3.6^2/(4*27)=120mW beforepad; fixed source bound, not10mWcalibration.>=1dBpadkeepsgrossfaultavailablepower<100mW."
+Q501,"MMBT3906,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,SOT23 1B2E3C. Rail shaped from3.3V; no directrawbattery rail.
+R502,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R503,RC0603FR-071K5L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+Q502,"BSS138BK,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH," 60VDS,+/-20VGS;6.5ohm max at2.5V/10mA. Low-current function only; 1G2S3D. Ten-price observed; other prices estimates."
+C501,CC0805KKX7R9BB105,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,"Starting integratorC; rise/fall must be3-8ms measured, especiallyHCbelow2V analoginterval."
+C502,CC0603KRX7R8BB104,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,
+R504,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Stored rail discharge/bounded tail;1k alsoadds~3mA active overhead.
+R505,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R506,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+Q503,"MMBT3904,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"Collectorpull-up tracksVFOX, never pushes3.3V intounpoweredHCinput. Saturation/Bakerclamp delay qualification needed."
+R507,RC0603FR-07470RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+D501,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,FIT,BOTH,"Diodes SOD323: cathode marking matchespad1K,2A. Schottky A=base,K=collector. NOT interchangeable with BAT54 SOT23 pin1A,2NC,3K."
+U501,SN74AC00DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,FIT,FIT,BOTH,"TinyFoxNANDbuffermechanism,ACdriveadaptation.2-6V,+/-12mAoperatingat3V. HC00driveaftershaping/padismarginal;3.3VfamilythresholdsnotTTL. ActualRFperformanceNOTMEASURED. Three NAND outputs feed separate22ohm ballast resistors. Supplyrampbelow2Vuncharacterized; calibration/shaping/spectralgate."
+R508,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+Q504,"MMBT3904,215",Package_TO_SOT_SMD:SOT-23,FIT,FIT,BOTH,"IndependentRFgateafterPNPshaper. Masklowwhenunarmed,evenifQ501short. Railfollowingcollector avoidsbackpowerHCinput."
+R509,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R510,RC0603FR-0722RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R511,RC0603FR-0722RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+R512,RC0603FR-0722RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+C510,C3216X7R2A474K160AB,Capacitor_SMD:C_1206_3216Metric,FIT,FIT,BOTH,
+C511,C0805C102J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+C512,C0805C101J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+L510,78F2R7J-RC,ARDF_TX:78F_Axial,FIT,FIT,BOTH,"Q>=50 at7.9MHz,SRF>=95MHz,DCR<=0.28ohm. Notforwattstage. VerifyQ/spectralresponseat3.55MHz; datasheetgeometrymax7.11x2.79mmpads10.16."
+L511,78F2R7J-RC,ARDF_TX:78F_Axial,FIT,FIT,BOTH,"Q>=50 at7.9MHz,SRF>=95MHz,DCR<=0.28ohm. Notforwattstage. VerifyQ/spectralresponseat3.55MHz; datasheetgeometrymax7.11x2.79mmpads10.16."
+C513,C0805C182J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+C514,C0805C910J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+C515,C0805C102J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+C516,C0805C101J1GACTU,Capacitor_SMD:C_0805_2012Metric,FIT,FIT,BOTH,
+R513,RC0603FR-07750RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,50ohm pi pad start1.17dB. Calibrate fixedset; no less1dB permitted onthisguardbudget.
+R514,RC0603FR-076R8L,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Seriespi pad6.8ohm; selectE96 during10mWcalibration. Source/current/lossmodelrequireshardwareevidence.
+R515,RC0603FR-07750RL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,
+J502,B3B-XH-A(LF)(SN),ARDF_TX:JST_XH_B3B_StandardPTH,FIT,FIT,BOTH,"V1R1:1.30mm ordinary finished PTH,1.90x1.95mm lands. Maker0.64mm square without lead tolerance; engineering incoming ceiling0.79mm square.1RF_FOX/2GND/3FOX_ID. Same package/key; no press-fit."
+R516,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,FIT,BOTH,Absent=high enables normalwhenrequested. Presentlow inhibitsnormalregardlessfirmware; Disarmbeforeplugchanges; JSTXHdoesnotguaranteesequentialmating.
+C517,CC0603KRX7R9BB103,Capacitor_SMD:C_0603_1608Metric,FIT,FIT,BOTH,"Plugbouncefilter; no claimofsequentialcontactsforJSTXH, ARM mustbeinhibitedbeforeplugchanges."
+R350,CRCW25121R50FKEG,Resistor_SMD:R_2512_6332Metric,FIT,DNP,NORMAL,±1%; full PA supply damper.0.6A gives0.54W active/0.108W at20%; rated hot derating and insertion pulse must qualify. Not a universal overvoltage limiter.
+C350,EEUFR1V101,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,FIT,DNP,NORMAL,"FR100u35V±20%,8x11.5mm/P3.5mm,lead0.6mm. ESR/impedance0.056ohm at100kHz20C. Cmin80u used; no guaranteed extra ceramic capacitance credited. Inrush/ESR/temp remain physical gates."
+C405,GRM21BR71H104KA01L,Capacitor_SMD:C_0805_2012Metric,FIT,DNP,NORMAL,Local transformer-feed RF bypass; NOT a drain reservoir.100n is negligible vs22u shaper integration but gives~0.45ohm at3.55MHz. RF ripple/heating/key-edge effect require measurement. X7R±10%; procurement quoteOPEN.

@@ -1,6 +1,6 @@
 # Design/reference attribution
 
-SignalSlinger HW3.5 RF core and filter, OpenARDF, pinned commit `4d6d66fb83b76b17be3886c718f90a273225c2e5`, and the related FlexFox80 hardware are engineering references. Their original sources and scope are linked in [the retained comparison](../../docs/M2_80M_REFERENCE_COMPARISON.md). This design reuses the documented driver/final/transformer/filter arrangement with a new supply, envelope, safety and independent low-power interface. The original full board, firmware and reference measurements are not supplied as ARDF-TX work. OpenARDF's MIT notice is in [LICENSE-OpenARDF.txt](LICENSE-OpenARDF.txt).
+SignalSlinger HW3.5 RF core and filter, OpenARDF, pinned commit `4d6d66fb83b76b17be3886c718f90a273225c2e5`, and the related FlexFox80 hardware are engineering references. Their original sources and scope are linked in [the retained comparison](../../../docs/M2_80M_REFERENCE_COMPARISON.md). This design reuses the documented driver/final/transformer/filter arrangement with a new supply, envelope, safety and independent low-power interface. The original full board, firmware and reference measurements are not supplied as ARDF-TX work. OpenARDF's MIT notice is in [LICENSE-OpenARDF.txt](LICENSE-OpenARDF.txt).
 
 QCX Rev5/manualRev1.22 (QRP Labs/Hans Summers, with W6JL shaping attribution) and TinyFox documentation are attributed circuit-principle references; no original QCX/TinyFox schematic graphics or proprietary firmware are copied into these editable design files. No broad licence for their original documents is assumed.
 
@@ -10,3 +10,5 @@ Manufacturer/distributor documents and prices remain attributed at source; no ve
 
 
 M3B-E1 adds modified KiCad-derived IDC, fuse/TO220 landing and formed-winding footprints; library-derived data retains the same CC-BY-SA-4.0 WITH KiCad-libraries-exception terms. Eight small VRML dimension/winding-envelope models are authored for this evaluation and explicitly labeled as **not supplier CAD**. Other bodies use locally installed KiCad standard models and their library terms. No third-party datasheet images are copied into the review documents. FreeRouting2.5.0 is used as an external GPL tool locally; its JAR/source is not redistributed in this repository. Local routing does not change the reference-design attribution above.
+
+M4A-V1R1 includes project-local KiCad footprint artwork overlays under `assembly-libraries/`: small silk art becomes Fab art, with original copper/pads/courtyards retained. These modified KiCad library files retain **CC-BY-SA-4.0 WITH KiCad-libraries-exception**, credited to KiCad library contributors. Manufacturer package drawings remain linked evidence and are not republished here.

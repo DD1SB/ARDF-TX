@@ -1,36 +1,15 @@
-# RF80 V1 — PRODUCTION-INTENT, NOT RELEASED
+# RF80 V1R1 — standard prototype manufacturing candidate
 
-This separate KiCad 10 project derives from the frozen `1245023 / m3b-e2`
-electrical reference. Open **RF80_V1.kicad_pro**. The original project one
-directory above is unchanged. Do not regenerate the evaluation board from V1.
+Open **RF80_V1.kicad_pro** here. The active M4A-V1R1 is a **150 × 110 mm**, two-layer, 1.6 mm / 1 oz standard FR4 candidate with lead-free HASL. It preserves the Si5351–LM5134B–IRF610/BD140 circuit, independent Fox path and controller/protection contracts. The changes concern local THT landings, legend and manufacturing settings.
 
-The 150 × 110 mm, two-layer candidate preserves every non-test component,
-value, manufacturer mapping and connection. Fourteen of the evaluation
-board's 74 probe pads remain. Full Classic/Sprint/Fox and Fox-only are
-population variants of this same PCB; the three-PCB system is unchanged.
+- [Current engineering decision](../../../docs/M4A_V1R1_REVIEW_DECISION.md)
+- [Current review and five-board package](review/M4A-V1R1/README.md)
+- [Ordinary finished-hole audit](../../../docs/M4A_V1R1_HOLE_AND_FOOTPRINT_AUDIT.md)
+- [Proposed first-evaluation transition](../../../docs/M4A_V1R1_PROTOTYPE_TRANSITION.md)
+- Preserved [original M4A-V1 review](review/M4A-V1/README.md) and [original decision](../../../docs/M4A_REVIEW_DECISION.md), baseline 4d2f592. Frozen E2 at 1245023 / m3b-e2 remains unchanged one directory above.
 
-- [Engineering decision](../../../docs/M4A_REVIEW_DECISION.md)
-- [Layout](../../../docs/M4A_COMPACT_LAYOUT.md)
-- [Mechanical assumptions](../../../docs/M4A_MECHANICAL_INTERFACE.md)
-- [Variant BOM and installed-cost scope](../../../docs/M4A_VARIANT_BOM.md)
-- [Electrical equivalence](../../../docs/M4A_ELECTRICAL_EQUIVALENCE.md)
-- [Production test plan](../../../docs/M4A_PRODUCTION_TEST_PLAN.md)
-- [Review exports](review/M4A-V1/README.md)
+**GO for independent bare-PCB manufacturing review.** The old E2-first restriction remains historical evidence: the V1R1-first proposal requires user review before upload/fabrication approval. No accepted ADR or historical evidence changed. Physical fit, power, protection, RF, thermal, spectrum and endurance tests are all **NOT_RUN**.
 
-Native DNP flags describe the **full** assembly: the three Fox-only bias links
-R228/R348/R349 are DNP. Use the explicit Fox population and placement files
-for the reduced assembly; do not interpret a full-board render as its assembly
-instruction. TH301 is one remote insulated PA-case sensor in the full build.
+FULL and FOX_ONLY are explicit populations of the same PCB. Full omits R228/R348/R349; Fox fits these links and omits the normal PA. Full includes the off-board insulated TH301 sensor. Use current population/placement records for Fox assembly. No acceptance tag, order, upload, assembly, power-up or RF is authorized.
 
-The electrical protections, analog timing, RF output/spectrum/port isolation,
-compact antenna field range, thermal behavior and endurance remain **NOT_RUN**.
-CAD equivalence does not qualify altered layout parasitics. E2 must be built
-and measured first under separately approved staged conditions, and any
-resulting electrical corrections must flow into V1 before its physical review.
-No order, upload, assembly, power-up or production release is authorized.
-
-Local generator commands that replace routing input (`m4a_design.py --place`,
-`--derive`) are **not verification commands**. Use the checked-in PCB for review;
-read the review README before running export/audit tools. Local dimensional
-WRL envelopes retain E2's limitations; they are not certified supplier CAD.
-See [licenses](LICENSES.md) and retained source attribution.
+Do not run old derivation/placement scripts on the candidate. They recreate obsolete routing input. Use the dedicated `m4a_v1r1` wrapper and current reproduction instructions; historical exporters would overwrite preserved review data. [Licence and attribution](LICENSES.md).

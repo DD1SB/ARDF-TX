@@ -1,0 +1,263 @@
+{
+  "status": "PASS_NATIVE_AND_FINAL_GERBER",
+  "essential_marks": [
+    {
+      "text": "J101-1",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        24.0,
+        48.0
+      ]
+    },
+    {
+      "text": "TP105",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        34.0,
+        85.5
+      ]
+    },
+    {
+      "text": "TP101",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        36.0,
+        60.0
+      ]
+    },
+    {
+      "text": "TP717",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        42.525,
+        101.19
+      ]
+    },
+    {
+      "text": "TP716",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        42.525,
+        117.27
+      ]
+    },
+    {
+      "text": "J101 CTRL 3V3",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        43.5,
+        70.0
+      ]
+    },
+    {
+      "text": "TP721",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        50.475,
+        42.865
+      ]
+    },
+    {
+      "text": "FULL:4S  FOX:2S",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        52.0,
+        22.5
+      ]
+    },
+    {
+      "text": "J301 1=BAT+ 2=GND",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        73.0,
+        22.5
+      ]
+    },
+    {
+      "text": "J301-1",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        74.5,
+        25.0
+      ]
+    },
+    {
+      "text": "TP723",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        86.525,
+        57.19
+      ]
+    },
+    {
+      "text": "FOX: R228 R348 R349",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        90.7,
+        126.1
+      ]
+    },
+    {
+      "text": "TP703",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        107.8625,
+        62.05
+      ]
+    },
+    {
+      "text": "TP103",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        110.1,
+        99.0
+      ]
+    },
+    {
+      "text": "TP403",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        111.78,
+        82.5
+      ]
+    },
+    {
+      "text": "TP513",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        120.0,
+        118.5
+      ]
+    },
+    {
+      "text": "TP102",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        120.3625,
+        42.45
+      ]
+    },
+    {
+      "text": "TP501",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        124.975,
+        107.19
+      ]
+    },
+    {
+      "text": "TP414",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        128.5,
+        59.0
+      ]
+    },
+    {
+      "text": "TP706",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        131.137499,
+        37.95
+      ]
+    },
+    {
+      "text": "INSULATE DRAIN TAB",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        135.0,
+        22.0
+      ]
+    },
+    {
+      "text": "J502-1",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        146.0,
+        115.5
+      ]
+    },
+    {
+      "text": "J502 FOX 10mW",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        150.0,
+        128.0
+      ]
+    },
+    {
+      "text": "J401-1",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        152.5,
+        88.0
+      ]
+    },
+    {
+      "text": "J401 NORMAL RF",
+      "height_mm": 1.0,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        160.0,
+        98.0
+      ]
+    },
+    {
+      "text": "RF80 V1R1 / EVAL - NOT RELEASED",
+      "height_mm": 1.2,
+      "stroke_mm": 0.15,
+      "position_mm": [
+        99.0,
+        22.1
+      ]
+    }
+  ],
+  "Gerber_stroke_audit": [
+    {
+      "file": "RF80_V1-B_Silkscreen.gbo",
+      "circular_stroke_apertures_mm": []
+    },
+    {
+      "file": "RF80_V1-F_Silkscreen.gto",
+      "circular_stroke_apertures_mm": [
+        0.15
+      ]
+    }
+  ],
+  "outline_centreline_mm": [
+    20.0,
+    20.0,
+    170.0,
+    130.0
+  ],
+  "finished_dimensions_mm": [
+    150,
+    110
+  ],
+  "outline_stroke_is_not_board_size": "Factory must route closed Edge.Cuts centreline; stroke envelope must not enlarge150x110mm",
+  "references_and_small_body_art": "Moved to F.Fab/assembly overlays; not required on finished legend. DRC and independent native polygon gate check mask clearance."
+}

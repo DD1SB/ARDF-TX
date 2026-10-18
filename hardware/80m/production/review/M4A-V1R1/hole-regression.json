@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "mutation": "old_IDC1p2_hole",
+      "detected": "undersized_finished_hole"
+    },
+    {
+      "mutation": "old_XH0p95_hole",
+      "detected": "undersized_finished_hole"
+    },
+    {
+      "mutation": "oversized_Fox_hole",
+      "detected": "oversized_unreviewed_hole"
+    },
+    {
+      "mutation": "thin_PTH_land",
+      "detected": "annulus"
+    },
+    {
+      "mutation": "manufacturer_lead_incompatibility",
+      "detected": "computed_diagonal_and_finished_minimum"
+    }
+  ]
+}

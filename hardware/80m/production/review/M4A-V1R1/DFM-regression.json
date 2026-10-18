@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "mutations": [
+    {
+      "mutation": "thin_special_board",
+      "detected": "standard_1p6mm"
+    },
+    {
+      "mutation": "tiny_annulus",
+      "detected": "via_annulus_design_minimum"
+    },
+    {
+      "mutation": "microdrill",
+      "detected": "no_premium_micro_drill_or_small_land"
+    },
+    {
+      "mutation": "filled_via",
+      "detected": "no_premium_via_protection"
+    },
+    {
+      "mutation": "blind_via",
+      "detected": "ordinary_through_via"
+    },
+    {
+      "mutation": "thin_signal",
+      "detected": "actual_track_width"
+    },
+    {
+      "mutation": "undersized_silk",
+      "detected": "legend_height"
+    },
+    {
+      "mutation": "thin_legend_stroke",
+      "detected": "legend_stroke"
+    },
+    {
+      "mutation": "real_mask_web_0p05",
+      "detected": "native_mask_web"
+    },
+    {
+      "mutation": "press_fit",
+      "detected": "no_premium_process"
+    },
+    {
+      "mutation": "special_drilling",
+      "detected": "no_premium_process"
+    },
+    {
+      "mutation": "controlled_impedance",
+      "detected": "no_premium_process"
+    },
+    {
+      "mutation": "premium_via_treatment",
+      "detected": "no_premium_process"
+    },
+    {
+      "mutation": "reintroduced_special_tolerance",
+      "detected": "ordinary_finished_hole_tolerance"
+    }
+  ]
+}

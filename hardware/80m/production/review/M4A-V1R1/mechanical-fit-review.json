@@ -1,0 +1,49 @@
+{
+  "status": "CAD_PRESERVED_PHYSICAL_FIT_NOT_RUN",
+  "mounts": {
+    "H1": {
+      "centre_native_mm": [
+        25.0,
+        25.0
+      ],
+      "finished_NPTH_mm": 3.2
+    },
+    "H2": {
+      "centre_native_mm": [
+        165.0,
+        25.0
+      ],
+      "finished_NPTH_mm": 3.2
+    },
+    "H3": {
+      "centre_native_mm": [
+        165.0,
+        125.0
+      ],
+      "finished_NPTH_mm": 3.2
+    },
+    "H4": {
+      "centre_native_mm": [
+        25.0,
+        125.0
+      ],
+      "finished_NPTH_mm": 3.2
+    }
+  },
+  "pattern_mm": [
+    140,
+    100
+  ],
+  "outline_mm": [
+    150,
+    110
+  ],
+  "connectors": "All original X/Y/rotation retained, actual pad centres and key orientation compared toV1. Dimensions/lead limits in finished-hole-audit.json; keyed mating housings require actual incoming fit.",
+  "envelope": "Initial >=10mm underside lead/service clearance,<=25mm top power/coil envelope plus30mm mating-harness service allowance; not final enclosure acceptance.",
+  "cooling": "IRF610 tabDRAIN and BD140 collector live. Electrically insulate from grounded M3 supports/sinks; stockTO220 mica/silicone pad, matching shoulder bush/screw, continuity test and measured thermal margin. No heatsink rating or deviceSOA inferred from3D render.",
+  "sensor": "TH301 remains offboard insulated PA-case sensor with strain relief. ElectricalNTC open/short and detached-contact tests distinct.",
+  "windings": "L410/L411 sameT60-2,20T AWG24; T4019+9AWG24 bifilar. 1/3 winding-start dots and2/3 centre join retained. No modified turns/core/filter values.",
+  "integration": "Side-by-side flexible keyed cables; RF80/controller hole patterns not forced to align. RF2M underside25.2mm cooling envelope stays free; no stacking over its fins. Separate RF/battery cable exits and strain relief; no final enclosure designed.",
+  "physical_fit": "Incoming parts,dry-fit all pins,no forced insertion; pin-position tolerance stack is not established by a diagonal calculation. Compliant formed leads and real array fit must be inspected before soldering. Never drill finishedPTH after plating.",
+  "models": "199 resolved model references; custom WRL winding/connector/BD140 bounds are envelope-only, not certified supplier solids. Actual KiCad top/angled/bottom renders inspected; hand fit remainsNOT_RUN."
+}

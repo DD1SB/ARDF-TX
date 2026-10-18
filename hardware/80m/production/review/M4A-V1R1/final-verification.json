@@ -1,0 +1,58 @@
+{
+  "revision": "M4A-V1R1",
+  "date": "2026-10-18",
+  "status": "PASS_NONPHYSICAL_REVIEW_GATES",
+  "native_sha256": "b8695218798690759bc9145ebbe8893f6d402d09a971ba9332207d45d3924ef7",
+  "logical_and_IPC_pin_nets_verified": 604,
+  "maximum_IPC_coordinate_quantization_mm": 0.001260000000030459,
+  "IPC_netname_encoding": "KiCad IPC-D356 emits uppercase rightmost14characters; full logical names preserved in XML. All distinct names checked against truncation collisions; named no-connect pads retain individual nets, empty nets emit N/C.",
+  "ERC": {
+    "errors": 0,
+    "warnings": 0,
+    "inherited_informational_defaults": 3
+  },
+  "DRC": {
+    "errors": 0,
+    "warnings": 0,
+    "unrouted": 0,
+    "parity": 0,
+    "exclusions": 0,
+    "ignored_checks": 0
+  },
+  "electrical": {
+    "manufacturer_devices": 55,
+    "logic_cases": 256,
+    "states": 31,
+    "timing_corners": 16,
+    "negative_mutations": {
+      "existing": 12,
+      "hole-regression.json": 5,
+      "DFM-regression.json": 14,
+      "interface-regression.json": 9
+    }
+  },
+  "archives": [
+    {
+      "board": "RF80-V1R1",
+      "archive": "fabrication/RF80-V1R1_JLCPCB_5boards.zip",
+      "sha256": "8cdb21e278e9120abc81b594516f8498a1110df3ce50d845d4922c161f510a92",
+      "entries": 11
+    },
+    {
+      "board": "Controller",
+      "archive": "three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip",
+      "sha256": "e1745a8b8b42c15e024315d58749bbdfe019745e0e48bf055e65a02977dd36e6",
+      "entries": 11
+    },
+    {
+      "board": "RF2M",
+      "archive": "three-board-order/RF2M_M5B-E4R1_JLCPCB_5boards.zip",
+      "sha256": "29506bce6b451cd83ecd430d52ec1331c8098ee8082790a20c4ad4c3c548566f",
+      "entries": 11
+    }
+  ],
+  "physical": "17gatesNOT_RUN; no authorization/qualification inferred",
+  "prototype_transition": "PROPOSED_PENDING_REVIEW, original M4A E2-first restriction preserved",
+  "other_designs": "1421 frozen evidence files and every tracked E2 hardware file verified unchanged",
+  "source_commit": "Record final Git commit externally; source and artifact hashes identify exact candidate without circular self-hash"
+}

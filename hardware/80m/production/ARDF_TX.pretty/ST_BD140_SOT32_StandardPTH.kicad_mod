@@ -1,0 +1,215 @@
+(footprint "ST_BD140_SOT32_StandardPTH"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "V1R1:ST BD140 SOT32 drawing0016114E,1B/2C/3E;180deg/illustrated face+PCB Y retained.1.40mm ordinary finished holes/1.90mm lands. Max lead0.88x0.63mm.2mm body stand-off; conductive case is collector. No generic-vendor substitution.")
+	(tags "TO-126-3 Vertical RM 2.28mm")
+	(property "Reference" "REF**"
+		(at 2.28 -2.95 0)
+		(layer "F.Fab")
+		(uuid "a4b94c07-e6ad-4e57-9771-1a785fd34242")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TO-126-3_Vertical"
+		(at 2.28 2.2 0)
+		(layer "F.Fab")
+		(uuid "69f90dd5-ee5d-4f34-82cc-4eea334046bf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6208d1e7-3509-4c8e-adf7-1eb656602ac2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9943841a-564d-4131-92a8-4605864a1658")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/TO_SOT/THT"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "689387f9-7973-44b9-a917-856011d17dc9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.97 -2.25)
+		(end 6.53 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2af9d8f8-1296-4875-993c-1a5c4f5739e3")
+	)
+	(fp_line
+		(start -1.83 -2.11)
+		(end 6.39 -2.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "80cfed51-3056-4a21-96a2-252036ef8745")
+	)
+	(fp_line
+		(start -1.83 1.36)
+		(end -1.83 -2.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4719683-43c2-41a8-b938-9903922b186b")
+	)
+	(fp_line
+		(start 0.68 -2.11)
+		(end 0.68 -1.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "07660b31-84e7-4c8c-8b13-a6caaba70fa0")
+	)
+	(fp_line
+		(start 0.68 -2)
+		(end 0.68 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b595bd8b-0365-4184-b010-1e3b03abcc6b")
+	)
+	(fp_line
+		(start 3.88 -2.11)
+		(end 3.88 -1.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "db1c6418-78a7-4b17-bc01-b1cf8974e26d")
+	)
+	(fp_line
+		(start 3.88 -2)
+		(end 3.88 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "45d0eca1-3c93-48aa-a71e-f93804a10861")
+	)
+	(fp_line
+		(start 6.39 -2.11)
+		(end 6.39 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "52619c55-67fc-475f-8a58-0aa74bc94d2b")
+	)
+	(fp_line
+		(start 6.39 1.36)
+		(end -1.83 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "71b41237-0b7c-44ae-83b9-e66f2c7d00c2")
+	)
+	(fp_rect
+		(start -1.72 -2)
+		(end 6.28 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b68756dd-05a4-4bd3-b07f-ca0f1ea024c2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.28 -0.38 0)
+		(layer "F.Fab")
+		(uuid "3089e66a-9258-47ef-ac28-798cfecccd95")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.9 1.9)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b4561926-4eda-4792-ba55-138b9a27baac")
+	)
+	(pad "2" thru_hole oval
+		(at 2.28 0)
+		(size 1.9 1.9)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ffccf004-e4dd-44e7-b4a4-3d0d8cd349f5")
+	)
+	(pad "3" thru_hole oval
+		(at 4.56 0)
+		(size 1.9 1.9)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "29021021-d93f-48cc-b3ea-6ea3ce218a48")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/ST_BD140_envelope.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
