@@ -108,6 +108,8 @@ class Controller:
             if self.signals['ARM'] and self.now-self.last_progress>(250000 if self.context.band is Band.RF80 else 230000):self.stop('local module watchdog expires')
     def status(self,high):
         if self.signals['ARM'] and not high:self.stop('lost local arm acceptance')
+    def battery_sample(self,identity):
+        if self.context and identity!=self.context.pack:self.stop("invalid/changed pack ID")
     def pa_rail_sample(self,valid):
         if self.context and self.context.band is Band.RF2M and self.context.path=='NORMAL' and self.state in (State.ARMED,State.TX) and not valid:self.stop('lost qualified PA rail')
     def communication_loss(self,kind):
@@ -143,12 +145,51 @@ def detect_lora(status,busy_stuck=False):
     """SX1262 GetStatus response fixture. Follow with identity/config readback."""
     return not busy_stuck and status not in (None,0,255) and ((status>>4)&7) in (2,3,4,5,6)
 
-def identify_pack(v_id,protected_sense,rail=3.3):
-    """Calibrated ADC fixture; measured sense is after reverse diode."""
-    if not 0<v_id<rail*.97:return None
-    resistance=10000*v_id/(rail-v_id)
-    name=next((n for n,r in [('2S',10000),('4S',22000)] if abs(resistance/r-1)<.1),None)
-    # Refuse contradictory bands. Actual raw voltage is interval sense+diode drop.
+@dataclass(frozen=True)
+class PackIDCalibration:
+    """Qualified bounds, not factory defaults. Real commissioning must supply them."""
+    vf_bounds:tuple
+    leakage_max:float
+    adc_error:float
+    sense_error:float=.10
+    qualified:bool=False
+    frontend_revision:int=2
+    def valid(self):
+        return (self.qualified and self.frontend_revision==2 and len(self.vf_bounds)==2 and
+                0<=self.vf_bounds[0]<=self.vf_bounds[1]<=1.25 and
+                0<=self.leakage_max<=2e-6 and 0<self.adc_error<=.01 and
+                0<=self.sense_error<=.20)
+
+def pack_id_bounds(sense,resistance,cal):
+    """R1 two-node interval solve; actual external codes remain10k/22k."""
+    import itertools
+    values=[]
+    for vb,vf,leak,a,b,c,d,e in itertools.product(
+        [sense-cal.sense_error,sense+cal.sense_error],cal.vf_bounds,
+        [0,cal.leakage_max],[.983,1.017],[.983,1.017],[.983,1.017],
+        [.983,1.017],[.983,1.017]):
+        rs=27000*a;ri=180000*b;rd=33000*c;ra=100000*d;re=resistance*e
+        g1=1/rs+1/re+1/ri;g2=1/ri+1/rd+1/ra
+        v=((max(0,vb-vf)/rs)/ri-leak*g1)/(g1*g2-1/ri**2)
+        values.extend([v-cal.adc_error,v+cal.adc_error])
+    return min(values),max(values)
+
+def identify_pack(v_id,protected_sense,rail=3.3,calibration=None):
+    """R1 calibrated passive front end. Missing/ambiguous evidence is invalid.
+
+    protected_sense is PACK_PROT, reconstructed from the existing1/11 divider.
+    Main power, ADC and ID calibration must be stable before this is consumed.
+    PACK_ID uses ATTEN1/2.5dB (effective0..1.1V); reject >=.93V,
+    saturated codes and invalid calibration before considering either identity.
+    """
+    if not calibration or not calibration.valid() or not 3.135<=rail<=3.465:return None
+    if not 0<v_id<.93 or not 5.21<=protected_sense<=16.7:return None
+    names=[]
+    for name,r in [('2S',10000),('4S',22000)]:
+        lo,hi=pack_id_bounds(protected_sense,r,calibration)
+        if lo<=v_id<=hi:names.append(name)
+    if len(names)!=1:return None
+    name=names[0]
     if name=='2S' and 5.21<=protected_sense<=8.3:return name
     if name=='4S' and 11.21<=protected_sense<=16.7:return name
     return None

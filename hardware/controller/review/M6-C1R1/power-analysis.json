@@ -1,0 +1,141 @@
+{
+  "classification": "CALCULATED; physical supply tests NOT_RUN",
+  "input_range_V": [
+    6,
+    16.8
+  ],
+  "regulator": {
+    "MPN": "AP63203WU-7",
+    "operating_V": [
+      3.8,
+      32
+    ],
+    "absolute_DC_V": 35,
+    "absolute_400ms_V": 40,
+    "setpoint_V": 3.3,
+    "reference_accuracy_percent": 1.5,
+    "max_output_IC_electrical_A": 2,
+    "normal_steady_controller_design_budget_A": 0.4,
+    "reserved_burst_A": 0.92,
+    "inductor_uH": 4.7,
+    "switching_Hz": 1100000,
+    "ripple_A_at16V": 0.5066489361702128,
+    "Cout_nominal_uF": 44,
+    "Cout_effective_design_scenario_uF": 17.6,
+    "Cout_effective_status": "44uF nominal;17.6uF scenario=44*0.8tol*0.5bias, not vendor guarantee; vendor curves/bench transient gate OPEN"
+  },
+  "logic_rail_interval_V": [
+    3.2505,
+    3.3495
+  ],
+  "RF_connector_component_only_minimum_without_copper_V": 3.2253000000000003,
+  "final_native_rail_budget": "connector-rail-budget.json",
+  "RF_connector_nominal_contract_V": [
+    3.135,
+    3.465
+  ],
+  "ADC": {
+    "battery_sense": "PACK_PROT after reverse diode, not raw terminal voltage",
+    "divider": [
+      470000,
+      47000
+    ],
+    "ratio": 0.09090909090909091,
+    "max_at16p8V": 1.5272727272727273,
+    "max_at29p2V_TVS_rating": 2.6545454545454543,
+    "diode_drop_uncertainty_V": [
+      0.1,
+      0.79
+    ],
+    "raw_pack_voltage_interval": "[11*Vadc, 11*Vadc+0.79], plus ADC/divider error; no precise fuel gauge claim",
+    "settling_ms": 25,
+    "module_id_pullup_ohms": 33000,
+    "module_ID_ohms": [
+      18200,
+      39200,
+      82000
+    ],
+    "module_ID_nominal_V": [
+      1.173046875,
+      1.7916897506925207,
+      2.3530434782608696
+    ],
+    "PA_rail_ratio": 0.07692307692307693,
+    "power_off_protection": "TMUX1511 signal0..3.6V for VDD<1.5V; powered0..min(2*VDD,5.5V). R1 input-protection.json supersedes original ID circuit."
+  },
+  "reset_supervisor": {
+    "MPN": "TLV803EA30DBZR",
+    "nominal_threshold_V": 3.08,
+    "reset_delay_ms": 200,
+    "qualification": "analog ramp/decay and local RF fail-off NOT_RUN"
+  },
+  "rail_budgets": {
+    "6": {
+      "controller_3p3_at_40mA_W": 0.132,
+      "both_ports_reserved_150mA_each_W": 0.99,
+      "optional_LoRa_TX_120mA_W": 0.396,
+      "PACK_PROT_bleed_upper_W": 0.0036,
+      "worst_0p92A_output_80pct_input_A": 0.774
+    },
+    "8.4": {
+      "controller_3p3_at_40mA_W": 0.132,
+      "both_ports_reserved_150mA_each_W": 0.99,
+      "optional_LoRa_TX_120mA_W": 0.396,
+      "PACK_PROT_bleed_upper_W": 0.0071,
+      "worst_0p92A_output_80pct_input_A": 0.52
+    },
+    "12": {
+      "controller_3p3_at_40mA_W": 0.132,
+      "both_ports_reserved_150mA_each_W": 0.99,
+      "optional_LoRa_TX_120mA_W": 0.396,
+      "PACK_PROT_bleed_upper_W": 0.0144,
+      "worst_0p92A_output_80pct_input_A": 0.348
+    },
+    "16.8": {
+      "controller_3p3_at_40mA_W": 0.132,
+      "both_ports_reserved_150mA_each_W": 0.99,
+      "optional_LoRa_TX_120mA_W": 0.396,
+      "PACK_PROT_bleed_upper_W": 0.0282,
+      "worst_0p92A_output_80pct_input_A": 0.242
+    }
+  },
+  "thermal_scenarios": {
+    "classification": "CALCULATED / not guaranteed board thermal resistances",
+    "AP63203_published_JA_K_W": 89,
+    "published_test_board": "single-layer2oz manufacturer fixture, not this1oz board",
+    "assumed_conservative_board_JA_K_W": 150,
+    "steady3p3_A": 0.4,
+    "minimum_efficiency_scenario": 0.8,
+    "buck_loss_W": 0.33,
+    "buck_Tj_40C_scenario": 89.5,
+    "0p92A_continuous_Tj_scenario_C": 153.85,
+    "policy": "0.92A is a short burst allocation, not permitted continuous current. Normal one selected RF logic port, WiFi/BLE off, LoRa TX off-slot. Measure thermal/ripple before extending budget.",
+    "diode_D4_worst_at0p4A_out_6V_in_W": 0.4526184538653367,
+    "physical": "NOT_RUN"
+  },
+  "USB": {
+    "limit_resistor_ohms": 100000,
+    "approximate_current_limit_A": 0.3,
+    "supply_path": "USB -> TPS2553 -> STPS1L30A -> buck. BZT52H-B5V1 bounds reverse leakage into USB_LIMIT. No intended USB-to-pack path; pack-present hardware inhibits USB-only RF.",
+    "minimum_startup_V_calculated": 3.975000000000001,
+    "AP63203_minimum_operating_V": 3.8,
+    "D3_reverse_leak_max_at100C_30V_A": 0.015,
+    "clamp_at15mA_scenario_V": 5.89,
+    "clamp_status": "Differential-resistance extrapolation/thermal scenario, not a guaranteed DC clamp curve. Power-only hot reverse-leak test before normal use.",
+    "VBUS_sense": "GPIO37 inverted Q2 collector; firmware USB PHY detaches when VBUS absent. RTC INT unused, hundredths/time polled over I2C.",
+    "physical_gates": [
+      "USB enumeration/inrush/current",
+      "MCU startup current without WiFi",
+      "attach/detach during battery operation"
+    ]
+  },
+  "reverse_leakage_presence": {
+    "D4": "S1M low leakage; Schottky not used",
+    "D4_hot_leakage_assumption_uA": 50,
+    "R7_bleeder_ohm": 10000,
+    "PACK_PROT_upper_USB_only_V": 0.5,
+    "Q1_base_upper_V": 0.25,
+    "status": "calculated component-bound scenario, hot leakage bench gate remains"
+  },
+  "endurance": "Controller-only incremental model. RF module input energy must be measured over selected duty. 12h/24h full system NOT_RUN."
+}

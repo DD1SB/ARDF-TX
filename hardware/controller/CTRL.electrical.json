@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "revision": "M6-C1 candidate",
+  "revision": "M6-C1R1 candidate",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -453,8 +453,113 @@
     {
       "ref": "R3",
       "sheet": "01_power",
-      "value": "10k",
-      "mpn": "RC0603FR-0710KL",
+      "value": "27k",
+      "mpn": "RC0603FR-0727KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "1%,0.1W; pack-derived ID excitation, no V3V3 connection",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_ID_EXC",
+        "2": "PACK_ID_RAW"
+      }
+    },
+    {
+      "ref": "D22",
+      "sheet": "01_power_2",
+      "value": "BAS116 ID excitation isolation",
+      "mpn": "BAS116,235",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Pin1A/3K. Blocks ID fault backfeeding PACK_PROT;80nA maximum leakage at150C/75V.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BAS116.pdf",
+      "supplier": "Mouser DE indexed observation",
+      "supplier_part_number": "771-BAS116235",
+      "availability": "Mouser771-BAS116235 cut tape MOQ1 indexed58175, unreserved",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 0.224,
+        "10": 0.13,
+        "20": 0.13
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": null,
+        "3": "PACK_ID_EXC"
+      }
+    },
+    {
+      "ref": "R8",
+      "sheet": "01_power_2",
+      "value": "180k",
+      "mpn": "RC0603FR-07180KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "1%,0.1W; limits negative16.8V miswire to below0.1mA",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_ID_RAW",
+        "2": "PACK_ID_SAFE"
+      }
+    },
+    {
+      "ref": "R9",
+      "sheet": "01_power_2",
+      "value": "33k",
+      "mpn": "RC0603FR-0733KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "1%,0.1W. Positive fault divider independent of powered rails.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_ID_SAFE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R19",
+      "sheet": "01_power_2",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
       "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
       "group": "01_power",
       "population": "ALL",
@@ -472,8 +577,34 @@
       "moq": "OPEN",
       "multiple": 1,
       "pins": {
-        "1": "V3V3",
-        "2": "PACK_ID_RAW"
+        "1": "PACK_ID_ADC",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D23",
+      "sheet": "01_power_2",
+      "value": "BAT54H negative ID clamp",
+      "mpn": "BAT54H,115",
+      "footprint": "ARDF_CTL:D_SOD-123F_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Pin1K,2A. Negative miswire clamp; positive protection is resistive, not diode dependent.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BAT54H.pdf",
+      "supplier": "Mouser regional indexed comparator; EU stock recheck required",
+      "supplier_part_number": "771-BAT54H-T/R",
+      "availability": "Mouser771-BAT54H-T/R regional indexed stock60194..75213, MOQ1; EUR price unquoted, recheck live EU availability",
+      "evidence": "ESTIMATE_2026-10-18",
+      "price_breaks_eur": {
+        "1": 0.2,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_ID_SAFE",
+        "2": "GND"
       }
     },
     {
@@ -1701,7 +1832,7 @@
       "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
       "group": "04_RTC_analog",
       "population": "ALL",
-      "note": "Powered-off protected four analog channels. Signals remain <=5.5V while VDD absent. ADC input sampling caps, calibrated 11dB ADC1.",
+      "note": "Powered-off protected four analog channels. Signal limit3.6V for VDD<1.5V; powered limit min(2*VDD,5.5V). R1 PACK_ID protected independently of rail. ADC input sampling caps, PACK_ID: calibrated2.5dB ADC1, reject >=930mV; other ADC channels separately qualified",
       "source_url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
       "supplier": "Mouser EU (indexed observation)",
       "supplier_part_number": "595-TMUX1511PWR",
@@ -1719,7 +1850,7 @@
         "2": "BAT_DIV",
         "3": "BAT_ADC",
         "4": "V3V3",
-        "5": "PACK_ID_RAW",
+        "5": "PACK_ID_SAFE",
         "6": "PACK_ID_ADC",
         "7": "GND",
         "8": "MODULE_ID_ADC",
@@ -1779,7 +1910,7 @@
       "moq": "OPEN",
       "multiple": 1,
       "pins": {
-        "1": "PACK_ID_RAW",
+        "1": "PACK_ID_SAFE",
         "2": "GND"
       }
     },
@@ -5657,38 +5788,73 @@
     ],
     "01_power_2": [
       {
-        "ref": "Q1",
+        "ref": "D22",
         "unit": 1,
         "x": 80.01,
         "y": 54.61,
-        "type": "M6_Q1"
+        "type": "M6_D22"
       },
       {
-        "ref": "R4",
+        "ref": "R8",
         "unit": 1,
         "x": 260.35,
         "y": 54.61,
         "type": "R"
       },
       {
-        "ref": "R5",
+        "ref": "R9",
         "unit": 1,
         "x": 439.42,
         "y": 54.61,
         "type": "R"
       },
       {
-        "ref": "R6",
+        "ref": "R19",
         "unit": 1,
         "x": 80.01,
         "y": 110.49,
         "type": "R"
       },
       {
-        "ref": "R7",
+        "ref": "D23",
         "unit": 1,
         "x": 260.35,
         "y": 110.49,
+        "type": "D_Schottky"
+      },
+      {
+        "ref": "Q1",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_Q1"
+      },
+      {
+        "ref": "R4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R5",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R6",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R7",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
         "type": "R"
       }
     ],

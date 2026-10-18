@@ -1,0 +1,624 @@
+{
+  "classification": "BOUNDED CALCULATIONS; physical tests NOT_RUN",
+  "native_sha256": "fb62bc5607e6faeb1dda8943bd0a03f043d7c80e4c36b0b2f93e30af8e49c26e",
+  "normal_cases": [
+    {
+      "case": "correct_2S",
+      "U21_powered": false,
+      "PACK_PROT_V": 7,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 1.6593669488406333,
+      "TMUX_5_V": 0.25708502024291496,
+      "ESP_ADC_V": null,
+      "R8_current_A": 7.790455158876213e-06,
+      "R8_power_W": 1.0924414484842982e-05,
+      "R9_current_A": 7.790455158876211e-06,
+      "R9_power_W": 2.002809322221212e-06,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0.0001737271500429395,
+      "R3_power_W": 0.0008148903118751344,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0001737271500429395,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "correct_2S",
+      "U21_powered": true,
+      "PACK_PROT_V": 7,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 1.6571724197396027,
+      "TMUX_5_V": 0.20075877331647168,
+      "ESP_ADC_V": 0.20075877331647168,
+      "R8_current_A": 8.09118692457295e-06,
+      "R8_power_W": 1.1784115052708449e-05,
+      "R9_current_A": 6.083599191408233e-06,
+      "R9_power_W": 1.221335911016196e-06,
+      "R19_current_A": 2.007587733164717e-06,
+      "R19_power_W": 4.0304085063534464e-07,
+      "R3_current_A": 0.00017380842889853324,
+      "R3_power_W": 0.0008156529888167651,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.00017380842889853324,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "correct_4S",
+      "U21_powered": false,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 5.671117759042697,
+      "TMUX_5_V": 0.8786238781615447,
+      "ESP_ADC_V": null,
+      "R8_current_A": 2.6624966004895292e-05,
+      "R8_power_W": 0.0001275999866571294,
+      "R9_current_A": 2.6624966004895295e-05,
+      "R9_power_W": 2.3393330887140395e-05,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0.0002844030459613816,
+      "R3_power_W": 0.0021838974989070166,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0002844030459613816,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "correct_4S",
+      "U21_powered": true,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 5.658935520971705,
+      "TMUX_5_V": 0.6855538626727836,
+      "ESP_ADC_V": 0.6855538626727836,
+      "R8_current_A": 2.7629898101660677e-05,
+      "R8_power_W": 0.00013741402843946742,
+      "R9_current_A": 2.0774359474932837e-05,
+      "R9_power_W": 1.4241942382593147e-05,
+      "R19_current_A": 6.855538626727836e-06,
+      "R19_power_W": 4.699840986255739e-06,
+      "R3_current_A": 0.0002848542399640109,
+      "R3_power_W": 0.002190832326687806,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0002848542399640109,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_open",
+      "U21_powered": false,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 11.848124999999998,
+      "TMUX_5_V": 1.835625,
+      "ESP_ADC_V": null,
+      "R8_current_A": 5.562499999999998e-05,
+      "R8_power_W": 0.0005569453124999997,
+      "R9_current_A": 5.5625000000000004e-05,
+      "R9_power_W": 0.000102106640625,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 5.562500000000007e-05,
+      "R3_power_W": 8.354179687500021e-05,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 5.562500000000007e-05,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_open",
+      "U21_powered": true,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 11.795076384158799,
+      "TMUX_5_V": 1.4289189452174755,
+      "ESP_ADC_V": 1.4289189452174755,
+      "R8_current_A": 5.758976354967402e-05,
+      "R8_power_W": 0.0005969845558273252,
+      "R9_current_A": 4.330057409749926e-05,
+      "R9_power_W": 6.187301066670978e-05,
+      "R19_current_A": 1.4289189452174755e-05,
+      "R19_power_W": 2.041809352001423e-05,
+      "R3_current_A": 5.7589763549674104e-05,
+      "R3_power_W": 8.954768337409905e-05,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 5.7589763549674104e-05,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_ground",
+      "U21_powered": false,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 4.944444444444237e-13,
+      "TMUX_5_V": 7.660406885758677e-14,
+      "ESP_ADC_V": null,
+      "R8_current_A": 2.321335419926872e-18,
+      "R8_power_W": 9.699476637252718e-31,
+      "R9_current_A": 2.3213354199268715e-18,
+      "R9_power_W": 1.7782373834963317e-31,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0.0004944444444444262,
+      "R3_power_W": 0.006600833333332844,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0004944444444444262,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_ground",
+      "U21_powered": true,
+      "PACK_PROT_V": 14,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 4.944444444444236e-13,
+      "TMUX_5_V": 5.989965736661519e-14,
+      "ESP_ADC_V": 5.989965736661519e-14,
+      "R8_current_A": 2.4141377059878244e-18,
+      "R8_power_W": 1.0490509554249879e-30,
+      "R9_current_A": 1.8151411323216725e-18,
+      "R9_power_W": 1.0872633189811808e-31,
+      "R19_current_A": 5.989965736661519e-19,
+      "R19_power_W": 3.587968952637897e-32,
+      "R3_current_A": 0.0004944444444444262,
+      "R3_power_W": 0.006600833333332844,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0004944444444444262,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_to_8p4V",
+      "U21_powered": false,
+      "PACK_PROT_V": 7,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 8.4,
+      "TMUX_5_V": 1.3014084507042256,
+      "ESP_ADC_V": null,
+      "R8_current_A": 3.943661971830986e-05,
+      "R8_power_W": 0.0002799444554651855,
+      "R9_current_A": 3.9436619718309865e-05,
+      "R9_power_W": 5.132315016861736e-05,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 8e-08,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_to_8p4V",
+      "U21_powered": true,
+      "PACK_PROT_V": 7,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 8.4,
+      "TMUX_5_V": 1.0176211453744495,
+      "ESP_ADC_V": 1.0176211453744495,
+      "R8_current_A": 4.101321585903084e-05,
+      "R8_power_W": 0.0003027750975179026,
+      "R9_current_A": 3.0837004405286347e-05,
+      "R9_power_W": 3.1380387742824435e-05,
+      "R19_current_A": 1.0176211453744495e-05,
+      "R19_power_W": 1.0355527955132064e-05,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 8e-08,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_to_16p8V",
+      "U21_powered": false,
+      "PACK_PROT_V": 16,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 16.8,
+      "TMUX_5_V": 2.6028169014084512,
+      "ESP_ADC_V": null,
+      "R8_current_A": 7.887323943661972e-05,
+      "R8_power_W": 0.001119777821860742,
+      "R9_current_A": 7.887323943661973e-05,
+      "R9_power_W": 0.00020529260067446943,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 8e-08,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_to_16p8V",
+      "U21_powered": true,
+      "PACK_PROT_V": 16,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 16.8,
+      "TMUX_5_V": 2.035242290748899,
+      "ESP_ADC_V": 2.035242290748899,
+      "R8_current_A": 8.202643171806168e-05,
+      "R8_power_W": 0.0012111003900716103,
+      "R9_current_A": 6.167400881057269e-05,
+      "R9_power_W": 0.00012552155097129774,
+      "R19_current_A": 2.035242290748899e-05,
+      "R19_power_W": 4.142211182052826e-05,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 8e-08,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "ID_negative_16p8V",
+      "U21_powered": false,
+      "PACK_PROT_V": 0,
+      "ESP_off_interval_V": [
+        -0.29,
+        0.204
+      ],
+      "off_interval_basis": "negative clamp engineering sensitivity, not IPOFF guarantee",
+      "J1_3_V": -16.8,
+      "TMUX_5_V": -0.24,
+      "ESP_ADC_V": null,
+      "R8_current_A": -9.200000000000001e-05,
+      "R8_power_W": 0.0015235200000000004,
+      "R9_current_A": -7.272727272727272e-06,
+      "R9_power_W": 1.7454545454545454e-06,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0.0006222222222222223,
+      "R3_power_W": 0.010453333333333334,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0006222222222222223,
+      "D23_forward_current_A": 8.472727272727274e-05
+    },
+    {
+      "case": "ID_negative_16p8V",
+      "U21_powered": true,
+      "PACK_PROT_V": 0,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "negative clamp engineering sensitivity, not IPOFF guarantee",
+      "J1_3_V": -16.8,
+      "TMUX_5_V": -0.24,
+      "ESP_ADC_V": -0.24,
+      "R8_current_A": -9.200000000000001e-05,
+      "R8_power_W": 0.0015235200000000004,
+      "R9_current_A": -7.272727272727272e-06,
+      "R9_power_W": 1.7454545454545454e-06,
+      "R19_current_A": -2.4e-06,
+      "R19_power_W": 5.76e-07,
+      "R3_current_A": 0.0006222222222222223,
+      "R3_power_W": 0.010453333333333334,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0.0006222222222222223,
+      "D23_forward_current_A": 8.232727272727274e-05
+    },
+    {
+      "case": "USB_only_pack_absent",
+      "U21_powered": false,
+      "PACK_PROT_V": 0.5008,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 0.0,
+      "TMUX_5_V": 0.0,
+      "ESP_ADC_V": null,
+      "R8_current_A": 0.0,
+      "R8_power_W": 0.0,
+      "R9_current_A": 0.0,
+      "R9_power_W": 0.0,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "USB_only_pack_absent",
+      "U21_powered": true,
+      "PACK_PROT_V": 0.5008,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 0.0,
+      "TMUX_5_V": 0.0,
+      "ESP_ADC_V": 0.0,
+      "R8_current_A": 0.0,
+      "R8_power_W": 0.0,
+      "R9_current_A": 0.0,
+      "R9_power_W": 0.0,
+      "R19_current_A": 0.0,
+      "R19_power_W": 0.0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "reverse_pack",
+      "U21_powered": false,
+      "PACK_PROT_V": 0,
+      "ESP_off_interval_V": [
+        -0.204,
+        0.204
+      ],
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 0.0,
+      "TMUX_5_V": 0.0,
+      "ESP_ADC_V": null,
+      "R8_current_A": 0.0,
+      "R8_power_W": 0.0,
+      "R9_current_A": 0.0,
+      "R9_power_W": 0.0,
+      "R19_current_A": 0,
+      "R19_power_W": 0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    },
+    {
+      "case": "reverse_pack",
+      "U21_powered": true,
+      "PACK_PROT_V": 0,
+      "ESP_off_interval_V": null,
+      "off_interval_basis": "TI IPOFF2uA atVDD0 timesR19 tolerance",
+      "J1_3_V": 0.0,
+      "TMUX_5_V": 0.0,
+      "ESP_ADC_V": 0.0,
+      "R8_current_A": 0.0,
+      "R8_power_W": 0.0,
+      "R9_current_A": 0.0,
+      "R9_power_W": 0.0,
+      "R19_current_A": 0.0,
+      "R19_power_W": 0.0,
+      "R3_current_A": 0,
+      "R3_power_W": 0.0,
+      "diode_excitation_reverse_A": 0,
+      "D22_forward_current_A": 0,
+      "D23_forward_current_A": 0
+    }
+  ],
+  "positive_fault_worst": [
+    {
+      "powered": false,
+      "TMUX_5_max_V": 2.7349103647013555,
+      "R8_max_W": 0.0011479585000347468
+    },
+    {
+      "powered": true,
+      "TMUX_5_max_V": 2.102372152138114,
+      "R8_max_W": 0.001232939661104535
+    }
+  ],
+  "resistor_corner_basis": "1.7%=1% initial plus100ppm/K*65K rounded outward; conditional-40..85C controller envelope. External ID resistor must meet equivalent tolerance/TCR.",
+  "positive_fault_leak_basis": "Off +/-2uA input leakage sensitivity from TI IPOFF magnitude atVDD0. On +/-0.25uA engineering envelope includes ON leakage/ADC/board uncertainties; diode reverse leakage alone only lowers positive voltage. Resistor-only bounds remain2.647114V off/2.071290V on at initial1% only. Neither envelope is a transient qualification.",
+  "fault_definition": "Continuous ID conductor shorts to0,+8.4,+16.8,-16.8V referenced to controller GND; arbitrary connector permutations/ground loss are not guaranteed. Upstream pack protection/fusing remains required.",
+  "TMUX_ratings": {
+    "recommended_powered": "0..min(2*VDD,5.5)V",
+    "recommended_VDD_below1p5": "0..3.6V",
+    "signal_absolute_V": [
+      -0.5,
+      6
+    ],
+    "IPO_off_max_A": 2e-06
+  },
+  "ESP_unpowered_ADC_bound_V": 0.20339999999999997,
+  "negative_fault": {
+    "D23_MPN": "BAT54H,115",
+    "maximum_current_A": 9.359104781281792e-05,
+    "R3_max_fault_W_conservative_no_diode_drop": 0.0425364530349271,
+    "R3_voltage_upper_V": 33.6,
+    "R3_allowance_W_at85C": 0.08235294117647059,
+    "manufacturer_VF_max_25C_at100uA_V": 0.24,
+    "cold_sensitivity_V": 0.29,
+    "ESP_absolute_lower_V": -0.3,
+    "TMUX_absolute_lower_V": -0.5,
+    "limitation": "25C pulsed VF rating, not guaranteed continuous full-temperature clamp. Qualify negative miswire current/voltage across intended temperature before operational use; never apply unqualified fault with MCU fitted."
+  },
+  "negative_unpowered_PACK_PROT_sensitivity": {
+    "cause": "D22/R3 can pull an otherwise unpowered PACK_PROT negative; existing unidirectional D2 then conducts forward. Normal-case ideal source rows do not bound this coupling.",
+    "assumed_D2_forward_V": 1.0,
+    "BAT_DIV_V": -0.09090909090909091,
+    "Q1_base_V": -0.5,
+    "manufacturer_guarantee": "NOT_ESTABLISHED at this small current/temperature",
+    "qualification": "Measure PACK_PROT,BAT_ADC andPACK_ID_ADC during negative fault before fitting U21/U10. No RF permission for this state."
+  },
+  "backfeed": {
+    "V3V3_resistive_path": "NONE; R3 excitation moved fromV3V3 toPACK_PROT throughD22",
+    "D22_max_hot_reverse_A": 8e-08,
+    "PACK_PROT_USB_upper_V_with_D4_50uA": 0.5008,
+    "Q1_base_upper_V": 0.2504,
+    "U21_ADC_off_leak_max_V": 0.20339999999999997,
+    "RF_ports": "No changes; Ioff digital buffers/TMUX/local RF gating retained."
+  },
+  "recognition_calibration_required": {
+    "vf_bounds_V": [
+      0.4,
+      1.0
+    ],
+    "leak_max_A": 2e-07,
+    "adc_error_V": 0.01,
+    "sense_error_V": 0.1
+  },
+  "unqualified_component_envelope": {
+    "vf_bounds_V": [
+      0,
+      1.25
+    ],
+    "leak_max_A": 2e-06,
+    "adc_error_V": 0.01,
+    "sense_error_V": 0.1
+  },
+  "recognition_margins": [
+    {
+      "PACK_PROT_V": 5.21,
+      "ID_10k_V": [
+        0.10876560059878505,
+        0.1738138515068758
+      ],
+      "ID_22k_V": [
+        0.18683015344209425,
+        0.2744332746678216
+      ],
+      "separation_V": 0.013016301935218438,
+      "full_unqualified_10k": [
+        0.0623636351675329,
+        0.18715917545855615
+      ],
+      "full_unqualified_22k": [
+        0.1355685973338637,
+        0.29597570030267467
+      ]
+    },
+    {
+      "PACK_PROT_V": 7,
+      "ID_10k_V": [
+        0.16237390735948237,
+        0.2335341761906452
+      ],
+      "ID_22k_V": [
+        0.27444271942989956,
+        0.37083562938378906
+      ],
+      "separation_V": 0.04090854323925436,
+      "full_unqualified_10k": [
+        0.11597194192823025,
+        0.24687950014232557
+      ],
+      "full_unqualified_22k": [
+        0.2231811633216691,
+        0.3923780550186422
+      ]
+    },
+    {
+      "PACK_PROT_V": 8.3,
+      "ID_10k_V": [
+        0.20130731450412293,
+        0.27690647903360627
+      ],
+      "ID_22k_V": [
+        0.33807195729813816,
+        0.44084851269706166
+      ],
+      "separation_V": 0.06116547826453189,
+      "full_unqualified_10k": [
+        0.15490534907287076,
+        0.29025180298528663
+      ],
+      "full_unqualified_22k": [
+        0.28681040118990764,
+        0.4623909383319148
+      ]
+    },
+    {
+      "PACK_PROT_V": 11.21,
+      "ID_10k_V": [
+        0.2884582489586644,
+        0.37399371078208055
+      ],
+      "ID_22k_V": [
+        0.48050355898781055,
+        0.5975696591906179
+      ],
+      "separation_V": 0.10650984820573,
+      "full_unqualified_10k": [
+        0.2420562835274122,
+        0.3873390347337608
+      ],
+      "full_unqualified_22k": [
+        0.42924200287958003,
+        0.6191120848254709
+      ]
+    },
+    {
+      "PACK_PROT_V": 14,
+      "ID_10k_V": [
+        0.37201533044600826,
+        0.4670773453450507
+      ],
+      "ID_22k_V": [
+        0.6170616925665686,
+        0.7478280779937181
+      ],
+      "separation_V": 0.14998434722151793,
+      "full_unqualified_10k": [
+        0.32561336501475613,
+        0.480422669296731
+      ],
+      "full_unqualified_22k": [
+        0.565800136458338,
+        0.7693705036285712
+      ]
+    },
+    {
+      "PACK_PROT_V": 16.7,
+      "ID_10k_V": [
+        0.4528770222079538,
+        0.557158282018893
+      ],
+      "ID_22k_V": [
+        0.7492147250621406,
+        0.8932394510289765
+      ],
+      "separation_V": 0.19205644304324765,
+      "full_unqualified_10k": [
+        0.40647505677670165,
+        0.5705036059705733
+      ],
+      "full_unqualified_22k": [
+        0.6979531689539101,
+        0.9147818766638296
+      ]
+    }
+  ],
+  "warning": "Full uncalibrated diode/ADC envelope can overlap identities. Reader must reject ambiguous/missing qualification, not force nearest code. Physical ID/ADC/leakage calibration is a Gate D prerequisite, not an achieved measurement. External10k/22k protocol and J1 pinout unchanged; raw-ID normal bias is explicitly changed.",
+  "ADC_policy": {
+    "attenuation_dB": 2.5,
+    "datasheet_effective_range_V": [
+      0,
+      1.1
+    ],
+    "valid_ID_V": [
+      0,
+      0.93
+    ],
+    "reject_saturation": true,
+    "basis": "ESP32-S3 datasheet v2.2 table5-6 ATTEN1: +/-6mV after calibration at25C with100nF/WiFi off. Total10mV and100mV PACK_PROT allowances require commissioning qualification across actual temperature; not guaranteed here."
+  },
+  "settling": {
+    "C25_F": 1e-07,
+    "max_Thevenin_ohm_bound": 33561.0,
+    "9tau_upper_s": 0.036245879999999994,
+    "policy": "Wait>=40ms after stable pack/logic or ID transition; require repeated consistent fresh samples before INIT_OK. Revalidate every meaningful progress commit; invalid sample withdraws INIT_OK/ARM and latches fault."
+  }
+}

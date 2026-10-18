@@ -1,3 +1,9 @@
+/* M6-C1R1: pack-ID decoder must use frontend revision2. */
+#define CTL_HW_REV_M6_C1R1 1
+#define CTL_PACK_ID_FRONTEND_REV 2
+#define CTL_PACK_ID_PULLUP_OHM 27000
+#define CTL_PACK_ID_ADC_ATTEN_MILLI_DB 2500
+#define CTL_PACK_ID_ADC_VALID_MAX_MV 930
 /* M6-C1 pin contract; physical validation NOT_RUN. No operating firmware. */
 #pragma once
 #define CTL_BOOT 0

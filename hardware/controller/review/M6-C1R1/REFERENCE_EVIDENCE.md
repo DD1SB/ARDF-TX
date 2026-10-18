@@ -1,0 +1,19 @@
+# Manufacturer evidence register — reviewed 2026-10-18
+
+This is a source/provenance register, not a copy of the full manufacturer documents. Numerical assumptions are separated in input-protection.json and USB-ESD-review.json.
+
+| Source | Evidence used |
+|---|---|
+|[TI TMUX1511 SCDS390B](https://www.ti.com/lit/ds/symlink/tmux1511.pdf)|TSSOP14 S2=5,D2=6,SEL2=4,GND=7,VDD=14. Powered signal min(2×VDD,5.5V), below1.5V supply signal0–3.6V, absolute−0.5–6V. IPOFF±2µA atVDD0. Timing specification has stated waveform/load conditions; no arbitrary ramp guarantee inferred.|
+|[ST USBLC6-2 DS4260 Rev7](https://www.st.com/resource/en/datasheet/usblc6-2.pdf)|SC6 I/O1/6,3/4,GND2,positive reference5. Rail-to-rail mechanism,5.25V working reverse rating, VCC-reference layout discussion, upstream3.3V transceiver and generalVCC-bias examples.3.3V is not a precision surge clamp.|
+|[Espressif WROOM-1 exact family](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf), [hardware guidelines](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html)|Installed ESP32-S3-WROOM-1-N4 and USB GPIO19/20 remain. Native USB/ESD, supply/reset and module-pad constraints remain physical qualification items. No alternate memory/package variant is substituted.|
+|[Nexperia BAS116](https://assets.nexperia.com/documents/data-sheet/BAS116.pdf)|SOT23 pin1A/3K/2NC.75V continuous reverse;5nA maximum at25°C and80nA at150°C/75V.0.9V maximum at1mA/25°C is not a guaranteed full-temperature forward-drop envelope.235 is packaging suffix.|
+|[Nexperia BAT54H](https://assets.nexperia.com/documents/data-sheet/BAT54H.pdf)|SOD123F pin1K/2A.30V reverse.0.24V maximum at0.1mA,25°C,pulsed;2µA maximum reverse leakage at25V/25°C. Cold/continuous forward behavior and actual low-voltage leakage must be qualified. Do not conflate onsemi's similarly named SOD323 device.|
+|[Yageo-authored RC_L data sheet, distributor mirror](https://datasheet.lcsc.com/lcsc/1810231424_YAGEO-RC0603JR-0751RL_C114685.pdf)|RC0603 normal grade0.1W,75V maximum working; derate above70°C toward155°C. The selected1% values remain ordinary0603. R3's approximately43mW/34V worst defined fault fits the electrical ratings, including the85°C derating scenario.|
+|[JLCPCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities/), [copper weight](https://jlcpcb.com/help/article/jlcpcb-copper-weight)|Standard2L1.6mm1oz/green/white/lead-free HASL and ordinary holes. Native conservative profile is versioned in JLCPCB-standard-profile.json; no factory confirmation or quote claimed.|
+
+D22 sourcing observation: [Mouser771-BAS116235](https://www.mouser.de/en/ProductDetail/Nexperia/BAS116235?qs=me8TqzrmIYVkLoj2nMXKnA%3D%3D), indexed58175 stock, MOQ1 cut tape, EUR0.224/0.130 at1/10.20 uses the10 tier. D23 regional indices [Mouser BAT54H,115](https://au.mouser.com/en/ProductDetail/Nexperia/BAT54H115?qs=me8TqzrmIYVuhJavRbr9OQ%3D%3D) showed stock in some regions and backorder in others; EU stock and EUR price remain unconfirmed. Its0.20/0.12/0.12 entries are estimates. No inventory has been reserved or purchased.
+
+Official PDFs were reviewed through the primary web source. Some command-line binary downloads returned403/timeouts; no unsuccessful download is represented as a verified local source copy. No IEC result or physical component/board measurement is inferred from these documents.
+
+PACK_ID uses ESP32-S3 datasheet v2.2 table5-6 ATTEN1/2.5dB,0–1.1V calibrated effective range (±6mV at25°C,100nF and Wi-Fi off). Board total10mV and PACK_PROT100mV allowances remain commissioning requirements. RC0603 temperature coefficient is100ppm/K for the selected values; the model combines1% initial and65K drift as1.7%. Firmware rejects PACK_ID≥0.93V and ADC saturation.

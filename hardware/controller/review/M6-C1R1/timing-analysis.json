@@ -1,0 +1,62 @@
+{
+  "classification": "CALCULATED / host simulation, not MCU physical demonstration",
+  "RTC": {
+    "MPN": "RV-3032-C7",
+    "temperature_accuracy_ppm": 2.5,
+    "first_year_aging_budget_ppm": 3,
+    "worst_sum_ppm": 5.5,
+    "seconds_per24h_initial": 0.21600000000000003,
+    "seconds_per24h_with_aging": 0.4752,
+    "initial_sync_budget_s": 0.25,
+    "daily_total_bound_s": 0.7352000000000001,
+    "hundredths_quantization_allowance_s": 0.01,
+    "backup": "CR1220 -> BAS116 ->1k -> VBACKUP; BSM10 LSM explicitly programmed, trickle disabled. Verify readback.",
+    "physical": "Drift/backup transfer/time-setting accuracy NOT_RUN"
+  },
+  "PWM": {
+    "ESP_clock_Hz": 80000000,
+    "channels": 2,
+    "shared_LEDC_timer": 0,
+    "resolution_bits": 8,
+    "carrier_Hz": 312500.0,
+    "sample_timer_Hz": 31250,
+    "sample_period_us": 32,
+    "tone_initial_Hz": 800,
+    "DDS_frequency_resolution_Hz": 7.275957614183426e-06,
+    "AF_and_LEVEL": "LEVEL DC and AF equal offset+sine; KEY selects waveform on RF board. Maintain phase and approximately3ms transition ramps.",
+    "RC_filter_fc_Hz": 3386.2753849339438,
+    "RC_filter_Q": 0.5,
+    "tone_gain": 0.9471374123384,
+    "carrier_attenuation_dB_approx": 78.60510991895706,
+    "full_scale_step_V": 0.012941176470588235,
+    "normal_command_example": {
+      "centre_code": 110,
+      "amplitude_code_75pct_unfiltered_example": 82,
+      "amplitude_code_75pct_ideal_filter_compensated": 87,
+      "amplitude_code_80pct_ideal_filter_compensated": 93,
+      "rail_centre_ideal_V": 3.9858823529411764
+    },
+    "reduced_command_example": {
+      "centre_code": 61,
+      "amplitude_code_80pct": 49
+    },
+    "warning": "Codes are bounded bench starting examples, not RF power or AM calibration. 8bit quantization RMS after2.8gain about10.5mV. ISR/LUT/latency remain target implementation and scope qualification gates."
+  },
+  "Morse": {
+    "timer_resolution_Hz": 1000000,
+    "dit_us_at8WPM": 150000,
+    "dit_us_at15WPM": 80000,
+    "timer_quantization_us": 1,
+    "foundation": "Host SOS edge fixture. Dedicated GPTimer/RMT resources reserved independently of SPI/USB/LoRa."
+  },
+  "progress": {
+    "GPIO": 39,
+    "toggle_interval_ms": 25,
+    "same_polarity_edge_interval_ms": 50,
+    "complete_waveform_Hz": 20,
+    "producer": "Meaningful control-loop progress commit; never autonomous PWM/ISR",
+    "RF80_watchdog_bound_ms": 250,
+    "RF2M_watchdog_bound_ms": 230
+  },
+  "clock_correction": "Freeze active slot deadline in monotonic time. Apply small corrections off-slot; large/invalid time disarms and requires deliberate restart. No wall-clock step may extend an active slot."
+}

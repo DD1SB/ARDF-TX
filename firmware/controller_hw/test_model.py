@@ -85,8 +85,9 @@ class Safety(unittest.TestCase):
         for s in [None,0,255,16]:self.assertFalse(detect_lora(s))
         self.assertTrue(detect_lora(0x24));self.assertFalse(detect_lora(0x24,True))
     def test_pack_identity(self):
-        self.assertEqual(identify_pack(1.65,7),'2S');self.assertEqual(identify_pack(3.3*22000/32000,14),'4S')
-        for v,s in [(0,7),(3.3,7),(1.65,14),(2.269,7)]:self.assertIsNone(identify_pack(v,s))
+        cal=PackIDCalibration((.4,1.0),.2e-6,.01,qualified=True)
+        self.assertEqual(identify_pack(.20,7,calibration=cal),'2S');self.assertEqual(identify_pack(.68,14,calibration=cal),'4S')
+        for v,s in [(0,7),(3.3,7),(1.65,14),(2.269,7),(-.24,14)]:self.assertIsNone(identify_pack(v,s,calibration=cal))
     def test_pa_rail_required(self):
         c=Controller();c.configure(self.context());c.step(100000);c.arm();c.step(300000);c.start_slot()
         self.assertEqual(c.state,State.FAULT);self.assertFalse(c.signals['SLOT'])

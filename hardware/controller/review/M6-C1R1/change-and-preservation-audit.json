@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "baseline_commit": "31ac3eb4c4569e710472ecab86baec6d9b7c9399",
+  "baseline_pad_instances_preserved": 693,
+  "legitimate_baseline_component_changes": [
+    "R3",
+    "U21",
+    "C25"
+  ],
+  "added_purchased_parts": [
+    "D22",
+    "D23",
+    "R19",
+    "R8",
+    "R9"
+  ],
+  "all_other_existing_footprint_positions_and_packages": "UNCHANGED",
+  "USB_topology_and_copper": "UNCHANGED",
+  "native_track_via_delta": {
+    "removed_by_net": {
+      "PACK_ID_RAW": 28,
+      "V3V3": 2
+    },
+    "added_by_net": {
+      "PACK_ID_ADC": 17,
+      "PACK_ID_EXC": 11,
+      "PACK_ID_RAW": 28,
+      "PACK_ID_SAFE": 60,
+      "PACK_PROT": 15
+    },
+    "other_track_and_via_geometry": "UNCHANGED; only the two obsolete V3V3 pull-up branch pieces are removed outside ID nets"
+  },
+  "frozen_M6_C1_review_files_unchanged": 111,
+  "RF_preservation": "See electrical-regression.json,1220 files",
+  "native_PCB_sha256": "fb62bc5607e6faeb1dda8943bd0a03f043d7c80e4c36b0b2f93e30af8e49c26e",
+  "protection_positions": {
+    "R3": {
+      "xy_mm": [
+        42.0,
+        104.0
+      ],
+      "side": "B.Cu",
+      "angle": 90.0,
+      "pads": {
+        "1": {
+          "net": "PACK_ID_EXC",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "PACK_ID_RAW",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        }
+      }
+    },
+    "R8": {
+      "xy_mm": [
+        45.0,
+        115.0
+      ],
+      "side": "B.Cu",
+      "angle": 0.0,
+      "pads": {
+        "1": {
+          "net": "PACK_ID_RAW",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "PACK_ID_SAFE",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        }
+      }
+    },
+    "R9": {
+      "xy_mm": [
+        49.0,
+        116.5
+      ],
+      "side": "B.Cu",
+      "angle": 0.0,
+      "pads": {
+        "1": {
+          "net": "PACK_ID_SAFE",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        }
+      }
+    },
+    "R19": {
+      "xy_mm": [
+        89.0,
+        54.5
+      ],
+      "side": "B.Cu",
+      "angle": 0.0,
+      "pads": {
+        "1": {
+          "net": "PACK_ID_ADC",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "size_mm": [
+            0.8,
+            0.95
+          ]
+        }
+      }
+    },
+    "D22": {
+      "xy_mm": [
+        41.0,
+        99.0
+      ],
+      "side": "B.Cu",
+      "angle": 90.0,
+      "pads": {
+        "1": {
+          "net": "PACK_PROT",
+          "size_mm": [
+            1.475,
+            0.6
+          ]
+        },
+        "2": {
+          "net": "unconnected-(D22-2_NC-Pad2)",
+          "size_mm": [
+            1.475,
+            0.6
+          ]
+        },
+        "3": {
+          "net": "PACK_ID_EXC",
+          "size_mm": [
+            1.475,
+            0.6
+          ]
+        }
+      }
+    },
+    "D23": {
+      "xy_mm": [
+        54.0,
+        116.5
+      ],
+      "side": "B.Cu",
+      "angle": 0.0,
+      "pads": {
+        "1": {
+          "net": "PACK_ID_SAFE",
+          "size_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "size_mm": [
+            1.1,
+            1.1
+          ]
+        }
+      }
+    }
+  },
+  "new_critical_manufacturer_maps": {
+    "D22": "Nexperia BAS116 SOT23,1A/2NC/3K;235 packing suffix, same device pinout",
+    "D23": "Nexperia BAT54H SOD123F,1K/2A; not onsemiSOD323 BAT54H"
+  },
+  "physical_fit": "CAD lead coverage checked; first-article component fit/underside lead clearance NOT_RUN"
+}

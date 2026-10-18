@@ -1,12 +1,12 @@
 # ARDF-TX
 
-**M6-C1, 2026-10-18:** the [common ESP32-S3 controller](hardware/controller/README.md)
-now has an editable schematic, a routed100 ×100 mm standard-JLCPCB board,
-[review artifacts](hardware/controller/review/M6-C1/README.md), population BOMs
-and host-tested RF control contracts. [Decision](docs/M6_C1_REVIEW_DECISION.md):
-**GO for independent base-controller review; optional LoRa population HOLD.**
-No acceptance tag or manufacturing release; physical qualification is NOT_RUN.
-RF80/RF2M designs and the existing M4A working candidate remain unchanged.
+**M6-C1R1, 2026-10-18:** the [common controller](hardware/controller/README.md)
+now protects its battery-ID input against the defined 2S/4S conductor faults;
+the USB ESD3.3V reference is retained with manufacturer-backed review.
+[Fresh CAD, BOM and fabrication review](hardware/controller/review/M6-C1R1/README.md).
+[Decision](docs/M6_C1R1_REVIEW_DECISION.md): **GO for independent five-bare-board
+review only; optional LoRa remains HOLD.** No acceptance tag or manufacturing
+release; all physical qualification is NOT_RUN. RF80/RF2M and M4A are unchanged.
 
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 

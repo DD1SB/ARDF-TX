@@ -1,0 +1,29 @@
+{
+  "classification": "Calculated native copper and hot-component/harness envelope, not measured rail compliance",
+  "source": "TPS22918 datasheet RON table;88mohm worst1.8V/-40..105C,80mohm2.5/3.3V. Use88mohm conservative interval envelope.",
+  "ports": [
+    {
+      "port": "J4",
+      "regulator_min_V": 3.2505,
+      "main_copper_drop_V": 0.06740076568613655,
+      "port_copper_drop_V": 0.00559014553146226,
+      "switch_hot_envelope_ohm": 0.088,
+      "harness_allowance_ohm": 0.08,
+      "ground_offset_allowance_V": 0.005,
+      "connector_min_V_calculated": 3.147309088782402,
+      "required_min_V": 3.135
+    },
+    {
+      "port": "J5",
+      "regulator_min_V": 3.2505,
+      "main_copper_drop_V": 0.05189297971545235,
+      "port_copper_drop_V": 0.00561853734639027,
+      "switch_hot_envelope_ohm": 0.088,
+      "harness_allowance_ohm": 0.08,
+      "ground_offset_allowance_V": 0.005,
+      "connector_min_V_calculated": 3.162788482938158,
+      "required_min_V": 3.135
+    }
+  ],
+  "physical": "NOT_RUN; verify rail at150mA and additional ground offset<=5mV"
+}

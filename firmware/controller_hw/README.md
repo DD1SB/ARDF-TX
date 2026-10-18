@@ -1,11 +1,11 @@
-# M6-C1 hardware contract foundation
+# M6-C1R1 hardware contract foundation
 
 This directory contains host-executable state/timer fixtures, the generated physical GPIO/shift-register contract and a small C waveform reference. It is not operating firmware and does not connect to hardware.
 
 Run from this directory:
 
 ```
-python3 -m unittest -v test_model.py
+python3 -m unittest discover -s . -p 'test_*.py' -v
 cc -std=c11 -Wall -Wextra -Werror contract.c test_contract.c -lm -o /tmp/m6-c1-contract
 /tmp/m6-c1-contract
 ```
@@ -19,3 +19,7 @@ GPIO37 is inverted USB VBUS presence; poll RTC wall time over I²C. RTC INT is u
 Frequency allowlists are provisioned for the actual country/operator/event and qualified RF calibration. IARU event ranges are additional restrictions, not a transmission licence. Clock corrections never extend a live monotonic slot deadline. Physical RF, thermal, battery, USB and electrical behavior remain NOT_RUN.
 
 Normal RF2M slot entry additionally requires an explicit `pa_rail_valid` fixture; live rail loss disarms. On target this must come from a fresh calibrated PA_RAIL_ADC sample and the commissioned converter/profile range, not a constant boolean. Training requires no watt rail and retains PA_PREPARE low. Host tests cannot establish actual ADC scaling, settling or fault timing.
+
+M6-C1R1 changes only pack identification: frontend revision2 uses protected-pack excitation and180k/33k attenuation, with100k ADC load. `identify_pack` requires an explicit qualified calibration record and rejects ambiguous codes, wrong frontend versions, invalid voltage and absent3.3V. The fixture bounds are not physical calibration data. Confirm the record across the intended temperature/voltage range before INIT_OK; revalidate fresh samples with meaningful progress and latch a fault on identity loss. The legacy3.3V-pull-up equation must not be used. USB/RF GPIO allocation and C waveform/control interface are unchanged. See docs/M6_C1R1_INPUT_PROTECTION.md and the staged review bring-up.
+
+R1 PACK_ID uses27k pack-derived excitation,180k/33k protection and100k switched-side loading. Select calibrated ATTEN1/2.5dB on GPIO2; reject saturation and>=930mV before the interval decoder. External10k/22k identities remain. The example calibration record is not measured evidence and cannot be used as a production default. The10mV ID and100mV PACK_PROT error allowances require qualification across the intended temperature range.
