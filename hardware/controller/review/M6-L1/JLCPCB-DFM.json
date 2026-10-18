@@ -1,0 +1,40 @@
+{
+  "revision": "M6-C1",
+  "status": "PASS_AUTOMATED_NATIVE_GEOMETRY",
+  "errors": [],
+  "preferred_margin_exceptions": [],
+  "manual_review": [
+    "HASL/reflow quality on RTC and ESP32 lands; no physical assembly yet",
+    "Check connector mating/cable polarity, finished-hole fit against actual parts",
+    "LoRa nominal land compatibility audited in M6-L1; actual incoming module fit/assembly remains physical acceptance",
+    "USB full-speed eye/routing and power enumeration measurements NOT_RUN",
+    "No factory CAM or commercial quote has been requested"
+  ],
+  "statistics": {
+    "outline_mm": [
+      20.0,
+      20.0,
+      120.0,
+      120.0
+    ],
+    "independent_copper_pair_tests": 52566,
+    "slivers": {
+      "F.Cu": [],
+      "B.Cu": []
+    },
+    "track_minimum_mm": 0.15,
+    "via_annulus_min_mm": 0.25,
+    "component_PTH_annulus_min_mm": 0.25,
+    "via_land_counts": {
+      "0.8": 390
+    },
+    "holes": 442,
+    "copper_objects": {
+      "F.Cu": 3203,
+      "B.Cu": 1487
+    },
+    "legend_items": 141
+  },
+  "limitations": "NOTcommercialCAMacceptance. Filledzoneacutegeometryandroutepairchecksareindependentofprojectrules;nativeKiCadnarrow-neck/thermalcheckerremainsadditionalmandatorygate. Pastejointquality,HASLflatness,drillregistration,thermalcontactandRFperformancerequireinspection/measurement.",
+  "native_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1"
+}

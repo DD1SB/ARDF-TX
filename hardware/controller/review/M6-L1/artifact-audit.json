@@ -1,0 +1,100 @@
+{
+  "status": "PASS_LOCAL_EXPORT_CONSISTENCY",
+  "board_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+  "Gerbers": [
+    {
+      "file": "CTRL-B_Paste.gbp",
+      "function": "Paste,Bot",
+      "sha256": "2bcf01a3c43557719e15595508fa5714faffdca0b457228fc7896a8285bf2bb7"
+    },
+    {
+      "file": "CTRL-F_Silkscreen.gto",
+      "function": "Legend,Top",
+      "sha256": "3c8b7ceda1cbac566363d56a7881a127e0c9a7f9b0348457282a51bb4c48c914"
+    },
+    {
+      "file": "CTRL-B_Mask.gbs",
+      "function": "Soldermask,Bot",
+      "sha256": "c97162b2fc61ce80e3491f85310b64c542e6f820946e0825988f4331e55efcc1"
+    },
+    {
+      "file": "CTRL-Edge_Cuts.gm1",
+      "function": "Profile,NP",
+      "sha256": "8c22f3f105acfdc4b6016a3af3544f4b9b7cb2dfbed58ed2fdb4bd35e72fc34e"
+    },
+    {
+      "file": "CTRL-B_Silkscreen.gbo",
+      "function": "Legend,Bot",
+      "sha256": "b24750e935fd8cc377170fca53cba48200448b1cc77031d85947831a3d81f2bd"
+    },
+    {
+      "file": "CTRL-F_Mask.gts",
+      "function": "Soldermask,Top",
+      "sha256": "910903e210679f2c6b1a6f876aad56a0d3a986918ef74e8e277cd6d57db8273c"
+    },
+    {
+      "file": "CTRL-B_Cu.gbl",
+      "function": "Copper,L2,Bot",
+      "sha256": "7e43a40c000d31acda43002caf2efc1cb55d72c0071cb6ba83e89b27b8e07542"
+    },
+    {
+      "file": "CTRL-F_Cu.gtl",
+      "function": "Copper,L1,Top",
+      "sha256": "a9f47d107efc1eec9669172a19f6cc52e4aa1129875da4773bf2a05a7b47e95e"
+    },
+    {
+      "file": "CTRL-F_Paste.gtp",
+      "function": "Paste,Top",
+      "sha256": "4786a8b50ea9e73c6b476ef4a84f244b637de8a935c340e54b63ac5bfc4de6fc"
+    }
+  ],
+  "drill_counts_by_diameter_mm": {
+    "PTH": {
+      "0.3": 390,
+      "1.1": 42,
+      "0.6": 4
+    },
+    "NPTH": {
+      "0.65": 2,
+      "3.2": 4
+    }
+  },
+  "native_IPC_records": {
+    "vias": 390,
+    "pads": 704,
+    "NPTH": 6
+  },
+  "placement_populations": {
+    "FOX_MIN": {
+      "placed": 145,
+      "fitted_purchased": 145,
+      "note": "copper test pads are excluded from purchased BOM and placement export"
+    },
+    "RF80_FULL": {
+      "placed": 155,
+      "fitted_purchased": 155,
+      "note": "copper test pads are excluded from purchased BOM and placement export"
+    },
+    "RF2M_FULL": {
+      "placed": 159,
+      "fitted_purchased": 159,
+      "note": "copper test pads are excluded from purchased BOM and placement export"
+    },
+    "UNIVERSAL": {
+      "placed": 190,
+      "fitted_purchased": 190,
+      "note": "copper test pads are excluded from purchased BOM and placement export"
+    }
+  },
+  "outline_centerline_mm": [
+    100,
+    100
+  ],
+  "gbrjob_bbox_mm": [
+    100.05,
+    100.05
+  ],
+  "bbox_note": "job includes0.05mm Edge.Cuts stroke; route centerline is100.00mm square",
+  "factory_CAM": "NOT_SUBMITTED",
+  "physical_tests": "NOT_RUN"
+}

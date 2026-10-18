@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "baseline": "742159d363dd8dd8b8ff653d01238af9a49ef2aa",
+  "current_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+  "all_pad_instances_including_unnumbered": 715,
+  "numbered_pad_instances": 704,
+  "all_track_and_via_geometry": "IDENTICAL",
+  "filled_copper_delta": {
+    "F.Cu": {
+      "removed_mm2": 0.024722676988,
+      "added_mm2": 0.0,
+      "all_changes_within_roi_mm": [
+        98,
+        27.2,
+        100.9,
+        29.8
+      ]
+    },
+    "B.Cu": {
+      "removed_mm2": 0.0,
+      "added_mm2": 0.0,
+      "all_changes_within_roi_mm": [
+        98,
+        27.2,
+        100.9,
+        29.8
+      ]
+    }
+  },
+  "all_other_copper": "IDENTICAL",
+  "all_footprint_positions": "IDENTICAL",
+  "connected_nets": "IDENTICAL",
+  "legitimate_floating_alias_change": "U70.8 IO ->DIO3; remains unconnected",
+  "historical_review_files_preserved": 204
+}

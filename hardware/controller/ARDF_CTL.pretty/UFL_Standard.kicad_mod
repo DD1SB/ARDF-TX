@@ -66,7 +66,7 @@
 			)
 		)
 	)
-	(property "Population" "LORA_OPTION_OPEN"
+	(property "Population" "LORA_OPTION"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
@@ -90,7 +90,7 @@
 			)
 		)
 	)
-	(property "Engineering_Note" "Pin1 signal; duplicated pin2 ground. Underbody copper keepout preserved, exposed-mask-only rectangle omitted. External868MHz antenna; optional module footprint review OPEN."
+	(property "Engineering_Note" "M6-L1: nominal Hirose SIG/GND pattern audited for433/868 common feed. Individual(10) cut tape available. Copper/mask/paste unchanged; see documented manual J7 assembly and physical qualification."
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)

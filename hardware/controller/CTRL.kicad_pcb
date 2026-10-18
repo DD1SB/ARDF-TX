@@ -10,7 +10,7 @@
 	(title_block
 		(title "ARDF-TX UNIVERSAL CONTROLLER")
 		(date "2026-10-18")
-		(rev "M6-C1R1 CANDIDATE")
+		(rev "M6-L1 CANDIDATE")
 		(company "ARDF-TX")
 		(comment 1 "ENGINEERING REVIEW ONLY / PHYSICAL TESTS NOT_RUN")
 	)
@@ -10151,7 +10151,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -19269,7 +19269,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23232,7 +23232,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -25101,7 +25101,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27819,7 +27819,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27843,7 +27843,7 @@
 				)
 			)
 		)
-		(property "Engineering_Note" "Pin1 signal; duplicated pin2 ground. Underbody copper keepout preserved, exposed-mask-only rectangle omitted. External868MHz antenna; optional module footprint review OPEN."
+		(property "Engineering_Note" "M6-L1: Hirose U.FL-R-SMT-1(10), available cut tape MOQ1. Same antenna feed433/868; choose band-correct external antenna. Nominal copper lands retained; see manufacturer pattern/assembly audit."
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42432,7 +42432,7 @@
 				)
 			)
 		)
-		(property "Value" "Silicontra SX1262ZTR8-GC"
+		(property "Value" "Silicontra SX1262TR8-GC"
 			(at 0 9.35 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -42466,7 +42466,7 @@
 				)
 			)
 		)
-		(property "MPN" "SX1262ZTR8-GC"
+		(property "MPN" "SX1262TR8-GC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42478,7 +42478,7 @@
 				)
 			)
 		)
-		(property "Population" "LORA_OPTION_OPEN"
+		(property "Population" "LORA_OPTION"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42502,7 +42502,7 @@
 				)
 			)
 		)
-		(property "Engineering_Note" "OPTIONAL DNP: manufacturer ZTR8 vs distributor TR8 suffix not confirmed. Manufacturer dimension drawing lacks tolerances and ambiguous 1.12mm callout; footprint qualification OPEN. Do not populate without review."
+		(property "Engineering_Note" "M6-L1: TR4/ZTR4 and TR8/ZTR8 supplier-linked manufacturer documents agree on22pin15x15 package. Common footprint; select trusted433/868 assembly record and matching antenna. DIO3 pin8 is optional IO, unused here. Incoming identity/fit and RF qualification NOT_RUN."
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42541,8 +42541,8 @@
 			(uuid "76adbd9d-6790-476a-ac81-886c4c258737")
 		)
 		(fp_rect
-			(start -7.5 -8.35)
-			(end 7.5 8.35)
+			(start -7.5 -7.5)
+			(end 7.5 7.5)
 			(stroke
 				(width 0.1)
 				(type default)
@@ -42615,7 +42615,7 @@
 			(at 2.51 7.25)
 			(size 0.8 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "unconnected-(U70-8_IO-Pad8)")
+			(net "unconnected-(U70-8_DIO3-Pad8)")
 			(uuid "f14e9473-6cf6-4b27-8699-79c2eb78b4c6")
 		)
 		(pad "9" smd rect
@@ -54615,7 +54615,7 @@
 			)
 		)
 	)
-	(gr_text "ARDF-TX C1R1"
+	(gr_text "ARDF-TX L1"
 		(at 88 22.5 0)
 		(layer "F.SilkS")
 		(uuid "65b24c9c-8e6c-497d-9546-0b92c436d43a")
@@ -85392,11 +85392,9 @@
 				(xy 98.525966 34.94774) (xy 98.5405 34.874674) (xy 98.5405 32.625326) (xy 98.525966 32.55226) (xy 98.513577 32.533718)
 				(xy 98.470602 32.4694) (xy 98.470599 32.469397) (xy 98.409499 32.428572) (xy 98.371619 32.380522)
 				(xy 98.3655 32.346256) (xy 98.3655 29.549) (xy 98.384407 29.490809) (xy 98.433907 29.454845) (xy 98.4645 29.45)
-				(xy 100.514999 29.45) (xy 100.515 29.45) (xy 100.515 27.55) (xy 98.425 27.55) (xy 98.425 27.550001)
-				(xy 98.425 27.670207) (xy 98.406093 27.728398) (xy 98.356593 27.764362) (xy 98.295407 27.764362)
-				(xy 98.291407 27.762966) (xy 98.27249 27.755911) (xy 98.272485 27.75591) (xy 98.272483 27.755909)
-				(xy 98.272479 27.755908) (xy 98.272477 27.755908) (xy 98.241249 27.75255) (xy 98.212873 27.7495)
-				(xy 98.21287 27.7495) (xy 97.567133 27.7495) (xy 97.567129 27.7495) (xy 97.567128 27.749501) (xy 97.559949 27.750272)
+				(xy 100.514999 29.45) (xy 100.515 29.45) (xy 100.515 27.55) (xy 98.315 27.55) (xy 98.315 27.550001)
+				(xy 98.315 27.650525) (xy 98.296093 27.708716) (xy 98.246593 27.74468) (xy 98.215524 27.748768)
+				(xy 98.215524 27.7495) (xy 97.567133 27.7495) (xy 97.567129 27.7495) (xy 97.567128 27.749501) (xy 97.559949 27.750272)
 				(xy 97.507519 27.755908) (xy 97.507514 27.755909) (xy 97.37267 27.806202) (xy 97.257458 27.89245)
 				(xy 97.25745 27.892458) (xy 97.171202 28.00767) (xy 97.12091 28.142511) (xy 97.120908 28.142522)
 				(xy 97.1145 28.202129) (xy 97.1145 28.797866) (xy 97.114501 28.79787) (xy 97.120908 28.85748) (xy 97.120909 28.857485)
@@ -88509,7 +88507,7 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
@@ -88524,7 +88522,7 @@
 		)
 		(polygon
 			(pts
-				(xy 100.515 27.55) (xy 98.425 27.55) (xy 98.425 29.45) (xy 100.515 29.45)
+				(xy 98.315 27.55) (xy 100.515 27.55) (xy 100.515 29.45) (xy 98.315 29.45)
 			)
 		)
 	)

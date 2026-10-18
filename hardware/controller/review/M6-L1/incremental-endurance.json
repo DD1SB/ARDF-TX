@@ -1,0 +1,66 @@
+{
+  "classification": "CALCULATED planning budgets, not battery endurance results",
+  "source": "docs/M2_ENDURANCE_REWORK.md;11.9Wh minimum cell energy times0.8aging*0.9window*0.9temperature",
+  "controller_host_40mA_at85pct_W": 0.15529411764705883,
+  "port150mA_increment_at85pct_W": 0.5823529411764705,
+  "omitted_losses": "RF loads, presence bleeder, diode drop, actual buck loss, cable/BMS, battery cutoff and optional radio must be added to measured complete-device budget",
+  "rows": [
+    {
+      "pack": "2S1P",
+      "cells": 2,
+      "usable_Wh_scenario": 15.422400000000003,
+      "average_total_input_W_12h": 1.2852000000000003,
+      "average_total_input_W_24h": 0.6426000000000002,
+      "remaining_module_input_W_12h_after_host40mA": 1.1299058823529415,
+      "remaining_module_input_W_24h_after_host40mA": 0.48730588235294137
+    },
+    {
+      "pack": "2S2P",
+      "cells": 4,
+      "usable_Wh_scenario": 30.844800000000006,
+      "average_total_input_W_12h": 2.5704000000000007,
+      "average_total_input_W_24h": 1.2852000000000003,
+      "remaining_module_input_W_12h_after_host40mA": 2.415105882352942,
+      "remaining_module_input_W_24h_after_host40mA": 1.1299058823529415
+    },
+    {
+      "pack": "2S3P",
+      "cells": 6,
+      "usable_Wh_scenario": 46.26720000000001,
+      "average_total_input_W_12h": 3.855600000000001,
+      "average_total_input_W_24h": 1.9278000000000004,
+      "remaining_module_input_W_12h_after_host40mA": 3.700305882352942,
+      "remaining_module_input_W_24h_after_host40mA": 1.7725058823529416
+    },
+    {
+      "pack": "2S4P",
+      "cells": 8,
+      "usable_Wh_scenario": 61.68960000000001,
+      "average_total_input_W_12h": 5.140800000000001,
+      "average_total_input_W_24h": 2.5704000000000007,
+      "remaining_module_input_W_12h_after_host40mA": 4.985505882352943,
+      "remaining_module_input_W_24h_after_host40mA": 2.415105882352942
+    },
+    {
+      "pack": "4S1P",
+      "cells": 4,
+      "usable_Wh_scenario": 30.844800000000006,
+      "average_total_input_W_12h": 2.5704000000000007,
+      "average_total_input_W_24h": 1.2852000000000003,
+      "remaining_module_input_W_12h_after_host40mA": 2.415105882352942,
+      "remaining_module_input_W_24h_after_host40mA": 1.1299058823529415
+    },
+    {
+      "pack": "4S2P",
+      "cells": 8,
+      "usable_Wh_scenario": 61.68960000000001,
+      "average_total_input_W_12h": 5.140800000000001,
+      "average_total_input_W_24h": 2.5704000000000007,
+      "remaining_module_input_W_12h_after_host40mA": 4.985505882352943,
+      "remaining_module_input_W_24h_after_host40mA": 2.415105882352942
+    }
+  ],
+  "classic": "20pct transmit duty may be applied to measured TX and idle loads; power preparation/RTC/driver idle remain included",
+  "continuous": "beacon/Fox may be100pct duty; no20pct borrowing",
+  "physical": "12h full /24h reduced NOT_RUN"
+}

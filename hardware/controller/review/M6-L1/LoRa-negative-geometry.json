@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "mutation": "pin1_rotated180",
+      "rejected_by": [
+        "pad_position_1",
+        "pad_position_10",
+        "pad_position_11",
+        "pad_position_12",
+        "pad_position_13",
+        "pad_position_14",
+        "pad_position_15",
+        "pad_position_16",
+        "pad_position_17",
+        "pad_position_18",
+        "pad_position_19",
+        "pad_position_2",
+        "pad_position_20",
+        "pad_position_21",
+        "pad_position_22",
+        "pad_position_3",
+        "pad_position_4",
+        "pad_position_5",
+        "pad_position_6",
+        "pad_position_7",
+        "pad_position_8",
+        "pad_position_9",
+        "top_view_rotation_and_pin1"
+      ]
+    },
+    {
+      "mutation": "mirrored_bottom_view",
+      "rejected_by": [
+        "module_copper_land_1",
+        "module_copper_land_10",
+        "module_copper_land_11",
+        "module_copper_land_12",
+        "module_copper_land_13",
+        "module_copper_land_14",
+        "module_copper_land_15",
+        "module_copper_land_16",
+        "module_copper_land_17",
+        "module_copper_land_18",
+        "module_copper_land_19",
+        "module_copper_land_2",
+        "module_copper_land_20",
+        "module_copper_land_21",
+        "module_copper_land_22",
+        "module_copper_land_3",
+        "module_copper_land_4",
+        "module_copper_land_5",
+        "module_copper_land_6",
+        "module_copper_land_7",
+        "module_copper_land_8",
+        "module_copper_land_9",
+        "pad_position_1",
+        "pad_position_10",
+        "pad_position_11",
+        "pad_position_12",
+        "pad_position_13",
+        "pad_position_14",
+        "pad_position_15",
+        "pad_position_16",
+        "pad_position_17",
+        "pad_position_18",
+        "pad_position_19",
+        "pad_position_2",
+        "pad_position_20",
+        "pad_position_21",
+        "pad_position_22",
+        "pad_position_3",
+        "pad_position_4",
+        "pad_position_5",
+        "pad_position_6",
+        "pad_position_7",
+        "pad_position_8",
+        "pad_position_9",
+        "top_view_rotation_and_pin1"
+      ]
+    },
+    {
+      "mutation": "drawing_rotated90",
+      "rejected_by": [
+        "pad_position_1",
+        "pad_position_10",
+        "pad_position_11",
+        "pad_position_12",
+        "pad_position_13",
+        "pad_position_14",
+        "pad_position_15",
+        "pad_position_16",
+        "pad_position_17",
+        "pad_position_18",
+        "pad_position_19",
+        "pad_position_2",
+        "pad_position_20",
+        "pad_position_21",
+        "pad_position_22",
+        "pad_position_3",
+        "pad_position_4",
+        "pad_position_5",
+        "pad_position_6",
+        "pad_position_7",
+        "pad_position_8",
+        "pad_position_9",
+        "top_view_rotation_and_pin1"
+      ]
+    },
+    {
+      "mutation": "TR4_TR8_different_pinmap",
+      "rejected_by": [
+        "TR4_V2_pin_15_MOSI",
+        "TR4_TR8_function_compatibility"
+      ]
+    },
+    {
+      "mutation": "SPI_MISO_MOSI_swapped",
+      "rejected_by": [
+        "TR4_V2_pin_15_MISO",
+        "TR8_V1_pin_15_MISO",
+        "TR8_V2_pin_15_MISO"
+      ]
+    },
+    {
+      "mutation": "antenna_wrong_pin21",
+      "rejected_by": [
+        "TR4_V2_pin_21_ANT",
+        "TR8_V1_pin_21_ANT",
+        "TR8_V2_pin_21_ANT"
+      ]
+    },
+    {
+      "mutation": "wrong_pad_pitch",
+      "rejected_by": [
+        "pad_position_2"
+      ]
+    },
+    {
+      "mutation": "wrong_row_spacing",
+      "rejected_by": [
+        "pad_position_22"
+      ]
+    },
+    {
+      "mutation": "missing_U70_land",
+      "rejected_by": [
+        "module_copper_land_3"
+      ]
+    },
+    {
+      "mutation": "malformed_U70_land",
+      "rejected_by": [
+        "pad_size_13"
+      ]
+    },
+    {
+      "mutation": "wrong_UFL_signal_land",
+      "rejected_by": [
+        "UFL_signal_geometry"
+      ]
+    },
+    {
+      "mutation": "wrong_UFL_ground",
+      "rejected_by": [
+        "UFL_ground_geometry"
+      ]
+    },
+    {
+      "mutation": "broken_antenna_segment",
+      "rejected_by": [
+        "RF_segment_endpoints"
+      ]
+    },
+    {
+      "mutation": "actual_GND_copper_short",
+      "rejected_by": [
+        "foreign_copper_RF_short"
+      ]
+    },
+    {
+      "mutation": "missing_bottom_ground",
+      "rejected_by": [
+        "continuous_bottom_RF_reference"
+      ]
+    },
+    {
+      "mutation": "missing_local_ground_via",
+      "rejected_by": [
+        "local_UFL_ground_stitch"
+      ]
+    },
+    {
+      "mutation": "incorrect_RF_width",
+      "rejected_by": [
+        "RF_trace_width_layer"
+      ]
+    },
+    {
+      "mutation": "old_trimmed_Hirose_keepout",
+      "rejected_by": [
+        "Hirose_full_keepout_with_intended_SIG_land"
+      ]
+    },
+    {
+      "mutation": "nonstandard0p8mm",
+      "rejected_by": [
+        "ordinary_stackup"
+      ]
+    },
+    {
+      "mutation": "unsupported_er",
+      "rejected_by": "numerical standard-FR4 model domain"
+    },
+    {
+      "mutation": "thin_board_RF_model",
+      "rejected_by": "numerical standard-FR4 model domain"
+    }
+  ],
+  "host_tests": "test_lora.py verifies wrong/unknown population, band, antenna, configuration, response, power and base independence. RF connector mutations retained in electrical-regression.json."
+}

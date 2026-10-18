@@ -1,0 +1,628 @@
+{
+  "revision": "M6-L1 engineering audit candidate, no acceptance tag",
+  "KiCad": {
+    "kicad": "10.0.6",
+    "ERC_violations": 0,
+    "DRC_errors": 0,
+    "DRC_warnings": 0,
+    "unrouted": 0,
+    "parity": 0,
+    "physical_tests": "NOT_RUN",
+    "exclusions": [],
+    "ignored_categories": [
+      "tuning_profile_track_geometries"
+    ]
+  },
+  "native_DFM": "PASS_AUTOMATED_NATIVE_GEOMETRY",
+  "electrical": {
+    "status": "PASS",
+    "native_pad_instances": 704,
+    "independent_critical_package_maps": 38,
+    "connector_contract_pins": 36,
+    "hardware_enable_combinations": 4096,
+    "native_mutations": [
+      {
+        "mutation": "reversed_IDC16",
+        "detected_checks": [
+          "connector:J4:1",
+          "all_pad:J4.1"
+        ]
+      },
+      {
+        "mutation": "reversed_IDC20",
+        "detected_checks": [
+          "connector:J5:1",
+          "all_pad:J5.1"
+        ]
+      },
+      {
+        "mutation": "swapped_RF80_I2C",
+        "detected_checks": [
+          "connector:J4:3",
+          "all_pad:J4.3"
+        ]
+      },
+      {
+        "mutation": "swapped_RF2M_I2C",
+        "detected_checks": [
+          "connector:J5:3",
+          "all_pad:J5.3"
+        ]
+      },
+      {
+        "mutation": "mute_polarity_short",
+        "detected_checks": [
+          "connector:J4:13",
+          "all_pad:J4.13"
+        ]
+      },
+      {
+        "mutation": "strap_to_ARM",
+        "detected_checks": [
+          "strap:15",
+          "all_pad:U10.15"
+        ]
+      },
+      {
+        "mutation": "ARM_on_reset",
+        "detected_checks": [
+          "physical:U33:1",
+          "all_pad:U33.1"
+        ]
+      },
+      {
+        "mutation": "missing_ground",
+        "detected_checks": [
+          "connector:J5:18",
+          "all_pad:J5.18"
+        ]
+      },
+      {
+        "mutation": "source_unisolated",
+        "detected_checks": [
+          "physical:U43:6",
+          "all_pad:U43.6"
+        ]
+      },
+      {
+        "mutation": "status_lines_shorted",
+        "detected_checks": [
+          "physical:U60:4",
+          "all_pad:U60.4"
+        ]
+      },
+      {
+        "mutation": "analog_backfeed",
+        "detected_checks": [
+          "physical:U21:12",
+          "all_pad:U21.12"
+        ]
+      },
+      {
+        "mutation": "PREPARE_confused",
+        "detected_checks": [
+          "connector:J5:20",
+          "all_pad:J5.20"
+        ]
+      },
+      {
+        "mutation": "power_GPIO_short",
+        "detected_checks": [
+          "physical:U50:3",
+          "all_pad:U50.3"
+        ]
+      },
+      {
+        "mutation": "coin_cell_charge_path",
+        "detected_checks": [
+          "physical:D20:1",
+          "all_pad:D20.1"
+        ]
+      },
+      {
+        "mutation": "USB_ESD_backfeed",
+        "detected_checks": [
+          "physical:U3:5",
+          "all_pad:U3.5"
+        ]
+      },
+      {
+        "mutation": "wrong_population_U41",
+        "detected_checks": [
+          "metadata:U41:Population",
+          "DNP:U41"
+        ]
+      },
+      {
+        "mutation": "wrong_population_U51",
+        "detected_checks": [
+          "metadata:U51:Population",
+          "DNP:U51"
+        ]
+      },
+      {
+        "mutation": "wrong_value_R1",
+        "detected_checks": [
+          "value:R1",
+          "battery_divider_rating"
+        ]
+      },
+      {
+        "mutation": "wrong_value_U10",
+        "detected_checks": [
+          "non_PSRAM_module",
+          "value:U10"
+        ]
+      },
+      {
+        "mutation": "wrong_value_U40",
+        "detected_checks": [
+          "switch_hot_rating:U40",
+          "value:U40"
+        ]
+      }
+    ],
+    "RF_baseline_files_unchanged": 1220,
+    "physical_tests": "NOT_RUN"
+  },
+  "RF80_read_only_regression": {
+    "status": "PASS_READ_ONLY_NATIVE_PIN_MODEL",
+    "source": "inputs/RF80-interface.xml",
+    "result": {
+      "date": "2026-10-14",
+      "revision": "M3A-R1",
+      "classification": "PIN-DERIVED STATIC LOGIC AND IDEAL EVENT/RC SIMULATION; NO HARDWARE VALIDATION",
+      "truth_cases": 256,
+      "state_scenarios": [
+        "startup and stuck heartbeat, no fabricated reset-release progress",
+        "PA CW rise, pause and retained fall tail",
+        "PA fault POR_N and deliberate rearm",
+        "PA fault uv and deliberate rearm",
+        "PA fault MUTE_N and deliberate rearm",
+        "PA fault SCL and deliberate rearm",
+        "PA fault SDA and deliberate rearm",
+        "PA watchdog timeout, progress restoration does not rearm",
+        "PA I2C activity and quiet interval",
+        "PA captured path, withdrawal fault, opposite path requires rearm",
+        "FOX CW rise, pause and retained fall tail",
+        "FOX fault POR_N and deliberate rearm",
+        "FOX fault uv and deliberate rearm",
+        "FOX fault MUTE_N and deliberate rearm",
+        "FOX fault SCL and deliberate rearm",
+        "FOX fault SDA and deliberate rearm",
+        "FOX watchdog timeout, progress restoration does not rearm",
+        "FOX I2C activity and quiet interval",
+        "FOX captured path, withdrawal fault, opposite path requires rearm",
+        "PA local trip local4",
+        "PA local trip ov",
+        "PA local trip oc",
+        "PA local trip hot",
+        "PA local trip sensor",
+        "PA local trip PACK4_OK",
+        "PA local trip FOX_ID",
+        "conflicting paths and invalid power code cannot arm or recover automatically",
+        "profile held during ARM, deliberate cycle captures new profile",
+        "KEY held high cannot arm",
+        "fault before or during delayed ARM is not recovered by a pending clock",
+        "healthy idle bus plus fresh ARM still cannot arm without progress"
+      ],
+      "timing_corners": [
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.45,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 0.891,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.55,
+          "VTminus_ratio_assumed": 0.4
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.25
+        },
+        {
+          "K_assumed": 0.6,
+          "RC_multiplier": 1.1110000000000002,
+          "VTplus_ratio_assumed": 0.75,
+          "VTminus_ratio_assumed": 0.4
+        }
+      ],
+      "polarity_mutations_rejected": [
+        [
+          "13",
+          "4"
+        ],
+        [
+          "12",
+          "5"
+        ]
+      ],
+      "inverted_watchdog_no_progress_unsafe_permission_reproduced": true,
+      "watchdog_ms_design_range": [
+        132.3135,
+        219.978
+      ],
+      "quiet_ms_design_range": [
+        1.884465,
+        3.13302
+      ],
+      "not_proved": [
+        "K range is a design sensitivity envelope, not manufacturer guaranteed bounds",
+        "Propagation delays, races, asynchronous reset recovery and metastability",
+        "RC bias/leakage/Schmitt temperature corners and fast supply collapse",
+        "Driver OV interruption timing, shaper SOA, RF leakage/emissions/power/field/thermal/endurance"
+      ]
+    },
+    "physical": "NOT_RUN"
+  },
+  "RF2M_read_only_regression": {
+    "status": "PASS_READ_ONLY_NATIVE_LOGIC",
+    "logic": {
+      "combinations": 4096,
+      "scenarios": [
+        "arm_path0_profile0",
+        "watchdog_path0_profile0",
+        "mute_path0_profile0",
+        "i2c_stuck_low_path0_profile0",
+        "reset_path0_profile0",
+        "live_selection_path0_profile0",
+        "arm_path0_profile1",
+        "watchdog_path0_profile1",
+        "mute_path0_profile1",
+        "i2c_stuck_low_path0_profile1",
+        "reset_path0_profile1",
+        "live_selection_path0_profile1",
+        "arm_path1_profile0",
+        "watchdog_path1_profile0",
+        "mute_path1_profile0",
+        "i2c_stuck_low_path1_profile0",
+        "reset_path1_profile0",
+        "live_selection_path1_profile0",
+        "arm_path1_profile1",
+        "watchdog_path1_profile1",
+        "mute_path1_profile1",
+        "i2c_stuck_low_path1_profile1",
+        "reset_path1_profile1",
+        "live_selection_path1_profile1",
+        "normal_analog_fault",
+        "invalid_arm_key0_slot0_config0",
+        "invalid_arm_key0_slot1_config0",
+        "invalid_arm_key0_slot1_config1",
+        "invalid_arm_key1_slot0_config0",
+        "invalid_arm_key1_slot0_config1",
+        "invalid_arm_key1_slot1_config0",
+        "invalid_arm_key1_slot1_config1",
+        "keyed_AF_continuous_carrier_path0",
+        "keyed_AF_continuous_carrier_path1",
+        "reset_release_ARM_held_high",
+        "training_without_raw_PA_power",
+        "powered_source_configuration_ARM_SLOT_low",
+        "physical_normal_clock_bias_driver_controls_path0",
+        "physical_normal_clock_bias_driver_controls_path1"
+      ]
+    },
+    "preparation_truth_rows": [
+      {
+        "PREPARE": 0,
+        "SAFE_N": 0,
+        "MUTE_N": 0,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 0,
+        "MUTE_N": 0,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 0,
+        "MUTE_N": 1,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 0,
+        "MUTE_N": 1,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 1,
+        "MUTE_N": 0,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 1,
+        "MUTE_N": 0,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 1,
+        "MUTE_N": 1,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 0,
+        "SAFE_N": 1,
+        "MUTE_N": 1,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 0,
+        "MUTE_N": 0,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 0,
+        "MUTE_N": 0,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 0,
+        "MUTE_N": 1,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 0,
+        "MUTE_N": 1,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 1,
+        "MUTE_N": 0,
+        "PA_PREPARE": 0,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 1,
+        "MUTE_N": 0,
+        "PA_PREPARE": 1,
+        "SRC_ON": 0,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 1,
+        "MUTE_N": 1,
+        "PA_PREPARE": 0,
+        "SRC_ON": 1,
+        "CONV_EN": 0
+      },
+      {
+        "PREPARE": 1,
+        "SAFE_N": 1,
+        "MUTE_N": 1,
+        "PA_PREPARE": 1,
+        "SRC_ON": 1,
+        "CONV_EN": 1
+      }
+    ],
+    "physical_timing": "NOT_RUN",
+    "RF_source_files_modified": false
+  },
+  "DFM_mutations": {
+    "status": "PASS",
+    "mutations": [
+      {
+        "mutation": "0p8mm_special_stackup",
+        "detected": "standard_1p6mm"
+      },
+      {
+        "mutation": "small_annulus",
+        "detected": "via_annulus_design_minimum"
+      },
+      {
+        "mutation": "microdrill",
+        "detected": "no_premium_micro_drill_or_small_land"
+      },
+      {
+        "mutation": "premium_filled_via",
+        "detected": "no_premium_via_protection"
+      },
+      {
+        "mutation": "blind_via",
+        "detected": "ordinary_through_via"
+      },
+      {
+        "mutation": "thin_track",
+        "detected": "actual_track_width"
+      },
+      {
+        "mutation": "real_0p05mm_copper_gap",
+        "detected": "native_foreign_copper_clearance"
+      }
+    ]
+  },
+  "host_tests": "46 Python tests plus strict C waveform/GPIO fixture",
+  "artifact_consistency": "PASS",
+  "LoRa_population": "M6-L1 nominal dual-band CAD review GO; physical RF/assembly qualification NOT_RUN",
+  "physical_qualification": "NOT_RUN",
+  "manufacturing_release": "NOT_AUTHORIZED",
+  "LoRa": {
+    "native_module_pins": 22,
+    "geometry_model_negative_tests": 21,
+    "native_preservation": {
+      "status": "PASS",
+      "baseline": "742159d363dd8dd8b8ff653d01238af9a49ef2aa",
+      "current_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+      "all_pad_instances_including_unnumbered": 715,
+      "numbered_pad_instances": 704,
+      "all_track_and_via_geometry": "IDENTICAL",
+      "filled_copper_delta": {
+        "F.Cu": {
+          "removed_mm2": 0.024722676988,
+          "added_mm2": 0.0,
+          "all_changes_within_roi_mm": [
+            98,
+            27.2,
+            100.9,
+            29.8
+          ]
+        },
+        "B.Cu": {
+          "removed_mm2": 0.0,
+          "added_mm2": 0.0,
+          "all_changes_within_roi_mm": [
+            98,
+            27.2,
+            100.9,
+            29.8
+          ]
+        }
+      },
+      "all_other_copper": "IDENTICAL",
+      "all_footprint_positions": "IDENTICAL",
+      "connected_nets": "IDENTICAL",
+      "legitimate_floating_alias_change": "U70.8 IO ->DIO3; remains unconnected",
+      "historical_review_files_preserved": 204
+    },
+    "UFL_audit": "PASS_NOMINAL_PATTERN_AND_NATIVE_COPPER",
+    "RF_model_summary": {
+      "433000000": {
+        "line_only_return_loss_min_dB": 22.252173865826812,
+        "line_only_insertion_loss_max_dB": 0.061017872927512457,
+        "transition_sensitivity_return_loss_min_dB": 19.851812614822734
+      },
+      "868000000": {
+        "line_only_return_loss_min_dB": 16.330022219174076,
+        "line_only_insertion_loss_max_dB": 0.16017797531028738,
+        "transition_sensitivity_return_loss_min_dB": 14.085298595271471
+      }
+    },
+    "assembly_variants": [
+      "FOX_MIN_NO_LORA",
+      "FOX_MIN_LORA_433",
+      "FOX_MIN_LORA_868",
+      "RF80_FULL_NO_LORA",
+      "RF80_FULL_LORA_433",
+      "RF80_FULL_LORA_868",
+      "RF2M_FULL_NO_LORA",
+      "RF2M_FULL_LORA_433",
+      "RF2M_FULL_LORA_868",
+      "UNIVERSAL_NO_LORA",
+      "UNIVERSAL_LORA_433",
+      "UNIVERSAL_LORA_868"
+    ],
+    "gates": {
+      "A": "PASS_NOMINAL_MODULE_COMPATIBILITY",
+      "B": "PASS_CREDIBLE_CALCULATED_EVALUATION_FEED",
+      "C": "PASS_LOCAL_STANDARD_JLCPCB",
+      "D": "PASS_EXPLICIT_POPULATIONS_AND_FAIL_DISABLED_CONFIGURATION",
+      "E": "NOT_RUN",
+      "manufacturing": "GO_INDEPENDENT_REVIEW_ONLY",
+      "physical_commissioning": "NOT_RUN",
+      "acceptance_tag": "NOT_AUTHORIZED"
+    }
+  }
+}

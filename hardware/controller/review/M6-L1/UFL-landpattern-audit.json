@@ -1,0 +1,104 @@
+{
+  "status": "PASS_NOMINAL_PATTERN_AND_NATIVE_COPPER",
+  "native_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+  "manufacturer": "Hirose exact U.FL-R-SMT-1(10), SIG and GND contact numbering mapped to carrier1/2",
+  "drawing": "Historical official-author catalog p3 lists(10); current official catalog p12 corroborates geometry.",
+  "pads": [
+    {
+      "number": "1",
+      "net": "LORA_ANT",
+      "xy_mm": [
+        97.89,
+        28.5
+      ],
+      "size_mm": [
+        1.05,
+        1.0
+      ],
+      "mask_expansion_mm": 0.03,
+      "shape": "4"
+    },
+    {
+      "number": "2",
+      "net": "GND",
+      "xy_mm": [
+        99.415,
+        27.025
+      ],
+      "size_mm": [
+        2.2,
+        1.05
+      ],
+      "mask_expansion_mm": 0.03,
+      "shape": "4"
+    },
+    {
+      "number": "2",
+      "net": "GND",
+      "xy_mm": [
+        99.415,
+        29.975
+      ],
+      "size_mm": [
+        2.2,
+        1.05
+      ],
+      "mask_expansion_mm": 0.03,
+      "shape": "4"
+    }
+  ],
+  "nominal_pattern_mm": {
+    "signal": [
+      1.05,
+      1.0
+    ],
+    "grounds": [
+      2.2,
+      1.05
+    ],
+    "signal_offset": [
+      -1.525,
+      0
+    ],
+    "ground_offsets": [
+      [
+        0,
+        -1.475
+      ],
+      [
+        0,
+        1.475
+      ]
+    ],
+    "outer_span": 4.0,
+    "inner_span": 1.9
+  },
+  "keepout": {
+    "full_maker_rectangle_mm": [
+      98.315,
+      27.55,
+      100.515,
+      29.45
+    ],
+    "native_rule_mm": [
+      98.315,
+      27.55,
+      100.515,
+      29.45
+    ],
+    "difference": "Full rectangle corrected; intended pads allowed by rule, all foreign copper still independently checked.",
+    "sample_pitch_mm": 0.02,
+    "non_signal_samples_checked": 10075,
+    "foreign_ground_samples": [],
+    "foreign_pad_track_via_polygons_checked": 3207,
+    "layer": "F.Cu only; B.Cu ground retained"
+  },
+  "paste": {
+    "native": "Full copper-size apertures with existing rounded corners, no local size reduction",
+    "maker": "0.10/0.12mm stencil, reduced metal-mask openings; do not call native full-pad apertures identical",
+    "selected_builder_method": "Mask J7 stencil apertures, hand solder3 lands with controlled minimal solder; alternate exact maker stencil recommended if reflowing",
+    "assembly": "NOT_RUN"
+  },
+  "DIO3_symbol_name": "8_DIO3",
+  "service": "No nearby mounted body within the6mm service diameter; maintain vertical access/cable strain relief and existing15mm top envelope. Exact incoming module height/enclosure NOT_RUN."
+}

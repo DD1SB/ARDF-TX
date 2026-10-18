@@ -1,0 +1,35 @@
+{
+  "classification": "Native geometry, not a USB eye measurement",
+  "signals": {
+    "USB_DP_CONN": {
+      "length_mm": 22.243640752748394,
+      "via_count": 3,
+      "width_mm": [
+        0.15
+      ]
+    },
+    "USB_DM_CONN": {
+      "length_mm": 25.157137401437538,
+      "via_count": 0,
+      "width_mm": [
+        0.15
+      ]
+    },
+    "USB_DM": {
+      "length_mm": 4.4286595037324785,
+      "via_count": 0,
+      "width_mm": [
+        0.2
+      ]
+    },
+    "USB_DP": {
+      "length_mm": 4.427541642943633,
+      "via_count": 0,
+      "width_mm": [
+        0.2
+      ]
+    }
+  },
+  "assessment": "Full-speed12Mb/s only; approximately30mm data paths. No claimed controlled90ohm impedance on1.6mm FR4. Series22ohm damping, ESD, attach/eye/EMI qualification required. No480Mb/s support.",
+  "physical": "NOT_RUN"
+}

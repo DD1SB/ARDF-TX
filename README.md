@@ -1,12 +1,13 @@
 # ARDF-TX
 
-**M6-C1R1, 2026-10-18:** the [common controller](hardware/controller/README.md)
-now protects its battery-ID input against the defined 2S/4S conductor faults;
-the USB ESD3.3V reference is retained with manufacturer-backed review.
-[Fresh CAD, BOM and fabrication review](hardware/controller/review/M6-C1R1/README.md).
-[Decision](docs/M6_C1R1_REVIEW_DECISION.md): **GO for independent five-bare-board
-review only; optional LoRa remains HOLD.** No acceptance tag or manufacturing
-release; all physical qualification is NOT_RUN. RF80/RF2M and M4A are unchanged.
+**M6-L1, 2026-10-18:** the [common controller](hardware/controller/README.md)
+supports NO_LORA, Silicontra 433 MHz or 868 MHz on one footprint and RF feed.
+The Hirose underbody ground keep-out is locally corrected; the short RF signal
+trace, RF80/RF2M interfaces and R1 battery-ID/USB corrections are preserved.
+[Fresh CAD, population BOMs and fabrication review](hardware/controller/review/M6-L1/README.md).
+[Decision](docs/M6_L1_REVIEW_DECISION.md): **GO for independent five-bare-board
+review and optional LoRa assembly preparation only.** No acceptance tag or
+manufacturing release; physical qualification remains NOT_RUN.
 
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 

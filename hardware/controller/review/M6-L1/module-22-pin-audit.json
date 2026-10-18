@@ -1,0 +1,376 @@
+{
+  "status": "PASS",
+  "top_view": "TR4/V2 and TR8/V2 rotate90deg counterclockwise to native top-side view; TR8/V1 as drawn. No reflection.",
+  "pins": [
+    {
+      "pin": 1,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        96.62,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 2,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        97.89,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 3,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        99.16,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 4,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        100.43,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 5,
+      "TR4_V2": "DIO1",
+      "TR8_V1": "DIO1",
+      "TR8_V2": "DIO1",
+      "net": "LORA_DIO1",
+      "xy_mm": [
+        101.7,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 6,
+      "TR4_V2": "NC",
+      "TR8_V1": "NC",
+      "TR8_V2": "NC",
+      "net": "unconnected-(U70-6_IO-Pad6)",
+      "xy_mm": [
+        102.97,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "DNP/NC"
+    },
+    {
+      "pin": 7,
+      "TR4_V2": "NC",
+      "TR8_V1": "NC",
+      "TR8_V2": "NC",
+      "net": "unconnected-(U70-7_IO-Pad7)",
+      "xy_mm": [
+        104.24,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "DNP/NC"
+    },
+    {
+      "pin": 8,
+      "TR4_V2": "DIO3",
+      "TR8_V1": "DIO3",
+      "TR8_V2": "DIO3",
+      "net": "unconnected-(U70-8_DIO3-Pad8)",
+      "xy_mm": [
+        105.51,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Unused configurable IO, not a required NC"
+    },
+    {
+      "pin": 9,
+      "TR4_V2": "NC",
+      "TR8_V1": "NC",
+      "TR8_V2": "NC",
+      "net": "unconnected-(U70-9_IO-Pad9)",
+      "xy_mm": [
+        106.78,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "DNP/NC"
+    },
+    {
+      "pin": 10,
+      "TR4_V2": "BUSY",
+      "TR8_V1": "BUSY",
+      "TR8_V2": "BUSY",
+      "net": "LORA_BUSY",
+      "xy_mm": [
+        108.05,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 11,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        109.32,
+        48.25
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 12,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        109.32,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 13,
+      "TR4_V2": "VCC",
+      "TR8_V1": "VCC",
+      "TR8_V2": "VCC",
+      "net": "V3V3",
+      "xy_mm": [
+        108.05,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 14,
+      "TR4_V2": "SCK",
+      "TR8_V1": "SCK",
+      "TR8_V2": "SCK",
+      "net": "SPI_SCK",
+      "xy_mm": [
+        106.78,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 15,
+      "TR4_V2": "MISO",
+      "TR8_V1": "MISO",
+      "TR8_V2": "MISO",
+      "net": "SPI_MISO",
+      "xy_mm": [
+        105.51,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 16,
+      "TR4_V2": "MOSI",
+      "TR8_V1": "MOSI",
+      "TR8_V2": "MOSI",
+      "net": "SPI_MOSI",
+      "xy_mm": [
+        104.24,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 17,
+      "TR4_V2": "SEL",
+      "TR8_V1": "SEL",
+      "TR8_V2": "SEL",
+      "net": "LORA_NSS",
+      "xy_mm": [
+        102.97,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 18,
+      "TR4_V2": "RST",
+      "TR8_V1": "RST",
+      "TR8_V2": "RST",
+      "net": "LORA_RESET",
+      "xy_mm": [
+        101.7,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 19,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        100.43,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 20,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        99.16,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 21,
+      "TR4_V2": "ANT",
+      "TR8_V1": "ANT",
+      "TR8_V2": "ANT",
+      "net": "LORA_ANT",
+      "xy_mm": [
+        97.89,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    },
+    {
+      "pin": 22,
+      "TR4_V2": "GND",
+      "TR8_V1": "GND",
+      "TR8_V2": "GND",
+      "net": "GND",
+      "xy_mm": [
+        96.62,
+        33.75
+      ],
+      "size_mm": [
+        0.8,
+        2.2
+      ],
+      "disposition": "Connected"
+    }
+  ],
+  "body_mm": [
+    15,
+    15
+  ],
+  "host_pitch_mm": 1.27,
+  "host_pad_mm": [
+    0.8,
+    2.2
+  ],
+  "host_row_centre_mm": 14.5,
+  "body_edge_mm": 15,
+  "terminal_depth_mm": 1.37,
+  "nominal_inner_overlap_mm": 1.35,
+  "nominal_toe_extension_mm": 0.85,
+  "source_end_offset_mm": 1.12,
+  "source_10_pitch_sum_mm": 12.7,
+  "rounding_asymmetry_mm": 0.06,
+  "tolerances": "Not supplied by Silicontra. Nominal compatibility, not a guaranteed tolerance stack; inspect incoming modules. Hole diameter, package height and mask/stencil recommendations not specified."
+}

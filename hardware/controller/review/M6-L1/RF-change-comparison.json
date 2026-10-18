@@ -1,0 +1,8 @@
+{
+  "status": "PASS_CALCULATED_COMPARISON_ONLY",
+  "before": "analysis/before-keepout-RF.json",
+  "after": "RF-analysis.json",
+  "native_board_sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1",
+  "nominal_results_identical_at_extraction_resolution": true,
+  "interpretation": "The small ground-fill deletion is outside the resolved transverse sections. This does not prove physical launch or parasitic equivalence; physical VNA/RF commissioning NOT_RUN."
+}

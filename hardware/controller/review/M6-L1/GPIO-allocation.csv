@@ -1,0 +1,37 @@
+ESP32_GPIO,signal,restriction
+0,BOOT,BOOT strap/recovery only
+1,BAT_ADC,configure safe state before INIT_OK
+2,PACK_ID_ADC,configure safe state before INIT_OK
+3,STRAP_RESERVED,"reserved strap, no RF function"
+4,MODULE_ID_ADC,configure safe state before INIT_OK
+5,PA_RAIL_ADC,configure safe state before INIT_OK
+6,AF_PWM,configure safe state before INIT_OK
+7,LEVEL_PWM,configure safe state before INIT_OK
+8,RTC80_SDA,configure safe state before INIT_OK
+9,RTC80_SCL,configure safe state before INIT_OK
+10,LORA_NSS,configure safe state before INIT_OK
+11,SPI_MOSI,configure safe state before INIT_OK
+12,SPI_SCK,configure safe state before INIT_OK
+13,SPI_MISO,configure safe state before INIT_OK
+14,INIT_OK,configure safe state before INIT_OK
+15,LORA_BUSY,configure safe state before INIT_OK
+16,LORA_DIO1,configure safe state before INIT_OK
+17,RF2M_SDA,configure safe state before INIT_OK
+18,RF2M_SCL,configure safe state before INIT_OK
+19,USB_DM,native USB only
+20,USB_DP,native USB only
+21,RF2M_FAULT,configure safe state before INIT_OK
+35,RF80_FAULT,N4 without octal PSRAM required
+36,START_N,N4 without octal PSRAM required
+37,USB_VBUS_N,N4 without octal PSRAM required
+38,SHIFT_LATCH,configure safe state before INIT_OK
+39,PROGRESS,configure safe state before INIT_OK
+40,LORA_RESET,configure safe state before INIT_OK
+41,ARM,configure safe state before INIT_OK
+42,MUTE_RELEASE,configure safe state before INIT_OK
+43,UART_TX,configure safe state before INIT_OK
+44,UART_RX,configure safe state before INIT_OK
+45,STRAP_RESERVED,"reserved strap, no RF function"
+46,STRAP_RESERVED,"reserved strap, no RF function"
+47,KEY,configure safe state before INIT_OK
+48,SLOT,configure safe state before INIT_OK

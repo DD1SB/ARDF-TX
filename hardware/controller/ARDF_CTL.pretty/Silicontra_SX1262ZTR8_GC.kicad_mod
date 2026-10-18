@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "OPTIONAL DNP / OPEN land-pattern qualification. Maker V1.0 15x15,1.27pitch,0.8terminal,1.37depth,1.12end offset. Drawing lacks tolerances, distributor TR8 suffix not verified as ZTR8. Do not populate without dimensional check.")
+	(descr "M6-L1 nominal15x15 dual-band Silicontra ZTR4/ZTR8 footprint;22lands,1.27pitch. Supplier TR aliases documented. No published mechanical tolerances; first-part inspection required.")
 	(property "Reference" "U70"
 		(at 0 -9.35 0)
 		(layer "F.Fab")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "Silicontra SX1262ZTR8-GC"
+	(property "Value" "Silicontra SX1262TR8-GC"
 		(at 0 9.35 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -49,7 +49,7 @@
 			)
 		)
 	)
-	(property "MPN" "SX1262ZTR8-GC"
+	(property "MPN" "SX1262TR8-GC"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
@@ -61,7 +61,7 @@
 			)
 		)
 	)
-	(property "Population" "LORA_OPTION_OPEN"
+	(property "Population" "LORA_OPTION"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
@@ -85,7 +85,7 @@
 			)
 		)
 	)
-	(property "Engineering_Note" "OPTIONAL DNP: manufacturer ZTR8 vs distributor TR8 suffix not confirmed. Manufacturer dimension drawing lacks tolerances and ambiguous 1.12mm callout; footprint qualification OPEN. Do not populate without review."
+	(property "Engineering_Note" "M6-L1 nominal common TR4/TR8 lands verified from supplier-linked Silicontra drawings. Select trusted band/antenna assembly record. First-part dimensional and RF qualification NOT_RUN."
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
@@ -123,8 +123,8 @@
 		(uuid "76adbd9d-6790-476a-ac81-886c4c258737")
 	)
 	(fp_rect
-		(start -7.5 -8.35)
-		(end 7.5 8.35)
+		(start -7.5 -7.5)
+		(end 7.5 7.5)
 		(stroke
 			(width 0.1)
 			(type default)

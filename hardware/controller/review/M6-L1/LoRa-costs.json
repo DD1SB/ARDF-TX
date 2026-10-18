@@ -1,0 +1,152 @@
+{
+  "classification": "NetEUR planning estimates incl indexed prices; no supplier quote",
+  "USD_to_EUR_planning_factor": 0.9,
+  "FX_status": "Engineering allowance, not an exchange-rate observation; assess +/-10%",
+  "shipping_import_VAT": "Excluded/unquoted",
+  "variants": {
+    "FOX_MIN_NO_LORA": {
+      "netEUR_per_unit": {
+        "1": 21.522,
+        "10": 18.988,
+        "20": 18.988
+      },
+      "unquoted_netEUR": {
+        "1": 11.5,
+        "10": 11.018,
+        "20": 11.018
+      }
+    },
+    "FOX_MIN_LORA_433": {
+      "netEUR_per_unit": {
+        "1": 27.761,
+        "10": 24.298,
+        "20": 24.298
+      },
+      "unquoted_netEUR": {
+        "1": 16.629,
+        "10": 15.382,
+        "20": 15.382
+      }
+    },
+    "FOX_MIN_LORA_868": {
+      "netEUR_per_unit": {
+        "1": 27.826,
+        "10": 24.36,
+        "20": 24.36
+      },
+      "unquoted_netEUR": {
+        "1": 16.694,
+        "10": 15.444,
+        "20": 15.444
+      }
+    },
+    "RF80_FULL_NO_LORA": {
+      "netEUR_per_unit": {
+        "1": 21.792,
+        "10": 19.258,
+        "20": 19.258
+      },
+      "unquoted_netEUR": {
+        "1": 11.77,
+        "10": 11.288,
+        "20": 11.288
+      }
+    },
+    "RF80_FULL_LORA_433": {
+      "netEUR_per_unit": {
+        "1": 28.031,
+        "10": 24.568,
+        "20": 24.568
+      },
+      "unquoted_netEUR": {
+        "1": 16.899,
+        "10": 15.652,
+        "20": 15.652
+      }
+    },
+    "RF80_FULL_LORA_868": {
+      "netEUR_per_unit": {
+        "1": 28.096,
+        "10": 24.63,
+        "20": 24.63
+      },
+      "unquoted_netEUR": {
+        "1": 16.964,
+        "10": 15.714,
+        "20": 15.714
+      }
+    },
+    "RF2M_FULL_NO_LORA": {
+      "netEUR_per_unit": {
+        "1": 21.832,
+        "10": 19.298,
+        "20": 19.298
+      },
+      "unquoted_netEUR": {
+        "1": 11.81,
+        "10": 11.328,
+        "20": 11.328
+      }
+    },
+    "RF2M_FULL_LORA_433": {
+      "netEUR_per_unit": {
+        "1": 28.071,
+        "10": 24.608,
+        "20": 24.608
+      },
+      "unquoted_netEUR": {
+        "1": 16.939,
+        "10": 15.692,
+        "20": 15.692
+      }
+    },
+    "RF2M_FULL_LORA_868": {
+      "netEUR_per_unit": {
+        "1": 28.136,
+        "10": 24.67,
+        "20": 24.67
+      },
+      "unquoted_netEUR": {
+        "1": 17.004,
+        "10": 15.754,
+        "20": 15.754
+      }
+    },
+    "UNIVERSAL_NO_LORA": {
+      "netEUR_per_unit": {
+        "1": 25.425,
+        "10": 22.339,
+        "20": 22.339
+      },
+      "unquoted_netEUR": {
+        "1": 14.313,
+        "10": 13.56,
+        "20": 13.56
+      }
+    },
+    "UNIVERSAL_LORA_433": {
+      "netEUR_per_unit": {
+        "1": 31.664,
+        "10": 27.649,
+        "20": 27.649
+      },
+      "unquoted_netEUR": {
+        "1": 19.442,
+        "10": 17.924,
+        "20": 17.924
+      }
+    },
+    "UNIVERSAL_LORA_868": {
+      "netEUR_per_unit": {
+        "1": 31.729,
+        "10": 27.711,
+        "20": 27.711
+      },
+      "unquoted_netEUR": {
+        "1": 19.507,
+        "10": 17.986,
+        "20": 17.986
+      }
+    }
+  }
+}
