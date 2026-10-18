@@ -1,0 +1,58 @@
+{
+  "revision": "M6-C1",
+  "retrieved": "2026-10-18",
+  "source_urls": [
+    "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "https://jlcpcb.com/help/article/jlcpcb-copper-weight"
+  ],
+  "order": {
+    "layers": 2,
+    "thickness_mm": 1.6,
+    "material": "standard FR4",
+    "copper_oz": 1,
+    "mask": "green",
+    "legend": "white",
+    "finish": "Lead-free HASL",
+    "via_treatment": "ordinary unfilled through-vias; no guaranteed tent closure",
+    "controlled_impedance": false
+  },
+  "vendor_absolute": {
+    "track_space_mm": 0.1,
+    "SMD_pad_space_mm": 0.15,
+    "PTH_annulus_mm": 0.18,
+    "PTH_hole_to_track_mm": 0.28,
+    "via_to_track_mm": 0.2,
+    "mask_web_mm": 0.1,
+    "mask_to_foreign_copper_mm": 0.09,
+    "copper_to_edge_mm": 0.2,
+    "NPTH_min_mm": 0.5,
+    "plated_slot_width_min_mm": 0.5,
+    "legend_height_mm": 1,
+    "legend_stroke_mm": 0.15,
+    "hole_size_tolerance_mm": [
+      -0.08,
+      0.13
+    ],
+    "hole_position_mm": 0.075,
+    "thickness_tolerance_percent": 10
+  },
+  "design_margins": {
+    "track_min_mm": 0.15,
+    "track_typical_mm": 0.2,
+    "space_min_mm": 0.15,
+    "via_land_drill_mm": [
+      0.8,
+      0.3
+    ],
+    "annulus_mm": 0.25,
+    "edge_clearance_mm": 0.5,
+    "mask_expansion_mm": 0.03
+  },
+  "manual_review": [
+    "HASL/reflow quality on RTC and ESP32 lands; no physical assembly yet",
+    "Check connector mating/cable polarity, finished-hole fit against actual parts",
+    "Optional LoRa module identity/land-pattern tolerance hold; DNP base variants",
+    "USB full-speed eye/routing and power enumeration measurements NOT_RUN",
+    "No factory CAM or commercial quote has been requested"
+  ]
+}

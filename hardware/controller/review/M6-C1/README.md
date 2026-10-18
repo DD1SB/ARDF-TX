@@ -1,0 +1,19 @@
+# M6-C1 universal controller — engineering review package
+
+**Base controller: GO for independent engineering review. Optional LoRa population: HOLD. No acceptance tag, manufacturing authorization or operational release. Physical tests: NOT_RUN.**
+
+The final editable sources are [../../CTRL.kicad_pro](../../CTRL.kicad_pro), [../../CTRL.kicad_sch](../../CTRL.kicad_sch) and [../../CTRL.kicad_pcb](../../CTRL.kicad_pcb), with local symbol/footprint/model files. RF80-V1 and RF2M-E4R1 were read as interface authorities and were not modified.
+
+Start with the [review decision](../../../../docs/M6_C1_REVIEW_DECISION.md), [schematic PDF](CTRL.pdf), [actual KiCad top view](CTRL-3D-top.png), [mechanical drawing](mechanical-drawing.svg), [GPIO allocation](GPIO-allocation.json) and [binding interface matrix](RF-interface-contracts.json). Per-variant assembly PDFs, placement CSVs, BOM CSVs and fitted/DNP lists cover FOX_MIN, RF80_FULL, RF2M_FULL and UNIVERSAL. LoRa adds a separately held option and has no approved assembly drawing.
+
+The [architecture](../../../../docs/M6_C1_CONTROLLER_ARCHITECTURE.md), [RF interface](../../../../docs/M6_C1_RF_INTERFACE.md), [power/battery](../../../../docs/M6_C1_POWER_AND_BATTERY.md), [RTC/timing](../../../../docs/M6_C1_TIMING_AND_RTC.md) and [safe-state contract](../../../../docs/M6_C1_SAFETY_AND_FAULTS.md) are the controller specifications. `firmware/controller_hw/` provides host-executable contract fixtures, not operating firmware.
+
+`fabrication/` contains freshly exported Gerbers and separate PTH/NPTH drills/maps. It is the proposed **review-only** fabrication dataset. Do not upload `analysis/`, native snapshots or the whole review directory as fabrication data. No upload or factory CAM check has occurred. [MANUFACTURING](MANUFACTURING.md) records ordinary order options; [REPRODUCE](REPRODUCE.md) records exact commands.
+
+`CTRL.net.xml` is the complete logical schematic netlist. Raw `CTRL-KiCad.ipc` exposes KiCad's long-name truncation; `CTRL-logical.ipc` and `CTRL-physical.ipc` use unique native-derived short names, mapped in `electrical-test-net-aliases.json`. The controller has no intentional electrical net ties, so logical and physical connectivity are identical. Ordinary factory testing can derive connectivity from Gerber copper; no special test-netlist service is assumed.
+
+Read `CAD-results.json`, `electrical-regression.json`, `DFM-regression.json`, `JLCPCB-DFM.json`, the two RF protocol replays, `host-test-results.json`, `artifact-audit.json` and `final-checks.json` for actual coverage. `package-and-pad-audit.json` inventories native physical landings; independent critical pin/net assertions are additional checks. `check-commands.json` and `export-commands.json` preserve real KiCad command results. `inventory.json` and `SHA256SUMS` bind sources/artifacts to this candidate.
+
+The only ignored DRC category is KiCad's default tuning-profile mismatch category; no tuning patterns are present. No exclusions, severity changes hiding relevant errors, or undocumented warnings are used. Default/full assembly does not imply RF release. [SOURCING](SOURCING.md), `costs.json` and the BOMs distinguish observed catalog prices from unquoted allowances. [BRINGUP](BRINGUP.md) defines staged physical qualification.
+
+`inputs/` freezes fresh native RF interface netlists and source hashes. The strict preservation test also covers the supplied, untracked RF80 production working candidate; reproducing that whole-tree test requires the same supplied working inputs. Nothing in this package silently adds or accepts the user's M4A work. `analysis/` contains intermediate offline routing inputs/sessions and local change evidence; it is historical construction evidence, **not** an alternative board or current fabrication source. The final native PCB and final exports are authoritative.

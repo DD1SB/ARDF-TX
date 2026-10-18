@@ -1,0 +1,15 @@
+{
+  "reason": "Moved USB ESD bypass ground pad was on isolated front fill; native connectivity identified C10.2 as sole missing GND pad.",
+  "ordinary_via_mm": [
+    [
+      35.0,
+      41.2
+    ]
+  ],
+  "land_drill_mm": [
+    0.8,
+    0.3
+  ],
+  "native_clearance_test_mm": 0.17,
+  "manufacturing": "ordinary through via outside solder lands; no filled-via assumption"
+}

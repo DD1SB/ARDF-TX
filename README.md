@@ -1,5 +1,13 @@
 # ARDF-TX
 
+**M6-C1, 2026-10-18:** the [common ESP32-S3 controller](hardware/controller/README.md)
+now has an editable schematic, a routed100 ×100 mm standard-JLCPCB board,
+[review artifacts](hardware/controller/review/M6-C1/README.md), population BOMs
+and host-tested RF control contracts. [Decision](docs/M6_C1_REVIEW_DECISION.md):
+**GO for independent base-controller review; optional LoRa population HOLD.**
+No acceptance tag or manufacturing release; physical qualification is NOT_RUN.
+RF80/RF2M designs and the existing M4A working candidate remain unchanged.
+
 A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
 
 **Current 2 m CAD status — M5B-E4R1 source-joint candidate:** the [RF2M evaluation PCB](hardware/2m/README.md) retains standard **two-layer 1.6 mm / 1 oz FR4** and implements 16 intentionally open source vias, external ground vias and a documented stencil/reflow process. **GO for independent five-bare-board review only.** The conservative 110°C thermal target is missed; the 125°C physical qualification gate remains OPEN. See the [review decision](docs/M5B_E4R1_REVIEW_DECISION.md) and [review package](hardware/2m/review/M5B-E4R1/README.md). E4 HOLD evidence is preserved at `920da7b`; the last accepted CAD baseline remains `m5b-e3` / `95f189c`. No new acceptance tag. **Physical tests NOT_RUN. No upload, purchasing or manufacturing is authorized.** Earlier hardware milestones are retained below.

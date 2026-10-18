@@ -1,0 +1,28 @@
+{
+  "changes": [
+    {
+      "label": "C10",
+      "old": [
+        "27.15",
+        "66.3375"
+      ],
+      "new": [
+        35.8,
+        42
+      ]
+    },
+    {
+      "label": "START",
+      "old": [
+        "100",
+        "117.5"
+      ],
+      "new": [
+        94,
+        117.5
+      ]
+    }
+  ],
+  "added": "STOP below SW4",
+  "reason": "Keep C10 label with moved ESD bias bypass and distinguish local START/STOP"
+}

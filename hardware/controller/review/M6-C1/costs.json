@@ -1,0 +1,203 @@
+{
+  "status": "CANDIDATE ESTIMATES, not purchase quotations",
+  "date": "2026-10-18",
+  "variants": {
+    "FOX_MIN": {
+      "1": {
+        "components_per_unit_net_eur": 21.068,
+        "observed_net_eur": 9.798,
+        "estimated_unquoted_net_eur": 11.27,
+        "purchased_parts": 140,
+        "IC_count": 19,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "10": {
+        "components_per_unit_net_eur": 18.708,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 10.868,
+        "purchased_parts": 140,
+        "IC_count": 19,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "20": {
+        "components_per_unit_net_eur": 18.708,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 10.868,
+        "purchased_parts": 140,
+        "IC_count": 19,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      }
+    },
+    "RF80_FULL": {
+      "1": {
+        "components_per_unit_net_eur": 21.338,
+        "observed_net_eur": 9.798,
+        "estimated_unquoted_net_eur": 11.54,
+        "purchased_parts": 150,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "10": {
+        "components_per_unit_net_eur": 18.978,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 11.138,
+        "purchased_parts": 150,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "20": {
+        "components_per_unit_net_eur": 18.978,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 11.138,
+        "purchased_parts": 150,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      }
+    },
+    "RF2M_FULL": {
+      "1": {
+        "components_per_unit_net_eur": 21.378,
+        "observed_net_eur": 9.798,
+        "estimated_unquoted_net_eur": 11.58,
+        "purchased_parts": 154,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "10": {
+        "components_per_unit_net_eur": 19.018,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 11.178,
+        "purchased_parts": 154,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "20": {
+        "components_per_unit_net_eur": 19.018,
+        "observed_net_eur": 7.84,
+        "estimated_unquoted_net_eur": 11.178,
+        "purchased_parts": 154,
+        "IC_count": 20,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      }
+    },
+    "UNIVERSAL": {
+      "1": {
+        "components_per_unit_net_eur": 24.971,
+        "observed_net_eur": 10.888,
+        "estimated_unquoted_net_eur": 14.083,
+        "purchased_parts": 185,
+        "IC_count": 24,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "10": {
+        "components_per_unit_net_eur": 22.059,
+        "observed_net_eur": 8.649,
+        "estimated_unquoted_net_eur": 13.41,
+        "purchased_parts": 185,
+        "IC_count": 24,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "20": {
+        "components_per_unit_net_eur": 22.059,
+        "observed_net_eur": 8.649,
+        "estimated_unquoted_net_eur": 13.41,
+        "purchased_parts": 185,
+        "IC_count": 24,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      }
+    },
+    "UNIVERSAL_LORA_OPEN": {
+      "1": {
+        "components_per_unit_net_eur": 31.391,
+        "observed_net_eur": 10.888,
+        "estimated_unquoted_net_eur": 20.503,
+        "purchased_parts": 191,
+        "IC_count": 25,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "10": {
+        "components_per_unit_net_eur": 27.679,
+        "observed_net_eur": 8.649,
+        "estimated_unquoted_net_eur": 19.03,
+        "purchased_parts": 191,
+        "IC_count": 25,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      },
+      "20": {
+        "components_per_unit_net_eur": 27.679,
+        "observed_net_eur": 8.649,
+        "estimated_unquoted_net_eur": 19.03,
+        "purchased_parts": 191,
+        "IC_count": 25,
+        "VAT": "excluded; apply destination rules separately",
+        "freight": "OPEN / excluded"
+      }
+    }
+  },
+  "bare_PCB_model": {
+    "method": "Unquoted setup4EUR + area0.0001EUR/mm2/board; not JLC quote",
+    "area_mm2": 10000,
+    "net_batch_eur": {
+      "5": 9,
+      "10": 14,
+      "20": 24
+    },
+    "shipping_net_eur_allowance": [
+      10,
+      25
+    ],
+    "standard_stencil_separate_net_estimate_eur": [
+      8,
+      20
+    ]
+  },
+  "external_costs_net_estimates": {
+    "CR1220_cell": [
+      0.4,
+      1.0
+    ],
+    "IDC16_cable150mm": [
+      1.5,
+      3.0
+    ],
+    "IDC20_cable150mm": [
+      1.7,
+      3.5
+    ],
+    "pack_ID_controller_branch": [
+      1.0,
+      2.0
+    ],
+    "fused_RF_harness": [
+      3,
+      7
+    ],
+    "M3_standoffs_and_hardware": [
+      0.5,
+      1.2
+    ]
+  },
+  "excluded": [
+    "RF modules",
+    "batteries/BMS",
+    "charger",
+    "enclosure",
+    "antenna",
+    "assembly and calibration labor"
+  ],
+  "LoRa_hold": "Exact ZTR8-GC identity vs distributor TR8-GC not confirmed; euro FX allowance, not EU quote."
+}

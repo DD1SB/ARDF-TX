@@ -1,0 +1,371 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Cu.gtl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Cu.gbl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Paste.gtp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Paste.gbp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Silkscreen.gto'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Silkscreen.gbo'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Mask.gts'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Mask.gbs'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/",
+      "--format",
+      "excellon",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/drill-report.rpt",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-PTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-NPTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-PTH-drl_map.pdf'.\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL-KiCad.ipc",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Cu,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/top-copper.svg",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/top-copper.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/bottom-copper.svg",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/bottom-copper.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-top.svg",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-top.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Fab,B.Silkscreen,B.Mask,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-bottom.svg",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-bottom.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-FOX_MIN.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_FOX_MIN_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-FOX_MIN.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-FOX_MIN.csv",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_FOX_MIN_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-FOX_MIN.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-RF80_FULL.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_RF80_FULL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-RF80_FULL.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-RF80_FULL.csv",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_RF80_FULL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-RF80_FULL.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-RF2M_FULL.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_RF2M_FULL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-RF2M_FULL.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-RF2M_FULL.csv",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_RF2M_FULL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-RF2M_FULL.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-UNIVERSAL.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_UNIVERSAL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/assembly-UNIVERSAL.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-UNIVERSAL.csv",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL_UNIVERSAL_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/placement-UNIVERSAL.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "1600",
+      "--height",
+      "1400",
+      "--quality",
+      "high",
+      "--zoom",
+      "0.75",
+      "--background",
+      "opaque",
+      "--rotate",
+      "325,0,25",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL-3D.png",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 3.716 s\nRendering: 8 %\nRendering: 14 %\nRendering: 20 %\nRendering: 24 %\nRendering: 28 %\nRendering: 31 %\nRendering: 35 %\nRendering: 40 %\nRendering: 45 %\nRendering: 53 %\nRendering: 62 %\nRendering: 69 %\nRendering: 78 %\nRendering: 83 %\nRendering: 90 %\nRendering: 98 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 6.889 s\nSuccessfully created 3D render image\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "1600",
+      "--height",
+      "1400",
+      "--quality",
+      "high",
+      "--zoom",
+      "0.75",
+      "--background",
+      "opaque",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL-3D-top.png",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 3.781 s\nRendering: 8 %\nRendering: 15 %\nRendering: 21 %\nRendering: 25 %\nRendering: 28 %\nRendering: 31 %\nRendering: 35 %\nRendering: 39 %\nRendering: 45 %\nRendering: 53 %\nRendering: 60 %\nRendering: 65 %\nRendering: 73 %\nRendering: 80 %\nRendering: 86 %\nRendering: 93 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 7.103 s\nSuccessfully created 3D render image\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "1600",
+      "--height",
+      "1400",
+      "--quality",
+      "high",
+      "--zoom",
+      "0.75",
+      "--background",
+      "opaque",
+      "--side",
+      "bottom",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL-3D-bottom.png",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Loading\u2026\nBuild board outline\n\nCreate layers\nCreate tracks and vias\nCreate zones\nBuild Tech layers\nBuild Tech layer 11\nBuild Tech layer 9\nBuild Tech layer 15\nBuild Tech layer 13\nBuild Tech layer 7\nBuild Tech layer 5\nBuild Tech layer 3\nBuild Tech layer 1\nBuild Tech layer 17\nBuild Tech layer 19\nBuild Tech layer 21\nBuild Tech layer 23\nBuild Tech layer 39\nBuild Tech layer 41\nBuild Tech layer 43\nBuild Tech layer 45\nBuild Tech layer 47\nBuild Tech layer 49\nBuild Tech layer 51\nBuild Tech layer 53\nBuild Tech layer 55\nBuild Tech layer 57\nBuild Tech layer 59\nBuild Tech layer 61\nBuild Tech layer 63\nBuild Tech layer 65\nBuild Tech layer 67\nBuild Tech layer 69\nBuild Tech layer 71\nBuild Tech layer 73\nBuild Tech layer 75\nBuild Tech layer 77\nBuild Tech layer 79\nBuild Tech layer 81\nBuild Tech layer 83\nBuild Tech layer 85\nBuild Tech layer 87\nBuild Tech layer 89\nBuild Tech layer 91\nBuild Tech layer 93\nBuild Tech layer 95\nBuild Tech layer 97\nBuild Tech layer 99\nBuild Tech layer 101\nBuild Tech layer 103\nBuild Tech layer 105\nBuild Tech layer 107\nBuild Tech layer 109\nBuild Tech layer 111\nBuild Tech layer 113\nBuild Tech layer 115\nBuild Tech layer 117\nBuild Tech layer 119\nBuild Tech layer 121\nBuild Tech layer 123\nBuild Tech layer 125\nBuild Tech layer 127\nSimplifying copper layer polygons\nCalculating plated copper\nSimplify holes contours\nBuild BVH for holes and vias\nLoad Raytracing: board\nLoad Raytracing: layers\nLoading 3D models...\nReload time 3.697 s\nRendering: 8 %\nRendering: 16 %\nRendering: 21 %\nRendering: 26 %\nRendering: 30 %\nRendering: 34 %\nRendering: 40 %\nRendering: 46 %\nRendering: 54 %\nRendering: 62 %\nRendering: 67 %\nRendering: 76 %\nRendering: 82 %\nRendering: 87 %\nRendering: 93 %\nRendering: 100 %\nRendering: Post processing shader\nRendering time 6.707 s\nSuccessfully created 3D render image\n",
+    "stderr": ""
+  }
+]

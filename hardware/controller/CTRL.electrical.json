@@ -1,0 +1,6977 @@
+{
+  "date": "2026-10-18",
+  "revision": "M6-C1 candidate",
+  "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
+  "parts": [
+    {
+      "ref": "J1",
+      "sheet": "01_power",
+      "value": "PACK / GND / ID",
+      "mpn": "B3B-XH-A(LF)(SN)",
+      "footprint": "ARDF_CTL:JST_XH_B3B_Standard",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Controller branch only,1A fuse. PA packs use separate fused harness. Enlarged1.10mm standard finished holes; JST hard-FR4 guideline note2, first-part fit inspection.",
+      "source_url": "https://www.jst.co.uk/downloads/series/eXH_1.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.25,
+        "10": 0.25,
+        "20": 0.25
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_RAW",
+        "2": "GND",
+        "3": "PACK_ID_RAW"
+      }
+    },
+    {
+      "ref": "F1",
+      "sheet": "01_power",
+      "value": "1A 63V fast",
+      "mpn": "SF-1206F100-2",
+      "footprint": "ARDF_CTL:Fuse_Bourns_SF1206F",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "1A fast fuse,63VDC,50A interrupt;0.132ohm typ +/-25%. Manufacturer lands4.7mm overall/1.65mm gap/2.2mm width. Nonresettable; replace only after fault diagnosis.",
+      "source_url": "https://www.bourns.com/docs/product-datasheets/sf-1206f.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.45,
+        "10": 0.45,
+        "20": 0.45
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_RAW",
+        "2": "PACK_FUSED"
+      }
+    },
+    {
+      "ref": "D1",
+      "sheet": "01_power",
+      "value": "100V 2A reverse block",
+      "mpn": "STPS2H100A",
+      "footprint": "ARDF_CTL:D_SMA_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.st.com/resource/en/datasheet/stps2h100.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.22,
+        "20": 0.22
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": "PACK_FUSED"
+      }
+    },
+    {
+      "ref": "D4",
+      "sheet": "01_power",
+      "value": "Low leakage battery OR",
+      "mpn": "S1M-E3/61T",
+      "footprint": "ARDF_CTL:D_SMA_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Silicon rectifier, 5uA max reverse at25C /50uA at125C. Avoid Schottky reverse leakage falsely asserting pack presence on USB.",
+      "source_url": "https://www.vishay.com/docs/88503/s1a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.06,
+        "10": 0.06,
+        "20": 0.06
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS",
+        "2": "PACK_PROT"
+      }
+    },
+    {
+      "ref": "D2",
+      "sheet": "01_power",
+      "value": "18V unidirectional TVS",
+      "mpn": "SMBJ18A",
+      "footprint": "ARDF_CTL:D_SMB_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Cathode package pad1 positive, anode pad2 GND, AFTER reverse diode.",
+      "source_url": "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=142b62cb-5ef8-4af6-8131-6df1d404ddc1",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.14,
+        "10": 0.14,
+        "20": 0.14
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D3",
+      "sheet": "01_power",
+      "value": "USB low-drop OR",
+      "mpn": "STPS1L30A",
+      "footprint": "ARDF_CTL:D_SMA_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "30V reverse, max0.395V at1A25C. D21 bounds reverse leakage at USB_LIMIT; no raw pack-to-USB path.",
+      "source_url": "https://www.st.com/resource/en/datasheet/stps1l30.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.15,
+        "10": 0.15,
+        "20": 0.15
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS",
+        "2": "USB_LIMIT"
+      }
+    },
+    {
+      "ref": "D21",
+      "sheet": "01_power",
+      "value": "USB reverse-leak clamp 5.1V",
+      "mpn": "BZT52H-B5V1,115",
+      "footprint": "ARDF_CTL:D_SOD-123F_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "SOD123F pin1K pin2A. 5.00..5.20V at5mA, rdif60ohm. Bounds D3 leakage; hot clamp qualification remains NOT_RUN.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.035,
+        "10": 0.035,
+        "20": 0.035
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_LIMIT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U1",
+      "sheet": "01_power",
+      "value": "AP63203WU-7",
+      "mpn": "AP63203WU-7",
+      "footprint": "ARDF_CTL:TSOT-23-6_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "3.8..32V recommended,35V DC absolute/40V for400ms only. Fixed 3.3V, 2A. 1.1MHz. FB senses output.",
+      "source_url": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+      "supplier": "LCSC (indexed observation)",
+      "supplier_part_number": "C780769",
+      "availability": "LCSC C780769 indexed8165stock MOQ1; EUR budget at1EUR/USD allowance, not FX quote. Mouser0stock.",
+      "evidence": "ESTIMATE_FX_OF_LCSC_USD_2026-10-18",
+      "price_breaks_eur": {
+        "1": 1.217,
+        "10": 1.0856,
+        "20": 1.0856
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "VIN_SYS",
+        "3": "VIN_SYS",
+        "4": "GND",
+        "5": "BUCK_SW",
+        "6": "BUCK_BST"
+      }
+    },
+    {
+      "ref": "L1",
+      "sheet": "01_power",
+      "value": "4.7uH 4.6Arms",
+      "mpn": "SRP5030T-4R7M",
+      "footprint": "ARDF_CTL:L_Bourns_SRP5030T_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.bourns.com/data/global/pdfs/SRP5030T.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.55,
+        "10": 0.55,
+        "20": 0.55
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BUCK_SW",
+        "2": "V3V3"
+      }
+    },
+    {
+      "ref": "C1",
+      "sheet": "01_power",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BUCK_BST",
+        "2": "BUCK_SW"
+      }
+    },
+    {
+      "ref": "C2",
+      "sheet": "01_power",
+      "value": "4.7u 50V",
+      "mpn": "GRM32ER71H475KA88L",
+      "footprint": "ARDF_CTL:C_1210_3225Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.27,
+        "10": 0.27,
+        "20": 0.27
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C3",
+      "sheet": "01_power",
+      "value": "4.7u 50V",
+      "mpn": "GRM32ER71H475KA88L",
+      "footprint": "ARDF_CTL:C_1210_3225Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.27,
+        "10": 0.27,
+        "20": 0.27
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C4",
+      "sheet": "01_power",
+      "value": "22u 10V",
+      "mpn": "CL31A226KPHNNNE",
+      "footprint": "ARDF_CTL:C_1206_3216Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C5",
+      "sheet": "01_power",
+      "value": "22u 10V",
+      "mpn": "CL31A226KPHNNNE",
+      "footprint": "ARDF_CTL:C_1206_3216Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C6",
+      "sheet": "01_power",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R1",
+      "sheet": "01_power",
+      "value": "470k",
+      "mpn": "RC0603FR-07470KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": "BAT_DIV"
+      }
+    },
+    {
+      "ref": "R2",
+      "sheet": "01_power",
+      "value": "47k",
+      "mpn": "RC0603FR-0747KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BAT_DIV",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R3",
+      "sheet": "01_power",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "PACK_ID_RAW"
+      }
+    },
+    {
+      "ref": "Q1",
+      "sheet": "01_power_2",
+      "value": "MMBT3904",
+      "mpn": "MMBT3904LT1G",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.025,
+        "10": 0.025,
+        "20": 0.025
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BATT_BASE",
+        "2": "GND",
+        "3": "PACK_ABSENT"
+      }
+    },
+    {
+      "ref": "R4",
+      "sheet": "01_power_2",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": "BATT_BASE"
+      }
+    },
+    {
+      "ref": "R5",
+      "sheet": "01_power_2",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BATT_BASE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R6",
+      "sheet": "01_power_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "PACK_ABSENT"
+      }
+    },
+    {
+      "ref": "R7",
+      "sheet": "01_power_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "01_power",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_PROT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J2",
+      "sheet": "02_USB_reset",
+      "value": "USB-C native USB2",
+      "mpn": "USB4105-GF-A",
+      "footprint": "ARDF_CTL:USB4105_Standard",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "All shield pads SH grounded. CC1/2 each 5.1k sink. No USB->pack path. Shield annular rings enlarged0.05mm.",
+      "source_url": "https://gct.co/files/drawings/usb4105.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.55,
+        "10": 0.55,
+        "20": 0.55
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "A1": "GND",
+        "A4": "USB_VBUS",
+        "A5": "USB_CC1",
+        "A6": "USB_DP_CONN",
+        "A7": "USB_DM_CONN",
+        "A8": null,
+        "A9": "USB_VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "USB_VBUS",
+        "B5": "USB_CC2",
+        "B6": "USB_DP_CONN",
+        "B7": "USB_DM_CONN",
+        "B8": null,
+        "B9": "USB_VBUS",
+        "B12": "GND",
+        "SH": "GND"
+      }
+    },
+    {
+      "ref": "R10",
+      "sheet": "02_USB_reset",
+      "value": "5.1k",
+      "mpn": "RC0603FR-075K1L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_CC1",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R11",
+      "sheet": "02_USB_reset",
+      "value": "5.1k",
+      "mpn": "RC0603FR-075K1L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_CC2",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U2",
+      "sheet": "02_USB_reset",
+      "value": "TPS2553DBVR",
+      "mpn": "TPS2553DBVR",
+      "footprint": "ARDF_CTL:SOT-23-6_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "USB current limit ~0.3A with 100k; USB WiFi disabled. Enumeration/current compliance physical gate; no RF on USB only.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.75,
+        "10": 0.75,
+        "20": 0.75
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_VBUS",
+        "2": "GND",
+        "3": "USB_VBUS",
+        "4": "USB_OC_N",
+        "5": "USB_ILIM",
+        "6": "USB_LIMIT"
+      }
+    },
+    {
+      "ref": "R63",
+      "sheet": "02_USB_reset",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_VBUS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q2",
+      "sheet": "02_USB_reset",
+      "value": "MMBT3904 VBUS sense",
+      "mpn": "MMBT3904LT1G",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "GPIO37 inverted VBUS presence. USB PHY attaches only while VBUS present; RTC INT is unused; poll hundredths/time over I2C.",
+      "source_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.025,
+        "10": 0.025,
+        "20": 0.025
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_BASE",
+        "2": "GND",
+        "3": "USB_VBUS_N"
+      }
+    },
+    {
+      "ref": "R64",
+      "sheet": "02_USB_reset",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_VBUS",
+        "2": "USB_BASE"
+      }
+    },
+    {
+      "ref": "R65",
+      "sheet": "02_USB_reset",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_BASE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R66",
+      "sheet": "02_USB_reset",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "USB_VBUS_N"
+      }
+    },
+    {
+      "ref": "R12",
+      "sheet": "02_USB_reset",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_ILIM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R13",
+      "sheet": "02_USB_reset",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_OC_N",
+        "2": "V3V3"
+      }
+    },
+    {
+      "ref": "C10",
+      "sheet": "02_USB_reset",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C11",
+      "sheet": "02_USB_reset",
+      "value": "4.7u 10V",
+      "mpn": "CL10A475KP8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.045,
+        "10": 0.045,
+        "20": 0.045
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_VBUS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U3",
+      "sheet": "02_USB_reset",
+      "value": "USBLC6-2SC6",
+      "mpn": "USBLC6-2SC6",
+      "footprint": "ARDF_CTL:SOT-23-6_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Positive ESD rail pin5 biased from local3.3V with C10, NOT raw USB_VBUS. Prevents self-powered D+ pull-up charging absent VBUS through steering diode; datasheet VCC application.",
+      "source_url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22,
+        "10": 0.22,
+        "20": 0.22
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_DP_CONN",
+        "2": "GND",
+        "3": "USB_DM_CONN",
+        "4": "USB_DM_CONN",
+        "5": "V3V3",
+        "6": "USB_DP_CONN"
+      }
+    },
+    {
+      "ref": "R14",
+      "sheet": "02_USB_reset",
+      "value": "22",
+      "mpn": "RC0603FR-0722RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_DP_CONN",
+        "2": "USB_DP"
+      }
+    },
+    {
+      "ref": "R15",
+      "sheet": "02_USB_reset",
+      "value": "22",
+      "mpn": "RC0603FR-0722RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "USB_DM_CONN",
+        "2": "USB_DM"
+      }
+    },
+    {
+      "ref": "U4",
+      "sheet": "02_USB_reset",
+      "value": "TLV803EA30DBZR",
+      "mpn": "TLV803EA30DBZR",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Standard DBZ pinout (not V/R pinout). Code30 is3.08V threshold, not3.0V; reset delay A200ms.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.25,
+        "10": 0.25,
+        "20": 0.25
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "MCU_EN",
+        "3": "V3V3"
+      }
+    },
+    {
+      "ref": "R16",
+      "sheet": "02_USB_reset",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "MCU_EN"
+      }
+    },
+    {
+      "ref": "C12",
+      "sheet": "02_USB_reset_2",
+      "value": "1u",
+      "mpn": "CL10A105KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R17",
+      "sheet": "02_USB_reset_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "BOOT"
+      }
+    },
+    {
+      "ref": "R18",
+      "sheet": "02_USB_reset_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "START_N"
+      }
+    },
+    {
+      "ref": "SW1",
+      "sheet": "02_USB_reset_2",
+      "value": "RESET",
+      "mpn": "TL3342F160QG",
+      "footprint": "ARDF_CTL:SW_SPST_TL3342_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW2",
+      "sheet": "02_USB_reset_2",
+      "value": "BOOT",
+      "mpn": "TL3342F160QG",
+      "footprint": "ARDF_CTL:SW_SPST_TL3342_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BOOT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW3",
+      "sheet": "02_USB_reset_2",
+      "value": "START",
+      "mpn": "TL3342F160QG",
+      "footprint": "ARDF_CTL:SW_SPST_TL3342_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "START_N",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW4",
+      "sheet": "02_USB_reset_2",
+      "value": "STOP / hold reset",
+      "mpn": "TL3342F160QG",
+      "footprint": "ARDF_CTL:SW_SPST_TL3342_CTL",
+      "group": "02_USB_reset",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U10",
+      "sheet": "03_MCU",
+      "value": "ESP32-S3-WROOM-1-N4",
+      "mpn": "ESP32-S3-WROOM-1-N4",
+      "footprint": "ARDF_CTL:ESP32_S3_WROOM_1_Standard",
+      "group": "03_MCU",
+      "population": "ALL",
+      "note": "4MB flash, no PSRAM. GPIO35/36/37 available. GPIO0 boot only; GPIO3/45/46 reserved. USB19/20. Standard KiCad thermal holes omitted; solid source solder lands retained, ground vias outside hidden land.",
+      "source_url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "supplier": "Mouser DE (indexed observation)",
+      "supplier_part_number": "356-ESP32-S3WROOM1N4",
+      "availability": "Mouser index 3296, MOQ1; recheck before buying",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 4.48,
+        "10": 3.88,
+        "20": 3.88
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "V3V3",
+        "3": "MCU_EN",
+        "40": "GND",
+        "41": "GND",
+        "4": "MODULE_ID_ADC",
+        "5": "PA_RAIL_ADC",
+        "6": "AF_PWM",
+        "7": "LEVEL_PWM",
+        "8": "LORA_BUSY",
+        "9": "LORA_DIO1",
+        "10": "RF2M_SDA",
+        "11": "RF2M_SCL",
+        "12": "RTC80_SDA",
+        "13": "USB_DM",
+        "14": "USB_DP",
+        "15": null,
+        "16": null,
+        "17": "RTC80_SCL",
+        "18": "LORA_NSS",
+        "19": "SPI_MOSI",
+        "20": "SPI_SCK",
+        "21": "SPI_MISO",
+        "22": "INIT_OK",
+        "23": "RF2M_FAULT",
+        "24": "KEY",
+        "25": "SLOT",
+        "26": null,
+        "27": "BOOT",
+        "28": "RF80_FAULT",
+        "29": "START_N",
+        "30": "USB_VBUS_N",
+        "31": "SHIFT_LATCH",
+        "32": "PROGRESS",
+        "33": "LORA_RESET",
+        "34": "ARM",
+        "35": "MUTE_RELEASE",
+        "36": "UART_RX",
+        "37": "UART_TX",
+        "38": "PACK_ID_ADC",
+        "39": "BAT_ADC"
+      }
+    },
+    {
+      "ref": "C20",
+      "sheet": "03_MCU",
+      "value": "10u 10V",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "03_MCU",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08,
+        "10": 0.08,
+        "20": 0.08
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C21",
+      "sheet": "03_MCU",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "03_MCU",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J3",
+      "sheet": "03_MCU",
+      "value": "UART recovery / GND",
+      "mpn": "61300311121",
+      "footprint": "ARDF_CTL:UART_61300311121",
+      "group": "03_MCU",
+      "population": "DEBUG",
+      "note": "3.3V UART, no5V supply. Native USB normal flashing path. Standard1.10mm finished holes, no tight process.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1,
+        "10": 0.1,
+        "20": 0.1
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "UART_TX",
+        "3": "UART_RX"
+      }
+    },
+    {
+      "ref": "U20",
+      "sheet": "04_RTC_analog",
+      "value": "RV-3032-C7 2.5ppm",
+      "mpn": "RV-3032-C7-32.768KHZ-2.5PPM-TA-QA",
+      "footprint": "ARDF_CTL:RV3032_C7",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Program BSM=10 LSM, TCM=OFF, NCLKE=1. Factory backup disabled. Readback and validity required before ARM.",
+      "source_url": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3032-C7_App-Manual.pdf",
+      "supplier": "Mouser DE (indexed observation)",
+      "supplier_part_number": "428-203853-MG01",
+      "availability": "Mouser index 4353, MOQ1",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 3.66,
+        "10": 2.75,
+        "20": 2.75
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RTC_BACKUP",
+        "2": "RTC80_SDA",
+        "3": null,
+        "4": "GND",
+        "5": "GND",
+        "6": "V3V3",
+        "7": null,
+        "8": "RTC80_SCL"
+      }
+    },
+    {
+      "ref": "BT1",
+      "sheet": "04_RTC_analog",
+      "value": "CR1220 primary",
+      "mpn": "3000",
+      "footprint": "ARDF_CTL:BatteryHolder_Keystone_3000_1x12mm_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Holder only. Primary cell external line item. No charging.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.45,
+        "10": 0.45,
+        "20": 0.45
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "CELL_POS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D20",
+      "sheet": "04_RTC_analog",
+      "value": "BAS116 no cell charging",
+      "mpn": "BAS116,115",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BAS116.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.06,
+        "10": 0.06,
+        "20": 0.06
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "CELL_POS",
+        "2": null,
+        "3": "BACKUP_D"
+      }
+    },
+    {
+      "ref": "R20",
+      "sheet": "04_RTC_analog",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BACKUP_D",
+        "2": "RTC_BACKUP"
+      }
+    },
+    {
+      "ref": "C22",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RTC_BACKUP",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C23",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R22",
+      "sheet": "04_RTC_analog",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RTC80_SDA"
+      }
+    },
+    {
+      "ref": "R23",
+      "sheet": "04_RTC_analog",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RTC80_SCL"
+      }
+    },
+    {
+      "ref": "R24",
+      "sheet": "04_RTC_analog",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RF2M_SDA"
+      }
+    },
+    {
+      "ref": "R25",
+      "sheet": "04_RTC_analog",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RF2M_SCL"
+      }
+    },
+    {
+      "ref": "U21",
+      "sheet": "04_RTC_analog",
+      "value": "TMUX1511PWR",
+      "mpn": "TMUX1511PWR",
+      "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "Powered-off protected four analog channels. Signals remain <=5.5V while VDD absent. ADC input sampling caps, calibrated 11dB ADC1.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "supplier": "Mouser EU (indexed observation)",
+      "supplier_part_number": "595-TMUX1511PWR",
+      "availability": "Mouser indexed55stock, MOQ1; unreserved",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 0.568,
+        "10": 0.401,
+        "20": 0.401
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "BAT_DIV",
+        "3": "BAT_ADC",
+        "4": "V3V3",
+        "5": "PACK_ID_RAW",
+        "6": "PACK_ID_ADC",
+        "7": "GND",
+        "8": "MODULE_ID_ADC",
+        "9": "RF2M_MODULE_ID",
+        "10": "V3V3",
+        "11": "PA_RAIL_ADC",
+        "12": "RF2M_PA_RAIL_ADC",
+        "13": "V3V3",
+        "14": "V3V3"
+      }
+    },
+    {
+      "ref": "C24",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BAT_DIV",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C25",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_ID_RAW",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C26",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_MODULE_ID",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C27",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PA_RAIL_ADC",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C28",
+      "sheet": "04_RTC_analog",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R26",
+      "sheet": "04_RTC_analog",
+      "value": "33k",
+      "mpn": "RC0603FR-0733KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "04_RTC_analog",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RF2M_MODULE_ID"
+      }
+    },
+    {
+      "ref": "U30",
+      "sheet": "05_static_safety",
+      "value": "SN74HC595PWR",
+      "mpn": "SN74HC595PWR",
+      "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Clear shift register does not clear storage latch; OE plus explicit zero latch is mandatory.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.18,
+        "10": 0.18,
+        "20": 0.18
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_REQ",
+        "2": "PWR0",
+        "3": "PWR1",
+        "4": "PACK4_SOFT",
+        "5": "PATH_TRAIN",
+        "6": "PROFILE_FULL",
+        "7": "PREPARE",
+        "8": "GND",
+        "9": "SHIFT_CHAIN",
+        "10": "MCU_EN",
+        "11": "SPI_SCK",
+        "12": "SHIFT_LATCH",
+        "13": "SAFE_OE_N",
+        "14": "SPI_MOSI",
+        "15": "PA_REQ",
+        "16": "V3V3"
+      }
+    },
+    {
+      "ref": "C30",
+      "sheet": "05_static_safety",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U31",
+      "sheet": "05_static_safety",
+      "value": "SN74HC595PWR",
+      "mpn": "SN74HC595PWR",
+      "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Clear shift register does not clear storage latch; OE plus explicit zero latch is mandatory.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.18,
+        "10": 0.18,
+        "20": 0.18
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "POWER80",
+        "2": "POWER2M",
+        "3": "BUS80",
+        "4": "BUS2M",
+        "5": "LED_ARM",
+        "6": "LED_FAULT",
+        "7": "BAND2",
+        "8": "GND",
+        "9": null,
+        "10": "MCU_EN",
+        "11": "SPI_SCK",
+        "12": "SHIFT_LATCH",
+        "13": "SAFE_OE_N",
+        "14": "SHIFT_CHAIN",
+        "15": "PA_PREPARE",
+        "16": "V3V3"
+      }
+    },
+    {
+      "ref": "C31",
+      "sheet": "05_static_safety",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R30",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PA_REQ",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R31",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_REQ",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R32",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PWR0",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R33",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PWR1",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R34",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PACK4_SOFT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R35",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PATH_TRAIN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R36",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PROFILE_FULL",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R37",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PREPARE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R38",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PA_PREPARE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R39",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "POWER80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R40",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "POWER2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R41",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BUS80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R42",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BUS2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R43",
+      "sheet": "05_static_safety",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LED_ARM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R44",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LED_FAULT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R45",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BAND2",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R50",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "INIT_OK",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R51",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "ARM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R52",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "MUTE_RELEASE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R53",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "PROGRESS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R54",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "KEY",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R55",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SLOT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R56",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "AF_PWM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R57",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LEVEL_PWM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R58",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SHIFT_LATCH",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R59",
+      "sheet": "05_static_safety_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "SAFE_OE_N"
+      }
+    },
+    {
+      "ref": "U32",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC1G04DBVR",
+      "mpn": "SN74LVC1G04DBVR",
+      "footprint": "ARDF_CTL:SOT-23-5_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1,
+        "10": 0.1,
+        "20": 0.1
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": null,
+        "2": "PACK_ABSENT",
+        "3": "GND",
+        "4": "PACK_PRESENT",
+        "5": "V3V3"
+      }
+    },
+    {
+      "ref": "U33",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC1G10DBVR",
+      "mpn": "SN74LVC1G10DBVR",
+      "footprint": "ARDF_CTL:SOT-23-6_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g10.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1,
+        "10": 0.1,
+        "20": 0.1
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "INIT_OK",
+        "2": "MCU_EN",
+        "3": "GND",
+        "4": "SAFE_OE_N",
+        "5": "V3V3",
+        "6": "PACK_PRESENT"
+      }
+    },
+    {
+      "ref": "U34",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC2G04DCKR",
+      "mpn": "SN74LVC2G04DCKR",
+      "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g04.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SAFE_OE_N",
+        "2": "BAND80",
+        "3": "GND",
+        "4": "BAND2",
+        "5": "SAFE",
+        "6": "V3V3"
+      }
+    },
+    {
+      "ref": "U35",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC00APWR",
+      "mpn": "SN74LVC00APWR",
+      "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc00a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.14,
+        "10": 0.14,
+        "20": 0.14
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SAFE",
+        "2": "BAND80",
+        "3": "OE80_N",
+        "4": "SAFE",
+        "5": "BAND2",
+        "6": "OE2M_N",
+        "7": "GND",
+        "8": null,
+        "9": "GND",
+        "10": "GND",
+        "11": null,
+        "12": "GND",
+        "13": "GND",
+        "14": "V3V3"
+      }
+    },
+    {
+      "ref": "U36",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC1G04DBVR",
+      "mpn": "SN74LVC1G04DBVR",
+      "footprint": "ARDF_CTL:SOT-23-5_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1,
+        "10": 0.1,
+        "20": 0.1
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": null,
+        "2": "ARM",
+        "3": "GND",
+        "4": "DISARMED",
+        "5": "V3V3"
+      }
+    },
+    {
+      "ref": "U37",
+      "sheet": "05_static_safety_2",
+      "value": "SN74LVC08APWR",
+      "mpn": "SN74LVC08APWR",
+      "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.14,
+        "10": 0.14,
+        "20": 0.14
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "BUS80",
+        "2": "DISARMED",
+        "3": "BUS80_EN",
+        "4": "BUS2M",
+        "5": "DISARMED",
+        "6": "BUS2M_EN",
+        "7": "GND",
+        "8": null,
+        "9": "GND",
+        "10": "GND",
+        "11": null,
+        "12": "GND",
+        "13": "GND",
+        "14": "V3V3"
+      }
+    },
+    {
+      "ref": "C32",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C33",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C34",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C35",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C36",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C37",
+      "sheet": "05_static_safety_3",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R60",
+      "sheet": "05_static_safety_3",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LED_ARM",
+        "2": "D30_A"
+      }
+    },
+    {
+      "ref": "D30",
+      "sheet": "05_static_safety_3",
+      "value": "status",
+      "mpn": "LTST-C190KGKT",
+      "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03,
+        "10": 0.03,
+        "20": 0.03
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "D30_A"
+      }
+    },
+    {
+      "ref": "R61",
+      "sheet": "05_static_safety_3",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LED_FAULT",
+        "2": "D31_A"
+      }
+    },
+    {
+      "ref": "D31",
+      "sheet": "05_static_safety_3",
+      "value": "status",
+      "mpn": "LTST-C190KRKT",
+      "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03,
+        "10": 0.03,
+        "20": 0.03
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "D31_A"
+      }
+    },
+    {
+      "ref": "R62",
+      "sheet": "05_static_safety_3",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "D32_A"
+      }
+    },
+    {
+      "ref": "D32",
+      "sheet": "05_static_safety_3",
+      "value": "status",
+      "mpn": "LTST-C190KGKT",
+      "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+      "group": "05_static_safety",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03,
+        "10": 0.03,
+        "20": 0.03
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "D32_A"
+      }
+    },
+    {
+      "ref": "J4",
+      "sheet": "06_RF80",
+      "value": "RF80 keyed controller link",
+      "mpn": "61201621621",
+      "footprint": "ARDF_CTL:IDC16_61201621621",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Straight-through IDC cable, pin1-to-pin1. Physical key and cable continuity must be checked before connection.",
+      "source_url": "https://www.we-online.com/components/products/datasheet/61201621621.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.7,
+        "10": 0.7,
+        "20": 0.7
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND",
+        "3": "RF80_SCL",
+        "4": "GND",
+        "5": "RF80_SDA",
+        "6": "RF80_LEASE",
+        "7": "RF80_ARM",
+        "8": "RF80_CW_KEY",
+        "9": "RF80_PA_REQ",
+        "10": "RF80_FOX_REQ",
+        "11": "RF80_PWR0",
+        "12": "RF80_PWR1",
+        "13": "RF80_MUTE_N",
+        "14": "RF80_FAULT_N",
+        "15": "RF80_PACK4_OK",
+        "16": "GND"
+      }
+    },
+    {
+      "ref": "U40",
+      "sheet": "06_RF80",
+      "value": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "footprint": "ARDF_CTL:SOT-23-6_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "3.3V only, max5.5V. CT pin4 OPEN per datasheet. QOD5 tiedOUT6. Use88mohm hot RON envelope; source sole V3V3 supply. No switch current limiter: buck current limit/reset/fuse provide fault shutdown.",
+      "source_url": "https://www.ti.com/lit/gpn/tps22918",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.35,
+        "10": 0.35,
+        "20": 0.35
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "POWER80",
+        "4": null,
+        "5": "V3V3_RF80",
+        "6": "V3V3_RF80"
+      }
+    },
+    {
+      "ref": "C40",
+      "sheet": "06_RF80",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C41",
+      "sheet": "06_RF80",
+      "value": "1u",
+      "mpn": "CL10A105KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U41",
+      "sheet": "06_RF80",
+      "value": "SN74LVC244APWR",
+      "mpn": "SN74LVC244APWR",
+      "footprint": "ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Ioff isolation. OE pulled to local VCC independently of host power.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact non-E4 stock/price OPEN; E4 package-matched comparator only",
+      "evidence": "ESTIMATE_COMPARATOR_E4_2026-10-18",
+      "price_breaks_eur": {
+        "1": 0.963,
+        "10": 0.692,
+        "20": 0.692
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "OE80_N",
+        "10": "GND",
+        "19": "OE80_N",
+        "20": "V3V3_RF80",
+        "2": "ARM",
+        "18": "RF80_ARM_BUF",
+        "4": "KEY",
+        "16": "RF80_CW_KEY_BUF",
+        "6": "PROGRESS",
+        "14": "RF80_LEASE_BUF",
+        "8": "MUTE_RELEASE",
+        "12": "RF80_MUTE_N_BUF",
+        "11": "PA_REQ",
+        "9": "RF80_PA_REQ_BUF",
+        "13": "FOX_REQ",
+        "7": "RF80_FOX_REQ_BUF",
+        "15": "PWR0",
+        "5": "RF80_PWR0_BUF",
+        "17": "PWR1",
+        "3": "RF80_PWR1_BUF"
+      }
+    },
+    {
+      "ref": "U42",
+      "sheet": "06_RF80",
+      "value": "SN74LVC125APWR",
+      "mpn": "SN74LVC125APWR",
+      "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.17,
+        "10": 0.17,
+        "20": 0.17
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "7": "GND",
+        "14": "V3V3_RF80",
+        "1": "OE80_N",
+        "2": "PACK4_SOFT",
+        "3": "RF80_PACK4_OK_BUF",
+        "4": "V3V3_RF80",
+        "5": "GND",
+        "6": null,
+        "10": "V3V3_RF80",
+        "9": "GND",
+        "8": null,
+        "13": "V3V3_RF80",
+        "12": "GND",
+        "11": null
+      }
+    },
+    {
+      "ref": "R80",
+      "sheet": "06_RF80",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "OE80_N"
+      }
+    },
+    {
+      "ref": "C42",
+      "sheet": "06_RF80",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C43",
+      "sheet": "06_RF80",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R100",
+      "sheet": "06_RF80",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_ARM_BUF",
+        "2": "RF80_ARM"
+      }
+    },
+    {
+      "ref": "R101",
+      "sheet": "06_RF80",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_ARM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R102",
+      "sheet": "06_RF80",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_CW_KEY_BUF",
+        "2": "RF80_CW_KEY"
+      }
+    },
+    {
+      "ref": "R103",
+      "sheet": "06_RF80",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_CW_KEY",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R104",
+      "sheet": "06_RF80",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_LEASE_BUF",
+        "2": "RF80_LEASE"
+      }
+    },
+    {
+      "ref": "R105",
+      "sheet": "06_RF80",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_LEASE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R106",
+      "sheet": "06_RF80",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_MUTE_N_BUF",
+        "2": "RF80_MUTE_N"
+      }
+    },
+    {
+      "ref": "R107",
+      "sheet": "06_RF80",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_MUTE_N",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R108",
+      "sheet": "06_RF80",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PA_REQ_BUF",
+        "2": "RF80_PA_REQ"
+      }
+    },
+    {
+      "ref": "R109",
+      "sheet": "06_RF80_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PA_REQ",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R110",
+      "sheet": "06_RF80_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_FOX_REQ_BUF",
+        "2": "RF80_FOX_REQ"
+      }
+    },
+    {
+      "ref": "R111",
+      "sheet": "06_RF80_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_FOX_REQ",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R112",
+      "sheet": "06_RF80_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PWR0_BUF",
+        "2": "RF80_PWR0"
+      }
+    },
+    {
+      "ref": "R113",
+      "sheet": "06_RF80_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PWR0",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R114",
+      "sheet": "06_RF80_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PWR1_BUF",
+        "2": "RF80_PWR1"
+      }
+    },
+    {
+      "ref": "R115",
+      "sheet": "06_RF80_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PWR1",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R116",
+      "sheet": "06_RF80_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PACK4_OK_BUF",
+        "2": "RF80_PACK4_OK"
+      }
+    },
+    {
+      "ref": "R117",
+      "sheet": "06_RF80_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_PACK4_OK",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U43",
+      "sheet": "06_RF80_2",
+      "value": "TCA9517DR",
+      "mpn": "TCA9517DR",
+      "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "SOIC selected for robust green-mask webs and manual assembly. Branch disable independent of I2C. B-side RF pull-ups on module. Check100kHz/cable rise time physically.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9517.pdf",
+      "supplier": "Mouser EU (indexed observation)",
+      "supplier_part_number": "595-TCA9517DR",
+      "availability": "Mouser indexed stock6351..6900, MOQ1; unreserved",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 1.09,
+        "10": 0.809,
+        "20": 0.809
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RTC80_SCL",
+        "3": "RTC80_SDA",
+        "4": "GND",
+        "5": "BUS80_EN",
+        "6": "RF80_SDA",
+        "7": "RF80_SCL",
+        "8": "V3V3_RF80"
+      }
+    },
+    {
+      "ref": "C44",
+      "sheet": "06_RF80_2",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF80",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C45",
+      "sheet": "06_RF80_2",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R81",
+      "sheet": "06_RF80_2",
+      "value": "2.2k",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "06_RF80",
+      "population": "RF80",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_FAULT_N",
+        "2": "V3V3_RF80"
+      }
+    },
+    {
+      "ref": "J5",
+      "sheet": "07_RF2M",
+      "value": "RF2M keyed controller link",
+      "mpn": "61202021621",
+      "footprint": "ARDF_CTL:IDC20_61202021621",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Straight-through IDC cable, pin1-to-pin1. Physical key and cable continuity must be checked before connection.",
+      "source_url": "https://www.we-online.com/components/products/datasheet/61202021621.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.7,
+        "10": 0.7,
+        "20": 0.7
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND",
+        "3": "RF2M_I2C_SDA",
+        "4": "RF2M_I2C_SCL",
+        "5": "RF2M_ARM",
+        "6": "RF2M_SLOT",
+        "7": "RF2M_KEY",
+        "8": "RF2M_PROGRESS",
+        "9": "RF2M_MUTE_N",
+        "10": "RF2M_PA_RAIL_ADC",
+        "11": "RF2M_PATH_TRAIN",
+        "12": "RF2M_PROFILE_FULL",
+        "13": "RF2M_AF_PWM",
+        "14": "RF2M_LEVEL_PWM",
+        "15": "RF2M_PREPARE",
+        "16": "RF2M_FAULT_N",
+        "17": "GND",
+        "18": "GND",
+        "19": "RF2M_MODULE_ID",
+        "20": "RF2M_PA_PREPARE"
+      }
+    },
+    {
+      "ref": "U50",
+      "sheet": "07_RF2M",
+      "value": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "footprint": "ARDF_CTL:SOT-23-6_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "3.3V only, max5.5V. CT pin4 OPEN per datasheet. QOD5 tiedOUT6. Use88mohm hot RON envelope; source sole V3V3 supply. No switch current limiter: buck current limit/reset/fuse provide fault shutdown.",
+      "source_url": "https://www.ti.com/lit/gpn/tps22918",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.35,
+        "10": 0.35,
+        "20": 0.35
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "POWER2M",
+        "4": null,
+        "5": "V3V3_RF2M",
+        "6": "V3V3_RF2M"
+      }
+    },
+    {
+      "ref": "C50",
+      "sheet": "07_RF2M",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C51",
+      "sheet": "07_RF2M",
+      "value": "1u",
+      "mpn": "CL10A105KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U51",
+      "sheet": "07_RF2M",
+      "value": "SN74LVC244APWR",
+      "mpn": "SN74LVC244APWR",
+      "footprint": "ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Ioff isolation. OE pulled to local VCC independently of host power.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact non-E4 stock/price OPEN; E4 package-matched comparator only",
+      "evidence": "ESTIMATE_COMPARATOR_E4_2026-10-18",
+      "price_breaks_eur": {
+        "1": 0.963,
+        "10": 0.692,
+        "20": 0.692
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "OE2M_N",
+        "10": "GND",
+        "19": "OE2M_N",
+        "20": "V3V3_RF2M",
+        "2": "ARM",
+        "18": "RF2M_ARM_BUF",
+        "4": "SLOT",
+        "16": "RF2M_SLOT_BUF",
+        "6": "KEY",
+        "14": "RF2M_KEY_BUF",
+        "8": "PROGRESS",
+        "12": "RF2M_PROGRESS_BUF",
+        "11": "MUTE_RELEASE",
+        "9": "RF2M_MUTE_N_BUF",
+        "13": "PATH_TRAIN",
+        "7": "RF2M_PATH_TRAIN_BUF",
+        "15": "PROFILE_FULL",
+        "5": "RF2M_PROFILE_FULL_BUF",
+        "17": "AF_PWM",
+        "3": "RF2M_AF_PWM_BUF"
+      }
+    },
+    {
+      "ref": "U52",
+      "sheet": "07_RF2M",
+      "value": "SN74LVC125APWR",
+      "mpn": "SN74LVC125APWR",
+      "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.17,
+        "10": 0.17,
+        "20": 0.17
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "7": "GND",
+        "14": "V3V3_RF2M",
+        "1": "OE2M_N",
+        "2": "LEVEL_PWM",
+        "3": "RF2M_LEVEL_PWM_BUF",
+        "4": "OE2M_N",
+        "5": "PREPARE",
+        "6": "RF2M_PREPARE_BUF",
+        "10": "OE2M_N",
+        "9": "PA_PREPARE",
+        "8": "RF2M_PA_PREPARE_BUF",
+        "13": "V3V3_RF2M",
+        "12": "GND",
+        "11": null
+      }
+    },
+    {
+      "ref": "R90",
+      "sheet": "07_RF2M",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "OE2M_N"
+      }
+    },
+    {
+      "ref": "C52",
+      "sheet": "07_RF2M",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C53",
+      "sheet": "07_RF2M",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R118",
+      "sheet": "07_RF2M",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_ARM_BUF",
+        "2": "RF2M_ARM"
+      }
+    },
+    {
+      "ref": "R119",
+      "sheet": "07_RF2M",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_ARM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R120",
+      "sheet": "07_RF2M",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_SLOT_BUF",
+        "2": "RF2M_SLOT"
+      }
+    },
+    {
+      "ref": "R121",
+      "sheet": "07_RF2M",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_SLOT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R122",
+      "sheet": "07_RF2M",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_KEY_BUF",
+        "2": "RF2M_KEY"
+      }
+    },
+    {
+      "ref": "R123",
+      "sheet": "07_RF2M",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_KEY",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R124",
+      "sheet": "07_RF2M",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PROGRESS_BUF",
+        "2": "RF2M_PROGRESS"
+      }
+    },
+    {
+      "ref": "R125",
+      "sheet": "07_RF2M",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PROGRESS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R126",
+      "sheet": "07_RF2M",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_MUTE_N_BUF",
+        "2": "RF2M_MUTE_N"
+      }
+    },
+    {
+      "ref": "R127",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_MUTE_N",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R128",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PATH_TRAIN_BUF",
+        "2": "RF2M_PATH_TRAIN"
+      }
+    },
+    {
+      "ref": "R129",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PATH_TRAIN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R130",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PROFILE_FULL_BUF",
+        "2": "RF2M_PROFILE_FULL"
+      }
+    },
+    {
+      "ref": "R131",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PROFILE_FULL",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R132",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_AF_PWM_BUF",
+        "2": "RF2M_AF_PWM"
+      }
+    },
+    {
+      "ref": "R133",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_AF_PWM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R134",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_LEVEL_PWM_BUF",
+        "2": "RF2M_LEVEL_PWM"
+      }
+    },
+    {
+      "ref": "R135",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_LEVEL_PWM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R136",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PREPARE_BUF",
+        "2": "RF2M_PREPARE"
+      }
+    },
+    {
+      "ref": "R137",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PREPARE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R138",
+      "sheet": "07_RF2M_2",
+      "value": "100",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PA_PREPARE_BUF",
+        "2": "RF2M_PA_PREPARE"
+      }
+    },
+    {
+      "ref": "R139",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_PA_PREPARE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U53",
+      "sheet": "07_RF2M_2",
+      "value": "TCA9517DR",
+      "mpn": "TCA9517DR",
+      "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "SOIC selected for robust green-mask webs and manual assembly. Branch disable independent of I2C. B-side RF pull-ups on module. Check100kHz/cable rise time physically.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9517.pdf",
+      "supplier": "Mouser EU (indexed observation)",
+      "supplier_part_number": "595-TCA9517DR",
+      "availability": "Mouser indexed stock6351..6900, MOQ1; unreserved",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 1.09,
+        "10": 0.809,
+        "20": 0.809
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RF2M_SCL",
+        "3": "RF2M_SDA",
+        "4": "GND",
+        "5": "BUS2M_EN",
+        "6": "RF2M_I2C_SDA",
+        "7": "RF2M_I2C_SCL",
+        "8": "V3V3_RF2M"
+      }
+    },
+    {
+      "ref": "C54",
+      "sheet": "07_RF2M_2",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3_RF2M",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C55",
+      "sheet": "07_RF2M_2",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "RF2M",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R91",
+      "sheet": "07_RF2M_2",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "07_RF2M",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF2M_FAULT_N",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U60",
+      "sheet": "08_status",
+      "value": "SN74LVC2G17DCKR",
+      "mpn": "SN74LVC2G17DCKR",
+      "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "group": "08_status",
+      "population": "ALL",
+      "note": "Independent status channels, Ioff prevents GPIO back-power from powered RF boards.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.12,
+        "10": 0.12,
+        "20": 0.12
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_FAULT_N",
+        "2": "RF2M_FAULT",
+        "3": "GND",
+        "4": "RF2M_FAULT_N",
+        "5": "RF80_FAULT",
+        "6": "V3V3"
+      }
+    },
+    {
+      "ref": "C60",
+      "sheet": "08_status",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "08_status",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R93",
+      "sheet": "08_status",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "08_status",
+      "population": "ALL",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "RF80_FAULT_N",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U70",
+      "sheet": "09_LoRa",
+      "value": "Silicontra SX1262ZTR8-GC",
+      "mpn": "SX1262ZTR8-GC",
+      "footprint": "ARDF_CTL:Silicontra_SX1262ZTR8_GC",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "OPTIONAL DNP: manufacturer ZTR8 vs distributor TR8 suffix not confirmed. Manufacturer dimension drawing lacks tolerances and ambiguous 1.12mm callout; footprint qualification OPEN. Do not populate without review.",
+      "source_url": "https://www.silicontra.com/UploadFile/Soft/SX1262ZTR8-GC%28V1.0%29.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Distributor C42381682 lists different TR8 suffix, 170 indexed; NOT confirmed equivalent",
+      "evidence": "ESTIMATE_FX_OF_OBSERVED_USD",
+      "price_breaks_eur": {
+        "1": 5.6,
+        "10": 4.8,
+        "20": 4.8
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND",
+        "5": "LORA_DIO1",
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": "LORA_BUSY",
+        "11": "GND",
+        "12": "GND",
+        "13": "V3V3",
+        "14": "SPI_SCK",
+        "15": "SPI_MISO",
+        "16": "SPI_MOSI",
+        "17": "LORA_NSS",
+        "18": "LORA_RESET",
+        "19": "GND",
+        "20": "GND",
+        "21": "LORA_ANT",
+        "22": "GND"
+      }
+    },
+    {
+      "ref": "R70",
+      "sheet": "09_LoRa",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "LORA_NSS"
+      }
+    },
+    {
+      "ref": "R71",
+      "sheet": "09_LoRa",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "LORA_RESET"
+      }
+    },
+    {
+      "ref": "C70",
+      "sheet": "09_LoRa",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C71",
+      "sheet": "09_LoRa",
+      "value": "10u 10V",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08,
+        "10": 0.08,
+        "20": 0.08
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J7",
+      "sheet": "09_LoRa",
+      "value": "LoRa antenna U.FL",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "footprint": "ARDF_CTL:UFL_Standard",
+      "group": "09_LoRa",
+      "population": "LORA_OPTION_OPEN",
+      "note": "Pin1 signal; duplicated pin2 ground. Underbody copper keepout preserved, exposed-mask-only rectangle omitted. External868MHz antenna; optional module footprint review OPEN.",
+      "source_url": "https://www.hirose.com/product/series/U.FL",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.7,
+        "10": 0.7,
+        "20": 0.7
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "LORA_ANT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "TP1",
+      "sheet": "10_test",
+      "value": "V3V3",
+      "mpn": "PCB_FEATURE",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "10_test",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3"
+      }
+    },
+    {
+      "ref": "TP2",
+      "sheet": "10_test",
+      "value": "GND",
+      "mpn": "PCB_FEATURE",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "10_test",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "TP3",
+      "sheet": "10_test",
+      "value": "VIN_SYS",
+      "mpn": "PCB_FEATURE",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "10_test",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS"
+      }
+    },
+    {
+      "ref": "TP4",
+      "sheet": "10_test",
+      "value": "SAFE_OE_N",
+      "mpn": "PCB_FEATURE",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "10_test",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SAFE_OE_N"
+      }
+    },
+    {
+      "ref": "#FLG1",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "#FLG2",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "PACK_RAW"
+      }
+    },
+    {
+      "ref": "#FLG3",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "USB_VBUS"
+      }
+    },
+    {
+      "ref": "#FLG4",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VIN_SYS"
+      }
+    },
+    {
+      "ref": "#FLG5",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3"
+      }
+    },
+    {
+      "ref": "#FLG6",
+      "sheet": "10_test",
+      "value": "PWR_FLAG",
+      "mpn": "",
+      "footprint": "",
+      "group": "power_flag",
+      "population": "ALL",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.03
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RTC_BACKUP"
+      }
+    }
+  ],
+  "placements": {
+    "01_power": [
+      {
+        "ref": "J1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_J1"
+      },
+      {
+        "ref": "F1",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "Fuse"
+      },
+      {
+        "ref": "D1",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "D_Schottky"
+      },
+      {
+        "ref": "D4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "D"
+      },
+      {
+        "ref": "D2",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "D_Zener"
+      },
+      {
+        "ref": "D3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "D_Schottky"
+      },
+      {
+        "ref": "D21",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "D_Zener"
+      },
+      {
+        "ref": "U1",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "M6_U1"
+      },
+      {
+        "ref": "L1",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "L"
+      },
+      {
+        "ref": "C1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C2",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C5",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C6",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "R1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R2",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "01_power_2": [
+      {
+        "ref": "Q1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_Q1"
+      },
+      {
+        "ref": "R4",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R5",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R6",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R7",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      }
+    ],
+    "02_USB_reset": [
+      {
+        "ref": "J2",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_J2"
+      },
+      {
+        "ref": "R10",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R11",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "U2",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "M6_U2"
+      },
+      {
+        "ref": "R63",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "Q2",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_Q2"
+      },
+      {
+        "ref": "R64",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R65",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R66",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R12",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R13",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "C10",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C11",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "U3",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "M6_U3"
+      },
+      {
+        "ref": "R14",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R15",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "U4",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "M6_U4"
+      },
+      {
+        "ref": "R16",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "02_USB_reset_2": [
+      {
+        "ref": "C12",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "R17",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R18",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "SW1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "SW_Push"
+      },
+      {
+        "ref": "SW2",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "SW_Push"
+      },
+      {
+        "ref": "SW3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "SW_Push"
+      },
+      {
+        "ref": "SW4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "SW_Push"
+      }
+    ],
+    "03_MCU": [
+      {
+        "ref": "U10",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_U10"
+      },
+      {
+        "ref": "C20",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C21",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "J3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_J3"
+      }
+    ],
+    "04_RTC_analog": [
+      {
+        "ref": "U20",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_U20"
+      },
+      {
+        "ref": "BT1",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "Battery_Cell"
+      },
+      {
+        "ref": "D20",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "M6_D20"
+      },
+      {
+        "ref": "R20",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "C22",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C23",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "R22",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R23",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R24",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R25",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "U21",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "M6_U21"
+      },
+      {
+        "ref": "C24",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C25",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C26",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C27",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C28",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "C"
+      },
+      {
+        "ref": "R26",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "05_static_safety": [
+      {
+        "ref": "U30",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_U30"
+      },
+      {
+        "ref": "C30",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "U31",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "M6_U31"
+      },
+      {
+        "ref": "C31",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "R30",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R31",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R32",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R33",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R34",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R35",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R36",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R37",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R38",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R39",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R40",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R41",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R42",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R43",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "05_static_safety_2": [
+      {
+        "ref": "R44",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R45",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R50",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R51",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R52",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R53",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R54",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R55",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R56",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R57",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R58",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R59",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "U32",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "M6_U32"
+      },
+      {
+        "ref": "U33",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "M6_U33"
+      },
+      {
+        "ref": "U34",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "M6_U34"
+      },
+      {
+        "ref": "U35",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "M6_U35"
+      },
+      {
+        "ref": "U36",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "M6_U36"
+      },
+      {
+        "ref": "U37",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "M6_U37"
+      }
+    ],
+    "05_static_safety_3": [
+      {
+        "ref": "C32",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "C33",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "C34",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "C35",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C36",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C37",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "R60",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "D30",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "LED"
+      },
+      {
+        "ref": "R61",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "D31",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "LED"
+      },
+      {
+        "ref": "R62",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "D32",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "LED"
+      }
+    ],
+    "06_RF80": [
+      {
+        "ref": "J4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_J4"
+      },
+      {
+        "ref": "U40",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_U40"
+      },
+      {
+        "ref": "C40",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "C41",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "U41",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "M6_U41"
+      },
+      {
+        "ref": "U42",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_U42"
+      },
+      {
+        "ref": "R80",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "C42",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "C"
+      },
+      {
+        "ref": "C43",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "C"
+      },
+      {
+        "ref": "R100",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R101",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R102",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R103",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R104",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R105",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R106",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R107",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R108",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "06_RF80_2": [
+      {
+        "ref": "R109",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R110",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R111",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R112",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R113",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R114",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R115",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R116",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R117",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "U43",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "M6_U43"
+      },
+      {
+        "ref": "C44",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "C45",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "C"
+      },
+      {
+        "ref": "R81",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      }
+    ],
+    "07_RF2M": [
+      {
+        "ref": "J5",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_J5"
+      },
+      {
+        "ref": "U50",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_U50"
+      },
+      {
+        "ref": "C50",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "C51",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "U51",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "M6_U51"
+      },
+      {
+        "ref": "U52",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_U52"
+      },
+      {
+        "ref": "R90",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "C52",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "C"
+      },
+      {
+        "ref": "C53",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "C"
+      },
+      {
+        "ref": "R118",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R119",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R120",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R121",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R122",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R123",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R124",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R125",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R126",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "07_RF2M_2": [
+      {
+        "ref": "R127",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R128",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R129",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R130",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R131",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R132",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R133",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R134",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R135",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R136",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R137",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R138",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R139",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "U53",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "M6_U53"
+      },
+      {
+        "ref": "C54",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "C"
+      },
+      {
+        "ref": "C55",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "C"
+      },
+      {
+        "ref": "R91",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "08_status": [
+      {
+        "ref": "U60",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_U60"
+      },
+      {
+        "ref": "C60",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "C"
+      },
+      {
+        "ref": "R93",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      }
+    ],
+    "09_LoRa": [
+      {
+        "ref": "U70",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_U70"
+      },
+      {
+        "ref": "R70",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R71",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "C70",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C71",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "J7",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_J7"
+      }
+    ],
+    "10_test": [
+      {
+        "ref": "TP1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_TP1"
+      },
+      {
+        "ref": "TP2",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_TP2"
+      },
+      {
+        "ref": "TP3",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "M6_TP3"
+      },
+      {
+        "ref": "TP4",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "M6_TP4"
+      },
+      {
+        "ref": "#FLG1",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG2",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG3",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG4",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG5",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "PWR_FLAG"
+      },
+      {
+        "ref": "#FLG6",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "PWR_FLAG"
+      }
+    ]
+  }
+}

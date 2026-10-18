@@ -1,0 +1,91 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL.pdf",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Cu.gtl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Cu.gbl'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Paste.gtp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Paste.gbp'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Silkscreen.gto'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Silkscreen.gbo'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-F_Mask.gts'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-B_Mask.gbs'.\nPlotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/",
+      "--format",
+      "excellon",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/drill-report.rpt",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-PTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-NPTH.drl'\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-PTH-drl_map.pdf'.\nCreated file '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/fabrication/CTRL-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/CTRL-physical.ipc",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Cu,Edge.Cuts",
+      "-o",
+      "/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/top-copper.svg",
+      "/home/stefan/src/ardf-tx/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/home/stefan/src/ardf-tx/hardware/controller/review/M6-C1/top-copper.svg'.\nDone.\n",
+    "stderr": ""
+  }
+]

@@ -5,3 +5,6 @@ __pycache__/
 *.bak
 .DS_Store
 # KiCad exports are tracked only for an explicitly authorized review/release package
+
+# Controller local KiCad UI state (M6-C1 sources and review exports are tracked)
+/hardware/controller/*.kicad_prl

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "classification": "host simulation/compilation; no target firmware or electrical measurements",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "-v",
+        "test_model.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_brownout_and_startup (test_model.Safety.test_brownout_and_startup) ... ok\ntest_conflicting_band_requests (test_model.Safety.test_conflicting_band_requests) ... ok\ntest_contradictory_population (test_model.Safety.test_contradictory_population) ... ok\ntest_controller_supply_loss (test_model.Safety.test_controller_supply_loss) ... ok\ntest_deliberate_rearm (test_model.Safety.test_deliberate_rearm) ... ok\ntest_disarmed_low_is_not_missing (test_model.Safety.test_disarmed_low_is_not_missing) ... ok\ntest_frequency (test_model.Safety.test_frequency) ... ok\ntest_invalid_rtc (test_model.Safety.test_invalid_rtc) ... ok\ntest_lora_absence_and_loss (test_model.Safety.test_lora_absence_and_loss) ... ok\ntest_lora_detect (test_model.Safety.test_lora_detect) ... ok\ntest_lost_progress (test_model.Safety.test_lost_progress) ... ok\ntest_missing_calibration (test_model.Safety.test_missing_calibration) ... ok\ntest_missing_module (test_model.Safety.test_missing_module) ... ok\ntest_module_id_current_values (test_model.Safety.test_module_id_current_values) ... ok\ntest_native_prepare_sequence (test_model.Safety.test_native_prepare_sequence) ... ok\ntest_pa_rail_loss (test_model.Safety.test_pa_rail_loss) ... ok\ntest_pa_rail_required (test_model.Safety.test_pa_rail_required) ... ok\ntest_pack_identity (test_model.Safety.test_pack_identity) ... ok\ntest_power_codes_are_written (test_model.Safety.test_power_codes_are_written) ... ok\ntest_profile_combinations (test_model.Safety.test_profile_combinations) ... ok\ntest_progress_establishment (test_model.Safety.test_progress_establishment) ... ok\ntest_reset_while_transmitting (test_model.Safety.test_reset_while_transmitting) ... ok\ntest_rtc_bus_isolation (test_model.Safety.test_rtc_bus_isolation) ... ok\ntest_rtc_validity (test_model.Safety.test_rtc_validity) ... ok\ntest_runtime_validation_failure (test_model.Safety.test_runtime_validation_failure) ... ok\ntest_stabilization (test_model.Safety.test_stabilization) ... ok\ntest_stuck_i2c (test_model.Safety.test_stuck_i2c) ... ok\ntest_timer_morse (test_model.Safety.test_timer_morse) ... ok\ntest_unexpected_fault_status (test_model.Safety.test_unexpected_fault_status) ... ok\ntest_unpowered_module (test_model.Safety.test_unpowered_module) ... ok\ntest_usb_plug_unplug (test_model.Safety.test_usb_plug_unplug) ... ok\ntest_wrong_battery (test_model.Safety.test_wrong_battery) ... ok\n\n----------------------------------------------------------------------\nRan 32 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "contract.c",
+        "test_contract.c",
+        "-lm",
+        "-o",
+        "/tmp/m6-c1-contract"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/m6-c1-contract"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

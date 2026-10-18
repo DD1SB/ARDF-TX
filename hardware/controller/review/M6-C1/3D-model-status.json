@@ -1,0 +1,36 @@
+{
+  "envelopes": [
+    {
+      "ref": "U20",
+      "dimensions_mm": [
+        3.2,
+        1.5,
+        0.8
+      ],
+      "model": "${KIPRJMOD}/ARDF_CTL.3dshapes/RV3032_envelope.wrl",
+      "status": "DIMENSION_ONLY_ENVELOPE_NOT_QUALIFIED_STEP"
+    },
+    {
+      "ref": "J4",
+      "dimensions_mm": [
+        8.86,
+        23.88,
+        9.1
+      ],
+      "model": "${KIPRJMOD}/ARDF_CTL.3dshapes/WR_BHD16_envelope.wrl",
+      "status": "DIMENSION_ONLY_ENVELOPE_NOT_QUALIFIED_STEP"
+    },
+    {
+      "ref": "J5",
+      "dimensions_mm": [
+        8.86,
+        28.96,
+        9.1
+      ],
+      "model": "${KIPRJMOD}/ARDF_CTL.3dshapes/WR_BHD20_envelope.wrl",
+      "status": "DIMENSION_ONLY_ENVELOPE_NOT_QUALIFIED_STEP"
+    }
+  ],
+  "other_models": "Stock KiCad STEP references retained where supplied. LoRa body height/identity remains OPEN; DNP option has no qualified model.",
+  "physical_fit": "NOT_RUN"
+}

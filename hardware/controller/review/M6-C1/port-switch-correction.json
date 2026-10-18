@@ -1,0 +1,268 @@
+{
+  "selected": "TPS22918DBVR",
+  "manufacturer": "https://www.ti.com/lit/gpn/tps22918",
+  "reason": "TPS22919 hot RON was not represented by the earlier0.115ohm allowance",
+  "RON_bound_ohm": 0.088,
+  "RON_evidence": "88mohm max at1.8V,-40..105C;80mohm max at2.5/3.3V. Use88mohm conservative envelope, not typical53mohm.",
+  "CT": "left open, explicitly permitted by datasheet; slow power-up wait250ms still required",
+  "QOD": "tied toOUT, manufacturer permitted",
+  "short_circuit": "No switch current limiter. Buck cycle current limit, controller fuse and independent supervisor reset/POWER pull-down shut down branch. Current-limited short/load-step bench test NOT_RUN.",
+  "changes": [
+    {
+      "ref": "U40",
+      "previous": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "selected": "ARDF_CTL:SOT-23-6_CTL",
+      "endpoints_moved": [
+        {
+          "uuid": "f0f81576-e10a-4669-92f4-5e0784bb436e",
+          "old_mm": [
+            38.1625,
+            65.35
+          ],
+          "new_mm": [
+            37.8625,
+            65.05
+          ]
+        },
+        {
+          "uuid": "53036890-a2d5-4f1d-aabe-6b7b4b834db9",
+          "old_mm": [
+            38.1625,
+            66.0
+          ],
+          "new_mm": [
+            37.8625,
+            66.0
+          ]
+        },
+        {
+          "uuid": "11a0524d-d85d-4411-88e8-da099b5a9dfc",
+          "old_mm": [
+            38.1625,
+            66.65
+          ],
+          "new_mm": [
+            37.8625,
+            66.95
+          ]
+        },
+        {
+          "uuid": "11a0524d-d85d-4411-88e8-da099b5a9dfc",
+          "old_mm": [
+            38.4698,
+            66.65
+          ],
+          "new_mm": [
+            37.8625,
+            66.95
+          ]
+        },
+        {
+          "uuid": "76281460-70d4-47b7-a94b-693d14e57a40",
+          "old_mm": [
+            38.4698,
+            66.65
+          ],
+          "new_mm": [
+            37.8625,
+            66.95
+          ]
+        },
+        {
+          "uuid": "6d1b4cee-11e9-4ef2-b6b0-10cbe955cc03",
+          "old_mm": [
+            39.8375,
+            66.0
+          ],
+          "new_mm": [
+            40.1375,
+            66.0
+          ]
+        },
+        {
+          "uuid": "6d1b4cee-11e9-4ef2-b6b0-10cbe955cc03",
+          "old_mm": [
+            39.8375,
+            65.35
+          ],
+          "new_mm": [
+            40.1375,
+            65.05
+          ]
+        },
+        {
+          "uuid": "a4526f3c-ee91-44cb-a590-d6494998cf75",
+          "old_mm": [
+            39.8375,
+            65.35
+          ],
+          "new_mm": [
+            40.1375,
+            65.05
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U50",
+      "previous": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "selected": "ARDF_CTL:SOT-23-6_CTL",
+      "endpoints_moved": [
+        {
+          "uuid": "6f460439-adc7-4201-a29d-c16ff76edb83",
+          "old_mm": [
+            100.1625,
+            64.35
+          ],
+          "new_mm": [
+            99.8625,
+            64.05
+          ]
+        },
+        {
+          "uuid": "500bae18-100a-4f09-ba39-6e64571dafa2",
+          "old_mm": [
+            100.1625,
+            65.0
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "500bae18-100a-4f09-ba39-6e64571dafa2",
+          "old_mm": [
+            100.4986,
+            65.0
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "745743bf-679c-41f0-b8c0-f6e713e92ad0",
+          "old_mm": [
+            99.9877,
+            64.8252
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "745743bf-679c-41f0-b8c0-f6e713e92ad0",
+          "old_mm": [
+            100.1625,
+            65.0
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "897dfa6d-e382-4a68-ac1e-d08bdef65f9b",
+          "old_mm": [
+            99.9877,
+            64.8252
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "a86efcd0-9784-4380-9f7d-d65dafe577d0",
+          "old_mm": [
+            100.4986,
+            65.0
+          ],
+          "new_mm": [
+            99.8625,
+            65.0
+          ]
+        },
+        {
+          "uuid": "c30913f5-4230-41da-b942-19c5acf92f4d",
+          "old_mm": [
+            100.1625,
+            65.65
+          ],
+          "new_mm": [
+            99.8625,
+            65.95
+          ]
+        },
+        {
+          "uuid": "acc49adc-31c5-4bb2-86ac-4221715271d4",
+          "old_mm": [
+            101.8375,
+            65.0
+          ],
+          "new_mm": [
+            102.1375,
+            65.0
+          ]
+        },
+        {
+          "uuid": "6a0cf020-8092-4087-96f8-cff1ae10745b",
+          "old_mm": [
+            101.8375,
+            64.35
+          ],
+          "new_mm": [
+            102.1375,
+            64.05
+          ]
+        },
+        {
+          "uuid": "882c9c94-82a7-4a50-be9a-473c85ca94d4",
+          "old_mm": [
+            101.5999,
+            64.35
+          ],
+          "new_mm": [
+            102.1375,
+            64.05
+          ]
+        },
+        {
+          "uuid": "acc49adc-31c5-4bb2-86ac-4221715271d4",
+          "old_mm": [
+            101.8375,
+            64.35
+          ],
+          "new_mm": [
+            102.1375,
+            64.05
+          ]
+        },
+        {
+          "uuid": "b3681fe3-9658-4c31-bdc2-15e2186a9398",
+          "old_mm": [
+            101.5999,
+            64.35
+          ],
+          "new_mm": [
+            102.1375,
+            64.05
+          ]
+        },
+        {
+          "uuid": "b3681fe3-9658-4c31-bdc2-15e2186a9398",
+          "old_mm": [
+            101.8375,
+            64.35
+          ],
+          "new_mm": [
+            102.1375,
+            64.05
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "J1": {
+    "mpn": "B3B-XH-A(LF)(SN)",
+    "footprint": "ARDF_CTL:JST_XH_B3B_Standard",
+    "pins": {
+      "1": "PACK_RAW",
+      "2": "GND",
+      "3": "PACK_ID_RAW"
+    }
+  },
+  "D1": {
+    "mpn": "STPS2H100A",
+    "footprint": "ARDF_CTL:D_SMA_CTL",
+    "pins": {
+      "1": "PACK_PROT",
+      "2": "PACK_FUSED"
+    }
+  },
+  "D4": {
+    "mpn": "S1M-E3/61T",
+    "footprint": "ARDF_CTL:D_SMA_CTL",
+    "pins": {
+      "1": "VIN_SYS",
+      "2": "PACK_PROT"
+    }
+  },
+  "D2": {
+    "mpn": "SMBJ18A",
+    "footprint": "ARDF_CTL:D_SMB_CTL",
+    "pins": {
+      "1": "PACK_PROT",
+      "2": "GND"
+    }
+  },
+  "D3": {
+    "mpn": "STPS1L30A",
+    "footprint": "ARDF_CTL:D_SMA_CTL",
+    "pins": {
+      "1": "VIN_SYS",
+      "2": "USB_LIMIT"
+    }
+  },
+  "D21": {
+    "mpn": "BZT52H-B5V1,115",
+    "footprint": "ARDF_CTL:D_SOD-123F_CTL",
+    "pins": {
+      "1": "USB_LIMIT",
+      "2": "GND"
+    }
+  },
+  "U1": {
+    "mpn": "AP63203WU-7",
+    "footprint": "ARDF_CTL:TSOT-23-6_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "VIN_SYS",
+      "3": "VIN_SYS",
+      "4": "GND",
+      "5": "BUCK_SW",
+      "6": "BUCK_BST"
+    }
+  },
+  "Q1": {
+    "mpn": "MMBT3904LT1G",
+    "footprint": "ARDF_CTL:SOT-23_CTL",
+    "pins": {
+      "1": "BATT_BASE",
+      "2": "GND",
+      "3": "PACK_ABSENT"
+    }
+  },
+  "J2": {
+    "mpn": "USB4105-GF-A",
+    "footprint": "ARDF_CTL:USB4105_Standard",
+    "pins": {
+      "A1": "GND",
+      "A4": "USB_VBUS",
+      "A5": "USB_CC1",
+      "A6": "USB_DP_CONN",
+      "A7": "USB_DM_CONN",
+      "A8": null,
+      "A9": "USB_VBUS",
+      "A12": "GND",
+      "B1": "GND",
+      "B4": "USB_VBUS",
+      "B5": "USB_CC2",
+      "B6": "USB_DP_CONN",
+      "B7": "USB_DM_CONN",
+      "B8": null,
+      "B9": "USB_VBUS",
+      "B12": "GND",
+      "SH": "GND"
+    }
+  },
+  "U2": {
+    "mpn": "TPS2553DBVR",
+    "footprint": "ARDF_CTL:SOT-23-6_CTL",
+    "pins": {
+      "1": "USB_VBUS",
+      "2": "GND",
+      "3": "USB_VBUS",
+      "4": "USB_OC_N",
+      "5": "USB_ILIM",
+      "6": "USB_LIMIT"
+    }
+  },
+  "Q2": {
+    "mpn": "MMBT3904LT1G",
+    "footprint": "ARDF_CTL:SOT-23_CTL",
+    "pins": {
+      "1": "USB_BASE",
+      "2": "GND",
+      "3": "USB_VBUS_N"
+    }
+  },
+  "U3": {
+    "mpn": "USBLC6-2SC6",
+    "footprint": "ARDF_CTL:SOT-23-6_CTL",
+    "pins": {
+      "1": "USB_DP_CONN",
+      "2": "GND",
+      "3": "USB_DM_CONN",
+      "4": "USB_DM_CONN",
+      "5": "V3V3",
+      "6": "USB_DP_CONN"
+    }
+  },
+  "U4": {
+    "mpn": "TLV803EA30DBZR",
+    "footprint": "ARDF_CTL:SOT-23_CTL",
+    "pins": {
+      "1": "GND",
+      "2": "MCU_EN",
+      "3": "V3V3"
+    }
+  },
+  "U10": {
+    "mpn": "ESP32-S3-WROOM-1-N4",
+    "footprint": "ARDF_CTL:ESP32_S3_WROOM_1_Standard",
+    "pins": {
+      "1": "GND",
+      "2": "V3V3",
+      "3": "MCU_EN",
+      "40": "GND",
+      "41": "GND",
+      "4": "MODULE_ID_ADC",
+      "5": "PA_RAIL_ADC",
+      "6": "AF_PWM",
+      "7": "LEVEL_PWM",
+      "8": "LORA_BUSY",
+      "9": "LORA_DIO1",
+      "10": "RF2M_SDA",
+      "11": "RF2M_SCL",
+      "12": "RTC80_SDA",
+      "13": "USB_DM",
+      "14": "USB_DP",
+      "15": null,
+      "16": null,
+      "17": "RTC80_SCL",
+      "18": "LORA_NSS",
+      "19": "SPI_MOSI",
+      "20": "SPI_SCK",
+      "21": "SPI_MISO",
+      "22": "INIT_OK",
+      "23": "RF2M_FAULT",
+      "24": "KEY",
+      "25": "SLOT",
+      "26": null,
+      "27": "BOOT",
+      "28": "RF80_FAULT",
+      "29": "START_N",
+      "30": "USB_VBUS_N",
+      "31": "SHIFT_LATCH",
+      "32": "PROGRESS",
+      "33": "LORA_RESET",
+      "34": "ARM",
+      "35": "MUTE_RELEASE",
+      "36": "UART_RX",
+      "37": "UART_TX",
+      "38": "PACK_ID_ADC",
+      "39": "BAT_ADC"
+    }
+  },
+  "J3": {
+    "mpn": "61300311121",
+    "footprint": "ARDF_CTL:UART_61300311121",
+    "pins": {
+      "1": "GND",
+      "2": "UART_TX",
+      "3": "UART_RX"
+    }
+  },
+  "U20": {
+    "mpn": "RV-3032-C7-32.768KHZ-2.5PPM-TA-QA",
+    "footprint": "ARDF_CTL:RV3032_C7",
+    "pins": {
+      "1": "RTC_BACKUP",
+      "2": "RTC80_SDA",
+      "3": null,
+      "4": "GND",
+      "5": "GND",
+      "6": "V3V3",
+      "7": null,
+      "8": "RTC80_SCL"
+    }
+  },
+  "D20": {
+    "mpn": "BAS116,115",
+    "footprint": "ARDF_CTL:SOT-23_CTL",
+    "pins": {
+      "1": "CELL_POS",
+      "2": null,
+      "3": "BACKUP_D"
+    }
+  },
+  "U21": {
+    "mpn": "TMUX1511PWR",
+    "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "BAT_DIV",
+      "3": "BAT_ADC",
+      "4": "V3V3",
+      "5": "PACK_ID_RAW",
+      "6": "PACK_ID_ADC",
+      "7": "GND",
+      "8": "MODULE_ID_ADC",
+      "9": "RF2M_MODULE_ID",
+      "10": "V3V3",
+      "11": "PA_RAIL_ADC",
+      "12": "RF2M_PA_RAIL_ADC",
+      "13": "V3V3",
+      "14": "V3V3"
+    }
+  },
+  "U30": {
+    "mpn": "SN74HC595PWR",
+    "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "FOX_REQ",
+      "2": "PWR0",
+      "3": "PWR1",
+      "4": "PACK4_SOFT",
+      "5": "PATH_TRAIN",
+      "6": "PROFILE_FULL",
+      "7": "PREPARE",
+      "8": "GND",
+      "9": "SHIFT_CHAIN",
+      "10": "MCU_EN",
+      "11": "SPI_SCK",
+      "12": "SHIFT_LATCH",
+      "13": "SAFE_OE_N",
+      "14": "SPI_MOSI",
+      "15": "PA_REQ",
+      "16": "V3V3"
+    }
+  },
+  "U31": {
+    "mpn": "SN74HC595PWR",
+    "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "POWER80",
+      "2": "POWER2M",
+      "3": "BUS80",
+      "4": "BUS2M",
+      "5": "LED_ARM",
+      "6": "LED_FAULT",
+      "7": "BAND2",
+      "8": "GND",
+      "9": null,
+      "10": "MCU_EN",
+      "11": "SPI_SCK",
+      "12": "SHIFT_LATCH",
+      "13": "SAFE_OE_N",
+      "14": "SHIFT_CHAIN",
+      "15": "PA_PREPARE",
+      "16": "V3V3"
+    }
+  },
+  "U32": {
+    "mpn": "SN74LVC1G04DBVR",
+    "footprint": "ARDF_CTL:SOT-23-5_CTL",
+    "pins": {
+      "1": null,
+      "2": "PACK_ABSENT",
+      "3": "GND",
+      "4": "PACK_PRESENT",
+      "5": "V3V3"
+    }
+  },
+  "U33": {
+    "mpn": "SN74LVC1G10DBVR",
+    "footprint": "ARDF_CTL:SOT-23-6_CTL",
+    "pins": {
+      "1": "INIT_OK",
+      "2": "MCU_EN",
+      "3": "GND",
+      "4": "SAFE_OE_N",
+      "5": "V3V3",
+      "6": "PACK_PRESENT"
+    }
+  },
+  "U34": {
+    "mpn": "SN74LVC2G04DCKR",
+    "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+    "pins": {
+      "1": "SAFE_OE_N",
+      "2": "BAND80",
+      "3": "GND",
+      "4": "BAND2",
+      "5": "SAFE",
+      "6": "V3V3"
+    }
+  },
+  "U35": {
+    "mpn": "SN74LVC00APWR",
+    "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "SAFE",
+      "2": "BAND80",
+      "3": "OE80_N",
+      "4": "SAFE",
+      "5": "BAND2",
+      "6": "OE2M_N",
+      "7": "GND",
+      "8": null,
+      "9": "GND",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "GND",
+      "14": "V3V3"
+    }
+  },
+  "U36": {
+    "mpn": "SN74LVC1G04DBVR",
+    "footprint": "ARDF_CTL:SOT-23-5_CTL",
+    "pins": {
+      "1": null,
+      "2": "ARM",
+      "3": "GND",
+      "4": "DISARMED",
+      "5": "V3V3"
+    }
+  },
+  "U37": {
+    "mpn": "SN74LVC08APWR",
+    "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "BUS80",
+      "2": "DISARMED",
+      "3": "BUS80_EN",
+      "4": "BUS2M",
+      "5": "DISARMED",
+      "6": "BUS2M_EN",
+      "7": "GND",
+      "8": null,
+      "9": "GND",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "GND",
+      "14": "V3V3"
+    }
+  },
+  "D30": {
+    "mpn": "LTST-C190KGKT",
+    "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+    "pins": {
+      "1": "GND",
+      "2": "D30_A"
+    }
+  },
+  "D31": {
+    "mpn": "LTST-C190KRKT",
+    "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+    "pins": {
+      "1": "GND",
+      "2": "D31_A"
+    }
+  },
+  "D32": {
+    "mpn": "LTST-C190KGKT",
+    "footprint": "ARDF_CTL:LED_0603_1608Metric_CTL",
+    "pins": {
+      "1": "GND",
+      "2": "D32_A"
+    }
+  },
+  "J4": {
+    "mpn": "61201621621",
+    "footprint": "ARDF_CTL:IDC16_61201621621",
+    "pins": {
+      "1": "V3V3_RF80",
+      "2": "GND",
+      "3": "RF80_SCL",
+      "4": "GND",
+      "5": "RF80_SDA",
+      "6": "RF80_LEASE",
+      "7": "RF80_ARM",
+      "8": "RF80_CW_KEY",
+      "9": "RF80_PA_REQ",
+      "10": "RF80_FOX_REQ",
+      "11": "RF80_PWR0",
+      "12": "RF80_PWR1",
+      "13": "RF80_MUTE_N",
+      "14": "RF80_FAULT_N",
+      "15": "RF80_PACK4_OK",
+      "16": "GND"
+    }
+  },
+  "U40": {
+    "mpn": "TPS22918DBVR",
+    "footprint": "ARDF_CTL:SOT-23-6_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND",
+      "3": "POWER80",
+      "4": null,
+      "5": "V3V3_RF80",
+      "6": "V3V3_RF80"
+    }
+  },
+  "U41": {
+    "mpn": "SN74LVC244APWR",
+    "footprint": "ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "OE80_N",
+      "10": "GND",
+      "19": "OE80_N",
+      "20": "V3V3_RF80",
+      "2": "ARM",
+      "18": "RF80_ARM_BUF",
+      "4": "KEY",
+      "16": "RF80_CW_KEY_BUF",
+      "6": "PROGRESS",
+      "14": "RF80_LEASE_BUF",
+      "8": "MUTE_RELEASE",
+      "12": "RF80_MUTE_N_BUF",
+      "11": "PA_REQ",
+      "9": "RF80_PA_REQ_BUF",
+      "13": "FOX_REQ",
+      "7": "RF80_FOX_REQ_BUF",
+      "15": "PWR0",
+      "5": "RF80_PWR0_BUF",
+      "17": "PWR1",
+      "3": "RF80_PWR1_BUF"
+    }
+  },
+  "U42": {
+    "mpn": "SN74LVC125APWR",
+    "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "7": "GND",
+      "14": "V3V3_RF80",
+      "1": "OE80_N",
+      "2": "PACK4_SOFT",
+      "3": "RF80_PACK4_OK_BUF",
+      "4": "V3V3_RF80",
+      "5": "GND",
+      "6": null,
+      "10": "V3V3_RF80",
+      "9": "GND",
+      "8": null,
+      "13": "V3V3_RF80",
+      "12": "GND",
+      "11": null
+    }
+  },
+  "U43": {
+    "mpn": "TCA9517DR",
+    "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "RTC80_SCL",
+      "3": "RTC80_SDA",
+      "4": "GND",
+      "5": "BUS80_EN",
+      "6": "RF80_SDA",
+      "7": "RF80_SCL",
+      "8": "V3V3_RF80"
+    }
+  },
+  "J5": {
+    "mpn": "61202021621",
+    "footprint": "ARDF_CTL:IDC20_61202021621",
+    "pins": {
+      "1": "V3V3_RF2M",
+      "2": "GND",
+      "3": "RF2M_I2C_SDA",
+      "4": "RF2M_I2C_SCL",
+      "5": "RF2M_ARM",
+      "6": "RF2M_SLOT",
+      "7": "RF2M_KEY",
+      "8": "RF2M_PROGRESS",
+      "9": "RF2M_MUTE_N",
+      "10": "RF2M_PA_RAIL_ADC",
+      "11": "RF2M_PATH_TRAIN",
+      "12": "RF2M_PROFILE_FULL",
+      "13": "RF2M_AF_PWM",
+      "14": "RF2M_LEVEL_PWM",
+      "15": "RF2M_PREPARE",
+      "16": "RF2M_FAULT_N",
+      "17": "GND",
+      "18": "GND",
+      "19": "RF2M_MODULE_ID",
+      "20": "RF2M_PA_PREPARE"
+    }
+  },
+  "U50": {
+    "mpn": "TPS22918DBVR",
+    "footprint": "ARDF_CTL:SOT-23-6_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND",
+      "3": "POWER2M",
+      "4": null,
+      "5": "V3V3_RF2M",
+      "6": "V3V3_RF2M"
+    }
+  },
+  "U51": {
+    "mpn": "SN74LVC244APWR",
+    "footprint": "ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL",
+    "pins": {
+      "1": "OE2M_N",
+      "10": "GND",
+      "19": "OE2M_N",
+      "20": "V3V3_RF2M",
+      "2": "ARM",
+      "18": "RF2M_ARM_BUF",
+      "4": "SLOT",
+      "16": "RF2M_SLOT_BUF",
+      "6": "KEY",
+      "14": "RF2M_KEY_BUF",
+      "8": "PROGRESS",
+      "12": "RF2M_PROGRESS_BUF",
+      "11": "MUTE_RELEASE",
+      "9": "RF2M_MUTE_N_BUF",
+      "13": "PATH_TRAIN",
+      "7": "RF2M_PATH_TRAIN_BUF",
+      "15": "PROFILE_FULL",
+      "5": "RF2M_PROFILE_FULL_BUF",
+      "17": "AF_PWM",
+      "3": "RF2M_AF_PWM_BUF"
+    }
+  },
+  "U52": {
+    "mpn": "SN74LVC125APWR",
+    "footprint": "ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL",
+    "pins": {
+      "7": "GND",
+      "14": "V3V3_RF2M",
+      "1": "OE2M_N",
+      "2": "LEVEL_PWM",
+      "3": "RF2M_LEVEL_PWM_BUF",
+      "4": "OE2M_N",
+      "5": "PREPARE",
+      "6": "RF2M_PREPARE_BUF",
+      "10": "OE2M_N",
+      "9": "PA_PREPARE",
+      "8": "RF2M_PA_PREPARE_BUF",
+      "13": "V3V3_RF2M",
+      "12": "GND",
+      "11": null
+    }
+  },
+  "U53": {
+    "mpn": "TCA9517DR",
+    "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+    "pins": {
+      "1": "V3V3",
+      "2": "RF2M_SCL",
+      "3": "RF2M_SDA",
+      "4": "GND",
+      "5": "BUS2M_EN",
+      "6": "RF2M_I2C_SDA",
+      "7": "RF2M_I2C_SCL",
+      "8": "V3V3_RF2M"
+    }
+  },
+  "U60": {
+    "mpn": "SN74LVC2G17DCKR",
+    "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+    "pins": {
+      "1": "RF80_FAULT_N",
+      "2": "RF2M_FAULT",
+      "3": "GND",
+      "4": "RF2M_FAULT_N",
+      "5": "RF80_FAULT",
+      "6": "V3V3"
+    }
+  },
+  "U70": {
+    "mpn": "SX1262ZTR8-GC",
+    "footprint": "ARDF_CTL:Silicontra_SX1262ZTR8_GC",
+    "pins": {
+      "1": "GND",
+      "2": "GND",
+      "3": "GND",
+      "4": "GND",
+      "5": "LORA_DIO1",
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": "LORA_BUSY",
+      "11": "GND",
+      "12": "GND",
+      "13": "V3V3",
+      "14": "SPI_SCK",
+      "15": "SPI_MISO",
+      "16": "SPI_MOSI",
+      "17": "LORA_NSS",
+      "18": "LORA_RESET",
+      "19": "GND",
+      "20": "GND",
+      "21": "LORA_ANT",
+      "22": "GND"
+    }
+  },
+  "J7": {
+    "mpn": "U.FL-R-SMT-1(10)",
+    "footprint": "ARDF_CTL:UFL_Standard",
+    "pins": {
+      "1": "LORA_ANT",
+      "2": "GND"
+    }
+  }
+}
