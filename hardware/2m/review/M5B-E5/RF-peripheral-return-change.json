@@ -1,0 +1,23 @@
+{
+  "B_Cu_no_track_rule_before": [
+    29,
+    43,
+    170,
+    65
+  ],
+  "after": [
+    29,
+    43,
+    168.6,
+    65
+  ],
+  "ground_copper_removed_by_rule_change": false,
+  "new_signal": "MOD_DRIVE audio control0.15mm B.Cu atX169",
+  "distance_from_SMA_signal_mm": 4,
+  "estimated_infinite_plane_return_fraction_for0p15mm_slot": 0.0039243684597999005,
+  "RF_matching_copper": "unaltered",
+  "ground_under_RF_line": "unaltered",
+  "SMA_four_ground_PTHs": "unaltered",
+  "physical_launch_stability": "NOT_RUN",
+  "purpose": "Local peripheral corridor outside protectedRFline/PAreturns; no crossing under matching conductors."
+}

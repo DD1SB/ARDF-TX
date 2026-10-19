@@ -1,0 +1,11 @@
+# M5B-E5 compact layout
+
+The native RF2M candidate is 150 × 110 mm, reduced from 180 × 140 mm by 34.52% in area. Native origin is (20,20) mm. Four 3.2 mm NPTH centres are (25,25), (165,25), (165,125), (25,125); normalized centres (5,5), (145,5), (145,105), (5,105) match the actual RF80-V1R1 board. The controller and RF80 files are unchanged.
+
+E4R1 `2f9982c1b72cd97ba4dad6c992143032b309cca7` remains the electrical/source-joint baseline. The driver, PA, matching/filter, normal connector, source contact and bar move rigidly (−20,0) mm. Other blocks are placed and rerouted around them. [Every component displacement](../hardware/2m/review/M5B-E5/component-displacement.json) and [initial impact extraction](../hardware/2m/review/M5B-E5/initial-placement-and-impact.json) identify the actual arrangement. All values, MPNs, electrical package pads and population memberships are compared against E4R1.
+
+J101 is at (27,80), battery J301 (35,120), normal SMA J501 (165,52.206), training MMCX J701 (165,116). J302 rotates 90° without changing pole numbering. Q401 moves to (115,26); R506 follows to (115,32). C401 rotates 180° for a short boost switch connection. C402 moves locally to (80.7,104); C307 rotates 180° for a ground escape, and reference-divider R810 moves to (125.5,97.5). These retain their original values and terminal nets. DC probes TP502 and TP303 move outside the helper cooling envelope; their final positions are in the displacement map. RF probes retain their positions relative to the matching network.
+
+The routing audit identified a real washer hazard: new KEY copper crossed H6's exposed ground contact and inherited VPA copper lay under H5's metal washer. Explicit ground annuli, OD9.5/ID4.3 mm, and two additional ordinary ground vias now define the washer contacts. Those vias are outside the original 98-via source structure and receive no thermal-model credit. The affected DC/control conductors are rerouted around the contacts. Corner supports use insulating M3 posts/washers. See [washer evidence](../hardware/2m/review/M5B-E5/ground-washer-correction.json).
+
+Nonessential footprint silk moves to assembly layers. Required board revision, connector/polarity, normal/training and mutually exclusive supply markings use 1 mm / 0.15 mm lettering. Current checks, rather than the initial autorouter result, determine review readiness.

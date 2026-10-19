@@ -1,0 +1,8195 @@
+{
+  "baseline": "2f9982c1b72cd97ba4dad6c992143032b309cca7",
+  "parts": [
+    {
+      "ref": "U302",
+      "before_mm": [
+        76.0,
+        129.0
+      ],
+      "before_bbox_mm": [
+        73.35,
+        126.975,
+        78.225,
+        131.025
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        75.0,
+        109.0
+      ],
+      "MPN": "TPS611781RNWR",
+      "footprint": "ARDF_2M:TI_RNW0013A_4222804C"
+    },
+    {
+      "ref": "C201",
+      "before_mm": [
+        58.0,
+        40.5
+      ],
+      "before_bbox_mm": [
+        56.495,
+        39.745,
+        59.505,
+        41.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        50.0,
+        35.5
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C702",
+      "before_mm": [
+        172.7,
+        145.9
+      ],
+      "before_bbox_mm": [
+        171.195,
+        145.145,
+        174.205,
+        146.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        147.7,
+        121.9
+      ],
+      "MPN": "CC0603JRNPO9BN101",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q405",
+      "before_mm": [
+        130.7,
+        84.0
+      ],
+      "before_bbox_mm": [
+        128.745,
+        82.275,
+        132.655,
+        85.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        121.69999999999999,
+        74.0
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "R713",
+      "before_mm": [
+        190.7,
+        135.0
+      ],
+      "before_bbox_mm": [
+        189.945,
+        133.495,
+        191.455,
+        136.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        165.7,
+        111.0
+      ],
+      "MPN": "RC0603FR-0768R1L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP503",
+      "before_mm": [
+        152.56,
+        42.7
+      ],
+      "before_bbox_mm": [
+        151.535,
+        41.675,
+        153.585,
+        43.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        137.56,
+        42.7
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "L302",
+      "before_mm": [
+        76.0,
+        139.0
+      ],
+      "before_bbox_mm": [
+        69.225,
+        131.625,
+        82.775,
+        146.375
+      ],
+      "rotation_deg": 90.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        75.0,
+        119.0
+      ],
+      "MPN": "SRP1265A-4R7M",
+      "footprint": "ARDF_2M:Bourns_SRP1265A"
+    },
+    {
+      "ref": "C723",
+      "before_mm": [
+        182.0,
+        135.0
+      ],
+      "before_bbox_mm": [
+        181.245,
+        133.495,
+        182.755,
+        136.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        157.0,
+        111.0
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C103",
+      "before_mm": [
+        47.0,
+        50.0
+      ],
+      "before_bbox_mm": [
+        45.995,
+        48.275,
+        48.005,
+        51.725
+      ],
+      "rotation_deg": 90.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        35.0,
+        50.0
+      ],
+      "MPN": "CC0805KKX7R9BB105",
+      "footprint": "ARDF_2M:C_0805_2012Metric_E3"
+    },
+    {
+      "ref": "U206",
+      "before_mm": [
+        76.0,
+        101.0
+      ],
+      "before_bbox_mm": [
+        72.275,
+        96.24,
+        79.725,
+        105.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        68.0,
+        94.0
+      ],
+      "MPN": "74HC11D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "D304",
+      "before_mm": [
+        113.7,
+        114.1
+      ],
+      "before_bbox_mm": [
+        111.43,
+        112.925,
+        115.925,
+        115.275
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        111.7,
+        97.1
+      ],
+      "MPN": "BZT52H-C10,115",
+      "footprint": "ARDF_2M:D_SOD-123F_E3"
+    },
+    {
+      "ref": "C722",
+      "before_mm": [
+        179.0,
+        132.9
+      ],
+      "before_bbox_mm": [
+        178.245,
+        131.395,
+        179.755,
+        134.405
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        154.0,
+        108.9
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R951",
+      "before_mm": [
+        100.0,
+        133.0
+      ],
+      "before_bbox_mm": [
+        99.245,
+        131.495,
+        100.755,
+        134.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        92.0,
+        113.0
+      ],
+      "MPN": "RT0603BRD0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R822",
+      "before_mm": [
+        160.0,
+        110.7
+      ],
+      "before_bbox_mm": [
+        158.495,
+        109.945,
+        161.505,
+        111.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        144.0,
+        90.7
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R304",
+      "before_mm": [
+        50.2,
+        115.5
+      ],
+      "before_bbox_mm": [
+        48.695,
+        114.745,
+        51.705,
+        116.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        48.2,
+        98.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R823",
+      "before_mm": [
+        160.0,
+        108.1
+      ],
+      "before_bbox_mm": [
+        158.495,
+        107.345,
+        161.505,
+        108.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        144.0,
+        88.1
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C507",
+      "before_mm": [
+        118.825,
+        85.0
+      ],
+      "before_bbox_mm": [
+        118.07,
+        83.495,
+        119.58,
+        86.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        109.825,
+        75.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R802",
+      "before_mm": [
+        142.0,
+        121.2
+      ],
+      "before_bbox_mm": [
+        140.495,
+        120.445,
+        143.505,
+        121.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        126.0,
+        101.2
+      ],
+      "MPN": "RC0603FR-07620RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C307",
+      "before_mm": [
+        130.0,
+        126.0
+      ],
+      "before_bbox_mm": [
+        129.245,
+        124.495,
+        130.755,
+        127.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        128.0,
+        109.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R203",
+      "before_mm": [
+        63.5,
+        92.2
+      ],
+      "before_bbox_mm": [
+        61.995,
+        91.445,
+        65.005,
+        92.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        55.5,
+        85.2
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q404",
+      "before_mm": [
+        133.4,
+        42.5
+      ],
+      "before_bbox_mm": [
+        131.445,
+        40.775,
+        135.355,
+        44.225
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        118.4,
+        42.5
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "C646",
+      "before_mm": [
+        154.502399,
+        48.831
+      ],
+      "before_bbox_mm": [
+        153.747399,
+        47.326,
+        155.257399,
+        50.336
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        134.502399,
+        48.831
+      ],
+      "MPN": "GRM1885C1H220JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R824",
+      "before_mm": [
+        145.9,
+        110.7
+      ],
+      "before_bbox_mm": [
+        144.395,
+        109.945,
+        147.405,
+        111.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        129.9,
+        90.7
+      ],
+      "MPN": "RC0603FR-0749K9L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TH801",
+      "before_mm": [
+        168.0,
+        33.0
+      ],
+      "before_bbox_mm": [
+        164.625,
+        31.125,
+        171.375,
+        34.875
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        153.0,
+        33.0
+      ],
+      "MPN": "NTCLE100E3103JB0",
+      "footprint": "ARDF_2M:NTC_Remote_2Wire"
+    },
+    {
+      "ref": "C202",
+      "before_mm": [
+        71.4,
+        91.3
+      ],
+      "before_bbox_mm": [
+        69.675,
+        90.295,
+        73.125,
+        92.305
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        63.400000000000006,
+        84.3
+      ],
+      "MPN": "CC0805KKX7R9BB105",
+      "footprint": "ARDF_2M:C_0805_2012Metric_E3"
+    },
+    {
+      "ref": "U101",
+      "before_mm": [
+        40.0,
+        61.0
+      ],
+      "before_bbox_mm": [
+        38.525,
+        59.66,
+        41.475,
+        62.17
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        28.0,
+        61.0
+      ],
+      "MPN": "TPS22919DCKR",
+      "footprint": "ARDF_2M:SOT-363_SC-70-6_E3"
+    },
+    {
+      "ref": "U402",
+      "before_mm": [
+        112.0,
+        85.0
+      ],
+      "before_bbox_mm": [
+        109.925,
+        83.1,
+        114.075,
+        86.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        103.0,
+        75.0
+      ],
+      "MPN": "SN74LVC1G3157DBVR",
+      "footprint": "ARDF_2M:SOT-23-6_E3"
+    },
+    {
+      "ref": "R514",
+      "before_mm": [
+        113.4,
+        81.6
+      ],
+      "before_bbox_mm": [
+        111.895,
+        80.845,
+        114.905,
+        82.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        104.4,
+        71.6
+      ],
+      "MPN": "RC0603FR-0727KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L713",
+      "before_mm": [
+        167.1,
+        140.0
+      ],
+      "before_bbox_mm": [
+        165.595,
+        139.245,
+        168.605,
+        140.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        142.1,
+        116.0
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R117",
+      "before_mm": [
+        150.2,
+        120.0
+      ],
+      "before_bbox_mm": [
+        148.695,
+        119.245,
+        151.705,
+        120.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        134.2,
+        100.0
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C614",
+      "before_mm": [
+        70.5728,
+        51.625
+      ],
+      "before_bbox_mm": [
+        69.8178,
+        50.12,
+        71.3278,
+        53.13
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        50.5728,
+        51.625
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C401",
+      "before_mm": [
+        76.0,
+        124.0
+      ],
+      "before_bbox_mm": [
+        75.245,
+        122.495,
+        76.755,
+        125.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        75.0,
+        104.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U208",
+      "before_mm": [
+        42.0,
+        78.0
+      ],
+      "before_bbox_mm": [
+        40.045,
+        76.275,
+        43.955,
+        79.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        42.0,
+        71.0
+      ],
+      "MPN": "TLV803EA29DBZR",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "Q701",
+      "before_mm": [
+        172.0,
+        140.0
+      ],
+      "before_bbox_mm": [
+        170.045,
+        138.275,
+        173.955,
+        141.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        147.0,
+        116.0
+      ],
+      "MPN": "MMBTH10LT1G",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "R829",
+      "before_mm": [
+        146.1,
+        123.2
+      ],
+      "before_bbox_mm": [
+        144.595,
+        122.445,
+        147.605,
+        123.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        130.1,
+        103.2
+      ],
+      "MPN": "RC0603FR-074K02L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C801",
+      "before_mm": [
+        127.6,
+        116.6
+      ],
+      "before_bbox_mm": [
+        126.845,
+        115.095,
+        128.355,
+        118.105
+      ],
+      "rotation_deg": 90.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        111.6,
+        96.6
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R703",
+      "before_mm": [
+        169.2,
+        148.7
+      ],
+      "before_bbox_mm": [
+        167.695,
+        147.945,
+        170.705,
+        149.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        144.2,
+        124.69999999999999
+      ],
+      "MPN": "RC0603FR-0710RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R402",
+      "before_mm": [
+        73.0,
+        125.0
+      ],
+      "before_bbox_mm": [
+        71.495,
+        124.245,
+        74.505,
+        125.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        72.0,
+        105.0
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q305",
+      "before_mm": [
+        40.0,
+        124.0
+      ],
+      "before_bbox_mm": [
+        38.045,
+        122.275,
+        41.955,
+        125.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        38.0,
+        107.0
+      ],
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "C104",
+      "before_mm": [
+        151.0,
+        122.8
+      ],
+      "before_bbox_mm": [
+        149.495,
+        122.045,
+        152.505,
+        123.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        135.0,
+        102.8
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R515",
+      "before_mm": [
+        122.3,
+        78.8
+      ],
+      "before_bbox_mm": [
+        120.795,
+        78.045,
+        123.805,
+        79.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        113.3,
+        68.8
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R205",
+      "before_mm": [
+        70.0,
+        103.5
+      ],
+      "before_bbox_mm": [
+        68.495,
+        102.745,
+        71.505,
+        104.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        62.0,
+        96.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U202",
+      "before_mm": [
+        61.0,
+        85.0
+      ],
+      "before_bbox_mm": [
+        57.275,
+        79.6,
+        64.725,
+        90.225
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        53.0,
+        78.0
+      ],
+      "MPN": "74HC174D,653",
+      "footprint": "ARDF_2M:SOIC-16_3.9x9.9mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R501",
+      "before_mm": [
+        121.0,
+        94.0
+      ],
+      "before_bbox_mm": [
+        119.495,
+        93.245,
+        122.505,
+        94.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        112.0,
+        84.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R704",
+      "before_mm": [
+        177.2,
+        141.6
+      ],
+      "before_bbox_mm": [
+        174.895,
+        140.445,
+        179.505,
+        142.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        152.2,
+        117.6
+      ],
+      "MPN": "RC1206FR-07100RL",
+      "footprint": "ARDF_2M:R_1206_3216Metric_E3"
+    },
+    {
+      "ref": "D801",
+      "before_mm": [
+        131.2,
+        109.2
+      ],
+      "before_bbox_mm": [
+        129.53,
+        108.225,
+        132.825,
+        110.175
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        115.19999999999999,
+        89.2
+      ],
+      "MPN": "BAT54WS-7-F",
+      "footprint": "ARDF_2M:D_SOD-323_E3"
+    },
+    {
+      "ref": "C950",
+      "before_mm": [
+        96.0,
+        124.0
+      ],
+      "before_bbox_mm": [
+        94.995,
+        122.275,
+        97.005,
+        125.725
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        88.0,
+        104.0
+      ],
+      "MPN": "GRM21BR71E475KA73L",
+      "footprint": "ARDF_2M:C_0805_2012Metric_E3"
+    },
+    {
+      "ref": "U950",
+      "before_mm": [
+        99.0,
+        126.0
+      ],
+      "before_bbox_mm": [
+        97.645,
+        124.63,
+        100.355,
+        127.275
+      ],
+      "rotation_deg": 0.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        91.0,
+        106.0
+      ],
+      "MPN": "TLV76701DRVR",
+      "footprint": "ARDF_2M:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_E3"
+    },
+    {
+      "ref": "C506",
+      "before_mm": [
+        138.0,
+        33.0
+      ],
+      "before_bbox_mm": [
+        137.245,
+        31.495,
+        138.755,
+        34.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        123.0,
+        33.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q401",
+      "before_mm": [
+        154.0,
+        26.0
+      ],
+      "before_bbox_mm": [
+        151.265,
+        22.575,
+        161.815,
+        27.525
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        139.0,
+        26.0
+      ],
+      "MPN": "D45H11",
+      "footprint": "ARDF_2M:TO-220-3_Vertical_E3"
+    },
+    {
+      "ref": "Q306",
+      "before_mm": [
+        40.9,
+        115.0
+      ],
+      "before_bbox_mm": [
+        38.945,
+        113.275,
+        42.855,
+        116.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        38.9,
+        98.0
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "D930",
+      "before_mm": [
+        95.0,
+        91.3
+      ],
+      "before_bbox_mm": [
+        93.33,
+        90.325,
+        96.625,
+        92.275
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        87.0,
+        84.3
+      ],
+      "MPN": "BAT54WS-7-F",
+      "footprint": "ARDF_2M:D_SOD-323_E3"
+    },
+    {
+      "ref": "R308",
+      "before_mm": [
+        96.6,
+        111.6
+      ],
+      "before_bbox_mm": [
+        95.095,
+        110.845,
+        98.105,
+        112.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        94.6,
+        94.6
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R930",
+      "before_mm": [
+        90.0,
+        94.3
+      ],
+      "before_bbox_mm": [
+        88.495,
+        93.545,
+        91.505,
+        95.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        82.0,
+        87.3
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U803",
+      "before_mm": [
+        154.0,
+        111.0
+      ],
+      "before_bbox_mm": [
+        150.275,
+        106.24,
+        157.725,
+        115.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        138.0,
+        91.0
+      ],
+      "MPN": "LM339BDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R513",
+      "before_mm": [
+        138.0,
+        29.7
+      ],
+      "before_bbox_mm": [
+        135.695,
+        28.545,
+        140.305,
+        30.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        123.0,
+        29.7
+      ],
+      "MPN": "RC1206FR-071KL",
+      "footprint": "ARDF_2M:R_1206_3216Metric_E3"
+    },
+    {
+      "ref": "D306",
+      "before_mm": [
+        33.0,
+        115.3
+      ],
+      "before_bbox_mm": [
+        30.73,
+        114.125,
+        35.225,
+        116.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        31.0,
+        98.3
+      ],
+      "MPN": "BZT52H-C10,115",
+      "footprint": "ARDF_2M:D_SOD-123F_E3"
+    },
+    {
+      "ref": "D307",
+      "before_mm": [
+        45.3,
+        123.3
+      ],
+      "before_bbox_mm": [
+        43.03,
+        122.125,
+        47.525,
+        124.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        43.3,
+        106.3
+      ],
+      "MPN": "BZT52H-C10,115",
+      "footprint": "ARDF_2M:D_SOD-123F_E3"
+    },
+    {
+      "ref": "U305",
+      "before_mm": [
+        101.0,
+        114.0
+      ],
+      "before_bbox_mm": [
+        98.925,
+        112.1,
+        103.075,
+        115.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        93.0,
+        94.0
+      ],
+      "MPN": "TPS22810DBVR",
+      "footprint": "ARDF_2M:SOT-23-6_E3"
+    },
+    {
+      "ref": "TL605",
+      "before_mm": [
+        104.059,
+        55.0
+      ],
+      "before_bbox_mm": [
+        103.809,
+        53.6295,
+        109.85,
+        56.3705
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        84.059,
+        55.0
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_5p691mm"
+    },
+    {
+      "ref": "Q703",
+      "before_mm": [
+        150.4,
+        129.6
+      ],
+      "before_bbox_mm": [
+        148.445,
+        127.875,
+        152.355,
+        131.325
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        125.4,
+        105.6
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "TL604",
+      "before_mm": [
+        96.2834,
+        55.0
+      ],
+      "before_bbox_mm": [
+        96.0334,
+        53.6295,
+        102.879,
+        56.3705
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        76.2834,
+        55.0
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_6p4956mm"
+    },
+    {
+      "ref": "R809",
+      "before_mm": [
+        138.2,
+        117.6
+      ],
+      "before_bbox_mm": [
+        136.695,
+        116.845,
+        139.705,
+        118.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        122.19999999999999,
+        97.6
+      ],
+      "MPN": "RC0603FR-0739K2L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R312",
+      "before_mm": [
+        45.5,
+        113.8
+      ],
+      "before_bbox_mm": [
+        43.995,
+        113.045,
+        47.005,
+        114.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        43.5,
+        96.8
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R306",
+      "before_mm": [
+        119.4,
+        119.0
+      ],
+      "before_bbox_mm": [
+        117.895,
+        118.245,
+        120.905,
+        119.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        117.4,
+        102.0
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U701",
+      "before_mm": [
+        156.0,
+        134.0
+      ],
+      "before_bbox_mm": [
+        153.925,
+        132.1,
+        158.075,
+        135.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        131.0,
+        110.0
+      ],
+      "MPN": "SN74LVC1G125DBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3"
+    },
+    {
+      "ref": "R307",
+      "before_mm": [
+        80.2,
+        112.9
+      ],
+      "before_bbox_mm": [
+        78.695,
+        112.145,
+        81.705,
+        113.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        78.2,
+        95.9
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R518",
+      "before_mm": [
+        130.0,
+        87.5
+      ],
+      "before_bbox_mm": [
+        128.495,
+        86.745,
+        131.505,
+        88.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        121.0,
+        77.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R309",
+      "before_mm": [
+        124.0,
+        125.0
+      ],
+      "before_bbox_mm": [
+        120.145,
+        123.045,
+        127.855,
+        126.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        122.0,
+        108.0
+      ],
+      "MPN": "WSL2512R0680FEA",
+      "footprint": "ARDF_2M:R_2512_6332Metric_E3"
+    },
+    {
+      "ref": "C505",
+      "before_mm": [
+        126.0,
+        78.6
+      ],
+      "before_bbox_mm": [
+        124.495,
+        77.845,
+        127.505,
+        79.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        117.0,
+        68.6
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L604",
+      "before_mm": [
+        84.8,
+        45.2
+      ],
+      "before_bbox_mm": [
+        81.675,
+        40.825,
+        87.925,
+        49.575
+      ],
+      "rotation_deg": 180.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        64.8,
+        45.2
+      ],
+      "MPN": "1812SMS-R15JLC",
+      "footprint": "ARDF_2M:Coilcraft_1812SMS_Doc184"
+    },
+    {
+      "ref": "R110",
+      "before_mm": [
+        45.5,
+        91.2
+      ],
+      "before_bbox_mm": [
+        43.995,
+        90.445,
+        47.005,
+        91.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        45.5,
+        84.2
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R815",
+      "before_mm": [
+        110.3,
+        121.9
+      ],
+      "before_bbox_mm": [
+        108.795,
+        121.145,
+        111.805,
+        122.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        94.3,
+        101.9
+      ],
+      "MPN": "RT0603BRD0773K2L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R706",
+      "before_mm": [
+        122.3,
+        76.3
+      ],
+      "before_bbox_mm": [
+        120.795,
+        75.545,
+        123.805,
+        77.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        113.3,
+        66.3
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R405",
+      "before_mm": [
+        73.0,
+        122.5
+      ],
+      "before_bbox_mm": [
+        71.495,
+        121.745,
+        74.505,
+        123.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        72.0,
+        102.5
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L635",
+      "before_mm": [
+        118.4224,
+        44.6919
+      ],
+      "before_bbox_mm": [
+        115.2974,
+        40.3169,
+        121.5474,
+        49.0669
+      ],
+      "rotation_deg": 180.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        98.4224,
+        44.6919
+      ],
+      "MPN": "1812SMS-33NJLC",
+      "footprint": "ARDF_2M:Coilcraft_1812SMS_Doc184"
+    },
+    {
+      "ref": "H6",
+      "before_mm": [
+        112.0,
+        68.0
+      ],
+      "before_bbox_mm": [
+        108.525,
+        64.525,
+        115.475,
+        71.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        92.0,
+        68.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "R116",
+      "before_mm": [
+        38.8,
+        92.4
+      ],
+      "before_bbox_mm": [
+        37.295,
+        91.645,
+        40.305,
+        93.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        38.8,
+        85.4
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R503",
+      "before_mm": [
+        121.0,
+        96.8
+      ],
+      "before_bbox_mm": [
+        119.495,
+        96.045,
+        122.505,
+        97.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        112.0,
+        86.8
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP201",
+      "before_mm": [
+        49.45,
+        89.175
+      ],
+      "before_bbox_mm": [
+        48.425,
+        88.15,
+        50.475,
+        90.2
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        49.45,
+        82.175
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "Q309",
+      "before_mm": [
+        41.0,
+        132.3
+      ],
+      "before_bbox_mm": [
+        39.045,
+        130.575,
+        42.955,
+        134.025
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        39.0,
+        115.30000000000001
+      ],
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "R313",
+      "before_mm": [
+        38.9,
+        111.8
+      ],
+      "before_bbox_mm": [
+        37.395,
+        111.045,
+        40.405,
+        112.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        36.9,
+        94.8
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C303",
+      "before_mm": [
+        50.7,
+        118.3
+      ],
+      "before_bbox_mm": [
+        49.195,
+        117.545,
+        52.205,
+        119.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        48.7,
+        101.3
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R517",
+      "before_mm": [
+        126.1,
+        75.8
+      ],
+      "before_bbox_mm": [
+        124.595,
+        75.045,
+        127.605,
+        76.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        117.1,
+        65.8
+      ],
+      "MPN": "RC0603JR-070RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L613",
+      "before_mm": [
+        67.4853,
+        55.0
+      ],
+      "before_bbox_mm": [
+        65.9803,
+        54.245,
+        68.9903,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        47.485299999999995,
+        55.0
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP602",
+      "before_mm": [
+        115.2,
+        55.0
+      ],
+      "before_bbox_mm": [
+        114.9,
+        54.7,
+        115.5,
+        55.3
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        95.2,
+        55.0
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:Probe_Pad_0p6"
+    },
+    {
+      "ref": "C634",
+      "before_mm": [
+        113.6,
+        45.0
+      ],
+      "before_bbox_mm": [
+        112.845,
+        43.495,
+        114.355,
+        46.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        93.6,
+        45.0
+      ],
+      "MPN": "GRM1885C1H331JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R827",
+      "before_mm": [
+        155.8,
+        104.7
+      ],
+      "before_bbox_mm": [
+        154.295,
+        103.945,
+        157.305,
+        105.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        139.8,
+        84.7
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "J701",
+      "before_mm": [
+        190.0,
+        140.0
+      ],
+      "before_bbox_mm": [
+        187.365,
+        137.365,
+        192.635,
+        142.635
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        165.0,
+        116.0
+      ],
+      "MPN": "66012102111404",
+      "footprint": "ARDF_2M:WR-MMCX_Wuerth_66012102111404_Vertical_E3"
+    },
+    {
+      "ref": "TL603",
+      "before_mm": [
+        88.6205,
+        55.0
+      ],
+      "before_bbox_mm": [
+        88.3705,
+        53.6295,
+        94.8334,
+        56.3705
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        68.6205,
+        55.0
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_6p1129mm"
+    },
+    {
+      "ref": "R310",
+      "before_mm": [
+        39.1,
+        120.9
+      ],
+      "before_bbox_mm": [
+        37.595,
+        120.145,
+        40.605,
+        121.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        37.1,
+        103.9
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R708",
+      "before_mm": [
+        154.9,
+        130.4
+      ],
+      "before_bbox_mm": [
+        153.395,
+        129.645,
+        156.405,
+        131.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        129.9,
+        106.4
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R102",
+      "before_mm": [
+        40.6,
+        82.5
+      ],
+      "before_bbox_mm": [
+        39.095,
+        81.745,
+        42.105,
+        83.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        40.6,
+        75.5
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C643",
+      "before_mm": [
+        157.477399,
+        55.206
+      ],
+      "before_bbox_mm": [
+        155.972399,
+        54.451,
+        158.982399,
+        55.961
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        137.477399,
+        55.206
+      ],
+      "MPN": "GRM1885C1H120JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R112",
+      "before_mm": [
+        54.8,
+        103.2
+      ],
+      "before_bbox_mm": [
+        53.295,
+        102.445,
+        56.305,
+        103.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        46.8,
+        96.2
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP604",
+      "before_mm": [
+        89.1,
+        55.0
+      ],
+      "before_bbox_mm": [
+        88.8,
+        54.7,
+        89.4,
+        55.3
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        69.1,
+        55.0
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:Probe_Pad_0p6"
+    },
+    {
+      "ref": "TP802",
+      "before_mm": [
+        130.85,
+        112.2
+      ],
+      "before_bbox_mm": [
+        129.825,
+        111.175,
+        131.875,
+        113.225
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        114.85,
+        92.2
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "U601",
+      "before_mm": [
+        51.9603,
+        54.05
+      ],
+      "before_bbox_mm": [
+        49.8853,
+        52.15,
+        54.0353,
+        55.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        31.960299999999997,
+        54.05
+      ],
+      "MPN": "SN74LVC1G125DBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3"
+    },
+    {
+      "ref": "C612",
+      "before_mm": [
+        62.8228,
+        58.375
+      ],
+      "before_bbox_mm": [
+        62.0678,
+        56.87,
+        63.5778,
+        59.88
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        42.8228,
+        58.375
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "F301",
+      "before_mm": [
+        43.4,
+        142.8
+      ],
+      "before_bbox_mm": [
+        41.095,
+        141.645,
+        45.705,
+        143.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        41.4,
+        125.80000000000001
+      ],
+      "MPN": "0466004.NRHF",
+      "footprint": "ARDF_2M:Fuse_1206_3216Metric_E3"
+    },
+    {
+      "ref": "TP303",
+      "before_mm": [
+        156.625,
+        38.0
+      ],
+      "before_bbox_mm": [
+        155.6,
+        36.975,
+        157.65,
+        39.025
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        141.625,
+        38.0
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "C803",
+      "before_mm": [
+        148.825,
+        109.73
+      ],
+      "before_bbox_mm": [
+        148.07,
+        108.225,
+        149.58,
+        111.235
+      ],
+      "rotation_deg": 90.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        132.825,
+        89.73
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C941",
+      "before_mm": [
+        58.0,
+        58.0
+      ],
+      "before_bbox_mm": [
+        57.245,
+        56.495,
+        58.755,
+        59.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        38.0,
+        58.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "D309",
+      "before_mm": [
+        117.7,
+        138.0
+      ],
+      "before_bbox_mm": [
+        115.925,
+        134.475,
+        119.475,
+        141.57
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        109.7,
+        118.0
+      ],
+      "MPN": "SS14-E3/61T",
+      "footprint": "ARDF_2M:D_SMA_E3"
+    },
+    {
+      "ref": "C704",
+      "before_mm": [
+        146.7,
+        105.6
+      ],
+      "before_bbox_mm": [
+        145.195,
+        104.845,
+        148.205,
+        106.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        137.7,
+        95.6
+      ],
+      "MPN": "CC0603JRNPO9BN101",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R301",
+      "before_mm": [
+        60.5,
+        138.6
+      ],
+      "before_bbox_mm": [
+        58.995,
+        137.845,
+        62.005,
+        139.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        58.5,
+        121.6
+      ],
+      "MPN": "RC0603FR-07116KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R808",
+      "before_mm": [
+        138.3,
+        104.7
+      ],
+      "before_bbox_mm": [
+        136.795,
+        103.945,
+        139.805,
+        105.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        122.30000000000001,
+        84.7
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R806",
+      "before_mm": [
+        134.0,
+        115.7
+      ],
+      "before_bbox_mm": [
+        132.495,
+        114.945,
+        135.505,
+        116.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.0,
+        95.7
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP102",
+      "before_mm": [
+        44.1,
+        54.1
+      ],
+      "before_bbox_mm": [
+        43.075,
+        53.075,
+        45.125,
+        55.125
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        32.1,
+        54.1
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "L611",
+      "before_mm": [
+        59.7353,
+        55.0
+      ],
+      "before_bbox_mm": [
+        58.2303,
+        54.245,
+        61.2403,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        39.7353,
+        55.0
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C940",
+      "before_mm": [
+        97.3,
+        115.0
+      ],
+      "before_bbox_mm": [
+        96.545,
+        113.495,
+        98.055,
+        116.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        89.3,
+        95.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R115",
+      "before_mm": [
+        38.4,
+        95.2
+      ],
+      "before_bbox_mm": [
+        36.895,
+        94.445,
+        39.905,
+        95.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        38.4,
+        88.2
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C701",
+      "before_mm": [
+        156.0,
+        140.0
+      ],
+      "before_bbox_mm": [
+        154.495,
+        139.245,
+        157.505,
+        140.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        131.0,
+        116.0
+      ],
+      "MPN": "CC0603JRNPO9BN101",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U207",
+      "before_mm": [
+        91.0,
+        101.0
+      ],
+      "before_bbox_mm": [
+        87.275,
+        96.24,
+        94.725,
+        105.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        83.0,
+        94.0
+      ],
+      "MPN": "74HC32D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R932",
+      "before_mm": [
+        98.0,
+        98.7
+      ],
+      "before_bbox_mm": [
+        97.245,
+        97.195,
+        98.755,
+        100.205
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        90.0,
+        91.7
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R202",
+      "before_mm": [
+        60.0,
+        30.0
+      ],
+      "before_bbox_mm": [
+        58.495,
+        29.245,
+        61.505,
+        30.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        52.0,
+        25.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C802",
+      "before_mm": [
+        134.825,
+        109.73
+      ],
+      "before_bbox_mm": [
+        134.07,
+        108.225,
+        135.58,
+        111.235
+      ],
+      "rotation_deg": 90.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.82499999999999,
+        89.73
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L301",
+      "before_mm": [
+        51.0,
+        133.0
+      ],
+      "before_bbox_mm": [
+        44.225,
+        125.625,
+        57.775,
+        140.375
+      ],
+      "rotation_deg": -90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        49.0,
+        116.0
+      ],
+      "MPN": "SRP1265A-100M",
+      "footprint": "ARDF_2M:Bourns_SRP1265A"
+    },
+    {
+      "ref": "H3",
+      "before_mm": [
+        195.0,
+        155.0
+      ],
+      "before_bbox_mm": [
+        191.525,
+        151.525,
+        198.475,
+        158.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        -30.0,
+        -30.0
+      ],
+      "after_mm": [
+        165.0,
+        125.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "C206",
+      "before_mm": [
+        66.375,
+        99.73
+      ],
+      "before_bbox_mm": [
+        65.62,
+        98.225,
+        67.13,
+        101.235
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        58.375,
+        92.73
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q302",
+      "before_mm": [
+        115.0,
+        120.0
+      ],
+      "before_bbox_mm": [
+        113.045,
+        118.275,
+        116.955,
+        121.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        113.0,
+        103.0
+      ],
+      "MPN": "AO3401A",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "TP101",
+      "before_mm": [
+        44.1,
+        51.4
+      ],
+      "before_bbox_mm": [
+        43.075,
+        50.375,
+        45.125,
+        52.425
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        32.1,
+        51.4
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R819",
+      "before_mm": [
+        156.5,
+        117.6
+      ],
+      "before_bbox_mm": [
+        154.995,
+        116.845,
+        158.005,
+        118.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        140.5,
+        97.6
+      ],
+      "MPN": "RC0603FR-07110KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C636",
+      "before_mm": [
+        116.4087,
+        59.175
+      ],
+      "before_bbox_mm": [
+        115.6537,
+        57.67,
+        117.1637,
+        60.68
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        96.4087,
+        59.175
+      ],
+      "MPN": "GRM1885C1H330JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C205",
+      "before_mm": [
+        96.375,
+        81.19
+      ],
+      "before_bbox_mm": [
+        95.62,
+        79.685,
+        97.13,
+        82.695
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        88.375,
+        74.19
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R509",
+      "before_mm": [
+        131.1,
+        64.4
+      ],
+      "before_bbox_mm": [
+        129.595,
+        63.645,
+        132.605,
+        65.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        116.1,
+        64.4
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C711",
+      "before_mm": [
+        156.0,
+        144.0
+      ],
+      "before_bbox_mm": [
+        155.245,
+        142.495,
+        156.755,
+        145.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        131.0,
+        120.0
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP601",
+      "before_mm": [
+        108.5,
+        55.0
+      ],
+      "before_bbox_mm": [
+        108.2,
+        54.7,
+        108.8,
+        55.3
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        88.5,
+        55.0
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:Probe_Pad_0p6"
+    },
+    {
+      "ref": "R952",
+      "before_mm": [
+        92.0,
+        67.0
+      ],
+      "before_bbox_mm": [
+        89.695,
+        65.845,
+        94.305,
+        68.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        72.0,
+        67.0
+      ],
+      "MPN": "RC1206JR-070RL",
+      "footprint": "ARDF_2M:R_1206_3216Metric_E3"
+    },
+    {
+      "ref": "J101",
+      "before_mm": [
+        30.0,
+        80.0
+      ],
+      "before_bbox_mm": [
+        25.26,
+        74.375,
+        36.245,
+        108.485
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        -3.0,
+        0.0
+      ],
+      "after_mm": [
+        27.0,
+        80.0
+      ],
+      "MPN": "61202021621",
+      "footprint": "ARDF_2M:WR_BHD_61202021621"
+    },
+    {
+      "ref": "C644",
+      "before_mm": [
+        145.802399,
+        48.831
+      ],
+      "before_bbox_mm": [
+        145.047399,
+        47.326,
+        146.557399,
+        50.336
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        125.80239900000001,
+        48.831
+      ],
+      "MPN": "GRM1885C1H220JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R204",
+      "before_mm": [
+        89.2,
+        107.3
+      ],
+      "before_bbox_mm": [
+        87.695,
+        106.545,
+        90.705,
+        108.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        81.2,
+        100.3
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C406",
+      "before_mm": [
+        69.1,
+        123.9
+      ],
+      "before_bbox_mm": [
+        67.595,
+        123.145,
+        70.605,
+        124.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        68.1,
+        103.9
+      ],
+      "MPN": "CC0603JRNPO9BN101",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U401",
+      "before_mm": [
+        124.0,
+        85.0
+      ],
+      "before_bbox_mm": [
+        120.275,
+        80.24,
+        127.725,
+        89.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        115.0,
+        75.0
+      ],
+      "MPN": "TLV9004IDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "TL608",
+      "before_mm": [
+        130.122999,
+        52.206
+      ],
+      "before_bbox_mm": [
+        129.872999,
+        50.8355,
+        142.389999,
+        53.5765
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        110.122999,
+        52.206
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_12p167mm"
+    },
+    {
+      "ref": "TP301",
+      "before_mm": [
+        37.2,
+        132.75
+      ],
+      "before_bbox_mm": [
+        36.175,
+        131.725,
+        38.225,
+        133.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        35.2,
+        115.75
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R813",
+      "before_mm": [
+        142.5,
+        104.7
+      ],
+      "before_bbox_mm": [
+        140.995,
+        103.945,
+        144.005,
+        105.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        126.5,
+        84.7
+      ],
+      "MPN": "RC0603FR-0720K9L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U802",
+      "before_mm": [
+        140.0,
+        111.0
+      ],
+      "before_bbox_mm": [
+        136.275,
+        106.24,
+        143.725,
+        115.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        124.0,
+        91.0
+      ],
+      "MPN": "LM339BDR",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "TL607",
+      "before_mm": [
+        116.4087,
+        55.0
+      ],
+      "before_bbox_mm": [
+        116.1587,
+        53.6295,
+        127.302,
+        56.3705
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        96.4087,
+        55.0
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_10p7933mm"
+    },
+    {
+      "ref": "L704",
+      "before_mm": [
+        171.1,
+        134.9
+      ],
+      "before_bbox_mm": [
+        169.595,
+        134.145,
+        172.605,
+        135.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        146.1,
+        110.9
+      ],
+      "MPN": "LQW18ANR18G80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C705",
+      "before_mm": [
+        147.1,
+        112.9
+      ],
+      "before_bbox_mm": [
+        145.595,
+        112.145,
+        148.605,
+        113.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        122.1,
+        88.9
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP940",
+      "before_mm": [
+        55.025,
+        92.575
+      ],
+      "before_bbox_mm": [
+        54.0,
+        91.55,
+        56.05,
+        93.6
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        47.025,
+        85.575
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "TP401",
+      "before_mm": [
+        90.5375,
+        70.0
+      ],
+      "before_bbox_mm": [
+        89.5125,
+        68.975,
+        91.5625,
+        71.025
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        70.5375,
+        70.0
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R510",
+      "before_mm": [
+        142.9,
+        39.3
+      ],
+      "before_bbox_mm": [
+        141.395,
+        38.545,
+        144.405,
+        40.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        127.9,
+        39.3
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C611",
+      "before_mm": [
+        58.9478,
+        51.625
+      ],
+      "before_bbox_mm": [
+        58.1928,
+        50.12,
+        59.7028,
+        53.13
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        38.9478,
+        51.625
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C645",
+      "before_mm": [
+        150.152399,
+        48.831
+      ],
+      "before_bbox_mm": [
+        149.397399,
+        47.326,
+        150.907399,
+        50.336
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        130.152399,
+        48.831
+      ],
+      "MPN": "GRM1885C1H270JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R603",
+      "before_mm": [
+        70.5728,
+        58.425
+      ],
+      "before_bbox_mm": [
+        69.8178,
+        56.92,
+        71.3278,
+        59.93
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        50.5728,
+        58.425
+      ],
+      "MPN": "RC0603FR-0796R5L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L641",
+      "before_mm": [
+        149.077399,
+        52.206
+      ],
+      "before_bbox_mm": [
+        147.242399,
+        50.436,
+        150.912399,
+        53.976
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        129.077399,
+        52.206
+      ],
+      "MPN": "1008CS-390XJLC",
+      "footprint": "ARDF_2M:Coilcraft_1008CS_Doc101"
+    },
+    {
+      "ref": "C639",
+      "before_mm": [
+        143.064999,
+        52.206
+      ],
+      "before_bbox_mm": [
+        141.559999,
+        51.451,
+        144.569999,
+        52.961
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        123.064999,
+        52.206
+      ],
+      "MPN": "GRM1885C1H331JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "J501",
+      "before_mm": [
+        185.0,
+        52.206
+      ],
+      "before_bbox_mm": [
+        180.805,
+        48.011,
+        189.195,
+        56.401
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        165.0,
+        52.206
+      ],
+      "MPN": "132134",
+      "footprint": "ARDF_2M:SMA_Amphenol_132134_Vertical_E3"
+    },
+    {
+      "ref": "H5",
+      "before_mm": [
+        112.0,
+        32.0
+      ],
+      "before_bbox_mm": [
+        108.525,
+        28.525,
+        115.475,
+        35.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        92.0,
+        32.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "C642",
+      "before_mm": [
+        153.127399,
+        55.206
+      ],
+      "before_bbox_mm": [
+        151.622399,
+        54.451,
+        154.632399,
+        55.961
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        133.127399,
+        55.206
+      ],
+      "MPN": "GRM1885C1H180JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R814",
+      "before_mm": [
+        146.4,
+        102.9
+      ],
+      "before_bbox_mm": [
+        144.895,
+        102.145,
+        147.905,
+        103.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        130.4,
+        82.9
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R825",
+      "before_mm": [
+        152.6,
+        117.0
+      ],
+      "before_bbox_mm": [
+        151.095,
+        116.245,
+        154.105,
+        117.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        136.6,
+        97.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L723",
+      "before_mm": [
+        184.7,
+        139.0
+      ],
+      "before_bbox_mm": [
+        183.195,
+        138.245,
+        186.205,
+        139.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        159.7,
+        115.0
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U205",
+      "before_mm": [
+        61.0,
+        101.0
+      ],
+      "before_bbox_mm": [
+        57.275,
+        96.24,
+        64.725,
+        105.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        53.0,
+        94.0
+      ],
+      "MPN": "74HC21D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R206",
+      "before_mm": [
+        55.0,
+        89.5
+      ],
+      "before_bbox_mm": [
+        53.495,
+        88.745,
+        56.505,
+        90.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        47.0,
+        82.5
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C703",
+      "before_mm": [
+        167.9,
+        137.4
+      ],
+      "before_bbox_mm": [
+        166.395,
+        136.645,
+        169.405,
+        138.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        142.9,
+        113.4
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C508",
+      "before_mm": [
+        116.0375,
+        85.0
+      ],
+      "before_bbox_mm": [
+        115.2825,
+        83.495,
+        116.7925,
+        86.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        107.0375,
+        75.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C102",
+      "before_mm": [
+        47.0,
+        46.0
+      ],
+      "before_bbox_mm": [
+        46.245,
+        44.495,
+        47.755,
+        47.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        35.0,
+        46.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C961",
+      "before_mm": [
+        46.3,
+        118.0
+      ],
+      "before_bbox_mm": [
+        44.675,
+        115.675,
+        47.925,
+        120.325
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        44.3,
+        101.0
+      ],
+      "MPN": "GRM32ER71V226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "R821",
+      "before_mm": [
+        160.0,
+        113.5
+      ],
+      "before_bbox_mm": [
+        158.495,
+        112.745,
+        161.505,
+        114.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        144.0,
+        93.5
+      ],
+      "MPN": "RC0603FR-0726K5L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C502",
+      "before_mm": [
+        117.8,
+        90.9
+      ],
+      "before_bbox_mm": [
+        116.295,
+        90.145,
+        119.305,
+        91.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        108.8,
+        80.9
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP206",
+      "before_mm": [
+        69.175,
+        106.5
+      ],
+      "before_bbox_mm": [
+        68.15,
+        105.475,
+        70.2,
+        107.525
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        61.175,
+        99.5
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "C306",
+      "before_mm": [
+        128.0,
+        120.3
+      ],
+      "before_bbox_mm": [
+        127.245,
+        118.795,
+        128.755,
+        121.805
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        126.0,
+        103.3
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U201",
+      "before_mm": [
+        56.0,
+        35.0
+      ],
+      "before_bbox_mm": [
+        53.47,
+        33.225,
+        58.155,
+        36.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        48.0,
+        30.0
+      ],
+      "MPN": "TPS3431SDRBR",
+      "footprint": "ARDF_2M:VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm_E3"
+    },
+    {
+      "ref": "R826",
+      "before_mm": [
+        160.0,
+        105.4
+      ],
+      "before_bbox_mm": [
+        158.495,
+        104.645,
+        161.505,
+        106.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        144.0,
+        85.4
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L634",
+      "before_mm": [
+        103.419,
+        55.0
+      ],
+      "before_bbox_mm": [
+        101.994,
+        53.95,
+        104.844,
+        56.05
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        83.419,
+        55.0
+      ],
+      "MPN": "0603HC-47NXJRW",
+      "footprint": "ARDF_2M:Coilcraft_0603HC_Doc218"
+    },
+    {
+      "ref": "C931",
+      "before_mm": [
+        96.7,
+        95.0
+      ],
+      "before_bbox_mm": [
+        95.945,
+        93.495,
+        97.455,
+        96.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        88.7,
+        88.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R805",
+      "before_mm": [
+        134.0,
+        112.9
+      ],
+      "before_bbox_mm": [
+        132.495,
+        112.145,
+        135.505,
+        113.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.0,
+        92.9
+      ],
+      "MPN": "RC0603FR-07160KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R507",
+      "before_mm": [
+        143.0,
+        42.0
+      ],
+      "before_bbox_mm": [
+        141.295,
+        41.025,
+        144.705,
+        42.975
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        128.0,
+        42.0
+      ],
+      "MPN": "RC0805FR-078R2L",
+      "footprint": "ARDF_2M:R_0805_2012Metric_E3"
+    },
+    {
+      "ref": "C407",
+      "before_mm": [
+        94.0,
+        131.0
+      ],
+      "before_bbox_mm": [
+        92.995,
+        129.275,
+        95.005,
+        132.725
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        86.0,
+        111.0
+      ],
+      "MPN": "CC0805KKX7R9BB105",
+      "footprint": "ARDF_2M:C_0805_2012Metric_E3"
+    },
+    {
+      "ref": "C301",
+      "before_mm": [
+        35.0,
+        120.0
+      ],
+      "before_bbox_mm": [
+        33.375,
+        117.675,
+        36.625,
+        122.325
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        33.0,
+        103.0
+      ],
+      "MPN": "C3225X7R1V106M250AC",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "C632",
+      "before_mm": [
+        95.5084,
+        55.0
+      ],
+      "before_bbox_mm": [
+        94.0034,
+        54.245,
+        97.0134,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        75.5084,
+        55.0
+      ],
+      "MPN": "GRM1885C1H331JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R801",
+      "before_mm": [
+        142.0,
+        124.0
+      ],
+      "before_bbox_mm": [
+        140.495,
+        123.245,
+        143.505,
+        124.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        126.0,
+        104.0
+      ],
+      "MPN": "RC0603FR-07150RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP202",
+      "before_mm": [
+        63.475,
+        107.81
+      ],
+      "before_bbox_mm": [
+        62.45,
+        106.785,
+        64.5,
+        108.835
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        55.475,
+        100.81
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "C203",
+      "before_mm": [
+        66.375,
+        80.555
+      ],
+      "before_bbox_mm": [
+        65.62,
+        79.05,
+        67.13,
+        82.06
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        58.375,
+        73.555
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R303",
+      "before_mm": [
+        60.2,
+        128.0
+      ],
+      "before_bbox_mm": [
+        58.695,
+        127.245,
+        61.705,
+        128.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        58.2,
+        111.0
+      ],
+      "MPN": "RC0603FR-0746K4L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L722",
+      "before_mm": [
+        181.0,
+        139.0
+      ],
+      "before_bbox_mm": [
+        179.495,
+        138.245,
+        182.505,
+        139.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        156.0,
+        115.0
+      ],
+      "MPN": "LQW18AN91NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R506",
+      "before_mm": [
+        147.0,
+        31.0
+      ],
+      "before_bbox_mm": [
+        143.145,
+        29.045,
+        150.855,
+        32.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        132.0,
+        31.0
+      ],
+      "MPN": "RC2512FK-0710RL",
+      "footprint": "ARDF_2M:R_2512_6332Metric_E3"
+    },
+    {
+      "ref": "C706",
+      "before_mm": [
+        176.7,
+        139.0
+      ],
+      "before_bbox_mm": [
+        175.195,
+        138.245,
+        178.205,
+        139.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        151.7,
+        115.0
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R413",
+      "before_mm": [
+        94.0,
+        138.0
+      ],
+      "before_bbox_mm": [
+        92.045,
+        134.145,
+        95.955,
+        141.855
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        86.0,
+        118.0
+      ],
+      "MPN": "RC2512FK-074R7L",
+      "footprint": "ARDF_2M:R_2512_6332Metric_E3"
+    },
+    {
+      "ref": "R950",
+      "before_mm": [
+        101.0,
+        130.0
+      ],
+      "before_bbox_mm": [
+        99.495,
+        129.245,
+        102.505,
+        130.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        93.0,
+        110.0
+      ],
+      "MPN": "RT0603BRD0758K2L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R519",
+      "before_mm": [
+        77.4,
+        107.1
+      ],
+      "before_bbox_mm": [
+        75.895,
+        106.345,
+        78.905,
+        107.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        69.4,
+        100.1
+      ],
+      "MPN": "RC0603JR-070RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R804",
+      "before_mm": [
+        137.8,
+        124.0
+      ],
+      "before_bbox_mm": [
+        136.295,
+        123.245,
+        139.305,
+        124.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        121.80000000000001,
+        104.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R302",
+      "before_mm": [
+        60.3,
+        130.8
+      ],
+      "before_bbox_mm": [
+        58.795,
+        130.045,
+        61.805,
+        131.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        58.3,
+        113.80000000000001
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C960",
+      "before_mm": [
+        66.8,
+        133.0
+      ],
+      "before_bbox_mm": [
+        65.175,
+        130.675,
+        68.425,
+        135.325
+      ],
+      "rotation_deg": 90.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        65.8,
+        113.0
+      ],
+      "MPN": "GRM32ER71V226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "R816",
+      "before_mm": [
+        124.7,
+        121.2
+      ],
+      "before_bbox_mm": [
+        123.195,
+        120.445,
+        126.205,
+        121.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        108.7,
+        101.2
+      ],
+      "MPN": "RT0603BRD0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R511",
+      "before_mm": [
+        130.0,
+        77.0
+      ],
+      "before_bbox_mm": [
+        128.495,
+        76.245,
+        131.505,
+        77.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        121.0,
+        67.0
+      ],
+      "MPN": "RC0603FR-0718KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "H1",
+      "before_mm": [
+        25.0,
+        25.0
+      ],
+      "before_bbox_mm": [
+        21.525,
+        21.525,
+        28.475,
+        28.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        0.0,
+        0.0
+      ],
+      "after_mm": [
+        25.0,
+        25.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "R502",
+      "before_mm": [
+        121.7,
+        91.0
+      ],
+      "before_bbox_mm": [
+        120.195,
+        90.245,
+        123.205,
+        91.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        112.7,
+        81.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C613",
+      "before_mm": [
+        66.6978,
+        51.625
+      ],
+      "before_bbox_mm": [
+        65.9428,
+        50.12,
+        67.4528,
+        53.13
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        46.6978,
+        51.625
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R714",
+      "before_mm": [
+        156.2,
+        137.5
+      ],
+      "before_bbox_mm": [
+        154.695,
+        136.745,
+        157.705,
+        138.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        131.2,
+        113.5
+      ],
+      "MPN": "RC0603FR-07100RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R710",
+      "before_mm": [
+        73.5,
+        107.0
+      ],
+      "before_bbox_mm": [
+        71.995,
+        106.245,
+        75.005,
+        107.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_logic",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        65.5,
+        100.0
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C635",
+      "before_mm": [
+        119.0,
+        37.6
+      ],
+      "before_bbox_mm": [
+        118.245,
+        36.095,
+        119.755,
+        39.105
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        99.0,
+        37.6
+      ],
+      "MPN": "GRM188R71E105KA12D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R705",
+      "before_mm": [
+        172.5,
+        143.7
+      ],
+      "before_bbox_mm": [
+        170.995,
+        142.945,
+        174.005,
+        144.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        147.5,
+        119.69999999999999
+      ],
+      "MPN": "RC0603FR-0747RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP603",
+      "before_mm": [
+        145.3,
+        52.206
+      ],
+      "before_bbox_mm": [
+        145.0,
+        51.906,
+        145.6,
+        52.506
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        125.30000000000001,
+        52.206
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:Probe_Pad_0p6"
+    },
+    {
+      "ref": "R940",
+      "before_mm": [
+        101.0,
+        109.3
+      ],
+      "before_bbox_mm": [
+        100.245,
+        107.795,
+        101.755,
+        110.805
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        93.0,
+        89.3
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U303",
+      "before_mm": [
+        111.0,
+        129.0
+      ],
+      "before_bbox_mm": [
+        106.575,
+        125.375,
+        115.425,
+        132.7
+      ],
+      "rotation_deg": 180.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        103.0,
+        109.0
+      ],
+      "MPN": "TLV76150DCYR",
+      "footprint": "ARDF_2M:SOT-223-3_TabPin2_E3"
+    },
+    {
+      "ref": "R111",
+      "before_mm": [
+        85.0,
+        87.5
+      ],
+      "before_bbox_mm": [
+        83.495,
+        86.745,
+        86.505,
+        88.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        77.0,
+        80.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C615",
+      "before_mm": [
+        75.2978,
+        55.0
+      ],
+      "before_bbox_mm": [
+        73.7928,
+        54.245,
+        76.8028,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        55.297799999999995,
+        55.0
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TL606",
+      "before_mm": [
+        114.25,
+        55.0
+      ],
+      "before_bbox_mm": [
+        114.0,
+        53.6295,
+        116.5087,
+        56.3705
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        94.25,
+        55.0
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_2p1587mm"
+    },
+    {
+      "ref": "Q501",
+      "before_mm": [
+        112.0,
+        55.0
+      ],
+      "before_bbox_mm": [
+        108.9,
+        52.075,
+        114.925,
+        57.925
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        92.0,
+        55.0
+      ],
+      "MPN": "PD54008L-E",
+      "footprint": "ARDF_2M:PD54008L_ST_GDS_5x5"
+    },
+    {
+      "ref": "C714",
+      "before_mm": [
+        165.0,
+        144.0
+      ],
+      "before_bbox_mm": [
+        164.245,
+        142.495,
+        165.755,
+        145.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        140.0,
+        120.0
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U801",
+      "before_mm": [
+        124.0,
+        118.0
+      ],
+      "before_bbox_mm": [
+        122.045,
+        116.275,
+        125.955,
+        119.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        108.0,
+        98.0
+      ],
+      "MPN": "TL431BIDBZR",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "C503",
+      "before_mm": [
+        117.3,
+        93.7
+      ],
+      "before_bbox_mm": [
+        115.795,
+        92.945,
+        118.805,
+        94.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        108.3,
+        83.7
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R105",
+      "before_mm": [
+        55.0,
+        85.1
+      ],
+      "before_bbox_mm": [
+        53.495,
+        84.345,
+        56.505,
+        85.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        47.0,
+        78.1
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C101",
+      "before_mm": [
+        37.0,
+        70.0
+      ],
+      "before_bbox_mm": [
+        35.495,
+        69.245,
+        38.505,
+        70.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        25.0,
+        70.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U102",
+      "before_mm": [
+        42.0,
+        68.0
+      ],
+      "before_bbox_mm": [
+        39.695,
+        66.56,
+        44.305,
+        69.275
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        30.0,
+        68.0
+      ],
+      "MPN": "SN74LVC2G66DCUR",
+      "footprint": "ARDF_2M:VSSOP-8_2.3x2mm_P0.5mm_E3"
+    },
+    {
+      "ref": "R702",
+      "before_mm": [
+        168.4,
+        145.9
+      ],
+      "before_bbox_mm": [
+        166.895,
+        145.145,
+        169.905,
+        146.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        143.4,
+        121.9
+      ],
+      "MPN": "RC0603FR-07680RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R707",
+      "before_mm": [
+        167.0,
+        135.0
+      ],
+      "before_bbox_mm": [
+        165.495,
+        134.245,
+        168.505,
+        135.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        142.0,
+        111.0
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U304",
+      "before_mm": [
+        60.0,
+        69.0
+      ],
+      "before_bbox_mm": [
+        57.695,
+        67.56,
+        62.305,
+        70.275
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        52.0,
+        64.0
+      ],
+      "MPN": "SN74LVC2G08DCUR",
+      "footprint": "ARDF_2M:VSSOP-8_2.3x2mm_P0.5mm_E3"
+    },
+    {
+      "ref": "Q301",
+      "before_mm": [
+        59.8,
+        108.1
+      ],
+      "before_bbox_mm": [
+        57.845,
+        106.375,
+        61.755,
+        109.825
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        57.8,
+        91.1
+      ],
+      "MPN": "2N7002,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "D302",
+      "before_mm": [
+        33.0,
+        129.0
+      ],
+      "before_bbox_mm": [
+        30.725,
+        125.325,
+        35.275,
+        132.72
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        31.0,
+        112.0
+      ],
+      "MPN": "SMBJ18A-E3/52",
+      "footprint": "ARDF_2M:D_SMB_E3"
+    },
+    {
+      "ref": "TP204",
+      "before_mm": [
+        55.025,
+        97.26
+      ],
+      "before_bbox_mm": [
+        54.0,
+        96.235,
+        56.05,
+        98.285
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        47.025,
+        90.26
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R403",
+      "before_mm": [
+        70.9,
+        129.0
+      ],
+      "before_bbox_mm": [
+        69.395,
+        128.245,
+        72.405,
+        129.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        69.9,
+        109.0
+      ],
+      "MPN": "RC0603FR-07150KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C405",
+      "before_mm": [
+        73.8,
+        119.7
+      ],
+      "before_bbox_mm": [
+        72.295,
+        118.945,
+        75.305,
+        120.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        72.8,
+        99.7
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C633",
+      "before_mm": [
+        102.779,
+        58.375
+      ],
+      "before_bbox_mm": [
+        102.024,
+        56.87,
+        103.534,
+        59.88
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        82.779,
+        58.375
+      ],
+      "MPN": "GRM1885C1H220JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U203",
+      "before_mm": [
+        76.0,
+        85.0
+      ],
+      "before_bbox_mm": [
+        72.275,
+        80.24,
+        79.725,
+        89.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        68.0,
+        78.0
+      ],
+      "MPN": "74HC14D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R508",
+      "before_mm": [
+        138.8,
+        43.9
+      ],
+      "before_bbox_mm": [
+        137.295,
+        43.145,
+        140.305,
+        44.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        123.80000000000001,
+        43.9
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C604",
+      "before_mm": [
+        90.0,
+        43.0
+      ],
+      "before_bbox_mm": [
+        89.245,
+        41.495,
+        90.755,
+        44.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        70.0,
+        43.0
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C638",
+      "before_mm": [
+        130.122999,
+        48.031
+      ],
+      "before_bbox_mm": [
+        129.367999,
+        46.526,
+        130.877999,
+        49.536
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        110.122999,
+        48.031
+      ],
+      "MPN": "GRM1885C1H390JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C404",
+      "before_mm": [
+        88.4,
+        132.0
+      ],
+      "before_bbox_mm": [
+        86.775,
+        129.675,
+        90.025,
+        134.325
+      ],
+      "rotation_deg": 90.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        87.4,
+        112.0
+      ],
+      "MPN": "GRM32ER71E226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "Q303",
+      "before_mm": [
+        118.8,
+        115.5
+      ],
+      "before_bbox_mm": [
+        116.845,
+        113.775,
+        120.755,
+        117.225
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        116.8,
+        98.5
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "H4",
+      "before_mm": [
+        25.0,
+        155.0
+      ],
+      "before_bbox_mm": [
+        21.525,
+        151.525,
+        28.475,
+        158.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        0.0,
+        -30.0
+      ],
+      "after_mm": [
+        25.0,
+        125.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "C208",
+      "before_mm": [
+        99.175,
+        95.09
+      ],
+      "before_bbox_mm": [
+        98.42,
+        93.585,
+        99.93,
+        96.595
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        91.175,
+        88.09
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L643",
+      "before_mm": [
+        157.777399,
+        52.206
+      ],
+      "before_bbox_mm": [
+        155.942399,
+        50.436,
+        159.612399,
+        53.976
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        137.777399,
+        52.206
+      ],
+      "MPN": "1008CS-270XJLC",
+      "footprint": "ARDF_2M:Coilcraft_1008CS_Doc101"
+    },
+    {
+      "ref": "R833",
+      "before_mm": [
+        151.5,
+        104.3
+      ],
+      "before_bbox_mm": [
+        149.995,
+        103.545,
+        153.005,
+        105.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        135.5,
+        84.3
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C601",
+      "before_mm": [
+        55.8728,
+        55.0
+      ],
+      "before_bbox_mm": [
+        54.3678,
+        54.245,
+        57.3778,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        35.8728,
+        55.0
+      ],
+      "MPN": "CC0603JRNPO9BN101",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C302",
+      "before_mm": [
+        37.0,
+        115.3
+      ],
+      "before_bbox_mm": [
+        36.245,
+        113.795,
+        37.755,
+        116.805
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        35.0,
+        98.3
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R401",
+      "before_mm": [
+        80.5,
+        129.9
+      ],
+      "before_bbox_mm": [
+        78.995,
+        129.145,
+        82.005,
+        130.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        79.5,
+        109.9
+      ],
+      "MPN": "RC0603FR-07634KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C305",
+      "before_mm": [
+        61.0,
+        145.0
+      ],
+      "before_bbox_mm": [
+        59.375,
+        142.675,
+        62.625,
+        147.325
+      ],
+      "rotation_deg": 90.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        -2.0,
+        -19.0
+      ],
+      "after_mm": [
+        59.0,
+        126.0
+      ],
+      "MPN": "GRM32ER71E226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "D501",
+      "before_mm": [
+        98.0,
+        34.0
+      ],
+      "before_bbox_mm": [
+        96.825,
+        31.775,
+        99.175,
+        36.27
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        78.0,
+        34.0
+      ],
+      "MPN": "BZT52H-C6V2,115",
+      "footprint": "ARDF_2M:D_SOD-123F_E3"
+    },
+    {
+      "ref": "L606",
+      "before_mm": [
+        105.5776,
+        47.3081
+      ],
+      "before_bbox_mm": [
+        102.4526,
+        42.9331,
+        108.7026,
+        51.6831
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        85.5776,
+        47.3081
+      ],
+      "MPN": "1812SMS-33NJLC",
+      "footprint": "ARDF_2M:Coilcraft_1812SMS_Doc184"
+    },
+    {
+      "ref": "R504",
+      "before_mm": [
+        125.2,
+        93.6
+      ],
+      "before_bbox_mm": [
+        123.695,
+        92.845,
+        126.705,
+        94.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        116.2,
+        83.6
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "J302",
+      "before_mm": [
+        65.0,
+        117.0
+      ],
+      "before_bbox_mm": [
+        63.205,
+        115.205,
+        66.795,
+        123.875
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        -4.0,
+        -14.0
+      ],
+      "after_mm": [
+        61.0,
+        103.0
+      ],
+      "MPN": "TSW-103-07-G-S",
+      "footprint": "ARDF_2M:PinHeader_1x03_P2.54mm_Vertical_E3"
+    },
+    {
+      "ref": "J301",
+      "before_mm": [
+        34.0,
+        139.0
+      ],
+      "before_bbox_mm": [
+        31.08,
+        134.775,
+        40.435,
+        144.325
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        1.0,
+        -19.0
+      ],
+      "after_mm": [
+        35.0,
+        120.0
+      ],
+      "MPN": "B2P-VH(LF)(SN)",
+      "footprint": "ARDF_2M:JST_VH_B2P-VH_1x02_P3.96mm_Vertical_E3"
+    },
+    {
+      "ref": "Q502",
+      "before_mm": [
+        101.0,
+        40.0
+      ],
+      "before_bbox_mm": [
+        99.045,
+        38.275,
+        102.955,
+        41.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        81.0,
+        40.0
+      ],
+      "MPN": "2N7002,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "C204",
+      "before_mm": [
+        81.375,
+        81.19
+      ],
+      "before_bbox_mm": [
+        80.62,
+        79.685,
+        82.13,
+        82.695
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        73.375,
+        74.19
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R505",
+      "before_mm": [
+        153.0,
+        35.0
+      ],
+      "before_bbox_mm": [
+        151.495,
+        34.245,
+        154.505,
+        35.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        138.0,
+        35.0
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP701",
+      "before_mm": [
+        177.475,
+        144.8
+      ],
+      "before_bbox_mm": [
+        176.45,
+        143.775,
+        178.5,
+        145.825
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        152.475,
+        120.80000000000001
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "C724",
+      "before_mm": [
+        185.0,
+        132.9
+      ],
+      "before_bbox_mm": [
+        184.245,
+        131.395,
+        185.755,
+        134.405
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        160.0,
+        108.9
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C501",
+      "before_mm": [
+        118.0,
+        88.1
+      ],
+      "before_bbox_mm": [
+        116.495,
+        87.345,
+        119.505,
+        88.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        109.0,
+        78.1
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C207",
+      "before_mm": [
+        81.375,
+        101.0
+      ],
+      "before_bbox_mm": [
+        80.62,
+        99.495,
+        82.13,
+        102.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        73.375,
+        94.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R931",
+      "before_mm": [
+        90.0,
+        92.0
+      ],
+      "before_bbox_mm": [
+        88.495,
+        91.245,
+        91.505,
+        92.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        82.0,
+        85.0
+      ],
+      "MPN": "RC0603FR-07330RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "RV501",
+      "before_mm": [
+        93.0,
+        32.0
+      ],
+      "before_bbox_mm": [
+        85.415,
+        29.315,
+        95.505,
+        34.695
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        73.0,
+        32.0
+      ],
+      "MPN": "3296W-1-103LF",
+      "footprint": "ARDF_2M:Potentiometer_Bourns_3296W_Vertical_E3"
+    },
+    {
+      "ref": "C403",
+      "before_mm": [
+        84.4,
+        128.3
+      ],
+      "before_bbox_mm": [
+        82.775,
+        125.975,
+        86.025,
+        130.625
+      ],
+      "rotation_deg": 90.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        83.4,
+        108.30000000000001
+      ],
+      "MPN": "GRM32ER71E226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "Q402",
+      "before_mm": [
+        148.0,
+        39.0
+      ],
+      "before_bbox_mm": [
+        146.005,
+        36.725,
+        154.555,
+        40.525
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        133.0,
+        39.0
+      ],
+      "MPN": "BD139",
+      "footprint": "ARDF_2M:TO-126-3_Vertical_E3"
+    },
+    {
+      "ref": "R803",
+      "before_mm": [
+        142.0,
+        126.8
+      ],
+      "before_bbox_mm": [
+        140.495,
+        126.045,
+        143.505,
+        127.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        126.0,
+        106.8
+      ],
+      "MPN": "RC0603FR-07470RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U804",
+      "before_mm": [
+        128.0,
+        133.0
+      ],
+      "before_bbox_mm": [
+        125.925,
+        131.1,
+        130.075,
+        134.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        112.0,
+        113.0
+      ],
+      "MPN": "INA180A1IDBVR",
+      "footprint": "ARDF_2M:SOT-23-5_E3"
+    },
+    {
+      "ref": "C631",
+      "before_mm": [
+        94.7334,
+        51.625
+      ],
+      "before_bbox_mm": [
+        93.9784,
+        50.12,
+        95.4884,
+        53.13
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        74.7334,
+        51.625
+      ],
+      "MPN": "GRM1885C1H220JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R107",
+      "before_mm": [
+        41.0,
+        85.5
+      ],
+      "before_bbox_mm": [
+        39.495,
+        84.745,
+        42.505,
+        86.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        41.0,
+        78.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R828",
+      "before_mm": [
+        134.3,
+        121.5
+      ],
+      "before_bbox_mm": [
+        132.795,
+        120.745,
+        135.805,
+        122.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.30000000000001,
+        101.5
+      ],
+      "MPN": "RT0603BRD075K11L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R106",
+      "before_mm": [
+        70.0,
+        84.0
+      ],
+      "before_bbox_mm": [
+        68.495,
+        83.245,
+        71.505,
+        84.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        62.0,
+        77.0
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U301",
+      "before_mm": [
+        51.0,
+        122.0
+      ],
+      "before_bbox_mm": [
+        48.575,
+        120.05,
+        53.425,
+        123.825
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        49.0,
+        105.0
+      ],
+      "MPN": "TPS54302DDCR",
+      "footprint": "ARDF_2M:SOT-23-6_Handsoldering_E3"
+    },
+    {
+      "ref": "R651",
+      "before_mm": [
+        84.7205,
+        59.9625
+      ],
+      "before_bbox_mm": [
+        83.5655,
+        57.6575,
+        85.8755,
+        62.2675
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        64.7205,
+        59.9625
+      ],
+      "MPN": "RC1206FR-0749R9L",
+      "footprint": "ARDF_2M:R_1206_3216Metric_E3"
+    },
+    {
+      "ref": "R807",
+      "before_mm": [
+        134.0,
+        106.8
+      ],
+      "before_bbox_mm": [
+        132.495,
+        106.045,
+        135.505,
+        107.555
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.0,
+        86.8
+      ],
+      "MPN": "RC0603FR-0758K3L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP501",
+      "before_mm": [
+        113.1375,
+        88.95
+      ],
+      "before_bbox_mm": [
+        112.1125,
+        87.925,
+        114.1625,
+        89.975
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        104.1375,
+        78.95
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R712",
+      "before_mm": [
+        188.4,
+        135.0
+      ],
+      "before_bbox_mm": [
+        187.645,
+        133.495,
+        189.155,
+        136.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        163.4,
+        111.0
+      ],
+      "MPN": "RC0603FR-0768R1L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C504",
+      "before_mm": [
+        125.9,
+        91.3
+      ],
+      "before_bbox_mm": [
+        124.395,
+        90.545,
+        127.405,
+        92.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        116.9,
+        81.3
+      ],
+      "MPN": "CC0603JRNPO9BN472",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP502",
+      "before_mm": [
+        156.54,
+        29.7
+      ],
+      "before_bbox_mm": [
+        155.515,
+        28.675,
+        157.565,
+        30.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        141.54,
+        29.7
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "L721",
+      "before_mm": [
+        178.0,
+        136.2
+      ],
+      "before_bbox_mm": [
+        176.495,
+        135.445,
+        179.505,
+        136.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        153.0,
+        112.19999999999999
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP702",
+      "before_mm": [
+        190.0,
+        144.4
+      ],
+      "before_bbox_mm": [
+        188.975,
+        143.375,
+        191.025,
+        145.425
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        165.0,
+        120.4
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "TP302",
+      "before_mm": [
+        117.5625,
+        123.95
+      ],
+      "before_bbox_mm": [
+        116.5375,
+        122.925,
+        118.5875,
+        124.975
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        115.5625,
+        106.95
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R606",
+      "before_mm": [
+        96.6,
+        38.0
+      ],
+      "before_bbox_mm": [
+        95.095,
+        37.245,
+        98.105,
+        38.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        76.6,
+        38.0
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q704",
+      "before_mm": [
+        130.7,
+        90.7
+      ],
+      "before_bbox_mm": [
+        128.745,
+        88.975,
+        132.655,
+        92.425
+      ],
+      "rotation_deg": 0.0,
+      "group": "training_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        121.69999999999999,
+        80.7
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "C304",
+      "before_mm": [
+        57.0,
+        143.5
+      ],
+      "before_bbox_mm": [
+        55.375,
+        141.175,
+        58.625,
+        145.825
+      ],
+      "rotation_deg": 90.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        55.0,
+        126.5
+      ],
+      "MPN": "GRM32ER71E226KE15L",
+      "footprint": "ARDF_2M:C_1210_3225Metric_E3"
+    },
+    {
+      "ref": "R811",
+      "before_mm": [
+        146.0,
+        115.1
+      ],
+      "before_bbox_mm": [
+        144.495,
+        114.345,
+        147.505,
+        115.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        130.0,
+        95.1
+      ],
+      "MPN": "RC0603FR-07120KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R201",
+      "before_mm": [
+        54.0,
+        29.0
+      ],
+      "before_bbox_mm": [
+        52.495,
+        28.245,
+        55.505,
+        29.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        46.0,
+        24.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q403",
+      "before_mm": [
+        138.3,
+        40.3
+      ],
+      "before_bbox_mm": [
+        136.345,
+        38.575,
+        140.255,
+        42.025
+      ],
+      "rotation_deg": 0.0,
+      "group": "upper_AM_pass",
+      "shift_mm": [
+        -15,
+        0
+      ],
+      "after_mm": [
+        123.30000000000001,
+        40.3
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "D802",
+      "before_mm": [
+        155.3,
+        102.2
+      ],
+      "before_bbox_mm": [
+        153.63,
+        101.225,
+        156.925,
+        103.175
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        139.3,
+        82.2
+      ],
+      "MPN": "BAT54WS-7-F",
+      "footprint": "ARDF_2M:D_SOD-323_E3"
+    },
+    {
+      "ref": "R715",
+      "before_mm": [
+        168.5,
+        143.1
+      ],
+      "before_bbox_mm": [
+        166.995,
+        142.345,
+        170.005,
+        143.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        143.5,
+        119.1
+      ],
+      "MPN": "RC0603FR-0751R1L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R711",
+      "before_mm": [
+        184.9,
+        136.2
+      ],
+      "before_bbox_mm": [
+        183.395,
+        135.445,
+        186.405,
+        136.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        159.9,
+        112.19999999999999
+      ],
+      "MPN": "RC0603FR-07154RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R604",
+      "before_mm": [
+        72.2228,
+        58.425
+      ],
+      "before_bbox_mm": [
+        71.4678,
+        56.92,
+        72.9778,
+        59.93
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        52.22280000000001,
+        58.425
+      ],
+      "MPN": "RC0603FR-0796R5L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R812",
+      "before_mm": [
+        144.6,
+        117.9
+      ],
+      "before_bbox_mm": [
+        143.095,
+        117.145,
+        146.105,
+        118.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        128.6,
+        97.9
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R305",
+      "before_mm": [
+        114.1,
+        116.9
+      ],
+      "before_bbox_mm": [
+        112.595,
+        116.145,
+        115.605,
+        117.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        112.1,
+        99.9
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R709",
+      "before_mm": [
+        151.7,
+        133.1
+      ],
+      "before_bbox_mm": [
+        150.195,
+        132.345,
+        153.205,
+        133.855
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        126.69999999999999,
+        109.1
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Q702",
+      "before_mm": [
+        170.8,
+        131.4
+      ],
+      "before_bbox_mm": [
+        168.845,
+        129.675,
+        172.755,
+        133.125
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        145.8,
+        107.4
+      ],
+      "MPN": "MMBT3904,215",
+      "footprint": "ARDF_2M:SOT-23_E3"
+    },
+    {
+      "ref": "TP801",
+      "before_mm": [
+        126.8625,
+        136.45
+      ],
+      "before_bbox_mm": [
+        125.8375,
+        135.425,
+        127.8875,
+        137.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        110.8625,
+        116.44999999999999
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R832",
+      "before_mm": [
+        134.0,
+        104.3
+      ],
+      "before_bbox_mm": [
+        132.495,
+        103.545,
+        135.505,
+        105.055
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        118.0,
+        84.3
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TL609",
+      "before_mm": [
+        143.839999,
+        52.206
+      ],
+      "before_bbox_mm": [
+        143.589999,
+        50.8355,
+        145.902399,
+        53.5765
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        123.839999,
+        52.206
+      ],
+      "MPN": "PCB microstrip feature",
+      "footprint": "ARDF_2M:TL50_E3_1p9624mm"
+    },
+    {
+      "ref": "L712",
+      "before_mm": [
+        163.4,
+        140.0
+      ],
+      "before_bbox_mm": [
+        161.895,
+        139.245,
+        164.905,
+        140.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        138.4,
+        116.0
+      ],
+      "MPN": "LQW18AN91NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C713",
+      "before_mm": [
+        162.0,
+        144.0
+      ],
+      "before_bbox_mm": [
+        161.245,
+        142.495,
+        162.755,
+        145.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        137.0,
+        120.0
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C951",
+      "before_mm": [
+        102.0,
+        126.0
+      ],
+      "before_bbox_mm": [
+        100.995,
+        124.275,
+        103.005,
+        127.725
+      ],
+      "rotation_deg": 90.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        94.0,
+        106.0
+      ],
+      "MPN": "GRM21BR71E475KA73L",
+      "footprint": "ARDF_2M:C_0805_2012Metric_E3"
+    },
+    {
+      "ref": "R101",
+      "before_mm": [
+        30.0,
+        109.9
+      ],
+      "before_bbox_mm": [
+        28.495,
+        109.145,
+        31.505,
+        110.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        30.0,
+        102.9
+      ],
+      "MPN": "RC0603FR-0718K2L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R602",
+      "before_mm": [
+        71.3978,
+        55.0
+      ],
+      "before_bbox_mm": [
+        69.8928,
+        54.245,
+        72.9028,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        51.397800000000004,
+        55.0
+      ],
+      "MPN": "RC0603FR-0771R5L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R810",
+      "before_mm": [
+        138.3,
+        120.4
+      ],
+      "before_bbox_mm": [
+        136.795,
+        119.645,
+        139.805,
+        121.155
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        122.30000000000001,
+        100.4
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L642",
+      "before_mm": [
+        153.427399,
+        52.206
+      ],
+      "before_bbox_mm": [
+        151.592399,
+        50.436,
+        155.262399,
+        53.976
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        133.427399,
+        52.206
+      ],
+      "MPN": "1008CS-220XJLC",
+      "footprint": "ARDF_2M:Coilcraft_1008CS_Doc101"
+    },
+    {
+      "ref": "R104",
+      "before_mm": [
+        25.5,
+        114.5
+      ],
+      "before_bbox_mm": [
+        23.995,
+        113.745,
+        27.005,
+        115.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_input_controls",
+      "shift_mm": [
+        -3,
+        -20
+      ],
+      "after_mm": [
+        22.5,
+        94.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C721",
+      "before_mm": [
+        174.6,
+        135.0
+      ],
+      "before_bbox_mm": [
+        173.845,
+        133.495,
+        175.355,
+        136.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        149.6,
+        111.0
+      ],
+      "MPN": "CC0603CRNPO9BN8R2",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L612",
+      "before_mm": [
+        63.6103,
+        55.0
+      ],
+      "before_bbox_mm": [
+        62.1053,
+        54.245,
+        65.1153,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        43.6103,
+        55.0
+      ],
+      "MPN": "LQW18AN91NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R314",
+      "before_mm": [
+        40.1,
+        129.2
+      ],
+      "before_bbox_mm": [
+        38.595,
+        128.445,
+        41.605,
+        129.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        38.1,
+        112.19999999999999
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R650",
+      "before_mm": [
+        87.7955,
+        55.0
+      ],
+      "before_bbox_mm": [
+        86.2905,
+        54.245,
+        89.3005,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        67.7955,
+        55.0
+      ],
+      "MPN": "RC0603JR-070RL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "H2",
+      "before_mm": [
+        195.0,
+        25.0
+      ],
+      "before_bbox_mm": [
+        191.525,
+        21.525,
+        198.475,
+        28.475
+      ],
+      "rotation_deg": 0.0,
+      "group": "corner_or_connector",
+      "shift_mm": [
+        -30.0,
+        0.0
+      ],
+      "after_mm": [
+        165.0,
+        25.0
+      ],
+      "MPN": null,
+      "footprint": "ARDF_2M:MountingHole_3.2mm_M3_E3"
+    },
+    {
+      "ref": "C637",
+      "before_mm": [
+        127.202,
+        59.175
+      ],
+      "before_bbox_mm": [
+        126.447,
+        57.67,
+        127.957,
+        60.68
+      ],
+      "rotation_deg": -90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        107.202,
+        59.175
+      ],
+      "MPN": "GRM1885C1H101JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP951",
+      "before_mm": [
+        87.9,
+        66.775
+      ],
+      "before_bbox_mm": [
+        86.875,
+        65.75,
+        88.925,
+        67.8
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        67.9,
+        66.775
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "R516",
+      "before_mm": [
+        117.7,
+        81.9
+      ],
+      "before_bbox_mm": [
+        116.195,
+        81.145,
+        119.205,
+        82.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        108.7,
+        71.9
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R820",
+      "before_mm": [
+        160.4,
+        116.2
+      ],
+      "before_bbox_mm": [
+        158.895,
+        115.445,
+        161.905,
+        116.955
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        144.4,
+        96.2
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP203",
+      "before_mm": [
+        55.025,
+        100.19
+      ],
+      "before_bbox_mm": [
+        54.0,
+        99.165,
+        56.05,
+        101.215
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        47.025,
+        93.19
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "U501",
+      "before_mm": [
+        79.8714,
+        55.7493
+      ],
+      "before_bbox_mm": [
+        77.0214,
+        50.0743,
+        82.4964,
+        56.0743
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        59.871399999999994,
+        55.7493
+      ],
+      "MPN": "PHA-1+",
+      "footprint": "ARDF_2M:PHA1_DF782_RevG"
+    },
+    {
+      "ref": "C712",
+      "before_mm": [
+        159.0,
+        144.0
+      ],
+      "before_bbox_mm": [
+        158.245,
+        142.495,
+        159.755,
+        145.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        134.0,
+        120.0
+      ],
+      "MPN": "CC0603JRNPO9BN330",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C804",
+      "before_mm": [
+        146.0,
+        125.7
+      ],
+      "before_bbox_mm": [
+        144.495,
+        124.945,
+        147.505,
+        126.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        130.0,
+        105.7
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R818",
+      "before_mm": [
+        146.1,
+        120.5
+      ],
+      "before_bbox_mm": [
+        144.595,
+        119.745,
+        147.605,
+        121.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        130.1,
+        100.5
+      ],
+      "MPN": "RT0603BRD0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R103",
+      "before_mm": [
+        38.8,
+        74.9
+      ],
+      "before_bbox_mm": [
+        37.295,
+        74.145,
+        40.305,
+        75.655
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        38.8,
+        67.9
+      ],
+      "MPN": "RC0603FR-074K7L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R108",
+      "before_mm": [
+        83.35,
+        85.0
+      ],
+      "before_bbox_mm": [
+        81.845,
+        84.245,
+        84.855,
+        85.755
+      ],
+      "rotation_deg": 180.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        75.35,
+        78.0
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C641",
+      "before_mm": [
+        148.777399,
+        55.206
+      ],
+      "before_bbox_mm": [
+        147.272399,
+        54.451,
+        150.282399,
+        55.961
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        128.777399,
+        55.206
+      ],
+      "MPN": "GRM1885C1H3R3CA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R118",
+      "before_mm": [
+        154.1,
+        120.0
+      ],
+      "before_bbox_mm": [
+        152.595,
+        119.245,
+        155.605,
+        120.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        138.1,
+        100.0
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "L638",
+      "before_mm": [
+        128.6625,
+        53.603
+      ],
+      "before_bbox_mm": [
+        125.9875,
+        50.078,
+        131.3375,
+        57.128
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        108.6625,
+        53.603
+      ],
+      "MPN": "A05TJLC",
+      "footprint": "ARDF_2M:Coilcraft_A05T_Doc107"
+    },
+    {
+      "ref": "U204",
+      "before_mm": [
+        91.0,
+        85.0
+      ],
+      "before_bbox_mm": [
+        87.275,
+        80.24,
+        94.725,
+        89.605
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        -8,
+        -7
+      ],
+      "after_mm": [
+        83.0,
+        78.0
+      ],
+      "MPN": "74HC11D,653",
+      "footprint": "ARDF_2M:SOIC-14_3.9x8.7mm_P1.27mm_E3"
+    },
+    {
+      "ref": "R311",
+      "before_mm": [
+        39.4,
+        118.5
+      ],
+      "before_bbox_mm": [
+        37.895,
+        117.745,
+        40.905,
+        119.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "input_buck_supply",
+      "shift_mm": [
+        -2,
+        -17
+      ],
+      "after_mm": [
+        37.4,
+        101.5
+      ],
+      "MPN": "RC0603FR-071KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C602",
+      "before_mm": [
+        84.4955,
+        55.0
+      ],
+      "before_bbox_mm": [
+        82.9905,
+        54.245,
+        86.0005,
+        55.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        64.4955,
+        55.0
+      ],
+      "MPN": "CC0603JRNPO9BN102",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R404",
+      "before_mm": [
+        68.8,
+        126.6
+      ],
+      "before_bbox_mm": [
+        67.295,
+        125.845,
+        70.305,
+        127.355
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        67.8,
+        106.6
+      ],
+      "MPN": "RC0603FR-07340KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R817",
+      "before_mm": [
+        148.8,
+        117.7
+      ],
+      "before_bbox_mm": [
+        147.295,
+        116.945,
+        150.305,
+        118.455
+      ],
+      "rotation_deg": 0.0,
+      "group": "protection",
+      "shift_mm": [
+        -16,
+        -20
+      ],
+      "after_mm": [
+        132.8,
+        97.7
+      ],
+      "MPN": "RT0603BRD0729K4L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R512",
+      "before_mm": [
+        130.0,
+        80.0
+      ],
+      "before_bbox_mm": [
+        129.245,
+        78.495,
+        130.755,
+        81.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "lower_AM_control",
+      "shift_mm": [
+        -9,
+        -10
+      ],
+      "after_mm": [
+        121.0,
+        70.0
+      ],
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C409",
+      "before_mm": [
+        110.0,
+        141.0
+      ],
+      "before_bbox_mm": [
+        104.875,
+        137.225,
+        115.125,
+        144.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "driver_and_boost_supply",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        102.0,
+        121.0
+      ],
+      "MPN": "25SVPG150M",
+      "footprint": "ARDF_2M:CP_Panasonic_OSCON_C10"
+    },
+    {
+      "ref": "L711",
+      "before_mm": [
+        159.7,
+        140.0
+      ],
+      "before_bbox_mm": [
+        158.195,
+        139.245,
+        161.205,
+        140.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "rigid_training_RF",
+      "shift_mm": [
+        -25,
+        -24
+      ],
+      "after_mm": [
+        134.7,
+        116.0
+      ],
+      "MPN": "LQW18AN56NG80D",
+      "footprint": "ARDF_2M:L_0603_1608Metric_E3"
+    },
+    {
+      "ref": "Y101",
+      "before_mm": [
+        41.0,
+        40.0
+      ],
+      "before_bbox_mm": [
+        38.875,
+        38.225,
+        43.125,
+        41.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        29.0,
+        40.0
+      ],
+      "MPN": "ABM8-25.000MHZ-10-B1U-T",
+      "footprint": "ARDF_2M:Crystal_SMD_3225-4Pin_3.2x2.5mm_E3"
+    },
+    {
+      "ref": "C647",
+      "before_mm": [
+        160.852399,
+        48.831
+      ],
+      "before_bbox_mm": [
+        160.097399,
+        47.326,
+        161.607399,
+        50.336
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        140.852399,
+        48.831
+      ],
+      "MPN": "GRM1885C1H150JA01D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C310",
+      "before_mm": [
+        65.0,
+        64.0
+      ],
+      "before_bbox_mm": [
+        63.495,
+        63.245,
+        66.505,
+        64.755
+      ],
+      "rotation_deg": 0.0,
+      "group": "top_rail_logic",
+      "shift_mm": [
+        -8,
+        -5
+      ],
+      "after_mm": [
+        57.0,
+        59.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "R109",
+      "before_mm": [
+        44.3,
+        88.5
+      ],
+      "before_bbox_mm": [
+        42.795,
+        87.745,
+        45.805,
+        89.255
+      ],
+      "rotation_deg": 0.0,
+      "group": "interlocks",
+      "shift_mm": [
+        0,
+        -7
+      ],
+      "after_mm": [
+        44.3,
+        81.5
+      ],
+      "MPN": "RC0603FR-07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3"
+    },
+    {
+      "ref": "TP205",
+      "before_mm": [
+        88.375,
+        110.3
+      ],
+      "before_bbox_mm": [
+        87.35,
+        109.275,
+        89.4,
+        111.325
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_input_controls",
+      "shift_mm": [
+        -3,
+        -20
+      ],
+      "after_mm": [
+        85.375,
+        90.3
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "TP950",
+      "before_mm": [
+        117.65,
+        129.7
+      ],
+      "before_bbox_mm": [
+        116.625,
+        128.675,
+        118.675,
+        130.725
+      ],
+      "rotation_deg": 0.0,
+      "group": "lower_driver_controls",
+      "shift_mm": [
+        -8,
+        -20
+      ],
+      "after_mm": [
+        109.65,
+        109.69999999999999
+      ],
+      "MPN": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3"
+    },
+    {
+      "ref": "C603",
+      "before_mm": [
+        90.0,
+        39.0
+      ],
+      "before_bbox_mm": [
+        89.245,
+        37.495,
+        90.755,
+        40.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        70.0,
+        39.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "C607",
+      "before_mm": [
+        100.5,
+        44.0
+      ],
+      "before_bbox_mm": [
+        99.745,
+        42.495,
+        101.255,
+        45.505
+      ],
+      "rotation_deg": 90.0,
+      "group": "rigid_RF_thermal",
+      "shift_mm": [
+        -20.0,
+        0.0
+      ],
+      "after_mm": [
+        80.5,
+        44.0
+      ],
+      "MPN": "CC0603KRX7R8BB104",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3"
+    },
+    {
+      "ref": "U103",
+      "before_mm": [
+        42.0,
+        48.0
+      ],
+      "before_bbox_mm": [
+        38.875,
+        46.17,
+        45.125,
+        49.775
+      ],
+      "rotation_deg": 0.0,
+      "group": "synthesizer",
+      "shift_mm": [
+        -12,
+        0
+      ],
+      "after_mm": [
+        30.0,
+        48.0
+      ],
+      "MPN": "Si5351A-B-GT",
+      "footprint": "ARDF_2M:MSOP-10_3x3mm_P0.5mm_E3"
+    },
+    {
+      "ref": "C402",
+      "before_mm": [
+        79.7,
+        125.0
+      ],
+      "before_bbox_mm": [
+        77.375,
+        123.825,
+        82.025,
+        126.175
+      ],
+      "rotation_deg": 0.0,
+      "group": "boost_supply",
+      "shift_mm": [
+        -1,
+        -20
+      ],
+      "after_mm": [
+        78.7,
+        105.0
+      ],
+      "MPN": "GRM31CR71E475KA88L",
+      "footprint": "ARDF_2M:C_1206_3216Metric_E3"
+    }
+  ],
+  "tracks": 4493,
+  "zones": [
+    {
+      "uuid": "85c8b348-bd5e-4fc7-844c-baf8e2771353",
+      "net": "",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "rule_area": true
+    },
+    {
+      "uuid": "96f728e0-0652-58ec-8763-5bc1e604cfba",
+      "net": "",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "rule_area": true
+    },
+    {
+      "uuid": "a2bb46fb-888f-4b5b-bd76-308e35315e9f",
+      "net": "GND",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "rule_area": false
+    },
+    {
+      "uuid": "55805915-ae5c-4dd4-8037-997c3b48587e",
+      "net": "",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0100",
+      "rule_area": true
+    },
+    {
+      "uuid": "a3260d4f-519c-47c9-ab88-107eee718e0f",
+      "net": "",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0100",
+      "rule_area": true
+    },
+    {
+      "uuid": "ad0087f7-db23-4969-b350-e6954b11d8fb",
+      "net": "GND",
+      "layers": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0100",
+      "rule_area": false
+    }
+  ],
+  "rigid_group": "RF matching/filter/PA/source joint and H5/H6 translate(-20,0)mm; no rotation. All others initial placement targets subject to clearance repair."
+}

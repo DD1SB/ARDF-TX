@@ -1,0 +1,92 @@
+{
+  "actions": [
+    {
+      "ref": "R810",
+      "old_mm": [
+        122.3,
+        99.4
+      ],
+      "new_mm": [
+        125.5,
+        97.5
+      ],
+      "reason": "Escape ground reference without via-in-SMD-land or reference/supply crossing"
+    },
+    {
+      "ref": "C307",
+      "rotation_added_deg": 180,
+      "reason": "Groundlandfacesclearcopper,VMODbypassvaluenetunchanged"
+    },
+    {
+      "ref": "C307",
+      "pin": "2",
+      "via_mm": [
+        127.11731656763492,
+        110.6988795325113
+      ],
+      "path_mm": [
+        [
+          127.5,
+          109.775
+        ],
+        [
+          127.11731656763492,
+          110.6988795325113
+        ]
+      ],
+      "ordinary_land_drill_mm": [
+        0.6,
+        0.3
+      ],
+      "no_solder_land_hole": true
+    },
+    {
+      "ref": "U701",
+      "pin": "3",
+      "via_mm": [
+        130,
+        111.8
+      ],
+      "path_mm": [
+        [
+          129.8625,
+          110.95
+        ],
+        [
+          130,
+          111.8
+        ]
+      ],
+      "ordinary_land_drill_mm": [
+        0.6,
+        0.3
+      ],
+      "no_solder_land_hole": true
+    },
+    {
+      "ref": "R810",
+      "pin": "2",
+      "via_mm": [
+        127.03210678118656,
+        98.20710678118655
+      ],
+      "path_mm": [
+        [
+          126.325,
+          97.5
+        ],
+        [
+          127.03210678118656,
+          98.20710678118655
+        ]
+      ],
+      "ordinary_land_drill_mm": [
+        0.6,
+        0.3
+      ],
+      "no_solder_land_hole": true
+    }
+  ],
+  "values_pads_nets_changed": false,
+  "source98unchanged": true
+}

@@ -1,0 +1,15 @@
+# M5B-E5 manufacturing and cost
+
+After independent review and explicit authorization, request five individual 150 × 110 mm boards: two layers, standard FR4, 1.6 mm, 1 oz, green mask, white legend, lead-free HASL, ordinary PTH vias. No impedance service, custom core, precision-hole service, filled/capped vias, premium plating or panelization. Edge.Cuts centreline defines the outline; the Gerber stroke does not enlarge it. JLCPCB CAM, quotation and purchasing remain separate, NOT_RUN activities.
+
+The revisioned E5 fabrication ZIP contains only nine Gerbers and separate PTH/NPTH drills. Source stencil, drawings, analysis and historical datasets stay outside it. The native CAD and final exports must have matching hashes, drill counts and netlists. Intentional bodyless TL/probe courtyard warnings are individually documented; manufacturing failures are not excluded. Current published capabilities, local native-geometry DFM and factory CAM are different evidence.
+
+The VMOD main copper is locally broadened up to 2 mm where native clearances permit, retaining short local necks. At 80°C copper resistivity, the contact-resolved sheet model predicts a worst PCB-path drop about 0.250 V at the stated 3/2/1.8 A envelopes; 30 µm face copper / 10 µm barrel sensitivity is about 0.294 V. A 1→0.5 mm analysis mesh changes the largest drop by about 1.1 mV. This is a model, not a measurement; thin long sense branches are excluded. The raw whole-segment estimate remains separately visible.
+
+Electronics remain E4R1: quantity-ten estimates BOOST2S €50.27, BUCK4S €49.03, TRAIN_ONLY €14.11, containing €28.09/€27.95/€10.02 unquoted material. Complete quantity 6/10/20 BOMs remain in the review. No component savings follow from board area alone.
+
+The bare-board budget model uses €15–30 setup plus €200–400/m² × area × quantity, explicitly chosen estimates, not JLCPCB tariffs or a quotation. Five E4R1 boards estimate €40.20–80.40 versus E5 €31.50–63.00; shipping/VAT/CAM excluded. Ten: €65.40–130.80 versus €48–96. Twenty: €115.80–231.60 versus €81–162. Obtain a fresh supplier quote; no prior cart price is transferable.
+
+TRAIN_ONLY omits the PA, normal converter and all watt-level cooling hardware; its independent protected output remains. PA heatsink/bar/TIM and pass SK100 MPN are retained for the full populations. New stock spacer allocation €0.5–2 at quantity one / €0.3–1 at ten, with first stock purchase perhaps €3–8; support hardware €1–3 / €0.7–2, all unquoted. Common carrier/posts/IDC/pigtails are separate estimated materials. The source stencil, paste and first-article inspection process are inherited. Helper heatsink fleet stock remains a sourcing check. See manufacturing-cost-comparison.json for observed listing versus estimates.
+
+The three-board readiness matrix names controller M6-L1, RF80 V1R1 and this E5 candidate. Other fabrication archives remain byte-for-byte unchanged. E5 supersedes E4R1 for ordering only after independent review and explicit authorization. No upload, order, assembly, power-up or RF transmission is performed by this milestone.

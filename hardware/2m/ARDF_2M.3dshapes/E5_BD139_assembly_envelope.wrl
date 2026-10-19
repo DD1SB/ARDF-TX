@@ -1,0 +1,8 @@
+#VRML V2.0 utf8
+# BD139 raised assembly envelope, not manufacturer STEP.8.5mm body standoff.
+# Helper heat sink is a conservative installed clearance box, not its fin profile.
+Transform { translation 0.8976378 0.0000000 5.5314961 children [ Shape { appearance Appearance { material Material { diffuseColor 0.12 0.12 0.13 transparency 0 } } geometry Box { size 3.0708661 1.1023622 4.3700787 } } ] }
+Transform { translation 0.0000000 0.0000000 1.0826772 children [ Shape { appearance Appearance { material Material { diffuseColor 0.7 0.7 0.72 transparency 0 } } geometry Box { size 0.3149606 0.3149606 4.5275591 } } ] }
+Transform { translation 0.8976378 0.0000000 1.0826772 children [ Shape { appearance Appearance { material Material { diffuseColor 0.7 0.7 0.72 transparency 0 } } geometry Box { size 0.3149606 0.3149606 4.5275591 } } ] }
+Transform { translation 1.7952756 0.0000000 1.0826772 children [ Shape { appearance Appearance { material Material { diffuseColor 0.7 0.7 0.72 transparency 0 } } geometry Box { size 0.3149606 0.3149606 4.5275591 } } ] }
+Transform { translation 0.8976378 3.4842520 8.6614173 children [ Shape { appearance Appearance { material Material { diffuseColor 0.4 0.4 0.42 transparency 0.55 } } geometry Box { size 7.0866142 5.9055118 15.7480315 } } ] }

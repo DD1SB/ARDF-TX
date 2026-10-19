@@ -1,0 +1,13 @@
+# E5 staged commissioning — all physical steps NOT_RUN
+
+1. Verify bare-board outline/holes, package fit, pin maps, continuity and absence of shorts. Confirm exact BOOST2S or BUCK4S links; never both. TRAIN_ONLY excludes PA/converter/cooling.
+2. On bench supports at least 40 mm high, apply current-limited low-voltage logic. Test ARM, SLOT, KEY, PROGRESS, both PREPARE signals, mute, reset, watchdog, faults and controller supply loss. No automatic rearming.
+3. With driver/final absent, qualify selected converter and all rails on a bounded laboratory supply. Measure startup/shutdown/overvoltage/isolation, not with an unqualified Li-ion fault source.
+4. Test modulator with a representative bounded load. Verify PWM reconstruction, crest/trough, disable and pass-device-short handling. Install independently supported insulated D45/BD139 heatsinks. Stop at D45 case 60°C; verify sensor contact/lag and hot SOA.
+5. Follow E4R1 source print/reflow procedure using the local 0.12 mm stencil, five apertures and intentionally open vias. Record real profile. First assembly requires qualified X-ray/wetting assessment plus correlated thermal measurements. Inspect bottom for protrusion, clean/measure flat contact, install thin TIM and supported bar. Do not press the PA plastic or credit unverified solder-filled vias.
+6. Fit a suitable 50 Ω dummy load and attenuated spectrum/envelope instruments. Start limited driver/PA supply and RF drive. Adjust only documented interstage alternatives. Check oscillation before increasing power. Measure gain, compression, carrier and PEP, actual 70–80% sinusoidal RF AM, harmonics and spurs across configured legal frequencies.
+7. Calibrate independent µW training path. Measure normal/training isolation and verify the normal PA cannot energize the training connector. Check off-slot silence and faults.
+8. Qualify at 25/40°C, 4 W continuous PA heat budget, declared passive orientation and actual enclosure inlet. Confirm source joint/TIM/case/junction inference with calibrated instruments; poor contact is a stop condition. 125°C is the PA engineering limit; conservative model target remains unmet until corrected/qualified evidence establishes the operating envelope.
+9. Integrate controller using continuity-tested keyed IDC, separate fused pack harness and antenna keepouts. Test brownout, cable disconnect, power loss, rearming, schedules and profile calibration. Then endurance 12/24 h and continuous-beacon model; finally antenna ERP and field tests under separate authorization.
+
+No current milestone report establishes a physical PASS for any step. Inspect live collector-tab insulation and source/ground continuity before applying power.

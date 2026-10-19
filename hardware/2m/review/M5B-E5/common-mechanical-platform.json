@@ -1,0 +1,303 @@
+{
+  "status": "DIMENSIONED_PROTOTYPE_ENVELOPES_NOT_FINAL_ENCLOSURE",
+  "RF_native_origin_mm": [
+    20,
+    20
+  ],
+  "RF_outline_mm": [
+    150,
+    110
+  ],
+  "RF_pattern_mm": [
+    140,
+    100
+  ],
+  "RF_native_holes_mm": {
+    "H1": [
+      25.0,
+      25.0
+    ],
+    "H2": [
+      165.0,
+      25.0
+    ],
+    "H3": [
+      165.0,
+      125.0
+    ],
+    "H4": [
+      25.0,
+      125.0
+    ]
+  },
+  "RF80_native_holes_mm": {
+    "H1": [
+      25.0,
+      25.0
+    ],
+    "H2": [
+      165.0,
+      25.0
+    ],
+    "H3": [
+      165.0,
+      125.0
+    ],
+    "H4": [
+      25.0,
+      125.0
+    ]
+  },
+  "controller_native_holes_mm": {
+    "H1": [
+      25.0,
+      62.0
+    ],
+    "H2": [
+      115.0,
+      25.0
+    ],
+    "H3": [
+      115.0,
+      115.0
+    ],
+    "H4": [
+      25.0,
+      115.0
+    ]
+  },
+  "controller_rotation_deg": 180,
+  "controller_board_local_origin_mm": [
+    65,
+    20
+  ],
+  "controller_independent_posts_mm": [
+    [
+      160.0,
+      78.0
+    ],
+    [
+      70.0,
+      115.0
+    ],
+    [
+      70.0,
+      25.0
+    ],
+    [
+      160.0,
+      25.0
+    ]
+  ],
+  "controller_bottom_Z_mm": 53,
+  "carrier": {
+    "material": "Unclad FR4 or stiff insulating sheet;no metal in antenna cutout",
+    "size_mm": [
+      170,
+      120,
+      3
+    ],
+    "bottom_Z_mm": 45,
+    "RF_corner_posts": "40mmnylon +5mmspacer",
+    "controller_posts_mm": 5,
+    "antenna_notch_mm": [
+      109,
+      110,
+      162,
+      120
+    ],
+    "front_notch_required": false
+  },
+  "case_internal_study_mm": [
+    180,
+    200,
+    125
+  ],
+  "case_bounds_mm": {
+    "X": [
+      -10,
+      170
+    ],
+    "Y": [
+      -55,
+      145
+    ],
+    "Z": [
+      -40,
+      85
+    ]
+  },
+  "installed_gravity": "UP=-boardX;both large heat sinks have channels alongX",
+  "USB": "Socketface nearRF-localX165,Y100;5mmopenservicebay towallX170,20x12opening;actualplugfit NOT_RUN",
+  "ESP_antenna": {
+    "keepout_local_mm": [
+      111,
+      111.75,
+      159,
+      132.75
+    ],
+    "vertical_air_clearance_mm": 15,
+    "RF_board_separation_mm": 53,
+    "metal_carrier": false,
+    "physical": "NOT_RUN"
+  },
+  "LoRa": "U.FL near(85.585,111.5);routeleft/rear outsideESPkeepout;band-specificantenna",
+  "PA": {
+    "sink": "Fischer SK81 100 SA",
+    "sink_local_mm": [
+      22,
+      0,
+      122,
+      100
+    ],
+    "bar_mm": [
+      15,
+      44,
+      10
+    ],
+    "bar_local_mm": [
+      64.5,
+      8,
+      79.5,
+      52
+    ],
+    "underside_projection_mm": 25.2,
+    "lowest_Z_mm": -26.8,
+    "fin_rotation_deg": 90,
+    "tap_coordinates_extrusion_uv_mm": [
+      [
+        12,
+        50
+      ],
+      [
+        48,
+        50
+      ]
+    ],
+    "washer_clearances": [
+      {
+        "ref": "H1",
+        "centre_mm": [
+          5.0,
+          5.0
+        ],
+        "SK81_to_OD9_washer_mm": 12.5
+      },
+      {
+        "ref": "H2",
+        "centre_mm": [
+          145.0,
+          5.0
+        ],
+        "SK81_to_OD9_washer_mm": 18.5
+      },
+      {
+        "ref": "H3",
+        "centre_mm": [
+          145.0,
+          105.0
+        ],
+        "SK81_to_OD9_washer_mm": 19.03720459187964
+      },
+      {
+        "ref": "H4",
+        "centre_mm": [
+          5.0,
+          105.0
+        ],
+        "SK81_to_OD9_washer_mm": 13.22004514666935
+      }
+    ],
+    "rotation_sensitivity_extra_K_W": 0.25,
+    "rotation_measured": false
+  },
+  "pass_device": {
+    "MPN": "ST D45H11",
+    "sink": "Fischer SK10075SA",
+    "manufacturer_source": "https://docs.rs-online.com/0660/0900766b80f3d711.pdf",
+    "sink_dimensions_boardXYZ_mm": [
+      75,
+      40,
+      66
+    ],
+    "sink_native_bounds_mm": [
+      80.04,
+      -22.5,
+      -20,
+      155.04,
+      17.5,
+      46
+    ],
+    "stock_spacer_mm": [
+      15,
+      20,
+      5
+    ],
+    "spacer_native_bounds_mm": [
+      110.04,
+      17.5,
+      3,
+      125.04,
+      22.5,
+      23
+    ],
+    "spacer_drill_mm": 4.0,
+    "fastener": "M3x12 +GS220Pmica +IB6shoulder;check4..6mmthreadengagement",
+    "heatsink_mount": "Independently support with ordinaryM3brackets. Do not hang from transistor leads.",
+    "case_stop_C": 60,
+    "orientation": "75mm extrusion along boardX,not PCBnormal;natural convection withXupright",
+    "physical": "NOT_RUN"
+  },
+  "helper": {
+    "MPN": "ST BD139",
+    "heatsink_candidate": "Fischer FK213SA32 SOT32",
+    "manufacturer_source": "https://www.farnell.com/datasheets/17590.pdf",
+    "catalogue_dimensions_mm": [
+      25.4,
+      18,
+      13
+    ],
+    "catalogue_K_W": 21,
+    "installed_envelope_native_mm": [
+      126.28,
+      22.55,
+      2,
+      144.28,
+      37.55,
+      42
+    ],
+    "body_standoff_mm": 8.5,
+    "installation": "Orient shorterverticalprojectionbelowmountinghole;verifybottom>=2mm/top<=42mm andleadprotrusion>=1mm. GS32P +nylonM3fastener;noIB6forcedintopackage.",
+    "case_limit_C": 80,
+    "source_risk": "Exactholepattern/tolerances/retailfleetstock still require incomingverification;no guaranteedjoint claim",
+    "physical": "NOT_RUN"
+  },
+  "clearances": {
+    "PA_vs_pass_metal_Y_mm": 2.5,
+    "pass_vs_helper_metal_Y_mm": 5.05,
+    "helper_vs_carrier_Z_mm": 3.0,
+    "pass_vs_controller_plan_Y_mm": 22.5
+  },
+  "corner_hardware": "InsulatingM3posts/washers;metalwasherOD9onlyatH5/H6barfixings",
+  "battery": "External protected2S/4Spack baseline. Internalpack capacity/heat/fit not qualified.",
+  "IDC": {
+    "RF2M_initial_mm": 150,
+    "RF80_initial_mm": 220,
+    "construction": "Straightpin1-to-pin1,keyed,half-twistwhereorientationrequires;continuitytestallpins",
+    "I2C_initial_max_Hz": 100000,
+    "example_rise_us": 0.7964620000000001
+  },
+  "RF_outputs": "Side-access right-angle SMA/MMCXpigtails;PAcurrent on separatefusedharness",
+  "side_by_side_min_plane_mm": [
+    260,
+    110
+  ],
+  "optional_dual": {
+    "status": "HOLD_FOR_CASE_THERMAL_EMC_INTEGRATION",
+    "RF80_top_Z_mm": 55,
+    "controller_bottom_Z_mm": 100,
+    "minimum_case_depth_mm": 170,
+    "simultaneous_fullpower_required": false
+  },
+  "physical": "NOT_RUN"
+}

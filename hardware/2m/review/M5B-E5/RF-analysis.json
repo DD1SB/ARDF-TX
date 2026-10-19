@@ -1,0 +1,49 @@
+{
+  "status": "CALCULATED_NOT_MEASURED",
+  "nominal": {
+    "h_mm": 1.5,
+    "copper_mm": 0.035,
+    "Dk": 4.5,
+    "width_mm": 2.741,
+    "Z0_ohm": 50.00496844581197,
+    "effective_Dk": 3.394694554605344,
+    "length_factor": 0.9812056759020715
+  },
+  "Z0_sweep_ohm": [
+    39.39003100514429,
+    63.43722068220203
+  ],
+  "dielectric_loss_dB_per100mm": 0.04401916151466642,
+  "conductor_lower_bound_dB_per100mm": 0.019889485538751504,
+  "mask": [
+    {
+      "mask_mm": 0,
+      "approx_effective_Dk": 3.394694554605344,
+      "approx_Z0_ohm": 50.00496844581197,
+      "phase_factor": 1.0,
+      "method": "First-orderthincoatingair-fringeenergyparticipationbound;notvalidatedEMmodel"
+    },
+    {
+      "mask_mm": 0.015,
+      "approx_effective_Dk": 3.412379441731659,
+      "approx_Z0_ohm": 49.875223059285105,
+      "phase_factor": 1.0026013996242713,
+      "method": "First-orderthincoatingair-fringeenergyparticipationbound;notvalidatedEMmodel"
+    },
+    {
+      "mask_mm": 0.03,
+      "approx_effective_Dk": 3.430064328857973,
+      "approx_Z0_ohm": 49.74648239165585,
+      "phase_factor": 1.005196066972556,
+      "method": "First-orderthincoatingair-fringeenergyparticipationbound;notvalidatedEMmodel"
+    }
+  ],
+  "selected_geometry": "Conventionalmicrostripwithdeliberatetop-fillkeepout,continuousbottomRFreturn;noimpedancecontrol",
+  "GCPW_disposition": "Notselected:wideconventionalmicrostripfits;GCPWwouldaddgap/fenceandcomponent-junctionconstraints. NoarbitraryGCPW50ohmclaim.",
+  "limitations": [
+    "HJfinite-thicknessquasistaticmodel;ordinaryFR4variationnotcontrolledimpedance",
+    "Groundedcomponentstubs,padsteps,PApackageandSMAinductancearenotqualifiedbythelinecalculation",
+    "Inputcomparisonloadisillustrative;notmanufacturer144MHzlarge-signaldata",
+    "LPFidealtransferisnotaharmonicmeasurement;actualcoilsQ/SRFandstubsrequireend-to-endalignment"
+  ]
+}

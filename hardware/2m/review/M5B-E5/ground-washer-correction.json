@@ -1,0 +1,115 @@
+{
+  "status": "IMPLEMENTED_NATIVE_GROUND_LAND_REQUIRES_REFILL_DRC",
+  "reason": "H6groundwasher contactpatch was cut by a newly routedKEY trace. Audit also found inheritedVPA feed under H5OD9metalwasher. Mask alone is not insulation.",
+  "lands": [
+    {
+      "centre_mm": [
+        92,
+        32
+      ],
+      "outer_mm": 9.5,
+      "inner_mm": 4.3,
+      "uuid": "622a76b1-b29d-4caf-9070-aed8e0c0b079"
+    },
+    {
+      "centre_mm": [
+        92,
+        68
+      ],
+      "outer_mm": 9.5,
+      "inner_mm": 4.3,
+      "uuid": "30542aeb-3d08-4b99-b6a9-191ef1c0a052"
+    }
+  ],
+  "removed_for_local_reroute": [
+    {
+      "uuid": "318ce3b5-dbe4-4c24-9b1f-29f918e4f68e",
+      "net": "VPA",
+      "old_start_mm": [
+        94.4,
+        29.6
+      ],
+      "old_end_mm": [
+        75.8,
+        29.6
+      ]
+    },
+    {
+      "uuid": "64114827-8e4c-4a4c-9ab0-46757597c635",
+      "net": "VPA",
+      "old_start_mm": [
+        98.6,
+        33.8
+      ],
+      "old_end_mm": [
+        94.4,
+        29.6
+      ]
+    },
+    {
+      "uuid": "62cea006-593e-4b30-910c-f5a06b9de357",
+      "net": "KEY",
+      "old_start_mm": [
+        87.824,
+        72.4735
+      ],
+      "old_end_mm": [
+        102.4473,
+        72.4735
+      ]
+    },
+    {
+      "uuid": "029e5358-f054-4ce0-ba15-196ec0aa898f",
+      "net": "NORMAL_OFF",
+      "old_start_mm": [
+        91.802,
+        65.5801
+      ],
+      "old_end_mm": [
+        78.0375,
+        65.5801
+      ]
+    },
+    {
+      "uuid": "0a08cd4a-2d80-41b2-ba3c-d439589296f2",
+      "net": "NORMAL_OFF",
+      "old_start_mm": [
+        92.2969,
+        65.8272
+      ],
+      "old_end_mm": [
+        92.0491,
+        65.8272
+      ]
+    },
+    {
+      "uuid": "135587b3-ef55-471d-bb4f-aec7cd6fd7cc",
+      "net": "NORMAL_OFF",
+      "old_start_mm": [
+        92.0491,
+        65.8272
+      ],
+      "old_end_mm": [
+        91.802,
+        65.5801
+      ]
+    },
+    {
+      "uuid": "74fc9cf9-b99c-4803-adba-91f5d42667b4",
+      "net": "NORMAL_OFF",
+      "old_start_mm": [
+        92.2969,
+        65.8272
+      ],
+      "old_end_mm": [
+        102.1057,
+        65.8272
+      ]
+    }
+  ],
+  "matching_RF_lines_changed": false,
+  "thermal_source_joint_changed": false,
+  "thermal_model_credit_for_added_copper": false,
+  "H6_mask_opening": "Original2x0.5mm groundingpatch preserved",
+  "corner_supports": "M3 insulating standoffs/washers;grounded bar hardware onlyH5/H6."
+}

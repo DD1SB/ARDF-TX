@@ -1,0 +1,87 @@
+{
+  "status": "CALCULATED_CONDITIONAL_NOT_MEASURED",
+  "spacer": {
+    "thickness_mm": 5,
+    "minimum_effective_area_mm2": 100,
+    "aluminium_k_assumed_W_mK": 150,
+    "one_dimensional_R_K_W": 0.3333333333333333,
+    "mica_reference_R_K_W": 0.4,
+    "other_contacts_and_spreading_allowance_K_W": 0.5,
+    "conservative_total_selected_K_W": 1.5
+  },
+  "sink": {
+    "catalogue_K_W": 1.9,
+    "nominal_K_W": 1.9,
+    "conservative_K_W": 2.85,
+    "derating": "1.5xengineeringallowance,not manufacturer guarantee;bothchannelsupright"
+  },
+  "pass_loss_case_W": 4.24,
+  "case_40C_nominal_C": 52.296,
+  "case_40C_conservative_C": 58.444,
+  "stop_C": 60,
+  "rows": [
+    {
+      "ambient_C": 25,
+      "loss_W": 2,
+      "nominal_case_C": 30.8,
+      "conservative_case_C": 33.7
+    },
+    {
+      "ambient_C": 25,
+      "loss_W": 3,
+      "nominal_case_C": 33.7,
+      "conservative_case_C": 38.05
+    },
+    {
+      "ambient_C": 25,
+      "loss_W": 4.24,
+      "nominal_case_C": 37.296,
+      "conservative_case_C": 43.444
+    },
+    {
+      "ambient_C": 25,
+      "loss_W": 5.5,
+      "nominal_case_C": 40.95,
+      "conservative_case_C": 48.925
+    },
+    {
+      "ambient_C": 40,
+      "loss_W": 2,
+      "nominal_case_C": 45.8,
+      "conservative_case_C": 48.7
+    },
+    {
+      "ambient_C": 40,
+      "loss_W": 3,
+      "nominal_case_C": 48.7,
+      "conservative_case_C": 53.05
+    },
+    {
+      "ambient_C": 40,
+      "loss_W": 4.24,
+      "nominal_case_C": 52.296,
+      "conservative_case_C": 58.444
+    },
+    {
+      "ambient_C": 40,
+      "loss_W": 5.5,
+      "nominal_case_C": 55.95,
+      "conservative_case_C": 63.925
+    }
+  ],
+  "helper": {
+    "loss_bound_W": 1.1,
+    "nominal_case_C": 64.2,
+    "nominal_junction_C": 75.2,
+    "conservative_case_C": 76.30000000000001,
+    "conservative_junction_C": 87.30000000000001,
+    "case_limit_C": 80,
+    "physical": "NOT_RUN"
+  },
+  "limitations": [
+    "Insulator/tapfit,contactarea,flatnessandpreload unmeasured",
+    "Naturalconvectionand enclosureinlet temperature unqualified",
+    "A5Cairriseor5.5Wpassloss violates60Ccase envelope;stopandreview",
+    "Bothcollector tabsinsulated;no soldermask/greaseas insulation"
+  ]
+}

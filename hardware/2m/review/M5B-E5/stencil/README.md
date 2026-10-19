@@ -1,0 +1,1 @@
+Q501-only paste, freshly exported from final E5 native footprint. Ordinary0.12mm frameless stainless local stencil. Five source windows plus gate/drain apertures. Separate from bare-PCBZIP. Reflow/wetting/firstjointXray/thermal qualification NOT_RUN. No order authorized.

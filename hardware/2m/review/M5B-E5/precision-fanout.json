@@ -1,0 +1,91 @@
+{
+  "status": "ACTUAL_COPPER_CHECKED_LOCAL_ESCAPES_PENDING_FULL_DRC",
+  "native_sha256": "5f09a73c663af1824187554c3f92e8ba63d1154701e8135b271cc3731c86acc1",
+  "connections": [
+    {
+      "net": "GND",
+      "origin_mm": [
+        27.1625,
+        61.0
+      ],
+      "via_mm": [
+        26.1,
+        62.05
+      ],
+      "path_mm": [
+        [
+          27.1625,
+          61.0
+        ],
+        [
+          26.1,
+          61.0
+        ],
+        [
+          26.1,
+          62.05
+        ]
+      ],
+      "trace_mm": 0.2,
+      "land_mm": 0.6,
+      "drill_mm": 0.3,
+      "drill_sensitivity_radius_mm": 0.29,
+      "hidden_solder_pad_hole": false
+    },
+    {
+      "net": "GND",
+      "origin_mm": [
+        65.8,
+        111.525
+      ],
+      "via_mm": [
+        64.75,
+        110.45
+      ],
+      "path_mm": [
+        [
+          65.8,
+          111.525
+        ],
+        [
+          64.75,
+          110.45
+        ]
+      ],
+      "trace_mm": 0.35,
+      "land_mm": 0.6,
+      "drill_mm": 0.3,
+      "drill_sensitivity_radius_mm": 0.29,
+      "hidden_solder_pad_hole": false
+    },
+    {
+      "net": "CLK_TRAIN",
+      "origin_mm": [
+        23.5,
+        70.9
+      ],
+      "via_mm": [
+        24,
+        73
+      ],
+      "path_mm": [
+        [
+          23.5,
+          70.9
+        ],
+        [
+          24,
+          73
+        ]
+      ],
+      "trace_mm": 0.15,
+      "land_mm": 0.6,
+      "drill_mm": 0.3,
+      "drill_sensitivity_radius_mm": 0.29,
+      "hidden_solder_pad_hole": false
+    }
+  ],
+  "ordinary_vias": true,
+  "no_guaranteed_tenting": true,
+  "source98unchanged": true
+}

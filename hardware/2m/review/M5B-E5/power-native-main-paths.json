@@ -1,0 +1,2109 @@
+{
+  "status": "PASS_CONNECTED_NATIVE_MAIN_COPPER_PATHS",
+  "paths": [
+    {
+      "from_pin": "J301.1",
+      "to_pin": "F301.1",
+      "net": "BAT_RAW",
+      "current_bound_A": 3,
+      "R_80C_full_segment_sum_ohm": 0.004304298782194683,
+      "drop_bound_V": 0.01291289634658405,
+      "loss_bound_W": 0.038738689039752146,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "J301",
+          "number": "1",
+          "uuid": "85bd7a51-39ee-4d5f-81c5-b54e44602a0b",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "14850b69-6d01-430e-9941-dd5e5aa42ea8",
+          "width_mm": 1.0,
+          "length_mm": 7.071067811865476,
+          "R_ohm": 0.004304298782194683,
+          "layer": "F.Cu",
+          "I2R_W": 0.038738689039752146,
+          "two_end_80C_conduction_neck_rise_C": 2.54103800689107,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "pad",
+          "ref": "F301",
+          "number": "1",
+          "uuid": "3b34eb24-5e15-4dd9-8525-05742351bcdb",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "F301.2",
+      "to_pin": "Q309.3",
+      "net": "BAT_FUSED",
+      "current_bound_A": 3,
+      "R_80C_full_segment_sum_ohm": 0.01294149362949136,
+      "drop_bound_V": 0.03882448088847408,
+      "loss_bound_W": 0.11647344266542224,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "F301",
+          "number": "2",
+          "uuid": "b15e7be3-a1ed-458b-b5cb-1c7cc9238940",
+          "R_ohm": 0
+        },
+        {
+          "kind": "via",
+          "uuid": "95d9877e-0c45-48c6-b47a-f701b3abfa86",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "9eeb2011-04dc-4dba-bfdb-aed2f7bc8f2a",
+          "width_mm": 1.0,
+          "length_mm": 12.6886,
+          "R_ohm": 0.007723801691748573,
+          "layer": "B.Cu",
+          "I2R_W": 0.06951421522573716,
+          "two_end_80C_conduction_neck_rise_C": 8.182171347989689,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "via",
+          "uuid": "70ebcd9c-cc57-43ca-834e-75d0ccb21eaf",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "f9e7026e-2fdb-4cdb-bf7d-2c308a310727",
+          "width_mm": 1.0,
+          "length_mm": 1.9696,
+          "R_ohm": 0.0011989344618057146,
+          "layer": "F.Cu",
+          "I2R_W": 0.01079041015625143,
+          "two_end_80C_conduction_neck_rise_C": 0.1971502026322154,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "pad",
+          "ref": "Q309",
+          "number": "3",
+          "uuid": "6601ed69-81a4-4dec-b8af-d15f95c4bc3f",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "Q309.2",
+      "to_pin": "Q305.2",
+      "net": "VIN_PROT",
+      "current_bound_A": 3,
+      "R_80C_full_segment_sum_ohm": 0.005742645742081806,
+      "drop_bound_V": 0.017227937226245417,
+      "loss_bound_W": 0.05168381167873625,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "Q309",
+          "number": "2",
+          "uuid": "45b61aff-f7d9-45fb-9eea-4c452eaf72fe",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "8597b87e-a221-41b4-9603-2def69c0b47e",
+          "width_mm": 1.0,
+          "length_mm": 2.8625,
+          "R_ohm": 0.001742460345714286,
+          "layer": "F.Cu",
+          "I2R_W": 0.015682143111428574,
+          "two_end_80C_conduction_neck_rise_C": 0.4164205441230454,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "ac05c8d7-862e-4369-a9e5-4a178411aaad",
+          "width_mm": 1.0,
+          "length_mm": 3.9375,
+          "R_ohm": 0.0023968341000000005,
+          "layer": "F.Cu",
+          "I2R_W": 0.021571506900000006,
+          "two_end_80C_conduction_neck_rise_C": 0.7879203007305198,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "b9090e84-e46a-4066-92c0-0cdb000edd07",
+          "width_mm": 1.0,
+          "length_mm": 2.6339727599198897,
+          "R_ohm": 0.001603351296367519,
+          "layer": "F.Cu",
+          "I2R_W": 0.014430161667307671,
+          "two_end_80C_conduction_neck_rise_C": 0.35258490494367895,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "pad",
+          "ref": "Q305",
+          "number": "2",
+          "uuid": "425a6452-d94f-489e-bc95-6918dfc28e18",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "Q305.3",
+      "to_pin": "L302.1",
+      "net": "VIN_CONV",
+      "current_bound_A": 3,
+      "R_80C_full_segment_sum_ohm": 0.028383079361273,
+      "drop_bound_V": 0.085149238083819,
+      "loss_bound_W": 0.255447714251457,
+      "min_path_width_mm": 0.75,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "Q305",
+          "number": "3",
+          "uuid": "a5abe7ed-2d0d-4784-808b-62a025c6f004",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "51278669-29f4-4156-8247-001934172d13",
+          "width_mm": 1.0,
+          "length_mm": 6.3579,
+          "R_ohm": 0.0038701794347657152,
+          "layer": "F.Cu",
+          "I2R_W": 0.03483161491289144,
+          "two_end_80C_conduction_neck_rise_C": 2.0543221192455707,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "888d0ca2-2a6c-471e-a4e5-2b0332f1225b",
+          "width_mm": 1.0,
+          "length_mm": 4.2762,
+          "R_ohm": 0.002603007486582858,
+          "layer": "F.Cu",
+          "I2R_W": 0.02342706737924572,
+          "two_end_80C_conduction_neck_rise_C": 0.9293026486746806,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "26503116-74bc-4b85-808b-da09dae9add9",
+          "width_mm": 1.0,
+          "length_mm": 3.8681569358028898,
+          "R_ohm": 0.002354623605811779,
+          "layer": "F.Cu",
+          "I2R_W": 0.02119161245230601,
+          "two_end_80C_conduction_neck_rise_C": 0.7604126408927123,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "e271419f-79d1-4e81-91c1-8562f929ee36",
+          "width_mm": 1.0,
+          "length_mm": 9.2907,
+          "R_ohm": 0.005655432780411429,
+          "layer": "F.Cu",
+          "I2R_W": 0.050898895023702866,
+          "two_end_80C_conduction_neck_rise_C": 4.386700964719075,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "ff319f8b-19ac-4cb9-a44b-8a8c0cd18003",
+          "width_mm": 1.0,
+          "length_mm": 0.9179660233363761,
+          "R_ohm": 0.0005587840679045137,
+          "layer": "F.Cu",
+          "I2R_W": 0.005029056611140623,
+          "two_end_80C_conduction_neck_rise_C": 0.042824704067368,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "f2c13b96-3f17-4552-ab1d-5445d1a0c31d",
+          "width_mm": 0.75,
+          "length_mm": 1.0803177402968074,
+          "R_ohm": 0.0008768143572582714,
+          "layer": "F.Cu",
+          "I2R_W": 0.007891329215324443,
+          "two_end_80C_conduction_neck_rise_C": 0.10544394490831764,
+          "isolated_long_trace_IPC2221_rise_C": 26.890028896987
+        },
+        {
+          "kind": "track",
+          "uuid": "5f3ea437-04ca-45fc-a6ef-89817dc864a1",
+          "width_mm": 1.0,
+          "length_mm": 0.6378103166302659,
+          "R_ohm": 0.0003882477501539603,
+          "layer": "F.Cu",
+          "I2R_W": 0.0034942297513856427,
+          "two_end_80C_conduction_neck_rise_C": 0.020673986865586018,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "b38d0822-4dfc-4728-88c7-0480309d8735",
+          "width_mm": 1.0,
+          "length_mm": 2.0758,
+          "R_ohm": 0.001263580501531429,
+          "layer": "F.Cu",
+          "I2R_W": 0.011372224513782862,
+          "two_end_80C_conduction_neck_rise_C": 0.21898389281735128,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "c82737ef-b325-4f59-89df-60b8600efb18",
+          "width_mm": 1.0,
+          "length_mm": 3.196,
+          "R_ohm": 0.0019454683894857148,
+          "layer": "F.Cu",
+          "I2R_W": 0.017509215505371434,
+          "two_end_80C_conduction_neck_rise_C": 0.5191043854839249,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "4047eef8-7a81-4121-97cc-dc30201fbf2c",
+          "width_mm": 1.0,
+          "length_mm": 6.786386621759771,
+          "R_ohm": 0.004131007713223524,
+          "layer": "F.Cu",
+          "I2R_W": 0.03717906941901172,
+          "two_end_80C_conduction_neck_rise_C": 2.3405523127519388,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "6d1a4e91-6af9-447b-ae5c-9a7782fbb16a",
+          "width_mm": 1.0,
+          "length_mm": 1.5594,
+          "R_ohm": 0.0009492376115657145,
+          "layer": "F.Cu",
+          "I2R_W": 0.00854313850409143,
+          "two_end_80C_conduction_neck_rise_C": 0.12358228370389773,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "a590cafd-8bfc-4a63-a29f-73042d0b089c",
+          "width_mm": 1.0,
+          "length_mm": 4.019053522908099,
+          "R_ohm": 0.002446477341823813,
+          "layer": "F.Cu",
+          "I2R_W": 0.02201829607641432,
+          "two_end_80C_conduction_neck_rise_C": 0.8208971281479271,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "91db584f-f5cc-4fec-a414-34e601555d21",
+          "width_mm": 1.0,
+          "length_mm": 2.2017,
+          "R_ohm": 0.0013402183207542862,
+          "layer": "F.Cu",
+          "I2R_W": 0.012061964886788576,
+          "two_end_80C_conduction_neck_rise_C": 0.24635276522488325,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "pad",
+          "ref": "L302",
+          "number": "1",
+          "uuid": "cc921f41-7b52-47cf-8979-95ddee69670a",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "Q305.3",
+      "to_pin": "U301.3",
+      "net": "VIN_CONV",
+      "current_bound_A": 3,
+      "R_80C_full_segment_sum_ohm": 0.005128928570630728,
+      "drop_bound_V": 0.015386785711892184,
+      "loss_bound_W": 0.04616035713567655,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "Q305",
+          "number": "3",
+          "uuid": "a5abe7ed-2d0d-4784-808b-62a025c6f004",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "51278669-29f4-4156-8247-001934172d13",
+          "width_mm": 1.0,
+          "length_mm": 6.3579,
+          "R_ohm": 0.0038701794347657152,
+          "layer": "F.Cu",
+          "I2R_W": 0.03483161491289144,
+          "two_end_80C_conduction_neck_rise_C": 2.0543221192455707,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "track",
+          "uuid": "275d37e5-bdfd-417e-b46e-7a2e299ec49d",
+          "width_mm": 1.0,
+          "length_mm": 2.0678630709019394,
+          "R_ohm": 0.0012587491358650128,
+          "layer": "F.Cu",
+          "I2R_W": 0.011328742222785116,
+          "two_end_80C_conduction_neck_rise_C": 0.217312501690769,
+          "isolated_long_trace_IPC2221_rise_C": 16.738876502509573
+        },
+        {
+          "kind": "pad",
+          "ref": "U301",
+          "number": "3",
+          "uuid": "c7041595-31c1-479f-9f9d-404a2b7a5969",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "U302.8",
+      "to_pin": "J302.1",
+      "net": "VBOOST",
+      "current_bound_A": 2.0,
+      "R_80C_full_segment_sum_ohm": 0.022773713464060638,
+      "drop_bound_V": 0.045547426928121276,
+      "loss_bound_W": 0.09109485385624255,
+      "min_path_width_mm": 0.6,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "U302",
+          "number": "8",
+          "uuid": "b1638cfa-2d4c-4111-b118-0fe3bb319d8b",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "f3c4b6ac-ee1a-4b06-9887-03c2da7c289c",
+          "width_mm": 0.6,
+          "length_mm": 1.8,
+          "R_ohm": 0.0018261593142857148,
+          "layer": "F.Cu",
+          "I2R_W": 0.007304637257142859,
+          "two_end_80C_conduction_neck_rise_C": 0.2032830405512855,
+          "isolated_long_trace_IPC2221_rise_C": 15.454862068294359
+        },
+        {
+          "kind": "track",
+          "uuid": "8ba8db2d-724b-4a20-b4c8-7c9161c67f1d",
+          "width_mm": 0.6,
+          "length_mm": 0.8485281374238571,
+          "R_ohm": 0.0008608597564389365,
+          "layer": "F.Cu",
+          "I2R_W": 0.003443439025755746,
+          "two_end_80C_conduction_neck_rise_C": 0.045174009011396794,
+          "isolated_long_trace_IPC2221_rise_C": 15.454862068294359
+        },
+        {
+          "kind": "track",
+          "uuid": "340004b2-64be-4cf4-bd45-2387c7090f62",
+          "width_mm": 0.6,
+          "length_mm": 4.3,
+          "R_ohm": 0.004362491695238097,
+          "layer": "F.Cu",
+          "I2R_W": 0.017449966780952387,
+          "two_end_80C_conduction_neck_rise_C": 1.1600936480843425,
+          "isolated_long_trace_IPC2221_rise_C": 15.454862068294359
+        },
+        {
+          "kind": "track",
+          "uuid": "82bfb9b5-5982-4c61-91d3-0b220b5d79a6",
+          "width_mm": 1.0,
+          "length_mm": 7.6777,
+          "R_ohm": 0.0046735677890971435,
+          "layer": "F.Cu",
+          "I2R_W": 0.018694271156388574,
+          "two_end_80C_conduction_neck_rise_C": 1.3314379003469814,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "07fc2f60-3f9f-4ea4-9643-6b26a46d9078",
+          "width_mm": 1.0,
+          "length_mm": 3.7789200600171475,
+          "R_ohm": 0.0023003033551804823,
+          "layer": "F.Cu",
+          "I2R_W": 0.00920121342072193,
+          "two_end_80C_conduction_neck_rise_C": 0.3225477733957801,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "696c0549-5a57-4f88-800b-13bab52d1d71",
+          "width_mm": 1.0,
+          "length_mm": 2.9116,
+          "R_ohm": 0.0017723484864914292,
+          "layer": "F.Cu",
+          "I2R_W": 0.007089393945965717,
+          "two_end_80C_conduction_neck_rise_C": 0.19147940086339316,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "c84956ee-7d65-4351-8adf-32a33258d7b4",
+          "width_mm": 1.0,
+          "length_mm": 4.996275094507907,
+          "R_ohm": 0.003041331433523118,
+          "layer": "F.Cu",
+          "I2R_W": 0.012165325734092472,
+          "two_end_80C_conduction_neck_rise_C": 0.5638340814640292,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "310ff4ca-30e6-4a6e-b3da-308cb845bce9",
+          "width_mm": 1.0,
+          "length_mm": 6.4671,
+          "R_ohm": 0.003936651633805716,
+          "layer": "F.Cu",
+          "I2R_W": 0.015746606535222862,
+          "two_end_80C_conduction_neck_rise_C": 0.944664926938217,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "pad",
+          "ref": "J302",
+          "number": "1",
+          "uuid": "194c6b7b-14e8-4420-bfa6-53173869706a",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "L301.2",
+      "to_pin": "J302.3",
+      "net": "VBUCK",
+      "current_bound_A": 2.0,
+      "R_80C_full_segment_sum_ohm": 0.021739713373338316,
+      "drop_bound_V": 0.04347942674667663,
+      "loss_bound_W": 0.08695885349335326,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "L301",
+          "number": "2",
+          "uuid": "37516707-29bd-463a-9eaf-fd243818eab2",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "c669c3de-b956-4bda-972f-c0aa34b3a0be",
+          "width_mm": 1.0,
+          "length_mm": 3.1517,
+          "R_ohm": 0.0019185021036114288,
+          "layer": "F.Cu",
+          "I2R_W": 0.007674008414445715,
+          "two_end_80C_conduction_neck_rise_C": 0.22436152430249132,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "92a9e95d-379a-4359-b39f-896a54f4b1c6",
+          "width_mm": 1.0,
+          "length_mm": 5.4733,
+          "R_ohm": 0.003331705924960001,
+          "layer": "F.Cu",
+          "I2R_W": 0.013326823699840003,
+          "two_end_80C_conduction_neck_rise_C": 0.6766391851236948,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "9d715e24-577e-4f33-8eb5-e0c466a81ad2",
+          "width_mm": 1.0,
+          "length_mm": 2.538230501747231,
+          "R_ohm": 0.0015450710908566027,
+          "layer": "F.Cu",
+          "I2R_W": 0.006180284363426411,
+          "two_end_80C_conduction_neck_rise_C": 0.14551935325343587,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "34478f0e-557b-4a70-a759-f321e2bf6ce7",
+          "width_mm": 1.0,
+          "length_mm": 3.1342,
+          "R_ohm": 0.0019078495076114291,
+          "layer": "F.Cu",
+          "I2R_W": 0.0076313980304457164,
+          "two_end_80C_conduction_neck_rise_C": 0.22187688039909986,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "via",
+          "uuid": "fa04073d-56ec-4bad-9b3d-65ce0b667191",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "851ab99f-a6e2-4505-8cb0-fd2a5c905560",
+          "width_mm": 1.0,
+          "length_mm": 4.915806342808879,
+          "R_ohm": 0.002992348513381743,
+          "layer": "B.Cu",
+          "I2R_W": 0.011969394053526972,
+          "two_end_80C_conduction_neck_rise_C": 0.5458183971048866,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "42b9e58a-d2c1-4fc7-a24c-8932b13633ab",
+          "width_mm": 1.0,
+          "length_mm": 13.1996,
+          "R_ohm": 0.008034857494948575,
+          "layer": "B.Cu",
+          "I2R_W": 0.0321394299797943,
+          "two_end_80C_conduction_neck_rise_C": 3.9353211499192287,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "pad",
+          "ref": "J302",
+          "number": "3",
+          "uuid": "db26f0dc-5d4d-40ee-933e-4ee7652db399",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "J302.2",
+      "to_pin": "Q302.2",
+      "net": "VREG_RAW",
+      "current_bound_A": 2.0,
+      "R_80C_full_segment_sum_ohm": 0.06675268066195711,
+      "drop_bound_V": 0.13350536132391422,
+      "loss_bound_W": 0.26701072264782844,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "J302",
+          "number": "2",
+          "uuid": "fab360c3-f6bd-4e3d-9d1c-fdb7660676c4",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "2dfd29c3-e702-46f1-9fbd-df042200b64a",
+          "width_mm": 1.0,
+          "length_mm": 13.4237,
+          "R_ohm": 0.008171271595725718,
+          "layer": "B.Cu",
+          "I2R_W": 0.03268508638290287,
+          "two_end_80C_conduction_neck_rise_C": 4.070081577719605,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "3a59dd7a-259f-48da-8cdb-0f5eb8955a6c",
+          "width_mm": 1.0,
+          "length_mm": 3.31831070275223,
+          "R_ohm": 0.0020199213325083204,
+          "layer": "B.Cu",
+          "I2R_W": 0.008079685330033282,
+          "two_end_80C_conduction_neck_rise_C": 0.24870970598812267,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "a314bf2c-f88a-487b-8a86-8c3a6e38e651",
+          "width_mm": 1.0,
+          "length_mm": 1.1251,
+          "R_ohm": 0.0006848706148342859,
+          "layer": "B.Cu",
+          "I2R_W": 0.0027394824593371435,
+          "two_end_80C_conduction_neck_rise_C": 0.028591759879408353,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "6190dcd1-b235-4850-8fe4-eebc1b24e861",
+          "width_mm": 1.0,
+          "length_mm": 1.0743780433348404,
+          "R_ohm": 0.0006539951569666601,
+          "layer": "B.Cu",
+          "I2R_W": 0.0026159806278666406,
+          "two_end_80C_conduction_neck_rise_C": 0.026071912322534408,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "df99c63f-6ce6-457e-853b-0ed762c9e7ad",
+          "width_mm": 1.0,
+          "length_mm": 1.7325,
+          "R_ohm": 0.0010546070040000001,
+          "layer": "B.Cu",
+          "I2R_W": 0.0042184280160000006,
+          "two_end_80C_conduction_neck_rise_C": 0.06779616454285715,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "0a0b42c6-8263-470f-877e-756770040868",
+          "width_mm": 1.0,
+          "length_mm": 1.2247089450151003,
+          "R_ohm": 0.0007455045490761189,
+          "layer": "B.Cu",
+          "I2R_W": 0.0029820181963044756,
+          "two_end_80C_conduction_neck_rise_C": 0.03387851910215108,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "via",
+          "uuid": "369313b5-9a0f-443c-8651-4fd358ca008d",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "f8f05f36-a484-47d7-bf32-c46c9b4c4da0",
+          "width_mm": 1.0,
+          "length_mm": 3.297097499316634,
+          "R_ohm": 0.0020070084361617367,
+          "layer": "F.Cu",
+          "I2R_W": 0.008028033744646947,
+          "two_end_80C_conduction_neck_rise_C": 0.2455399812978201,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "bd8b50b5-ac1b-411b-b331-eef987c71fc0",
+          "width_mm": 1.0,
+          "length_mm": 6.4261,
+          "R_ohm": 0.003911694123177144,
+          "layer": "F.Cu",
+          "I2R_W": 0.015646776492708576,
+          "two_end_80C_conduction_neck_rise_C": 0.9327249575120091,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "via",
+          "uuid": "894ae4dc-1c50-490f-b024-f8e6ca17f885",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "7294c191-c9e4-441a-8bac-0cd7b6aea68b",
+          "width_mm": 1.0,
+          "length_mm": 37.8341,
+          "R_ohm": 0.023030364704205723,
+          "layer": "B.Cu",
+          "I2R_W": 0.09212145881682289,
+          "two_end_80C_conduction_neck_rise_C": 32.331470176452314,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "92b3e142-c7ab-4a39-a540-4cb1090bd489",
+          "width_mm": 1.0,
+          "length_mm": 7.3810634247376585,
+          "R_ohm": 0.004492999240806097,
+          "layer": "B.Cu",
+          "I2R_W": 0.01797199696322439,
+          "two_end_80C_conduction_neck_rise_C": 1.230542202734247,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "3bbc6b0b-2e6c-4667-ba59-631b55a2d466",
+          "width_mm": 1.0,
+          "length_mm": 4.5733,
+          "R_ohm": 0.0027838581306742862,
+          "layer": "B.Cu",
+          "I2R_W": 0.011135432522697145,
+          "two_end_80C_conduction_neck_rise_C": 0.4724088456034402,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "cb5d5561-2b54-4b9c-a98f-189fe020b268",
+          "width_mm": 1.0,
+          "length_mm": 4.857682165395345,
+          "R_ohm": 0.002956967177392103,
+          "layer": "B.Cu",
+          "I2R_W": 0.011827868709568413,
+          "two_end_80C_conduction_neck_rise_C": 0.5329872623850477,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "738235c2-2e71-44c9-9b6b-4f1bdb96af20",
+          "width_mm": 1.0,
+          "length_mm": 3.1992,
+          "R_ohm": 0.001947416292754286,
+          "layer": "B.Cu",
+          "I2R_W": 0.007789665171017144,
+          "two_end_80C_conduction_neck_rise_C": 0.23117529513096519,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "78dda588-4333-4dc5-86d6-5965f55912a5",
+          "width_mm": 1.0,
+          "length_mm": 3.0088,
+          "R_ohm": 0.0018315160482742859,
+          "layer": "B.Cu",
+          "I2R_W": 0.0073260641930971435,
+          "two_end_80C_conduction_neck_rise_C": 0.2044773835268153,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "1d4dcd03-ff38-46d9-b0c1-0c877d7b6d08",
+          "width_mm": 1.0,
+          "length_mm": 1.7909,
+          "R_ohm": 0.0010901562386514288,
+          "layer": "B.Cu",
+          "I2R_W": 0.004360624954605715,
+          "two_end_80C_conduction_neck_rise_C": 0.07244381476069922,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "via",
+          "uuid": "89ea2ada-39a1-42c5-9f15-dc6116cf963f",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "d8aeedfc-64f6-4243-83ec-438a666e464e",
+          "width_mm": 1.0,
+          "length_mm": 0.9622,
+          "R_ohm": 0.0005857101640685717,
+          "layer": "F.Cu",
+          "I2R_W": 0.0023428406562742868,
+          "two_end_80C_conduction_neck_rise_C": 0.020911700180585524,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "da0f0173-b3b2-4333-9bb8-e5d23bff3764",
+          "width_mm": 1.0,
+          "length_mm": 1.7059658202906647,
+          "R_ohm": 0.001038455124192289,
+          "layer": "F.Cu",
+          "I2R_W": 0.004153820496769156,
+          "two_end_80C_conduction_neck_rise_C": 0.06573539694908136,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "998307a9-5cf7-4cc4-8bf6-b61973b0d680",
+          "width_mm": 1.0,
+          "length_mm": 1.0166,
+          "R_ohm": 0.0006188245196342859,
+          "layer": "F.Cu",
+          "I2R_W": 0.0024752980785371437,
+          "two_end_80C_conduction_neck_rise_C": 0.02334311713024917,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "4edb8843-9d3f-44f4-ae2d-a13b19da8d56",
+          "width_mm": 1.0,
+          "length_mm": 1.8060921405066799,
+          "R_ohm": 0.0010994039949481658,
+          "layer": "F.Cu",
+          "I2R_W": 0.004397615979792663,
+          "two_end_80C_conduction_neck_rise_C": 0.07367810443478769,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "pad",
+          "ref": "Q302",
+          "number": "2",
+          "uuid": "0c3b09a3-6e62-4f44-8ea6-8f85a4bfa807",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "Q302.3",
+      "to_pin": "R309.1",
+      "net": "VREG_SWITCH",
+      "current_bound_A": 2.0,
+      "R_80C_full_segment_sum_ohm": 0.004161396062625819,
+      "drop_bound_V": 0.008322792125251638,
+      "loss_bound_W": 0.016645584250503276,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "Q302",
+          "number": "3",
+          "uuid": "5f6b4f3b-b72d-4d88-978a-ae30683772ac",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "8ba4b398-d3d9-4799-a777-e051fd6d8c0f",
+          "width_mm": 1.0,
+          "length_mm": 6.836308360511542,
+          "R_ohm": 0.004161396062625819,
+          "layer": "F.Cu",
+          "I2R_W": 0.016645584250503276,
+          "two_end_80C_conduction_neck_rise_C": 1.0556061853183192,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "pad",
+          "ref": "R309",
+          "number": "1",
+          "uuid": "fc544844-af11-42ba-b46c-1b50314ffe8f",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "R309.2",
+      "to_pin": "Q401.3",
+      "net": "VMOD",
+      "current_bound_A": 2.0,
+      "R_80C_full_segment_sum_ohm": 0.07387228293738704,
+      "drop_bound_V": 0.14774456587477408,
+      "loss_bound_W": 0.29548913174954816,
+      "min_path_width_mm": 1.0,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "R309",
+          "number": "2",
+          "uuid": "6d0f574e-d274-48e6-ad28-73baf814e7de",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "ab101024-fa0c-4686-8101-7af958735fec",
+          "width_mm": 1.2,
+          "length_mm": 3.9597979746446663,
+          "R_ohm": 0.002008672765024185,
+          "layer": "F.Cu",
+          "I2R_W": 0.00803469106009674,
+          "two_end_80C_conduction_neck_rise_C": 0.24594738239538255,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "15862435-3bd7-44d9-8950-4b8168bd503b",
+          "width_mm": 1.2,
+          "length_mm": 3.9597979746446663,
+          "R_ohm": 0.002008672765024185,
+          "layer": "F.Cu",
+          "I2R_W": 0.00803469106009674,
+          "two_end_80C_conduction_neck_rise_C": 0.24594738239538255,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "e57886ba-4a6d-48c4-85b2-3caf586b5e61",
+          "width_mm": 2.0,
+          "length_mm": 1.4,
+          "R_ohm": 0.00042610384000000005,
+          "layer": "F.Cu",
+          "I2R_W": 0.0017044153600000002,
+          "two_end_80C_conduction_neck_rise_C": 0.011067632207792208,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "via",
+          "uuid": "db033585-3fd7-411b-a157-27adaf149474",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "4790ce31-9e26-4c96-ab16-037373cd5f33",
+          "width_mm": 1.0,
+          "length_mm": 1.933333,
+          "R_ohm": 0.0011768580218553145,
+          "layer": "B.Cu",
+          "I2R_W": 0.004707432087421258,
+          "two_end_80C_conduction_neck_rise_C": 0.08442517439582933,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "af735b47-0fe8-492c-83eb-00408a754849",
+          "width_mm": 2.0,
+          "length_mm": 1.933333,
+          "R_ohm": 0.0005884290109276572,
+          "layer": "B.Cu",
+          "I2R_W": 0.002353716043710629,
+          "two_end_80C_conduction_neck_rise_C": 0.021106293598957333,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "1dc009fb-c8b4-455f-aa98-c59dbdc7a83d",
+          "width_mm": 2.0,
+          "length_mm": 1.933333,
+          "R_ohm": 0.0005884290109276572,
+          "layer": "B.Cu",
+          "I2R_W": 0.002353716043710629,
+          "two_end_80C_conduction_neck_rise_C": 0.021106293598957333,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "aac8e660-0c87-4b8a-9bec-8856e672def3",
+          "width_mm": 2.0,
+          "length_mm": 1.933334,
+          "R_ohm": 0.0005884293152875429,
+          "layer": "B.Cu",
+          "I2R_W": 0.0023537172611501718,
+          "two_end_80C_conduction_neck_rise_C": 0.02110631543306357,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "ef291111-ad6b-43b7-8f1c-2efa5ce8d2fd",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "3bcde12d-70ba-4ffe-89c3-a2030065e09e",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "da359ef5-8671-46ad-a0d2-753a771d6a8a",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "cb7d9339-8224-4ebf-880d-934ab55cd13d",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "759b8c29-dc77-455b-8e7a-1c8b5c191b66",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "6085b275-50da-4844-93a8-7068c5fc00bf",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "8caa350c-8267-4da9-8a0d-0f2f755216ad",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2af982a0-f32c-4d1e-9e12-bc9a463d4324",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "0a270365-5b15-4993-98d0-c16eb4282823",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "762296d8-b401-4c80-94ba-a44b23706251",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "f1bb8b82-d238-45dd-94cd-5675c9180029",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "b98a66f7-9f4f-4dae-bcd2-42e31417a4e9",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "bce249ed-d2ca-4f66-b2a6-673dee861ede",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "90ad692e-9491-4f9e-9d67-f242a5e32fac",
+          "width_mm": 2.0,
+          "length_mm": 1.98077,
+          "R_ohm": 0.0006028669308262858,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024114677233051432,
+          "two_end_80C_conduction_neck_rise_C": 0.02215474453752843,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2eef3e0a-4681-4542-aebc-adc43ccd203a",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "122cbcf0-5c11-412b-893a-eb59c42af2d8",
+          "width_mm": 2.0,
+          "length_mm": 1.98077,
+          "R_ohm": 0.0006028669308262858,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024114677233051432,
+          "two_end_80C_conduction_neck_rise_C": 0.02215474453752843,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "3e5a63f7-8305-4d4c-b825-4f6ced7e5848",
+          "width_mm": 1.2,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0010047777107773336,
+          "layer": "B.Cu",
+          "I2R_W": 0.004019110843109334,
+          "two_end_80C_conduction_neck_rise_C": 0.06154089491028783,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "10c8f757-7dcb-48ef-b0c0-247c8539ce47",
+          "width_mm": 1.2,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0010047777107773336,
+          "layer": "B.Cu",
+          "I2R_W": 0.004019110843109334,
+          "two_end_80C_conduction_neck_rise_C": 0.06154089491028783,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "c9347d08-0b99-4dbc-8911-94d4f9683f06",
+          "width_mm": 1.8,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006698518071848891,
+          "layer": "B.Cu",
+          "I2R_W": 0.0026794072287395563,
+          "two_end_80C_conduction_neck_rise_C": 0.027351508849016812,
+          "isolated_long_trace_IPC2221_rise_C": 2.528712350031148
+        },
+        {
+          "kind": "track",
+          "uuid": "555d08ab-7a71-4236-9042-9c3a5db2f87b",
+          "width_mm": 2.0,
+          "length_mm": 1.98077,
+          "R_ohm": 0.0006028669308262858,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024114677233051432,
+          "two_end_80C_conduction_neck_rise_C": 0.02215474453752843,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "ec41bd9e-f0f8-4f69-a933-c713fb5488ac",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "6bcba2cc-a633-4e8e-96ef-ead150b6a8a6",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "55770b84-1a85-4ed1-b3dd-dd4d45ab26cb",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "1d66865a-6b79-4c66-b05c-860846b318d6",
+          "width_mm": 1.2,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0010047777107773336,
+          "layer": "B.Cu",
+          "I2R_W": 0.004019110843109334,
+          "two_end_80C_conduction_neck_rise_C": 0.06154089491028783,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "b88f61ef-a0dc-40be-a974-2ed0168c0975",
+          "width_mm": 1.2,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0010047777107773336,
+          "layer": "B.Cu",
+          "I2R_W": 0.004019110843109334,
+          "two_end_80C_conduction_neck_rise_C": 0.06154089491028783,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "9395d381-454c-494d-90d9-16a6381c6b9a",
+          "width_mm": 2.0,
+          "length_mm": 1.98077,
+          "R_ohm": 0.0006028669308262858,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024114677233051432,
+          "two_end_80C_conduction_neck_rise_C": 0.02215474453752843,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "4c203b9e-131c-4953-9c2c-df6ee03b69d4",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "498dd0c6-21a8-44fe-a146-4d92a3dea8e5",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "a5315a98-2e65-4555-be01-0736d41ec549",
+          "width_mm": 2.0,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0006028666264664002,
+          "layer": "B.Cu",
+          "I2R_W": 0.002411466505865601,
+          "two_end_80C_conduction_neck_rise_C": 0.022154722167703624,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "3f568504-2026-4852-b514-8eaf96308343",
+          "width_mm": 1.5,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0008038221686218668,
+          "layer": "B.Cu",
+          "I2R_W": 0.0032152886744874674,
+          "two_end_80C_conduction_neck_rise_C": 0.039386172742584206,
+          "isolated_long_trace_IPC2221_rise_C": 3.414825597449494
+        },
+        {
+          "kind": "track",
+          "uuid": "eaa9663d-0d27-4109-b83b-5c14bc9aadfa",
+          "width_mm": 1.2,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0010047777107773336,
+          "layer": "B.Cu",
+          "I2R_W": 0.004019110843109334,
+          "two_end_80C_conduction_neck_rise_C": 0.06154089491028783,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "763501eb-14c0-4d9a-a052-af17ffeb2e39",
+          "width_mm": 1.5,
+          "length_mm": 1.980769,
+          "R_ohm": 0.0008038221686218668,
+          "layer": "B.Cu",
+          "I2R_W": 0.0032152886744874674,
+          "two_end_80C_conduction_neck_rise_C": 0.039386172742584206,
+          "isolated_long_trace_IPC2221_rise_C": 3.414825597449494
+        },
+        {
+          "kind": "track",
+          "uuid": "a9f48d68-47ae-4a8d-a09e-4d007fc24010",
+          "width_mm": 2.0,
+          "length_mm": 1.991666,
+          "R_ohm": 0.0006061832361410288,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424732944564115,
+          "two_end_80C_conduction_neck_rise_C": 0.02239915660838698,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "9972547b-785c-41e7-a1ba-a83bfdfdc358",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "3929b910-a386-4821-a34d-b15e132d0f15",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "d9015dd0-a75e-4d15-8919-d0c1422ab72b",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2015acc2-4b29-498d-8acb-83149e05204f",
+          "width_mm": 2.0,
+          "length_mm": 1.991666,
+          "R_ohm": 0.0006061832361410288,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424732944564115,
+          "two_end_80C_conduction_neck_rise_C": 0.02239915660838698,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "eec8299b-7254-401a-a6b1-ef48469e8aff",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "a83f662e-da8d-40d0-a15a-6df75c436055",
+          "width_mm": 2.0,
+          "length_mm": 1.991666,
+          "R_ohm": 0.0006061832361410288,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424732944564115,
+          "two_end_80C_conduction_neck_rise_C": 0.02239915660838698,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "1dd4779b-aa68-43e8-b672-f65d6dc1b7db",
+          "width_mm": 2.0,
+          "length_mm": 1.991666,
+          "R_ohm": 0.0006061832361410288,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424732944564115,
+          "two_end_80C_conduction_neck_rise_C": 0.02239915660838698,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "86c55490-cb2b-4188-b91a-ca2d18397e99",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "45dafa71-c24f-421d-a142-71b9443475e2",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "17f65df0-81b6-4a4c-8961-9d54fb0b0115",
+          "width_mm": 2.0,
+          "length_mm": 1.991666,
+          "R_ohm": 0.0006061832361410288,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424732944564115,
+          "two_end_80C_conduction_neck_rise_C": 0.02239915660838698,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "6b832a61-2ce4-4707-8bca-ad567b67e378",
+          "width_mm": 2.0,
+          "length_mm": 1.991667,
+          "R_ohm": 0.0006061835405009145,
+          "layer": "B.Cu",
+          "I2R_W": 0.002424734162003658,
+          "two_end_80C_conduction_neck_rise_C": 0.02239917910127709,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "63ce42b8-8a3f-41ad-b1f9-d072cf112bf6",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "a4816b9c-c18d-4521-93a2-317d418245d0",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "810a413b-1638-41c1-849f-d4deaff6c64f",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2a2207fc-8f08-4fe3-ba50-3f0f0f455c40",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "58b7002f-d7c0-4fb8-ac05-55a64a67c50d",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "6c0aa43e-ed7f-478b-a1ef-c023597f3e83",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "278b7037-4a81-4507-99dd-35dfc52feaff",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "c66893ff-f785-4b48-8475-70a26b66685e",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "e6d48b52-d23d-4c75-84b9-ee2905450c55",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "a58b8e9f-6274-4344-a2da-c66b90ba18da",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "24272226-f74f-4482-bc9a-da6e8292357e",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "b97b8fd5-6a95-479d-812d-fcbf085a01b0",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "24a51936-deb0-40cc-bbe2-35e1366c4896",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "a5a5941d-ba6a-4565-b8fd-c08d0a1c8be8",
+          "width_mm": 2.0,
+          "length_mm": 2.0,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "B.Cu",
+          "I2R_W": 0.0024348790857142864,
+          "two_end_80C_conduction_neck_rise_C": 0.02258700450569839,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "01694567-18c5-4f32-94d8-b7d641eba190",
+          "width_mm": 1.0,
+          "length_mm": 1.6,
+          "R_ohm": 0.0009739516342857146,
+          "layer": "B.Cu",
+          "I2R_W": 0.0038958065371428583,
+          "two_end_80C_conduction_neck_rise_C": 0.0578227315345879,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "c971387a-02cf-4340-831e-1cc554aaa1e0",
+          "width_mm": 1.0,
+          "length_mm": 1.6,
+          "R_ohm": 0.0009739516342857146,
+          "layer": "B.Cu",
+          "I2R_W": 0.0038958065371428583,
+          "two_end_80C_conduction_neck_rise_C": 0.0578227315345879,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "9c44061d-743f-4081-b695-7e99b385cf7b",
+          "width_mm": 1.0,
+          "length_mm": 1.6,
+          "R_ohm": 0.0009739516342857146,
+          "layer": "B.Cu",
+          "I2R_W": 0.0038958065371428583,
+          "two_end_80C_conduction_neck_rise_C": 0.0578227315345879,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "65954358-7563-436c-bc3b-148c912a43d2",
+          "width_mm": 2.0,
+          "length_mm": 1.9798989873223332,
+          "R_ohm": 0.0006026018295072556,
+          "layer": "B.Cu",
+          "I2R_W": 0.002410407318029022,
+          "two_end_80C_conduction_neck_rise_C": 0.02213526441558443,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "ca8fffbb-9aad-4cd3-ac99-1ce20995f54f",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "eee10317-0b0a-4b13-9018-663ac2204e05",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "58e8f276-3610-45b4-954e-cf1c4555dd9d",
+          "width_mm": 1.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.001198598448491886,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794393793967544,
+          "two_end_80C_conduction_neck_rise_C": 0.08757320511339707,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "d1042e0d-aaf1-4d26-9a5c-ffa986fad351",
+          "width_mm": 1.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0011985978397721145,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794391359088458,
+          "two_end_80C_conduction_neck_rise_C": 0.08757311616362758,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "6da4780c-ea30-429b-b7fe-093fd4fda29b",
+          "width_mm": 1.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.001198598448491886,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794393793967544,
+          "two_end_80C_conduction_neck_rise_C": 0.08757320511339707,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "a40bdf42-7ffc-4edf-9640-e2643107cd76",
+          "width_mm": 1.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0011985978397721145,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794391359088458,
+          "two_end_80C_conduction_neck_rise_C": 0.08757311616362758,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "56920f03-1b7f-4906-8e58-27c6ccaa8629",
+          "width_mm": 1.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.001198598448491886,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794393793967544,
+          "two_end_80C_conduction_neck_rise_C": 0.08757320511339707,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "3e0e10ed-5173-4fa4-a805-c9308ca5d89a",
+          "width_mm": 1.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.001198598448491886,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794393793967544,
+          "two_end_80C_conduction_neck_rise_C": 0.08757320511339707,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "5d5076fc-7c56-4e0c-ad27-e7f76a8617e7",
+          "width_mm": 1.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0011985978397721145,
+          "layer": "B.Cu",
+          "I2R_W": 0.004794391359088458,
+          "two_end_80C_conduction_neck_rise_C": 0.08757311616362758,
+          "isolated_long_trace_IPC2221_rise_C": 6.660685045364097
+        },
+        {
+          "kind": "track",
+          "uuid": "9a4f0659-a248-47e4-8726-d9a02181e0e4",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "9f689fc5-e2b4-4f21-aaad-8e6074219feb",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "73aac160-e3ff-48e9-b3bd-ecb0c1f00da4",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2a56df69-9034-45d7-81da-ab34d2eccdb6",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "713dc876-4479-4684-91d0-c17425700974",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "448eb74c-4607-42d0-a2cf-c1f18621d46d",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "9585ddbf-b332-4ca3-a212-c06164e4541b",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "470566c6-0d32-4cef-aab2-ae63a3f9b287",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "0a9bba94-1ab2-46db-91d1-aee2b135af93",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "499a58fb-1132-4bf8-a09a-ddfc15886f2f",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "acffe214-1f3a-472b-90ed-633d07ca48c0",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "36abaf36-1fac-465d-b0b9-a331eabc55ed",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "f88a051b-c1e2-4f34-99f5-c384325e31fc",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "2b932a16-63cc-45df-9582-e75212c98c7a",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "99619a0b-b29d-4aa2-8608-01fa70679c53",
+          "width_mm": 2.0,
+          "length_mm": 1.969047,
+          "R_ohm": 0.0005992989198860573,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397195679544229,
+          "two_end_80C_conduction_neck_rise_C": 0.021893279040906894,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "280cef1f-be78-4213-9dd5-dd0a0c9f6a74",
+          "width_mm": 2.0,
+          "length_mm": 1.969048,
+          "R_ohm": 0.000599299224245943,
+          "layer": "B.Cu",
+          "I2R_W": 0.002397196896983772,
+          "two_end_80C_conduction_neck_rise_C": 0.021893301278349268,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "track",
+          "uuid": "d2ed6cff-aff8-4e7e-aead-3ffd8661e8ed",
+          "width_mm": 1.8,
+          "length_mm": 2.5455844122715714,
+          "R_ohm": 0.0008608597564389365,
+          "layer": "B.Cu",
+          "I2R_W": 0.003443439025755746,
+          "two_end_80C_conduction_neck_rise_C": 0.04517400901139678,
+          "isolated_long_trace_IPC2221_rise_C": 2.528712350031148
+        },
+        {
+          "kind": "track",
+          "uuid": "bcd14ca6-2c82-4004-92d5-e43d0c920c9a",
+          "width_mm": 1.2,
+          "length_mm": 2.0,
+          "R_ohm": 0.0010145329523809526,
+          "layer": "B.Cu",
+          "I2R_W": 0.00405813180952381,
+          "two_end_80C_conduction_neck_rise_C": 0.06274167918249551,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "041498a5-e4d7-4ce4-965b-5328936ad20b",
+          "width_mm": 1.2,
+          "length_mm": 2.0,
+          "R_ohm": 0.0010145329523809526,
+          "layer": "B.Cu",
+          "I2R_W": 0.00405813180952381,
+          "two_end_80C_conduction_neck_rise_C": 0.06274167918249551,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "39b9f526-10f1-43ca-8e16-0b16ae26d0aa",
+          "width_mm": 1.2,
+          "length_mm": 2.0,
+          "R_ohm": 0.0010145329523809526,
+          "layer": "B.Cu",
+          "I2R_W": 0.00405813180952381,
+          "two_end_80C_conduction_neck_rise_C": 0.06274167918249551,
+          "isolated_long_trace_IPC2221_rise_C": 4.9323035842474185
+        },
+        {
+          "kind": "track",
+          "uuid": "5fc7aa78-a978-4124-a3c7-5d72c2963a96",
+          "width_mm": 2.0,
+          "length_mm": 1.0,
+          "R_ohm": 0.0003043598857142858,
+          "layer": "B.Cu",
+          "I2R_W": 0.0012174395428571432,
+          "two_end_80C_conduction_neck_rise_C": 0.0056467511264245976,
+          "isolated_long_trace_IPC2221_rise_C": 2.125707791995727
+        },
+        {
+          "kind": "pad",
+          "ref": "Q401",
+          "number": "3",
+          "uuid": "122083df-fcba-44ed-8bf3-3aae81687315",
+          "R_ohm": 0
+        }
+      ]
+    },
+    {
+      "from_pin": "Q401.2",
+      "to_pin": "L635.1",
+      "net": "VPA",
+      "current_bound_A": 1.8,
+      "R_80C_full_segment_sum_ohm": 0.023601461357883442,
+      "drop_bound_V": 0.0424826304441902,
+      "loss_bound_W": 0.07646873479954236,
+      "min_path_width_mm": 0.8,
+      "path": [
+        {
+          "kind": "pad",
+          "ref": "Q401",
+          "number": "2",
+          "uuid": "dde573cf-c787-4161-8263-4c1b548c9663",
+          "R_ohm": 0
+        },
+        {
+          "kind": "track",
+          "uuid": "1314454d-96c3-406a-b9e2-d6d0056c0277",
+          "width_mm": 0.8,
+          "length_mm": 0.8,
+          "R_ohm": 0.0006087197714285716,
+          "layer": "F.Cu",
+          "I2R_W": 0.001972252059428572,
+          "two_end_80C_conduction_neck_rise_C": 0.0182954736496157,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "track",
+          "uuid": "f91ed1ae-6589-4e82-a874-fd906995c39d",
+          "width_mm": 0.8,
+          "length_mm": 4.666904755831213,
+          "R_ohm": 0.003551046495310612,
+          "layer": "F.Cu",
+          "I2R_W": 0.011505390644806383,
+          "two_end_80C_conduction_neck_rise_C": 0.6226178376384841,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "track",
+          "uuid": "fc56de9f-1d1b-4988-be7e-331163794ccc",
+          "width_mm": 0.8,
+          "length_mm": 3.3,
+          "R_ohm": 0.0025109690571428578,
+          "layer": "F.Cu",
+          "I2R_W": 0.00813553974514286,
+          "two_end_80C_conduction_neck_rise_C": 0.3113089188192421,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "track",
+          "uuid": "2c21b52d-e61f-49c5-962b-2ffd4f48b163",
+          "width_mm": 0.8,
+          "length_mm": 9.333809511662427,
+          "R_ohm": 0.007102092990621224,
+          "layer": "F.Cu",
+          "I2R_W": 0.023010781289612765,
+          "two_end_80C_conduction_neck_rise_C": 2.4904713505539364,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "track",
+          "uuid": "a4906b81-d822-42cb-8fb3-33b7705fc556",
+          "width_mm": 0.8,
+          "length_mm": 4.1,
+          "R_ohm": 0.0031196888285714283,
+          "layer": "F.Cu",
+          "I2R_W": 0.010107791804571428,
+          "two_end_80C_conduction_neck_rise_C": 0.4805420500781871,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "via",
+          "uuid": "109a1a0a-8bc5-4e05-a41d-d6b9c299e311",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "939f3b1c-30f7-4276-accf-be8b6b418e81",
+          "width_mm": 0.8,
+          "length_mm": 2.2627416997969525,
+          "R_ohm": 0.0017217195128778728,
+          "layer": "B.Cu",
+          "I2R_W": 0.0055783712217243086,
+          "two_end_80C_conduction_neck_rise_C": 0.14636378919692564,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "via",
+          "uuid": "742b04ea-d9a9-491a-9bfb-1946c262cf89",
+          "R_ohm": 0.0020093787379685366
+        },
+        {
+          "kind": "track",
+          "uuid": "1f574ddd-807d-422e-b12c-d95d40e17644",
+          "width_mm": 0.8,
+          "length_mm": 1.2727922061357857,
+          "R_ohm": 0.0009684672259938035,
+          "layer": "F.Cu",
+          "I2R_W": 0.0031378338122199237,
+          "two_end_80C_conduction_neck_rise_C": 0.04631041767558975,
+          "isolated_long_trace_IPC2221_rise_C": 7.571917491464735
+        },
+        {
+          "kind": "pad",
+          "ref": "L635",
+          "number": "1",
+          "uuid": "e66dd1a6-ff0f-402b-83fc-839f9223bb31",
+          "R_ohm": 0
+        }
+      ]
+    }
+  ],
+  "method": "Contactgraphusingactualnativepad/track/viaeffectivegeometry. PertrackFULLresistancechargedontraversal. Parallelcopperandzonesnotcredited. Thinlongsensebranchesexcluded. PackageRdsOn,shuntandinductordropsseparate. Copperrhoat80C. Shortneck1Dtwo-fixed-endestimateversusisolatedlongtraceIPC2221areboundsrequiringmeasurement.",
+  "physical": "NOT_RUN"
+}

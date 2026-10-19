@@ -1,0 +1,35 @@
+{
+  "status": "PASS_RIGID_NATIVE_RF_COPPER",
+  "native_sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "ST_positions": 26,
+  "RF_nets": [
+    "MMIC_AC",
+    "MMIC_IN",
+    "MMIC_RF_DC",
+    "NORMAL_CLOCK_BUF",
+    "NORMAL_RF",
+    "PA_DRAIN",
+    "PA_GATE",
+    "SRC_RF",
+    "ST_DC_BLOCK",
+    "ST_F1",
+    "ST_F2",
+    "ST_IS_A",
+    "ST_IS_B",
+    "ST_IS_C",
+    "ST_IS_D",
+    "ST_LPF_IN",
+    "ST_O_A",
+    "ST_O_B",
+    "ST_O_C",
+    "ST_O_D"
+  ],
+  "copper_tracks_and_vias": 36,
+  "translation_mm": [
+    -20,
+    0
+  ],
+  "geometry_quantization_mm": 1e-05,
+  "matching_width_mm": 2.741,
+  "physical": "NOT_RUN"
+}

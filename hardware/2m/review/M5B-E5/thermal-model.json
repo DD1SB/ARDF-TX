@@ -1,0 +1,4399 @@
+{
+  "status": "CALCULATED_CONDITIONAL_PHYSICAL_GATE_OPEN",
+  "native_input_SHA256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "geometry_input_SHA256": "710148d58cef2cd1de0ed23e37434b04157411045a82b5bbc82539b3bda840c9",
+  "solver_input_SHA256": "1ea1ee718aca1ece212af18fd50b07f37e683a51e822e01076355e95b97a8afd",
+  "method": "Finite-volume copper sheets, distributed ordinary via barrels and perforated TIM.\n\nNo solder-fill, FR4, plastic-top or air-conduction credit. Source is isothermal\nover the mask opening (an approximation, not proof of partial solder wetting).\nVia conduction is distributed around the hole circumference instead of a\nmesh-dependent point contact. Hole areas reduce sheet/TIM conductance. Actual\ndie heat flux, localized voids and Cu/via transitions remain unvalidated.\n",
+  "cases": {
+    "nominal": {
+      "10": {
+        "source_to_bar_K_W": 8.95463899538734,
+        "total_JA_K_W": 15.65463899538734,
+        "junction_40C_4W_C": 102.61855598154936,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 111,
+          "relative_residual": 2.5330641632770595e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "15": {
+        "source_to_bar_K_W": 6.814602492804246,
+        "total_JA_K_W": 13.514602492804247,
+        "junction_40C_4W_C": 94.05840997121699,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 103,
+          "relative_residual": 3.003189721400585e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "18": {
+        "source_to_bar_K_W": 6.034432958250079,
+        "total_JA_K_W": 12.734432958250078,
+        "junction_40C_4W_C": 90.93773183300031,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 100,
+          "relative_residual": 3.0520761402649615e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "25": {
+        "source_to_bar_K_W": 4.861814153767358,
+        "total_JA_K_W": 11.561814153767358,
+        "junction_40C_4W_C": 86.24725661506943,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 93,
+          "relative_residual": 2.781526602792413e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      }
+    },
+    "conservative": {
+      "10": {
+        "source_to_bar_K_W": 10.772968857797407,
+        "total_JA_K_W": 20.472968857797404,
+        "junction_40C_4W_C": 121.89187543118962,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 115,
+          "relative_residual": 3.019646367179245e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "15": {
+        "source_to_bar_K_W": 8.465255128585635,
+        "total_JA_K_W": 18.165255128585635,
+        "junction_40C_4W_C": 112.66102051434254,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 108,
+          "relative_residual": 2.950000110993417e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "18": {
+        "source_to_bar_K_W": 7.625857237082092,
+        "total_JA_K_W": 17.32585723708209,
+        "junction_40C_4W_C": 109.30342894832836,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 106,
+          "relative_residual": 2.6863409241848986e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      },
+      "25": {
+        "source_to_bar_K_W": 6.3671066596705295,
+        "total_JA_K_W": 16.06710665967053,
+        "junction_40C_4W_C": 104.26842663868212,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 102,
+          "relative_residual": 2.7639260786861265e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "TIM_contact_fraction": 1.0,
+        "mesh_allowance_K_W": 1.0
+      }
+    },
+    "poor_joint": {
+      "10": {
+        "source_to_bar_K_W": 12.686060477105768,
+        "total_JA_K_W": 24.38606047710577,
+        "junction_40C_4W_C": 137.5442419084231,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 138,
+          "relative_residual": 3.0080830451010286e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "TIM_contact_fraction": 0.7,
+        "mesh_allowance_K_W": 1.0
+      },
+      "15": {
+        "source_to_bar_K_W": 10.32907250282974,
+        "total_JA_K_W": 22.02907250282974,
+        "junction_40C_4W_C": 128.11629001131897,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 135,
+          "relative_residual": 2.9601107978822355e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "TIM_contact_fraction": 0.7,
+        "mesh_allowance_K_W": 1.0
+      },
+      "18": {
+        "source_to_bar_K_W": 9.473347156088767,
+        "total_JA_K_W": 21.173347156088766,
+        "junction_40C_4W_C": 124.69338862435507,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 134,
+          "relative_residual": 3.04284132051738e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "TIM_contact_fraction": 0.7,
+        "mesh_allowance_K_W": 1.0
+      },
+      "25": {
+        "source_to_bar_K_W": 8.193110417657024,
+        "total_JA_K_W": 19.893110417657024,
+        "junction_40C_4W_C": 119.5724416706281,
+        "solver": {
+          "nodes": 6780,
+          "iterations": 133,
+          "relative_residual": 2.9891240510806058e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "TIM_contact_fraction": 0.7,
+        "mesh_allowance_K_W": 1.0
+      }
+    }
+  },
+  "convergence": [
+    {
+      "layout": "E4",
+      "source_to_bar_K_W": 8.970507796748093,
+      "nodes": 1776,
+      "iterations": 62,
+      "relative_residual": 2.889661178326719e-09,
+      "grid_mm": 0.4
+    },
+    {
+      "layout": "E4",
+      "source_to_bar_K_W": 8.821390658393486,
+      "nodes": 6776,
+      "iterations": 121,
+      "relative_residual": 3.1015117579583193e-09,
+      "grid_mm": 0.2
+    },
+    {
+      "layout": "E4",
+      "source_to_bar_K_W": 8.880813171334996,
+      "nodes": 26128,
+      "iterations": 230,
+      "relative_residual": 3.128409210893087e-09,
+      "grid_mm": 0.1
+    },
+    {
+      "layout": "E4",
+      "source_to_bar_K_W": 8.852374981588941,
+      "nodes": 102352,
+      "iterations": 457,
+      "relative_residual": 3.0761080288842204e-09,
+      "grid_mm": 0.05
+    },
+    {
+      "layout": "selected",
+      "source_to_bar_K_W": 11.352400603545952,
+      "nodes": 1776,
+      "iterations": 63,
+      "relative_residual": 2.3611065080463614e-09,
+      "grid_mm": 0.4
+    },
+    {
+      "layout": "selected",
+      "source_to_bar_K_W": 10.772968857797407,
+      "nodes": 6780,
+      "iterations": 115,
+      "relative_residual": 3.019646367179245e-09,
+      "grid_mm": 0.2
+    },
+    {
+      "layout": "selected",
+      "source_to_bar_K_W": 10.515077547357436,
+      "nodes": 26504,
+      "iterations": 227,
+      "relative_residual": 2.9825277966500833e-09,
+      "grid_mm": 0.1
+    },
+    {
+      "layout": "selected",
+      "source_to_bar_K_W": 10.49414237563761,
+      "nodes": 103472,
+      "iterations": 457,
+      "relative_residual": 3.06420032208709e-09,
+      "grid_mm": 0.05
+    }
+  ],
+  "sensitivities": [
+    {
+      "case": "board_upper_thickness",
+      "inputs": {
+        "thickness": 1.76
+      },
+      "joint_K_W": 1,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 11.41744555186647,
+      "junction_40C_4W_C": 124.46978220746588,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 117,
+        "relative_residual": 2.9092623873845823e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "30percent_contact_loss",
+      "inputs": {
+        "contact_fraction": 0.7
+      },
+      "joint_K_W": 1,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 11.023071264769106,
+      "junction_40C_4W_C": 122.89228505907641,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 123,
+        "relative_residual": 2.9687402350876743e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "half_contact",
+      "inputs": {
+        "contact_fraction": 0.5
+      },
+      "joint_K_W": 1,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 11.329361623884408,
+      "junction_40C_4W_C": 124.11744649553764,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 131,
+        "relative_residual": 3.0961396820724934e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "eight_joint_vias_lost",
+      "inputs": {
+        "loss": 8
+      },
+      "joint_K_W": 1,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 11.760139784128835,
+      "junction_40C_4W_C": 125.84055913651534,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 116,
+        "relative_residual": 2.8266167076564955e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "source_joint_50percent_effective",
+      "inputs": {},
+      "joint_K_W": 2,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 10.772968857797407,
+      "junction_40C_4W_C": 125.89187543118963,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 115,
+        "relative_residual": 3.019646367179245e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "horizontal_or_restricted_convection",
+      "inputs": {},
+      "joint_K_W": 1,
+      "sink_K_W": 5.5,
+      "source_to_bar_K_W": 10.772968857797407,
+      "junction_40C_4W_C": 127.89187543118962,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 115,
+        "relative_residual": 3.019646367179245e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "improved_ordinary_grease_film",
+      "inputs": {
+        "tim_mm": 0.075,
+        "tim_k": 6
+      },
+      "joint_K_W": 1,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 10.446566702935497,
+      "junction_40C_4W_C": 120.58626681174198,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 110,
+        "relative_residual": 2.5720032591226354e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "case": "combined_thickness_contact_and_joint",
+      "inputs": {
+        "thickness": 1.76,
+        "contact_fraction": 0.7
+      },
+      "joint_K_W": 2,
+      "sink_K_W": 4,
+      "source_to_bar_K_W": 11.66247261110977,
+      "junction_40C_4W_C": 129.44989044443906,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 125,
+        "relative_residual": 2.9480163230596688e-09,
+        "grid_mm": 0.2
+      }
+    }
+  ],
+  "source_joint_area_sweep": [
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.5,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.25,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 1.0,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.5,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 2.0,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 2,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 1.0,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.25,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.125,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.5,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.25,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 1.0,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 4,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.5,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.16666666666666666,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.08333333333333333,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.3333333333333333,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.16666666666666666,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.6666666666666666,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 6,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.3333333333333333,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.125,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.025,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.0625,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.25,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.05,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.125,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 25,
+      "one_dimensional_joint_K_W": 0.5,
+      "limitation": "No void-location/contact/spreading guarantee"
+    },
+    {
+      "effective_wet_area_mm2": 8,
+      "joint_thickness_mm": 0.1,
+      "solder_k_W_mK": 50,
+      "one_dimensional_joint_K_W": 0.25,
+      "limitation": "No void-location/contact/spreading guarantee"
+    }
+  ],
+  "comparison_same_new_model_and_boundary": {
+    "E4": {
+      "geometry": {
+        "vias": [
+          [
+            110.8,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            52.3,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            110.8,
+            57.7,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            111.39999999999999,
+            52.3,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            111.39999999999999,
+            57.7,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            112.0,
+            52.3,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            112.0,
+            57.7,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            112.6,
+            52.3,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            112.6,
+            57.7,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            113.2,
+            52.3,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            113.2,
+            57.7,
+            0.3,
+            0.8,
+            "other"
+          ],
+          [
+            109.6,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            109.6,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            110.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            111.19999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            51.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.0,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            51.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            112.8,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            51.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            113.6,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "other"
+          ],
+          [
+            114.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "other"
+          ]
+        ],
+        "rects": [
+          [
+            110.4,
+            51.9,
+            113.6,
+            58.1
+          ],
+          [
+            109.2,
+            48.7,
+            114.8,
+            51.0
+          ],
+          [
+            110.0,
+            51.0,
+            114.0,
+            51.9
+          ],
+          [
+            109.2,
+            58.1,
+            114.8,
+            61.3
+          ]
+        ],
+        "source": [
+          110.65,
+          52.5,
+          113.35,
+          57.5
+        ]
+      },
+      "source_to_bar_K_W": 8.821390658393486,
+      "total_JA_K_W": 18.521390658393486,
+      "junction_40C_4W_C": 114.08556263357394,
+      "solver": {
+        "nodes": 6776,
+        "iterations": 121,
+        "relative_residual": 3.1015117579583193e-09,
+        "grid_mm": 0.2
+      }
+    },
+    "A_ST18": {
+      "geometry": {
+        "vias": [
+          [
+            111.15,
+            53.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.15,
+            53.8,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.15,
+            54.6,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.15,
+            55.4,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.15,
+            56.2,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.15,
+            57.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            53.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            53.8,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            54.6,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            55.4,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            56.2,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            57.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            53.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            53.8,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            54.6,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            55.4,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            56.2,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.85000000000001,
+            57.0,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            110.8,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.39999999999999,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.39999999999999,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.0,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.0,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.6,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.6,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            109.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ]
+        ],
+        "rects": [
+          [
+            110.4,
+            51.9,
+            113.6,
+            58.1
+          ],
+          [
+            109.2,
+            48.7,
+            114.8,
+            51.0
+          ],
+          [
+            110.0,
+            51.0,
+            114.0,
+            51.9
+          ],
+          [
+            109.2,
+            58.1,
+            114.8,
+            61.3
+          ]
+        ],
+        "source": [
+          110.65,
+          52.5,
+          113.35,
+          57.5
+        ]
+      },
+      "source_to_bar_K_W": 13.735924148391172,
+      "total_JA_K_W": 23.43592414839117,
+      "junction_40C_4W_C": 133.74369659356466,
+      "solver": {
+        "nodes": 6776,
+        "iterations": 119,
+        "relative_residual": 2.705548014600304e-09,
+        "grid_mm": 0.2
+      }
+    },
+    "B_outside_only": {
+      "geometry": {
+        "vias": [
+          [
+            110.5,
+            52.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            53.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            53.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            54.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            54.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            55.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            55.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            56.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            56.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            57.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            52.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            53.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            53.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            54.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            54.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            55.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            55.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            56.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            56.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            57.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.8,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            110.8,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.6,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.6,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.39999999999999,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.39999999999999,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            109.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ]
+        ],
+        "rects": [
+          [
+            110.2,
+            51.9,
+            113.8,
+            58.1
+          ],
+          [
+            109.2,
+            48.7,
+            114.8,
+            51.0
+          ],
+          [
+            110.0,
+            51.0,
+            114.0,
+            51.9
+          ],
+          [
+            109.2,
+            58.1,
+            114.8,
+            61.3
+          ]
+        ],
+        "source": [
+          110.95,
+          52.5,
+          113.05,
+          57.5
+        ]
+      },
+      "source_to_bar_K_W": 14.439243539223321,
+      "total_JA_K_W": 24.13924353922332,
+      "junction_40C_4W_C": 136.55697415689326,
+      "solver": {
+        "nodes": 6796,
+        "iterations": 112,
+        "relative_residual": 2.909871660541299e-09,
+        "grid_mm": 0.2
+      }
+    },
+    "C_open40": {
+      "geometry": {
+        "vias": [
+          [
+            110.8,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.39999999999999,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.0,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.6,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            52.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            54.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            54.699999999999996,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            55.3,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            55.9,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            113.2,
+            57.1,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.8,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            110.8,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.39999999999999,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.39999999999999,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.0,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.0,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.6,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.6,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            52.3,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            57.7,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            109.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ]
+        ],
+        "rects": [
+          [
+            110.4,
+            51.9,
+            113.6,
+            58.1
+          ],
+          [
+            109.2,
+            48.7,
+            114.8,
+            51.0
+          ],
+          [
+            110.0,
+            51.0,
+            114.0,
+            51.9
+          ],
+          [
+            109.2,
+            58.1,
+            114.8,
+            61.3
+          ]
+        ],
+        "source": [
+          110.65,
+          52.5,
+          113.35,
+          57.5
+        ]
+      },
+      "source_to_bar_K_W": 8.821390658393486,
+      "total_JA_K_W": 18.521390658393486,
+      "junction_40C_4W_C": 114.08556263357394,
+      "solver": {
+        "nodes": 6776,
+        "iterations": 121,
+        "relative_residual": 3.1015117579583193e-09,
+        "grid_mm": 0.2
+      }
+    },
+    "selected": {
+      "geometry": {
+        "vias": [
+          [
+            111.175,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.175,
+            54.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.175,
+            55.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.175,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.725,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.725,
+            54.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.725,
+            55.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            111.725,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.27499999999999,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.27499999999999,
+            54.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.27499999999999,
+            55.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.27499999999999,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.825,
+            53.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.825,
+            54.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.825,
+            55.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            112.825,
+            56.5,
+            0.3,
+            0.8,
+            "joint"
+          ],
+          [
+            110.5,
+            52.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            53.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            53.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            54.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            54.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            55.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            55.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            56.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            56.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.5,
+            57.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            52.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            53.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            53.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            54.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            54.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            55.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            55.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            56.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            56.75,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            113.5,
+            57.25,
+            0.3,
+            0.6,
+            "side"
+          ],
+          [
+            110.8,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            110.8,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.6,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            111.6,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.39999999999999,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            112.39999999999999,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            52.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            113.2,
+            58.0,
+            0.3,
+            0.8,
+            "near"
+          ],
+          [
+            109.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            109.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            110.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            111.19999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.0,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            112.8,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            51.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            113.6,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            58.5,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            49.9,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            59.3,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            50.7,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.1,
+            0.5,
+            1.1,
+            "wing"
+          ],
+          [
+            114.39999999999999,
+            60.9,
+            0.5,
+            1.1,
+            "wing"
+          ]
+        ],
+        "rects": [
+          [
+            110.2,
+            51.9,
+            113.8,
+            58.1
+          ],
+          [
+            109.2,
+            48.7,
+            114.8,
+            51.0
+          ],
+          [
+            110.0,
+            51.0,
+            114.0,
+            51.9
+          ],
+          [
+            109.2,
+            58.1,
+            114.8,
+            61.3
+          ]
+        ],
+        "source": [
+          110.95,
+          52.5,
+          113.05,
+          57.5
+        ]
+      },
+      "source_to_bar_K_W": 10.772968857797407,
+      "total_JA_K_W": 20.472968857797404,
+      "junction_40C_4W_C": 121.89187543118962,
+      "solver": {
+        "nodes": 6780,
+        "iterations": 115,
+        "relative_residual": 3.019646367179245e-09,
+        "grid_mm": 0.2
+      }
+    }
+  },
+  "historical_E4": {
+    "nominal": {
+      "10": {
+        "source_to_bar_K_W": 6.826018735319067,
+        "total_JA_K_W": 12.526018735319067,
+        "junction_40C_4W_C": 90.10407494127627,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 142,
+          "relative_residual": 3.0674428630605185e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "15": {
+        "source_to_bar_K_W": 5.092970722718591,
+        "total_JA_K_W": 10.79297072271859,
+        "junction_40C_4W_C": 83.17188289087436,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 135,
+          "relative_residual": 3.106939455422646e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "18": {
+        "source_to_bar_K_W": 4.4645590763934955,
+        "total_JA_K_W": 10.164559076393495,
+        "junction_40C_4W_C": 80.65823630557398,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 132,
+          "relative_residual": 2.575099055319834e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      },
+      "25": {
+        "source_to_bar_K_W": 3.5269745138968,
+        "total_JA_K_W": 9.2269745138968,
+        "junction_40C_4W_C": 76.9078980555872,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 124,
+          "relative_residual": 2.835485941793161e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 35,
+        "TIM_mm": 0.05,
+        "TIM_k_W_mK": 10,
+        "joint_K_W": 0.25,
+        "bar_and_second_interface_K_W": 0.25,
+        "sink_K_W": 2.2,
+        "missing_inner_vias": 0,
+        "mesh_allowance_K_W": 0.0
+      }
+    },
+    "conservative": {
+      "10": {
+        "source_to_bar_K_W": 8.079078443542333,
+        "total_JA_K_W": 17.379078443542333,
+        "junction_40C_4W_C": 109.51631377416933,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 144,
+          "relative_residual": 2.7472255763293885e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "15": {
+        "source_to_bar_K_W": 6.237276673837449,
+        "total_JA_K_W": 15.537276673837448,
+        "junction_40C_4W_C": 102.14910669534979,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 138,
+          "relative_residual": 2.6807287795557408e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "18": {
+        "source_to_bar_K_W": 5.572633331544214,
+        "total_JA_K_W": 14.872633331544213,
+        "junction_40C_4W_C": 99.49053332617686,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 134,
+          "relative_residual": 2.8571983955911128e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      },
+      "25": {
+        "source_to_bar_K_W": 4.585854989028023,
+        "total_JA_K_W": 13.885854989028022,
+        "junction_40C_4W_C": 95.54341995611209,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 128,
+          "relative_residual": 3.096344014235001e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.15,
+        "TIM_k_W_mK": 6,
+        "joint_K_W": 1.0,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 4.0,
+        "missing_inner_vias": 4,
+        "mesh_allowance_K_W": 0.6
+      }
+    },
+    "poor_joint": {
+      "10": {
+        "source_to_bar_K_W": 9.117669395142327,
+        "total_JA_K_W": 20.417669395142326,
+        "junction_40C_4W_C": 121.6706775805693,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 151,
+          "relative_residual": 2.895973934510284e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "15": {
+        "source_to_bar_K_W": 7.236531821051918,
+        "total_JA_K_W": 18.53653182105192,
+        "junction_40C_4W_C": 114.14612728420768,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 146,
+          "relative_residual": 2.772237572498399e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "18": {
+        "source_to_bar_K_W": 6.557913088434849,
+        "total_JA_K_W": 17.85791308843485,
+        "junction_40C_4W_C": 111.4316523537394,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 143,
+          "relative_residual": 3.0999971806699136e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      },
+      "25": {
+        "source_to_bar_K_W": 5.550415840710499,
+        "total_JA_K_W": 16.8504158407105,
+        "junction_40C_4W_C": 107.401663362842,
+        "solver": {
+          "nodes": 6992,
+          "iterations": 139,
+          "relative_residual": 3.081029750732177e-09,
+          "grid_mm": 0.2
+        },
+        "Cu_um": 30,
+        "TIM_mm": 0.25,
+        "TIM_k_W_mK": 5,
+        "joint_K_W": 1.5,
+        "bar_and_second_interface_K_W": 0.7,
+        "sink_K_W": 5.5,
+        "missing_inner_vias": 8,
+        "mesh_allowance_K_W": 0.6
+      }
+    }
+  },
+  "physical": "NOT_RUN",
+  "numerical_allowance_K_W": 1.0,
+  "limitations": [
+    "Joint resistance and wetting NOT measured;1K/W is an acceptance assumption, not a guaranteed joint",
+    "Isothermal source and homogeneous Cu cannot bound localized void hot spots",
+    "No solder fill credited; barrel10um is a sensitivity, not a guaranteed JLC minimum",
+    "Circumferential via coupling, perforated sheet approximation and mesh extrapolation are not validated FEM",
+    "Sink natural convection depends on orientation and enclosure. No closed enclosure performance claimed"
+  ],
+  "revision": "M5B-E5",
+  "geometry_basis": "Actual source assembly and bar are a rigid(-20,0)mm translation, asserted by compact geometry gate. Translation-invariant local solver uses E4R1 coordinates; all prior boundary/uncertainty assumptions preserved.",
+  "native_source_geometry_checked": "compact-engineering.json",
+  "calculation_native_file_SHA256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "final_native_geometry_binding_SHA256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "final_geometry_binding": "Actualcanonicalsourceaudit:98via locations/lands/drills,sourceCu/mask/paste,bar/window/mounts unchanged. Numerical geometry/solver inputs unchanged;not new measured data.",
+  "fin_rotation_sensitivity_extra_K_W": 0.25,
+  "fin_rotation_sensitivity_extra_C_at4W": 1.0
+}

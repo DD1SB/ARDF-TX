@@ -1,0 +1,38 @@
+{
+  "native_sha256": "4ba9fb99f032d8942fdf8557cfbcf0bdd60e100807418712660171fcbb80bbcc",
+  "connections": [
+    {
+      "net": "SCL_CLK",
+      "origin_mm": [
+        27.9,
+        48.5
+      ],
+      "via_mm": [
+        27.5,
+        49.8
+      ],
+      "path_mm": [
+        [
+          27.9,
+          48.5
+        ],
+        [
+          25.9,
+          48.5
+        ],
+        [
+          25.9,
+          49.8
+        ],
+        [
+          27.5,
+          49.8
+        ]
+      ],
+      "width_mm": 0.15,
+      "ordinary_drill_mm": 0.3,
+      "hidden_solder_land_hole": false
+    }
+  ],
+  "net_changes": false
+}

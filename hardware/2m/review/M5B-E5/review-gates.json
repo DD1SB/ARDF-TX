@@ -1,0 +1,21 @@
+{
+  "decision": "GO for independent evaluation-board review",
+  "CAD_errors": 0,
+  "unrouted": 0,
+  "parity": 0,
+  "warnings": {
+    "missing_courtyard": 11
+  },
+  "required_reports": {
+    "compact-engineering.json": true,
+    "JLCPCB-DFM.json": true,
+    "verification.json": true,
+    "fabrication-data-audit.json": true,
+    "compact-power-and-return.json": true,
+    "source-assembly-DFM.json": true
+  },
+  "physical": "NOT_RUN",
+  "optional_dual_stack": "HOLD",
+  "acceptance_tag": false,
+  "manufacturing_authorized": false
+}
