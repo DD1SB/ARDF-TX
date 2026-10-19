@@ -1,0 +1,5204 @@
+{
+  "date": "2026-10-15",
+  "revision": "M3B-E2",
+  "classification": "MANUFACTURER DOCUMENT / CAD PIN ASSERTIONS; NO HARDWARE VALIDATION",
+  "devices": [
+    {
+      "reference": "D201",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "2": "LEASE_RC",
+          "1": "V3V3"
+        },
+        "pcb": {
+          "1": "V3V3",
+          "2": "LEASE_RC"
+        },
+        "pad_mm": {
+          "1": [
+            59.95,
+            42.0
+          ],
+          "2": [
+            62.05,
+            42.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D202",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "2": "BUS_RC",
+          "1": "V3V3"
+        },
+        "pcb": {
+          "1": "V3V3",
+          "2": "BUS_RC"
+        },
+        "pad_mm": {
+          "1": [
+            50.95,
+            58.0
+          ],
+          "2": [
+            53.05,
+            58.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D219",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "POR_N",
+          "2": "UV_POR_N"
+        },
+        "pcb": {
+          "1": "POR_N",
+          "2": "UV_POR_N"
+        },
+        "pad_mm": {
+          "1": [
+            52.95,
+            75.0
+          ],
+          "2": [
+            55.05,
+            75.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D220",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "2": "HEALTH_N",
+          "1": "SAFE_RAW"
+        },
+        "pcb": {
+          "1": "SAFE_RAW",
+          "2": "HEALTH_N"
+        },
+        "pad_mm": {
+          "1": [
+            70.95,
+            117.0
+          ],
+          "2": [
+            73.05,
+            117.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D221",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "PACK4_OK",
+          "2": "PA_GUARD_RAW"
+        },
+        "pcb": {
+          "1": "PACK4_OK",
+          "2": "PA_GUARD_RAW"
+        },
+        "pad_mm": {
+          "1": [
+            117.95,
+            57.0
+          ],
+          "2": [
+            120.05,
+            57.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D222",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "FOX_ID",
+          "2": "PA_GUARD_RAW"
+        },
+        "pcb": {
+          "1": "FOX_ID",
+          "2": "PA_GUARD_RAW"
+        },
+        "pad_mm": {
+          "1": [
+            118.95,
+            61.0
+          ],
+          "2": [
+            121.05,
+            61.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D223",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "PA_CONDITION_OK",
+          "2": "PA_REQ_N"
+        },
+        "pcb": {
+          "1": "PA_CONDITION_OK",
+          "2": "PA_REQ_N"
+        },
+        "pad_mm": {
+          "1": [
+            48.95,
+            72.0
+          ],
+          "2": [
+            51.05,
+            72.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D224",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "PA_CONDITION_OK",
+          "2": "PA_GUARD_RAW"
+        },
+        "pcb": {
+          "1": "PA_CONDITION_OK",
+          "2": "PA_GUARD_RAW"
+        },
+        "pad_mm": {
+          "1": [
+            108.95,
+            57.0
+          ],
+          "2": [
+            111.05,
+            57.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D301",
+      "manufacturer": "Vishay",
+      "footprint": "Diode_SMD:D_SMC",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.vishay.com/docs/88751/ss32.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "SS34-E3/57T",
+        "manufacturer_field": "",
+        "symbol": "D",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SMC",
+        "netlist": {
+          "2": "VBAT_FUSED",
+          "1": "VIN_PACK"
+        },
+        "pcb": {
+          "1": "VIN_PACK",
+          "2": "VBAT_FUSED"
+        },
+        "pad_mm": {
+          "1": [
+            131.0,
+            41.4
+          ],
+          "2": [
+            131.0,
+            34.6
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 90.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D302",
+      "manufacturer": "Littelfuse",
+      "footprint": "Diode_SMD:D_SMB",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smbj_datasheet.pdf?assetguid=09a6ae9a-73cb-4ac4-acac-e6dab92ab953",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "SMBJ17A",
+        "manufacturer_field": "Littelfuse",
+        "symbol": "D_Zener",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SMB",
+        "netlist": {
+          "2": "GND",
+          "1": "VIN_PA"
+        },
+        "pcb": {
+          "1": "VIN_PA",
+          "2": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            120.0,
+            44.15
+          ],
+          "2": [
+            120.0,
+            39.85
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 90.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D451",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "KEY_TAIL_C",
+          "2": "KEY_TAIL_SRC"
+        },
+        "pcb": {
+          "1": "KEY_TAIL_C",
+          "2": "KEY_TAIL_SRC"
+        },
+        "pad_mm": {
+          "1": [
+            98.95,
+            109.0
+          ],
+          "2": [
+            101.05,
+            109.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "D501",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "roles": {
+        "1": "K",
+        "2": "A"
+      },
+      "source": "https://www.diodes.com/datasheet/download/BAT54WS.pdf",
+      "package": "Cathode band->pad1; exact package, no generic SS34-SMA substitution",
+      "observed": {
+        "mpn": "BAT54WS-7-F",
+        "manufacturer_field": "",
+        "symbol": "BAT54WS",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Diode_SMD:D_SOD-323",
+        "netlist": {
+          "1": "FOX_CLK",
+          "2": "FOX_CLK_B"
+        },
+        "pcb": {
+          "1": "FOX_CLK",
+          "2": "FOX_CLK_B"
+        },
+        "pad_mm": {
+          "1": [
+            153.95,
+            139.0
+          ],
+          "2": [
+            156.05,
+            139.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "F301",
+      "manufacturer": "Littelfuse",
+      "footprint": "ARDF_TX:Fuse_467_0603",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT"
+      },
+      "source": "https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "observed": {
+        "mpn": "Littelfuse 046701.5NR",
+        "manufacturer_field": "",
+        "symbol": "Fuse",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "ARDF_TX:Fuse_467_0603",
+        "netlist": {
+          "1": "VBAT",
+          "2": "VBAT_FUSED"
+        },
+        "pcb": {
+          "1": "VBAT",
+          "2": "VBAT_FUSED"
+        },
+        "pad_mm": {
+          "1": [
+            128.275,
+            31.0
+          ],
+          "2": [
+            129.725,
+            31.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "J101",
+      "manufacturer": "Wurth",
+      "footprint": "ARDF_TX:Wurth_61201621621",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT",
+        "3": "CONTACT",
+        "4": "CONTACT",
+        "5": "CONTACT",
+        "6": "CONTACT",
+        "7": "CONTACT",
+        "8": "CONTACT",
+        "9": "CONTACT",
+        "10": "CONTACT",
+        "11": "CONTACT",
+        "12": "CONTACT",
+        "13": "CONTACT",
+        "14": "CONTACT",
+        "15": "CONTACT",
+        "16": "CONTACT"
+      },
+      "source": "https://www.we-online.com/components/products/datasheet/61201621621.pdf",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "observed": {
+        "mpn": "Wurth 61201621621",
+        "manufacturer_field": "",
+        "symbol": "Conn_02x08_Odd_Even",
+        "symbol_pins": {
+          "1": {
+            "name": "Pin_1",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "Pin_2",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "Pin_3",
+            "electrical_type": "passive"
+          },
+          "4": {
+            "name": "Pin_4",
+            "electrical_type": "passive"
+          },
+          "5": {
+            "name": "Pin_5",
+            "electrical_type": "passive"
+          },
+          "6": {
+            "name": "Pin_6",
+            "electrical_type": "passive"
+          },
+          "7": {
+            "name": "Pin_7",
+            "electrical_type": "passive"
+          },
+          "8": {
+            "name": "Pin_8",
+            "electrical_type": "passive"
+          },
+          "9": {
+            "name": "Pin_9",
+            "electrical_type": "passive"
+          },
+          "10": {
+            "name": "Pin_10",
+            "electrical_type": "passive"
+          },
+          "11": {
+            "name": "Pin_11",
+            "electrical_type": "passive"
+          },
+          "12": {
+            "name": "Pin_12",
+            "electrical_type": "passive"
+          },
+          "13": {
+            "name": "Pin_13",
+            "electrical_type": "passive"
+          },
+          "14": {
+            "name": "Pin_14",
+            "electrical_type": "passive"
+          },
+          "15": {
+            "name": "Pin_15",
+            "electrical_type": "passive"
+          },
+          "16": {
+            "name": "Pin_16",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "ARDF_TX:Wurth_61201621621",
+        "netlist": {
+          "7": "ARM",
+          "8": "CW_KEY",
+          "14": "FAULT_N",
+          "10": "FOX_REQ",
+          "16": "GND",
+          "2": "GND",
+          "4": "GND",
+          "6": "LEASE",
+          "13": "MUTE_N",
+          "15": "PACK4_OK",
+          "9": "PA_REQ",
+          "11": "PWR0",
+          "12": "PWR1",
+          "3": "SCL",
+          "5": "SDA",
+          "1": "V3V3"
+        },
+        "pcb": {
+          "1": "V3V3",
+          "2": "GND",
+          "3": "SCL",
+          "4": "GND",
+          "5": "SDA",
+          "6": "LEASE",
+          "7": "ARM",
+          "8": "CW_KEY",
+          "9": "PA_REQ",
+          "10": "FOX_REQ",
+          "11": "PWR0",
+          "12": "PWR1",
+          "13": "MUTE_N",
+          "14": "FAULT_N",
+          "15": "PACK4_OK",
+          "16": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            30.0,
+            80.0
+          ],
+          "2": [
+            32.54,
+            80.0
+          ],
+          "3": [
+            30.0,
+            82.54
+          ],
+          "4": [
+            32.54,
+            82.54
+          ],
+          "5": [
+            30.0,
+            85.08
+          ],
+          "6": [
+            32.54,
+            85.08
+          ],
+          "7": [
+            30.0,
+            87.62
+          ],
+          "8": [
+            32.54,
+            87.62
+          ],
+          "9": [
+            30.0,
+            90.16
+          ],
+          "10": [
+            32.54,
+            90.16
+          ],
+          "11": [
+            30.0,
+            92.7
+          ],
+          "12": [
+            32.54,
+            92.7
+          ],
+          "13": [
+            30.0,
+            95.24
+          ],
+          "14": [
+            32.54,
+            95.24
+          ],
+          "15": [
+            30.0,
+            97.78
+          ],
+          "16": [
+            32.54,
+            97.78
+          ]
+        },
+        "drills_mm": {
+          "1": 1.2,
+          "2": 1.2,
+          "3": 1.2,
+          "4": 1.2,
+          "5": 1.2,
+          "6": 1.2,
+          "7": 1.2,
+          "8": 1.2,
+          "9": 1.2,
+          "10": 1.2,
+          "11": 1.2,
+          "12": 1.2,
+          "13": 1.2,
+          "14": 1.2,
+          "15": 1.2,
+          "16": 1.2
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "J301",
+      "manufacturer": "JST",
+      "footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT"
+      },
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "observed": {
+        "mpn": "B2P-VH(LF)(SN)",
+        "manufacturer_field": "",
+        "symbol": "Conn_01x02",
+        "symbol_pins": {
+          "1": {
+            "name": "Pin_1",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "Pin_2",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+        "netlist": {
+          "2": "GND",
+          "1": "VBAT"
+        },
+        "pcb": {
+          "1": "VBAT",
+          "2": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            120.0,
+            30.0
+          ],
+          "2": [
+            123.96,
+            30.0
+          ]
+        },
+        "drills_mm": {
+          "1": 1.7,
+          "2": 1.7
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "J401",
+      "manufacturer": "Phoenix Contact",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT"
+      },
+      "source": "https://www.mouser.com/datasheet/2/324/3/ItemDetail_1727010-929404.pdf",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "observed": {
+        "mpn": "1727010",
+        "manufacturer_field": "",
+        "symbol": "Conn_01x02",
+        "symbol_pins": {
+          "1": {
+            "name": "Pin_1",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "Pin_2",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal",
+        "netlist": {
+          "2": "GND",
+          "1": "RF_NORMAL"
+        },
+        "pcb": {
+          "1": "RF_NORMAL",
+          "2": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            219.0,
+            98.0
+          ],
+          "2": [
+            222.81,
+            98.0
+          ]
+        },
+        "drills_mm": {
+          "1": 1.1,
+          "2": 1.1
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "J502",
+      "manufacturer": "JST",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT",
+        "3": "CONTACT"
+      },
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "nets": {
+        "1": "RF_FOX",
+        "2": "GND",
+        "3": "FOX_ID"
+      },
+      "observed": {
+        "mpn": "B3B-XH-A(LF)(SN)",
+        "manufacturer_field": "",
+        "symbol": "Conn_01x03",
+        "symbol_pins": {
+          "1": {
+            "name": "Pin_1",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "Pin_2",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "Pin_3",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+        "netlist": {
+          "3": "FOX_ID",
+          "2": "GND",
+          "1": "RF_FOX"
+        },
+        "pcb": {
+          "1": "RF_FOX",
+          "2": "GND",
+          "3": "FOX_ID"
+        },
+        "pad_mm": {
+          "1": [
+            208.0,
+            158.0
+          ],
+          "2": [
+            210.5,
+            158.0
+          ],
+          "3": [
+            213.0,
+            158.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.95,
+          "2": 0.95,
+          "3": 0.95
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q201",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "FAULT_N",
+          "2": "GND",
+          "1": "NOT_ARMED"
+        },
+        "pcb": {
+          "1": "NOT_ARMED",
+          "2": "GND",
+          "3": "FAULT_N"
+        },
+        "pad_mm": {
+          "1": [
+            45.0625,
+            142.05
+          ],
+          "2": [
+            45.0625,
+            143.95
+          ],
+          "3": [
+            46.9375,
+            143.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q225",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "HEALTH_N",
+          "1": "PATH_PA",
+          "2": "PA_DROP_MID"
+        },
+        "pcb": {
+          "1": "PATH_PA",
+          "2": "PA_DROP_MID",
+          "3": "HEALTH_N"
+        },
+        "pad_mm": {
+          "1": [
+            91.0625,
+            130.05
+          ],
+          "2": [
+            91.0625,
+            131.95
+          ],
+          "3": [
+            92.9375,
+            131.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q226",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "DROP_RETURN",
+          "3": "PA_DROP_MID",
+          "1": "PA_REQ_N"
+        },
+        "pcb": {
+          "1": "PA_REQ_N",
+          "2": "DROP_RETURN",
+          "3": "PA_DROP_MID"
+        },
+        "pad_mm": {
+          "1": [
+            97.0625,
+            130.05
+          ],
+          "2": [
+            97.0625,
+            131.95
+          ],
+          "3": [
+            98.9375,
+            131.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q227",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "FOX_DROP_MID",
+          "3": "HEALTH_N",
+          "1": "PATH_FOX"
+        },
+        "pcb": {
+          "1": "PATH_FOX",
+          "2": "FOX_DROP_MID",
+          "3": "HEALTH_N"
+        },
+        "pad_mm": {
+          "1": [
+            91.0625,
+            139.05
+          ],
+          "2": [
+            91.0625,
+            140.95
+          ],
+          "3": [
+            92.9375,
+            140.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q228",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "DROP_RETURN",
+          "3": "FOX_DROP_MID",
+          "1": "FOX_REQ_N"
+        },
+        "pcb": {
+          "1": "FOX_REQ_N",
+          "2": "DROP_RETURN",
+          "3": "FOX_DROP_MID"
+        },
+        "pad_mm": {
+          "1": [
+            97.0625,
+            139.05
+          ],
+          "2": [
+            97.0625,
+            140.95
+          ],
+          "3": [
+            98.9375,
+            140.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q229",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "1": "ARM_ACCEPT",
+          "3": "DROP_RETURN",
+          "2": "GND"
+        },
+        "pcb": {
+          "1": "ARM_ACCEPT",
+          "2": "GND",
+          "3": "DROP_RETURN"
+        },
+        "pad_mm": {
+          "1": [
+            102.0625,
+            136.05
+          ],
+          "2": [
+            102.0625,
+            137.95
+          ],
+          "3": [
+            103.9375,
+            137.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q301",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "FB_EXT",
+          "2": "GND",
+          "1": "SEL_EXT"
+        },
+        "pcb": {
+          "1": "SEL_EXT",
+          "2": "GND",
+          "3": "FB_EXT"
+        },
+        "pad_mm": {
+          "1": [
+            134.0625,
+            52.05
+          ],
+          "2": [
+            134.0625,
+            53.95
+          ],
+          "3": [
+            135.9375,
+            53.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q302",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "FB_FULL",
+          "2": "GND",
+          "1": "SEL_FULL"
+        },
+        "pcb": {
+          "1": "SEL_FULL",
+          "2": "GND",
+          "3": "FB_FULL"
+        },
+        "pad_mm": {
+          "1": [
+            141.0625,
+            53.05
+          ],
+          "2": [
+            141.0625,
+            54.95
+          ],
+          "3": [
+            142.9375,
+            54.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q401",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "PA_INB",
+          "2": "PA_MUTE_MID",
+          "1": "PA_PERMIT"
+        },
+        "pcb": {
+          "1": "PA_PERMIT",
+          "2": "PA_MUTE_MID",
+          "3": "PA_INB"
+        },
+        "pad_mm": {
+          "1": [
+            161.0625,
+            50.05
+          ],
+          "2": [
+            161.0625,
+            51.95
+          ],
+          "3": [
+            162.9375,
+            51.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q402",
+      "manufacturer": "Vishay",
+      "footprint": "ARDF_TX:TO220_Vertical_1p3Drill",
+      "roles": {
+        "1": "G",
+        "2": "D",
+        "3": "S"
+      },
+      "source": "https://www.vishay.com/docs/91023/irf610.pdf",
+      "package": "TO220AB; tab D; exact incoming lead fit required",
+      "observed": {
+        "mpn": "IRF610PBF-BE3",
+        "manufacturer_field": "",
+        "symbol": "Q_NMOS_GDS",
+        "symbol_pins": {
+          "2": {
+            "name": "D",
+            "electrical_type": "passive"
+          },
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "S",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "ARDF_TX:TO220_Vertical_1p3Drill",
+        "netlist": {
+          "2": "DRAIN_PA",
+          "1": "GATE_PA",
+          "3": "GND"
+        },
+        "pcb": {
+          "1": "GATE_PA",
+          "2": "DRAIN_PA",
+          "3": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            173.0,
+            34.0
+          ],
+          "2": [
+            175.54,
+            34.0
+          ],
+          "3": [
+            178.08,
+            34.0
+          ]
+        },
+        "drills_mm": {
+          "1": 1.3,
+          "2": 1.3,
+          "3": 1.3
+        },
+        "rotation": 0.0
+      },
+      "status": "Requires incoming dimensional inspection",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q403",
+      "manufacturer": "STMicroelectronics",
+      "footprint": "ARDF_TX:ST_BD140_SOT32_1p3Drill",
+      "roles": {
+        "1": "B",
+        "2": "C",
+        "3": "E"
+      },
+      "source": "https://www.st.com/resource/en/datasheet/bd140.pdf",
+      "package": "SOT-32, drawing0016114E, May2008 Rev5 p1/p7",
+      "symbol": "BD140_ST",
+      "nets": {
+        "1": "SHAPE_BASE",
+        "2": "VPA_SHAPED",
+        "3": "VPA_LOAD"
+      },
+      "observed": {
+        "mpn": "BD140",
+        "manufacturer_field": "STMicroelectronics",
+        "symbol": "BD140_ST",
+        "symbol_pins": {
+          "3": {
+            "name": "E",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "C",
+            "electrical_type": "passive"
+          },
+          "1": {
+            "name": "B",
+            "electrical_type": "input"
+          }
+        },
+        "footprint": "ARDF_TX:ST_BD140_SOT32_1p3Drill",
+        "netlist": {
+          "1": "SHAPE_BASE",
+          "3": "VPA_LOAD",
+          "2": "VPA_SHAPED"
+        },
+        "pcb": {
+          "1": "SHAPE_BASE",
+          "2": "VPA_SHAPED",
+          "3": "VPA_LOAD"
+        },
+        "pad_mm": {
+          "1": [
+            160.56,
+            69.0
+          ],
+          "2": [
+            158.28,
+            69.0
+          ],
+          "3": [
+            156.0,
+            69.0
+          ]
+        },
+        "drills_mm": {
+          "1": 1.3,
+          "2": 1.3,
+          "3": 1.3
+        },
+        "rotation": 180.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q404",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+      "package": "SOT23; gate +/-8V, only3.3V control",
+      "observed": {
+        "mpn": "DMN2056U-7",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "GND",
+          "3": "KEY_DRAIN",
+          "1": "PA_KEY"
+        },
+        "pcb": {
+          "1": "PA_KEY",
+          "2": "GND",
+          "3": "KEY_DRAIN"
+        },
+        "pad_mm": {
+          "1": [
+            152.0625,
+            75.05
+          ],
+          "2": [
+            152.0625,
+            76.95
+          ],
+          "3": [
+            153.9375,
+            76.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q405",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "GND",
+          "1": "KEY_TAIL",
+          "3": "PA_MUTE_MID"
+        },
+        "pcb": {
+          "1": "KEY_TAIL",
+          "2": "GND",
+          "3": "PA_MUTE_MID"
+        },
+        "pad_mm": {
+          "1": [
+            166.0625,
+            59.05
+          ],
+          "2": [
+            166.0625,
+            60.95
+          ],
+          "3": [
+            167.9375,
+            60.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q406",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "2": "GND",
+          "3": "KEY_TAIL_RESET_D",
+          "1": "NOT_ARMED"
+        },
+        "pcb": {
+          "1": "NOT_ARMED",
+          "2": "GND",
+          "3": "KEY_TAIL_RESET_D"
+        },
+        "pad_mm": {
+          "1": [
+            98.0625,
+            116.05
+          ],
+          "2": [
+            98.0625,
+            117.95
+          ],
+          "3": [
+            99.9375,
+            117.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q501",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "B",
+        "2": "E",
+        "3": "C"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf",
+      "package": "SOT23 top view",
+      "observed": {
+        "mpn": "MMBT3906,215",
+        "manufacturer_field": "",
+        "symbol": "MMBT3906",
+        "symbol_pins": {
+          "1": {
+            "name": "B",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "E",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "C",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "1": "FOX_BASE",
+          "2": "FOX_FEED",
+          "3": "VFOX"
+        },
+        "pcb": {
+          "1": "FOX_BASE",
+          "2": "FOX_FEED",
+          "3": "VFOX"
+        },
+        "pad_mm": {
+          "1": [
+            145.0625,
+            136.05
+          ],
+          "2": [
+            145.0625,
+            137.95
+          ],
+          "3": [
+            146.9375,
+            137.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q502",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "package": "SOT23, gate +/-20V",
+      "observed": {
+        "mpn": "BSS138BK,215",
+        "manufacturer_field": "",
+        "symbol": "2N7002",
+        "symbol_pins": {
+          "1": {
+            "name": "G",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "S",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "D",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "1": "FOX_KEY",
+          "3": "FOX_KEY_D",
+          "2": "GND"
+        },
+        "pcb": {
+          "1": "FOX_KEY",
+          "2": "GND",
+          "3": "FOX_KEY_D"
+        },
+        "pad_mm": {
+          "1": [
+            140.0625,
+            143.05
+          ],
+          "2": [
+            140.0625,
+            144.95
+          ],
+          "3": [
+            141.9375,
+            144.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q503",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "B",
+        "2": "E",
+        "3": "C"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
+      "package": "SOT23 top view",
+      "observed": {
+        "mpn": "MMBT3904,215",
+        "manufacturer_field": "",
+        "symbol": "MMBT3904",
+        "symbol_pins": {
+          "1": {
+            "name": "B",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "E",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "C",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "FOX_CLK",
+          "1": "FOX_CLK_B",
+          "2": "GND"
+        },
+        "pcb": {
+          "1": "FOX_CLK_B",
+          "2": "GND",
+          "3": "FOX_CLK"
+        },
+        "pad_mm": {
+          "1": [
+            153.0625,
+            134.05
+          ],
+          "2": [
+            153.0625,
+            135.95
+          ],
+          "3": [
+            154.9375,
+            135.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Q504",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "B",
+        "2": "E",
+        "3": "C"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf",
+      "package": "SOT23 top view",
+      "observed": {
+        "mpn": "MMBT3904,215",
+        "manufacturer_field": "",
+        "symbol": "MMBT3904",
+        "symbol_pins": {
+          "1": {
+            "name": "B",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "E",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "C",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "FOX_GATE_EN",
+          "1": "FOX_MUTE_B",
+          "2": "GND"
+        },
+        "pcb": {
+          "1": "FOX_MUTE_B",
+          "2": "GND",
+          "3": "FOX_GATE_EN"
+        },
+        "pad_mm": {
+          "1": [
+            164.0625,
+            148.05
+          ],
+          "2": [
+            164.0625,
+            149.95
+          ],
+          "3": [
+            165.9375,
+            149.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "T401",
+      "manufacturer": "Amidon core; own formed winding",
+      "footprint": "ARDF_TX:FT50A43_Inline_4Terminal",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT",
+        "3": "CONTACT",
+        "4": "CONTACT"
+      },
+      "source": "https://github.com/OpenARDF/SignalSlinger",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "nets": {
+        "1": "VPA_SHAPED",
+        "2": "DRAIN_PA",
+        "3": "DRAIN_PA",
+        "4": "RF_RAW"
+      },
+      "observed": {
+        "mpn": "Amidon FT-50A-43 + AWG24 enamel Cu",
+        "manufacturer_field": "",
+        "symbol": "Transformer_1P_1S",
+        "symbol_pins": {
+          "1": {
+            "name": "AA",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "AB",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "SA",
+            "electrical_type": "passive"
+          },
+          "4": {
+            "name": "SB",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "ARDF_TX:FT50A43_Inline_4Terminal",
+        "netlist": {
+          "2": "DRAIN_PA",
+          "3": "DRAIN_PA",
+          "4": "RF_RAW",
+          "1": "VPA_SHAPED"
+        },
+        "pcb": {
+          "1": "VPA_SHAPED",
+          "2": "DRAIN_PA",
+          "3": "DRAIN_PA",
+          "4": "RF_RAW"
+        },
+        "pad_mm": {
+          "1": [
+            171.38,
+            45.0
+          ],
+          "2": [
+            176.46,
+            45.0
+          ],
+          "3": [
+            181.54,
+            45.0
+          ],
+          "4": [
+            186.62,
+            45.0
+          ]
+        },
+        "drills_mm": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Requires incoming dimensional inspection",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U101",
+      "manufacturer": "Skyworks",
+      "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+      "roles": {
+        "1": "VDD",
+        "2": "XA",
+        "3": "XB",
+        "4": "SCL",
+        "5": "SDA",
+        "6": "CLK2",
+        "7": "VDDO",
+        "8": "GND",
+        "9": "CLK1",
+        "10": "CLK0"
+      },
+      "source": "https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf",
+      "package": "10-MSOP, 3x3mm/0.5mm pitch",
+      "observed": {
+        "mpn": "SI5351A-B-GT",
+        "manufacturer_field": "",
+        "symbol": "Si5351A-B-GT",
+        "symbol_pins": {
+          "1": {
+            "name": "VDD",
+            "electrical_type": "power_in"
+          },
+          "2": {
+            "name": "XA",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "XB",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "SCL",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "SDA",
+            "electrical_type": "bidirectional"
+          },
+          "6": {
+            "name": "CLK2",
+            "electrical_type": "output"
+          },
+          "7": {
+            "name": "VDDO",
+            "electrical_type": "power_in"
+          },
+          "8": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "9": {
+            "name": "CLK1",
+            "electrical_type": "output"
+          },
+          "10": {
+            "name": "CLK0",
+            "electrical_type": "output"
+          }
+        },
+        "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+        "netlist": {
+          "6": "CLK_FOX",
+          "10": "CLK_PA",
+          "8": "GND",
+          "4": "SCL",
+          "5": "SDA",
+          "1": "V3V3",
+          "7": "V3V3",
+          "2": "XA",
+          "3": "XB",
+          "9": "unconnected-(U101-CLK1-Pad9)"
+        },
+        "pcb": {
+          "1": "V3V3",
+          "2": "XA",
+          "3": "XB",
+          "4": "SCL",
+          "5": "SDA",
+          "6": "CLK_FOX",
+          "7": "V3V3",
+          "8": "GND",
+          "9": "unconnected-(U101-CLK1-Pad9)",
+          "10": "CLK_PA"
+        },
+        "pad_mm": {
+          "1": [
+            122.9,
+            96.0
+          ],
+          "2": [
+            122.9,
+            96.5
+          ],
+          "3": [
+            122.9,
+            97.0
+          ],
+          "4": [
+            122.9,
+            97.5
+          ],
+          "5": [
+            122.9,
+            98.0
+          ],
+          "6": [
+            127.1,
+            98.0
+          ],
+          "7": [
+            127.1,
+            97.5
+          ],
+          "8": [
+            127.1,
+            97.0
+          ],
+          "9": [
+            127.1,
+            96.5
+          ],
+          "10": [
+            127.1,
+            96.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U201",
+      "manufacturer": "Microchip",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "RESET_N",
+        "2": "VDD",
+        "3": "VSS"
+      },
+      "source": "https://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf",
+      "package": "SOT23-3, DS11187F p1/mechanical p9",
+      "observed": {
+        "mpn": "MCP100T-300I/TT",
+        "manufacturer_field": "",
+        "symbol": "MCP100T300",
+        "symbol_pins": {
+          "2": {
+            "name": "VDD",
+            "electrical_type": "power_in"
+          },
+          "3": {
+            "name": "VSS",
+            "electrical_type": "power_in"
+          },
+          "1": {
+            "name": "RESET_N",
+            "electrical_type": "output"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "GND",
+          "1": "POR_N",
+          "2": "V3V3"
+        },
+        "pcb": {
+          "1": "POR_N",
+          "2": "V3V3",
+          "3": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            42.0625,
+            41.05
+          ],
+          "2": [
+            42.0625,
+            42.95
+          ],
+          "3": [
+            43.9375,
+            42.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U202",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "roles": {
+        "1": "A",
+        "2": "B",
+        "3": "Clr",
+        "4": "~{Q}",
+        "5": "Q",
+        "6": "Cext",
+        "7": "RCext",
+        "8": "GND",
+        "9": "A",
+        "10": "B",
+        "11": "Clr",
+        "12": "~{Q}",
+        "13": "Q",
+        "14": "Cext",
+        "15": "RCext",
+        "16": "VCC"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf",
+      "package": "SOT109-1 SO16",
+      "observed": {
+        "mpn": "74HC123D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC123",
+        "symbol_pins": {
+          "1": {
+            "name": "A",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "B",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "Clr",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "~{Q}",
+            "electrical_type": "output"
+          },
+          "13": {
+            "name": "Q",
+            "electrical_type": "output"
+          },
+          "14": {
+            "name": "Cext",
+            "electrical_type": "input"
+          },
+          "15": {
+            "name": "RCext",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "Q",
+            "electrical_type": "output"
+          },
+          "6": {
+            "name": "Cext",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "RCext",
+            "electrical_type": "input"
+          },
+          "9": {
+            "name": "A",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "B",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "Clr",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "~{Q}",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "16": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+        "netlist": {
+          "12": "BUS_HOLDOFF_N",
+          "7": "BUS_RC",
+          "14": "GND",
+          "6": "GND",
+          "8": "GND",
+          "9": "GND",
+          "2": "LEASE",
+          "13": "LEASE_OK",
+          "15": "LEASE_RC",
+          "1": "LEASE_SEEN_N",
+          "11": "POR_N",
+          "3": "POR_N",
+          "10": "SCL",
+          "16": "V3V3",
+          "4": "unconnected-(U202A-~{Q}-Pad4)",
+          "5": "unconnected-(U202B-Q-Pad5)"
+        },
+        "pcb": {
+          "1": "LEASE_SEEN_N",
+          "2": "LEASE",
+          "3": "POR_N",
+          "4": "unconnected-(U202A-~{Q}-Pad4)",
+          "5": "unconnected-(U202B-Q-Pad5)",
+          "6": "GND",
+          "7": "BUS_RC",
+          "8": "GND",
+          "9": "GND",
+          "10": "SCL",
+          "11": "POR_N",
+          "12": "BUS_HOLDOFF_N",
+          "13": "LEASE_OK",
+          "14": "GND",
+          "15": "LEASE_RC",
+          "16": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            55.525,
+            47.555
+          ],
+          "2": [
+            55.525,
+            48.825
+          ],
+          "3": [
+            55.525,
+            50.095
+          ],
+          "4": [
+            55.525,
+            51.365
+          ],
+          "5": [
+            55.525,
+            52.635
+          ],
+          "6": [
+            55.525,
+            53.905
+          ],
+          "7": [
+            55.525,
+            55.175
+          ],
+          "8": [
+            55.525,
+            56.445
+          ],
+          "9": [
+            60.475,
+            56.445
+          ],
+          "10": [
+            60.475,
+            55.175
+          ],
+          "11": [
+            60.475,
+            53.905
+          ],
+          "12": [
+            60.475,
+            52.635
+          ],
+          "13": [
+            60.475,
+            51.365
+          ],
+          "14": [
+            60.475,
+            50.095
+          ],
+          "15": [
+            60.475,
+            48.825
+          ],
+          "16": [
+            60.475,
+            47.555
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0,
+          "15": 0.0,
+          "16": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U203",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "OUTPUT",
+        "3": "INPUT",
+        "4": "OUTPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "8": "OUTPUT",
+        "11": "INPUT",
+        "10": "OUTPUT",
+        "13": "INPUT",
+        "12": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC14D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC14",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "3": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "11": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "4": "ARM_CLK",
+          "2": "ARM_DELAY_N",
+          "3": "ARM_DELAY_N",
+          "1": "ARM_RC",
+          "11": "CW_KEY",
+          "9": "FOX_REQ",
+          "8": "FOX_REQ_N",
+          "7": "GND",
+          "10": "KEY_N",
+          "13": "KEY_TAIL_C",
+          "12": "KEY_TAIL_N",
+          "5": "PA_REQ",
+          "6": "PA_REQ_N",
+          "14": "V3V3"
+        },
+        "pcb": {
+          "1": "ARM_RC",
+          "2": "ARM_DELAY_N",
+          "3": "ARM_DELAY_N",
+          "4": "ARM_CLK",
+          "5": "PA_REQ",
+          "6": "PA_REQ_N",
+          "7": "GND",
+          "8": "FOX_REQ_N",
+          "9": "FOX_REQ",
+          "10": "KEY_N",
+          "11": "CW_KEY",
+          "12": "KEY_TAIL_N",
+          "13": "KEY_TAIL_C",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            80.525,
+            48.19
+          ],
+          "2": [
+            80.525,
+            49.46
+          ],
+          "3": [
+            80.525,
+            50.73
+          ],
+          "4": [
+            80.525,
+            52.0
+          ],
+          "5": [
+            80.525,
+            53.27
+          ],
+          "6": [
+            80.525,
+            54.54
+          ],
+          "7": [
+            80.525,
+            55.81
+          ],
+          "8": [
+            85.475,
+            55.81
+          ],
+          "9": [
+            85.475,
+            54.54
+          ],
+          "10": [
+            85.475,
+            53.27
+          ],
+          "11": [
+            85.475,
+            52.0
+          ],
+          "12": [
+            85.475,
+            50.73
+          ],
+          "13": [
+            85.475,
+            49.46
+          ],
+          "14": [
+            85.475,
+            48.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U211",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "4": "INPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "10": "INPUT",
+        "12": "INPUT",
+        "13": "INPUT",
+        "8": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT21.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC21D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC21",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "4": "BUS_QUIET",
+          "6": "CORE_OK",
+          "9": "CORE_OK",
+          "10": "EXCLUSIVE_OK",
+          "7": "GND",
+          "2": "LEASE_OK",
+          "12": "MODE_OK",
+          "5": "MUTE_N",
+          "13": "PA_CONDITION_OK",
+          "8": "SAFE_RAW",
+          "1": "UV_POR_N",
+          "14": "V3V3"
+        },
+        "pcb": {
+          "1": "UV_POR_N",
+          "2": "LEASE_OK",
+          "3": "",
+          "4": "BUS_QUIET",
+          "5": "MUTE_N",
+          "6": "CORE_OK",
+          "7": "GND",
+          "8": "SAFE_RAW",
+          "9": "CORE_OK",
+          "10": "EXCLUSIVE_OK",
+          "11": "",
+          "12": "MODE_OK",
+          "13": "PA_CONDITION_OK",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            45.525,
+            78.19
+          ],
+          "2": [
+            45.525,
+            79.46
+          ],
+          "3": [
+            45.525,
+            80.73
+          ],
+          "4": [
+            45.525,
+            82.0
+          ],
+          "5": [
+            45.525,
+            83.27
+          ],
+          "6": [
+            45.525,
+            84.54
+          ],
+          "7": [
+            45.525,
+            85.81
+          ],
+          "8": [
+            50.475,
+            85.81
+          ],
+          "9": [
+            50.475,
+            84.54
+          ],
+          "10": [
+            50.475,
+            83.27
+          ],
+          "11": [
+            50.475,
+            82.0
+          ],
+          "12": [
+            50.475,
+            80.73
+          ],
+          "13": [
+            50.475,
+            79.46
+          ],
+          "14": [
+            50.475,
+            78.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U212",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "3": "OUTPUT",
+        "4": "INPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "10": "INPUT",
+        "8": "OUTPUT",
+        "12": "INPUT",
+        "13": "INPUT",
+        "11": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT00.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC00D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC00",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "3": "EXCLUSIVE_OK",
+          "11": "FOX_MUTE",
+          "12": "FOX_PERMIT",
+          "2": "FOX_REQ",
+          "7": "GND",
+          "13": "KEY_TAIL",
+          "8": "KEY_TAIL",
+          "10": "KEY_TAIL_N",
+          "9": "KEY_TAIL_N",
+          "6": "MODE_OK",
+          "1": "PA_REQ",
+          "4": "PWR0",
+          "5": "PWR1",
+          "14": "V3V3"
+        },
+        "pcb": {
+          "1": "PA_REQ",
+          "2": "FOX_REQ",
+          "3": "EXCLUSIVE_OK",
+          "4": "PWR0",
+          "5": "PWR1",
+          "6": "MODE_OK",
+          "7": "GND",
+          "8": "KEY_TAIL",
+          "9": "KEY_TAIL_N",
+          "10": "KEY_TAIL_N",
+          "11": "FOX_MUTE",
+          "12": "FOX_PERMIT",
+          "13": "KEY_TAIL",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            71.525,
+            78.19
+          ],
+          "2": [
+            71.525,
+            79.46
+          ],
+          "3": [
+            71.525,
+            80.73
+          ],
+          "4": [
+            71.525,
+            82.0
+          ],
+          "5": [
+            71.525,
+            83.27
+          ],
+          "6": [
+            71.525,
+            84.54
+          ],
+          "7": [
+            71.525,
+            85.81
+          ],
+          "8": [
+            76.475,
+            85.81
+          ],
+          "9": [
+            76.475,
+            84.54
+          ],
+          "10": [
+            76.475,
+            83.27
+          ],
+          "11": [
+            76.475,
+            82.0
+          ],
+          "12": [
+            76.475,
+            80.73
+          ],
+          "13": [
+            76.475,
+            79.46
+          ],
+          "14": [
+            76.475,
+            78.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U221",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "13": "INPUT",
+        "12": "OUTPUT",
+        "3": "INPUT",
+        "4": "INPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "10": "INPUT",
+        "11": "INPUT",
+        "8": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT11.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC11D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC11",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "3": "ARMED",
+          "9": "ARMED",
+          "11": "ARM_ACCEPT",
+          "5": "ARM_ACCEPT",
+          "2": "BUS_HOLDOFF_N",
+          "13": "BUS_LINES_HIGH",
+          "12": "BUS_QUIET",
+          "8": "FOX_PERMIT",
+          "7": "GND",
+          "10": "PATH_FOX",
+          "4": "PATH_PA",
+          "6": "PA_PERMIT",
+          "1": "POR_N",
+          "14": "V3V3"
+        },
+        "pcb": {
+          "1": "POR_N",
+          "2": "BUS_HOLDOFF_N",
+          "3": "ARMED",
+          "4": "PATH_PA",
+          "5": "ARM_ACCEPT",
+          "6": "PA_PERMIT",
+          "7": "GND",
+          "8": "FOX_PERMIT",
+          "9": "ARMED",
+          "10": "PATH_FOX",
+          "11": "ARM_ACCEPT",
+          "12": "BUS_QUIET",
+          "13": "BUS_LINES_HIGH",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            47.525,
+            106.19
+          ],
+          "2": [
+            47.525,
+            107.46
+          ],
+          "3": [
+            47.525,
+            108.73
+          ],
+          "4": [
+            47.525,
+            110.0
+          ],
+          "5": [
+            47.525,
+            111.27
+          ],
+          "6": [
+            47.525,
+            112.54
+          ],
+          "7": [
+            47.525,
+            113.81
+          ],
+          "8": [
+            52.475,
+            113.81
+          ],
+          "9": [
+            52.475,
+            112.54
+          ],
+          "10": [
+            52.475,
+            111.27
+          ],
+          "11": [
+            52.475,
+            110.0
+          ],
+          "12": [
+            52.475,
+            108.73
+          ],
+          "13": [
+            52.475,
+            107.46
+          ],
+          "14": [
+            52.475,
+            106.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U222",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "3": "OUTPUT",
+        "4": "INPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "10": "INPUT",
+        "8": "OUTPUT",
+        "12": "INPUT",
+        "13": "INPUT",
+        "11": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT08.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC08D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC08",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "2": "ARM",
+          "11": "BUS_LINES_HIGH",
+          "10": "CW_KEY",
+          "5": "CW_KEY",
+          "8": "FOX_KEY",
+          "9": "FOX_PERMIT",
+          "7": "GND",
+          "1": "HEALTH_N",
+          "6": "PA_KEY",
+          "4": "PA_PERMIT",
+          "3": "RESET_N",
+          "12": "SCL",
+          "13": "SDA",
+          "14": "V3V3"
+        },
+        "pcb": {
+          "1": "HEALTH_N",
+          "2": "ARM",
+          "3": "RESET_N",
+          "4": "PA_PERMIT",
+          "5": "CW_KEY",
+          "6": "PA_KEY",
+          "7": "GND",
+          "8": "FOX_KEY",
+          "9": "FOX_PERMIT",
+          "10": "CW_KEY",
+          "11": "BUS_LINES_HIGH",
+          "12": "SCL",
+          "13": "SDA",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            74.525,
+            106.19
+          ],
+          "2": [
+            74.525,
+            107.46
+          ],
+          "3": [
+            74.525,
+            108.73
+          ],
+          "4": [
+            74.525,
+            110.0
+          ],
+          "5": [
+            74.525,
+            111.27
+          ],
+          "6": [
+            74.525,
+            112.54
+          ],
+          "7": [
+            74.525,
+            113.81
+          ],
+          "8": [
+            79.475,
+            113.81
+          ],
+          "9": [
+            79.475,
+            112.54
+          ],
+          "10": [
+            79.475,
+            111.27
+          ],
+          "11": [
+            79.475,
+            110.0
+          ],
+          "12": [
+            79.475,
+            108.73
+          ],
+          "13": [
+            79.475,
+            107.46
+          ],
+          "14": [
+            79.475,
+            106.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U223",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "3": "INPUT",
+        "4": "INPUT",
+        "5": "OUTPUT",
+        "6": "OUTPUT",
+        "13": "INPUT",
+        "12": "INPUT",
+        "11": "INPUT",
+        "10": "INPUT",
+        "9": "OUTPUT",
+        "8": "OUTPUT"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "74HC74D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC74",
+        "symbol_pins": {
+          "1": {
+            "name": "~{R}",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "D",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "C",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "~{S}",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "Q",
+            "electrical_type": "output"
+          },
+          "6": {
+            "name": "~{Q}",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "~{Q}",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "Q",
+            "electrical_type": "output"
+          },
+          "10": {
+            "name": "~{S}",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "C",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "D",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "~{R}",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "5": "ARMED",
+          "2": "ARM_ACCEPT",
+          "3": "ARM_CLK",
+          "7": "GND",
+          "11": "LEASE",
+          "8": "LEASE_SEEN_N",
+          "6": "NOT_ARMED",
+          "13": "POR_N",
+          "1": "RESET_N",
+          "10": "V3V3",
+          "12": "V3V3",
+          "14": "V3V3",
+          "4": "V3V3",
+          "9": "unconnected-(U223B-Q-Pad9)"
+        },
+        "pcb": {
+          "1": "RESET_N",
+          "2": "ARM_ACCEPT",
+          "3": "ARM_CLK",
+          "4": "V3V3",
+          "5": "ARMED",
+          "6": "NOT_ARMED",
+          "7": "GND",
+          "8": "LEASE_SEEN_N",
+          "9": "unconnected-(U223B-Q-Pad9)",
+          "10": "V3V3",
+          "11": "LEASE",
+          "12": "V3V3",
+          "13": "POR_N",
+          "14": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            47.525,
+            132.19
+          ],
+          "2": [
+            47.525,
+            133.46
+          ],
+          "3": [
+            47.525,
+            134.73
+          ],
+          "4": [
+            47.525,
+            136.0
+          ],
+          "5": [
+            47.525,
+            137.27
+          ],
+          "6": [
+            47.525,
+            138.54
+          ],
+          "7": [
+            47.525,
+            139.81
+          ],
+          "8": [
+            52.475,
+            139.81
+          ],
+          "9": [
+            52.475,
+            138.54
+          ],
+          "10": [
+            52.475,
+            137.27
+          ],
+          "11": [
+            52.475,
+            136.0
+          ],
+          "12": [
+            52.475,
+            134.73
+          ],
+          "13": [
+            52.475,
+            133.46
+          ],
+          "14": [
+            52.475,
+            132.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U224",
+      "manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "roles": {
+        "1": "~{Mr}",
+        "2": "Q0",
+        "3": "D0",
+        "4": "D1",
+        "5": "Q1",
+        "6": "D2",
+        "7": "Q2",
+        "8": "GND",
+        "9": "Cp",
+        "10": "Q3",
+        "11": "D3",
+        "12": "Q4",
+        "13": "D4",
+        "14": "D5",
+        "15": "Q5",
+        "16": "VCC"
+      },
+      "source": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT174.pdf",
+      "package": "SOT109-1 SO16",
+      "observed": {
+        "mpn": "74HC174D,653",
+        "manufacturer_field": "",
+        "symbol": "74HC174",
+        "symbol_pins": {
+          "1": {
+            "name": "~{Mr}",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "Q0",
+            "electrical_type": "output"
+          },
+          "3": {
+            "name": "D0",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "D1",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "Q1",
+            "electrical_type": "output"
+          },
+          "6": {
+            "name": "D2",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "Q2",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "9": {
+            "name": "Cp",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "Q3",
+            "electrical_type": "output"
+          },
+          "11": {
+            "name": "D3",
+            "electrical_type": "input"
+          },
+          "12": {
+            "name": "Q4",
+            "electrical_type": "output"
+          },
+          "13": {
+            "name": "D4",
+            "electrical_type": "input"
+          },
+          "14": {
+            "name": "D5",
+            "electrical_type": "input"
+          },
+          "15": {
+            "name": "Q5",
+            "electrical_type": "output"
+          },
+          "16": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+        "netlist": {
+          "9": "ARM",
+          "12": "ARM_ACCEPT",
+          "11": "FOX_REQ",
+          "14": "GND",
+          "8": "GND",
+          "1": "HEALTH_N",
+          "13": "KEY_N",
+          "10": "PATH_FOX",
+          "7": "PATH_PA",
+          "6": "PA_REQ",
+          "3": "PWR0",
+          "4": "PWR1",
+          "2": "SEL_EXT",
+          "5": "SEL_FULL",
+          "16": "V3V3",
+          "15": "unconnected-(U224-Q5-Pad15)"
+        },
+        "pcb": {
+          "1": "HEALTH_N",
+          "2": "SEL_EXT",
+          "3": "PWR0",
+          "4": "PWR1",
+          "5": "SEL_FULL",
+          "6": "PA_REQ",
+          "7": "PATH_PA",
+          "8": "GND",
+          "9": "ARM",
+          "10": "PATH_FOX",
+          "11": "FOX_REQ",
+          "12": "ARM_ACCEPT",
+          "13": "KEY_N",
+          "14": "GND",
+          "15": "unconnected-(U224-Q5-Pad15)",
+          "16": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            77.525,
+            131.555
+          ],
+          "2": [
+            77.525,
+            132.825
+          ],
+          "3": [
+            77.525,
+            134.095
+          ],
+          "4": [
+            77.525,
+            135.365
+          ],
+          "5": [
+            77.525,
+            136.635
+          ],
+          "6": [
+            77.525,
+            137.905
+          ],
+          "7": [
+            77.525,
+            139.175
+          ],
+          "8": [
+            77.525,
+            140.445
+          ],
+          "9": [
+            82.475,
+            140.445
+          ],
+          "10": [
+            82.475,
+            139.175
+          ],
+          "11": [
+            82.475,
+            137.905
+          ],
+          "12": [
+            82.475,
+            136.635
+          ],
+          "13": [
+            82.475,
+            135.365
+          ],
+          "14": [
+            82.475,
+            134.095
+          ],
+          "15": [
+            82.475,
+            132.825
+          ],
+          "16": [
+            82.475,
+            131.555
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0,
+          "15": 0.0,
+          "16": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U301",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "roles": {
+        "1": "GND",
+        "2": "SW",
+        "3": "VIN",
+        "4": "FB",
+        "5": "EN",
+        "6": "BOOT"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/tps54302.pdf",
+      "package": "DDC0006A/SOT23-THIN; SLVSD26C",
+      "observed": {
+        "mpn": "TPS54302DDCT",
+        "manufacturer_field": "",
+        "symbol": "TPS54302",
+        "symbol_pins": {
+          "1": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "2": {
+            "name": "SW",
+            "electrical_type": "power_out"
+          },
+          "3": {
+            "name": "VIN",
+            "electrical_type": "power_in"
+          },
+          "4": {
+            "name": "FB",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "EN",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "BOOT",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+        "netlist": {
+          "6": "BOOT_PA",
+          "4": "FB_PA",
+          "1": "GND",
+          "5": "PA_PERMIT",
+          "2": "SW_PA",
+          "3": "VIN_PA"
+        },
+        "pcb": {
+          "1": "GND",
+          "2": "SW_PA",
+          "3": "VIN_PA",
+          "4": "FB_PA",
+          "5": "PA_PERMIT",
+          "6": "BOOT_PA"
+        },
+        "pad_mm": {
+          "1": [
+            135.8625,
+            39.05
+          ],
+          "2": [
+            135.8625,
+            40.0
+          ],
+          "3": [
+            135.8625,
+            40.95
+          ],
+          "4": [
+            138.1375,
+            40.95
+          ],
+          "5": [
+            138.1375,
+            40.0
+          ],
+          "6": [
+            138.1375,
+            39.05
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U302",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "roles": {
+        "1": "VIN",
+        "2": "GND",
+        "3": "EN/UVLO",
+        "4": "CT",
+        "5": "QOD",
+        "6": "VOUT"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/tps22810.pdf",
+      "package": "DBV0006A/SOT23-6, SLVSDH0C Jan2018 p3",
+      "observed": {
+        "mpn": "TPS22810DBVR",
+        "manufacturer_field": "",
+        "symbol": "TPS22810DBV",
+        "symbol_pins": {
+          "1": {
+            "name": "VIN",
+            "electrical_type": "power_in"
+          },
+          "2": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "3": {
+            "name": "EN/UVLO",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "CT",
+            "electrical_type": "output"
+          },
+          "5": {
+            "name": "QOD",
+            "electrical_type": "open_collector"
+          },
+          "6": {
+            "name": "VOUT",
+            "electrical_type": "power_out"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "netlist": {
+          "4": "CT_PA",
+          "2": "GND",
+          "3": "PA_PERMIT",
+          "5": "QOD_PA",
+          "1": "VPA",
+          "6": "VPA_ISO"
+        },
+        "pcb": {
+          "1": "VPA",
+          "2": "GND",
+          "3": "PA_PERMIT",
+          "4": "CT_PA",
+          "5": "QOD_PA",
+          "6": "VPA_ISO"
+        },
+        "pad_mm": {
+          "1": [
+            149.8625,
+            56.05
+          ],
+          "2": [
+            149.8625,
+            57.0
+          ],
+          "3": [
+            149.8625,
+            57.95
+          ],
+          "4": [
+            152.1375,
+            57.95
+          ],
+          "5": [
+            152.1375,
+            57.0
+          ],
+          "6": [
+            152.1375,
+            56.05
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U311",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "roles": {
+        "1": "K",
+        "2": "REF",
+        "3": "A"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "package": "DBZ, SLVS543S May2024 Table5-1 p4",
+      "symbol": "TL431_TI_DBZ",
+      "nets": {
+        "1": "VREF_2V5",
+        "2": "VREF_2V5",
+        "3": "GND"
+      },
+      "observed": {
+        "mpn": "TL431AIDBZR",
+        "manufacturer_field": "Texas Instruments",
+        "symbol": "TL431_TI_DBZ",
+        "symbol_pins": {
+          "1": {
+            "name": "K",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "REF",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "A",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "netlist": {
+          "3": "GND",
+          "1": "VREF_2V5",
+          "2": "VREF_2V5"
+        },
+        "pcb": {
+          "1": "VREF_2V5",
+          "2": "VREF_2V5",
+          "3": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            106.0625,
+            71.05
+          ],
+          "2": [
+            106.0625,
+            72.95
+          ],
+          "3": [
+            107.9375,
+            72.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U312",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "1": "OUT",
+        "2": "OUT",
+        "3": "V+",
+        "4": "-",
+        "5": "+",
+        "6": "-",
+        "7": "+",
+        "8": "-",
+        "9": "+",
+        "10": "-",
+        "11": "+",
+        "12": "V-",
+        "13": "OUT",
+        "14": "OUT"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/lm339.pdf",
+      "package": "D0014A SOIC14; compare physical polarity, not channel naming",
+      "observed": {
+        "mpn": "LM339BIDR",
+        "manufacturer_field": "",
+        "symbol": "LM339",
+        "symbol_pins": {
+          "2": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "4": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "1": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "6": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "8": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "9": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "14": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "3": {
+            "name": "V+",
+            "electrical_type": "power_in"
+          },
+          "12": {
+            "name": "V-",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "12": "GND",
+          "8": "I_PA_FILTER",
+          "6": "PACK_4S_REF",
+          "1": "PA_GUARD_RAW",
+          "13": "PA_GUARD_RAW",
+          "14": "PA_GUARD_RAW",
+          "2": "PA_GUARD_RAW",
+          "9": "PA_OC_REF",
+          "11": "PA_OV_REF",
+          "4": "TEMP_HOT_REF",
+          "5": "TEMP_SENSE",
+          "3": "V3V3",
+          "7": "V_PACK_SCALED",
+          "10": "V_PA_OV"
+        },
+        "pcb": {
+          "1": "PA_GUARD_RAW",
+          "2": "PA_GUARD_RAW",
+          "3": "V3V3",
+          "4": "TEMP_HOT_REF",
+          "5": "TEMP_SENSE",
+          "6": "PACK_4S_REF",
+          "7": "V_PACK_SCALED",
+          "8": "I_PA_FILTER",
+          "9": "PA_OC_REF",
+          "10": "V_PA_OV",
+          "11": "PA_OV_REF",
+          "12": "GND",
+          "13": "PA_GUARD_RAW",
+          "14": "PA_GUARD_RAW"
+        },
+        "pad_mm": {
+          "1": [
+            111.525,
+            60.19
+          ],
+          "2": [
+            111.525,
+            61.46
+          ],
+          "3": [
+            111.525,
+            62.73
+          ],
+          "4": [
+            111.525,
+            64.0
+          ],
+          "5": [
+            111.525,
+            65.27
+          ],
+          "6": [
+            111.525,
+            66.54
+          ],
+          "7": [
+            111.525,
+            67.81
+          ],
+          "8": [
+            116.475,
+            67.81
+          ],
+          "9": [
+            116.475,
+            66.54
+          ],
+          "10": [
+            116.475,
+            65.27
+          ],
+          "11": [
+            116.475,
+            64.0
+          ],
+          "12": [
+            116.475,
+            62.73
+          ],
+          "13": [
+            116.475,
+            61.46
+          ],
+          "14": [
+            116.475,
+            60.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U313",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "roles": {
+        "1": "OUT",
+        "2": "GND",
+        "3": "IN+",
+        "4": "IN-",
+        "5": "VS"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
+      "package": "DBV0005A, not alternate pin-compatible assumption",
+      "observed": {
+        "mpn": "INA180A1IDBVT",
+        "manufacturer_field": "",
+        "symbol": "INA180A1",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "2": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "3": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "4": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "V+",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "netlist": {
+          "2": "GND",
+          "1": "I_PA_RAW",
+          "4": "SENSE_MINUS",
+          "3": "SENSE_PLUS",
+          "5": "V3V3"
+        },
+        "pcb": {
+          "1": "I_PA_RAW",
+          "2": "GND",
+          "3": "SENSE_PLUS",
+          "4": "SENSE_MINUS",
+          "5": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            157.8625,
+            60.05
+          ],
+          "2": [
+            157.8625,
+            61.0
+          ],
+          "3": [
+            157.8625,
+            61.95
+          ],
+          "4": [
+            160.1375,
+            61.95
+          ],
+          "5": [
+            160.1375,
+            60.05
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U314",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "roles": {
+        "1": "OUT",
+        "2": "-",
+        "3": "+",
+        "4": "V-",
+        "5": "+",
+        "6": "-",
+        "7": "OUT",
+        "8": "V+"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/lm393.pdf",
+      "package": "D0008A SOIC8",
+      "observed": {
+        "mpn": "LM393BIDR",
+        "manufacturer_field": "",
+        "symbol": "LM393",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "2": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "+",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "-",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "",
+            "electrical_type": "open_collector"
+          },
+          "4": {
+            "name": "V-",
+            "electrical_type": "power_in"
+          },
+          "8": {
+            "name": "V+",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+        "netlist": {
+          "4": "GND",
+          "2": "PACK_2S_REF",
+          "7": "PA_GUARD_RAW",
+          "5": "TEMP_OPEN_REF",
+          "6": "TEMP_SENSE",
+          "1": "UV_POR_N",
+          "8": "V3V3",
+          "3": "V_PACK_SCALED"
+        },
+        "pcb": {
+          "1": "UV_POR_N",
+          "2": "PACK_2S_REF",
+          "3": "V_PACK_SCALED",
+          "4": "GND",
+          "5": "TEMP_OPEN_REF",
+          "6": "TEMP_SENSE",
+          "7": "PA_GUARD_RAW",
+          "8": "V3V3"
+        },
+        "pad_mm": {
+          "1": [
+            110.525,
+            80.095
+          ],
+          "2": [
+            110.525,
+            81.365
+          ],
+          "3": [
+            110.525,
+            82.635
+          ],
+          "4": [
+            110.525,
+            83.905
+          ],
+          "5": [
+            115.475,
+            83.905
+          ],
+          "6": [
+            115.475,
+            82.635
+          ],
+          "7": [
+            115.475,
+            81.365
+          ],
+          "8": [
+            115.475,
+            80.095
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U401",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "roles": {
+        "1": "VDD",
+        "2": "PILOT",
+        "3": "OUT",
+        "4": "VSS",
+        "5": "INB",
+        "6": "IN"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/lm5134.pdf",
+      "package": "DBV0006A/SOT23-6, SNVS808C Feb2016 p3",
+      "observed": {
+        "mpn": "LM5134BMF/NOPB",
+        "manufacturer_field": "",
+        "symbol": "LM5134B",
+        "symbol_pins": {
+          "6": {
+            "name": "IN",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "INB",
+            "electrical_type": "input"
+          },
+          "1": {
+            "name": "VDD",
+            "electrical_type": "power_in"
+          },
+          "2": {
+            "name": "PILOT",
+            "electrical_type": "output"
+          },
+          "3": {
+            "name": "OUT",
+            "electrical_type": "output"
+          },
+          "4": {
+            "name": "VSS",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "netlist": {
+          "6": "CLK_PA",
+          "3": "GATE_DRV",
+          "4": "GND",
+          "5": "PA_INB",
+          "1": "VDRV",
+          "2": "unconnected-(U401-PILOT-Pad2)"
+        },
+        "pcb": {
+          "1": "VDRV",
+          "2": "unconnected-(U401-PILOT-Pad2)",
+          "3": "GATE_DRV",
+          "4": "GND",
+          "5": "PA_INB",
+          "6": "CLK_PA"
+        },
+        "pad_mm": {
+          "1": [
+            171.1375,
+            40.95
+          ],
+          "2": [
+            171.1375,
+            40.0
+          ],
+          "3": [
+            171.1375,
+            39.05
+          ],
+          "4": [
+            168.8625,
+            39.05
+          ],
+          "5": [
+            168.8625,
+            40.0
+          ],
+          "6": [
+            168.8625,
+            40.95
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "rotation": 180.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "U501",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "roles": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "INPUT",
+        "2": "INPUT",
+        "3": "OUTPUT",
+        "4": "INPUT",
+        "5": "INPUT",
+        "6": "OUTPUT",
+        "9": "INPUT",
+        "10": "INPUT",
+        "8": "OUTPUT",
+        "12": "INPUT",
+        "13": "INPUT",
+        "11": "OUTPUT"
+      },
+      "source": "https://www.ti.com/lit/ds/symlink/sn74ac00.pdf",
+      "package": "SOIC14 top view; independent gate logic regression verifies functions",
+      "observed": {
+        "mpn": "SN74AC00DR",
+        "manufacturer_field": "",
+        "symbol": "74AC00",
+        "symbol_pins": {
+          "1": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "2": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "3": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "4": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "5": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "6": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "8": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "9": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "10": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "11": {
+            "name": "",
+            "electrical_type": "output"
+          },
+          "12": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "13": {
+            "name": "",
+            "electrical_type": "input"
+          },
+          "7": {
+            "name": "GND",
+            "electrical_type": "power_in"
+          },
+          "14": {
+            "name": "VCC",
+            "electrical_type": "power_in"
+          }
+        },
+        "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+        "netlist": {
+          "1": "FOX_CLK",
+          "4": "FOX_CLK",
+          "9": "FOX_CLK",
+          "3": "FOX_GATE1",
+          "6": "FOX_GATE2",
+          "8": "FOX_GATE3",
+          "10": "FOX_GATE_EN",
+          "2": "FOX_GATE_EN",
+          "5": "FOX_GATE_EN",
+          "12": "GND",
+          "13": "GND",
+          "7": "GND",
+          "14": "VFOX",
+          "11": "unconnected-(U501-Pad11)"
+        },
+        "pcb": {
+          "1": "FOX_CLK",
+          "2": "FOX_GATE_EN",
+          "3": "FOX_GATE1",
+          "4": "FOX_CLK",
+          "5": "FOX_GATE_EN",
+          "6": "FOX_GATE2",
+          "7": "GND",
+          "8": "FOX_GATE3",
+          "9": "FOX_CLK",
+          "10": "FOX_GATE_EN",
+          "11": "unconnected-(U501-Pad11)",
+          "12": "GND",
+          "13": "GND",
+          "14": "VFOX"
+        },
+        "pad_mm": {
+          "1": [
+            160.525,
+            133.19
+          ],
+          "2": [
+            160.525,
+            134.46
+          ],
+          "3": [
+            160.525,
+            135.73
+          ],
+          "4": [
+            160.525,
+            137.0
+          ],
+          "5": [
+            160.525,
+            138.27
+          ],
+          "6": [
+            160.525,
+            139.54
+          ],
+          "7": [
+            160.525,
+            140.81
+          ],
+          "8": [
+            165.475,
+            140.81
+          ],
+          "9": [
+            165.475,
+            139.54
+          ],
+          "10": [
+            165.475,
+            138.27
+          ],
+          "11": [
+            165.475,
+            137.0
+          ],
+          "12": [
+            165.475,
+            135.73
+          ],
+          "13": [
+            165.475,
+            134.46
+          ],
+          "14": [
+            165.475,
+            133.19
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    },
+    {
+      "reference": "Y101",
+      "manufacturer": "Abracon",
+      "footprint": "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm",
+      "roles": {
+        "1": "CONTACT",
+        "2": "CONTACT",
+        "3": "CONTACT",
+        "4": "CONTACT"
+      },
+      "source": "https://abracon.com/Resonators/abm3b.pdf",
+      "package": "Exact physical landing; key/lead-forming constraints in mechanical report",
+      "observed": {
+        "mpn": "ABM3B-25.000MHZ-10-1-U-T",
+        "manufacturer_field": "",
+        "symbol": "Crystal_GND24",
+        "symbol_pins": {
+          "1": {
+            "name": "1",
+            "electrical_type": "passive"
+          },
+          "2": {
+            "name": "G",
+            "electrical_type": "passive"
+          },
+          "3": {
+            "name": "3",
+            "electrical_type": "passive"
+          },
+          "4": {
+            "name": "G",
+            "electrical_type": "passive"
+          }
+        },
+        "footprint": "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm",
+        "netlist": {
+          "2": "GND",
+          "4": "GND",
+          "1": "XA",
+          "3": "XB"
+        },
+        "pcb": {
+          "1": "XA",
+          "2": "GND",
+          "3": "XB",
+          "4": "GND"
+        },
+        "pad_mm": {
+          "1": [
+            123.35,
+            91.0
+          ],
+          "2": [
+            126.65,
+            91.0
+          ],
+          "3": [
+            126.65,
+            89.0
+          ],
+          "4": [
+            123.35,
+            89.0
+          ]
+        },
+        "drills_mm": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        },
+        "rotation": 0.0
+      },
+      "status": "Verified with assembly constraint",
+      "scope": "Manufacturer-document/CAD mapping; no incoming identity or hardware qualification"
+    }
+  ],
+  "count": 55,
+  "negative_cases_rejected": [
+    "Q403 XML pad1 emitter",
+    "Q403 XML pad3 base",
+    "Q403 PCB pad1 emitter",
+    "Q403 PCB pad3 base",
+    "TL431 old ground pin2",
+    "Q403 unverified manufacturer_field",
+    "Q403 unverified footprint",
+    "Q403 unverified symbol",
+    "actual E1 Q403",
+    "actual E1 U311"
+  ],
+  "assembly_constraints": [
+    "Q403 drawing face toward board+Y; 180deg footprint; verify actual ST device, no alternate-vendor substitution",
+    "IRF610 tab is drain: insulated heatsink/thermocouple",
+    "Connector keys/contact identities and winding lead forming require incoming dimensional inspection"
+  ]
+}

@@ -1,0 +1,29 @@
+# Preserve exact historical/checksummed bytes; no global newline normalization.
+* -text
+
+# Newly maintained public entry points use LF.
+/README.md text eol=lf
+/CONTRIBUTING.md text eol=lf
+/THIRD_PARTY_NOTICES.md text eol=lf
+/LICENSE text eol=lf
+/.gitignore text eol=lf
+/.gitattributes text eol=lf
+/docs/README.md text eol=lf
+/docs/publication/** text eol=lf
+/tools/m7_publication.py text eol=lf
+
+*.zip binary
+*.gz binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.step binary
+*.stp binary
+
+# Readable CAD diffs, without changing checkout bytes.
+*.kicad_sch diff
+*.kicad_pcb diff
+*.kicad_pro diff
+*.kicad_sym diff
+*.kicad_mod diff

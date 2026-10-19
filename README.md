@@ -1,123 +1,208 @@
 # ARDF-TX
 
-**M6-L1, 2026-10-18:** the [common controller](hardware/controller/README.md)
-supports NO_LORA, Silicontra 433 MHz or 868 MHz on one footprint and RF feed.
-The Hirose underbody ground keep-out is locally corrected; the short RF signal
-trace, RF80/RF2M interfaces and R1 battery-ID/USB corrections are preserved.
-[Fresh CAD, population BOMs and fabrication review](hardware/controller/review/M6-L1/README.md).
-[Decision](docs/M6_L1_REVIEW_DECISION.md): **GO for independent five-bare-board
-review and optional LoRa assembly preparation only.** No acceptance tag or
-manufacturing release; physical qualification remains NOT_RUN.
+**Hardware evaluation stage — physical transmitter qualification pending.**
 
-A modular, cost-conscious, field-deployable transmitter platform for amateur radio direction finding (ARDF).
+ARDF-TX is a modular open-source transmitter platform for Amateur Radio Direction
+Finding (ARDF), with separate 80 m and 2 m RF boards and a common ESP32-S3
+controller. Its goals are affordable reproduction, ordinary PCB manufacturing,
+autonomous contest timing, optional remote operation and explicit hardware
+transmitter interlocks.
 
-**Current 2 m CAD candidate — M5B-E5 compact platform:** the [RF2M PCB](hardware/2m/README.md) is now **150 × 110 mm**, with the same **140 × 100 mm mounting pattern** as RF80. Standard two-layer 1.6 mm / 1 oz FR4 and the E4R1 circuit/source-joint construction are retained. See the [E5 review decision](docs/M5B_E5_REVIEW_DECISION.md) and [package](hardware/2m/review/M5B-E5/README.md) for current check results and review readiness. The conservative 110°C thermal target remains unmet; physical 125°C, RF/AM and endurance qualification remain OPEN/NOT_RUN. E4R1 and earlier packages remain archived. No acceptance tag, upload, purchase, manufacture or operation is authorized.
+The repository contains editable KiCad sources, development history, engineering
+decisions, population BOMs, verification tools and revision-specific fabrication
+data. These designs are **CAD-reviewed evaluation candidates**, not field-proven,
+competition-certified or released for operation. No PCB manufacture or delivery
+is established by the published milestone evidence.
 
-**Earlier 80 m status:** M1 architectural baseline conditionally accepted; M2/M3A research preserved. **M3B-E2 corrects the routed 80 m evaluation PCB for engineering review.** E1 is preserved at tag `m3b-e1`; its BD140 and TL431 pin/net errors are corrected, and its earlier manufacturing recommendation is withdrawn. ERC/DRC/connectivity checks pass; physical qualification remains OPEN. No component order, manufacturer upload, fabrication, assembly, energizing or production firmware has occurred. Proposed ADRs remain proposed.
+## Hardware architecture
 
-**M4A-V1R1, 2026-10-18:** the active **150 × 110 mm RF80** candidate now uses
-ordinary JLCPCB finished-hole tolerances and readable standard silkscreen.
-[Current decision](docs/M4A_V1R1_REVIEW_DECISION.md),
-[five-board fabrication review](hardware/80m/production/review/M4A-V1R1/README.md)
-and [three-board order preparation](hardware/80m/production/review/M4A-V1R1/THREE_BOARD_ORDER_READINESS.md)
-are available. GO is for independent manufacturing review only. The
-[V1R1-first prototype transition](docs/M4A_V1R1_PROTOTYPE_TRANSITION.md)
-is proposed for review; the original E2-first decision below remains preserved.
-No upload, purchase, assembly, power-up or RF activation is authorized.
+| Module | Current candidate / source commit | PCB | Main functions | Native KiCad project | Engineering review |
+| --- | --- | --- | --- | --- | --- |
+| Common controller | M6-L1 / [`d94dabd`](https://github.com/DD1SB/ARDF-TX/commit/d94dabd0e40137dc44b2bb94f3707ad4636ca65f) | 100 × 100 mm | ESP32-S3, backed-up RTC, USB-C, optional LoRa, separate RF interfaces and default-off interlocks | [CTRL.kicad_pro](hardware/controller/CTRL.kicad_pro) | [M6-L1](hardware/controller/review/M6-L1/README.md) |
+| 80 m RF | M4A-V1R1 / [`f86684b`](https://github.com/DD1SB/ARDF-TX/commit/f86684b9ef45eec3ca4ce52edcb62896a847f1d7) | 150 × 110 mm | Si5351, LM5134B, IRF610, Classic/Sprint profiles and independent Foxoring output | [RF80_V1.kicad_pro](hardware/80m/production/RF80_V1.kicad_pro) | [M4A-V1R1](hardware/80m/production/review/M4A-V1R1/README.md) |
+| 2 m RF | M5B-E5 / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Si5351, PHA-1+, PD54008L-E, sinusoidal drain AM and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | [M5B-E5](hardware/2m/review/M5B-E5/README.md) |
 
-**M4A, 2026-10-15:** the frozen **1245023 / m3b-e2** reference now has a
-[self-contained five-bare-board prototype handoff](docs/M4A_E2_PROTOTYPE_HANDOFF.md).
-A separate **150 × 110 mm** [RF80 V1 KiCad candidate](hardware/80m/production/README.md)
-reduces board area **50.9%**, preserves both populations and all functional
-components/connections, and retains 14 of 74 test pads. See the
-[review decision](docs/M4A_REVIEW_DECISION.md), [layout](docs/M4A_COMPACT_LAYOUT.md),
-[mechanical interface](docs/M4A_MECHANICAL_INTERFACE.md),
-[variant BOM/costs](docs/M4A_VARIANT_BOM.md),
-[electrical equivalence](docs/M4A_ELECTRICAL_EQUIVALENCE.md) and
-[production test plan](docs/M4A_PRODUCTION_TEST_PLAN.md).
-**PRODUCTION-INTENT — NOT RELEASED; all physical qualification remains NOT_RUN.**
-Purchasing, fabrication, population, power-up and RF activation need distinct
-explicit authorization; none has occurred.
+Both RF boards share a **140 × 100 mm four-point M3 mounting pattern**. The
+controller mounts independently and connects through short keyed IDC cables:
+16 pins for RF80, 20 pins for RF2M. Their interfaces must not be interchanged.
+RF battery power uses separate connectors, never the IDC cable. Normally only
+one band/path transmits at a time.
 
-**Power reassessment, 2026-10-14:** the user now requires **12 h full-power / 24 h competition-appropriate reduced-power** operation. The completed [2S/4S review](docs/M2_POWER_ARCHITECTURE_DECISION.md) proposes mode-dependent supplies and packs; [ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md) awaits review. Earlier 24 h maximum-power tables below and in M1/M2 remain historical calculations, not current pack recommendations.
+The common footprint does not establish a qualified enclosure or three-board
+stack. Cooling, controller antenna clearance and cable access are described in
+the [common-enclosure study](docs/M5B_E5_COMMON_ENCLOSURE.md). RF2M's cooling
+assembly projects approximately 25.2 mm below its board. A stack with both RF
+modules remains a mechanical feasibility item.
 
-**M3A, 2026-10-14:** [schematic project and PDF](hardware/80m/README.md), [review decision](docs/M3_80M_REVIEW_DECISION.md), [circuit explanation](docs/M3_80M_SCHEMATIC_REVIEW.md), [PA choice](docs/M3_80M_PA_SELECTION.md), [BOM](docs/M3_80M_BOM.md), [prototype gates](docs/M3_80M_TEST_PLAN.md) and [checks](docs/M3_80M_CHECKS.md). Selected IRF610 normal path targets approximately3 W full /1.2 W extended on4S; separate10 mW Fox path supports2S reduced population. 2 m remains genuine A2A,1 W carrierERP with required AM PEP.
+## Intended operating modes
 
-**M3A-R1 correction:** [logic audit](docs/M3A_R1_LOGIC_AUDIT.md), [simplification](docs/M3A_R1_SIMPLIFICATION.md), [cost delta](docs/M3A_R1_COST_DELTA.md), [verification](docs/M3A_R1_VERIFICATION.md) and [review decision](docs/M3A_R1_REVIEW_DECISION.md). Physical timer polarity/startup/rearm defects are corrected; ERC and pin-derived digital checks pass. Driver-fault timing and all RF/thermal gates remain OPEN. R0 is preserved at Git tag `m3a-r0`.
+| Band | Intended modes |
+| --- | --- |
+| 80 m | Classic, Sprint, and Foxoring through a separate nominal 10 mW path |
+| 2 m | Classic with genuine sinusoidal A2A amplitude modulation, and an independent very-low-power training path |
 
-**M3B, 2026-10-14:** [evaluation PCB and review files](hardware/80m/README.md), [review decision](docs/M3B_REVIEW_DECISION.md), [layout](docs/M3B_PCB_LAYOUT_REVIEW.md), [critical packages](docs/M3B_COMPONENT_QUALIFICATION.md), [bring-up](docs/M3B_BRINGUP_PLAN.md), [safety gates](docs/M3B_SAFETY_GATES.md), [evaluation BOM](docs/M3B_EVALUATION_BOM.md) and [reproducible checks](docs/M3B_CHECKS.md). Two layers,210×160 mm; R1 safety logic preserved. Recommendation: independent review, then explicit user approval for a small bare-board batch; no unrestricted RF/hardware release.
+The controller contract supports configurable schedules, Morse identification,
+Sprint slow/fast groups and spectator/finish-beacon roles. Simultaneous Sprint
+groups operate across a fleet; one station executes its assigned role.
+Frequencies and operating profiles are configurable. Continuous beacons need
+their own power/endurance model.
 
-**M3B-E2, 2026-10-15:** [review decision](docs/M3B_E2_REVIEW_DECISION.md), [electrical corrections](docs/M3B_E2_CORRECTIONS.md), [manufacturer/footprint audit](docs/M3B_E2_FOOTPRINT_AUDIT.md), [DRC coverage](docs/M3B_E2_DRC_AUDIT.md), [bounded power gates](docs/M3B_E2_POWER_PROTECTION.md), [cost delta](docs/M3B_E2_COST_DELTA.md) and [new E2 package](hardware/80m/review/M3B-E2/README.md). Conditional bare-board review only; finished-hole capability, independent review and explicit manufacturing authorization remain pending.
+RF power, 70–80% AM, ERP and 12 h full / 24 h reduced-power endurance remain
+**targets requiring measurement**. Antenna/feed gain, legal frequencies/power
+and country/operator authorization must be established separately. IARU event
+rules do not grant permission to transmit.
 
-## Planned configurations
+## Controller and optional LoRa
 
-- Control PCB + 80 m RF PCB: 80 m Classic, Sprint, Foxoring and beacon roles, with **different antenna installations** for full-size Classic/Sprint versus compact 30 cm-class Foxoring.
-- Control PCB + 2 m RF PCB: 2 m Classic A2A and very-low-power training.
-- All three PCBs: universal dual-band transmitter.
-- Silicontra SX1262 LoRa daughter module is optional on the control PCB and detected at runtime.
-- Retained protected external 2S1P–2S4P Li-ion packs; added 4S1P/4S2P architectures are proposed for review. Eight cells remain a maximum candidate, not a prerequisite; compact Foxoring stays 2S1P.
+The controller uses an **ESP32-S3-WROOM-1-N4** and an **RV-3032-C7 RTC** with
+isolated CR1220 backup. USB-C provides programming, configuration, diagnostics
+and time setting. Standalone operation does not require a network. The firmware
+currently supplied is a hardware-contract/test foundation, not complete contest
+firmware.
 
-## Project principles
+| Radio population | Module | External antenna |
+| --- | --- | --- |
+| `NO_LORA` | U70 unpopulated | None required |
+| `LORA_433` | Silicontra SX1262TR4-GC | Suitable 433 MHz antenna and U.FL pigtail |
+| `LORA_868` | Silicontra SX1262TR8-GC | Suitable 868 MHz antenna and U.FL pigtail |
 
-1. Cost and repeatable sourcing are primary design objectives.
-2. Reuse measured, published RF designs where suitable. Research is not validation.
-3. Local autonomous, deterministic contest operation must work with no LoRa hardware or network.
-4. All inactive RF stages must be silent by hardware design (fail-safe TX inhibit).
-5. Each PCB must be developable, replaceable, independently testable and accompanied by a test specification.
-6. Compare itemized material baskets for six, ten and twenty identical boards against modified low-cost handheld radios; do not assume an original PCB is cheaper.
-7. Do not confuse RF connector power, ERP, PEP, antenna efficiency, or field-strength requirements. A 10 mW 80 m Foxoring field transmitter with an approximately 30 cm vertical antenna is **not** a full-size 80 m wire antenna merely driven at low power; matching and 30 m/250 m reach must be validated separately.
+One PCB, footprint and RF feed support all options. The band comes from a
+trusted assembly/configuration record; SX1262 chip identity cannot distinguish
+the bands. Unknown/inconsistent configuration disables LoRa TX. Missing LoRa
+does not prevent valid autonomous operation. See [LoRa variants](docs/M6_L1_LORA_VARIANTS.md)
+and the [controller interface specification](docs/M6_C1_RF_INTERFACE.md).
 
-## Start here
+Default-off hardware gating and local RF-board watchdogs inhibit transmission
+during startup, reset and faults. Application progress owns the lease/heartbeat;
+a continuously running PWM does not prove software health. Retuning, path
+changes and faults require the documented disarm/rearm sequence.
 
-- [`docs/M2_POWER_ARCHITECTURE_DECISION.md`](docs/M2_POWER_ARCHITECTURE_DECISION.md) — current 2S/4S recommendation, costs, pack/profile limits and review gates.
-- [`docs/M2_BATTERY_ARCHITECTURE.md`](docs/M2_BATTERY_ARCHITECTURE.md) — RF supply ratings, controller distribution, pack identity and charging protection.
-- [`docs/M2_POWER_MODE_COMPARISON.md`](docs/M2_POWER_MODE_COMPARISON.md) — verified competition limits and full/reduced/continuous profiles.
-- [`docs/M2_BATTERY_COST_COMPARISON.md`](docs/M2_BATTERY_COST_COMPARISON.md) — itemized battery/conversion and complete material at 6/10/20.
-- [`docs/M2_ENDURANCE_REWORK.md`](docs/M2_ENDURANCE_REWORK.md) — reproducible load, early-cutoff and sensitivity calculations.
-- [`docs/M2_POWER_ARCHITECTURE_SOURCES.md`](docs/M2_POWER_ARCHITECTURE_SOURCES.md) — dated primary evidence, prices and unresolved sourcing.
-- [`docs/M2_POWER_ARCHITECTURE_CHECKS.md`](docs/M2_POWER_ARCHITECTURE_CHECKS.md) — calculation/documentation checks and separately dated source-access results.
+## Power architecture
 
-- [`docs/M2_80M_DECISION.md`](docs/M2_80M_DECISION.md) — proposed proven RF core, near-1 W standard target, costs, endurance and review disposition.
-- [`docs/M2_80M_REFERENCE_COMPARISON.md`](docs/M2_80M_REFERENCE_COMPARISON.md) — actual schematics/BOMs/layouts, source versions and evidence gaps.
-- [`docs/M2_80M_RF_TOPOLOGY.md`](docs/M2_80M_RF_TOPOLOGY.md) — original circuit sheets and annotated connections, separate Foxoring branch and safety contract.
-- [`docs/M2_80M_COST_COMPARISON.md`](docs/M2_80M_COST_COMPARISON.md) — itemized 6/10/20 comparison and preserved all-in accounting.
-- [`docs/M2_80M_POWER_COMPARISON.md`](docs/M2_80M_POWER_COMPARISON.md) — 1/1.2/2/3/5 W profiles and continuous beacons.
-- [`docs/M2_80M_VALIDATION_GATES.md`](docs/M2_80M_VALIDATION_GATES.md) — shared evaluation hardware and measurable H0–H9 gates, all NOT RUN.
-- [`docs/M2_80M_CHECKS.md`](docs/M2_80M_CHECKS.md) — arithmetic, documentation and source-link verification.
+Use externally protected/balanced **2S or 4S Li-ion packs**, with compatible
+RF-board populations and validated pack identity. The controller's intended
+input is approximately 6.0–16.8 V. This does not make every RF population
+compatible with every pack. RF2M `BOOST2S`, `BUCK4S`, `TRAIN_ONLY` and RF80
+`FULL`/`FOX_ONLY` have distinct population and operating restrictions.
 
-- [`docs/FOXORING_COST_AUDIT.md`](docs/FOXORING_COST_AUDIT.md) — reconciles EUR29.06 to EUR77.11 without replacing the common controller/RF architecture.
-- [`docs/FOXORING_COST_BOM.md`](docs/FOXORING_COST_BOM.md) — complete itemized Fox-only material and separate fleet charging/equipment budgets at 10/20.
-- [`docs/M2_PREPARATION.md`](docs/M2_PREPARATION.md) — conditional acceptance, new RF findings, circuit proposals and go/no-go disposition.
-- [`docs/M2_SYSTEM_COST.md`](docs/M2_SYSTEM_COST.md) — all-in material view including circuit increments, antenna networks, fabrication, wiring and every pack size.
-- [`docs/M2_CHECKS.md`](docs/M2_CHECKS.md) — current consistency, simulation and link checks, with evidence limitations.
+Logic power is separate from dedicated RF battery connections. Use the specified
+separately fused power harness and ground returns. USB-only configuration must
+not energize a PA or backfeed a pack. Charging electronics are out of scope.
 
-- [`docs/M1_DECISION.md`](docs/M1_DECISION.md) — M1 review summary, costs, endurance, unresolved gates and user decisions before M2.
-- [`docs/M1_COST_REWORK.md`](docs/M1_COST_REWORK.md) — revised minimal architecture, budget feasibility, cost drivers and alternatives.
-- [`docs/M1_COSTED_BOM.md`](docs/M1_COSTED_BOM.md) — itemized 6/10/20 quantities/prices, supplier codes, stock and estimates.
-- [`docs/M1_COST_SOURCES.md`](docs/M1_COST_SOURCES.md) — dated cost-rework primary evidence and access limitations.
-- [`docs/M1_REQUIREMENTS_TRACE.md`](docs/M1_REQUIREMENTS_TRACE.md) — directly checked 2025 rulebook matrix and all product requirement IDs.
-- [`docs/M1_FEASIBILITY.md`](docs/M1_FEASIBILITY.md) — RF evidence matrix, AM/PEP and separate antenna analysis.
-- [`docs/M1_SYSTEM_ARCHITECTURE.md`](docs/M1_SYSTEM_ARCHITECTURE.md) — local/shared synthesis comparison, interface and fail-off proposals.
-- [`docs/M1_POWER_BUDGET.md`](docs/M1_POWER_BUDGET.md) — 1P–4P profiles, peaks, margins and continuous-beacon exceptions.
-- [`docs/M1_BOM_CANDIDATES.md`](docs/M1_BOM_CANDIDATES.md) — attributed distributor observations and explicit unquoted allowances.
-- [`docs/M1_REGULATORY.md`](docs/M1_REGULATORY.md) — competition versus country law; Germany provisional.
-- [`docs/M1_RISK_REGISTER.md`](docs/M1_RISK_REGISTER.md) — scored risks and closure paths.
-- [`docs/M1_VALIDATION_PLAN.md`](docs/M1_VALIDATION_PLAN.md) — measurable qualification, including compact Foxoring field tests.
-- [`docs/M1_CHECKS.md`](docs/M1_CHECKS.md) — consistency/link/numeric check results and access limitations.
+Read the [controller power contract](docs/M6_C1_POWER_AND_BATTERY.md),
+[corrected pack-ID protection](docs/M6_C1R1_INPUT_PROTECTION.md),
+[power architecture decision](docs/M2_POWER_ARCHITECTURE_DECISION.md) and
+[ADR-0011](docs/decisions/ADR-0011-dual-voltage-power-and-endurance.md).
+Their recorded acceptance statuses remain authoritative; publication does not
+accept proposed decisions.
 
-- [`docs/requirements.md`](docs/requirements.md) — requirements and source distinctions.
-- [`docs/architecture.md`](docs/architecture.md) — current logical interfaces and unresolved decisions.
-- [`docs/research-register.md`](docs/research-register.md) — primary sources and evidence gaps.
-- [`docs/decisions/ADR-0001-modular-hardware.md`](docs/decisions/ADR-0001-modular-hardware.md) — accepted initial choices.
-- [`docs/m1-acceptance.md`](docs/m1-acceptance.md) — M1 exit criteria.
-- [`prompts/M1_CODEX_TASK.md`](prompts/M1_CODEX_TASK.md) — complete initial task for Codex.
+## Manufacturing data
 
-**Preserved M1 baseline**, before new RF circuit/thermal increments: nominal combined PCB material: **€69.54 / 62.33 / 61.90 ex VAT at 6/10/20**, with substantial unquoted estimates. The VHF board still exceeds its €30 target with the currently sourced MMIC driver; a stocked-EOL discrete-driver comparison is preserved as history and excluded from new selection. These are optimization candidates, not proven prices. M2 preparation uses conservative VHF 4P pending measured bias/efficiency; the earlier M1 3P result is only a historical assumption. The revised preparation budget plans HF/VHF 4P, Sprint 2P and Foxoring 1P, with smaller-pack passes measurement-dependent; measured efficiency/idle/pack tests are pending. Full-power continuous HF/VHF/Sprint beacons and simultaneous dual Classic fail 24 h in the reference 4P model.
+All three candidates use ordinary JLCPCB options: **two-layer standard FR4,
+1.6 mm, 1 oz copper, green mask, white legend, lead-free HASL and ordinary plated
+through vias**. No special stackup, controlled-impedance service, filled/capped
+vias or precision press-fit process is required. Published capability, local DFM,
+supplier CAM acceptance and an actual quotation are separate evidence.
 
-## License and external references
+Authentic archives for **five individual bare evaluation boards** of each design:
 
-The M2 review includes read-only OpenARDF schematic-page renderings and BOM metadata with [upstream MIT notices](docs/assets/80m-reference/LICENSES.md). Original complete CAD/layouts and firmware remain temporary research downloads. M3A supplies a new electrical schematic derived from the attributed OpenARDF RF core/filter, with [design/library licence notices](hardware/80m/LICENSES.md). No original complete product board or firmware is republished as ARDF-TX. Other source artwork has not been redistributed. Inspect the exact license before copying software, footprints or drawings. SmartFOX firmware's MIT declaration does not establish licensing for external components or vendor datasheets.
+| Module | Fabrication ZIP | Manufacturing instructions |
+| --- | --- | --- |
+| Controller M6-L1 | [CTRL_M6-L1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip) | [M6-L1](hardware/controller/review/M6-L1/MANUFACTURING.md) |
+| RF80 M4A-V1R1 | [RF80-V1R1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/fabrication/RF80-V1R1_JLCPCB_5boards.zip) | [V1R1](docs/M4A_V1R1_MANUFACTURING.md) |
+| RF2M M5B-E5 | [RF2M-M5B-E5_JLCPCB_5boards.zip](hardware/2m/review/M5B-E5/fabrication/RF2M-M5B-E5_JLCPCB_5boards.zip) | [E5](docs/M5B_E5_MANUFACTURING.md) |
 
-## Safety and regulations
+The controller ZIP is intentionally in the existing three-board handoff; its
+entries match the final M6-L1 fabrication directory. The [publication verifier](tools/m7_publication.py)
+checks all three hashes and their layers/drills. Revisions are not interchangeable:
+the older 210 × 160 mm RF80 E2 and 180 × 140 mm RF2M E4R1 packages are historical.
+No manufacturing archive was regenerated for publication.
 
-RF transmission must comply with applicable national regulations and permissions. IARU championship rules are competition requirements, not a substitute for legal compliance. Begin transmit testing into a rated 50-ohm dummy load with suitable RF measurement equipment; do not radiate unverified prototypes.
+Review the [three-board matrix](hardware/2m/review/M5B-E5/THREE_BOARD_READINESS.md)
+before a separately authorized quotation/order. No supplier quote or CAM
+acceptance is asserted. RF80's [V1R1-first proposal](docs/M4A_V1R1_PROTOTYPE_TRANSITION.md)
+still requires review of the original E2-first sequencing restriction.
+
+## Assembly and qualification
+
+Use the integrated staged procedures:
+
+- [Controller M6-L1 bring-up](hardware/controller/review/M6-L1/BRINGUP.md).
+- [RF80-V1R1 bring-up](hardware/80m/production/review/M4A-V1R1/BRINGUP.md).
+- [RF2M-E5 bring-up](hardware/2m/review/M5B-E5/BRINGUP.md).
+
+Qualify low-voltage logic and protection with bounded laboratory supplies before
+high-energy population or PA operation. Measure RF output, spectrum, off-slot
+silence and port isolation into suitable dummy loads. True AM, PA thermal
+behavior, endurance, antennas and field performance are **NOT_RUN**.
+RF2M's analytical conservative 110°C thermal target remains unmet; its 125°C
+engineering operating gate remains open. See the [thermal review](docs/M5B_E5_THERMAL_MECHANICAL.md).
+
+## Getting started
+
+```sh
+git clone https://github.com/DD1SB/ARDF-TX.git
+cd ARDF-TX
+git log --oneline --decorate
+git tag --list
+python3 tools/m7_publication.py verify
+```
+
+The verifier needs only Python's standard library and Git. It checks current
+native-source references, archive contents/hashes, review manifests and public
+entry-point links without modifying hardware or historical reviews.
+
+The recorded CAD toolchain is **KiCad 10.0.6**, with its standard symbol,
+footprint and 3D libraries. Open the three `.kicad_pro` files above; project-local
+libraries are included. CAD Python checks need matching `pcbnew` bindings
+(the recorded Debian installation uses `/usr/bin/python3`). Host fixtures need
+a C11 compiler:
+
+```sh
+python3 -m unittest discover -s firmware/controller_hw -p 'test_*.py' -v
+cc -std=c11 -Wall -Wextra -Werror firmware/controller_hw/contract.c firmware/controller_hw/test_contract.c -lm -o /tmp/ardf-controller-contract
+/tmp/ardf-controller-contract
+```
+
+Find current BOMs, sourcing records and reproduction commands in the
+[documentation index](docs/README.md). Prices contain unquoted estimates and
+must be rechecked; they are not purchase quotations. For full CAD re-export or
+historical regressions use the pinned revision instructions in a disposable
+worktree. Old capture, placement and routing scripts can overwrite newer sources
+or frozen reviews. Inspect the checked-in fabrication ZIPs first.
+
+## Project status and history
+
+The complete local development history and ten existing milestone tags are
+preserved. A historical tag identifies evidence at that milestone, not a current
+manufacturing or operational release. Current candidates are identified by the
+commits above; publication adds no hardware acceptance tag.
+
+Requirements, research, proposed/accepted ADRs, superseded circuits and review
+findings remain discoverable through the [documentation index](docs/README.md).
+The [M7 publication audit](docs/publication/M7/README.md) records checks actually
+rerun and their limitations.
+
+## License
+
+Original contributor-owned firmware, tooling, documentation and KiCad design
+work are under the [MIT License](LICENSE), except where separate notices apply.
+MIT does not relicense third-party material.
+
+[Third-party notices](THIRD_PARTY_NOTICES.md) cover OpenARDF MIT attribution,
+KiCad-derived library data under CC-BY-SA-4.0 with its exception, and the
+GPL-2.0-or-later sliver helper. Historical DL3BBX-derived M5A-R3 retains its
+private-construction/commercial-permission restrictions; it is not unrestricted
+MIT hardware. Manufacturer documents remain linked under their owners' terms.
+
+## Contributions
+
+Issues and pull requests are welcome. Identify the board/revision, provide
+reproduction steps and distinguish calculations from measurements. Schematic
+changes need manufacturer pin/land evidence, interface implications, population
+updates and relevant regressions. PCB changes also need native geometry/DFM
+checks and a new revision-specific artifact manifest.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before regenerating manufacturing data.
+Preserve historical evidence and decision status. Share qualification results
+with instrument details, uncertainty and test configurations.

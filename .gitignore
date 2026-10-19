@@ -1,10 +1,47 @@
-# Local outputs
+# Local outputs; authoritative sources, reviews and archives remain tracked.
 .cache/
 __pycache__/
 *.pyc
 *.bak
 .DS_Store
-# KiCad exports are tracked only for an explicitly authorized review/release package
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# KiCad personal state and automatic recovery, never native design sources.
+*.kicad_prl
+~*.lck
+_autosave-*
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+fp-info-cache
+
+# Local compiler/build outputs.
+*.o
+*.obj
+*.elf
+*.gcda
+*.gcno
+/build/
+/dist/
+.pio/
+
+# Local credentials and temporary database journals.
+.env
+.env.local
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
 
 # Controller local KiCad UI state (M6-C1 sources and review exports are tracked)
 /hardware/controller/*.kicad_prl

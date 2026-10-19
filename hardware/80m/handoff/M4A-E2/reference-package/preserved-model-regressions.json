@@ -1,0 +1,44 @@
+[
+  {
+    "command": "python3 tools/m1_costs.py --check",
+    "exit_code": 0,
+    "stdout": "{\n  \"bom_lines\": 117,\n  \"catalog_parts\": 68,\n  \"batches\": [\n    6,\n    10,\n    20\n  ],\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/m2_rf_analysis.py --check",
+    "exit_code": 0,
+    "stdout": "{\n  \"classification\": \"DESIGN CALCULATIONS; NOT MEASURED; NOT A TRANSISTOR SIMULATION\",\n  \"envelope_cases\": 8,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/m2_system_costs.py --check",
+    "exit_code": 0,
+    "stdout": "{\n  \"baskets\": 48,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/m2_checks.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"preparation_documents\": 8,\n  \"review_requirements\": 8,\n  \"go_no_go_gates\": 10,\n  \"actual_ideal_spice_rows\": 496,\n  \"spice_vs_formula_max_error_db\": 0.000451,\n  \"all_in_baskets\": 48,\n  \"standalone_board_baskets\": 12,\n  \"revised_profile_rows\": 9,\n  \"universal_idle_sensitivity_rows\": 4,\n  \"hardware_tests\": \"NOT RUN\",\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/foxoring_costs.py --check",
+    "exit_code": 0,
+    "stdout": "{\n  \"batches\": [\n    10,\n    20\n  ],\n  \"unit_material_lines_per_batch\": 77,\n  \"shared_equipment_lines_per_batch\": 3,\n  \"csv_ledger_lines\": 162,\n  \"baseline_bridge_10_eur\": \"48.05\",\n  \"hardware_tests\": \"NOT RUN\",\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/m2_80m_analysis.py --check",
+    "exit_code": 0,
+    "stdout": "PASS: 16 baskets at 6/10/20; 10 profiles; preserved Fox bridge; six deliverables\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 tools/m2_power_architecture.py --check",
+    "exit_code": 0,
+    "stdout": "PASS: 70 profiles, 48 fleet baskets; equal-energy and AM-headroom checks. Hardware gates NOT RUN.\n",
+    "stderr": ""
+  }
+]

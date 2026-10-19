@@ -1,0 +1,1052 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T00:42:41",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "ARDF_TX:Wurth_61201621621 doesn't match symbol's footprint filters (Connector*:*_2x??_*)",
+            "items": [
+                {
+                    "description": "Footprint J101",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 80.0
+                    },
+                    "uuid": "39d1325d-7fe5-4283-a668-e500f220e512"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm doesn't match symbol's footprint filters (DIP?16*)",
+            "items": [
+                {
+                    "description": "Footprint U202",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 52.0
+                    },
+                    "uuid": "8a6f1612-a9a3-4186-9b5a-1759f8713df6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm*)",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 52.0
+                    },
+                    "uuid": "711973cf-842f-4616-99c2-fce653b1d919"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP?14*)",
+            "items": [
+                {
+                    "description": "Footprint U211",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 82.0
+                    },
+                    "uuid": "b5a3a4ca-3841-4f6c-a674-cec54596ab87"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm* SO14*)",
+            "items": [
+                {
+                    "description": "Footprint U212",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 82.0
+                    },
+                    "uuid": "7ded660f-0ab8-4f8f-9470-021982122871"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm*)",
+            "items": [
+                {
+                    "description": "Footprint U221",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 110.0
+                    },
+                    "uuid": "9bab2fcc-9025-4c2a-9b09-03211362d95b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm*)",
+            "items": [
+                {
+                    "description": "Footprint U222",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 110.0
+                    },
+                    "uuid": "6962ea54-22f0-4adb-98e4-d3b33f18ec9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm*)",
+            "items": [
+                {
+                    "description": "Footprint U223",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 136.0
+                    },
+                    "uuid": "e18a206f-ae1e-414e-9f75-bf7e05e12b88"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm doesn't match symbol's footprint filters (DIP?16*)",
+            "items": [
+                {
+                    "description": "Footprint U224",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 136.0
+                    },
+                    "uuid": "566a8f5d-dd57-4776-af0e-4b47ab78880b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:SRP7050TA doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_*)",
+            "items": [
+                {
+                    "description": "Footprint L301",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 45.0
+                    },
+                    "uuid": "770e1ea3-111e-4c3f-88ef-d3d72166f86b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_TO_SOT_SMD:TSOT-23-6 doesn't match symbol's footprint filters (SOT?23*)",
+            "items": [
+                {
+                    "description": "Footprint U301",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 40.0
+                    },
+                    "uuid": "1f7aa07f-a838-46e0-830d-33ca06287f29"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal doesn't match symbol's footprint filters (Connector*:*_1x??_*)",
+            "items": [
+                {
+                    "description": "Footprint J401",
+                    "pos": {
+                        "x": 219.0,
+                        "y": 98.0
+                    },
+                    "uuid": "28c40520-769f-486b-b031-a0c87ba2a096"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:T60_2_20T doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_*)",
+            "items": [
+                {
+                    "description": "Footprint L410",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 82.0
+                    },
+                    "uuid": "086a448d-25f0-49e8-957b-930ee015fe9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:T60_2_20T doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_*)",
+            "items": [
+                {
+                    "description": "Footprint L411",
+                    "pos": {
+                        "x": 212.0,
+                        "y": 82.0
+                    },
+                    "uuid": "cd32f7e7-0e59-4ef5-9022-fc34502e3a35"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm doesn't match symbol's footprint filters (DIP*W7.62mm* SO14*)",
+            "items": [
+                {
+                    "description": "Footprint U501",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 137.0
+                    },
+                    "uuid": "b89fe8dd-73fc-43f9-aca5-a1e524e4d029"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:78F_Axial doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_*)",
+            "items": [
+                {
+                    "description": "Footprint L510",
+                    "pos": {
+                        "x": 181.0,
+                        "y": 139.0
+                    },
+                    "uuid": "04bba3a6-b65d-47b5-bba7-3ef711ffb7d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:78F_Axial doesn't match symbol's footprint filters (Choke_* *Coil* Inductor_* L_*)",
+            "items": [
+                {
+                    "description": "Footprint L511",
+                    "pos": {
+                        "x": 198.0,
+                        "y": 139.0
+                    },
+                    "uuid": "9960b938-1bb5-493a-bd85-39411768adb9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP700",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 36.8
+                    },
+                    "uuid": "3a394df6-137b-4501-891f-289abc284dbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP701",
+                    "pos": {
+                        "x": 133.8,
+                        "y": 44.2
+                    },
+                    "uuid": "f30eac27-2d08-42e2-b7ab-830361e94bc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP702",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 45.8
+                    },
+                    "uuid": "3bbbb1c0-8560-44b1-be86-fed086be597a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP703",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 47.8
+                    },
+                    "uuid": "7cd506bb-a791-4b46-83cd-184f3cd0398a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP704",
+                    "pos": {
+                        "x": 153.9,
+                        "y": 53.8
+                    },
+                    "uuid": "ca928913-484e-44b7-9d37-a54d12c40ad4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP705",
+                    "pos": {
+                        "x": 158.8,
+                        "y": 52.8
+                    },
+                    "uuid": "6f974093-7146-4dc8-a658-5f5183ea0736"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP706",
+                    "pos": {
+                        "x": 168.9,
+                        "y": 43.8
+                    },
+                    "uuid": "a05debfe-b3f7-4be4-b7c1-a35a5c399ec0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP707",
+                    "pos": {
+                        "x": 156.7,
+                        "y": 64.8
+                    },
+                    "uuid": "57055603-52c0-474a-a393-80ff964c07f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP708",
+                    "pos": {
+                        "x": 123.3,
+                        "y": 67.6
+                    },
+                    "uuid": "d336b00b-8d65-4c2e-b197-b0cc85131d14"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP709",
+                    "pos": {
+                        "x": 140.9,
+                        "y": 39.8
+                    },
+                    "uuid": "d514e190-7de7-4f89-b299-d44e48c113e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP710",
+                    "pos": {
+                        "x": 49.3,
+                        "y": 116.3
+                    },
+                    "uuid": "e77d9467-9af4-4806-9b9e-936db98881ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP711",
+                    "pos": {
+                        "x": 79.3,
+                        "y": 82.5
+                    },
+                    "uuid": "725b5546-a10f-47b3-86ee-c3890259296e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP712",
+                    "pos": {
+                        "x": 166.7,
+                        "y": 43.8
+                    },
+                    "uuid": "f74e9233-6020-4351-876c-41562157d6fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP713",
+                    "pos": {
+                        "x": 37.8,
+                        "y": 91.4
+                    },
+                    "uuid": "5eec5e85-a999-4151-b6c6-471e2e8de343"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP714",
+                    "pos": {
+                        "x": 85.3,
+                        "y": 138.4
+                    },
+                    "uuid": "3972d183-0b9d-404e-9fff-ab65bf12a520"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP715",
+                    "pos": {
+                        "x": 82.3,
+                        "y": 57.8
+                    },
+                    "uuid": "24d552d9-2fe5-4331-8295-9cc442c046c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP716",
+                    "pos": {
+                        "x": 53.3,
+                        "y": 142.1
+                    },
+                    "uuid": "a468c58a-26f4-457a-9aca-6a2ab20c930a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP717",
+                    "pos": {
+                        "x": 49.3,
+                        "y": 130.0
+                    },
+                    "uuid": "ef31dea8-32c1-430f-bc65-94a75a5441a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP718",
+                    "pos": {
+                        "x": 79.3,
+                        "y": 129.4
+                    },
+                    "uuid": "564bc916-124d-475e-abe5-33426379a4e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP719",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 45.8
+                    },
+                    "uuid": "9ddf39dd-e1b4-4dd3-87f7-56edf809cafa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP720",
+                    "pos": {
+                        "x": 40.3,
+                        "y": 86.9
+                    },
+                    "uuid": "41388dca-eb50-4f0e-a935-dc67018b2c9d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP721",
+                    "pos": {
+                        "x": 63.3,
+                        "y": 53.2
+                    },
+                    "uuid": "bf2b5391-9423-4666-a01f-b05f9fb7de5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP722",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 110.5
+                    },
+                    "uuid": "fc106e6c-ddc5-4bbc-9d91-614893500957"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP723",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 55.8
+                    },
+                    "uuid": "fe2c94d1-a7c3-4cac-af78-4cfa2d240b72"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP724",
+                    "pos": {
+                        "x": 37.8,
+                        "y": 97.5
+                    },
+                    "uuid": "fed7ad5a-5b4f-4046-9d72-93ea697cae3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP725",
+                    "pos": {
+                        "x": 38.3,
+                        "y": 99.5
+                    },
+                    "uuid": "bf6de7fd-3638-4d17-a3b3-236f248d5114"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP726",
+                    "pos": {
+                        "x": 74.3,
+                        "y": 134.6
+                    },
+                    "uuid": "3025613e-6aa0-4729-b65d-2dac655f4d36"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP727",
+                    "pos": {
+                        "x": 79.3,
+                        "y": 142.4
+                    },
+                    "uuid": "a425db4c-043c-4c3e-bdf6-28eef72e93ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP728",
+                    "pos": {
+                        "x": 47.3,
+                        "y": 115.8
+                    },
+                    "uuid": "2089c6b8-0428-4f6f-869d-85f4e2a0bb95"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP729",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 113.1
+                    },
+                    "uuid": "623c2473-7467-456e-aa5b-4bde8f7452cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP730",
+                    "pos": {
+                        "x": 81.3,
+                        "y": 87.6
+                    },
+                    "uuid": "cca6477c-24a8-4c62-9df5-a1d41bcd76bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP731",
+                    "pos": {
+                        "x": 38.3,
+                        "y": 102.0
+                    },
+                    "uuid": "f345fc9c-de45-4b1e-9f04-8f661fc84ad3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP732",
+                    "pos": {
+                        "x": 170.7,
+                        "y": 36.8
+                    },
+                    "uuid": "6fcea3ea-15e6-4331-935f-d2fedde7c800"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP733",
+                    "pos": {
+                        "x": 128.9,
+                        "y": 102.8
+                    },
+                    "uuid": "59a127ef-00b0-41ae-a5b1-dcc4f1964f34"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP734",
+                    "pos": {
+                        "x": 178.9,
+                        "y": 37.8
+                    },
+                    "uuid": "a0b279e3-1fd3-4651-8973-55921af6c2d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP735",
+                    "pos": {
+                        "x": 168.8,
+                        "y": 36.8
+                    },
+                    "uuid": "ff60161e-eafa-4b5d-bba1-f683f3cf2283"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP736",
+                    "pos": {
+                        "x": 182.3,
+                        "y": 34.8
+                    },
+                    "uuid": "93c2343f-6d6b-4540-afd4-220fddd52780"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP737",
+                    "pos": {
+                        "x": 165.2,
+                        "y": 52.8
+                    },
+                    "uuid": "764893ae-1e18-4186-afe6-1091e4bf589e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP738",
+                    "pos": {
+                        "x": 189.4,
+                        "y": 49.8
+                    },
+                    "uuid": "2014a5f8-2fcb-4350-b1d6-4d31280ebc4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP739",
+                    "pos": {
+                        "x": 216.8,
+                        "y": 103.8
+                    },
+                    "uuid": "7e59d844-29a8-4864-a47f-78d20d5a2f60"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP740",
+                    "pos": {
+                        "x": 147.6,
+                        "y": 143.8
+                    },
+                    "uuid": "61d722bb-be99-4b90-820a-ce861445df44"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP741",
+                    "pos": {
+                        "x": 202.9,
+                        "y": 142.8
+                    },
+                    "uuid": "ab6c0ed9-fd4a-4150-8351-2899b6c78844"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP742",
+                    "pos": {
+                        "x": 205.8,
+                        "y": 163.8
+                    },
+                    "uuid": "f8cd3cc6-9d95-4267-9158-e3b4c0b3a0e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP743",
+                    "pos": {
+                        "x": 144.7,
+                        "y": 140.8
+                    },
+                    "uuid": "cb6a583d-c518-4843-bb4a-25c14d848d2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP744",
+                    "pos": {
+                        "x": 119.3,
+                        "y": 75.1
+                    },
+                    "uuid": "106f6ae8-e3d5-4ed5-bfd4-d8a1cfc364fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP745",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 69.8
+                    },
+                    "uuid": "f738cdd2-1185-446d-a0eb-febb8dbf3142"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP746",
+                    "pos": {
+                        "x": 123.3,
+                        "y": 65.1
+                    },
+                    "uuid": "374058d0-867f-41ad-9a2f-5259633f1b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP747",
+                    "pos": {
+                        "x": 110.6,
+                        "y": 77.8
+                    },
+                    "uuid": "c4e9f3c5-aee2-4c4a-9e1e-ea0ef8fd1ff0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP748",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 94.0
+                    },
+                    "uuid": "a2a1aa93-2716-4a07-82a0-5993d6313779"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP749",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 86.0
+                    },
+                    "uuid": "a1398651-e858-4f98-a579-b8076afcb6f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP750",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 32.0
+                    },
+                    "uuid": "7d95b69e-4205-4c82-88c7-10c13bdff375"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        },
+        {
+            "description": "ARDF_TX:Probe_Pad_0p8 doesn't match symbol's footprint filters (Pin* Test*)",
+            "items": [
+                {
+                    "description": "Footprint TP751",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 130.0
+                    },
+                    "uuid": "b8d82c87-1318-413d-b30b-fa95307c1e3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_filters_mismatch"
+        }
+    ],
+    "source": "RF80.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}

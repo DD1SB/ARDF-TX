@@ -1,0 +1,74 @@
+{
+  "currency": "EUR net; VAT excluded",
+  "pricing": "Preserved observations/estimates, not new quotes or reservations",
+  "populations": {
+    "Full": {
+      "purchased_parts": 196,
+      "ICs": 18,
+      "quantities": {
+        "1": {
+          "E1_net_eur": 32.317,
+          "E2_net_eur": 32.317,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 13.524,
+          "estimate_eur": 18.793
+        },
+        "6": {
+          "E1_net_eur": 31.896,
+          "E2_net_eur": 31.896,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 13.103,
+          "estimate_eur": 18.793
+        },
+        "10": {
+          "E1_net_eur": 27.311,
+          "E2_net_eur": 27.311,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 9.346,
+          "estimate_eur": 17.965
+        },
+        "20": {
+          "E1_net_eur": 27.311,
+          "E2_net_eur": 27.311,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 9.346,
+          "estimate_eur": 17.965
+        }
+      }
+    },
+    "Fox": {
+      "purchased_parts": 115,
+      "ICs": 13,
+      "quantities": {
+        "1": {
+          "E1_net_eur": 13.759,
+          "E2_net_eur": 13.759,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 5.469,
+          "estimate_eur": 8.29
+        },
+        "6": {
+          "E1_net_eur": 12.081,
+          "E2_net_eur": 12.081,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 4.759,
+          "estimate_eur": 7.322
+        },
+        "10": {
+          "E1_net_eur": 10.815,
+          "E2_net_eur": 10.815,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 3.593,
+          "estimate_eur": 7.222
+        },
+        "20": {
+          "E1_net_eur": 10.468,
+          "E2_net_eur": 10.468,
+          "delta_eur": 0.0,
+          "historical_observation_eur": 3.558,
+          "estimate_eur": 6.91
+        }
+      }
+    }
+  }
+}

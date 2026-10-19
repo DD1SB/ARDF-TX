@@ -1,0 +1,18 @@
+RF80 input surrogate; generic diode, not manufacturer validated
+V1 SRC 0 PWL(0 0 1n 17)
+RS SRC CABLE 0.02
+L1 CABLE DIODE 0.1u
+D1 DIODE PACK DMOD
+.model DMOD D(Is=1m Rs=.02 N=1 Cjo=50p)
+C314 PACK 0 0.11u
+R350 PACK VIN 1.4775
+R_ESR VIN BULK .03
+C350 BULK 0 80u
+.control
+set wr_singlescale
+set wr_vecnames
+tran .02u 2m
+wrdata out.dat v(PACK) v(VIN)
+quit
+.endc
+.end

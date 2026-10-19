@@ -1,0 +1,58 @@
+[
+  {
+    "version": "0dfd224",
+    "command": "/usr/bin/python3 tools/m3_80m_checks.py",
+    "exit_code": 0,
+    "stdout": "PASS: 597 exportedpinconnections, 218footprintmaps, ERC0, 256Booleanstates; analogue/costresultsnotmeasured\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "0dfd224",
+    "command": "/usr/bin/python3 tools/m3a_r1_logic.py",
+    "exit_code": 0,
+    "stdout": "PASS: 256 physical-pin truth cases; 31 state scenarios; 16 RC corners; U202 polarity mutations rejected\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "0dfd224",
+    "command": "/usr/bin/python3 tools/m3a_r1_driver_fault.py",
+    "exit_code": 0,
+    "stdout": "PASS: bounded20us cases; [('pack-step', 10.082, True), ('28V-surrogate-OUTSIDE-SYSTEM-RATING', 12.107, True), ('slow-isolation-NO-GO', 14.347, False), ('excess-ESR-NO-GO', 14.414, False)]\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "0dfd224",
+    "command": "/usr/bin/python3 tools/m3a_r1_report.py",
+    "exit_code": 0,
+    "stdout": "PASS: R0 tag/current manifest counts, six before/after baskets and complete Fox scope\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "0dfd224",
+    "command": "/usr/bin/python3 tools/m3a_r1_documentation.py",
+    "exit_code": 0,
+    "stdout": "PASS: 77 Markdown files, 505 local links, 30 hardware hashes; revision/population/cost scope; no PCB\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "m3b-e1",
+    "command": "/usr/bin/python3 tools/m3b_verify.py",
+    "exit_code": 0,
+    "stdout": "PASS M3B: 664 pad net memberships; 277 footprints; 328 vias; ERC/DRC/parity/unrouted0; R1 256/31/16 retained\n",
+    "stderr": "./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  },
+  {
+    "version": "m3b-e1",
+    "command": "/usr/bin/python3 tools/m3b_documentation.py",
+    "exit_code": 0,
+    "stdout": "PASS M3B documentation: 89 Markdown; 612 local links; 88 hashes; baseline safety IC nets unchanged\n",
+    "stderr": "",
+    "scope": "Historical reproducibility, NOT physical pinout validation of E1"
+  }
+]

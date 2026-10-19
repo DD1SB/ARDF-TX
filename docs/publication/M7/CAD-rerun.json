@@ -1,0 +1,230 @@
+{
+  "toolchain": "10.0.6",
+  "CAD": [
+    {
+      "board": "Controller",
+      "results": [
+        {
+          "kind": "erc",
+          "command": [
+            "kicad-cli",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/Controller-erc.json",
+            "hardware/controller/CTRL.kicad_sch"
+          ],
+          "counts": {
+            "violations": {}
+          },
+          "ignored_checks": [
+            {
+              "description": "Global label only appears once in the schematic",
+              "key": "single_global_label"
+            },
+            {
+              "description": "Four connection points are joined together",
+              "key": "four_way_junction"
+            },
+            {
+              "description": "SPICE model issue",
+              "key": "simulation_model_issue"
+            },
+            {
+              "description": "Assigned footprint doesn't match footprint filters",
+              "key": "footprint_filter"
+            }
+          ],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        },
+        {
+          "kind": "drc",
+          "command": [
+            "kicad-cli",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/Controller-drc.json",
+            "--schematic-parity",
+            "hardware/controller/CTRL.kicad_pcb"
+          ],
+          "counts": {
+            "violations": {},
+            "unconnected_items": {},
+            "schematic_parity": {}
+          },
+          "ignored_checks": [
+            {
+              "description": "Tuning profile track geometries",
+              "key": "tuning_profile_track_geometries"
+            }
+          ],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "board": "RF80",
+      "results": [
+        {
+          "kind": "erc",
+          "command": [
+            "kicad-cli",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/RF80-erc.json",
+            "hardware/80m/production/RF80_V1.kicad_sch"
+          ],
+          "counts": {
+            "violations": {}
+          },
+          "ignored_checks": [
+            {
+              "description": "Global label only appears once in the schematic",
+              "key": "single_global_label"
+            },
+            {
+              "description": "Four connection points are joined together",
+              "key": "four_way_junction"
+            },
+            {
+              "description": "SPICE model issue",
+              "key": "simulation_model_issue"
+            }
+          ],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        },
+        {
+          "kind": "drc",
+          "command": [
+            "kicad-cli",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/RF80-drc.json",
+            "--schematic-parity",
+            "hardware/80m/production/RF80_V1.kicad_pcb"
+          ],
+          "counts": {
+            "violations": {},
+            "unconnected_items": {},
+            "schematic_parity": {}
+          },
+          "ignored_checks": [],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "board": "RF2M",
+      "results": [
+        {
+          "kind": "erc",
+          "command": [
+            "kicad-cli",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/RF2M-erc.json",
+            "hardware/2m/RF2M.kicad_sch"
+          ],
+          "counts": {
+            "violations": {}
+          },
+          "ignored_checks": [
+            {
+              "description": "Global label only appears once in the schematic",
+              "key": "single_global_label"
+            },
+            {
+              "description": "Four connection points are joined together",
+              "key": "four_way_junction"
+            },
+            {
+              "description": "SPICE model issue",
+              "key": "simulation_model_issue"
+            },
+            {
+              "description": "Assigned footprint doesn't match footprint filters",
+              "key": "footprint_filter"
+            }
+          ],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        },
+        {
+          "kind": "drc",
+          "command": [
+            "kicad-cli",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "/tmp/ardf-m7-validation/RF2M-drc.json",
+            "--schematic-parity",
+            "hardware/2m/RF2M.kicad_pcb"
+          ],
+          "counts": {
+            "violations": {
+              "warning": 11
+            },
+            "unconnected_items": {},
+            "schematic_parity": {}
+          },
+          "ignored_checks": [
+            {
+              "description": "Tuning profile track geometries",
+              "key": "tuning_profile_track_geometries"
+            }
+          ],
+          "included_severities": [
+            "error",
+            "warning",
+            "exclusion"
+          ]
+        }
+      ]
+    }
+  ],
+  "all_tracked_hardware_bytes_unchanged": true,
+  "zone_refill": false,
+  "save_board": false,
+  "physical_qualification": "NOT_RUN"
+}

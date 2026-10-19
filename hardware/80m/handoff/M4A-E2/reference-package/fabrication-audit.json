@@ -1,0 +1,64 @@
+{
+  "status": "CAD/export checks PASS; review only",
+  "Gerber_layers": 9,
+  "separate_PTH_NPTH": true,
+  "native_drill_positions_and_diameters_verified": 376,
+  "maximum_drill_coordinate_quantization_mm": 0.0005,
+  "corrected_pin_copper_flashes_and_IPC": {
+    "Q403": {
+      "1": {
+        "net": "SHAPE_BASE",
+        "position_mm": [
+          160.56,
+          69.0
+        ]
+      },
+      "2": {
+        "net": "VPA_SHAPED",
+        "position_mm": [
+          158.28,
+          69.0
+        ]
+      },
+      "3": {
+        "net": "VPA_LOAD",
+        "position_mm": [
+          156.0,
+          69.0
+        ]
+      }
+    },
+    "U311": {
+      "1": {
+        "net": "VREF_2V5",
+        "position_mm": [
+          106.0625,
+          71.05
+        ]
+      },
+      "2": {
+        "net": "VREF_2V5",
+        "position_mm": [
+          106.0625,
+          72.95
+        ]
+      },
+      "3": {
+        "net": "GND",
+        "position_mm": [
+          107.9375,
+          72.0
+        ]
+      }
+    }
+  },
+  "placement_rows": 195,
+  "not_in_placement": "Remote thermistor TH301 is externally fitted; test pads/nonphysical features excluded. Use population-map.csv for reduced population and staged assembly.",
+  "E1_files_preserved_byte_identically": 38,
+  "tool_versions": {
+    "kicad_cli": "10.0.6",
+    "pcbnew": "10.0.6-10.0.6~ubuntu24.04.1"
+  },
+  "checks": "Netlist/664 native pad memberships/DRC enforce electrical parity; all376 drill coordinates/sizes and6 corrected Gerber-X2/IPC pins checked independently; no independent CAM raster/etch simulation.",
+  "supplier_quote": "PENDING; manufacturing tolerances must be accepted explicitly."
+}

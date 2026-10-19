@@ -1,0 +1,82 @@
+{
+  "status": "PASS_PUBLICATION_INTEGRITY",
+  "boards": [
+    {
+      "board": "Controller",
+      "commit": "d94dabd0e40137dc44b2bb94f3707ad4636ca65f",
+      "native": [
+        {
+          "path": "hardware/controller/CTRL.kicad_pro",
+          "sha256": "b13dc9c4ea551344a7effbacd63e197fdeb7a1730f408793e20e5101aeb3fa15"
+        },
+        {
+          "path": "hardware/controller/CTRL.kicad_sch",
+          "sha256": "dfc11aa637e979f6ec8d3c4a2b22fe5596aca6f90e492c299ba591d874b57cbc"
+        },
+        {
+          "path": "hardware/controller/CTRL.kicad_pcb",
+          "sha256": "c3a50f0c1e7c0b3644cb5626bd2036dcd3fd6db9d2fc51b9981344d731acdfa1"
+        }
+      ],
+      "archive": "hardware/80m/production/review/M4A-V1R1/three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip",
+      "sha256": "e1745a8b8b42c15e024315d58749bbdfe019745e0e48bf055e65a02977dd36e6",
+      "archive_entries": 11,
+      "review_manifest_entries": 125
+    },
+    {
+      "board": "RF80",
+      "commit": "f86684b9ef45eec3ca4ce52edcb62896a847f1d7",
+      "native": [
+        {
+          "path": "hardware/80m/production/RF80_V1.kicad_pro",
+          "sha256": "5755968375194a832857f307318a3e0340fe914acb4af1d6367527d83863a0c7"
+        },
+        {
+          "path": "hardware/80m/production/RF80_V1.kicad_sch",
+          "sha256": "f6eb95c3cff36160781f18058838ae0e140401ce68e70a01f65aa9dc6a4fa79c"
+        },
+        {
+          "path": "hardware/80m/production/RF80_V1.kicad_pcb",
+          "sha256": "b8695218798690759bc9145ebbe8893f6d402d09a971ba9332207d45d3924ef7"
+        }
+      ],
+      "archive": "hardware/80m/production/review/M4A-V1R1/fabrication/RF80-V1R1_JLCPCB_5boards.zip",
+      "sha256": "8cdb21e278e9120abc81b594516f8498a1110df3ce50d845d4922c161f510a92",
+      "archive_entries": 11,
+      "review_manifest_entries": 78
+    },
+    {
+      "board": "RF2M",
+      "commit": "3b84366caa985fac67fbdfbb60c4ede751b3a13e",
+      "native": [
+        {
+          "path": "hardware/2m/RF2M.kicad_pro",
+          "sha256": "458cf9e855b5cbbc64781afba2b9600ba6df3f3ed9d310aeb4443c39856ee2f5"
+        },
+        {
+          "path": "hardware/2m/RF2M.kicad_sch",
+          "sha256": "55f0da0b102f0aa2a42caadf50a9ae3d0c2c74352c59473550b2fd8c35881ce9"
+        },
+        {
+          "path": "hardware/2m/RF2M.kicad_pcb",
+          "sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043"
+        }
+      ],
+      "archive": "hardware/2m/review/M5B-E5/fabrication/RF2M-M5B-E5_JLCPCB_5boards.zip",
+      "sha256": "c2ef2ccdf80098a82fac2e0cd843a725c830f4d1e55f2acb2ae521c40c5e270a",
+      "archive_entries": 11,
+      "review_manifest_entries": 379
+    }
+  ],
+  "links": {
+    "documents": 5,
+    "relative_links": 117
+  },
+  "preserved_handoff_manifest_entries": 63,
+  "existing_engineering_sources_unchanged": true,
+  "physical_qualification": "NOT_RUN",
+  "limitations": [
+    "Not a full historical engineering-suite replay or physical qualification",
+    "Per-revision exporters/generators must run in a suitable historical worktree"
+  ]
+}

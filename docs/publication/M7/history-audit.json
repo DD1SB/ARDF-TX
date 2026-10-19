@@ -1,0 +1,104 @@
+{
+  "status": "PASS_HEURISTIC_AUDIT",
+  "scope": "all reachable commits/tags/blobs and archive members; tracked worktree; selected untracked handoff",
+  "commits": 21,
+  "branches": [
+    "main"
+  ],
+  "tags": [
+    "m3a-r0",
+    "m3b-e1",
+    "m3b-e2",
+    "m5a-r0",
+    "m5a-r1",
+    "m5a-r3",
+    "m5a-r4",
+    "m5b-e1",
+    "m5b-e2",
+    "m5b-e3"
+  ],
+  "unique_blobs": 2439,
+  "total_blob_bytes": 365888845,
+  "largest_blobs": [
+    {
+      "path": "docs/M2_POWER_ARCHITECTURE_RESULTS.json",
+      "blob": "a4b153b1393d763a324e925f9e80342a781a1134",
+      "bytes": 4592529
+    },
+    {
+      "path": "hardware/2m/review/M5B-E4R1/assembly-top.svg",
+      "blob": "047e33f2c2d4ad222e972142b3b65054d1047af4",
+      "bytes": 3991774
+    },
+    {
+      "path": "hardware/2m/review/M5B-E3/assembly-top.svg",
+      "blob": "f0f8af1d15ea97e20112b27bc3722172db2bd719",
+      "bytes": 3991431
+    },
+    {
+      "path": "hardware/2m/review/M5B-E4/assembly-top.svg",
+      "blob": "1e61d693bafb71cac27087da39cda88040441511",
+      "bytes": 3991008
+    },
+    {
+      "path": "hardware/2m/review/M5B-E5/assembly-top.svg",
+      "blob": "1713fb9122bd0c0240ef31d671432b9b6b19268f",
+      "bytes": 3944140
+    },
+    {
+      "path": "hardware/2m/review/M5B-E2/assembly-top.svg",
+      "blob": "302fcf5e283709963d5a6f56bfe7ba526384f013",
+      "bytes": 3940855
+    },
+    {
+      "path": "hardware/2m/review/M5B-E1/assembly-top.svg",
+      "blob": "960c3f76968eb792595726a2f46379e10eb55746",
+      "bytes": 3940625
+    },
+    {
+      "path": "hardware/2m/review/M5B-E2/copper-investigation/before.kicad_pcb",
+      "blob": "5107bd551b81b0c486cac91f6747ff48629fff27",
+      "bytes": 3421638
+    },
+    {
+      "path": "hardware/2m/review/M5B-E2/copper-investigation/sliver-only.kicad_pcb",
+      "blob": "64d196f1d9827147b9049caa8a4923c5fef893d2",
+      "bytes": 3419295
+    },
+    {
+      "path": "hardware/2m/review/M5B-E2/copper-investigation/after.kicad_pcb",
+      "blob": "e61f7ab48fedafec8d8c4a6aa9d40fa9266698cd",
+      "bytes": 3418812
+    },
+    {
+      "path": "hardware/2m/review/M5B-E4R1/development/E4-native.kicad_pcb",
+      "blob": "e7be8a318c1506c689f902e0c4bf4e4cedac99b8",
+      "bytes": 3410483
+    },
+    {
+      "path": "hardware/2m/review/M5B-E4/development/dfm-special_finish.kicad_pcb",
+      "blob": "ae65d4941f1c2a263f615de3bb50decf79edf60f",
+      "bytes": 3410482
+    }
+  ],
+  "over_50_MiB": [],
+  "over_100_MiB": [],
+  "archive_members_scanned": 488,
+  "redacted_findings": [],
+  "unexpected_tracked_temporary_files": [],
+  "retained_historical_workspace_evidence": [
+    "hardware/2m/archive/M5A-R1/RF2M.kicad_prl",
+    "hardware/2m/review/M5B-E5/development/E4R1-baseline.kicad_prl",
+    "hardware/2m/review/M5B-E5/development/Q501-stencil-native.kicad_prl"
+  ],
+  "tracked_classification": {
+    "project_documentation_or_configuration": 17,
+    "reference_or_license_material": 16,
+    "engineering_documentation": 242,
+    "tooling_or_firmware_foundation": 196,
+    "native_hardware_or_local_library": 321,
+    "engineering_review_or_handoff_evidence": 1426,
+    "fabrication_or_versioned_archive": 171
+  },
+  "limitations": "Pattern matching cannot establish absence of every secret or settle third-party rights; manual provenance review also required."
+}

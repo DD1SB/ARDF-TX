@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-15",
+  "reference_commit_full": "12450235c41941212eb262b79016dc3b708f5013",
+  "source_archive_sha256": "bedb30cb0f3bc7cabbd440d55952e5e0a96ad4f5526274f5d949e07696004cef",
+  "reference_commit": "1245023",
+  "reference_tag": "m3b-e2",
+  "reference_files_checked": 147,
+  "copied_review_files": [
+    "DRC.json",
+    "DRC.rpt",
+    "E1_DRC_CONFIGURATION.json",
+    "E1_EXPANDED_DRC.json",
+    "ERC.json",
+    "README.md",
+    "RF80-3D-bottom.png",
+    "RF80-3D-top.png",
+    "RF80-3D.png",
+    "RF80-Q403-3D.png",
+    "RF80-position-full.csv",
+    "RF80.ipc",
+    "RF80.pdf",
+    "RF80.xml",
+    "SHA256SUMS",
+    "assembly-bottom.pdf",
+    "assembly-bottom.svg",
+    "assembly.pdf",
+    "assembly.svg",
+    "bottom-copper.svg",
+    "connectivity-change-audit.json",
+    "cost-delta.json",
+    "critical-pinouts.json",
+    "drc-coverage.csv",
+    "drc-coverage.json",
+    "drill-report.rpt",
+    "driver-surrogate.cir",
+    "fabrication-audit.json",
+    "file-manifest.json",
+    "gerbers/RF80-B_Cu.gbl",
+    "gerbers/RF80-B_Mask.gbs",
+    "gerbers/RF80-B_Paste.gbp",
+    "gerbers/RF80-B_Silkscreen.gbo",
+    "gerbers/RF80-Edge_Cuts.gm1",
+    "gerbers/RF80-F_Cu.gtl",
+    "gerbers/RF80-F_Mask.gts",
+    "gerbers/RF80-F_Paste.gtp",
+    "gerbers/RF80-F_Silkscreen.gto",
+    "gerbers/RF80-NPTH-drl_map.pdf",
+    "gerbers/RF80-NPTH.drl",
+    "gerbers/RF80-PTH-drl_map.pdf",
+    "gerbers/RF80-PTH.drl",
+    "gerbers/RF80-job.gbrjob",
+    "hardware-links.json",
+    "historical-version-regressions.json",
+    "input-surrogate.cir",
+    "local-copper-changes.json",
+    "manufacturing-notes.md",
+    "mechanical-stackup.json",
+    "population-map.csv",
+    "preserved-model-regressions.json",
+    "probe-map.csv",
+    "source-identities.json",
+    "top-copper.svg",
+    "verification-results.json",
+    "verification.md"
+  ],
+  "source_archive": "ARDF-TX_E2_1245023_source.tar.gz",
+  "initial_bare_quantity": 5,
+  "initial_assembled_quantity": 1,
+  "requested_finish": "Lead-free HASL; green mask both sides; white legend. Supplier must confirm land flatness/solderability; any ENIG alternative requires quote/review. Frozen job unspecified-finish metadata unchanged.",
+  "authorizations": [
+    {
+      "gate": 1,
+      "name": "Bare PCB fabrication",
+      "status": "NOT_AUTHORIZED",
+      "hardware_tests": "NOT_RUN",
+      "scope": "Exactly five bare M3B-E2 PCBs; vendor confirmations and user approval required"
+    },
+    {
+      "gate": 2,
+      "name": "Low-voltage component procurement",
+      "status": "NOT_AUTHORIZED",
+      "hardware_tests": "NOT_RUN",
+      "scope": "Only approved Stage1 BOM quantities; no implied power/RF procurement"
+    },
+    {
+      "gate": 3,
+      "name": "High-energy power-stage population",
+      "status": "NOT_AUTHORIZED",
+      "hardware_tests": "NOT_RUN",
+      "scope": "Only specifically approved later stage/parts, after prior measurements pass"
+    },
+    {
+      "gate": 4,
+      "name": "Controlled power-up",
+      "status": "NOT_AUTHORIZED",
+      "hardware_tests": "NOT_RUN",
+      "scope": "Named stage, bounded lab supply, instruments and operator conditions; not RF activation"
+    },
+    {
+      "gate": 5,
+      "name": "RF activation",
+      "status": "NOT_AUTHORIZED",
+      "hardware_tests": "NOT_RUN",
+      "scope": "Named path, calibrated rated dummy load and bounded initial voltage/current/duty; no unqualified radiation"
+    }
+  ],
+  "all_physical_tests": "NOT_RUN",
+  "budget_eur_net": {
+    "bare_five": [
+      45,
+      90
+    ],
+    "PCB_freight": [
+      10,
+      25
+    ],
+    "one_full_component_basket": 32.317,
+    "subtotal_before_fixture_labor_tax_component_freight": [
+      87.317,
+      147.317
+    ],
+    "classification": "Unquoted E2 allowance; tight-hole process surcharge/quote OPEN"
+  }
+}
