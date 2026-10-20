@@ -1,0 +1,13 @@
+{
+  "status": "PASS_UNCHANGED_E5_BASELINE_REPLAY",
+  "starting_commit": "256c64888b680f5152e92f035e2ea0676a83630a",
+  "action": "dfm",
+  "adaptations": "Output path only; preservation guard starts at current public baseline rather than pre-publication RF80 commit",
+  "native_sha256": {
+    "hardware/2m/RF2M.electrical.json": "df2b0f41e4f4ecb0aef52cb96ad263158214dd8aa96f12c0dc8c9add5be12c03",
+    "hardware/2m/RF2M.kicad_pcb": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+    "hardware/2m/RF2M.kicad_pro": "458cf9e855b5cbbc64781afba2b9600ba6df3f3ed9d310aeb4443c39856ee2f5",
+    "hardware/2m/RF2M.kicad_sch": "55f0da0b102f0aa2a42caadf50a9ae3d0c2c74352c59473550b2fd8c35881ce9"
+  },
+  "not_an_E6_CAD_candidate": true
+}

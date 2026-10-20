@@ -1,0 +1,43 @@
+test_AM_ripple_converges (__main__.Analysis.test_AM_ripple_converges) ... ./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+/usr/lib/python3/dist-packages/pcbnew.py:63: DeprecationWarning: The SWIG-based Python interface to the PCB editor is deprecated and will be removed in a future version of KiCad.  Please plan to move to the new IPC API and/or make use of the kicad-cli tool for your KiCad automation needs.
+  warnings.warn("The SWIG-based Python interface to the PCB editor is deprecated and will be removed "
+ok
+test_M2_different_family_must_not_hide_current_trip (__main__.Analysis.test_M2_different_family_must_not_hide_current_trip) ... ok
+test_actual_MOE_MOI_MOS_MOH_MO5_differ (__main__.Analysis.test_actual_MOE_MOI_MOS_MOH_MO5_differ) ... ok
+test_ambient_changes_are_one_for_one (__main__.Analysis.test_ambient_changes_are_one_for_one) ... ok
+test_bias_is_not_added_twice (__main__.Analysis.test_bias_is_not_added_twice) ... ok
+test_first_pulse_is_below_repeated_warm_peak (__main__.Analysis.test_first_pulse_is_below_repeated_warm_peak) ... ok
+test_full_slot_and_group_durations (__main__.Analysis.test_full_slot_and_group_durations) ... ok
+test_helper_is_derived_from_pass_base_current (__main__.Analysis.test_helper_is_derived_from_pass_base_current) ... ok
+test_known_ERP_carrier_mean_PEP (__main__.Analysis.test_known_ERP_carrier_mean_PEP) ... ok
+test_known_native_copper_storage_never_scaled_away (__main__.Analysis.test_known_native_copper_storage_never_scaled_away) ... ok
+test_large_aluminium_mass_does_not_remove_local_resistance (__main__.Analysis.test_large_aluminium_mass_does_not_remove_local_resistance) ... ok
+test_manufacturer_resistance_cannot_be_replaced_by_sink_mass (__main__.Analysis.test_manufacturer_resistance_cannot_be_replaced_by_sink_mass) ... ok
+test_morse_MOE_exact_symbols_and_gaps (__main__.Analysis.test_morse_MOE_exact_symbols_and_gaps) ... ok
+test_native_feedback_and_rails (__main__.Analysis.test_native_feedback_and_rails) ... ok
+test_no_instantaneous_cold_junction_mass_shortcut (__main__.Analysis.test_no_instantaneous_cold_junction_mass_shortcut) ... ok
+test_power_off_cools_all_nodes_after_sufficient_time (__main__.Analysis.test_power_off_cools_all_nodes_after_sufficient_time) ... ok
+test_reflected_RF_heat_conserves_input_energy (__main__.Analysis.test_reflected_RF_heat_conserves_input_energy) ... FAIL
+test_same_point_unsafe_PA_can_evade_existing_sensors (__main__.Analysis.test_same_point_unsafe_PA_can_evade_existing_sensors) ... ok
+test_sensor_does_not_instantly_follow_fault (__main__.Analysis.test_sensor_does_not_instantly_follow_fault) ... ok
+test_shared_coupling_exists (__main__.Analysis.test_shared_coupling_exists) ... ok
+test_space_is_carrier_not_power_off (__main__.Analysis.test_space_is_carrier_not_power_off) ... ok
+test_spectral_propagator_against_independent_expm (__main__.Analysis.test_spectral_propagator_against_independent_expm) ... ok
+test_steady_energy_balance (__main__.Analysis.test_steady_energy_balance) ... ok
+test_temporal_sampling_converges (__main__.Analysis.test_temporal_sampling_converges) ... ok
+test_waveform_terminal_energy_conservation (__main__.Analysis.test_waveform_terminal_energy_conservation) ... ok
+
+======================================================================
+FAIL: test_reflected_RF_heat_conserves_input_energy (__main__.Analysis.test_reflected_RF_heat_conserves_input_energy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/test_m5b_e6_analysis.py", line 139, in test_reflected_RF_heat_conserves_input_energy
+    self.assertAlmostEqual(x['DC_input_W'],sum(x[k] for k in ['PA_W','pass_W','helper_W','other_PCB_W','connector_RF_W']),places=8)
+AssertionError: 9.216333317626166 != 9.209753350988327 within 8 places (0.006579966637838552 difference)
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.224s
+
+FAILED (failures=1)

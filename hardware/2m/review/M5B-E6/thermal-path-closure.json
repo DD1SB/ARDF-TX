@@ -1,0 +1,147 @@
+{
+  "disposition": "HOLD_BEFORE_CAD",
+  "FVM_split_sensitivity": [
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.2,
+      "capacity_scale": 0.1,
+      "PA_peak_C": 143.5285191481836,
+      "pass_case_C": 57.3003608664306,
+      "NTC_C": 56.48547090956694,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.2,
+      "capacity_scale": 1.0,
+      "PA_peak_C": 133.08438990194725,
+      "pass_case_C": 56.89574477830587,
+      "NTC_C": 56.43298577732064,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.2,
+      "capacity_scale": 3.0,
+      "PA_peak_C": 130.63172919227992,
+      "pass_case_C": 56.55277477423552,
+      "NTC_C": 56.33620299856376,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.6,
+      "capacity_scale": 0.1,
+      "PA_peak_C": 144.27892777211096,
+      "pass_case_C": 57.3029876274312,
+      "NTC_C": 56.48815623053504,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.6,
+      "capacity_scale": 1.0,
+      "PA_peak_C": 133.7888364489861,
+      "pass_case_C": 56.902387077770484,
+      "NTC_C": 56.43970103968462,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.6,
+      "capacity_scale": 3.0,
+      "PA_peak_C": 131.18856001957374,
+      "pass_case_C": 56.56826388140446,
+      "NTC_C": 56.351977134915934,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.9,
+      "capacity_scale": 0.1,
+      "PA_peak_C": 144.63277772037307,
+      "pass_case_C": 57.30496541903503,
+      "NTC_C": 56.49016579471039,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.9,
+      "capacity_scale": 1.0,
+      "PA_peak_C": 134.04060250799864,
+      "pass_case_C": 56.907354504096254,
+      "NTC_C": 56.444707914430325,
+      "design_limit_C": 125,
+      "meets_limit": false
+    },
+    {
+      "source_to_bar_K_W": 11.846896331207134,
+      "split": 0.9,
+      "capacity_scale": 3.0,
+      "PA_peak_C": 131.45208276048493,
+      "pass_case_C": 56.57973370527488,
+      "NTC_C": 56.36364749324912,
+      "design_limit_C": 125,
+      "meets_limit": false
+    }
+  ],
+  "required_source_path": [
+    {
+      "capacity_scale": 0.1,
+      "PA_limit_C": 110,
+      "source_to_bar_required_max_K_W": 4.5068359375,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    },
+    {
+      "capacity_scale": 0.1,
+      "PA_limit_C": 125,
+      "source_to_bar_required_max_K_W": 7.6982421875,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    },
+    {
+      "capacity_scale": 1.0,
+      "PA_limit_C": 110,
+      "source_to_bar_required_max_K_W": 6.571044921875,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    },
+    {
+      "capacity_scale": 1.0,
+      "PA_limit_C": 125,
+      "source_to_bar_required_max_K_W": 9.8876953125,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    },
+    {
+      "capacity_scale": 3.0,
+      "PA_limit_C": 110,
+      "source_to_bar_required_max_K_W": 6.988525390625,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    },
+    {
+      "capacity_scale": 3.0,
+      "PA_limit_C": 125,
+      "source_to_bar_required_max_K_W": 10.421142578125,
+      "bisection_width_K_W": 0.004638671875,
+      "assumption": "Same-point full RF absorption sensitivity,40% carrier efficiency,40C,5.5K/W,Classic MO5; not an RF load-pull prediction"
+    }
+  ],
+  "physical": "NOT_RUN",
+  "limits": "This envelope shows why a qualified source/contact/loss bound or justified fast fault interruption is needed. It does not prove every single-heatsink architecture infeasible.",
+  "next_closure": [
+    "Establish manufacturer-supported or conservative RF loss/current envelope at144MHz andnative4V centre/7.2Vcrest",
+    "Demonstrate an ordinary-fabrication source joint/via/interface resistance and transient bound that meets110Ctarget/125Cceiling",
+    "If those bounds require it, propose a separately justified PA-specific fault interruption change without raising thresholds",
+    "Then finalize common mounting hardware, native slots, copper clearance, zero-warning CAD and fabrication data"
+  ]
+}

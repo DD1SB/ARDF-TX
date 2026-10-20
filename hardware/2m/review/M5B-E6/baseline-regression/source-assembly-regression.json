@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "native_tests": [
+    {
+      "mutation": "TL608_length",
+      "detected": "RF_length"
+    },
+    {
+      "mutation": "source_to_drain",
+      "detected": "source_ground_net"
+    },
+    {
+      "mutation": "undersize_thermal_land",
+      "detected": "thermal_land"
+    },
+    {
+      "mutation": "bottom_contact_tented",
+      "detected": "bottom_contact_tented"
+    },
+    {
+      "mutation": "reintroduce_undersized_mask_islands",
+      "detected": "source_mask_islands_or_insufficient_area"
+    },
+    {
+      "mutation": "mislocated_M3_mount",
+      "detected": "mechanical_mount"
+    },
+    {
+      "mutation": "false_tenting_guarantee",
+      "detected": "unsupported_guaranteed_tenting_claim"
+    },
+    {
+      "mutation": "unintended_automatic_mask_annulus",
+      "detected": "automatic_via_aperture_outside_source_window"
+    },
+    {
+      "mutation": "via_outside_source_region",
+      "detected": "via_outside_accepted_region"
+    },
+    {
+      "mutation": "excessive_via_loss",
+      "detected": "excessive_source_via_loss"
+    },
+    {
+      "mutation": "reduced_solderable_source",
+      "detected": "source_mask_islands_or_insufficient_area"
+    },
+    {
+      "mutation": "optimistic_solder_joint",
+      "detected": "unjustified_low_joint_resistance"
+    },
+    {
+      "mutation": "unjustified_small_sink",
+      "detected": "unjustified_sink_rating"
+    },
+    {
+      "mutation": "lost_bottom_contact",
+      "detected": "inadequate_bottom_contact"
+    },
+    {
+      "mutation": "invalid_paste_aperture",
+      "detected": "paste_geometry"
+    },
+    {
+      "mutation": "broken_source_ground_rail",
+      "detected": "source_ground_rail"
+    }
+  ],
+  "thermal_tests": [
+    {
+      "mutation": "reduced_barrel_5um",
+      "detected": "125C_qualification_limit_exceeded_or_no_conduction",
+      "junction_C": 145.1186961506881
+    },
+    {
+      "mutation": "missing_contact",
+      "detected": "125C_qualification_limit_exceeded_or_no_conduction",
+      "junction_C": null
+    },
+    {
+      "mutation": "wrong_sink_8K_W",
+      "detected": "125C_qualification_limit_exceeded_or_no_conduction",
+      "junction_C": 137.89187543118962
+    },
+    {
+      "mutation": "poor_joint",
+      "detected": "125C_qualification_limit_exceeded_or_no_conduction",
+      "junction_C": 137.5442419084231
+    }
+  ],
+  "physical": "NOT_RUN"
+}

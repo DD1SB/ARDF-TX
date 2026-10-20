@@ -1,0 +1,19 @@
+{
+  "disposition": "HOLD_BEFORE_NATIVE_PCB_EDITS",
+  "preferred_concept": "A: one SK81 100 SA below PCB, horizontal insulated Q401/Q402 tabs, source bar on same supported structure",
+  "manufacturing_selection_released": false,
+  "PCB_modified": false,
+  "blockers": "Local PA source/interface and RF-loss/protection bound not closed; native common mounting assembly not implemented",
+  "result_hashes": {
+    "power-audit.json": "f5390344db5dd265ac4e429dd4060a9e91b37cfd5416ca122b61a9b005880a8c",
+    "transient-results.json": "b61ec9d87ecf17ca0641b6576c85a25f437a8f283b981c77eac14ce04aebc0b7",
+    "E6-source-path-FVM.json": "1812b4d026aa62f9b1ad849547c084a8a842b97c9497dd7b6e2493dcb423ec2a",
+    "source-interface-alternatives.json": "aaae3c2c1443fa091244e30a0551f88f6f5075155255bb1cd16a32c40b32477a",
+    "stress-ripple-beacon.json": "f7f92f74cf9455e7a46df9e5860af5696685000185ed9473c22fee2712e5e5f1",
+    "native-fault-envelope.json": "928a02e83f84652ce17b546f4cb0aa01a1e11d84cfd487adbb2a021f8794bf93",
+    "thermal-path-closure.json": "b390730a3a776ff947e847dcf88e3784530810a4a7774c81d0148b55bd1abab2",
+    "mechanical-concept.json": "79fe35f2d8d5192cca68a4495236e42cca86d729f55bca9d8a5e49c055b0ba0a",
+    "analysis-test-results.json": "19896617e9f9904b967197a476d7b19045eb41be29f36eec1db2c4c37f84178b"
+  },
+  "physical": "NOT_RUN"
+}

@@ -1,0 +1,24 @@
+{
+  "tests_run": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "source_sha256": {
+    "m5b_e6_power.py": "1b9b373a66a87e9ba2af5c1ab9dda2ea1def00e38db717a739d341704a340d92",
+    "m5b_e6_common.py": "cd07d97ef6e88ed94ed5765e04499d7e8a551bce3388ad9b30183b216a2035a1",
+    "m5b_e6_sources.py": "d0ac3828f5f76f28bc120805ccbeefe8a2f620a62d949e3ea8225f2978532f35",
+    "m5b_e6_stress.py": "db109790760af6bd7912d1af91adfbd294bd2cc152ab892c6e24b35aeda82730",
+    "m5b_e6_closure.py": "2029c62ec05f5edee87bf6a0811c3125677df4047762953223450c7a1e948c1d",
+    "m5b_e6_faults.py": "853d46454e7d6127290f75d6212fc5fb5361d9b2943fae341f82974f79d5a354",
+    "test_m5b_e6_analysis.py": "d3042f43b0cad2e587ce5fad35c49936481908c83a5f2b459811caaa5785a891",
+    "m5b_e6_thermal.py": "63a6ad64948793a4ea06b70f80a466d41cbc497af79c099bd425e815a34dd17c",
+    "m5b_e6_evidence.py": "c8da96a22e74814dccbfc5d017879dda96b91cda6d42e42ab243968d20391311",
+    "m5b_e6_concept.py": "1f1399747679a202936cf90ff80351386c0ea44cff332d342e0b72616bcff36a",
+    "m5b_e6_baseline_replay.py": "fadf9b330867c6d3ac8c6d741347b00c440d503901b3e54d0f97ec52366aa5a1",
+    "m5b_e6_costs.py": "7ca7d39f0e8a887bc1fb51543b8a898629d0750123276d87e34133f8dc1af60b",
+    "m5b_e6_run_tests.py": "1285e1d4ae04d72fe2eb6b265fee975f0f6b5a2f678baa572e84d2da76c5076c"
+  },
+  "interpretation": "Numerical/regression tests can PASS while engineering safety envelope remains HOLD. Expected unsafe sensitivities are detected, not approved.",
+  "physical": "NOT_RUN"
+}

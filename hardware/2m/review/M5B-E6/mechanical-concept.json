@@ -1,0 +1,66 @@
+{
+  "status": "NOT_IMPLEMENTED_NOT_MACHINING_DATA",
+  "native_source_sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "one_heatsink_requirement": true,
+  "concept": {
+    "MPN": "Fischer SK81 100 SA",
+    "dimensions_mm": [
+      100,
+      100,
+      15
+    ],
+    "base_mm": 4,
+    "mass_g_indexed": 214,
+    "planned_xy_mm": [
+      42,
+      5,
+      142,
+      105
+    ],
+    "plane_Z_mm": -8,
+    "bar_mm": [
+      15,
+      44,
+      6.2
+    ],
+    "bar_mass_g": 11.0484,
+    "assembly_mass_g_estimate": [
+      245,
+      270
+    ]
+  },
+  "unchanged_native_Q_positions": {
+    "Q501": [
+      92,
+      55,
+      0
+    ],
+    "Q401": [
+      115,
+      26,
+      0
+    ],
+    "Q402": [
+      133,
+      39,
+      0
+    ]
+  },
+  "proposed_body_orientation": "Q401/Q402 horizontal below PCB toward negativeY; lead rows unchanged, out-of-plane bend only",
+  "unapproved_access_opening": {
+    "centre_mm": [
+      135.28,
+      27.75
+    ],
+    "diameter_mm": 9,
+    "status": "Manufacturer hole reference, drill-tool envelope and copper clearance NOT closed; no native cutout added"
+  },
+  "assembly_blockers": [
+    "Qualified common source thermal interface and RF-loss bound",
+    "Independent cooler bracket/support design and tolerances; prevent board bending",
+    "Exact manufacturer hole datum and lead-form jig qualification",
+    "Fastener torque, insulating bush selection and pressure retention",
+    "Carrier/enclosure/antenna cable tool-access collision audit"
+  ],
+  "physical": "NOT_RUN"
+}

@@ -1,0 +1,116 @@
+{
+  "native_sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "wires": [
+    {
+      "net": "CLK_NORMAL",
+      "E4R1": {
+        "total_copper_track_mm": 15.955718094828683,
+        "vias": 0,
+        "min_width_mm": 0.2,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 134.1019659075707,
+          "effective_Dk": 3.0008501336554847,
+          "total_wire_phase144p7_deg": 4.802737351641451,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        }
+      },
+      "E5": {
+        "total_copper_track_mm": 13.257594857609158,
+        "vias": 0,
+        "min_width_mm": 0.15,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 142.40181943828512,
+          "effective_Dk": 2.9854911997211957,
+          "total_wire_phase144p7_deg": 3.98036565107822,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        },
+        "nominal_total_wire_delay_ns_at_Eeff3p395": 0.08148242199366373
+      },
+      "note": "Totalincludesbranches;not a path delay/impedance or measuredclock quality."
+    },
+    {
+      "net": "NORMAL_CLOCK_BUF",
+      "E4R1": {
+        "total_copper_track_mm": 2.0,
+        "vias": 0,
+        "min_width_mm": 0.35,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 116.8183500479292,
+          "effective_Dk": 3.0399777793491585,
+          "total_wire_phase144p7_deg": 0.6059203368289454,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        }
+      },
+      "E5": {
+        "total_copper_track_mm": 2.0,
+        "vias": 0,
+        "min_width_mm": 0.35,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 116.8183500479292,
+          "effective_Dk": 3.0399777793491585,
+          "total_wire_phase144p7_deg": 0.6059203368289454,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        },
+        "nominal_total_wire_delay_ns_at_Eeff3p395": 0.012292187665833993
+      },
+      "note": "Totalincludesbranches;not a path delay/impedance or measuredclock quality."
+    },
+    {
+      "net": "CLK_TRAIN",
+      "E4R1": {
+        "total_copper_track_mm": 190.83879330522117,
+        "vias": 5,
+        "min_width_mm": 0.15,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 142.40181943828512,
+          "effective_Dk": 2.9854911997211957,
+          "total_wire_phase144p7_deg": 57.29607714851414,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        }
+      },
+      "E5": {
+        "total_copper_track_mm": 210.95374757880603,
+        "vias": 9,
+        "min_width_mm": 0.15,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 142.40181943828512,
+          "effective_Dk": 2.9854911997211957,
+          "total_wire_phase144p7_deg": 63.33524744474877,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        },
+        "nominal_total_wire_delay_ns_at_Eeff3p395": 1.2965415270248286
+      },
+      "note": "Totalincludesbranches;not a path delay/impedance or measuredclock quality."
+    },
+    {
+      "net": "TRAIN_CLOCK_BUF",
+      "E4R1": {
+        "total_copper_track_mm": 3.2800514036825805,
+        "vias": 0,
+        "min_width_mm": 0.2,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 134.1019659075707,
+          "effective_Dk": 3.0008501336554847,
+          "total_wire_phase144p7_deg": 0.987309082433337,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        }
+      },
+      "E5": {
+        "total_copper_track_mm": 3.2800514036825805,
+        "vias": 0,
+        "min_width_mm": 0.2,
+        "hypothetical_uniform_min_width_microstrip": {
+          "Z0_ohm": 134.1019659075707,
+          "effective_Dk": 3.0008501336554847,
+          "total_wire_phase144p7_deg": 0.987309082433337,
+          "scope": "IdealcontinuousoppositegroundatH1.5mm/1oz/Er4.5;actualmixedF/BclockrouteandhighZlogicloadsarenot50ohmports. Totalincludesbranches,not a measuredS11/delay."
+        },
+        "nominal_total_wire_delay_ns_at_Eeff3p395": 0.020159503703824244
+      },
+      "note": "Totalincludesbranches;not a path delay/impedance or measuredclock quality."
+    }
+  ],
+  "matching": "Seven2.741mmTLbodies,lengths,LCandrigidplacementpreserved;seecompact-engineering.json",
+  "new_control_corridor": "Bkeepoutleft29\u219235.5allowsI2CoutsideactualSTmatching;seeactualPCB. Sourceclockjitter/ringingandRFpickup NOT_RUN",
+  "physical": "NOT_RUN"
+}

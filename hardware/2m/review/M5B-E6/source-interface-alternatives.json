@@ -1,0 +1,59 @@
+{
+  "status": "SENSITIVITY_NOT_SELECTED_OR_QUALIFIED",
+  "common_boundary": "10um via wall,30um copper,4 ineffective inner vias; standard unfilled E5 geometry",
+  "alternatives": [
+    {
+      "name": "E5_grease_conservative",
+      "interface_mm": 0.15,
+      "effective_k_W_mK": 6.0,
+      "source_to_bar_K_W": 10.772968857797407,
+      "limitation": "Assumed contact allowance, not a qualified assembly impedance",
+      "meta": {
+        "nodes": 6780,
+        "iterations": 115,
+        "relative_residual": 3.019646367179245e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "name": "KERATHERM_bulk_only_not_contact_qualified",
+      "interface_mm": 0.25,
+      "effective_k_W_mK": 6.5,
+      "source_to_bar_K_W": 11.084110511527077,
+      "limitation": "Assumed contact allowance, not a qualified assembly impedance",
+      "meta": {
+        "nodes": 6780,
+        "iterations": 125,
+        "relative_residual": 3.105147119455232e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "name": "KERATHERM_double_resistance_contact_allowance",
+      "interface_mm": 0.25,
+      "effective_k_W_mK": 3.25,
+      "source_to_bar_K_W": 11.846896331207134,
+      "limitation": "Assumed contact allowance, not a qualified assembly impedance",
+      "meta": {
+        "nodes": 6780,
+        "iterations": 141,
+        "relative_residual": 2.920740189317784e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "name": "KERATHERM_thicker_triple_resistance_allowance",
+      "interface_mm": 0.3,
+      "effective_k_W_mK": 2.1666666666666665,
+      "source_to_bar_K_W": 12.838673116024713,
+      "limitation": "Assumed contact allowance, not a qualified assembly impedance",
+      "meta": {
+        "nodes": 6780,
+        "iterations": 169,
+        "relative_residual": 2.8375346737657382e-09,
+        "grid_mm": 0.2
+      }
+    }
+  ],
+  "physical": "NOT_RUN"
+}

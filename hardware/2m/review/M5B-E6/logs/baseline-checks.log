@@ -1,0 +1,15 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+OK sch erc --format
+OK sch export netlist
+OK pcb drc --format
+OK pcb drc --format
+Traceback (most recent call last):
+  File "/tmp/m5b-e6-baseline-regression/tools/m5b_e6_baseline_replay.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/tmp/m5b-e6-baseline-regression/tools/m5b_e6_baseline_replay.py", line 36, in main
+    assert original==final, ('Replay changed native inputs',action)
+           ^^^^^^^^^^^^^^^
+AssertionError: ('Replay changed native inputs', 'checks')

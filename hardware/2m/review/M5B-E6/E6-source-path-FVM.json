@@ -1,0 +1,60 @@
+{
+  "status": "CALCULATED_NOT_MEASURED",
+  "source": "Native E5 source geometry retained; E4R1 translation-invariant FVM",
+  "solver_sha256": "1ea1ee718aca1ece212af18fd50b07f37e683a51e822e01076355e95b97a8afd",
+  "native_before_E6_sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "interface": "BERGQUIST SIL PAD TSP1600 .127mm; effective impedance includes contacts, never add them twice",
+  "manufacturer_impedance_K_in2_W": {
+    "50psi": 0.45,
+    "25psi": 0.6,
+    "10psi": 0.92
+  },
+  "engineering_margins": "Conservative0.65vs0.60@25psi and poor1.00vs0.92@10psi; pressure/flatness not measured",
+  "cases": [
+    {
+      "name": "nominal",
+      "plating_um": 18,
+      "copper_um": 35,
+      "ineffective_inner_vias": 0,
+      "interface_impedance_K_in2_W": 0.45,
+      "effective_TIM_k_W_mK": 0.4374453193350831,
+      "source_to_bar_K_W": 10.71176904902283,
+      "meta": {
+        "nodes": 6780,
+        "iterations": 218,
+        "relative_residual": 2.8413681881668673e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "name": "conservative",
+      "plating_um": 10,
+      "copper_um": 30,
+      "ineffective_inner_vias": 4,
+      "interface_impedance_K_in2_W": 0.65,
+      "effective_TIM_k_W_mK": 0.30284675953967294,
+      "source_to_bar_K_W": 15.895595695975867,
+      "meta": {
+        "nodes": 6780,
+        "iterations": 228,
+        "relative_residual": 3.0616022968756435e-09,
+        "grid_mm": 0.2
+      }
+    },
+    {
+      "name": "poor_pressure",
+      "plating_um": 10,
+      "copper_um": 30,
+      "ineffective_inner_vias": 8,
+      "interface_impedance_K_in2_W": 1.0,
+      "effective_TIM_k_W_mK": 0.1968503937007874,
+      "source_to_bar_K_W": 18.402409329709016,
+      "meta": {
+        "nodes": 6780,
+        "iterations": 262,
+        "relative_residual": 2.9946200491169352e-09,
+        "grid_mm": 0.2
+      }
+    }
+  ]
+}

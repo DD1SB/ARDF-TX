@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6_thermal.py", line 201, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6_thermal.py", line 145, in main
+    for pop,erp,mode,code in itertools.product(['BUCK4S','BOOST2S'],[.25,.3,.5,1.],['Classic','Sprint_slow','Sprint_fast','Beacon'],['MOE','MOI','MOS','MOH','MO5']):
+                             ^^^^^^^^^
+NameError: name 'itertools' is not defined. Did you forget to import 'itertools'?

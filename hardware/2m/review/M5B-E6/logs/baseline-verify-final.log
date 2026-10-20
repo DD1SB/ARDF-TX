@@ -1,0 +1,14 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS: 330 CAD positions, 4096 logic combinations, 39 states, 19 mutations, 42 pin maps, 26 ST network values/nets
+M5B PASS: 4096 logic, 39 states, 19 preserved mutations + 18 new;all native packages/pads checked
+BOOST2S 6 54.33 unquoted 28.09 272 25
+BOOST2S 10 50.27 unquoted 28.09 272 25
+BOOST2S 20 49.94 unquoted 28.09 272 25
+BUCK4S 6 52.76 unquoted 27.95 268 25
+BUCK4S 10 49.03 unquoted 27.95 268 25
+BUCK4S 20 48.71 unquoted 27.95 268 25
+TRAIN_ONLY 6 14.11 unquoted 10.02 103 13
+TRAIN_ONLY 10 14.11 unquoted 10.02 103 13
+TRAIN_ONLY 20 14.11 unquoted 10.02 103 13

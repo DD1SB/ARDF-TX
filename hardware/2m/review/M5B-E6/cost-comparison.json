@@ -1,0 +1,471 @@
+{
+  "date": "2026-10-21",
+  "currency": "EUR",
+  "VAT": "Net; Germany19% only for explicit gross observation conversion",
+  "status": "UNQUOTED_PLANNING_COMPARISON_NOT_A_RELEASED_BOM",
+  "summary": [
+    {
+      "population": "BOOST2S",
+      "fleet": 1,
+      "fitted_parts": 279,
+      "electrical_EUR_net": 54.919000000000146,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 28.089000000000024,
+        "historical_supplier_index": 26.830000000000005
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        60.0,
+        100.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 4,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        34.72445378151261,
+        40.72445378151261
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 22.59,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        155.64345378151276,
+        213.64345378151276
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BOOST2S",
+      "fleet": 5,
+      "fitted_parts": 279,
+      "electrical_EUR_net": 54.33100000000014,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 28.089000000000024,
+        "historical_supplier_index": 26.242
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        16.652453781512605,
+        22.652453781512605
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 4.518,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        88.98345378151274,
+        114.98345378151274
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BOOST2S",
+      "fleet": 7,
+      "fitted_parts": 279,
+      "electrical_EUR_net": 54.33100000000014,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 28.089000000000024,
+        "historical_supplier_index": 26.242
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        17.142857142857142,
+        28.571428571428573
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 3,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        15.361596638655463,
+        21.361596638655463
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 3.2271428571428573,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        92.83545378151274,
+        122.26402521008418
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BOOST2S",
+      "fleet": 10,
+      "fitted_parts": 279,
+      "electrical_EUR_net": 50.26500000000015,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 28.089000000000024,
+        "historical_supplier_index": 22.176000000000002
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        29.804453781512606,
+        37.304453781512606
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        14.393453781512605,
+        20.393453781512605
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 2.259,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        82.65845378151275,
+        108.65845378151276
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BUCK4S",
+      "fleet": 1,
+      "fitted_parts": 275,
+      "electrical_EUR_net": 53.34900000000014,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 27.949000000000023,
+        "historical_supplier_index": 25.400000000000006
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        60.0,
+        100.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 4,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        34.72445378151261,
+        40.72445378151261
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 22.59,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        154.07345378151274,
+        212.07345378151274
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BUCK4S",
+      "fleet": 5,
+      "fitted_parts": 275,
+      "electrical_EUR_net": 52.76100000000013,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 27.949000000000023,
+        "historical_supplier_index": 24.812
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        16.652453781512605,
+        22.652453781512605
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 4.518,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        87.41345378151274,
+        113.41345378151274
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BUCK4S",
+      "fleet": 7,
+      "fitted_parts": 275,
+      "electrical_EUR_net": 52.76100000000013,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 27.949000000000023,
+        "historical_supplier_index": 24.812
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        17.142857142857142,
+        28.571428571428573
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 3,
+      "E5_cooling_EUR_net_estimate": [
+        31.114453781512605,
+        38.61445378151261
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        15.361596638655463,
+        21.361596638655463
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 3.2271428571428573,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        91.26545378151275,
+        120.69402521008416
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "BUCK4S",
+      "fleet": 10,
+      "fitted_parts": 275,
+      "electrical_EUR_net": 49.034000000000134,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 27.949000000000023,
+        "historical_supplier_index": 21.085
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        29.804453781512606,
+        37.304453781512606
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        14.393453781512605,
+        20.393453781512605
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 2.259,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        81.42745378151274,
+        107.42745378151274
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "TRAIN_ONLY",
+      "fleet": 1,
+      "fitted_parts": 103,
+      "electrical_EUR_net": 14.184999999999983,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 10.024999999999983,
+        "historical_supplier_index": 4.16
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        60.0,
+        100.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 4,
+      "E5_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 0,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        80.18499999999999,
+        132.185
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "TRAIN_ONLY",
+      "fleet": 5,
+      "fitted_parts": 103,
+      "electrical_EUR_net": 14.112999999999985,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 10.024999999999983,
+        "historical_supplier_index": 4.088000000000001
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 5,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 0,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        32.112999999999985,
+        52.112999999999985
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "TRAIN_ONLY",
+      "fleet": 7,
+      "fitted_parts": 103,
+      "electrical_EUR_net": 14.112999999999985,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 10.024999999999983,
+        "historical_supplier_index": 4.088
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        17.142857142857142,
+        28.571428571428573
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 3,
+      "E5_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 0,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        37.255857142857124,
+        60.684428571428555
+      ],
+      "concept_not_implemented": true
+    },
+    {
+      "population": "TRAIN_ONLY",
+      "fleet": 10,
+      "fitted_parts": 103,
+      "electrical_EUR_net": 14.112999999999985,
+      "electrical_price_evidence": {
+        "estimate_unquoted": 10.024999999999983,
+        "historical_supplier_index": 4.088000000000001
+      },
+      "PCB_used_unit_cash_EUR_net": [
+        12.0,
+        20.0
+      ],
+      "PCB_purchased": 10,
+      "PCB_leftovers": 0,
+      "E5_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "E6_concept_cooling_EUR_net_estimate": [
+        0,
+        0
+      ],
+      "insulating_sheet_cash_per_used_unit_EUR_net": 0,
+      "proposed_RF_board_cooling_case_consumables_EUR_net": [
+        32.112999999999985,
+        52.112999999999985
+      ],
+      "concept_not_implemented": true
+    }
+  ],
+  "observations": [
+    {
+      "MPN": "SK81 100 SA",
+      "gross_EUR": 7.3,
+      "net_EUR": 6.1344537815126055,
+      "MOQ": 1,
+      "multiple": 1,
+      "availability": "Indexed in stock1-2business days, no reservation",
+      "source": "https://www.reichelt.com/de/en/shop/product/heat_sink_100_mm_aluminium_2_2_k_w-227984"
+    },
+    {
+      "MPN": "SK10075SA",
+      "net_EUR_breaks": {
+        "1": 16.48,
+        "10": 15.17
+      },
+      "MOQ": 1,
+      "multiple": 1,
+      "availability": "Indexed temporarily unavailable; Nov10forecast, not a promise",
+      "source": "https://de.rs-online.com/web/p/kuhlkorper/1898088"
+    },
+    {
+      "MPN": "KERATHERM86/82 100x100 .25mm",
+      "net_EUR": 22.59,
+      "MOQ": 1,
+      "multiple": 1,
+      "availability": "Indexed available; basket not checked",
+      "source": "https://cls-computer.de/cls-hardware/kerafol-86-82-w-rmeleitfolie-0-25-mm-6-5-w-mk-l-x-b-100-mm-x-100-mm-pcs5901102"
+    }
+  ],
+  "unquoted": {
+    "FK213SA32_EUR_net": [
+      1.5,
+      3
+    ],
+    "aluminium_bar_EUR_net": [
+      1,
+      2
+    ],
+    "E5_mica_grease_EUR_net": [
+      2,
+      4
+    ],
+    "E6_mica_grease_excluding_source_sheet_EUR_net": [
+      1,
+      3
+    ],
+    "E5_hardware_spacers_EUR_net": [
+      4,
+      7
+    ],
+    "E6_independent_support_hardware_EUR_net": [
+      4,
+      7
+    ],
+    "enclosure_EUR_net": [
+      5,
+      15
+    ],
+    "consumables_EUR_net": [
+      1,
+      3
+    ],
+    "shipping_per_order_EUR_net": [
+      10,
+      25
+    ],
+    "labor_E5_minutes": [
+      45,
+      75
+    ],
+    "labor_E6_concept_minutes": [
+      25,
+      45
+    ],
+    "labor_rate_illustration_EUR_hour": 25,
+    "labor_E5_EUR": [
+      18.75,
+      31.25
+    ],
+    "labor_E6_concept_EUR": [
+      10.4167,
+      18.75
+    ],
+    "controller_EUR_net": [
+      15,
+      25
+    ],
+    "harness_EUR_net": [
+      3,
+      6
+    ],
+    "antenna_feeder_EUR_net": [
+      8,
+      15
+    ],
+    "pack_BMS_EUR_net": [
+      15,
+      35
+    ]
+  },
+  "omissions": "Instrumented first article RF tuning, Xray, tools, charger, rework, packaging, freight and destination VAT must be costed separately; no complete transmitter120/150EUR claim",
+  "economic_result": "One heatsink removes two coolers and assembly operations; a source insulation sheet has MOQ cash and thermal penalties. Concept saving is neither a completed design nor a quote."
+}

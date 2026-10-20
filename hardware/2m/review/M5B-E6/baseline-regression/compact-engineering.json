@@ -1,0 +1,232 @@
+{
+  "status": "PASS_NATIVE_COMPACT_EQUIVALENCE",
+  "native_sha256": "554ee7832663cfd62dc05183969baad7f256071f1ee473d1fbec837f33711043",
+  "outline_mm": [
+    150,
+    110
+  ],
+  "area_reduction_percent": 34.523809523809526,
+  "RF80_mount_native_mm": [
+    [
+      25,
+      25
+    ],
+    [
+      165,
+      25
+    ],
+    [
+      165,
+      125
+    ],
+    [
+      25,
+      125
+    ]
+  ],
+  "pad_sets": 320,
+  "electrical_parts": 330,
+  "schematic_net_memberships_equal": true,
+  "MPN_values_populations_equal": true,
+  "connector_pins": {
+    "1": {
+      "RF2M": "V3V3",
+      "controller": "V3V3_RF2M"
+    },
+    "2": {
+      "RF2M": "GND",
+      "controller": "GND"
+    },
+    "3": {
+      "RF2M": "I2C_SDA",
+      "controller": "RF2M_I2C_SDA"
+    },
+    "4": {
+      "RF2M": "I2C_SCL",
+      "controller": "RF2M_I2C_SCL"
+    },
+    "5": {
+      "RF2M": "ARM",
+      "controller": "RF2M_ARM"
+    },
+    "6": {
+      "RF2M": "SLOT",
+      "controller": "RF2M_SLOT"
+    },
+    "7": {
+      "RF2M": "KEY",
+      "controller": "RF2M_KEY"
+    },
+    "8": {
+      "RF2M": "PROGRESS",
+      "controller": "RF2M_PROGRESS"
+    },
+    "9": {
+      "RF2M": "MUTE_N",
+      "controller": "RF2M_MUTE_N"
+    },
+    "10": {
+      "RF2M": "PA_RAIL_ADC",
+      "controller": "RF2M_PA_RAIL_ADC"
+    },
+    "11": {
+      "RF2M": "PATH_TRAIN",
+      "controller": "RF2M_PATH_TRAIN"
+    },
+    "12": {
+      "RF2M": "PROFILE_FULL",
+      "controller": "RF2M_PROFILE_FULL"
+    },
+    "13": {
+      "RF2M": "AF_PWM",
+      "controller": "RF2M_AF_PWM"
+    },
+    "14": {
+      "RF2M": "LEVEL_PWM",
+      "controller": "RF2M_LEVEL_PWM"
+    },
+    "15": {
+      "RF2M": "PREPARE",
+      "controller": "RF2M_PREPARE"
+    },
+    "16": {
+      "RF2M": "FAULT_N",
+      "controller": "RF2M_FAULT_N"
+    },
+    "17": {
+      "RF2M": "GND",
+      "controller": "GND"
+    },
+    "18": {
+      "RF2M": "GND",
+      "controller": "GND"
+    },
+    "19": {
+      "RF2M": "MODULE_ID",
+      "controller": "RF2M_MODULE_ID"
+    },
+    "20": {
+      "RF2M": "PA_PREPARE",
+      "controller": "RF2M_PA_PREPARE"
+    }
+  },
+  "rigid_RF": [
+    "TL603",
+    "C631",
+    "C632",
+    "TL604",
+    "C633",
+    "L634",
+    "TL605",
+    "TL606",
+    "C636",
+    "TL607",
+    "C637",
+    "L638",
+    "C638",
+    "TL608",
+    "C639",
+    "TL609",
+    "L641",
+    "C641",
+    "L642",
+    "C642",
+    "L643",
+    "C643",
+    "C644",
+    "C645",
+    "C646",
+    "C647",
+    "Q501",
+    "U501",
+    "L606",
+    "L634",
+    "L635",
+    "L638",
+    "J501",
+    "C635",
+    "TP601",
+    "TP602",
+    "TP603",
+    "TP604"
+  ],
+  "source_assembly_E4R1_errors": [],
+  "RF_ground": "Source local geometry retained. Distributed line B.Cu keepouts preserve ground reference; assembled stability NOT_RUN.",
+  "source_thermal_vias": 98,
+  "source_paste_windows": 5,
+  "physical": "NOT_RUN",
+  "negative_tests": [
+    {
+      "name": "mount_moved_into_sink",
+      "rejected": "common_mount"
+    },
+    {
+      "name": "old_pass_sink_corner_collision",
+      "rejected": "pass_sink_pillar_collision"
+    },
+    {
+      "name": "shortened_matching_line",
+      "rejected": "RF_length"
+    },
+    {
+      "name": "wrong_matching_width",
+      "rejected": "RF_width"
+    },
+    {
+      "name": "source_ground_to_drain",
+      "rejected": "source_net"
+    },
+    {
+      "name": "lost_local_thermal_via",
+      "rejected": "source_vias"
+    },
+    {
+      "name": "J101_wrong_net",
+      "rejected": "package_net_equivalence"
+    },
+    {
+      "name": "J701_wrong_net",
+      "rejected": "package_net_equivalence"
+    },
+    {
+      "name": "nonstandard_board_thickness",
+      "rejected": "stackup"
+    },
+    {
+      "name": "wrong_corner_drill",
+      "rejected": "mount_hole"
+    },
+    {
+      "name": "J101_moved_into_inaccessible_pose",
+      "rejected": "J101_connector_pose"
+    },
+    {
+      "name": "J301_moved_into_inaccessible_pose",
+      "rejected": "J301_connector_pose"
+    },
+    {
+      "name": "J501_moved_into_inaccessible_pose",
+      "rejected": "J501_connector_pose"
+    },
+    {
+      "name": "J701_moved_into_inaccessible_pose",
+      "rejected": "J701_connector_pose"
+    },
+    {
+      "name": "thermal_cluster_not_rigid",
+      "rejected": "PA_position"
+    },
+    {
+      "name": "J301_battery_or_RF_net_corruption",
+      "rejected": "package_net_equivalence"
+    },
+    {
+      "name": "J501_battery_or_RF_net_corruption",
+      "rejected": "package_net_equivalence"
+    },
+    {
+      "name": "wrong_component_value",
+      "rejected": "native_value_equivalence"
+    }
+  ]
+}
