@@ -1,0 +1,1309 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/CTRL-M6-L2.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/CTRL-M6-L2.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "--check-zones",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-F_Cu.gtl'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-B_Cu.gbl'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-F_Paste.gtp'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-B_Paste.gbp'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-F_Silkscreen.gto'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-B_Silkscreen.gbo'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-F_Mask.gts'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-B_Mask.gbs'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--format",
+      "excellon",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/drill-report.rpt",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-PTH.drl'\nCreated file '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-NPTH.drl'\nCreated file '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-PTH-drl_map.pdf'.\nCreated file '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/fabrication/CTRL-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/CTRL-M6-L2.ipc",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Cu,F.Mask,F.Silkscreen,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-top.svg",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-top.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Cu,F.Mask,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Cu,B.Mask,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-bottom.svg",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-bottom.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Cu,B.Mask,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/PCB-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-top.svg",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-top.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-bottom.svg",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-bottom.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__NO_LORA__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_433__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-FOX_MIN__LORA_868__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__NO_LORA__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_433__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF80_FULL__LORA_868__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__NO_LORA__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_433__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-RF2M_FULL__LORA_868__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BASE-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BASE-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BASE-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BASE-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-GPIO-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-GPIO-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-GPIO-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-GPIO-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-FOXPRO-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-FOXPRO-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-FOXPRO-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-FOXPRO-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__NO_LORA__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BOTH-top.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BOTH-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--mode-single",
+      "--layers",
+      "B.Fab,B.Silkscreen,Edge.Cuts",
+      "--mirror",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BOTH-bottom.pdf",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/assembly-BOTH-bottom.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_433__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__BASE.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__BASE.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__GPIO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__GPIO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__FOXPRO.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__FOXPRO.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__BOTH.csv",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/placement-UNIVERSAL__LORA_868__BOTH.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Paste,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/stencil/",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL_M6_L2_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/stencil/CTRL_M6_L2_export.tmp-F_Paste.gtp'.\nPlotted to '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/stencil/CTRL_M6_L2_export.tmp-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  }
+]

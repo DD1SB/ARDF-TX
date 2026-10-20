@@ -1,0 +1,375 @@
+{
+  "part": "ESP32-S3-WROOM-1U-N4",
+  "manufacturer_source": "Espressif v1.8 pin definitions and Fig11-2",
+  "rows": [
+    {
+      "module_pin": 1,
+      "manufacturer_function": "GND",
+      "controller_net": "GND",
+      "x_mm": 41.25,
+      "y_mm": 29.74,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 2,
+      "manufacturer_function": "3V3",
+      "controller_net": "V3V3",
+      "x_mm": 41.25,
+      "y_mm": 31.01,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 3,
+      "manufacturer_function": "EN",
+      "controller_net": "MCU_EN",
+      "x_mm": 41.25,
+      "y_mm": 32.28,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 4,
+      "manufacturer_function": "GPIO4",
+      "controller_net": "MODULE_ID_ADC",
+      "x_mm": 41.25,
+      "y_mm": 33.55,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 5,
+      "manufacturer_function": "GPIO5",
+      "controller_net": "PA_RAIL_ADC",
+      "x_mm": 41.25,
+      "y_mm": 34.82,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 6,
+      "manufacturer_function": "GPIO6",
+      "controller_net": "AF_PWM",
+      "x_mm": 41.25,
+      "y_mm": 36.09,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 7,
+      "manufacturer_function": "GPIO7",
+      "controller_net": "LEVEL_PWM",
+      "x_mm": 41.25,
+      "y_mm": 37.36,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 8,
+      "manufacturer_function": "GPIO15",
+      "controller_net": "LORA_BUSY",
+      "x_mm": 41.25,
+      "y_mm": 38.63,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 9,
+      "manufacturer_function": "GPIO16",
+      "controller_net": "LORA_DIO1",
+      "x_mm": 41.25,
+      "y_mm": 39.9,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 10,
+      "manufacturer_function": "GPIO17",
+      "controller_net": "RF2M_SDA",
+      "x_mm": 41.25,
+      "y_mm": 41.17,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 11,
+      "manufacturer_function": "GPIO18",
+      "controller_net": "RF2M_SCL",
+      "x_mm": 41.25,
+      "y_mm": 42.44,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 12,
+      "manufacturer_function": "GPIO8",
+      "controller_net": "RTC80_SDA",
+      "x_mm": 41.25,
+      "y_mm": 43.71,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 13,
+      "manufacturer_function": "GPIO19",
+      "controller_net": "USB_DM",
+      "x_mm": 41.25,
+      "y_mm": 44.98,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 14,
+      "manufacturer_function": "GPIO20",
+      "controller_net": "USB_DP",
+      "x_mm": 41.25,
+      "y_mm": 46.25,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 15,
+      "manufacturer_function": "GPIO3",
+      "controller_net": "STRAP3",
+      "x_mm": 43.015,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 16,
+      "manufacturer_function": "GPIO46",
+      "controller_net": "STRAP46",
+      "x_mm": 44.285,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 17,
+      "manufacturer_function": "GPIO9",
+      "controller_net": "RTC80_SCL",
+      "x_mm": 45.555,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 18,
+      "manufacturer_function": "GPIO10",
+      "controller_net": "LORA_NSS",
+      "x_mm": 46.825,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 19,
+      "manufacturer_function": "GPIO11",
+      "controller_net": "SPI_MOSI",
+      "x_mm": 48.095,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 20,
+      "manufacturer_function": "GPIO12",
+      "controller_net": "SPI_SCK",
+      "x_mm": 49.365,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 21,
+      "manufacturer_function": "GPIO13",
+      "controller_net": "SPI_MISO",
+      "x_mm": 50.635,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 22,
+      "manufacturer_function": "GPIO14",
+      "controller_net": "INIT_OK",
+      "x_mm": 51.905,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 23,
+      "manufacturer_function": "GPIO21",
+      "controller_net": "RF2M_FAULT",
+      "x_mm": 53.175,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 24,
+      "manufacturer_function": "GPIO47",
+      "controller_net": "KEY",
+      "x_mm": 54.445,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 25,
+      "manufacturer_function": "GPIO48",
+      "controller_net": "SLOT",
+      "x_mm": 55.715,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 26,
+      "manufacturer_function": "GPIO45",
+      "controller_net": "unconnected-(U10-26_GPIO45-Pad26)",
+      "x_mm": 56.985,
+      "y_mm": 47.5,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 27,
+      "manufacturer_function": "GPIO0",
+      "controller_net": "BOOT",
+      "x_mm": 58.75,
+      "y_mm": 46.25,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 28,
+      "manufacturer_function": "GPIO35",
+      "controller_net": "RF80_FAULT",
+      "x_mm": 58.75,
+      "y_mm": 44.98,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 29,
+      "manufacturer_function": "GPIO36",
+      "controller_net": "START_N",
+      "x_mm": 58.75,
+      "y_mm": 43.71,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 30,
+      "manufacturer_function": "GPIO37",
+      "controller_net": "USB_VBUS_N",
+      "x_mm": 58.75,
+      "y_mm": 42.44,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 31,
+      "manufacturer_function": "GPIO38",
+      "controller_net": "SHIFT_LATCH",
+      "x_mm": 58.75,
+      "y_mm": 41.17,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 32,
+      "manufacturer_function": "GPIO39",
+      "controller_net": "PROGRESS",
+      "x_mm": 58.75,
+      "y_mm": 39.9,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 33,
+      "manufacturer_function": "GPIO40",
+      "controller_net": "LORA_RESET",
+      "x_mm": 58.75,
+      "y_mm": 38.63,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 34,
+      "manufacturer_function": "GPIO41",
+      "controller_net": "ARM",
+      "x_mm": 58.75,
+      "y_mm": 37.36,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 35,
+      "manufacturer_function": "GPIO42",
+      "controller_net": "MUTE_RELEASE",
+      "x_mm": 58.75,
+      "y_mm": 36.09,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 36,
+      "manufacturer_function": "GPIO44",
+      "controller_net": "UART_RX",
+      "x_mm": 58.75,
+      "y_mm": 34.82,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 37,
+      "manufacturer_function": "GPIO43",
+      "controller_net": "UART_TX",
+      "x_mm": 58.75,
+      "y_mm": 33.55,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 38,
+      "manufacturer_function": "GPIO2",
+      "controller_net": "PACK_ID_ADC",
+      "x_mm": 58.75,
+      "y_mm": 32.28,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 39,
+      "manufacturer_function": "GPIO1",
+      "controller_net": "BAT_ADC",
+      "x_mm": 58.75,
+      "y_mm": 31.01,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 40,
+      "manufacturer_function": "GND",
+      "controller_net": "GND",
+      "x_mm": 58.75,
+      "y_mm": 29.74,
+      "land_x_mm": 1.5,
+      "land_y_mm": 0.9
+    },
+    {
+      "module_pin": 41,
+      "manufacturer_function": "GND_EP",
+      "controller_net": "GND",
+      "x_mm": 48.5,
+      "y_mm": 37.46,
+      "land_x_mm": 3.7,
+      "land_y_mm": 3.7
+    }
+  ]
+}

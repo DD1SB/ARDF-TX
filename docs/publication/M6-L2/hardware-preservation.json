@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "comparisons": [
+    {
+      "check": "M7-to-M6-L2 RF and historical-controller trees",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "387f275dd4c6ad715a25c0b092961ed36f407833",
+        "89f5a7df6ccb4dec8fcea10e7c810a9981342ce4",
+        "--",
+        "hardware/80m",
+        "hardware/2m",
+        "hardware/controller/review/M6-L1",
+        "hardware/controller/review/M6-C1",
+        "hardware/controller/review/M6-C1R1"
+      ],
+      "returncode": 0,
+      "stdout": ""
+    },
+    {
+      "check": "RF80 accepted native project",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "f86684b9ef45eec3ca4ce52edcb62896a847f1d7",
+        "HEAD",
+        "--",
+        "hardware/80m/production/RF80_V1.kicad_pcb",
+        "hardware/80m/production/RF80_V1.kicad_sch",
+        "hardware/80m/production/RF80_V1.kicad_pro"
+      ],
+      "returncode": 0,
+      "stdout": ""
+    },
+    {
+      "check": "RF2M accepted native project",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "3b84366caa985fac67fbdfbb60c4ede751b3a13e",
+        "HEAD",
+        "--",
+        "hardware/2m/RF2M.kicad_pcb",
+        "hardware/2m/RF2M.kicad_sch",
+        "hardware/2m/RF2M.kicad_pro"
+      ],
+      "returncode": 0,
+      "stdout": ""
+    }
+  ],
+  "committed_frozen_files_verified": 1865,
+  "ignored_unpublished_personal_state": [
+    "hardware/2m/RF2M.kicad_prl",
+    "hardware/2m/~RF2M.kicad_pro.lck",
+    "hardware/80m/RF80.kicad_prl",
+    "hardware/80m/production/RF80_V1.kicad_prl"
+  ],
+  "all_36_RF_connector_assignments": "PASS: fresh electrical-regression and L1-L2 native audits",
+  "existing_tags": "dba9236fb17c8ae845bf63d434bf80b598865cb0 refs/tags/m3a-r0\n8a3f7f9003e8fffb9e97410595368803506c6cdd refs/tags/m3b-e1\nc6f5d499967b3522a549dc7d30f46a842312751a refs/tags/m3b-e2\nea671c1a6351d0154183247d46550648b15a1c65 refs/tags/m5a-r0\n4785057c2a3a8d79f02bcb0fc4691a0bc88079ba refs/tags/m5a-r1\ndaf994cafd39acb3328ce59565e36bc62f27599a refs/tags/m5a-r3\nb44fe3b02efff473ebbf5906ed1cb0e7bd838d78 refs/tags/m5a-r4\n6931260cc43016d8b42d6a59364962586ceb444c refs/tags/m5b-e1\n2ca4c8e6ef1a7c932433952e94202c5b4b66e843 refs/tags/m5b-e2\n89bb7b8819b754a6b7a425b7396e5396bdd2300c refs/tags/m5b-e3\n"
+}

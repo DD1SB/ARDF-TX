@@ -6,6 +6,7 @@ import json,copy,hashlib,math,itertools,subprocess,csv,sys
 from pathlib import Path
 import pcbnew as p
 from m6_l2_design import P,D,ROOT,BASE,pt,MM
+from m6_l2_frozen import committed_frozen,PERSONAL_STATE
 
 MODULE={1:'GND',2:'3V3',3:'EN',4:4,5:5,6:6,7:7,8:15,9:16,10:17,11:18,12:8,13:19,14:20,15:3,16:46,17:9,18:10,19:11,20:12,21:13,22:14,23:21,24:47,25:48,26:45,27:0,28:35,29:36,30:37,31:38,32:39,33:40,34:41,35:42,36:44,37:43,38:2,39:1,40:'GND',41:'GND_EP'}
 NEW={
@@ -221,7 +222,7 @@ def electrical(f):
 def main():
  oldpath=Path('/tmp/m6l2/old.kicad_pcb');oldpath.parent.mkdir(parents=True,exist_ok=True);oldpath.write_bytes(subprocess.check_output(['git','show',BASE+':hardware/controller/CTRL.kicad_pcb']))
  baseline=p.LoadBoard(str(oldpath));b=p.LoadBoard(str(P/'CTRL.kicad_pcb'));e=check(b,baseline);assert not e,e
- for name,h in json.loads((D/'frozen-files.json').read_text()).items():assert sha(ROOT/name)==h,name
+ frozen=committed_frozen(ROOT,D/'frozen-files.json')
  fs=fps(b);n=nets(b);rows=[]
  for pin,function in MODULE.items():
   a=pad(fs['U10'],pin);rows.append(dict(module_pin=pin,manufacturer_function='GPIO'+str(function) if isinstance(function,int) else function,controller_net=a.GetNetname(),x_mm=p.ToMM(a.GetPosition().x),y_mm=p.ToMM(a.GetPosition().y),land_x_mm=p.ToMM(a.GetSize().x),land_y_mm=p.ToMM(a.GetSize().y)))
@@ -272,6 +273,6 @@ def main():
   if z is None or z.GetStart()!=t.GetStart() or z.GetEnd()!=t.GetEnd() or z.GetNetname()!=t.GetNetname():
    assert t.GetNetname() in DIGITAL_ECO,(uid,t.GetNetname())
    changes.append(dict(uuid=uid,net=t.GetNetname(),baseline_start_mm=list(map(p.ToMM,t.GetStart())),baseline_end_mm=list(map(p.ToMM,t.GetEnd())),change='replaced local digital routing' if z is None else 'adjusted local digital routing'))
- save('L1-L2-change-audit.json',dict(status='PASS',baseline=BASE,native_sha256=sha(P/'CTRL.kicad_pcb'),permitted_digital_routing_nets=sorted(DIGITAL_ECO),digital_routing_changes=changes,other_baseline_tracks_vias_preserved=True,baseline_pad_instances=sum(len(list(fp.Pads())) for fp in fps(baseline).values()),current_pad_instances=sum(len(list(fp.Pads())) for fp in fs.values()),new_references=sorted(set(fs)-set(fps(baseline))),frozen_files=len(json.loads((D/'frozen-files.json').read_text())),RF80_RF2M='UNCHANGED_FROM_M7',physical='NOT_RUN'))
+ save('L1-L2-change-audit.json',dict(status='PASS',baseline=BASE,native_sha256=sha(P/'CTRL.kicad_pcb'),permitted_digital_routing_nets=sorted(DIGITAL_ECO),digital_routing_changes=changes,other_baseline_tracks_vias_preserved=True,baseline_pad_instances=sum(len(list(fp.Pads())) for fp in fps(baseline).values()),current_pad_instances=sum(len(list(fp.Pads())) for fp in fs.values()),new_references=sorted(set(fs)-set(fps(baseline))),frozen_files=len(frozen),ignored_unpublished_personal_state=sorted(PERSONAL_STATE),RF80_RF2M='UNCHANGED_FROM_M7',physical='NOT_RUN'))
  print('L2 independent native/pin/fault audit PASS;',len(tests),'native mutations rejected')
 if __name__=='__main__':main()

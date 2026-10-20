@@ -1,0 +1,213 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "/tmp/ardf-m6-l2-final-evidence/validate-references.py"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:55:27.486488+00:00",
+    "seconds": 0.08,
+    "returncode": 0,
+    "log": "00-validate-references-run.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "checks"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:55:27.566735+00:00",
+    "seconds": 13.467,
+    "returncode": 0,
+    "log": "01-m6_l2-checks.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "verify"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:55:41.034120+00:00",
+    "seconds": 1.845,
+    "returncode": 0,
+    "log": "02-m6_l2-verify.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "protocols"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:55:42.879372+00:00",
+    "seconds": 46.275,
+    "returncode": 0,
+    "log": "03-m6_l2-protocols.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "protection"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:29.155400+00:00",
+    "seconds": 0.763,
+    "returncode": 0,
+    "log": "04-m6_l2-protection.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "usb"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:29.919067+00:00",
+    "seconds": 0.71,
+    "returncode": 0,
+    "log": "05-m6_l2-usb.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "powerpaths"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:30.629524+00:00",
+    "seconds": 0.876,
+    "returncode": 0,
+    "log": "06-m6_l2-powerpaths.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "dfm"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:31.506084+00:00",
+    "seconds": 15.109,
+    "returncode": 0,
+    "log": "07-m6_l2-dfm.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "host"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:46.615768+00:00",
+    "seconds": 0.428,
+    "returncode": 0,
+    "log": "08-m6_l2-host.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_audit.py"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:56:47.043966+00:00",
+    "seconds": 15.747,
+    "returncode": 0,
+    "log": "09-m6_l2_audit-run.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_metrics.py"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:57:02.792214+00:00",
+    "seconds": 0.708,
+    "returncode": 0,
+    "log": "10-m6_l2_metrics-run.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_documents.py"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:57:03.501190+00:00",
+    "seconds": 0.734,
+    "returncode": 0,
+    "log": "11-m6_l2_documents-run.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_bom.py"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:57:04.235863+00:00",
+    "seconds": 0.436,
+    "returncode": 0,
+    "log": "12-m6_l2_bom-run.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_references.py",
+      "/tmp/m6l2/references"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:57:04.672532+00:00",
+    "seconds": 0.693,
+    "returncode": 0,
+    "log": "13-m6_l2_references-references.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_exports.py",
+      "exports"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:57:05.365647+00:00",
+    "seconds": 72.487,
+    "returncode": 0,
+    "log": "14-m6_l2_exports-exports.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_exports.py",
+      "render"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:58:17.853778+00:00",
+    "seconds": 80.664,
+    "returncode": 0,
+    "log": "15-m6_l2_exports-render.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2_exports.py",
+      "package"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:59:38.518575+00:00",
+    "seconds": 0.802,
+    "returncode": 0,
+    "log": "16-m6_l2_exports-package.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "tools/m6_l2.py",
+      "manifest"
+    ],
+    "cwd": "/tmp/ardf-m6-l2-final-reproduction",
+    "started_utc": "2026-10-20T18:59:39.321386+00:00",
+    "seconds": 0.16,
+    "returncode": 0,
+    "log": "17-m6_l2-manifest.log"
+  }
+]

@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "native_pad_instances": 841,
+  "independent_critical_package_maps": 38,
+  "connector_contract_pins": 36,
+  "hardware_enable_combinations": 4096,
+  "native_mutations": [
+    {
+      "mutation": "reversed_IDC16",
+      "detected_checks": [
+        "connector:J4:1",
+        "all_pad:J4.1"
+      ]
+    },
+    {
+      "mutation": "reversed_IDC20",
+      "detected_checks": [
+        "connector:J5:1",
+        "all_pad:J5.1"
+      ]
+    },
+    {
+      "mutation": "swapped_RF80_I2C",
+      "detected_checks": [
+        "connector:J4:3",
+        "all_pad:J4.3"
+      ]
+    },
+    {
+      "mutation": "swapped_RF2M_I2C",
+      "detected_checks": [
+        "connector:J5:3",
+        "all_pad:J5.3"
+      ]
+    },
+    {
+      "mutation": "mute_polarity_short",
+      "detected_checks": [
+        "connector:J4:13",
+        "all_pad:J4.13"
+      ]
+    },
+    {
+      "mutation": "strap_to_ARM",
+      "detected_checks": [
+        "strap:15",
+        "all_pad:U10.15"
+      ]
+    },
+    {
+      "mutation": "ARM_on_reset",
+      "detected_checks": [
+        "physical:U33:1",
+        "all_pad:U33.1"
+      ]
+    },
+    {
+      "mutation": "missing_ground",
+      "detected_checks": [
+        "connector:J5:18",
+        "all_pad:J5.18"
+      ]
+    },
+    {
+      "mutation": "source_unisolated",
+      "detected_checks": [
+        "physical:U43:6",
+        "all_pad:U43.6"
+      ]
+    },
+    {
+      "mutation": "status_lines_shorted",
+      "detected_checks": [
+        "physical:U60:4",
+        "all_pad:U60.4"
+      ]
+    },
+    {
+      "mutation": "analog_backfeed",
+      "detected_checks": [
+        "physical:U21:12",
+        "all_pad:U21.12"
+      ]
+    },
+    {
+      "mutation": "PREPARE_confused",
+      "detected_checks": [
+        "connector:J5:20",
+        "all_pad:J5.20"
+      ]
+    },
+    {
+      "mutation": "power_GPIO_short",
+      "detected_checks": [
+        "physical:U50:3",
+        "all_pad:U50.3"
+      ]
+    },
+    {
+      "mutation": "coin_cell_charge_path",
+      "detected_checks": [
+        "physical:D20:1",
+        "all_pad:D20.1"
+      ]
+    },
+    {
+      "mutation": "USB_ESD_backfeed",
+      "detected_checks": [
+        "physical:U3:5",
+        "all_pad:U3.5"
+      ]
+    },
+    {
+      "mutation": "wrong_population_U41",
+      "detected_checks": [
+        "metadata:U41:Population",
+        "DNP:U41"
+      ]
+    },
+    {
+      "mutation": "wrong_population_U51",
+      "detected_checks": [
+        "metadata:U51:Population",
+        "DNP:U51"
+      ]
+    },
+    {
+      "mutation": "wrong_value_R1",
+      "detected_checks": [
+        "value:R1",
+        "battery_divider_rating"
+      ]
+    },
+    {
+      "mutation": "wrong_value_U10",
+      "detected_checks": [
+        "non_PSRAM_module",
+        "value:U10"
+      ]
+    },
+    {
+      "mutation": "wrong_value_U40",
+      "detected_checks": [
+        "switch_hot_rating:U40",
+        "value:U40"
+      ]
+    }
+  ],
+  "RF_baseline_files_unchanged": 1534,
+  "physical_tests": "NOT_RUN"
+}

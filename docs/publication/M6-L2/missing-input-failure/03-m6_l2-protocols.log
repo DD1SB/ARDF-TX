@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_l2.py", line 81, in <module>
+    replay(action)
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_l2.py", line 46, in replay
+    l=legacy();sys.argv=[sys.argv[0],action]+sys.argv[2:];l.main()
+                                                          ^^^^^^^^
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_c1r1.py", line 94, in main
+    m=adapted(name,replacements);m.main()
+                                 ^^^^^^^^
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_c1_rf_protocols.py", line 10, in main
+    rf80=verify();assert rf80['truth_cases']==256 and len(rf80['state_scenarios'])==31 and len(rf80['timing_corners'])==16
+         ^^^^^^^^
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m3a_r1_logic.py", line 178, in verify
+    c=Circuit();p=c.p
+      ^^^^^^^^^
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m3a_r1_logic.py", line 30, in __init__
+    tree=ET.parse(xml or os.environ.get('RF80_NETLIST') or HW/'review/RF80.xml');self.p={}
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/xml/etree/ElementTree.py", line 1204, in parse
+    tree.parse(source, parser)
+  File "/usr/lib/python3.12/xml/etree/ElementTree.py", line 558, in parse
+    source = open(source, "rb")
+             ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/inputs/RF80-interface.xml'

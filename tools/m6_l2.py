@@ -17,8 +17,12 @@ def legacy():
               ("'J3':{'1':'GND','2':'UART_TX','3':'UART_RX'}","'J3':{'1':'GND','2':'REC_TX','3':'REC_RX'}"),
               ("if not n['U10'][pin].startswith('unconnected-'):errors.append('strap:'+pin)","if not (n['U10'][pin].startswith('unconnected-') if pin=='26' else n['U10'][pin]=={'15':'STRAP3','16':'STRAP46'}[pin]):errors.append('strap:'+pin)"),
               ("(ROOT/'firmware/controller_hw/pins.h').write_text(h)","# Read-only replay: keep accepted generated GPIO/pack-ID header unchanged")]
+            extra.append(("json.loads((D/'frozen-RF-files.json').read_text()) if (D/'frozen-RF-files.json').exists() else None",
+                          "__import__('m6_l2_frozen').committed_frozen(ROOT,D/'frozen-RF-files.json')"))
         if name=='m6_c1_analysis':extra=[('M6-C1R1','M6-L2')]
         if name=='m6_c1_dfm':extra=[("'revision':'M6-C1'", "'revision':'M6-L2'"), ('REV="M6-C1"', 'REV="M6-L2"')]
+        if name=='m6_c1_rf_protocols':
+            extra=[("'inputs/RF80-interface.xml'", "'../M6-L1/inputs/RF80-interface.xml'")]
         result=orig(name,[*replace,*extra])
         if name=='m6_c1_dfm':
             result.PROFILE['revision']='M6-L2'

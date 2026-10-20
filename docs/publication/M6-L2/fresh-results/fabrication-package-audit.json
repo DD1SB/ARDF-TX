@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "native_sha256": "2d7a22b3e2991f22e7a22243ff0ce810e52bcec38fae6658edd631c6b9d22842",
+  "packages": [
+    {
+      "file": "ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip",
+      "sha256": "47f89e653d8e3640b29ed166da2c0f1d8e402346b89e265e4a86bcb892c909d8",
+      "entries": [
+        {
+          "path": "FABRICATION-INSTRUCTIONS.txt",
+          "sha256": "a1897e313a8cb0c8d3330d8a06e0895315687de0427393b97c337457799ca669",
+          "bytes": 722
+        },
+        {
+          "path": "CTRL-B_Cu.gbl",
+          "sha256": "5780a121fcab156d5a14a3547fbd56d324373274458af3bd9983e85f161590ca",
+          "bytes": 548891
+        },
+        {
+          "path": "CTRL-B_Mask.gbs",
+          "sha256": "e94e3116ebfc5e4666ee659b55bed2f04d738523ba6fd5a025a22d0468085539",
+          "bytes": 214177
+        },
+        {
+          "path": "CTRL-B_Silkscreen.gbo",
+          "sha256": "8324dbd7dd2899c4b4eeec9287787317bd4783da306c76ab466a6ad00ac285ae",
+          "bytes": 224867
+        },
+        {
+          "path": "CTRL-Edge_Cuts.gm1",
+          "sha256": "b72dca9d4559bde2d209aa66073dec599bb02245f5233db53da538f3a072bdaf",
+          "bytes": 732
+        },
+        {
+          "path": "CTRL-F_Cu.gtl",
+          "sha256": "4804420ddea686ad9b11c1cde40335a3fb12c9866c282688976222786e283fad",
+          "bytes": 891071
+        },
+        {
+          "path": "CTRL-F_Mask.gts",
+          "sha256": "8410a04dd2614863f9f171502d2c9601e6aa2982749a8fae40df65d95e419c5a",
+          "bytes": 777673
+        },
+        {
+          "path": "CTRL-F_Silkscreen.gto",
+          "sha256": "c33aa4b7a5ea3ad04dd2ec9c94d683f011ed17448ebae3b5a60c19fc6b0d5dc7",
+          "bytes": 1006894
+        },
+        {
+          "path": "CTRL-NPTH.drl",
+          "sha256": "1ba2d7571346260977c6fa83aae1f02cb768b97e4582a87870a9bcaa67e21ad8",
+          "bytes": 514
+        },
+        {
+          "path": "CTRL-PTH.drl",
+          "sha256": "d03149b6ed7a714e8deea721dcf21de88440d469c937e694d2b9fd8a99aa3176",
+          "bytes": 10549
+        }
+      ]
+    },
+    {
+      "file": "ARDF_TX_CTRL_M6-L2_FULL_TOP_STENCIL.zip",
+      "sha256": "b797c0e0107ef926ff5ab5ab8f5a4a503d80e89f8165c0c0840df1c4436b44cd",
+      "entries": [
+        {
+          "path": "CTRL_M6_L2_export.tmp-Edge_Cuts.gm1",
+          "sha256": "9ae736fb134c236009dbe9c5be70d7cc4b85402ff7958f10b8337481b8dfda9f",
+          "bytes": 749
+        },
+        {
+          "path": "CTRL_M6_L2_export.tmp-F_Paste.gtp",
+          "sha256": "c215191b5e7d7262efe777c31c3c4b93104d778e91bedd96a3875387d72153f4",
+          "bytes": 24716
+        },
+        {
+          "path": "CTRL_M6_L2_export.tmp-job.gbrjob",
+          "sha256": "ab9275e9105f1baeb5c50cd93553a5fdeb8e31b5c4e8fdb1dc2dc99cc60e140b",
+          "bytes": 2012
+        }
+      ]
+    }
+  ],
+  "remote_upload": false,
+  "order": false
+}

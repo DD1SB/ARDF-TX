@@ -1,0 +1,19 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Traceback (most recent call last):
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_l2.py", line 79, in <module>
+    replay(action)
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_l2.py", line 43, in replay
+    adapted('m6_c1_verify',[("'5':'PACK_ID_RAW','6':'PACK_ID_ADC'","'5':'PACK_ID_SAFE','6':'PACK_ID_ADC'")]).main();return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ardf-m6-l2-final-reproduction/tools/m6_c1_verify.py", line 142, in main
+    assert hashlib.sha256(f.read_bytes()).hexdigest()==sha,str(f)
+                          ^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1021, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/ardf-m6-l2-final-reproduction/hardware/80m/RF80.kicad_prl'

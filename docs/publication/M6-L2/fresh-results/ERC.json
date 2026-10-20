@@ -1,0 +1,137 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T20:55:29",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/11 FoxPro / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/4133ccf1-fbfd-557a-9a19-8f31dc6daf80",
+            "violations": []
+        },
+        {
+            "path": "/01 power / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/a7814281-7eab-5a28-b680-bd807410a388",
+            "violations": []
+        },
+        {
+            "path": "/01 power / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/41b0f9a0-b614-53a0-94b8-c0edd98213a3",
+            "violations": []
+        },
+        {
+            "path": "/02 USB reset / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/cf00678c-e04e-5318-9777-a04e8d36747f",
+            "violations": []
+        },
+        {
+            "path": "/02 USB reset / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/688bd9d8-0d6d-5e89-8a52-48f9a1d5b813",
+            "violations": []
+        },
+        {
+            "path": "/03 MCU / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/e4cc452e-cedf-55c8-8db3-c23e17be9f8a",
+            "violations": []
+        },
+        {
+            "path": "/04 RTC analog / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/665d2cae-b448-54f2-9996-e99842c1bb20",
+            "violations": []
+        },
+        {
+            "path": "/05 static safety / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/ac8424ac-3ca2-5c26-af72-483a8498dbc3",
+            "violations": []
+        },
+        {
+            "path": "/05 static safety / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/5241e692-c79c-531f-aaac-3371cfb2fa23",
+            "violations": []
+        },
+        {
+            "path": "/05 static safety / 3/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/e8af7cad-13bd-5714-95b4-90999f1319b9",
+            "violations": []
+        },
+        {
+            "path": "/06 RF80 / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/bb3a1b4d-629a-571f-9dce-7d2a8ac513c6",
+            "violations": []
+        },
+        {
+            "path": "/06 RF80 / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/98d290b1-22af-5143-bf52-e523d6b94578",
+            "violations": []
+        },
+        {
+            "path": "/07 RF2M / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/2b7589f7-e57e-553e-9499-4c24e24e1ae5",
+            "violations": []
+        },
+        {
+            "path": "/07 RF2M / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/d3117b0a-afbc-5fc6-8c6a-dbafc99b79b3",
+            "violations": []
+        },
+        {
+            "path": "/08 status / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/3218711e-38bb-5d0e-9668-62976f6f9631",
+            "violations": []
+        },
+        {
+            "path": "/09 LoRa / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/f4fdb6c6-3d3c-5f54-aa57-95b209f008cf",
+            "violations": []
+        },
+        {
+            "path": "/10 test / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/d7a0bbab-b08f-56e1-89d1-0239143668b7",
+            "violations": []
+        },
+        {
+            "path": "/11 FoxPro / 2/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/f0e3a24c-3558-52d3-92f5-1311277cb75d",
+            "violations": []
+        },
+        {
+            "path": "/12 GPIO expansion / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/10dabd79-d9e3-519f-9eff-36b82298d23e",
+            "violations": []
+        },
+        {
+            "path": "/13 service straps / 1/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724/8fe51309-393d-552e-8369-f77c854363a2",
+            "violations": []
+        },
+        {
+            "path": "/",
+            "uuid_path": "/4b1d635f-1178-508d-ad6a-916f9dad7724",
+            "violations": []
+        }
+    ],
+    "source": "CTRL.kicad_sch"
+}

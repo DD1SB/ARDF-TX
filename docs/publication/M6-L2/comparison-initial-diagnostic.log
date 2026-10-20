@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/ardf-m6-l2-final-evidence/finish-comparison.py", line 34, in <module>
+    assert norm(q['stdout'])==norm(z['stdout'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

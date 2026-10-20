@@ -1,0 +1,109 @@
+[
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "returncode": 0,
+    "stdout": "m6-l2-controller-candidate\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "89f5a7df6ccb4dec8fcea10e7c810a9981342ce4\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "origin/main"
+    ],
+    "returncode": 0,
+    "stdout": "387f275dd4c6ad715a25c0b092961ed36f407833\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "show-ref"
+    ],
+    "returncode": 0,
+    "stdout": "89f5a7df6ccb4dec8fcea10e7c810a9981342ce4 refs/heads/m6-l2-controller-candidate\n387f275dd4c6ad715a25c0b092961ed36f407833 refs/heads/main\n387f275dd4c6ad715a25c0b092961ed36f407833 refs/remotes/origin/main\ndba9236fb17c8ae845bf63d434bf80b598865cb0 refs/tags/m3a-r0\n8a3f7f9003e8fffb9e97410595368803506c6cdd refs/tags/m3b-e1\nc6f5d499967b3522a549dc7d30f46a842312751a refs/tags/m3b-e2\nea671c1a6351d0154183247d46550648b15a1c65 refs/tags/m5a-r0\n4785057c2a3a8d79f02bcb0fc4691a0bc88079ba refs/tags/m5a-r1\ndaf994cafd39acb3328ce59565e36bc62f27599a refs/tags/m5a-r3\nb44fe3b02efff473ebbf5906ed1cb0e7bd838d78 refs/tags/m5a-r4\n6931260cc43016d8b42d6a59364962586ceb444c refs/tags/m5b-e1\n2ca4c8e6ef1a7c932433952e94202c5b4b66e843 refs/tags/m5b-e2\n89bb7b8819b754a6b7a425b7396e5396bdd2300c refs/tags/m5b-e3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "origin/main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "0\t1\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "version"
+    ],
+    "returncode": 0,
+    "stdout": "10.0.6\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Python 3.12.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "cc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "uname",
+      "-a"
+    ],
+    "returncode": 0,
+    "stdout": "Linux pop-os 7.1.5-76070105-generic #202607241434~1787955023~24.04~38a419f SMP PREEMPT_DYNAMIC Fri A x86_64 x86_64 x86_64 GNU/Linux\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-c",
+      "import pcbnew,PIL; print(\"pcbnew\",pcbnew.GetBuildVersion()); print(\"Pillow\",PIL.__version__)"
+    ],
+    "returncode": 0,
+    "stdout": "pcbnew 10.0.6-10.0.6~ubuntu24.04.1\nPillow 10.2.0\n",
+    "stderr": "./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n./kicad/include/properties/property.h(607): assert \"m_choices.GetCount() > 0\" failed in PROPERTY_ENUM(): No enum choices defined\n"
+  }
+]

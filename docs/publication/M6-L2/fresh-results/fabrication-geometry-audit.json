@@ -1,0 +1,524 @@
+{
+  "status": "PASS",
+  "native_sha256": "2d7a22b3e2991f22e7a22243ff0ce810e52bcec38fae6658edd631c6b9d22842",
+  "Gerber_outline_mm": [
+    100.0,
+    100.0
+  ],
+  "separate_drills": {
+    "CTRL-PTH.drl": {
+      "plated": true,
+      "tools": [
+        {
+          "diameter_mm": 0.3,
+          "holes": 612
+        },
+        {
+          "diameter_mm": 1.1,
+          "holes": 55
+        },
+        {
+          "diameter_mm": 0.6,
+          "holes": 4
+        }
+      ]
+    },
+    "CTRL-NPTH.drl": {
+      "plated": false,
+      "tools": [
+        {
+          "diameter_mm": 0.65,
+          "holes": 2
+        },
+        {
+          "diameter_mm": 3.2,
+          "holes": 4
+        }
+      ]
+    }
+  },
+  "native_and_exported_holes": 677,
+  "full_top_stencil_critical_flashes": [
+    {
+      "reference": "D82",
+      "pin": "1",
+      "native_and_Gerber_mm": [
+        66.0625,
+        -25.05
+      ]
+    },
+    {
+      "reference": "D82",
+      "pin": "2",
+      "native_and_Gerber_mm": [
+        66.0625,
+        -26.95
+      ]
+    },
+    {
+      "reference": "D82",
+      "pin": "3",
+      "native_and_Gerber_mm": [
+        67.9375,
+        -26.0
+      ]
+    },
+    {
+      "reference": "C83",
+      "pin": "1",
+      "native_and_Gerber_mm": [
+        62.275,
+        -37.75
+      ]
+    },
+    {
+      "reference": "C83",
+      "pin": "2",
+      "native_and_Gerber_mm": [
+        60.725,
+        -37.75
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "1",
+      "native_and_Gerber_mm": [
+        64.1625,
+        -36.85
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "2",
+      "native_and_Gerber_mm": [
+        64.1625,
+        -37.5
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "3",
+      "native_and_Gerber_mm": [
+        64.1625,
+        -38.15
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "4",
+      "native_and_Gerber_mm": [
+        65.8375,
+        -38.15
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "5",
+      "native_and_Gerber_mm": [
+        65.8375,
+        -37.5
+      ]
+    },
+    {
+      "reference": "U82",
+      "pin": "6",
+      "native_and_Gerber_mm": [
+        65.8375,
+        -36.85
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        47.095606,
+        -38.86
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        47.1,
+        -36.06
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        47.1,
+        -37.46
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        48.495606,
+        -38.86
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        48.5,
+        -36.06
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        48.5,
+        -37.46
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        49.895606,
+        -38.86
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        49.9,
+        -36.06
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "",
+      "native_and_Gerber_mm": [
+        49.9,
+        -37.46
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "1",
+      "native_and_Gerber_mm": [
+        41.25,
+        -29.74
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "2",
+      "native_and_Gerber_mm": [
+        41.25,
+        -31.01
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "3",
+      "native_and_Gerber_mm": [
+        41.25,
+        -32.28
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "4",
+      "native_and_Gerber_mm": [
+        41.25,
+        -33.55
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "5",
+      "native_and_Gerber_mm": [
+        41.25,
+        -34.82
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "6",
+      "native_and_Gerber_mm": [
+        41.25,
+        -36.09
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "7",
+      "native_and_Gerber_mm": [
+        41.25,
+        -37.36
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "8",
+      "native_and_Gerber_mm": [
+        41.25,
+        -38.63
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "9",
+      "native_and_Gerber_mm": [
+        41.25,
+        -39.9
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "10",
+      "native_and_Gerber_mm": [
+        41.25,
+        -41.17
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "11",
+      "native_and_Gerber_mm": [
+        41.25,
+        -42.44
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "12",
+      "native_and_Gerber_mm": [
+        41.25,
+        -43.71
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "13",
+      "native_and_Gerber_mm": [
+        41.25,
+        -44.98
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "14",
+      "native_and_Gerber_mm": [
+        41.25,
+        -46.25
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "15",
+      "native_and_Gerber_mm": [
+        43.015,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "16",
+      "native_and_Gerber_mm": [
+        44.285,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "17",
+      "native_and_Gerber_mm": [
+        45.555,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "18",
+      "native_and_Gerber_mm": [
+        46.825,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "19",
+      "native_and_Gerber_mm": [
+        48.095,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "20",
+      "native_and_Gerber_mm": [
+        49.365,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "21",
+      "native_and_Gerber_mm": [
+        50.635,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "22",
+      "native_and_Gerber_mm": [
+        51.905,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "23",
+      "native_and_Gerber_mm": [
+        53.175,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "24",
+      "native_and_Gerber_mm": [
+        54.445,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "25",
+      "native_and_Gerber_mm": [
+        55.715,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "26",
+      "native_and_Gerber_mm": [
+        56.985,
+        -47.5
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "27",
+      "native_and_Gerber_mm": [
+        58.75,
+        -46.25
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "28",
+      "native_and_Gerber_mm": [
+        58.75,
+        -44.98
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "29",
+      "native_and_Gerber_mm": [
+        58.75,
+        -43.71
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "30",
+      "native_and_Gerber_mm": [
+        58.75,
+        -42.44
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "31",
+      "native_and_Gerber_mm": [
+        58.75,
+        -41.17
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "32",
+      "native_and_Gerber_mm": [
+        58.75,
+        -39.9
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "33",
+      "native_and_Gerber_mm": [
+        58.75,
+        -38.63
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "34",
+      "native_and_Gerber_mm": [
+        58.75,
+        -37.36
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "35",
+      "native_and_Gerber_mm": [
+        58.75,
+        -36.09
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "36",
+      "native_and_Gerber_mm": [
+        58.75,
+        -34.82
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "37",
+      "native_and_Gerber_mm": [
+        58.75,
+        -33.55
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "38",
+      "native_and_Gerber_mm": [
+        58.75,
+        -32.28
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "39",
+      "native_and_Gerber_mm": [
+        58.75,
+        -31.01
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "40",
+      "native_and_Gerber_mm": [
+        58.75,
+        -29.74
+      ]
+    }
+  ],
+  "limitation": "Export integrity and native DFM; not supplier CAM acceptance or stencil/reflow qualification."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "actual_committed_files_verified": 1865,
+  "original_inventory_entries": 1869,
+  "unpublished_ignored_UI_lock_files": [
+    "hardware/2m/RF2M.kicad_prl",
+    "hardware/2m/~RF2M.kicad_pro.lck",
+    "hardware/80m/RF80.kicad_prl",
+    "hardware/80m/production/RF80_V1.kicad_prl"
+  ],
+  "negative_tests": [
+    {
+      "mutation": "changed_committed_RF_hash",
+      "result": "REJECTED",
+      "reason": "hardware/2m/RF2M.kicad_pcb"
+    },
+    {
+      "mutation": "arbitrary_untracked_missing_file",
+      "result": "REJECTED",
+      "reason": "('unexpected untracked inventory entries', {'hardware/80m/RF80.kicad_prl', 'hardware/2m/missing-design.kicad_pcb', 'hardware/2m/~RF2M.kicad_pro.lck', 'hardware/80m/production/RF80_V1.kicad_prl', 'hardware/2m/RF2M.kicad_prl'})"
+    },
+    {
+      "mutation": "undeclared_personal_state_exception",
+      "result": "REJECTED",
+      "reason": "('unexpected untracked inventory entries', {'hardware/80m/RF80.kicad_prl', 'hardware/2m/~RF2M.kicad_pro.lck', 'hardware/80m/production/RF80_V1.kicad_prl'})"
+    }
+  ]
+}

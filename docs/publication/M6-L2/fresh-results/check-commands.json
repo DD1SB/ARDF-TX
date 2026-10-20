@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/ERC.json",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to /tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/ERC.json\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/CTRL.net.xml",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "--schematic-parity",
+      "--refill-zones",
+      "--save-board",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/DRC.json",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/DRC.json\nSaved board\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "report",
+      "--severity-all",
+      "--schematic-parity",
+      "-o",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/DRC.rpt",
+      "/tmp/ardf-m6-l2-final-reproduction/hardware/controller/CTRL.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /tmp/ardf-m6-l2-final-reproduction/hardware/controller/review/M6-L2/DRC.rpt\n",
+    "stderr": ""
+  }
+]
