@@ -10,15 +10,16 @@ transmitter interlocks.
 
 The repository contains editable KiCad sources, development history, engineering
 decisions, population BOMs, verification tools and revision-specific fabrication
-data. These designs are **CAD-reviewed evaluation candidates**, not field-proven,
-competition-certified or released for operation. No PCB manufacture or delivery
+data. The RF designs and previous M6-L1 controller have independent CAD reviews;
+**M6-L2 is the new controller candidate awaiting independent review**. Physical
+qualification and release for operation remain pending. No PCB manufacture or delivery
 is established by the published milestone evidence.
 
 ## Hardware architecture
 
 | Module | Current candidate / source commit | PCB | Main functions | Native KiCad project | Engineering review |
 | --- | --- | --- | --- | --- | --- |
-| Common controller | M6-L1 / [`d94dabd`](https://github.com/DD1SB/ARDF-TX/commit/d94dabd0e40137dc44b2bb94f3707ad4636ca65f) | 100 × 100 mm | ESP32-S3, backed-up RTC, USB-C, optional LoRa, separate RF interfaces and default-off interlocks | [CTRL.kicad_pro](hardware/controller/CTRL.kicad_pro) | [M6-L1](hardware/controller/review/M6-L1/README.md) |
+| Common controller | **M6-L2 local review candidate**; previous baseline [`d94dabd`](https://github.com/DD1SB/ARDF-TX/commit/d94dabd0e40137dc44b2bb94f3707ad4636ca65f) | 100 × 100 mm | External-antenna ESP32-S3, RTC, USB-C, optional LoRa/FoxPro2/GPIO expansion and default-off interlocks | [CTRL.kicad_pro](hardware/controller/CTRL.kicad_pro) | [M6-L2](hardware/controller/review/M6-L2/README.md), previous [M6-L1](hardware/controller/review/M6-L1/README.md) |
 | 80 m RF | M4A-V1R1 / [`f86684b`](https://github.com/DD1SB/ARDF-TX/commit/f86684b9ef45eec3ca4ce52edcb62896a847f1d7) | 150 × 110 mm | Si5351, LM5134B, IRF610, Classic/Sprint profiles and independent Foxoring output | [RF80_V1.kicad_pro](hardware/80m/production/RF80_V1.kicad_pro) | [M4A-V1R1](hardware/80m/production/review/M4A-V1R1/README.md) |
 | 2 m RF | M5B-E5 / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Si5351, PHA-1+, PD54008L-E, sinusoidal drain AM and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | [M5B-E5](hardware/2m/review/M5B-E5/README.md) |
 
@@ -54,11 +55,19 @@ rules do not grant permission to transmit.
 
 ## Controller and optional LoRa
 
-The controller uses an **ESP32-S3-WROOM-1-N4** and an **RV-3032-C7 RTC** with
+The M6-L2 controller uses an **ESP32-S3-WROOM-1U-N4**, 4 MB flash with no PSRAM,
+and an **RV-3032-C7 RTC** with
 isolated CR1220 backup. USB-C provides programming, configuration, diagnostics
 and time setting. Standalone operation does not require a network. The firmware
 currently supplied is a hardware-contract/test foundation, not complete contest
 firmware.
+
+The ESP32's external **2.4 GHz** antenna port is separate from optional LoRa.
+The optional FoxPro2 interface uses isolated population routing and protected
+open-drain signalling; legacy battery reporting is unavailable for both 2S and
+4S. Optional TCA9534A expansion provides eight limited 3.3 V GPIOs at address
+0x38. Both options may remain completely unpopulated. See the [M6-L2 review](hardware/controller/review/M6-L2/README.md)
+for exact module lands, cable wiring, boot restrictions and test limitations.
 
 | Radio population | Module | External antenna |
 | --- | --- | --- |
@@ -108,15 +117,17 @@ Authentic archives for **five individual bare evaluation boards** of each design
 
 | Module | Fabrication ZIP | Manufacturing instructions |
 | --- | --- | --- |
+| Controller M6-L2, pending independent review | [ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip](hardware/controller/review/M6-L2/ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip) | [M6-L2](docs/M6_L2_MANUFACTURING.md), [decision](docs/M6_L2_REVIEW_DECISION.md) |
 | Controller M6-L1 | [CTRL_M6-L1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip) | [M6-L1](hardware/controller/review/M6-L1/MANUFACTURING.md) |
 | RF80 M4A-V1R1 | [RF80-V1R1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/fabrication/RF80-V1R1_JLCPCB_5boards.zip) | [V1R1](docs/M4A_V1R1_MANUFACTURING.md) |
 | RF2M M5B-E5 | [RF2M-M5B-E5_JLCPCB_5boards.zip](hardware/2m/review/M5B-E5/fabrication/RF2M-M5B-E5_JLCPCB_5boards.zip) | [E5](docs/M5B_E5_MANUFACTURING.md) |
 
-The controller ZIP is intentionally in the existing three-board handoff; its
+The historical M6-L1 ZIP remains in the existing three-board handoff; its
 entries match the final M6-L1 fabrication directory. The [publication verifier](tools/m7_publication.py)
 checks all three hashes and their layers/drills. Revisions are not interchangeable:
 the older 210 × 160 mm RF80 E2 and 180 × 140 mm RF2M E4R1 packages are historical.
-No manufacturing archive was regenerated for publication.
+No historical manufacturing archive was regenerated for publication or M6-L2.
+M6-L2 has separate fresh exports and is not included in the frozen M7 hashes.
 
 Review the [three-board matrix](hardware/2m/review/M5B-E5/THREE_BOARD_READINESS.md)
 before a separately authorized quotation/order. No supplier quote or CAM
@@ -128,6 +139,7 @@ still requires review of the original E2-first sequencing restriction.
 Use the integrated staged procedures:
 
 - [Controller M6-L1 bring-up](hardware/controller/review/M6-L1/BRINGUP.md).
+- [M6-L2 qualification additions and limits](docs/M6_L2_REVIEW_DECISION.md).
 - [RF80-V1R1 bring-up](hardware/80m/production/review/M4A-V1R1/BRINGUP.md).
 - [RF2M-E5 bring-up](hardware/2m/review/M5B-E5/BRINGUP.md).
 
@@ -145,12 +157,12 @@ git clone https://github.com/DD1SB/ARDF-TX.git
 cd ARDF-TX
 git log --oneline --decorate
 git tag --list
-python3 tools/m7_publication.py verify
 ```
 
-The verifier needs only Python's standard library and Git. It checks current
-native-source references, archive contents/hashes, review manifests and public
-entry-point links without modifying hardware or historical reviews.
+Use the [M6-L2 reproduction commands](hardware/controller/review/M6-L2/REPRODUCE.md)
+for the current controller. The frozen `m7_publication.py verify` command applies
+to publication commit `387f275dd4c6ad715a25c0b092961ed36f407833`; run it at that
+revision to verify its original three-board hashes and entry points.
 
 The recorded CAD toolchain is **KiCad 10.0.6**, with its standard symbol,
 footprint and 3D libraries. Open the three `.kicad_pro` files above; project-local

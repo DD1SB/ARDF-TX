@@ -1,0 +1,188 @@
+{
+  "classification": "Native resistor-derived DC corner and passive fault bounds; semiconductor transient/temperature qualification NOT_RUN",
+  "resistor_corners": "1% initial plus0.7% temperature sensitivity;\u00b11.7%",
+  "FoxPro_supply_V": [
+    4.5,
+    5.5
+  ],
+  "receive_idle_gate_min_V": 2.7405468314476185,
+  "receive_gate_positive_fault_max_V": 11.55205171026565,
+  "receive_gate_negative_clamp_V": -1,
+  "NMOS_gate_rating_V": [
+    -20,
+    20
+  ],
+  "NMOS_Ron_max_ohm_at_2p5V_25C": 6.5,
+  "transmit_LOW_fraction_of_legacy_VIL_max": 0.6969550513227433,
+  "port_faults": [
+    {
+      "contact": "serial",
+      "fault_V": -16.8,
+      "current_upper_A": 0.025133145832086652,
+      "resistor_power_upper_W": 0.42223684997905575,
+      "parallel_resistors": 1,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "serial",
+      "fault_V": 0,
+      "current_upper_A": 0.0,
+      "resistor_power_upper_W": 0.0,
+      "parallel_resistors": 1,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "serial",
+      "fault_V": 8.4,
+      "current_upper_A": 0.012566572916043326,
+      "resistor_power_upper_W": 0.10555921249476394,
+      "parallel_resistors": 1,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "serial",
+      "fault_V": 16.8,
+      "current_upper_A": 0.025133145832086652,
+      "resistor_power_upper_W": 0.42223684997905575,
+      "parallel_resistors": 1,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "ground",
+      "fault_V": -16.8,
+      "current_upper_A": 0.07272569857795286,
+      "resistor_power_upper_W": 0.610895868054804,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "ground",
+      "fault_V": 0,
+      "current_upper_A": 0.0,
+      "resistor_power_upper_W": 0.0,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "ground",
+      "fault_V": 8.4,
+      "current_upper_A": 0.03636284928897643,
+      "resistor_power_upper_W": 0.152723967013701,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "ground",
+      "fault_V": 16.8,
+      "current_upper_A": 0.07272569857795286,
+      "resistor_power_upper_W": 0.610895868054804,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "voltage_unavailable",
+      "fault_V": -16.8,
+      "current_upper_A": 0.07272569857795286,
+      "resistor_power_upper_W": 0.610895868054804,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "voltage_unavailable",
+      "fault_V": 0,
+      "current_upper_A": 0.0,
+      "resistor_power_upper_W": 0.0,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "voltage_unavailable",
+      "fault_V": 8.4,
+      "current_upper_A": 0.03636284928897643,
+      "resistor_power_upper_W": 0.152723967013701,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    },
+    {
+      "contact": "voltage_unavailable",
+      "fault_V": 16.8,
+      "current_upper_A": 0.07272569857795286,
+      "resistor_power_upper_W": 0.610895868054804,
+      "parallel_resistors": 2,
+      "derated_rating_W": 0.8235294117647058
+    }
+  ],
+  "GPIO_short_per_signal_A": 0.003662258392675483,
+  "GPIO_eight_shorts_A": 0.029298067141403865,
+  "header_short_A": 0.16646629057615833,
+  "header_short_resistor_W": 0.59927864607417,
+  "header_10mA_voltage_drop_V": 0.22373999999999997,
+  "GPIO_off_rail_bound_V": 0.220689,
+  "RX_off_pin_bound_V": 0.27638411793611795,
+  "BOTH_off_rail_bound_V": 0.272354229996399,
+  "BOTH_off_RX_pin_bound_V": 0.27318087367634136,
+  "TX_off_base_bound_V": 0.23899499999999999,
+  "TX_inhibit_off_base_bound_V": 0.23899499999999999,
+  "TX_hot_leakage_basis": "Q80 insulated gate and permanently grounded source: no base-collector path to bus.50uA hot-leakage sensitivity across each4.7k shunt keeps gate/base below0.3V. Q81 shunts the gate; GPIO43 HIGH releases, LOW sinks only with SAFE. Q80 VDS60V exceeds TVS42V component clamp.",
+  "TX_max_single_transistor_loadline_W": 0.10555921249476394,
+  "Q80_standard_footprint_85C_rating_W": 0.182,
+  "SAFE_added_load_upper_A": 0.003662258392675483,
+  "SAFE_source": "U34 SN74LVC2G04DCKR; native driver retained",
+  "SAFE_driver_Rout_scenario_ohm": 100,
+  "SAFE_driver_basis": "100ohm engineering source-resistance allocation; datasheet3V/16mA/VOH2.4V implies37.5ohm at that test point. Not a guaranteed low-current I/V curve; measure in Gate G.",
+  "TX_gate_HIGH_min_scenario_V": 2.572659089958342,
+  "TX_gate_LOW_with_100mV_driver_VOL_V": 0.12487156306537918,
+  "boot_reset_UART_truth": [
+    {
+      "SAFE": false,
+      "GPIO43": false,
+      "gate_bound_V": 0.12487156306537918,
+      "bus_sink": false
+    },
+    {
+      "SAFE": false,
+      "GPIO43": true,
+      "gate_bound_V": 0.2,
+      "bus_sink": false
+    },
+    {
+      "SAFE": true,
+      "GPIO43": false,
+      "gate_bound_V": 2.572659089958342,
+      "bus_sink": true
+    },
+    {
+      "SAFE": true,
+      "GPIO43": true,
+      "gate_bound_V": 0.2,
+      "bus_sink": false
+    }
+  ],
+  "TX_gate_filter_42V_step_bound_V": 0.09312638580931265,
+  "TX_gate_filter_RC_s": 9.959577286370803e-06,
+  "drain_negative_clamp_V": -1.25,
+  "drain_clamp_reverse_rating_V": 100,
+  "port_TVS_component_clamp_V": 42,
+  "receive_passive_off_fault_current_bound_A": 0.00043832923832923834,
+  "receive_passive_off_basis": "Bound the ENTIRE input current through native47k, independent of MOS gate-leakage assumptions. Includes16.8V stiff DATA fault and22.3V through legacy4k7+220R during16.8V Fox-ground displacement.620ohm shunt keeps GPIO below0.3V.",
+  "RX_pullup_3p3495V_short_power_W": 0.0713323388224822,
+  "RX_pullup_85C_rating_W": 0.08235294117647059,
+  "RX_13ohm_hot_Ron_scenario_LOW_V": 0.2557170542635659,
+  "reverse_block_leakage_A": 1.7e-06,
+  "reverse_block_basis": "TI LM66100OUT-IN,VOUT-VIN<=4.5V,-40..85C",
+  "optional_buffer_off_leakage_envelope_A": 2e-05,
+  "powered_high_RX_min_V": 2.5655284130643117,
+  "RTC_bus": {
+    "extra_upstream_pullups": 0,
+    "frequency_Hz": 100000,
+    "assumed_total_upstream_capacitance_F": 1.5e-10,
+    "rise_time_s": 5.973465000000001e-07,
+    "standard_mode_max_s": 1e-06,
+    "downstream_address": 56,
+    "RTC_address": 81
+  },
+  "voltage_reporting": "Unavailable for BOTH2S and4S; tip bonded to FoxPro ground, no battery source to TRS",
+  "analog_contact_relative_FoxPro_ground_fault_bound_V": 0.007272569857795286,
+  "zero_ohm_link_resistance_engineering_envelope_ohm": 0.1,
+  "physical": "NOT_RUN"
+}

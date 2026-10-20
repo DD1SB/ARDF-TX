@@ -1,0 +1,193 @@
+ref,value,mpn,footprint,population,default,source_url,supplier,supplier_part,moq,indexed_stock,pricing
+J1,PACK / GND / ID,B3B-XH-A(LF)(SN),ARDF_CTL:JST_XH_B3B_Standard,ALL,FITTED,https://www.jst.co.uk/downloads/series/eXH_1.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+F1,1A 63V fast,SF-1206F100-2,ARDF_CTL:Fuse_Bourns_SF1206F,ALL,FITTED,https://www.bourns.com/docs/product-datasheets/sf-1206f.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D1,100V 2A reverse block,STPS2H100A,ARDF_CTL:D_SMA_CTL,ALL,FITTED,https://www.st.com/resource/en/datasheet/stps2h100.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D4,Low leakage battery OR,S1M-E3/61T,ARDF_CTL:D_SMA_CTL,ALL,FITTED,https://www.vishay.com/docs/88503/s1a.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D2,18V unidirectional TVS,SMBJ18A,ARDF_CTL:D_SMB_CTL,ALL,FITTED,https://www.littelfuse.com/media?resourcetype=datasheets&itemid=142b62cb-5ef8-4af6-8131-6df1d404ddc1,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D3,USB low-drop OR,STPS1L30A,ARDF_CTL:D_SMA_CTL,ALL,FITTED,https://www.st.com/resource/en/datasheet/stps1l30.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D21,USB reverse-leak clamp 5.1V,"BZT52H-B5V1,115",ARDF_CTL:D_SOD-123F_CTL,ALL,FITTED,https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U1,AP63203WU-7,AP63203WU-7,ARDF_CTL:TSOT-23-6_CTL,ALL,FITTED,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,LCSC (indexed observation),C780769,1,"LCSC C780769 indexed8165stock MOQ1; EUR budget at1EUR/USD allowance, not FX quote. Mouser0stock.",Inherited M6-L1 planning estimate; recheck before procurement
+L1,4.7uH 4.6Arms,SRP5030T-4R7M,ARDF_CTL:L_Bourns_SRP5030T_CTL,ALL,FITTED,https://www.bourns.com/data/global/pdfs/SRP5030T.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C1,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C2,4.7u 50V,GRM32ER71H475KA88L,ARDF_CTL:C_1210_3225Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C3,4.7u 50V,GRM32ER71H475KA88L,ARDF_CTL:C_1210_3225Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C4,22u 10V,CL31A226KPHNNNE,ARDF_CTL:C_1206_3216Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C5,22u 10V,CL31A226KPHNNNE,ARDF_CTL:C_1206_3216Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C6,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R1,470k,RC0603FR-07470KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R2,47k,RC0603FR-0747KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser EU,603-RC0603FR-0747KL,1,476884,sourcing-index.json
+R3,27k,RC0603FR-0727KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D22,BAS116 ID excitation isolation,"BAS116,235",ARDF_CTL:SOT-23_CTL,ALL,FITTED,https://assets.nexperia.com/documents/data-sheet/BAS116.pdf,Mouser DE indexed observation,771-BAS116235,1,"Mouser771-BAS116235 cut tape MOQ1 indexed58175, unreserved",Inherited M6-L1 planning estimate; recheck before procurement
+R8,180k,RC0603FR-07180KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R9,33k,RC0603FR-0733KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R19,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+D23,BAT54H negative ID clamp,"BAT54H,115",ARDF_CTL:D_SOD-123F_CTL,ALL,FITTED,https://assets.nexperia.com/documents/data-sheet/BAT54H.pdf,Mouser regional indexed comparator; EU stock recheck required,771-BAT54H-T/R,1,"Mouser771-BAT54H-T/R regional indexed stock60194..75213, MOQ1; EUR price unquoted, recheck live EU availability",Inherited M6-L1 planning estimate; recheck before procurement
+Q1,MMBT3904,MMBT3904LT1G,ARDF_CTL:SOT-23_CTL,ALL,FITTED,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,LCSC,C81464,50,1688250,sourcing-index.json
+R4,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+R5,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+R6,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R7,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+J2,USB-C native USB2,USB4105-GF-A,ARDF_CTL:USB4105_Standard,ALL,FITTED,https://gct.co/files/drawings/usb4105.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R10,5.1k,RC0603FR-075K1L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R11,5.1k,RC0603FR-075K1L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U2,TPS2553DBVR,TPS2553DBVR,ARDF_CTL:SOT-23-6_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/tps2553.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R63,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+Q2,MMBT3904 VBUS sense,MMBT3904LT1G,ARDF_CTL:SOT-23_CTL,ALL,FITTED,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,LCSC,C81464,50,1688250,sourcing-index.json
+R64,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+R65,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+R66,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R12,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+R13,100k,RC0603FR-07100KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C14675,100,3111400,sourcing-index.json
+C10,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C11,4.7u 10V,CL10A475KP8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U3,USBLC6-2SC6,USBLC6-2SC6,ARDF_CTL:SOT-23-6_CTL,ALL,FITTED,https://www.st.com/resource/en/datasheet/usblc6-2.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R14,22,RC0603FR-0722RL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R15,22,RC0603FR-0722RL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U4,TLV803EA30DBZR,TLV803EA30DBZR,ARDF_CTL:SOT-23_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/tlv803e.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R16,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+C12,1u,CL10A105KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R17,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R18,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+SW1,RESET,TL3342F160QG,ARDF_CTL:SW_SPST_TL3342_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+SW2,BOOT,TL3342F160QG,ARDF_CTL:SW_SPST_TL3342_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+SW3,START,TL3342F160QG,ARDF_CTL:SW_SPST_TL3342_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+SW4,STOP / hold reset,TL3342F160QG,ARDF_CTL:SW_SPST_TL3342_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U10,ESP32-S3-WROOM-1U-N4,ESP32-S3-WROOM-1U-N4,ARDF_CTL:ESP32_S3_WROOM_1U_N4_L2,ALL,FITTED,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf,LCSC,C2980296,1,1700..2128 regional indexed,sourcing-index.json
+C20,10u 10V,CL10A106KP8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C21,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+U20,RV-3032-C7 2.5ppm,RV-3032-C7-32.768KHZ-2.5PPM-TA-QA,ARDF_CTL:RV3032_C7,ALL,FITTED,https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3032-C7_App-Manual.pdf,Mouser DE (indexed observation),428-203853-MG01,1,"Mouser index 4353, MOQ1",Inherited M6-L1 planning estimate; recheck before procurement
+BT1,CR1220 primary,3000,ARDF_CTL:BatteryHolder_Keystone_3000_1x12mm_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D20,BAS116 no cell charging,"BAS116,115",ARDF_CTL:SOT-23_CTL,ALL,FITTED,https://assets.nexperia.com/documents/data-sheet/BAS116.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R20,1k,RC0603FR-071KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,South Electronics,RC0603FR071KL,1,3129,sourcing-index.json
+C22,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C23,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R22,4.7k,RC0603FR-074K7L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C99782,100,6556400,sourcing-index.json
+R23,4.7k,RC0603FR-074K7L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C99782,100,6556400,sourcing-index.json
+R24,4.7k,RC0603FR-074K7L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C99782,100,6556400,sourcing-index.json
+R25,4.7k,RC0603FR-074K7L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C99782,100,6556400,sourcing-index.json
+U21,TMUX1511PWR,TMUX1511PWR,ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/tmux1511.pdf,Mouser EU (indexed observation),595-TMUX1511PWR,1,"Mouser indexed55stock, MOQ1; unreserved",Inherited M6-L1 planning estimate; recheck before procurement
+C24,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C25,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C26,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C27,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C28,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R26,33k,RC0603FR-0733KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U30,SN74HC595PWR,SN74HC595PWR,ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74hc595.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C30,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+U31,SN74HC595PWR,SN74HC595PWR,ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74hc595.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C31,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R30,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R31,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R32,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R33,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R34,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R35,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R36,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R37,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R38,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R39,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R40,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R41,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R42,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R43,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R44,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R45,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R50,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R51,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R52,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R53,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R54,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R55,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R56,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R57,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R58,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R59,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+U32,SN74LVC1G04DBVR,SN74LVC1G04DBVR,ARDF_CTL:SOT-23-5_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U33,SN74LVC1G10DBVR,SN74LVC1G10DBVR,ARDF_CTL:SOT-23-6_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc1g10.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U34,SN74LVC2G04DCKR,SN74LVC2G04DCKR,ARDF_CTL:SOT-363_SC-70-6_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc2g04.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U35,SN74LVC00APWR,SN74LVC00APWR,ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc00a.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U36,SN74LVC1G04DBVR,SN74LVC1G04DBVR,ARDF_CTL:SOT-23-5_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U37,SN74LVC08APWR,SN74LVC08APWR,ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C32,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C33,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C34,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C35,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C36,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C37,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R60,2.2k,RC0603FR-072K2L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D30,status,LTST-C190KGKT,ARDF_CTL:LED_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R61,2.2k,RC0603FR-072K2L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D31,status,LTST-C190KRKT,ARDF_CTL:LED_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R62,2.2k,RC0603FR-072K2L,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+D32,status,LTST-C190KGKT,ARDF_CTL:LED_0603_1608Metric_CTL,ALL,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+J4,RF80 keyed controller link,61201621621,ARDF_CTL:IDC16_61201621621,RF80,FITTED,https://www.we-online.com/components/products/datasheet/61201621621.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U40,TPS22918DBVR,TPS22918DBVR,ARDF_CTL:SOT-23-6_CTL,RF80,FITTED,https://www.ti.com/lit/gpn/tps22918,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C40,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C41,1u,CL10A105KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U41,SN74LVC244APWR,SN74LVC244APWR,ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL,RF80,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf,OPEN,OPEN,OPEN,Exact non-E4 stock/price OPEN; E4 package-matched comparator only,Inherited M6-L1 planning estimate; recheck before procurement
+U42,SN74LVC125APWR,SN74LVC125APWR,ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL,RF80,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R80,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+C42,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C43,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R100,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R101,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R102,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R103,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R104,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R105,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R106,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R107,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R108,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R109,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R110,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R111,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R112,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R113,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R114,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R115,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R116,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R117,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+U43,TCA9517DR,TCA9517DR,ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL,RF80,FITTED,https://www.ti.com/lit/ds/symlink/tca9517.pdf,LCSC,C182421,5,2045,sourcing-index.json
+C44,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C45,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF80,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R81,2.2k,RC0603FR-072K2L,ARDF_CTL:R_0603_1608Metric_CTL,RF80,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+J5,RF2M keyed controller link,61202021621,ARDF_CTL:IDC20_61202021621,RF2M,FITTED,https://www.we-online.com/components/products/datasheet/61202021621.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U50,TPS22918DBVR,TPS22918DBVR,ARDF_CTL:SOT-23-6_CTL,RF2M,FITTED,https://www.ti.com/lit/gpn/tps22918,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C50,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C51,1u,CL10A105KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+U51,SN74LVC244APWR,SN74LVC244APWR,ARDF_CTL:TSSOP-20_4.4x6.5mm_P0.65mm_CTL,RF2M,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf,OPEN,OPEN,OPEN,Exact non-E4 stock/price OPEN; E4 package-matched comparator only,Inherited M6-L1 planning estimate; recheck before procurement
+U52,SN74LVC125APWR,SN74LVC125APWR,ARDF_CTL:TSSOP-14_4.4x5mm_P0.65mm_CTL,RF2M,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R90,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+C52,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C53,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R118,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R119,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R120,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R121,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R122,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R123,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R124,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R125,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R126,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R127,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R128,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R129,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R130,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R131,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R132,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R133,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R134,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R135,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R136,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R137,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R138,100,RC0603FR-07100RL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+R139,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,RF2M,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+U53,TCA9517DR,TCA9517DR,ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL,RF2M,FITTED,https://www.ti.com/lit/ds/symlink/tca9517.pdf,LCSC,C182421,5,2045,sourcing-index.json
+C54,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+C55,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,RF2M,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R91,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+U60,SN74LVC2G17DCKR,SN74LVC2G17DCKR,ARDF_CTL:SOT-363_SC-70-6_CTL,ALL,FITTED,https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf,OPEN,OPEN,OPEN,Unquoted / check before procurement,Inherited M6-L1 planning estimate; recheck before procurement
+C60,100n,CL10B104KB8NNNC,ARDF_CTL:C_0603_1608Metric_CTL,ALL,FITTED,,LCSC,C1591,100,2417100,sourcing-index.json
+R93,10k,RC0603FR-0710KL,ARDF_CTL:R_0603_1608Metric_CTL,ALL,FITTED,,Mouser,603-RC0603FR-0710KL,1,2782034,sourcing-index.json
+R300,0,RC0603JR-070RL,ARDF_CTL:R_0603_1608Metric_CTL,RECOVERY,FITTED,,LCSC,C95177,100,3216500,sourcing-index.json
+R301,0,RC0603JR-070RL,ARDF_CTL:R_0603_1608Metric_CTL,RECOVERY,FITTED,,LCSC,C95177,100,3216500,sourcing-index.json

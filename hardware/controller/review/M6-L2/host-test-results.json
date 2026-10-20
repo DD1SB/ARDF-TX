@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_01_exact_1200_timing_and_18_bits (test_foxpro2.FoxPro2Tests.test_01_exact_1200_timing_and_18_bits) ... ok\ntest_02_all_payloads_and_directions (test_foxpro2.FoxPro2Tests.test_02_all_payloads_and_directions) ... ok\ntest_03_known_vectors_and_bit_order (test_foxpro2.FoxPro2Tests.test_03_known_vectors_and_bit_order) ... ok\ntest_04_invalid_checksum_and_every_single_bit (test_foxpro2.FoxPro2Tests.test_04_invalid_checksum_and_every_single_bit) ... ok\ntest_05_missing_stop (test_foxpro2.FoxPro2Tests.test_05_missing_stop) ... ok\ntest_06_incomplete_and_reset (test_foxpro2.FoxPro2Tests.test_06_incomplete_and_reset) ... ok\ntest_07_held_low (test_foxpro2.FoxPro2Tests.test_07_held_low) ... ok\ntest_08_stuck_high (test_foxpro2.FoxPro2Tests.test_08_stuck_high) ... ok\ntest_09_concurrent_transmitters (test_foxpro2.FoxPro2Tests.test_09_concurrent_transmitters) ... ok\ntest_10_interrupted_status_load (test_foxpro2.FoxPro2Tests.test_10_interrupted_status_load) ... ok\ntest_11_readback_timeout (test_foxpro2.FoxPro2Tests.test_11_readback_timeout) ... ok\ntest_12_expected_cadence_identify (test_foxpro2.FoxPro2Tests.test_12_expected_cadence_identify) ... ok\ntest_13_status_load_verify_and_snapshot (test_foxpro2.FoxPro2Tests.test_13_status_load_verify_and_snapshot) ... ok\ntest_14_foxid_encodings (test_foxpro2.FoxPro2Tests.test_14_foxid_encodings) ... ok\ntest_15_cwid_roundtrip_and_one_persistence (test_foxpro2.FoxPro2Tests.test_15_cwid_roundtrip_and_one_persistence) ... ok\ntest_16_cwid_bounds_and_incomplete (test_foxpro2.FoxPro2Tests.test_16_cwid_bounds_and_incomplete) ... ok\ntest_17_eeprom_pointer_increment (test_foxpro2.FoxPro2Tests.test_17_eeprom_pointer_increment) ... ok\ntest_18_read_clone (test_foxpro2.FoxPro2Tests.test_18_read_clone) ... ok\ntest_19_invalid_programs (test_foxpro2.FoxPro2Tests.test_19_invalid_programs) ... ok\ntest_20_unsupported_calibration_and_register (test_foxpro2.FoxPro2Tests.test_20_unsupported_calibration_and_register) ... ok\ntest_21_unsafe_test_interlocks (test_foxpro2.FoxPro2Tests.test_21_unsafe_test_interlocks) ... ok\ntest_22_reset_discards_transaction (test_foxpro2.FoxPro2Tests.test_22_reset_discards_transaction) ... ok\ntest_23_boot_activity_has_no_output (test_foxpro2.FoxPro2Tests.test_23_boot_activity_has_no_output) ... ok\ntest_24_unknown_module_and_usb (test_foxpro2.FoxPro2Tests.test_24_unknown_module_and_usb) ... ok\ntest_25_rtc_phase_and_safety (test_foxpro2.FoxPro2Tests.test_25_rtc_phase_and_safety) ... ok\ntest_26_transport_response_and_turnaround (test_foxpro2.FoxPro2Tests.test_26_transport_response_and_turnaround) ... ok\ntest_27_transport_collision (test_foxpro2.FoxPro2Tests.test_27_transport_collision) ... ok\ntest_28_monotonic_test_deadline_and_live_fault (test_foxpro2.FoxPro2Tests.test_28_monotonic_test_deadline_and_live_fault) ... ok\ntest_29_persistence_rate_limit (test_foxpro2.FoxPro2Tests.test_29_persistence_rate_limit) ... ok\ntest_ambiguous_reading_rejected (test_input_protection.InputProtection.test_ambiguous_reading_rejected) ... ok\ntest_brownout_and_USB_only (test_input_protection.InputProtection.test_brownout_and_USB_only) ... ok\ntest_invalid_sample_disarms (test_input_protection.InputProtection.test_invalid_sample_disarms) ... ok\ntest_missing_calibration (test_input_protection.InputProtection.test_missing_calibration) ... ok\ntest_open_and_short (test_input_protection.InputProtection.test_open_and_short) ... ok\ntest_positive_faults (test_input_protection.InputProtection.test_positive_faults) ... ok\ntest_powered_off_fault (test_input_protection.InputProtection.test_powered_off_fault) ... ok\ntest_wrong_resistor_and_pack (test_input_protection.InputProtection.test_wrong_resistor_and_pack) ... ok\ntest_antenna_population (test_lora.LoRaContract.test_antenna_population) ... ok\ntest_base_operation_independent (test_lora.LoRaContract.test_base_operation_independent) ... ok\ntest_no_blind_band_detection (test_lora.LoRaContract.test_no_blind_band_detection) ... ok\ntest_regional_policy_and_power (test_lora.LoRaContract.test_regional_policy_and_power) ... ok\ntest_reset_loss_and_absence (test_lora.LoRaContract.test_reset_loss_and_absence) ... ok\ntest_unknown_population (test_lora.LoRaContract.test_unknown_population) ... ok\ntest_brownout_and_startup (test_model.Safety.test_brownout_and_startup) ... ok\ntest_conflicting_band_requests (test_model.Safety.test_conflicting_band_requests) ... ok\ntest_contradictory_population (test_model.Safety.test_contradictory_population) ... ok\ntest_controller_supply_loss (test_model.Safety.test_controller_supply_loss) ... ok\ntest_deliberate_rearm (test_model.Safety.test_deliberate_rearm) ... ok\ntest_disarmed_low_is_not_missing (test_model.Safety.test_disarmed_low_is_not_missing) ... ok\ntest_frequency (test_model.Safety.test_frequency) ... ok\ntest_invalid_rtc (test_model.Safety.test_invalid_rtc) ... ok\ntest_lora_absence_and_loss (test_model.Safety.test_lora_absence_and_loss) ... ok\ntest_lora_detect (test_model.Safety.test_lora_detect) ... ok\ntest_lost_progress (test_model.Safety.test_lost_progress) ... ok\ntest_missing_calibration (test_model.Safety.test_missing_calibration) ... ok\ntest_missing_module (test_model.Safety.test_missing_module) ... ok\ntest_module_id_current_values (test_model.Safety.test_module_id_current_values) ... ok\ntest_native_prepare_sequence (test_model.Safety.test_native_prepare_sequence) ... ok\ntest_pa_rail_loss (test_model.Safety.test_pa_rail_loss) ... ok\ntest_pa_rail_required (test_model.Safety.test_pa_rail_required) ... ok\ntest_pack_identity (test_model.Safety.test_pack_identity) ... ok\ntest_power_codes_are_written (test_model.Safety.test_power_codes_are_written) ... ok\ntest_profile_combinations (test_model.Safety.test_profile_combinations) ... ok\ntest_progress_establishment (test_model.Safety.test_progress_establishment) ... ok\ntest_reset_while_transmitting (test_model.Safety.test_reset_while_transmitting) ... ok\ntest_rtc_bus_isolation (test_model.Safety.test_rtc_bus_isolation) ... ok\ntest_rtc_validity (test_model.Safety.test_rtc_validity) ... ok\ntest_runtime_validation_failure (test_model.Safety.test_runtime_validation_failure) ... ok\ntest_stabilization (test_model.Safety.test_stabilization) ... ok\ntest_stuck_i2c (test_model.Safety.test_stuck_i2c) ... ok\ntest_timer_morse (test_model.Safety.test_timer_morse) ... ok\ntest_unexpected_fault_status (test_model.Safety.test_unexpected_fault_status) ... ok\ntest_unpowered_module (test_model.Safety.test_unpowered_module) ... ok\ntest_usb_plug_unplug (test_model.Safety.test_usb_plug_unplug) ... ok\ntest_wrong_battery (test_model.Safety.test_wrong_battery) ... ok\n\n----------------------------------------------------------------------\nRan 75 tests in 0.157s\n\nOK\n"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "contract.c",
+        "test_contract.c",
+        "-lm",
+        "-o",
+        "/tmp/m6-l2-contract"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/m6-l2-contract"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "physical": "NOT_RUN"
+}

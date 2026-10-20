@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-18",
-  "revision": "M6-L1 candidate / M6-C1R1 electrical baseline",
+  "date": "2026-10-20",
+  "revision": "M6-L2 candidate",
   "status": "REVIEW / ALL HARDWARE MEASUREMENTS NOT RUN",
   "parts": [
     {
@@ -1416,21 +1416,22 @@
     {
       "ref": "U10",
       "sheet": "03_MCU",
-      "value": "ESP32-S3-WROOM-1-N4",
-      "mpn": "ESP32-S3-WROOM-1-N4",
-      "footprint": "ARDF_CTL:ESP32_S3_WROOM_1_Standard",
+      "value": "ESP32-S3-WROOM-1U-N4",
+      "mpn": "ESP32-S3-WROOM-1U-N4",
+      "footprint": "ARDF_CTL:ESP32_S3_WROOM_1U_N4_L2",
       "group": "03_MCU",
       "population": "ALL",
-      "note": "4MB flash, no PSRAM. GPIO35/36/37 available. GPIO0 boot only; GPIO3/45/46 reserved. USB19/20. Standard KiCad thermal holes omitted; solid source solder lands retained, ground vias outside hidden land.",
+      "note": "External2.4GHz antenna only;4MB flash;NO PSRAM. GPIO35..37 retained. Dedicated1U lands/body. Actual antenna/assembly qualification NOT_RUN.",
       "source_url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
-      "supplier": "Mouser DE (indexed observation)",
-      "supplier_part_number": "356-ESP32-S3WROOM1N4",
-      "availability": "Mouser index 3296, MOQ1; recheck before buying",
-      "evidence": "OBSERVED_2026-10-18",
+      "supplier": "LCSC indexed 2026-10-20",
+      "supplier_part_number": "C2980296",
+      "availability": "Indexed1700stock,MOQ1; unreserved",
+      "evidence": "USD_INDEXED_FX_PLANNING_1_EUR_PER_USD_NOT_QUOTE",
       "price_breaks_eur": {
-        "1": 4.48,
-        "10": 3.88,
-        "20": 3.88
+        "1": 4.4084,
+        "5": 4.4084,
+        "10": 3.9152,
+        "20": 3.9152
       },
       "moq": 1,
       "multiple": 1,
@@ -1451,8 +1452,8 @@
         "12": "RTC80_SDA",
         "13": "USB_DM",
         "14": "USB_DP",
-        "15": null,
-        "16": null,
+        "15": "STRAP3",
+        "16": "STRAP46",
         "17": "RTC80_SCL",
         "18": "LORA_NSS",
         "19": "SPI_MOSI",
@@ -1538,7 +1539,7 @@
       "footprint": "ARDF_CTL:UART_61300311121",
       "group": "03_MCU",
       "population": "DEBUG",
-      "note": "3.3V UART, no5V supply. Native USB normal flashing path. Standard1.10mm finished holes, no tight process.",
+      "note": "Default R300/R301 fitted; FoxPro R302/R303 absent. Recovery mode and FoxPro mode mutually exclusive; never fit both sets.",
       "source_url": "",
       "supplier": "OPEN",
       "supplier_part_number": "OPEN",
@@ -1553,8 +1554,8 @@
       "multiple": 1,
       "pins": {
         "1": "GND",
-        "2": "UART_TX",
-        "3": "UART_RX"
+        "2": "REC_TX",
+        "3": "REC_RX"
       }
     },
     {
@@ -5655,6 +5656,1365 @@
       "pins": {
         "1": "RTC_BACKUP"
       }
+    },
+    {
+      "ref": "J8",
+      "sheet": "11_FoxPro",
+      "value": "FOXPRO / G-D-V UNAVAILABLE",
+      "mpn": "B3B-PH-K-S(LF)(SN)",
+      "footprint": "ARDF_CTL:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Keyed PH2.0, incompatible with pack XH2.5. Panel TRS:1 sleeve/GND,2 ring/data,3 tip/voltage unavailable. No supply output.",
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.25,
+        "10": 0.25,
+        "20": 0.25
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_GND",
+        "2": "FOX_DATA",
+        "3": "FOX_V_UNAVAILABLE"
+      }
+    },
+    {
+      "ref": "R300",
+      "sheet": "11_FoxPro",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "RECOVERY",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "UART_TX",
+        "2": "REC_TX"
+      }
+    },
+    {
+      "ref": "R301",
+      "sheet": "11_FoxPro",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "RECOVERY",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "UART_RX",
+        "2": "REC_RX"
+      }
+    },
+    {
+      "ref": "R302",
+      "sheet": "11_FoxPro",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "UART_TX",
+        "2": "FOX_TX"
+      }
+    },
+    {
+      "ref": "R303",
+      "sheet": "11_FoxPro",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "UART_RX",
+        "2": "FOX_RX"
+      }
+    },
+    {
+      "ref": "R304",
+      "sheet": "11_FoxPro",
+      "value": "680",
+      "mpn": "RC2512FK-07680RL",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08,
+        "10": 0.08,
+        "20": 0.08
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_DATA",
+        "2": "FOX_SINK"
+      }
+    },
+    {
+      "ref": "R314",
+      "sheet": "11_FoxPro",
+      "value": "470",
+      "mpn": "RC2512FK-07470RL",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08,
+        "10": 0.08,
+        "20": 0.08
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_GND",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q80",
+      "sheet": "11_FoxPro",
+      "value": "BSS138BK TX open-drain",
+      "mpn": "BSS138BK,215",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "1G/2S/3D. Source permanently GND. SAFE supplies gate via1k; Q81 shunts gate when GPIO43 HIGH. SAFE LOW disconnects boot activity. True open drain with no base-collector bus injection.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_TX_B",
+        "2": "GND",
+        "3": "FOX_SINK"
+      }
+    },
+    {
+      "ref": "Q81",
+      "sheet": "11_FoxPro",
+      "value": "MMBT3904 hardware inhibit",
+      "mpn": "MMBT3904LT1G",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Grounded-emitter shunt of Q80 MOS gate: GPIO43 HIGH releases bus; GPIO43 LOW permits SAFE-qualified LOW.1B/2E/3C.",
+      "source_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_EN_B",
+        "2": "GND",
+        "3": "FOX_TX_B"
+      }
+    },
+    {
+      "ref": "R305",
+      "sheet": "11_FoxPro",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "GPIO43 to Q81 shunt base; HIGH releases bus.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_TX",
+        "2": "FOX_EN_B"
+      }
+    },
+    {
+      "ref": "R306",
+      "sheet": "11_FoxPro",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Strong off-state shunt:50uA hot leakage produces<=0.239V, below unpowered rail-diode conduction.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_EN_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R307",
+      "sheet": "11_FoxPro",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "SAFE-to-Q80 gate supply. Q81 pulls gate LOW when GPIO43 HIGH. SAFE LOW prevents boot activity from reaching bus; no emitter-gated NPN junction path.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "SAFE",
+        "2": "FOX_TX_B"
+      }
+    },
+    {
+      "ref": "R308",
+      "sheet": "11_FoxPro",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Strong off-state shunt:50uA hot leakage produces<=0.239V, below unpowered rail-diode conduction.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_TX_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q82",
+      "sheet": "11_FoxPro",
+      "value": "BSS138BK isolated-gate RX",
+      "mpn": "BSS138BK,215",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "60V NMOS,1G/2S/3D;47k/100k gate divider;12V gate clamp;3.3V drain pullup. Insulated gate avoids externally supplied base-collector backfeed. Interface inverts RX.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_RX_GATE",
+        "2": "GND",
+        "3": "FOX_RX"
+      }
+    },
+    {
+      "ref": "R309",
+      "sheet": "11_FoxPro",
+      "value": "47k",
+      "mpn": "RC0603FR-0747KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_DATA",
+        "2": "FOX_RX_GATE"
+      }
+    },
+    {
+      "ref": "R310",
+      "sheet": "11_FoxPro",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_RX_GATE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R311",
+      "sheet": "11_FoxPro",
+      "value": "160",
+      "mpn": "RC0603FR-07160RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "RX drain pullup160ohm/0.1W. With620ohm shunt gives valid3.3V-logic HIGH and a passive unpowered injection bound independent of MOS gate leakage.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "FOX_RX"
+      }
+    },
+    {
+      "ref": "R312",
+      "sheet": "11_FoxPro",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_DATA",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R313",
+      "sheet": "11_FoxPro_2",
+      "value": "0",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Voltage reporting disabled: bond TRS tip to FoxPro ground through populated0ohm link. No battery source. Both contacts share235ohm current-limited board return; legacy ADC remains near its own ground even under tip/ground fault.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_V_UNAVAILABLE",
+        "2": "FOX_GND"
+      }
+    },
+    {
+      "ref": "D81",
+      "sheet": "11_FoxPro_2",
+      "value": "BAS316 negative collector clamp",
+      "mpn": "BAS316,115",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "100V diode,1K/2A. Reverse rating exceeds70V port TVS clamp; negative collector fault limited by680ohm.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BAS316.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_SINK",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D82",
+      "sheet": "11_FoxPro_2",
+      "value": "BZX84-C12 gate clamp",
+      "mpn": "BZX84-C12,215",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "SOT23 pin1A/2NC/3K.12V gate-to-GND zener; negative forward clamp. No rail steering.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": null,
+        "3": "FOX_RX_GATE"
+      }
+    },
+    {
+      "ref": "D80",
+      "sheet": "11_FoxPro_2",
+      "value": "PESD1IVN24-A bidirectional TVS",
+      "mpn": "PESD1IVN24-AX",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "24V stand-off;42V maximum clamp at3.5A8/20us. SOD323 ordinary ESD protection; component rating is not board-level qualification.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_DATA",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D83",
+      "sheet": "11_FoxPro_2",
+      "value": "PESD1IVN24-A bidirectional TVS",
+      "mpn": "PESD1IVN24-AX",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "24V stand-off;42V maximum clamp at3.5A8/20us. SOD323 ordinary ESD protection; component rating is not board-level qualification.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_V_UNAVAILABLE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U80",
+      "sheet": "12_GPIO_expansion",
+      "value": "TCA9534APWR / 0x38",
+      "mpn": "TCA9534APWR",
+      "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "A2:A0=000 => seven-bit0x38. All P ports inputs at POR. No RF/safety signal on any port.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9534a.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 1.1,
+        "10": 1.1,
+        "20": 1.1
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "EXP_P0",
+        "5": "EXP_P1",
+        "6": "EXP_P2",
+        "7": "EXP_P3",
+        "8": "GND",
+        "9": "EXP_P4",
+        "10": "EXP_P5",
+        "11": "EXP_P6",
+        "12": "EXP_P7",
+        "13": null,
+        "14": "EXP_SCL",
+        "15": "EXP_SDA",
+        "16": "EXP_VDD"
+      }
+    },
+    {
+      "ref": "U81",
+      "sheet": "12_GPIO_expansion",
+      "value": "TCA9517DR optional bus buffer",
+      "mpn": "TCA9517DR",
+      "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "A upstream RTC bus, B downstream expansion. EN=EXP_VDD; internalVCCA/VCCB undervoltage isolation. No MCU_EN leakage path; no new upstream pullups. Optional peripheral, never an RF control.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9517.pdf",
+      "supplier": "Mouser EU (indexed observation)",
+      "supplier_part_number": "595-TCA9517DR",
+      "availability": "Mouser indexed stock6351..6900, MOQ1; unreserved",
+      "evidence": "OBSERVED_2026-10-18",
+      "price_breaks_eur": {
+        "1": 1.09,
+        "10": 0.809,
+        "20": 0.809
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "RTC80_SCL",
+        "3": "RTC80_SDA",
+        "4": "GND",
+        "5": "EXP_VDD",
+        "6": "EXP_SDA",
+        "7": "EXP_SCL",
+        "8": "EXP_VDD"
+      }
+    },
+    {
+      "ref": "R320",
+      "sheet": "12_GPIO_expansion",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_VDD",
+        "2": "EXP_SDA"
+      }
+    },
+    {
+      "ref": "R321",
+      "sheet": "12_GPIO_expansion",
+      "value": "4.7k",
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_VDD",
+        "2": "EXP_SCL"
+      }
+    },
+    {
+      "ref": "C80",
+      "sheet": "12_GPIO_expansion",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_VDD",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C81",
+      "sheet": "12_GPIO_expansion",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.02,
+        "10": 0.02,
+        "20": 0.02
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R322",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P0",
+        "2": "HDR_P0"
+      }
+    },
+    {
+      "ref": "R323",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P1",
+        "2": "HDR_P1"
+      }
+    },
+    {
+      "ref": "R324",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P2",
+        "2": "HDR_P2"
+      }
+    },
+    {
+      "ref": "R325",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P3",
+        "2": "HDR_P3"
+      }
+    },
+    {
+      "ref": "R326",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P4",
+        "2": "HDR_P4"
+      }
+    },
+    {
+      "ref": "R327",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P5",
+        "2": "HDR_P5"
+      }
+    },
+    {
+      "ref": "R328",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P6",
+        "2": "HDR_P6"
+      }
+    },
+    {
+      "ref": "R329",
+      "sheet": "12_GPIO_expansion",
+      "value": "1k",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Yageo RC0603 1%, 0.1W",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_P7",
+        "2": "HDR_P7"
+      }
+    },
+    {
+      "ref": "R330",
+      "sheet": "12_GPIO_expansion",
+      "value": "22",
+      "mpn": "RC2512FK-0722RL",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Nominal3.3V low-current header,10mA operating allocation.22ohm/1W limits3.6V short to166mA with<0.6W dissipation;10mA drop0.22V. No RF enable path.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.08,
+        "10": 0.08,
+        "20": 0.08
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_VDD",
+        "2": "HDR_3V3"
+      }
+    },
+    {
+      "ref": "J9",
+      "sheet": "12_GPIO_expansion",
+      "value": "GPIO / 3V3 ONLY / 10mA",
+      "mpn": "61301021121",
+      "footprint": "ARDF_CTL:PinHeader_2x05_P2.54mm_Vertical_L2",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Top view:1,3,5,7,9 left;2,4,6,8,10 right. 1..8=P0..P7,9 protected nominal3.3V,10GND.10mA accessory budget; each signal1k short limiter.",
+      "source_url": "https://www.we-online.com/components/products/datasheet/61301021121.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.35,
+        "10": 0.35,
+        "20": 0.35
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "HDR_P0",
+        "2": "HDR_P1",
+        "3": "HDR_P2",
+        "4": "HDR_P3",
+        "5": "HDR_P4",
+        "6": "HDR_P5",
+        "7": "HDR_P6",
+        "8": "HDR_P7",
+        "9": "HDR_3V3",
+        "10": "GND"
+      }
+    },
+    {
+      "ref": "JP1",
+      "sheet": "13_service_straps",
+      "value": "GPIO3 SERVICE ONLY / OPEN",
+      "mpn": "PCB solder bridge (no purchased part)",
+      "footprint": "ARDF_CTL:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_L2",
+      "group": "13_service_straps",
+      "population": "STRAP_SERVICE_DNP",
+      "note": "Normally open. No accessory in default build. GPIO45 changes flash voltage; GPIO46 input-only; GPIO3 JTAG strap. Closing link requires controlled service setup, accessories disconnected across reset.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "STRAP3",
+        "2": "ACCESS3"
+      }
+    },
+    {
+      "ref": "TP81",
+      "sheet": "13_service_straps",
+      "value": "GPIO3 AFTER OPEN LINK",
+      "mpn": "PCB pad (no purchased part)",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "13_service_straps",
+      "population": "STRAP_SERVICE_DNP",
+      "note": "Service access, not an unrestricted digital output.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "ACCESS3"
+      }
+    },
+    {
+      "ref": "JP3",
+      "sheet": "13_service_straps",
+      "value": "GPIO46 SERVICE ONLY / OPEN",
+      "mpn": "PCB solder bridge (no purchased part)",
+      "footprint": "ARDF_CTL:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_L2",
+      "group": "13_service_straps",
+      "population": "STRAP_SERVICE_DNP",
+      "note": "Normally open. No accessory in default build. GPIO45 changes flash voltage; GPIO46 input-only; GPIO3 JTAG strap. Closing link requires controlled service setup, accessories disconnected across reset.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "STRAP46",
+        "2": "ACCESS46"
+      }
+    },
+    {
+      "ref": "TP83",
+      "sheet": "13_service_straps",
+      "value": "GPIO46 AFTER OPEN LINK",
+      "mpn": "PCB pad (no purchased part)",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "group": "13_service_straps",
+      "population": "STRAP_SERVICE_DNP",
+      "note": "Service access, not an unrestricted digital output.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0,
+        "10": 0,
+        "20": 0
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "ACCESS46"
+      }
+    },
+    {
+      "ref": "U82",
+      "sheet": "12_GPIO_expansion",
+      "value": "LM66100DCKR reverse block",
+      "mpn": "LM66100DCKR",
+      "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "DCK6:1VIN2GND3CE4NC5ST6VOUT. CE=VOUT reverse-block comparator; no Schottky drop.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm66100.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.35
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND",
+        "3": "EXP_VDD",
+        "4": null,
+        "5": "GND",
+        "6": "EXP_VDD"
+      }
+    },
+    {
+      "ref": "D84",
+      "sheet": "11_FoxPro_2",
+      "value": "PESD1IVN24-A bidirectional TVS",
+      "mpn": "PESD1IVN24-AX",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "24V stand-off;42V maximum clamp at3.5A8/20us. SOD323 ordinary ESD protection; component rating is not board-level qualification.",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.05,
+        "10": 0.05,
+        "20": 0.05
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_GND",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R315",
+      "sheet": "11_FoxPro_2",
+      "value": "620",
+      "mpn": "RC0603FR-07620RL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "620ohm RX shunt: even the entire47k-limited16.8V fault current keeps unpowered GPIO below0.3V. Powered HIGH divider is validated including tolerance; no reliance on rail clamps.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_RX",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R331",
+      "sheet": "12_GPIO_expansion",
+      "value": "10k",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Defined option off-state leakage termination,10k toGND; no reliance on an unpowered IC as a rail bleeder.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R316",
+      "sheet": "11_FoxPro_2",
+      "value": "470",
+      "mpn": "RC2512FK-07470RL",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "Parallel withR314:235ohm ground fault limiter,2x1W. Both mandatory in FoxPro population; lower return drop preserves legacy LOW margin including FoxPro220ohm series resistor.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_GND",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C82",
+      "sheet": "12_GPIO_expansion",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Local100nF X7R bypass for relocated bus buffer or reverse-blocker input; no external supply source.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "EXP_VDD",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C83",
+      "sheet": "12_GPIO_expansion",
+      "value": "100n",
+      "mpn": "CL10B104KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "12_GPIO_expansion",
+      "population": "GPIO_OPTION",
+      "note": "Local100nF X7R bypass for relocated bus buffer or reverse-blocker input; no external supply source.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C84",
+      "sheet": "11_FoxPro_2",
+      "value": "10n",
+      "mpn": "CL10B103KB8NNNC",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "group": "11_FoxPro",
+      "population": "FOXPRO",
+      "note": "10nF local TX MOS gate filter; suppresses drain-gate transient coupling into SAFE. Approx8us gate RC, no timing-critical task on expander.",
+      "source_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B103KB8NNNC_Spec.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Unquoted / check before procurement",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.01,
+        "10": 0.01,
+        "20": 0.01
+      },
+      "moq": "OPEN",
+      "multiple": 1,
+      "pins": {
+        "1": "FOX_TX_B",
+        "2": "GND"
+      }
     }
   ],
   "placements": {
@@ -7137,6 +8497,364 @@
         "x": 80.01,
         "y": 223.52,
         "type": "PWR_FLAG"
+      }
+    ],
+    "11_FoxPro": [
+      {
+        "ref": "J8",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_J8"
+      },
+      {
+        "ref": "R300",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R301",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "R302",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R303",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R304",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R314",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "Q80",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "M6_Q80"
+      },
+      {
+        "ref": "Q81",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "M6_Q81"
+      },
+      {
+        "ref": "R305",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R306",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R307",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R308",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "Q82",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "M6_Q82"
+      },
+      {
+        "ref": "R309",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R310",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R311",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "R312",
+        "unit": 1,
+        "x": 439.42,
+        "y": 335.28000000000003,
+        "type": "R"
+      }
+    ],
+    "11_FoxPro_2": [
+      {
+        "ref": "R313",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "R"
+      },
+      {
+        "ref": "D81",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_D81"
+      },
+      {
+        "ref": "D82",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "M6_D82"
+      },
+      {
+        "ref": "D80",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "M6_D80"
+      },
+      {
+        "ref": "D83",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "M6_D83"
+      },
+      {
+        "ref": "R315",
+        "unit": 1,
+        "x": 440,
+        "y": 223,
+        "type": "R"
+      },
+      {
+        "ref": "R316",
+        "unit": 1,
+        "x": 400,
+        "y": 223,
+        "type": "R"
+      },
+      {
+        "ref": "C84",
+        "unit": 1,
+        "x": 480,
+        "y": 223,
+        "type": "C"
+      }
+    ],
+    "12_GPIO_expansion": [
+      {
+        "ref": "D90",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_D90"
+      },
+      {
+        "ref": "U80",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_U80"
+      },
+      {
+        "ref": "U81",
+        "unit": 1,
+        "x": 439.42,
+        "y": 54.61,
+        "type": "M6_U81"
+      },
+      {
+        "ref": "R320",
+        "unit": 1,
+        "x": 80.01,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "R321",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "R"
+      },
+      {
+        "ref": "C80",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "C"
+      },
+      {
+        "ref": "C81",
+        "unit": 1,
+        "x": 80.01,
+        "y": 166.37,
+        "type": "C"
+      },
+      {
+        "ref": "R322",
+        "unit": 1,
+        "x": 260.35,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R323",
+        "unit": 1,
+        "x": 439.42,
+        "y": 166.37,
+        "type": "R"
+      },
+      {
+        "ref": "R324",
+        "unit": 1,
+        "x": 80.01,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R325",
+        "unit": 1,
+        "x": 260.35,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R326",
+        "unit": 1,
+        "x": 439.42,
+        "y": 223.52,
+        "type": "R"
+      },
+      {
+        "ref": "R327",
+        "unit": 1,
+        "x": 80.01,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R328",
+        "unit": 1,
+        "x": 260.35,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R329",
+        "unit": 1,
+        "x": 439.42,
+        "y": 279.4,
+        "type": "R"
+      },
+      {
+        "ref": "R330",
+        "unit": 1,
+        "x": 80.01,
+        "y": 335.28000000000003,
+        "type": "R"
+      },
+      {
+        "ref": "J9",
+        "unit": 1,
+        "x": 260.35,
+        "y": 335.28000000000003,
+        "type": "M6_J9"
+      },
+      {
+        "ref": "R331",
+        "unit": 1,
+        "x": 440,
+        "y": 335,
+        "type": "R"
+      },
+      {
+        "ref": "C82",
+        "unit": 1,
+        "x": 400,
+        "y": 335,
+        "type": "R"
+      },
+      {
+        "ref": "C83",
+        "unit": 1,
+        "x": 360,
+        "y": 335,
+        "type": "R"
+      }
+    ],
+    "13_service_straps": [
+      {
+        "ref": "JP1",
+        "unit": 1,
+        "x": 80.01,
+        "y": 54.61,
+        "type": "M6_JP1"
+      },
+      {
+        "ref": "TP81",
+        "unit": 1,
+        "x": 260.35,
+        "y": 54.61,
+        "type": "M6_TP81"
+      },
+      {
+        "ref": "JP3",
+        "unit": 1,
+        "x": 260.35,
+        "y": 110.49,
+        "type": "M6_JP3"
+      },
+      {
+        "ref": "TP83",
+        "unit": 1,
+        "x": 439.42,
+        "y": 110.49,
+        "type": "M6_TP83"
       }
     ]
   }

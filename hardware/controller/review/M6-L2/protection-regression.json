@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "native_and_numeric_checks": [
+    {
+      "mutation": "missing_series_protection",
+      "detected": [
+        "R8.2:PACK_ID_SAFE"
+      ]
+    },
+    {
+      "mutation": "missing_shunt",
+      "detected": [
+        "R9.2:GND"
+      ]
+    },
+    {
+      "mutation": "unsafe_excitation_rail",
+      "detected": [
+        "R3.1:PACK_ID_EXC"
+      ]
+    },
+    {
+      "mutation": "fault_bypasses_switch",
+      "detected": [
+        "U21.5:PACK_ID_SAFE"
+      ]
+    },
+    {
+      "mutation": "wrong_USB_ESD_rail",
+      "detected": [
+        "U3.5:V3V3"
+      ]
+    },
+    {
+      "mutation": "wrong_USB_ground",
+      "detected": [
+        "U3.2:GND"
+      ]
+    },
+    {
+      "mutation": "RF80_connector_modified",
+      "detected": [
+        "connector:J4:3",
+        "all_pad:J4.3"
+      ]
+    },
+    {
+      "mutation": "ID_excitation_reverse_path",
+      "detected": [
+        "D22.1:PACK_PROT"
+      ]
+    },
+    {
+      "mutation": "negative_clamp_wrong_ground",
+      "detected": [
+        "D23.2:GND"
+      ]
+    },
+    {
+      "mutation": "unpowered_ADC_shunt_removed",
+      "detected": [
+        "R19.2:GND"
+      ]
+    },
+    {
+      "mutation": "protection_omitted_in_FOX_variant",
+      "detected": [
+        "R8:must_fit_all_base_variants"
+      ]
+    },
+    {
+      "mutation": "series_short",
+      "violating_voltage": 16.79949092451744
+    },
+    {
+      "mutation": "shunt_open",
+      "violating_voltage": 16.8
+    },
+    {
+      "mutation": "wrong_divider",
+      "violating_voltage": 16.30588235294118
+    },
+    {
+      "safe_fault": "unpowered_ID_fault",
+      "voltage": 2.6028169014084512
+    },
+    {
+      "safe_fault": "powered_ID_fault",
+      "voltage": 2.035242290748899
+    }
+  ],
+  "physical": "NOT_RUN"
+}

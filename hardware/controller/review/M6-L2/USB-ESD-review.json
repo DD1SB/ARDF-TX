@@ -1,0 +1,230 @@
+{
+  "classification": "Actual native geometry plus manufacturer application comparison; NOT an ESD qualification",
+  "selected": "Retain U3 pin5=V3V3; no schematic or USB-layout change",
+  "ST_reference": "DS4260 Rev7 Figure13 upstream3.3V transceiver, Figure14 VCC-bias example, sections2.1..2.3 rail-to-rail mechanism/short VCC-GND-I/O connections",
+  "routes": [
+    {
+      "from": "U3.5",
+      "to": "C10.1",
+      "net": "V3V3",
+      "full_segment_length_mm": 3.488477631085024,
+      "path": [
+        {
+          "uuid": "d3a070a8-0c07-4b47-95b4-4430f1f56335",
+          "kind": "pad",
+          "length_mm": 0
+        },
+        {
+          "uuid": "9215ae1d-d821-433a-ad20-bd81273cd9d1",
+          "kind": "track",
+          "length_mm": 0.7778174593052024
+        },
+        {
+          "uuid": "3b2eb562-dcb2-4650-a95d-e0b7441d6d4c",
+          "kind": "track",
+          "length_mm": 0.2
+        },
+        {
+          "uuid": "7702df09-1620-4611-bd7a-19ebe3699279",
+          "kind": "track",
+          "length_mm": 1.45
+        },
+        {
+          "uuid": "d71525c4-e72e-4caf-8c75-e2ea000687d2",
+          "kind": "track",
+          "length_mm": 1.0606601717798214
+        },
+        {
+          "uuid": "c962613e-5e41-475d-afc7-3cf9ddae6efc",
+          "kind": "pad",
+          "length_mm": 0
+        }
+      ]
+    },
+    {
+      "from": "J2.A6",
+      "to": "U3.1",
+      "net": "USB_DP_CONN",
+      "full_segment_length_mm": 9.522878668396267,
+      "path": [
+        {
+          "uuid": "409e56d8-d5da-4041-af76-d4847405bea1",
+          "kind": "pad",
+          "length_mm": 0
+        },
+        {
+          "uuid": "aa9d1dd4-e4b6-4d68-91f2-95db79c5a67f",
+          "kind": "track",
+          "length_mm": 1.1891
+        },
+        {
+          "uuid": "ce57a807-ec38-4dc6-8aac-f7818b1aff77",
+          "kind": "track",
+          "length_mm": 0.9727
+        },
+        {
+          "uuid": "aff3a829-1cac-4630-860f-116b210bcc02",
+          "kind": "via",
+          "length_mm": 1.6
+        },
+        {
+          "uuid": "d7a09589-3816-4878-826f-bfe61017707b",
+          "kind": "track",
+          "length_mm": 1.0549
+        },
+        {
+          "uuid": "06b44496-63f8-4140-bf4b-395232d205e4",
+          "kind": "track",
+          "length_mm": 1.9899399036151824
+        },
+        {
+          "uuid": "3429729f-ffb2-49ee-9d18-32ab450d113a",
+          "kind": "via",
+          "length_mm": 1.6
+        },
+        {
+          "uuid": "948b5f36-d157-4c95-a8e7-8a1fdfd0d995",
+          "kind": "track",
+          "length_mm": 1.1162387647810839
+        },
+        {
+          "uuid": "7e4825d0-ff5a-4272-92f9-08f2caa9f336",
+          "kind": "pad",
+          "length_mm": 0
+        }
+      ]
+    },
+    {
+      "from": "J2.A7",
+      "to": "U3.3",
+      "net": "USB_DM_CONN",
+      "full_segment_length_mm": 5.114121727491597,
+      "path": [
+        {
+          "uuid": "9f09442d-9dce-4f00-8b86-910fa88879d6",
+          "kind": "pad",
+          "length_mm": 0
+        },
+        {
+          "uuid": "16172f13-4c03-499a-bb38-7ebd7330c84b",
+          "kind": "track",
+          "length_mm": 0.3669884194358182
+        },
+        {
+          "uuid": "18c9b499-5d12-41e7-ae0e-2a45ea668398",
+          "kind": "track",
+          "length_mm": 0.4668
+        },
+        {
+          "uuid": "de2317bd-0ccd-465b-9b72-5f40ee471098",
+          "kind": "track",
+          "length_mm": 0.3870702520215161
+        },
+        {
+          "uuid": "2b040f38-393d-4a57-859a-1a0385eb812e",
+          "kind": "pad",
+          "length_mm": 0
+        },
+        {
+          "uuid": "ff483c14-d008-41cf-8619-7b9f08d6709d",
+          "kind": "track",
+          "length_mm": 1.4891
+        },
+        {
+          "uuid": "9901b69d-f26c-452a-832b-7979e70ebc10",
+          "kind": "track",
+          "length_mm": 2.4041630560342617
+        },
+        {
+          "uuid": "8d4ca13c-e20d-424e-8a79-6d82523f0d76",
+          "kind": "pad",
+          "length_mm": 0
+        }
+      ]
+    }
+  ],
+  "ground_returns": [
+    {
+      "pad": "U3.2",
+      "nearest_GND_via_distance_mm": 4.308004903664805,
+      "via_xy_mm": [
+        35.0,
+        41.2
+      ],
+      "qualification": "Distance only; F.Cu/B.Cu filled-ground continuity confirmed by DRC and IPC. Not a measured inductance."
+    },
+    {
+      "pad": "C10.2",
+      "nearest_GND_via_distance_mm": 1.2002603884157832,
+      "via_xy_mm": [
+        35.0,
+        41.2
+      ],
+      "qualification": "Distance only; F.Cu/B.Cu filled-ground continuity confirmed by DRC and IPC. Not a measured inductance."
+    }
+  ],
+  "capacitance": {
+    "C10_nominal_F": 1e-07,
+    "bounded_effective_design_scenario_F": 8e-08,
+    "rail_bulk_nominal_F": 4.4e-05,
+    "bulk_at_ns_edge": "Not credited through board inductance",
+    "charge_scenarios": [
+      {
+        "charge_C": 1e-09,
+        "ideal_C10_delta_V": 0.0125
+      },
+      {
+        "charge_C": 1e-08,
+        "ideal_C10_delta_V": 0.125
+      },
+      {
+        "charge_C": 1e-07,
+        "ideal_C10_delta_V": 1.25
+      }
+    ],
+    "warning": "Charge division is illustrative only; package TVS, diode current sharing and PCB Ldi/dt dominate IEC pulses. No guaranteed3.3V rail clamp at IEC stress."
+  },
+  "positive_current_path": "Connector data -> U3 upper steering diode -> local pin5/C10 rail -> internal transil and ground pin2; some charge may disturbV3V3. Main buck cannot be assumed to sink ESD.",
+  "negative_current_path": "LocalGND -> U3 lower steering diode -> data terminal; layout inductance adds residual voltage.",
+  "alternatives": {
+    "A_V3V3": "Selected; documented rail-to-rail mechanism and5.25V working rating; common rail stays biased when battery-powered. Does not charge absentUSB_VBUS via self-powered data pull-up.",
+    "B_raw_USB_VBUS": "Not selected; absentVBUS can be charged by self-powered D+ upper steering, interfering with GPIO37 VBUS detection; higher powered clamp bias and no demonstrated benefit.",
+    "C_rail_less_ESD": "Would avoid rail charge-sharing but requires new MPN/landing and residual-clamp review; no demonstrated steady-state defect in A justifies that change."
+  },
+  "unpowered_host": "Compliant host does not actively drive an unattached peripheral before pull-up. Host-signal misuse/3.3V regulator failure can inject through U3 intoV3V3; this is not an arbitrary-powered-off data isolation device. Verify attachment/reset/backfeed physically; no claim of zero leakage under an externally forced data line.",
+  "power_states": [
+    {
+      "battery": 0,
+      "USB_host": 0,
+      "V3V3": "0V",
+      "ESD_pin5": "same V3V3",
+      "RF_permission": "inhibited",
+      "PHY": "detach whileVBUS absent; otherwise software-controlled attach after reset"
+    },
+    {
+      "battery": 1,
+      "USB_host": 0,
+      "V3V3": "3.3V",
+      "ESD_pin5": "same V3V3",
+      "RF_permission": "requires valid pack/config/init/ARM",
+      "PHY": "detach whileVBUS absent; otherwise software-controlled attach after reset"
+    },
+    {
+      "battery": 0,
+      "USB_host": 1,
+      "V3V3": "3.3V",
+      "ESD_pin5": "same V3V3",
+      "RF_permission": "inhibited",
+      "PHY": "detach whileVBUS absent; otherwise software-controlled attach after reset"
+    },
+    {
+      "battery": 1,
+      "USB_host": 1,
+      "V3V3": "3.3V",
+      "ESD_pin5": "same V3V3",
+      "RF_permission": "requires valid pack/config/init/ARM",
+      "PHY": "detach whileVBUS absent; otherwise software-controlled attach after reset"
+    }
+  ],
+  "physical_tests": "IEC ESD, rail overshoot, enumeration/eye, hotplug and hostile external data injection NOT_RUN"
+}

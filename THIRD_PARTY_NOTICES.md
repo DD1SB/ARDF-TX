@@ -29,3 +29,5 @@ FreeRouting, KiCad and other installed verification/rendering programs remain
 external tools under their own licenses; their binaries are not supplied here.
 No claim is made to relicense external firmware, distributor catalogs or
 manufacturer CAD models not supplied in this repository.
+
+FoxPro2 compatibility in M6-L2 is independently written project code. Nick Roethe / DF1FO's original [FOXPRO2.asm](https://df1fo.darc.de/ASM/FOXPRO2.asm), [FJTX.asm](https://df1fo.darc.de/ASM/FJTX.asm) and [Zeitsteuerung2G.doc](https://df1fo.darc.de/DOC/Zeitsteuerung2G.doc) are external technical references, retain their original rights, and are not claimed to be MIT-licensed. Their complete contents and the manufacturer ESP32 STEP model are not redistributed here. The revision source register records reference URLs and retrieved hashes.

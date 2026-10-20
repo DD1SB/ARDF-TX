@@ -8,16 +8,21 @@ Historical reports and decision statuses have not been rewritten.
 
 | Board | Decision and design | BOM / sourcing | Bring-up and reproduction |
 | --- | --- | --- | --- |
-| Controller M6-L1 | [Decision](M6_L1_REVIEW_DECISION.md), [project](../hardware/controller/CTRL.kicad_pro), [review](../hardware/controller/review/M6-L1/README.md) | [Population BOMs](../hardware/controller/review/M6-L1/), [sourcing](../hardware/controller/review/M6-L1/SOURCING.md), [LoRa](M6_L1_LORA_VARIANTS.md) | [Bring-up](../hardware/controller/review/M6-L1/BRINGUP.md), [reproduce](../hardware/controller/review/M6-L1/REPRODUCE.md) |
+| Controller M6-L2, pending independent review | [Decision](M6_L2_REVIEW_DECISION.md), [project](../hardware/controller/CTRL.kicad_pro), [review](../hardware/controller/review/M6-L2/README.md) | [48 populations](../hardware/controller/review/M6-L2/population-variants.json), [sourcing](../hardware/controller/review/M6-L2/sourcing-index.json), [manufacturing](M6_L2_MANUFACTURING.md) | [Physical gates](M6_L2_REVIEW_DECISION.md), [reproduce](../hardware/controller/review/M6-L2/REPRODUCE.md) |
+| Controller M6-L1, previous independently reviewed baseline | [Decision](M6_L1_REVIEW_DECISION.md), [review](../hardware/controller/review/M6-L1/README.md) | [Population BOMs](../hardware/controller/review/M6-L1/), [sourcing](../hardware/controller/review/M6-L1/SOURCING.md), [LoRa](M6_L1_LORA_VARIANTS.md) | [Bring-up](../hardware/controller/review/M6-L1/BRINGUP.md), [reproduce](../hardware/controller/review/M6-L1/REPRODUCE.md) |
 | RF80 M4A-V1R1 | [Decision](M4A_V1R1_REVIEW_DECISION.md), [project](../hardware/80m/production/RF80_V1.kicad_pro), [review](../hardware/80m/production/review/M4A-V1R1/README.md) | [Review BOMs](../hardware/80m/production/review/M4A-V1R1/), [variant analysis](M4A_VARIANT_BOM.md) | [Bring-up](../hardware/80m/production/review/M4A-V1R1/BRINGUP.md), [reproduce](../hardware/80m/production/review/M4A-V1R1/REPRODUCE.md) |
 | RF2M M5B-E5 | [Decision](M5B_E5_REVIEW_DECISION.md), [project](../hardware/2m/RF2M.kicad_pro), [review](../hardware/2m/review/M5B-E5/README.md) | [Review BOMs/costs](../hardware/2m/review/M5B-E5/), [manufacturing](M5B_E5_MANUFACTURING.md) | [Bring-up](../hardware/2m/review/M5B-E5/BRINGUP.md), [reproduce](../hardware/2m/review/M5B-E5/REPRODUCE.md) |
 
 Current fabrication ZIPs and settings are in [Manufacturing data](../README.md#manufacturing-data).
-The controller ZIP's location in RF80's three-board handoff is intentional.
+The historical M6-L1 ZIP's location in RF80's three-board handoff is intentional.
 The [M7 audit](publication/M7/README.md) binds all three hashes without re-export.
+It describes the frozen M7 publication; M6-L2 has a separate current-controller review.
 
 ## Interfaces, safety and mechanics
 
+- M6-L2 [ESP32/antenna](M6_L2_ESP32_MODULE.md), [FoxPro2 protocol](M6_L2_FOXPRO2_PROTOCOL.md),
+  [FoxPro hardware/wiring](M6_L2_FOXPRO2_HARDWARE.md), [GPIO expansion/straps](M6_L2_GPIO_EXPANSION.md)
+  and [compatibility](M6_L2_COMPATIBILITY.md).
 - [Controller architecture](M6_C1_CONTROLLER_ARCHITECTURE.md),
   [RF interfaces](M6_C1_RF_INTERFACE.md), [power](M6_C1_POWER_AND_BATTERY.md),
   [RTC/timing](M6_C1_TIMING_AND_RTC.md), [safe states](M6_C1_SAFETY_AND_FAULTS.md).
@@ -54,7 +59,8 @@ targets. Supplier observations have dates and unquoted positions.
   original E4 HOLD evidence and source-joint correction. M5A-R3 restrictions remain.
 - [Controller C1](../hardware/controller/review/M6-C1/README.md) and
   [C1R1](../hardware/controller/review/M6-C1R1/README.md) retain electrical history.
-  M6-L1 is the current optional-LoRa closure.
+  M6-L1 is the previous independently reviewed optional-LoRa closure; M6-L2
+  preserves its radio interface and original electrical protections.
 
 Do not run old generators over current sources or overwrite historical reviews.
 See [contribution guidance](../CONTRIBUTING.md) and

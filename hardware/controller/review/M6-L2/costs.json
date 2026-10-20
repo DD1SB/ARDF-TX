@@ -1,0 +1,1265 @@
+{
+  "classification": "UNQUOTED planning estimates, not a fixed procurement total",
+  "currency_planning": "1USD=1EUR deliberately conservative accounting factor, not current FX; evaluate\u00b115% separately",
+  "quantities": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "variants": {
+    "FOX_MIN__NO_LORA__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 21.4566,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 21.4566,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 19.029,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 19.029,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__NO_LORA__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 25.6175,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 24.9375,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 22.0157,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 21.9597,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__NO_LORA__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 24.5809,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 23.5599,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 20.7363,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 20.7363,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__NO_LORA__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 27.8918,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 21.522,
+        "L2_component_planning_EUR": 27.0408,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 23.653,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 18.9876,
+        "L2_component_planning_EUR": 23.653,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_433__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 27.7604,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 27.7604,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 24.4019,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 24.4019,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_433__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 31.9213,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 31.2413,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 27.3886,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 27.3326,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_433__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 30.8847,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 29.8637,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 26.1092,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 26.1092,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_433__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 34.1956,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 33.3445,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 29.0259,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 29.0259,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_868__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 27.7604,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 27.7604,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 24.4019,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 24.4019,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_868__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 31.9213,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 31.2413,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 27.3886,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 27.3326,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_868__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 30.8847,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 29.8637,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 26.1092,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 26.1092,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "FOX_MIN__LORA_868__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 34.1956,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 27.8258,
+        "L2_component_planning_EUR": 33.3445,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 29.0259,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.3605,
+        "L2_component_planning_EUR": 29.0259,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__NO_LORA__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 21.7266,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 21.7266,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 19.299,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 19.299,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__NO_LORA__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 25.8875,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 25.2075,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 22.2857,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 22.2297,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__NO_LORA__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 24.8509,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 23.8299,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 21.0063,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 21.0063,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__NO_LORA__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 28.1618,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 21.792,
+        "L2_component_planning_EUR": 27.3108,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 23.923,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 19.2576,
+        "L2_component_planning_EUR": 23.923,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_433__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 28.0304,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 28.0304,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 24.6719,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 24.6719,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_433__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 32.1913,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 31.5113,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 27.6586,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 27.6026,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_433__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 31.1547,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 30.1337,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 26.3792,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 26.3792,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_433__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 34.4656,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 33.6146,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 29.2959,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 29.2959,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_868__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 28.0304,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 28.0304,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 24.6719,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 24.6719,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_868__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 32.1913,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 31.5113,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 27.6586,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 27.6026,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_868__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 31.1547,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 30.1337,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 26.3792,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 26.3792,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF80_FULL__LORA_868__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 34.4656,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 28.0958,
+        "L2_component_planning_EUR": 33.6146,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 29.2959,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6305,
+        "L2_component_planning_EUR": 29.2959,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__NO_LORA__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 21.7666,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 21.7666,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 19.339,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 19.339,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__NO_LORA__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 25.9275,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 25.2475,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 22.3257,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 22.2697,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__NO_LORA__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 24.8909,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 23.8699,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 21.0463,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 21.0463,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__NO_LORA__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 28.2018,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 21.832,
+        "L2_component_planning_EUR": 27.3508,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 23.963,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 19.2976,
+        "L2_component_planning_EUR": 23.963,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_433__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 28.0704,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 28.0704,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 24.7119,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 24.7119,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_433__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 32.2313,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 31.5513,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 27.6986,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 27.6426,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_433__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 31.1947,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 30.1737,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 26.4192,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 26.4192,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_433__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 34.5055,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 33.6546,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 29.3359,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 29.3359,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_868__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 28.0704,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 28.0704,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 24.7119,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 24.7119,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_868__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 32.2313,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 31.5513,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 27.6986,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 27.6426,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_868__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 31.1947,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 30.1737,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 26.4192,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 26.4192,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "RF2M_FULL__LORA_868__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 34.5055,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 28.1358,
+        "L2_component_planning_EUR": 33.6546,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 29.3359,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 24.6705,
+        "L2_component_planning_EUR": 29.3359,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__NO_LORA__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 25.3596,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 25.3596,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 22.38,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 22.38,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__NO_LORA__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 29.5205,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 28.8405,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 25.3667,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 25.3107,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__NO_LORA__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 28.4839,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 27.4629,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 24.0873,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 24.0873,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__NO_LORA__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 31.7948,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 25.425,
+        "L2_component_planning_EUR": 30.9438,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 27.004,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 22.3386,
+        "L2_component_planning_EUR": 27.004,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_433__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 31.6634,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 31.6634,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 27.7529,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 27.7529,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_433__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 35.8243,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 35.1442,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 30.7396,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 30.6836,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_433__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 34.7876,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 33.7666,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 29.4602,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 29.4602,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_433__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 38.0986,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 37.2476,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 32.3769,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 32.3769,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_868__BASE": {
+      "1": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 31.6634,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": -0.0654,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 31.6634,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 27.7529,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 0.0414,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 27.7529,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_868__GPIO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 4.0955,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 35.8243,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 3.4155,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 35.1442,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 3.0281,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 30.7396,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 2.9721,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 30.6836,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_868__FOXPRO": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 3.0589,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 34.7876,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 2.0379,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 33.7666,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 29.4602,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 1.7487,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 29.4602,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    },
+    "UNIVERSAL__LORA_868__BOTH": {
+      "1": {
+        "per_unit_added_component_planning_EUR": 6.3698,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 38.0986,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "5": {
+        "per_unit_added_component_planning_EUR": 5.5188,
+        "L1_same_population_reference_EUR": 31.7288,
+        "L2_component_planning_EUR": 37.2476,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "10": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 32.3769,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      },
+      "20": {
+        "per_unit_added_component_planning_EUR": 4.6654,
+        "L1_same_population_reference_EUR": 27.7115,
+        "L2_component_planning_EUR": 32.3769,
+        "classification": "ESTIMATE: indexed original currencies converted using planning factor1EUR/USD, not an exchange-rate quotation; excludes MOQ excess"
+      }
+    }
+  },
+  "excluded": [
+    "VAT, shipping, duty, assembly, spare parts, RF modules, antenna/cable, panel jack/harness, PCB and stencil",
+    "MOQ excess is separate in MOQ-purchase-model.csv"
+  ],
+  "bare_five_boards": "100x100mm2L standard process; obtain a fresh quotation only after independent review. No order or upload performed."
+}

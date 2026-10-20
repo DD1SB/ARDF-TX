@@ -1,0 +1,3197 @@
+{
+  "status": "CAD_NATIVE_PIN_AUDITED",
+  "components": [
+    {
+      "reference": "U10",
+      "MPN": "ESP32-S3-WROOM-1U-N4",
+      "source_url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "footprint": "ARDF_CTL:ESP32_S3_WROOM_1U_N4_L2",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "GND",
+          "xy_mm": [
+            41.25,
+            29.74
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "V3V3",
+          "xy_mm": [
+            41.25,
+            31.01
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "MCU_EN",
+          "xy_mm": [
+            41.25,
+            32.28
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "MODULE_ID_ADC",
+          "xy_mm": [
+            41.25,
+            33.55
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "PA_RAIL_ADC",
+          "xy_mm": [
+            41.25,
+            34.82
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "AF_PWM",
+          "xy_mm": [
+            41.25,
+            36.09
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "LEVEL_PWM",
+          "xy_mm": [
+            41.25,
+            37.36
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "LORA_BUSY",
+          "xy_mm": [
+            41.25,
+            38.63
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "9": {
+          "net": "LORA_DIO1",
+          "xy_mm": [
+            41.25,
+            39.9
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "net": "RF2M_SDA",
+          "xy_mm": [
+            41.25,
+            41.17
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "11": {
+          "net": "RF2M_SCL",
+          "xy_mm": [
+            41.25,
+            42.44
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "12": {
+          "net": "RTC80_SDA",
+          "xy_mm": [
+            41.25,
+            43.71
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "13": {
+          "net": "USB_DM",
+          "xy_mm": [
+            41.25,
+            44.98
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "14": {
+          "net": "USB_DP",
+          "xy_mm": [
+            41.25,
+            46.25
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "15": {
+          "net": "STRAP3",
+          "xy_mm": [
+            43.015,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "16": {
+          "net": "STRAP46",
+          "xy_mm": [
+            44.285,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "17": {
+          "net": "RTC80_SCL",
+          "xy_mm": [
+            45.555,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "18": {
+          "net": "LORA_NSS",
+          "xy_mm": [
+            46.825,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "19": {
+          "net": "SPI_MOSI",
+          "xy_mm": [
+            48.095,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "20": {
+          "net": "SPI_SCK",
+          "xy_mm": [
+            49.365,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "21": {
+          "net": "SPI_MISO",
+          "xy_mm": [
+            50.635,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "22": {
+          "net": "INIT_OK",
+          "xy_mm": [
+            51.905,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "23": {
+          "net": "RF2M_FAULT",
+          "xy_mm": [
+            53.175,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "24": {
+          "net": "KEY",
+          "xy_mm": [
+            54.445,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "25": {
+          "net": "SLOT",
+          "xy_mm": [
+            55.715,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "26": {
+          "net": "unconnected-(U10-26_GPIO45-Pad26)",
+          "xy_mm": [
+            56.985,
+            47.5
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "27": {
+          "net": "BOOT",
+          "xy_mm": [
+            58.75,
+            46.25
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "28": {
+          "net": "RF80_FAULT",
+          "xy_mm": [
+            58.75,
+            44.98
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "29": {
+          "net": "START_N",
+          "xy_mm": [
+            58.75,
+            43.71
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "30": {
+          "net": "USB_VBUS_N",
+          "xy_mm": [
+            58.75,
+            42.44
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "31": {
+          "net": "SHIFT_LATCH",
+          "xy_mm": [
+            58.75,
+            41.17
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "32": {
+          "net": "PROGRESS",
+          "xy_mm": [
+            58.75,
+            39.9
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "33": {
+          "net": "LORA_RESET",
+          "xy_mm": [
+            58.75,
+            38.63
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "34": {
+          "net": "ARM",
+          "xy_mm": [
+            58.75,
+            37.36
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "35": {
+          "net": "MUTE_RELEASE",
+          "xy_mm": [
+            58.75,
+            36.09
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "36": {
+          "net": "UART_RX",
+          "xy_mm": [
+            58.75,
+            34.82
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "37": {
+          "net": "UART_TX",
+          "xy_mm": [
+            58.75,
+            33.55
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "38": {
+          "net": "PACK_ID_ADC",
+          "xy_mm": [
+            58.75,
+            32.28
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "39": {
+          "net": "BAT_ADC",
+          "xy_mm": [
+            58.75,
+            31.01
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "40": {
+          "net": "GND",
+          "xy_mm": [
+            58.75,
+            29.74
+          ],
+          "size_mm": [
+            1.5,
+            0.9
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "41": {
+          "net": "GND",
+          "xy_mm": [
+            48.5,
+            37.46
+          ],
+          "size_mm": [
+            3.7,
+            3.7
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "J8",
+      "MPN": "B3B-PH-K-S(LF)(SN)",
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "footprint": "ARDF_CTL:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_GND",
+          "xy_mm": [
+            83.5,
+            26.0
+          ],
+          "size_mm": [
+            1.8,
+            1.9
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "2": {
+          "net": "FOX_DATA",
+          "xy_mm": [
+            85.5,
+            26.0
+          ],
+          "size_mm": [
+            1.8,
+            1.9
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "3": {
+          "net": "FOX_V_UNAVAILABLE",
+          "xy_mm": [
+            87.5,
+            26.0
+          ],
+          "size_mm": [
+            1.8,
+            1.9
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R300",
+      "MPN": "RC0603JR-070RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "UART_TX",
+          "xy_mm": [
+            63.675,
+            33.9032
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "REC_TX",
+          "xy_mm": [
+            65.325,
+            33.9032
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R301",
+      "MPN": "RC0603JR-070RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "UART_RX",
+          "xy_mm": [
+            67.175,
+            34.82
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "REC_RX",
+          "xy_mm": [
+            68.825,
+            34.82
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R302",
+      "MPN": "RC0603JR-070RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "UART_TX",
+          "xy_mm": [
+            74.0,
+            33.325
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_TX",
+          "xy_mm": [
+            74.0,
+            31.675
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R303",
+      "MPN": "RC0603JR-070RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "UART_RX",
+          "xy_mm": [
+            67.0,
+            34.575
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_RX",
+          "xy_mm": [
+            67.0,
+            32.925
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R304",
+      "MPN": "RC2512FK-07680RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_DATA",
+          "xy_mm": [
+            73.5375,
+            27.0
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_SINK",
+          "xy_mm": [
+            79.4625,
+            27.0
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R314",
+      "MPN": "RC2512FK-07470RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_GND",
+          "xy_mm": [
+            88.0,
+            38.4625
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            88.0,
+            32.5375
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "Q80",
+      "MPN": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_TX_B",
+          "xy_mm": [
+            64.95,
+            24.9375
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            63.05,
+            24.9375
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "FOX_SINK",
+          "xy_mm": [
+            64.0,
+            23.0625
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "Q81",
+      "MPN": "MMBT3904LT1G",
+      "source_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_EN_B",
+          "xy_mm": [
+            71.5625,
+            23.95
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            71.5625,
+            22.05
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "FOX_TX_B",
+          "xy_mm": [
+            73.4375,
+            23.0
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R305",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_TX",
+          "xy_mm": [
+            78.5,
+            31.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_EN_B",
+          "xy_mm": [
+            78.5,
+            30.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R306",
+      "MPN": "RC0603FR-074K7L",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_EN_B",
+          "xy_mm": [
+            67.0,
+            28.325
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            67.0,
+            26.675
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R307",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "SAFE",
+          "xy_mm": [
+            63.175,
+            27.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_TX_B",
+          "xy_mm": [
+            64.825,
+            27.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R308",
+      "MPN": "RC0603FR-074K7L",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_TX_B",
+          "xy_mm": [
+            57.675,
+            23.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            59.325,
+            23.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "Q82",
+      "MPN": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_RX_GATE",
+          "xy_mm": [
+            67.0625,
+            24.45
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            67.0625,
+            22.55
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "FOX_RX",
+          "xy_mm": [
+            68.9375,
+            23.5
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R309",
+      "MPN": "RC0603FR-0747KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_DATA",
+          "xy_mm": [
+            75.75,
+            24.075
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_RX_GATE",
+          "xy_mm": [
+            75.75,
+            22.425
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R310",
+      "MPN": "RC0603FR-07100KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_RX_GATE",
+          "xy_mm": [
+            89.675,
+            29.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            91.325,
+            29.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R311",
+      "MPN": "RC0603FR-07160RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            91.0,
+            27.325
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_RX",
+          "xy_mm": [
+            91.0,
+            25.675
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R312",
+      "MPN": "RC0603FR-07100KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_DATA",
+          "xy_mm": [
+            91.0,
+            23.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            91.0,
+            22.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R313",
+      "MPN": "RC0603JR-070RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_V_UNAVAILABLE",
+          "xy_mm": [
+            93.0,
+            23.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "FOX_GND",
+          "xy_mm": [
+            93.0,
+            22.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "D81",
+      "MPN": "BAS316,115",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BAS316.pdf",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_SINK",
+          "xy_mm": [
+            53.45,
+            22.5
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            55.55,
+            22.5
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "D82",
+      "MPN": "BZX84-C12,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf",
+      "footprint": "ARDF_CTL:SOT-23_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "GND",
+          "xy_mm": [
+            66.0625,
+            25.05
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "unconnected-(D82-NC-Pad2)",
+          "xy_mm": [
+            66.0625,
+            26.95
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "FOX_RX_GATE",
+          "xy_mm": [
+            67.9375,
+            26.0
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "D80",
+      "MPN": "PESD1IVN24-AX",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_DATA",
+          "xy_mm": [
+            84.95,
+            22.5
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            87.05,
+            22.5
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "D83",
+      "MPN": "PESD1IVN24-AX",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_V_UNAVAILABLE",
+          "xy_mm": [
+            91.95,
+            23.0
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            94.05,
+            23.0
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "U80",
+      "MPN": "TCA9534APWR",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9534a.pdf",
+      "footprint": "ARDF_CTL:TSSOP-16_4.4x5mm_P0.65mm_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "GND",
+          "xy_mm": [
+            43.1375,
+            26.775
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            43.1375,
+            26.125
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "GND",
+          "xy_mm": [
+            43.1375,
+            25.475
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "EXP_P0",
+          "xy_mm": [
+            43.1375,
+            24.825
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "EXP_P1",
+          "xy_mm": [
+            43.1375,
+            24.175
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "EXP_P2",
+          "xy_mm": [
+            43.1375,
+            23.525
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "EXP_P3",
+          "xy_mm": [
+            43.1375,
+            22.875
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "GND",
+          "xy_mm": [
+            43.1375,
+            22.225
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "9": {
+          "net": "EXP_P4",
+          "xy_mm": [
+            48.8625,
+            22.225
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "net": "EXP_P5",
+          "xy_mm": [
+            48.8625,
+            22.875
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "11": {
+          "net": "EXP_P6",
+          "xy_mm": [
+            48.8625,
+            23.525
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "12": {
+          "net": "EXP_P7",
+          "xy_mm": [
+            48.8625,
+            24.175
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "13": {
+          "net": "unconnected-(U80-13_INT_N-Pad13)",
+          "xy_mm": [
+            48.8625,
+            24.825
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "14": {
+          "net": "EXP_SCL",
+          "xy_mm": [
+            48.8625,
+            25.475
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "15": {
+          "net": "EXP_SDA",
+          "xy_mm": [
+            48.8625,
+            26.125
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "16": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            48.8625,
+            26.775
+          ],
+          "size_mm": [
+            1.475,
+            0.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "U81",
+      "MPN": "TCA9517DR",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tca9517.pdf",
+      "footprint": "ARDF_CTL:SOIC-8_3.9x4.9mm_P1.27mm_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            87.025,
+            51.405
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "RTC80_SCL",
+          "xy_mm": [
+            87.025,
+            50.135
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "RTC80_SDA",
+          "xy_mm": [
+            87.025,
+            48.865
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "GND",
+          "xy_mm": [
+            87.025,
+            47.595
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            91.975,
+            47.595
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "EXP_SDA",
+          "xy_mm": [
+            91.975,
+            48.865
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "EXP_SCL",
+          "xy_mm": [
+            91.975,
+            50.135
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            91.975,
+            51.405
+          ],
+          "size_mm": [
+            1.95,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R320",
+      "MPN": "RC0603FR-074K7L",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            95.825,
+            48.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "EXP_SDA",
+          "xy_mm": [
+            94.175,
+            48.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R321",
+      "MPN": "RC0603FR-074K7L",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            94.5,
+            51.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "EXP_SCL",
+          "xy_mm": [
+            94.5,
+            50.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "C80",
+      "MPN": "CL10B104KB8NNNC",
+      "source_url": "",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            48.5,
+            25.775
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            48.5,
+            24.225
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "C81",
+      "MPN": "CL10B104KB8NNNC",
+      "source_url": "",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            86.5,
+            44.275
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            86.5,
+            42.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R322",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P0",
+          "xy_mm": [
+            24.0,
+            31.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P0",
+          "xy_mm": [
+            24.0,
+            30.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R323",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P1",
+          "xy_mm": [
+            29.175,
+            36.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P1",
+          "xy_mm": [
+            30.825,
+            36.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R324",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P2",
+          "xy_mm": [
+            39.0,
+            33.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P2",
+          "xy_mm": [
+            39.0,
+            32.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R325",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P3",
+          "xy_mm": [
+            25.25,
+            59.075
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P3",
+          "xy_mm": [
+            25.25,
+            57.425
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R326",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P4",
+          "xy_mm": [
+            26.175,
+            32.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P4",
+          "xy_mm": [
+            27.825,
+            32.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R327",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P5",
+          "xy_mm": [
+            30.5,
+            32.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P5",
+          "xy_mm": [
+            30.5,
+            31.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R328",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P6",
+          "xy_mm": [
+            33.0,
+            32.825
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P6",
+          "xy_mm": [
+            33.0,
+            31.175
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R329",
+      "MPN": "RC0603FR-071KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_P7",
+          "xy_mm": [
+            24.175,
+            67.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_P7",
+          "xy_mm": [
+            25.825,
+            67.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R330",
+      "MPN": "RC2512FK-0722RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            36.0,
+            37.9625
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "HDR_3V3",
+          "xy_mm": [
+            36.0,
+            32.0375
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "J9",
+      "MPN": "61301021121",
+      "source_url": "https://www.we-online.com/components/products/datasheet/61301021121.pdf",
+      "footprint": "ARDF_CTL:PinHeader_2x05_P2.54mm_Vertical_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "HDR_P0",
+          "xy_mm": [
+            36.0,
+            25.5
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "2": {
+          "net": "HDR_P1",
+          "xy_mm": [
+            36.0,
+            22.96
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "3": {
+          "net": "HDR_P2",
+          "xy_mm": [
+            33.46,
+            25.5
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "4": {
+          "net": "HDR_P3",
+          "xy_mm": [
+            33.46,
+            22.96
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "5": {
+          "net": "HDR_P4",
+          "xy_mm": [
+            30.92,
+            25.5
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "6": {
+          "net": "HDR_P5",
+          "xy_mm": [
+            30.92,
+            22.96
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "7": {
+          "net": "HDR_P6",
+          "xy_mm": [
+            28.38,
+            25.5
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "8": {
+          "net": "HDR_P7",
+          "xy_mm": [
+            28.38,
+            22.96
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "9": {
+          "net": "HDR_3V3",
+          "xy_mm": [
+            25.84,
+            25.5
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        "10": {
+          "net": "GND",
+          "xy_mm": [
+            25.84,
+            22.96
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "JP1",
+      "MPN": "PCB solder bridge (no purchased part)",
+      "source_url": "",
+      "footprint": "ARDF_CTL:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "STRAP3",
+          "xy_mm": [
+            39.35,
+            39.0
+          ],
+          "size_mm": [
+            1.0,
+            1.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "ACCESS3",
+          "xy_mm": [
+            40.65,
+            39.0
+          ],
+          "size_mm": [
+            1.0,
+            1.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "TP81",
+      "MPN": "PCB pad (no purchased part)",
+      "source_url": "",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "ACCESS3",
+          "xy_mm": [
+            37.0,
+            40.25
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "JP3",
+      "MPN": "PCB solder bridge (no purchased part)",
+      "source_url": "",
+      "footprint": "ARDF_CTL:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "STRAP46",
+          "xy_mm": [
+            46.0,
+            43.65
+          ],
+          "size_mm": [
+            1.0,
+            1.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "ACCESS46",
+          "xy_mm": [
+            46.0,
+            42.35
+          ],
+          "size_mm": [
+            1.0,
+            1.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "TP83",
+      "MPN": "PCB pad (no purchased part)",
+      "source_url": "",
+      "footprint": "ARDF_CTL:TestPoint_Pad_D1.0mm_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "ACCESS46",
+          "xy_mm": [
+            32.0,
+            59.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "U82",
+      "MPN": "LM66100DCKR",
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm66100.pdf",
+      "footprint": "ARDF_CTL:SOT-363_SC-70-6_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            64.1625,
+            36.85
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            64.1625,
+            37.5
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            64.1625,
+            38.15
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "unconnected-(U82-NC-Pad4)",
+          "xy_mm": [
+            65.8375,
+            38.15
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "GND",
+          "xy_mm": [
+            65.8375,
+            37.5
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            65.8375,
+            36.85
+          ],
+          "size_mm": [
+            1.025,
+            0.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "D84",
+      "MPN": "PESD1IVN24-AX",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PESD1IVN24-A.pdf",
+      "footprint": "ARDF_CTL:D_SOD-323_L2",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_GND",
+          "xy_mm": [
+            90.0,
+            24.05
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            90.0,
+            21.95
+          ],
+          "size_mm": [
+            0.6,
+            0.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R315",
+      "MPN": "RC0603FR-07620RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_RX",
+          "xy_mm": [
+            91.175,
+            31.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            92.825,
+            31.5
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R331",
+      "MPN": "RC0603FR-0710KL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            66.175,
+            114.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            67.825,
+            114.0
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "R316",
+      "MPN": "RC2512FK-07470RL",
+      "source_url": "",
+      "footprint": "ARDF_CTL:R_2512_6332Metric_L2",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_GND",
+          "xy_mm": [
+            92.5375,
+            37.5
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            98.4625,
+            37.5
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "C82",
+      "MPN": "CL10B104KB8NNNC",
+      "source_url": "",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "EXP_VDD",
+          "xy_mm": [
+            96.25,
+            53.025
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            96.25,
+            51.475
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "C83",
+      "MPN": "CL10B104KB8NNNC",
+      "source_url": "",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "side": "F.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "V3V3",
+          "xy_mm": [
+            62.275,
+            37.75
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            60.725,
+            37.75
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    },
+    {
+      "reference": "C84",
+      "MPN": "CL10B103KB8NNNC",
+      "source_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B103KB8NNNC_Spec.pdf",
+      "footprint": "ARDF_CTL:C_0603_1608Metric_CTL",
+      "side": "B.Cu",
+      "pad_numbers": {
+        "1": {
+          "net": "FOX_TX_B",
+          "xy_mm": [
+            61.25,
+            27.275
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy_mm": [
+            61.25,
+            25.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "physical": "NOT_RUN"
+    }
+  ],
+  "critical_maps": "L2-native-negative-regression.json and ESP32-footprint-DXF-audit.json independently check actual package terminals.",
+  "exceptions": "Strap service links are PCB copper, not purchased components. Solid EP and stencil window choice explicitly documented. Existing baseline critical-map checks remain required."
+}

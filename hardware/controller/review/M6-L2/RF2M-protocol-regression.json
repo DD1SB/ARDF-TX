@@ -1,0 +1,179 @@
+{
+  "status": "PASS_READ_ONLY_NATIVE_LOGIC",
+  "logic": {
+    "combinations": 4096,
+    "scenarios": [
+      "arm_path0_profile0",
+      "watchdog_path0_profile0",
+      "mute_path0_profile0",
+      "i2c_stuck_low_path0_profile0",
+      "reset_path0_profile0",
+      "live_selection_path0_profile0",
+      "arm_path0_profile1",
+      "watchdog_path0_profile1",
+      "mute_path0_profile1",
+      "i2c_stuck_low_path0_profile1",
+      "reset_path0_profile1",
+      "live_selection_path0_profile1",
+      "arm_path1_profile0",
+      "watchdog_path1_profile0",
+      "mute_path1_profile0",
+      "i2c_stuck_low_path1_profile0",
+      "reset_path1_profile0",
+      "live_selection_path1_profile0",
+      "arm_path1_profile1",
+      "watchdog_path1_profile1",
+      "mute_path1_profile1",
+      "i2c_stuck_low_path1_profile1",
+      "reset_path1_profile1",
+      "live_selection_path1_profile1",
+      "normal_analog_fault",
+      "invalid_arm_key0_slot0_config0",
+      "invalid_arm_key0_slot1_config0",
+      "invalid_arm_key0_slot1_config1",
+      "invalid_arm_key1_slot0_config0",
+      "invalid_arm_key1_slot0_config1",
+      "invalid_arm_key1_slot1_config0",
+      "invalid_arm_key1_slot1_config1",
+      "keyed_AF_continuous_carrier_path0",
+      "keyed_AF_continuous_carrier_path1",
+      "reset_release_ARM_held_high",
+      "training_without_raw_PA_power",
+      "powered_source_configuration_ARM_SLOT_low",
+      "physical_normal_clock_bias_driver_controls_path0",
+      "physical_normal_clock_bias_driver_controls_path1"
+    ]
+  },
+  "preparation_truth_rows": [
+    {
+      "PREPARE": 0,
+      "SAFE_N": 0,
+      "MUTE_N": 0,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 0,
+      "MUTE_N": 0,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 0,
+      "MUTE_N": 1,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 0,
+      "MUTE_N": 1,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 1,
+      "MUTE_N": 0,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 1,
+      "MUTE_N": 0,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 1,
+      "MUTE_N": 1,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 0,
+      "SAFE_N": 1,
+      "MUTE_N": 1,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 0,
+      "MUTE_N": 0,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 0,
+      "MUTE_N": 0,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 0,
+      "MUTE_N": 1,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 0,
+      "MUTE_N": 1,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 1,
+      "MUTE_N": 0,
+      "PA_PREPARE": 0,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 1,
+      "MUTE_N": 0,
+      "PA_PREPARE": 1,
+      "SRC_ON": 0,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 1,
+      "MUTE_N": 1,
+      "PA_PREPARE": 0,
+      "SRC_ON": 1,
+      "CONV_EN": 0
+    },
+    {
+      "PREPARE": 1,
+      "SAFE_N": 1,
+      "MUTE_N": 1,
+      "PA_PREPARE": 1,
+      "SRC_ON": 1,
+      "CONV_EN": 1
+    }
+  ],
+  "physical_timing": "NOT_RUN",
+  "RF_source_files_modified": false
+}

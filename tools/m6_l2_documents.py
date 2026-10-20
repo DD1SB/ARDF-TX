@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+"""Review drawings/tables from native CAD, without third-party source copying."""
+import json,html,hashlib,subprocess
+import pcbnew as p
+from m6_l2_design import P,D,ROOT,BASE
+def write(n,s):(D/n).write_text(s)
+def main():
+ b=p.LoadBoard(str(P/'CTRL.kicad_pcb'));fs={f.GetReference():f for f in b.GetFootprints()};mm=p.ToMM
+ def xy(v):return [mm(v.x),mm(v.y)]
+ pin45=next(a for a in fs['U10'].Pads() if a.GetNumber()=='26')
+ write('GPIO45-access-limitation.json',json.dumps(dict(GPIO=45,module_pin=26,decision='NC, no accessory breakout',native_net=pin45.GetNetname(),reason='Dedicated normally-open jumper and probe pad could not be escaped locally past reviewed SPI/core copper with ordinary through-vias and service clearance. Preserve flash-voltage strap and existing core routes.',fitted_accessories_cannot_load_pin=pin45.GetNetname().startswith('unconnected-'),GPIO3_and_GPIO46='Normally open service links retained'),indent=2)+'\n')
+ b.BuildConnectivity();conn=b.GetConnectivity();seen=set();groups=[]
+ for item in [a for fp in b.GetFootprints() for a in fp.Pads() if a.GetNetname()=='GND']+[t for t in b.GetTracks() if t.GetNetname()=='GND']:
+  if item.m_Uuid.AsString() in seen:continue
+  group={t.m_Uuid.AsString():t for t in list(conn.GetConnectedItems(item))+[item]};seen.update(group)
+  groups.append(dict(items=len(group),component_terminals=sum(isinstance(t,p.PAD) for t in group.values()),vias=sum(t.GetClass()=='PCB_VIA' for t in group.values())))
+ assert len(groups)==1,groups
+ write('native-ground-connectivity.json',json.dumps(dict(status='PASS',ground_connected_components=groups,source='Actual KiCad connected pads, tracks, vias and filled planes; native DRC also requires zero unconnected items.'),indent=2)+'\n')
+ refs=['U10','J7','U70','J8','J9','J3','J2','J1','J4','J5','BT1','H1','H2','H3','H4','JP1','JP3','TP81','TP83']
+ geom={r:dict(at_mm=xy(fs[r].GetPosition()),side=b.GetLayerName(fs[r].GetLayer()),rotation=fs[r].GetOrientationDegrees(),pads=[dict(number=a.GetNumber(),at_mm=xy(a.GetPosition()),net=a.GetNetname()) for a in fs[r].Pads() if a.GetNumber()]) for r in refs}
+ write('mechanical-interface.json',json.dumps(dict(dimensions_mm=[100,100,1.6],anchors=geom,WiFi_port_mm=[56,31.01],WiFi_tool_radius_mm=5,WiFi_local_free_height_mm=8,LoRa_port_mm=[99.415,28.5],preferred_installation='Independently supported side-by-side boards with IDC cables, as accepted baseline; no common mounting-hole pattern assumed.',stacked_alternative='Independent carrier required. RF80 above controller:>=20mm spacing and removable upper assembly for connector servicing. RF2M above controller:>=40mm spacing to clear25.2mm downward cooling envelope plus controller components/service space; move antenna/cable outside heatsink projection. These are initial CAD envelope conditions, not an enclosure fit approval.',enclosure_and_coexistence='NOT_RUN'),indent=2)+'\n')
+ s=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750"><style>text{font:15px sans-serif;fill:#15212b}.small{font-size:12px}</style><rect width="1000" height="750" fill="white"/><text x="25" y="30">M6-L2 controller: native coordinates / antenna and cable access</text><g transform="translate(50,75) scale(5)"><rect width="100" height="100" fill="#ddf1e3" stroke="black" stroke-width=".3"/>']
+ for r in refs:
+  x,y=xy(fs[r].GetPosition());x-=20;y-=20
+  if r.startswith('H'):s.append(f'<circle cx="{x}" cy="{y}" r="1.6" fill="white" stroke="black" stroke-width=".2"/>')
+  else:s.append(f'<circle cx="{x}" cy="{y}" r=".5" fill="#183a50"/>')
+  s.append(f'<text x="{x+1}" y="{y-1}" style="font-size:2px">{r}</text>')
+ s+=['<circle cx="36" cy="11.01" r="5" fill="#62b5ff" fill-opacity=".3" stroke="#2678ab" stroke-width=".3"/><path d="M36,11 V-6" stroke="#2678ab" stroke-width=".5"/><text x="37" y="3" style="font-size:2px">2.4GHz coax north</text></g>',
+ '<text x="610" y="90">Separate antenna ports</text><text x="610" y="115" class="small">U10:2.4GHz Wi-Fi/Bluetooth, MHF I/U.FL.</text><text x="610" y="138" class="small">J7:optional LoRa433/868MHz, U.FL.</text><text x="610" y="168" class="small">5mm radius mating/tool area above U10.</text><text x="610" y="190" class="small">8mm local overhead clearance.</text><text x="610" y="212" class="small">1.13mm coax: start with>=6mm bend radius.</text><text x="610" y="234" class="small">Enclosure strain relief, no connector cable load.</text>',
+ '<text x="610" y="275">Optional headers on underside</text><text x="610" y="300" class="small">J8 keyed PH2.0; G / DATA / VOLTAGE N/A.</text><text x="610" y="322" class="small">J9 2x5/2.54mm; square pad1 identifies cable.</text><text x="610" y="344" class="small">Allow>=10mm below controller for headers.</text><text x="610" y="380" class="small">USB-C, battery, IDC, RTC, UART and mounts</text><text x="610" y="402" class="small">retain their baseline positions.</text>',
+ '<text x="35" y="620">Preferred: independently supported side-by-side controller/RF boards, IDC cables.</text><text x="35" y="648">Optional stacking needs an independent carrier: no common bolt pattern is assumed.</text><text x="35" y="676">RF80 above controller:>=20mm. RF2M above:>=40mm including25.2mm cooling projection.</text><text x="35" y="704">Remove upper board to service coax. Real antenna, harness, enclosure, RF and thermal fit: NOT_RUN.</text></svg>']
+ write('antenna-mechanical-review.svg',''.join(s))
+ write('FoxPro-TRS-continuity.svg','''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><style>text{font:17px sans-serif;fill:#182632}.s{font-size:14px}</style><rect width="1000" height="500" fill="white"/><text x="25" y="35">M6-L2 optional FoxPro2 cable: J8 contact numbers are PCB numbers</text><text x="30" y="85">Keyed JST PH J8</text><text x="360" y="85">Insulated panel TRS jack</text><text x="720" y="85">FoxPro2 cable plug</text><g stroke-width="3" fill="none"><path d="M55,145 H870" stroke="#485564"/><path d="M55,210 H870" stroke="#24779d"/><path d="M55,275 H870" stroke="#ae6838"/></g><g fill="white" stroke="black"><circle cx="50" cy="145" r="8"/><circle cx="50" cy="210" r="8"/><circle cx="50" cy="275" r="8"/></g><text x="75" y="135">1 G</text><text x="370" y="135">SLEEVE / S</text><text x="740" y="135">SLEEVE / S</text><text x="75" y="200">2 DATA</text><text x="370" y="200">RING / R</text><text x="740" y="200">RING / R</text><text x="75" y="265">3 V0</text><text x="370" y="265">TIP / T</text><text x="740" y="265">TIP / T</text><text x="30" y="330">VOLTAGE N/A for BOTH2S and4S. No battery or power rail is exported.</text><text x="30" y="365" class="s">Cross-reference: DF1FO Zeitsteuerung2G pp9/15 plug plus physical jack sketch;</text><text x="30" y="390" class="s">Reichelt EBS35 / Ledino KB3SPRS contact construction. Sleeve1; ring3; tip2.</text><text x="30" y="415" class="s">Switched terminals4/5 unused. Other jacks: identify T/R/S by inserted-plug continuity.</text><text x="30" y="450" class="s">Unpowered test required: S-S, R-R, T-T only; no cross shorts. Actual cable test NOT_RUN.</text><text x="30" y="477" class="s">J8 is PH2mm and is not the XH battery connector. FoxPro has its own battery.</text></svg>''')
+ # Tables make every newly selected physical package and pin number reviewable.
+ parts={x['ref']:x for x in json.loads((P/'CTRL.electrical.json').read_text())['parts']};old=json.loads(subprocess.check_output(['git','show',BASE+':hardware/controller/CTRL.electrical.json']));prev={z['ref'] for z in old['parts']}
+ audits=[]
+ for r,z in parts.items():
+  if (r in prev and r!='U10') or r.startswith('#'):continue
+  f=fs[r];audits.append(dict(reference=r,MPN=z['mpn'],source_url=z['source_url'],footprint=f.GetFPIDAsString(),side=b.GetLayerName(f.GetLayer()),pad_numbers={a.GetNumber():dict(net=a.GetNetname(),xy_mm=xy(a.GetPosition()),size_mm=xy(a.GetSize()),drill_mm=xy(a.GetDrillSize())) for a in f.Pads() if a.GetNumber()},physical='NOT_RUN'))
+ write('new-component-footprint-audit.json',json.dumps(dict(status='CAD_NATIVE_PIN_AUDITED',components=audits,critical_maps='L2-native-negative-regression.json and ESP32-footprint-DXF-audit.json independently check actual package terminals.',exceptions='Strap service links are PCB copper, not purchased components. Solid EP and stencil window choice explicitly documented. Existing baseline critical-map checks remain required.'),indent=2)+'\n')
+ print('Antenna/access, TRS continuity and native component audit drawings written')
+if __name__=='__main__':main()

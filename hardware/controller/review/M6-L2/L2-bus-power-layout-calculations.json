@@ -1,0 +1,133 @@
+{
+  "classification": "CALCULATED native geometry and explicit component/load scenarios; NOT physical qualification",
+  "native_sha256": "2d7a22b3e2991f22e7a22243ff0ce810e52bcec38fae6658edd631c6b9d22842",
+  "bus_frequency_Hz": 100000,
+  "capacitance_assumptions": {
+    "trace_pF_per_mm": 0.2,
+    "via_pF": 0.5,
+    "fixed_device_and_parasitic_pF_per_line": 50,
+    "external_I2C_cable": "None: header exposes GPIO, not I2C",
+    "status": "Conservative engineering allocation, not a measured/vendor-guaranteed board capacitance"
+  },
+  "nets": {
+    "RTC80_SCL": {
+      "trace_length_mm": 189.70994451899077,
+      "vias": 17,
+      "capacitance_scenario_pF": 96.44198890379815,
+      "rise_time_s": 4.0326499167305865e-07,
+      "standard_mode_limit_s": 1e-06
+    },
+    "RTC80_SDA": {
+      "trace_length_mm": 260.8491478659743,
+      "vias": 22,
+      "capacitance_scenario_pF": 113.16982957319487,
+      "rise_time_s": 4.732112112080112e-07,
+      "standard_mode_limit_s": 1e-06
+    },
+    "EXP_SCL": {
+      "trace_length_mm": 82.49031634973562,
+      "vias": 12,
+      "capacitance_scenario_pF": 72.49806326994712,
+      "rise_time_s": 3.031452504575703e-07,
+      "standard_mode_limit_s": 1e-06
+    },
+    "EXP_SDA": {
+      "trace_length_mm": 75.00039506483118,
+      "vias": 10,
+      "capacitance_scenario_pF": 70.00007901296624,
+      "rise_time_s": 2.9270011538683186e-07,
+      "standard_mode_limit_s": 1e-06
+    },
+    "EXP_VDD": {
+      "total_branched_trace_length_mm": 198.65693298396442,
+      "vias": 11,
+      "min_width_mm": 0.15,
+      "all_branches_in_series_85C_scenario_ohm": 0.8863461550490604,
+      "simultaneous_option_fault_allowance_A": 0.21,
+      "V3V3_input_min_V": 3.2505,
+      "LM66100_Ron_scenario_ohm": 0.08,
+      "protected_rail_min_scenario_V": 3.0475673074396976,
+      "buffer_B_minimum_V": 2.7
+    }
+  },
+  "decoupling": [
+    {
+      "capacitor": "C80",
+      "IC": "U80",
+      "pin": 16,
+      "straight_distance_mm": 1.0636758199752394,
+      "actual_pads_mm": [
+        [
+          48.5,
+          25.775
+        ],
+        [
+          48.8625,
+          26.775
+        ]
+      ]
+    },
+    {
+      "capacitor": "C81",
+      "IC": "U81",
+      "pin": 1,
+      "straight_distance_mm": 7.149302413522598,
+      "actual_pads_mm": [
+        [
+          86.5,
+          44.275
+        ],
+        [
+          87.025,
+          51.405
+        ]
+      ]
+    },
+    {
+      "capacitor": "C82",
+      "IC": "U81",
+      "pin": 8,
+      "straight_distance_mm": 4.571654514505666,
+      "actual_pads_mm": [
+        [
+          96.25,
+          53.025
+        ],
+        [
+          91.975,
+          51.405
+        ]
+      ]
+    },
+    {
+      "capacitor": "C83",
+      "IC": "U82",
+      "pin": 1,
+      "straight_distance_mm": 2.0910897278691754,
+      "actual_pads_mm": [
+        [
+          62.275,
+          37.75
+        ],
+        [
+          64.1625,
+          36.85
+        ]
+      ]
+    }
+  ],
+  "power": {
+    "regulator": "AP63203WU-7",
+    "IC_electrical_limit_A": 2,
+    "ESP32_allowance_A": 0.5,
+    "both_RF_logic_reservations_A": 0.3,
+    "LoRa_TX_A": 0.12,
+    "option_fault_allowance_A": 0.23,
+    "reserved_short_burst_A": 1.15,
+    "continuous_controller_budget_A": 0.4,
+    "header_operating_budget_A": 0.01,
+    "header_limiter_ohm": 22.0,
+    "policy": "Short burst is not continuous thermal approval. Keep existing USB-only WiFi/RF restrictions; accessory faults may invoke current limiting/reset and must remain fail-off.",
+    "physical": "NOT_RUN"
+  }
+}

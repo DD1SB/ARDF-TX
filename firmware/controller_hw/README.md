@@ -1,4 +1,4 @@
-# M6-L1 hardware contract foundation (M6-C1R1 electrical baseline)
+# M6-L2 hardware contract and FoxPro2 foundation
 
 This directory contains host-executable state/timer fixtures, the generated physical GPIO/shift-register contract and a small C waveform reference. It is not operating firmware and does not connect to hardware.
 
@@ -25,3 +25,7 @@ M6-C1R1 changes only pack identification: frontend revision2 uses protected-pack
 R1 PACK_ID uses27k pack-derived excitation,180k/33k protection and100k switched-side loading. Select calibrated ATTEN1/2.5dB on GPIO2; reject saturation and>=930mV before the interval decoder. External10k/22k identities remain. The example calibration record is not measured evidence and cannot be used as a production default. The10mV ID and100mV PACK_PROT error allowances require qualification across the intended temperature range.
 
 M6-L1 adds the optional-radio contract in `lora.py`: NONE, SX1262TR4_GC_433 or SX1262TR8_GC_868. Unknown/inconsistent band, antenna, commissioning, frequency/power or airtime evidence disables LoRa TX. A radio outage does not invalidate autonomous ARDF operation. The46 host tests retain all40 R1 tests. This is no LoRa protocol stack and sends no hardware commands. Exact assembly record, firmware bus locking and all physical RF behavior remain commissioning work.
+
+M6-L2 adds the independent C11 `foxpro2` frame/register/configuration core and a small `foxpro2_transport` GPIO/timer adapter. The suite now has 75 host tests, retaining all 46 previous tests. GPIO43 HIGH releases the optional bus; LOW requests a sink only when native hardware SAFE is qualified. GPIO44 receive is inverted. Physical population links select recovery UART or FoxPro; firmware cannot replace that assembly decision. The shared wire uses 1200 baud, a start bit, sixteen MSB-first bits and a stop bit, with direction-dependent nibble checksums.
+
+Application hooks must bind to the existing RTC, scheduler, atomic configuration store and arm/rearm controller. They validate before importing a program, never arm from time/configuration writes, and authorize/cancel bounded test transmission through the original protections. The supplied fixture exercises these hooks without hardware. The tick executor is a reference; complete-frame dispatch and a measured IRAM-safe timer/RMT implementation remain target integration work. Genuine FoxPro2 interoperability remains NOT_RUN. See [the protocol specification](../../docs/M6_L2_FOXPRO2_PROTOCOL.md) and [coverage](../../hardware/controller/review/M6-L2/TEST-COVERAGE.md).

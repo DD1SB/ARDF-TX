@@ -1,0 +1,9 @@
+{
+  "GPIO": 45,
+  "module_pin": 26,
+  "decision": "NC, no accessory breakout",
+  "native_net": "unconnected-(U10-26_GPIO45-Pad26)",
+  "reason": "Dedicated normally-open jumper and probe pad could not be escaped locally past reviewed SPI/core copper with ordinary through-vias and service clearance. Preserve flash-voltage strap and existing core routes.",
+  "fitted_accessories_cannot_load_pin": true,
+  "GPIO3_and_GPIO46": "Normally open service links retained"
+}

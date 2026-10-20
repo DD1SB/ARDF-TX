@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "mutations": [
+    {
+      "mutation": "0p8mm_special_stackup",
+      "detected": "standard_1p6mm"
+    },
+    {
+      "mutation": "small_annulus",
+      "detected": "via_annulus_design_minimum"
+    },
+    {
+      "mutation": "microdrill",
+      "detected": "no_premium_micro_drill_or_small_land"
+    },
+    {
+      "mutation": "premium_filled_via",
+      "detected": "no_premium_via_protection"
+    },
+    {
+      "mutation": "blind_via",
+      "detected": "ordinary_through_via"
+    },
+    {
+      "mutation": "thin_track",
+      "detected": "actual_track_width"
+    },
+    {
+      "mutation": "real_0p05mm_copper_gap",
+      "detected": "native_foreign_copper_clearance"
+    }
+  ]
+}
