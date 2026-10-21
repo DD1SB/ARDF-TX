@@ -1,0 +1,56 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Sensor fault cases completed 11.846896331207134 0.1 1.0
+Sensor fault cases completed 11.846896331207134 0.1 5.0
+Sensor fault cases completed 11.846896331207134 0.1 10.0
+Sensor fault cases completed 11.846896331207134 1.0 1.0
+Sensor fault cases completed 11.846896331207134 1.0 5.0
+Sensor fault cases completed 11.846896331207134 1.0 10.0
+Sensor fault cases completed 18.402409329709016 0.1 1.0
+Sensor fault cases completed 18.402409329709016 0.1 5.0
+Sensor fault cases completed 18.402409329709016 0.1 10.0
+Sensor fault cases completed 18.402409329709016 1.0 1.0
+Sensor fault cases completed 18.402409329709016 1.0 5.0
+Sensor fault cases completed 18.402409329709016 1.0 10.0
+02:03:42: Debug: Adding duplicate image handler for 'PNG file'
+02:03:42: Debug: Adding duplicate image handler for 'JPEG file'
+02:03:42: Debug: Adding duplicate image handler for 'TIFF file'
+02:03:42: Debug: Adding duplicate image handler for 'GIF file'
+02:03:42: Debug: Adding duplicate image handler for 'PNM file'
+02:03:42: Debug: Adding duplicate image handler for 'PCX file'
+02:03:42: Debug: Adding duplicate image handler for 'IFF file'
+02:03:42: Debug: Adding duplicate image handler for 'Windows icon file'
+02:03:42: Debug: Adding duplicate image handler for 'Windows cursor file'
+02:03:42: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+02:03:42: Debug: Adding duplicate image handler for 'TGA file'
+02:03:42: Debug: Adding duplicate image handler for 'XPM file'
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_sensor.py", line 122, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_sensor.py", line 117, in main
+    save('sensor-fault-results.json',dict(status='CONDITIONAL_TRANSFER_FUNCTION_NOT_QUALIFIED',cases=rows,
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_common.py", line 14, in save
+    (OUT/name).write_text(json.dumps(data,indent=2,allow_nan=False)+'\n')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

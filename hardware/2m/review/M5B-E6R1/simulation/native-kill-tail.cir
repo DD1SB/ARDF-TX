@@ -1,0 +1,15 @@
+* E6R1 native VPA passive tail after independent hard clamp/clock kill
+* Pass and RF sources removed. This checks only remaining native stored energy.
+C506 vpa 0 100n IC=7.2
+C634 vpa 0 330p IC=7.2
+R513 vpa 0 1k
+R511 vpa fb 18k
+R512 fb 0 10k
+.control
+tran 0.5u 2m uic
+let dissipated_power=v(vpa)*v(vpa)*(1/1000+1/28000)
+meas tran fall_to_100mV WHEN v(vpa)=0.1 FALL=1
+meas tran released_energy INTEG dissipated_power FROM=0 TO=0.002
+quit
+.endc
+.end

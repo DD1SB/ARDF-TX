@@ -1,0 +1,36 @@
+{
+  "sensor": "Murata NCP15XH103F03RC,0402,10k1%,B25/50=3380K1%,B25/85typ3434K",
+  "pullup_ohm": 33000,
+  "hot_reference_divider_ohm": [
+    191000,
+    10000
+  ],
+  "cold_reference_divider_ohm": [
+    22100,
+    191000
+  ],
+  "hot_nominal_C": 78.6248238870765,
+  "hot_input_threshold_V": 0.16417910447761194,
+  "cold_open_threshold_V": 2.95776630689817,
+  "hot_corner_C": [
+    73.29544405188165,
+    85.24376256189464
+  ],
+  "comparator": "TLV7034PWR pushpull; outputs1/7healthyHIGH,100kpulldowns;NAND->2N7002sinkHARD_OK_N;11GND4V3V3;8/14readiness",
+  "sensor_faults": {
+    "open": "HIGHwindowinhibit",
+    "short": "LOWwindowinhibit",
+    "unplugged": "HIGHwindowinhibit",
+    "detached_but_electrically_intact": "NOT inherently detectable; coupling proof and bounded PA energy still needed",
+    "plausible_stuck_resistance": "NOT inherently detectable by a simple window",
+    "missing_or_unpowered_comparator": "Four100koutputpulldowns->TEMP_BAD=1 andRF_NOT_READY=1; inhibits withoutfirmware",
+    "V3V3_loss": "Original brownout/default-off remains independent"
+  },
+  "corner_limitation": "B25/85typ is not a guaranteed tolerance curve;3380..3468K are explicit scenarios, not a guaranteed manufacturer bound. Ref/mounting drift need margin.87C uppertrip is a budget requiring qualification.",
+  "manufacturer_dissipation_mW_K_typ": {
+    "still_air_unmounted": 1.0,
+    "specified_mounted_test_board": 2.5
+  },
+  "manufacturer_installed_time_constant": "NOT_SPECIFIED; dissipation constants are not time constants",
+  "physical": "NOT_RUN"
+}

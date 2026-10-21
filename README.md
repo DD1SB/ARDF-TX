@@ -15,10 +15,12 @@ data. The RF designs and M6-L2 controller have independent CAD reviews. The fres
 controlled bare controller evaluation boards**. Physical qualification and release
 for operation remain pending. No PCB has been ordered or tested.
 
-RF2M manufacturing is temporarily **HOLD** pending the focused
-[M5B-E6 thermal/mechanical correction](docs/M5B_E6_REVIEW_DECISION.md).
-The E6 power/transient study is complete as analysis; its local PA thermal-path
-closure remains open, so no revised PCB or E6 fabrication candidate is released.
+RF2M manufacturing and revised-PCB implementation remain **HOLD** after the
+[M5B-E6R1 carrier-keying and PA-safety study](docs/M5B_E6R1_REVIEW_DECISION.md).
+Hybrid carrier keying substantially reduces modeled Morse-SPACE losses, but the
+local PA joint/sensor protection bound remains open. The preceding
+[E6 study](docs/M5B_E6_REVIEW_DECISION.md) is preserved; no revised PCB or new
+fabrication candidate is released.
 Controller M6-L2 and RF80 dispositions are unchanged.
 
 ## Hardware architecture
@@ -27,7 +29,7 @@ Controller M6-L2 and RF80 dispositions are unchanged.
 | --- | --- | --- | --- | --- | --- |
 | Common controller | **M6-L2 — ESP32 external antenna, FoxPro2 compatibility and optional GPIO expansion** / [`89f5a7d`](https://github.com/DD1SB/ARDF-TX/commit/89f5a7df6ccb4dec8fcea10e7c810a9981342ce4); previous baseline [`d94dabd`](https://github.com/DD1SB/ARDF-TX/commit/d94dabd0e40137dc44b2bb94f3707ad4636ca65f) | 100 × 100 mm | External-antenna ESP32-S3, RTC, USB-C, optional LoRa/FoxPro2/GPIO expansion and default-off interlocks | [CTRL.kicad_pro](hardware/controller/CTRL.kicad_pro) | [M6-L2](hardware/controller/review/M6-L2/README.md), previous [M6-L1](hardware/controller/review/M6-L1/README.md) |
 | 80 m RF | M4A-V1R1 / [`f86684b`](https://github.com/DD1SB/ARDF-TX/commit/f86684b9ef45eec3ca4ce52edcb62896a847f1d7) | 150 × 110 mm | Si5351, LM5134B, IRF610, Classic/Sprint profiles and independent Foxoring output | [RF80_V1.kicad_pro](hardware/80m/production/RF80_V1.kicad_pro) | [M4A-V1R1](hardware/80m/production/review/M4A-V1R1/README.md) |
-| 2 m RF | M5B-E5 native baseline, manufacturing HOLD / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Si5351, PHA-1+, PD54008L-E, sinusoidal drain AM and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | Preserved [M5B-E5](hardware/2m/review/M5B-E5/README.md); [E6 analysis HOLD](hardware/2m/review/M5B-E6/README.md) |
+| 2 m RF | M5B-E5 native baseline, manufacturing HOLD / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Si5351, PHA-1+, PD54008L-E, sinusoidal drain AM and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | Preserved [M5B-E5](hardware/2m/review/M5B-E5/README.md); [E6R1 analysis HOLD](hardware/2m/review/M5B-E6R1/README.md) |
 
 Both RF boards share a **140 × 100 mm four-point M3 mounting pattern**. The
 controller mounts independently and connects through short keyed IDC cables:

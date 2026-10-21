@@ -1,0 +1,41 @@
+{
+  "executed": "2026-10-21T02:11:48.129352+02:00",
+  "starting_commit": "85186204619edec32ad1bb2a3044bb55ea399658",
+  "branch": "m5b-e6-unified-heatsink",
+  "analysis_parent_HEAD": "85186204619edec32ad1bb2a3044bb55ea399658",
+  "host": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "kicad": "10.0.6",
+  "ngspice": "** ngspice-42 : Circuit level simulation program",
+  "numerical_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "tests": {
+    "E6": {
+      "tests": 25,
+      "passed": true,
+      "raw_log": "logs/reproduction-E6-tests.log"
+    },
+    "R1": {
+      "tests": 37,
+      "passed": true,
+      "raw_log": "logs/reproduction-R1-tests.log"
+    }
+  },
+  "normal_thermal_rows": 612,
+  "thermal_sensitivity_rows": 108,
+  "sensor_fault_cases": 288,
+  "healthy_sensor_cases": 18,
+  "linear_loop_cases": 51,
+  "linear_loop_stable": 49,
+  "system_power_scenarios": 486,
+  "starting_files_unchanged": 2831,
+  "source_guard": "PASS except explicitly permitted README.md/docs/README.md index updates",
+  "ERC_DRC": "NOT_RERUN; native CAD unchanged, previous E6/E5 evidence preserved",
+  "disposition": "HOLD_FOR_NATIVE_PCB_IMPLEMENTATION",
+  "physical": "NOT_RUN",
+  "fabrication": "NOT_CREATED",
+  "publication": "NO_PUSH_NO_TAG"
+}

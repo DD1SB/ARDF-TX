@@ -1,0 +1,43 @@
+test_01_MO_independent_units (__main__.R1.test_01_MO_independent_units) ... ok
+test_02_independent_five_identifiers (__main__.R1.test_02_independent_five_identifiers) ... ok
+test_03_integer_timer_native_semantics (__main__.R1.test_03_integer_timer_native_semantics) ... ok
+test_04_full_slot_durations_and_boundaries (__main__.R1.test_04_full_slot_durations_and_boundaries) ... ok
+test_05_beacon_is_not_twenty_percent (__main__.R1.test_05_beacon_is_not_twenty_percent) ... ok
+test_06_CW_ID_changes_finite_heat_timing (__main__.R1.test_06_CW_ID_changes_finite_heat_timing) ... ok
+test_07_E6_flat_device_losses_regress (__main__.R1.test_07_E6_flat_device_losses_regress) ... ok
+test_08_corrections_increase_real_consumption (__main__.R1.test_08_corrections_increase_real_consumption) ... ok
+test_09_source_domains_and_energy (__main__.R1.test_09_source_domains_and_energy) ... ok
+test_10_quiet_C_really_removes_PA_and_pass_heat (__main__.R1.test_10_quiet_C_really_removes_PA_and_pass_heat) ... ok
+test_11_BUCK_and_BOOST_are_distinct (__main__.R1.test_11_BUCK_and_BOOST_are_distinct) ... ok
+test_12_capacitor_packets_conserve (__main__.R1.test_12_capacitor_packets_conserve) ... ok
+test_13_warm_driver_is_not_cold_reservoir_start (__main__.R1.test_13_warm_driver_is_not_cold_reservoir_start) ... ok
+test_14_actual_waveform_integrals_all_architectures (__main__.R1.test_14_actual_waveform_integrals_all_architectures) ... ok
+test_15_edge_quadrature_convergence (__main__.R1.test_15_edge_quadrature_convergence) ... ok
+test_16_no_unshaped_output_outside_slot (__main__.R1.test_16_no_unshaped_output_outside_slot) ... ok
+test_17_same_mechanics_and_coupling_for_all_A_B_C (__main__.R1.test_17_same_mechanics_and_coupling_for_all_A_B_C) ... ./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+ok
+test_18_E6_transient_regression_on_identical_waveforms (__main__.R1.test_18_E6_transient_regression_on_identical_waveforms) ... ok
+test_19_sensor_observer_against_independent_matrix_exponential (__main__.R1.test_19_sensor_observer_against_independent_matrix_exponential) ... ok
+test_20_repeat_peak_not_sink_mass_shortcut (__main__.R1.test_20_repeat_peak_not_sink_mass_shortcut) ... ok
+test_21_RF_absorption_keeps_input_energy (__main__.R1.test_21_RF_absorption_keeps_input_energy) ... ok
+test_22_below_current_trip_does_not_prove_temperature (__main__.R1.test_22_below_current_trip_does_not_prove_temperature) ... ok
+test_23_sensor_lag_is_not_free (__main__.R1.test_23_sensor_lag_is_not_free) ... ok
+test_24_sensor_R_to_V_roundtrip (__main__.R1.test_24_sensor_R_to_V_roundtrip) ... ok
+test_25_window_open_short_disconnected (__main__.R1.test_25_window_open_short_disconnected) ... ok
+test_26_all_hardware_gate_truth_combinations (__main__.R1.test_26_all_hardware_gate_truth_combinations) ... ok
+test_27_missing_or_unpowered_sensor_IC_defaults_bad (__main__.R1.test_27_missing_or_unpowered_sensor_IC_defaults_bad) ... ok
+test_28_raised_cosine_reduces_far_offset_energy (__main__.R1.test_28_raised_cosine_reduces_far_offset_energy) ... ok
+test_29_loaded_loop_and_command_headroom (__main__.R1.test_29_loaded_loop_and_command_headroom) ... ok
+test_30_unloaded_loop_risk_is_not_hidden (__main__.R1.test_30_unloaded_loop_risk_is_not_hidden) ... ok
+test_31_native_critical_pin_nets_retained (__main__.R1.test_31_native_critical_pin_nets_retained) ... ok
+test_32_protection_and_history_guard (__main__.R1.test_32_protection_and_history_guard) ... ok
+test_33_continuous_beacon_period_is_word_not_minute (__main__.R1.test_33_continuous_beacon_period_is_word_not_minute) ... ok
+test_34_integrated_supply_domains_match (__main__.R1.test_34_integrated_supply_domains_match) ... ok
+test_35_solar_does_not_mutate_or_fake_electrical_power (__main__.R1.test_35_solar_does_not_mutate_or_fake_electrical_power) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 2.465s
+
+OK

@@ -1,0 +1,17 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_cooling.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_cooling.py", line 52, in main
+    seq,loads,energy=waveform('MO',8,period,period,'BUCK4S',1.,'C',periodic_word=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_thermal.py", line 20, in waveform
+    full,loads,_=waveform(text,wpm,3*duration,3*duration,pop,erp,architecture,edge,steps,eta,absorbed,supply_scale,beta)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r1_thermal.py", line 70, in waveform
+    for z in loads.values():assert abs(z['DC_input_W']-sum(z[k] for k in ['PA_W','pass_W','helper_W','other_PCB_W','connector_RF_W','storage_W']))<1e-9
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
