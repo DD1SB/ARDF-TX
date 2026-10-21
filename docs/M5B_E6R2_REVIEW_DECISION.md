@@ -1,11 +1,16 @@
 # M5B-E6R2 review decision
 
-**GO for five bare RF2M E6R2 evaluation boards.** This is an engineering
-candidate for independent review, not powered-operation or production acceptance.
-No boards/stencils were ordered, hardware energized, Git branch pushed or tag created.
+**GO for five bare RF2M E6R2 evaluation boards.** Independent engineering
+review, as reported by the project owner, found no concrete blocker for this
+evaluation scope. Physical RF, thermal and operational qualification remains
+**NOT_RUN**. No boards/stencils were ordered, hardware energized or acceptance
+tag created. This is not production acceptance.
 
 Starting `b48865fed332ced9257559e174f0b6fceaaec096`, branch `m5b-e6-unified-heatsink`.
-Final local commit is recorded by Git history. Native PCB SHA-256:
+Implementation commit: `2fff32131dd0f7da3c46fef47c04713a55df89d8`.
+The [final reproduction/publication record](M5B_E6R2_FINAL_PUBLICATION.md)
+separates fresh executed results from the independent review conclusion.
+Native PCB SHA-256:
 `0bdf01a6907b35927f6f1d9ad55acf9c7eb7e893835982afc9e9652c51417baf`.
 
 | Gate | Disposition | Evidence |

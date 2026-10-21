@@ -1,0 +1,18 @@
+{
+  "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "KiCad": "10.0.6",
+  "candidate": "2fff32131dd0f7da3c46fef47c04713a55df89d8",
+  "main_before": "256c64888b680f5152e92f035e2ea0676a83630a",
+  "toolchain_reference": "hardware/2m/review/M5B-E6R2/toolchain.json",
+  "packages": {
+    "cadquery": "2.8.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pillow": "13.0.0"
+  },
+  "ngspice_version": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+  "TI_model_SHA256": "516e3f6405b699003d94840520966d7599c6c3af37f37c69541f9ed7ae211fe6"
+}

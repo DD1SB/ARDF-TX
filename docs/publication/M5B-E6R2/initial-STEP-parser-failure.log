@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/tmp/m5b-e6r2-main-evidence/compare.py", line 83, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/tmp/m5b-e6r2-main-evidence/compare.py", line 58, in main
+    rows.append(entry(name,a,(NEW/name).read_bytes()))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/m5b-e6r2-main-evidence/compare.py", line 47, in entry
+    assert step(a)==step(b),('STEP_GEOMETRY_OR_TOPOLOGY_DIFFERENCE',name);kind='IDENTICAL_GEOMETRY_COLORS_TIMESTAMP_UUID_PRESENTATION_ORDER_ONLY'
+           ^^^^^^^
+  File "/tmp/m5b-e6r2-main-evidence/compare.py", line 30, in step
+    style={k for k,v in definitions.items()if re.match(r'\w+',v).group(0)in presentation}
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'group'

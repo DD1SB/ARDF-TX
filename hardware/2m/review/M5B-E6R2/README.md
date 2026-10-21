@@ -1,7 +1,15 @@
 # RF2M M5B-E6R2 evaluation review
 
-**GO for five bare evaluation PCBs**, subject to independent review. Powered/
-operational qualification remains NOT_RUN. No order,push,tag or release.
+**GO for five bare evaluation PCBs.** Independent engineering review reported
+no concrete blocker for that evaluation scope. Physical RF, thermal and
+operational qualification remains **NOT_RUN**. No boards or stencils have been
+ordered and no hardware energized. No acceptance tag or production release.
+
+The implementation is published as commit
+[`2fff321`](https://github.com/DD1SB/ARDF-TX/commit/2fff32131dd0f7da3c46fef47c04713a55df89d8).
+See the [final reproduction/publication record](../../../../docs/M5B_E6R2_FINAL_PUBLICATION.md)
+for the fresh verification run and publication scope. Existing implementation
+logs and gate records retain their original execution-time provenance.
 
 - [Decision](../../../../docs/M5B_E6R2_REVIEW_DECISION.md),[implementation](../../../../docs/M5B_E6R2_IMPLEMENTATION.md),[first article](../../../../docs/M5B_E6R2_FIRST_ARTICLE_TEST.md).
 - [Native project](../../RF2M.kicad_pro),[native snapshot](RF2M-M5B-E6R2-native.zip),[schematic PDF](RF2M.pdf),[netlist](RF2M.net.xml).

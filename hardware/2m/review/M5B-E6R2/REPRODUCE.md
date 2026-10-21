@@ -7,6 +7,14 @@ They record development provenance; regeneration starts from the reviewed
 native project. Older E5/E6/E6R1 packages are immutable and their old generation
 commands must not be directed at this updated project.
 
+The reviewed implementation is commit `2fff32131dd0f7da3c46fef47c04713a55df89d8`.
+The [publication record](../../../../docs/M5B_E6R2_FINAL_PUBLICATION.md) documents
+the later independent-review conclusion and a separate fresh reproduction run.
+The review generator writes implementation-time README/decision prose; run it
+in the disposable checkout and preserve the current publication documentation.
+Publication updates only documentation and its hash entries. Native sources,
+manufacturing archives and original numerical/CAD evidence remain unchanged.
+
 Executed environment: Linux x86_64,Python3.12.3,KiCad CLI/pcbnew10.0.6,
 ngspice42. Geometry/plot venv: CadQuery2.8.0,NumPy2.5.4,SciPy1.18.1,
 Matplotlib3.11.2,Pillow13.0.0,with system-site-packages for pcbnew.

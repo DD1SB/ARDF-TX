@@ -2,6 +2,8 @@
 
 The authoritative native project is[RF2M.kicad_pro](../hardware/2m/RF2M.kicad_pro).
 Current review package:[M5B-E6R2](../hardware/2m/review/M5B-E6R2/README.md).
+Independent review found no concrete blocker for five bare evaluation PCBs;
+see the [final reproduction/publication record](M5B_E6R2_FINAL_PUBLICATION.md).
 The[historical E5 dataset](../hardware/2m/review/M5B-E5/) remains unchanged.
 E6 and E6R1 analysis packages remain immutable historical HOLD evidence.
 

@@ -1,0 +1,297 @@
+[
+  {
+    "number": 1,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_checks.py",
+      "checks"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:52:37.491107+00:00",
+    "finished_UTC": "2026-10-21T17:52:53.386588+00:00",
+    "returncode": 0,
+    "log": "01-m5b_e6r2_checks-checks.log",
+    "log_SHA256": "b9c2d9e21e19f1a6803fceff0b07de3557ccb6d86d797190ff4925f77e9b69ab"
+  },
+  {
+    "number": 2,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_verify.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:52:53.387045+00:00",
+    "finished_UTC": "2026-10-21T17:52:59.412887+00:00",
+    "returncode": 0,
+    "log": "02-m5b_e6r2_verify.log",
+    "log_SHA256": "9f1cac3914d1958675deda8502b30caacc75e4e3e5a52c3cb1f2afc38cb2dc61"
+  },
+  {
+    "number": 3,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_checks.py",
+      "power"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:52:59.413554+00:00",
+    "finished_UTC": "2026-10-21T17:53:00.580313+00:00",
+    "returncode": 0,
+    "log": "03-m5b_e6r2_checks-power.log",
+    "log_SHA256": "a7cb6ae543f83353b58b6c7d7c11e033b4ead6473731099453b8aa9d65230be0"
+  },
+  {
+    "number": 4,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_ground_audit.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:53:00.580721+00:00",
+    "finished_UTC": "2026-10-21T17:54:54.978383+00:00",
+    "returncode": 0,
+    "log": "04-m5b_e6r2_ground_audit.log",
+    "log_SHA256": "dc5b233b2e059ac814857c2a89b6145ba1b0971c6248281d8f09b887d280d8da"
+  },
+  {
+    "number": 5,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_checks.py",
+      "source"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:54:54.978961+00:00",
+    "finished_UTC": "2026-10-21T17:54:57.906925+00:00",
+    "returncode": 0,
+    "log": "05-m5b_e6r2_checks-source.log",
+    "log_SHA256": "ecfdabc9a488fbdbeb42728b58080ecf903a12f0cabcb48d0622d8aa9f2d1a1e"
+  },
+  {
+    "number": 6,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_checks.py",
+      "dfm"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:54:57.907504+00:00",
+    "finished_UTC": "2026-10-21T17:55:11.828775+00:00",
+    "returncode": 0,
+    "log": "06-m5b_e6r2_checks-dfm.log",
+    "log_SHA256": "1b026ac5069e7075278ecc10c560f1557ec28ad4bf9ea6dcec4c3019b9a5ee2b"
+  },
+  {
+    "number": 7,
+    "command": [
+      "/tmp/m5b-e6r2-venv/bin/python",
+      "tools/m5b_e6r2_simulation.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:55:11.829412+00:00",
+    "finished_UTC": "2026-10-21T17:58:41.545209+00:00",
+    "returncode": 0,
+    "log": "07-m5b_e6r2_simulation.log",
+    "log_SHA256": "735559a01af7fd148b259f566249ba0b44672f6dcdfceeac629f720b3983a296"
+  },
+  {
+    "number": 8,
+    "command": [
+      "/tmp/m5b-e6r2-venv/bin/python",
+      "tools/m5b_e6r2_test_simulation.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:58:41.545722+00:00",
+    "finished_UTC": "2026-10-21T17:58:41.700063+00:00",
+    "returncode": 0,
+    "log": "08-m5b_e6r2_test_simulation.log",
+    "log_SHA256": "1fae0db9efc73e50eb06678780e5f782b612a51f0d620def2dd7e76545ff39fe"
+  },
+  {
+    "number": 9,
+    "command": [
+      "/tmp/m5b-e6r2-venv/bin/python",
+      "tools/m5b_e6r2_models.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:58:41.700496+00:00",
+    "finished_UTC": "2026-10-21T17:58:45.946592+00:00",
+    "returncode": 0,
+    "log": "09-m5b_e6r2_models.log",
+    "log_SHA256": "3f34408042243ebef8a128afc881805e76d4d4c923e79c87653c514ba741bc86"
+  },
+  {
+    "number": 10,
+    "command": [
+      "/tmp/m5b-e6r2-venv/bin/python",
+      "tools/m5b_e6r2_drawings.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:58:45.947064+00:00",
+    "finished_UTC": "2026-10-21T17:59:12.019288+00:00",
+    "returncode": 0,
+    "log": "10-m5b_e6r2_drawings.log",
+    "log_SHA256": "c46fc5cd4021485e3fb81ab2e04f8cc25a511def775e21ad1a81ede8b91ccc50"
+  },
+  {
+    "number": 11,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_delivery.py",
+      "bom"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:59:12.019798+00:00",
+    "finished_UTC": "2026-10-21T17:59:12.583414+00:00",
+    "returncode": 0,
+    "log": "11-m5b_e6r2_delivery-bom.log",
+    "log_SHA256": "ecfdabc9a488fbdbeb42728b58080ecf903a12f0cabcb48d0622d8aa9f2d1a1e"
+  },
+  {
+    "number": 12,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_checks.py",
+      "exports"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:59:12.583875+00:00",
+    "finished_UTC": "2026-10-21T17:59:26.332476+00:00",
+    "returncode": 0,
+    "log": "12-m5b_e6r2_checks-exports.log",
+    "log_SHA256": "220ba48598deac3aece2b965421b9dea81dbb29a090a023bb42af55d86e180d9"
+  },
+  {
+    "number": 13,
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "--rotate",
+      "325,0,25",
+      "-o",
+      "hardware/2m/review/M5B-E6R2/RF2M-3D.png",
+      "hardware/2m/RF2M.kicad_pcb"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:59:26.333163+00:00",
+    "finished_UTC": "2026-10-21T17:59:40.381007+00:00",
+    "returncode": 0,
+    "log": "13-kicad-render.log",
+    "log_SHA256": "1d0a2bc52996999c3ae19eef633774498e1e726762072484019f2d5e84ca6dbf"
+  },
+  {
+    "number": 14,
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "-o",
+      "hardware/2m/review/M5B-E6R2/RF2M-3D-top.png",
+      "hardware/2m/RF2M.kicad_pcb"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:59:40.381700+00:00",
+    "finished_UTC": "2026-10-21T17:59:54.404181+00:00",
+    "returncode": 0,
+    "log": "14-kicad-render.log",
+    "log_SHA256": "058f195165a8dd5491cb08680008607d085f4a059c4dd8e5408961d17025256e"
+  },
+  {
+    "number": 15,
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "render",
+      "--width",
+      "2000",
+      "--height",
+      "1550",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "--side",
+      "bottom",
+      "-o",
+      "hardware/2m/review/M5B-E6R2/RF2M-3D-bottom.png",
+      "hardware/2m/RF2M.kicad_pcb"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T17:59:54.404756+00:00",
+    "finished_UTC": "2026-10-21T18:00:04.401839+00:00",
+    "returncode": 0,
+    "log": "15-kicad-render.log",
+    "log_SHA256": "571e4c0719a7c72021feb3f9c7bc274cefb8f4c8b801c3b51f2a23eb0029cd1a"
+  },
+  {
+    "number": 16,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_reproduction.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T18:00:04.402645+00:00",
+    "finished_UTC": "2026-10-21T18:00:07.405499+00:00",
+    "returncode": 0,
+    "log": "16-m5b_e6r2_reproduction.log",
+    "log_SHA256": "7f82bb69d281a30a3ae37fe7beda685fa691260010a48cc83ada519274aab26f"
+  },
+  {
+    "number": 17,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_delivery.py",
+      "fabrication"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T18:00:07.406306+00:00",
+    "finished_UTC": "2026-10-21T18:00:08.824469+00:00",
+    "returncode": 0,
+    "log": "17-m5b_e6r2_delivery-fabrication.log",
+    "log_SHA256": "149e61c4a2c488742d5c9a1dff89a0bc02e6cff8116c3f52626dbba89218b3e1"
+  },
+  {
+    "number": 18,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_review.py"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T18:00:08.825284+00:00",
+    "finished_UTC": "2026-10-21T18:00:09.859385+00:00",
+    "returncode": 0,
+    "log": "18-m5b_e6r2_review.log",
+    "log_SHA256": "344996264b7cb2853b1c8ba26e852ebb1590d75269df5ef6254ff47b442252ae"
+  },
+  {
+    "number": 19,
+    "command": [
+      "/usr/bin/python3",
+      "tools/m5b_e6r2_delivery.py",
+      "inventory"
+    ],
+    "cwd": "/tmp/ardf-tx-e6r2-main-reproduction-20261021",
+    "started_UTC": "2026-10-21T18:00:09.860134+00:00",
+    "finished_UTC": "2026-10-21T18:00:10.630613+00:00",
+    "returncode": 0,
+    "log": "19-m5b_e6r2_delivery-inventory.log",
+    "log_SHA256": "f4da04a3ea936dd2d9568e5aaf9e505074d9c35d53ab907ae1e8cca292e833c3"
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/RF2M.pdf",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/RF2M.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-F_Cu.gtl'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-B_Cu.gbl'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-F_Paste.gtp'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-B_Paste.gbp'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-F_Silkscreen.gto'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-B_Silkscreen.gbo'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-F_Mask.gts'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-B_Mask.gbs'.\nPlotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-Edge_Cuts.gm1'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/",
+      "--format",
+      "excellon",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/drill-report.rpt",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-PTH.drl'\nCreated file '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-NPTH.drl'\nCreated file '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-PTH-drl_map.pdf'.\nCreated file '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/gerbers/RF2M-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/RF2M-logical.ipc",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Cu,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/top-copper.svg",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/top-copper.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/bottom-copper.svg",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/bottom-copper.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-top.svg",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-top.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--layers",
+      "B.Fab,B.Silkscreen,B.Mask,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-bottom.svg",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-bottom.svg'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "B.Fab,B.Silkscreen,B.Mask,Edge.Cuts",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-bottom.pdf",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-bottom.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-BOOST2S.pdf",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_BOOST2S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-BOOST2S.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-BOOST2S.csv",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_BOOST2S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-BOOST2S.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-BUCK4S.pdf",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_BUCK4S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-BUCK4S.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-BUCK4S.csv",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_BUCK4S_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-BUCK4S.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.Silkscreen,Edge.Cuts",
+      "--sketch-pads-on-fab-layers",
+      "--crossout-DNP-footprints-on-fab-layers",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-TRAIN_ONLY.pdf",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_TRAIN_ONLY_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/assembly-TRAIN_ONLY.pdf'.\nDone.\n",
+    "stderr": "",
+    "render_environment": null
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--exclude-dnp",
+      "-o",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-TRAIN_ONLY.csv",
+      "/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/RF2M_TRAIN_ONLY_export.tmp.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/tmp/ardf-tx-e6r2-main-reproduction-20261021/hardware/2m/review/M5B-E6R2/placement-TRAIN_ONLY.csv'.\n",
+    "stderr": "",
+    "render_environment": null
+  }
+]

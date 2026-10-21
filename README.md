@@ -15,13 +15,15 @@ data. The RF designs and M6-L2 controller have independent CAD reviews. The fres
 controlled bare controller evaluation boards**. Physical qualification and release
 for operation remain pending. No PCB has been ordered or tested.
 
-RF2M now has a local **M5B-E6R2 evaluation candidate** with carrier-keyed A2A,
-one shared heatsink and instrumented bring-up access. The
-[E6R2 decision](docs/M5B_E6R2_REVIEW_DECISION.md) concerns five bare evaluation
-boards, not powered or operational qualification. The earlier
+The current RF2M revision is **M5B-E6R2**, with carrier-keyed A2A,
+one shared heatsink and instrumented bring-up access. Independent engineering
+review found no concrete blocker for **five bare evaluation PCBs**. See the
+[E6R2 decision](docs/M5B_E6R2_REVIEW_DECISION.md) and
+[final reproduction](docs/M5B_E6R2_FINAL_PUBLICATION.md). Physical RF, thermal
+and operational qualification remains **NOT_RUN**. The earlier
 [E6](docs/M5B_E6_REVIEW_DECISION.md) and
 [E6R1](docs/M5B_E6R1_REVIEW_DECISION.md) HOLD studies remain preserved evidence.
-Controller M6-L2 and RF80 are unchanged. The candidate remains local; no board or stencil has been ordered.
+Controller M6-L2 and RF80 are unchanged. No board or stencil has been ordered.
 
 ## Hardware architecture
 
@@ -29,7 +31,7 @@ Controller M6-L2 and RF80 are unchanged. The candidate remains local; no board o
 | --- | --- | --- | --- | --- | --- |
 | Common controller | **M6-L2 — ESP32 external antenna, FoxPro2 compatibility and optional GPIO expansion** / [`89f5a7d`](https://github.com/DD1SB/ARDF-TX/commit/89f5a7df6ccb4dec8fcea10e7c810a9981342ce4); previous baseline [`d94dabd`](https://github.com/DD1SB/ARDF-TX/commit/d94dabd0e40137dc44b2bb94f3707ad4636ca65f) | 100 × 100 mm | External-antenna ESP32-S3, RTC, USB-C, optional LoRa/FoxPro2/GPIO expansion and default-off interlocks | [CTRL.kicad_pro](hardware/controller/CTRL.kicad_pro) | [M6-L2](hardware/controller/review/M6-L2/README.md), previous [M6-L1](hardware/controller/review/M6-L1/README.md) |
 | 80 m RF | M4A-V1R1 / [`f86684b`](https://github.com/DD1SB/ARDF-TX/commit/f86684b9ef45eec3ca4ce52edcb62896a847f1d7) | 150 × 110 mm | Si5351, LM5134B, IRF610, Classic/Sprint profiles and independent Foxoring output | [RF80_V1.kicad_pro](hardware/80m/production/RF80_V1.kicad_pro) | [M4A-V1R1](hardware/80m/production/review/M4A-V1R1/README.md) |
-| 2 m RF | **M5B-E6R2 local evaluation candidate**; previous E5 / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Carrier-keyed A2A, Si5351, PHA-1+, PD54008L-E, unified cooling and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | [E6R2](hardware/2m/review/M5B-E6R2/README.md); preserved [E5](hardware/2m/review/M5B-E5/README.md) |
+| 2 m RF | **M5B-E6R2 — reviewed evaluation candidate** / [`2fff321`](https://github.com/DD1SB/ARDF-TX/commit/2fff32131dd0f7da3c46fef47c04713a55df89d8); historical E5 / [`3b84366`](https://github.com/DD1SB/ARDF-TX/commit/3b84366caa985fac67fbdfbb60c4ede751b3a13e) | 150 × 110 mm | Carrier-keyed A2A, Si5351, PHA-1+, PD54008L-E, unified cooling and independent training output | [RF2M.kicad_pro](hardware/2m/RF2M.kicad_pro) | [E6R2](hardware/2m/review/M5B-E6R2/README.md); preserved [E5](hardware/2m/review/M5B-E5/README.md) |
 
 Both RF boards share a **140 × 100 mm four-point M3 mounting pattern**. The
 controller mounts independently and connects through short keyed IDC cables:
@@ -133,8 +135,13 @@ Authentic archives for **five individual bare evaluation boards** of each design
 | Controller M6-L2, GO for controlled bare evaluation | [ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip](hardware/controller/review/M6-L2/ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip) | [M6-L2](docs/M6_L2_MANUFACTURING.md), [decision](docs/M6_L2_REVIEW_DECISION.md) |
 | Controller M6-L1, preserved historical baseline | [CTRL_M6-L1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/three-board-order/CTRL_M6-L1_JLCPCB_5boards.zip) | [M6-L1](hardware/controller/review/M6-L1/MANUFACTURING.md) |
 | RF80 M4A-V1R1 | [RF80-V1R1_JLCPCB_5boards.zip](hardware/80m/production/review/M4A-V1R1/fabrication/RF80-V1R1_JLCPCB_5boards.zip) | [V1R1](docs/M4A_V1R1_MANUFACTURING.md) |
-| RF2M M5B-E6R2, five bare evaluation candidate | [RF2M-M5B-E6R2_JLCPCB_5boards.zip](hardware/2m/review/M5B-E6R2/fabrication/RF2M-M5B-E6R2_JLCPCB_5boards.zip) | [E6R2 manufacturing](docs/M5B_E6R2_MANUFACTURING.md), [full top stencil](hardware/2m/review/M5B-E6R2/fabrication/RF2M-M5B-E6R2_FULL_TOP_STENCIL.zip) |
+| RF2M M5B-E6R2, GO for five bare evaluation PCBs | [RF2M-M5B-E6R2_JLCPCB_5boards.zip](hardware/2m/review/M5B-E6R2/fabrication/RF2M-M5B-E6R2_JLCPCB_5boards.zip) | [E6R2 manufacturing](docs/M5B_E6R2_MANUFACTURING.md), [full top stencil](hardware/2m/review/M5B-E6R2/fabrication/RF2M-M5B-E6R2_FULL_TOP_STENCIL.zip) |
 | RF2M M5B-E5, preserved historical archive | [RF2M-M5B-E5_JLCPCB_5boards.zip](hardware/2m/review/M5B-E5/fabrication/RF2M-M5B-E5_JLCPCB_5boards.zip) | Historical [E5](docs/M5B_E5_MANUFACTURING.md); E6/E6R1 studies remain unchanged |
+
+RF2M E6R2 also includes the [mechanical STEP assembly](hardware/2m/review/M5B-E6R2/mechanical/complete-mechanical-stack.step),
+[mounting drawing](hardware/2m/review/M5B-E6R2/mechanical/dimensioned-mounting.pdf),
+[first-article test plan](docs/M5B_E6R2_FIRST_ARTICLE_TEST.md) and
+[review/reproduction evidence](hardware/2m/review/M5B-E6R2/README.md).
 
 The M6-L2 [full top-stencil ZIP](hardware/controller/review/M6-L2/ARDF_TX_CTRL_M6-L2_FULL_TOP_STENCIL.zip)
 includes optional SMD lands. Its contents and the bare-board archive were regenerated
