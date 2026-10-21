@@ -1,0 +1,4111 @@
+{
+  "date_accessed": "2026-10-21",
+  "currency": "USD",
+  "status": "Parts estimate with quoted core and explicit unquoted allowances; no purchase or JLC checkout",
+  "excludes": [
+    "shipping",
+    "tax",
+    "tariffs",
+    "PCB",
+    "stencil",
+    "assembly",
+    "battery",
+    "housing",
+    "wire",
+    "fixture",
+    "test/calibration labor"
+  ],
+  "variants": {
+    "MINI50-bench": {
+      "placed_parts_per_board": 74,
+      "costs": [
+        {
+          "boards": 5,
+          "total_USD": 80.04,
+          "per_board_USD": 16.01,
+          "unquoted_allowance_USD": 20.95,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 14.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 10.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.38,
+              "extended_USD": 1.9,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.61,
+              "extended_USD": 3.05,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 4.5,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 100,
+              "excess": 80,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.36,
+              "extended_USD": 1.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.0569,
+              "extended_USD": 1.138,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 20,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.5207,
+              "extended_USD": 2.6035,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.448,
+              "extended_USD": 2.24,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 65,
+              "buy": 100,
+              "excess": 35,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07100RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 40,
+              "buy": 100,
+              "excess": 60,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R50 R51 R52 R53 R54",
+              "per_board": 5,
+              "needed": 25,
+              "buy": 100,
+              "excess": 75,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 4.75,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 2.33,
+              "extended_USD": 11.65,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.1,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9925,
+              "extended_USD": 4.9625,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        },
+        {
+          "boards": 12,
+          "total_USD": 170.8,
+          "per_board_USD": 14.23,
+          "unquoted_allowance_USD": 43.9,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 35.52,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 24.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.08,
+              "extended_USD": 3.2,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.262,
+              "extended_USD": 3.144,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.528,
+              "extended_USD": 6.336,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 10.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 100,
+              "excess": 52,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.31,
+              "extended_USD": 3.72,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.0569,
+              "extended_USD": 2.276,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 50,
+              "excess": 2,
+              "unit_USD": 0.08,
+              "extended_USD": 4.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.12,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.12,
+              "extended_USD": 3.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.4123,
+              "extended_USD": 4.9476,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.414,
+              "extended_USD": 4.968,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 156,
+              "buy": 200,
+              "excess": 44,
+              "unit_USD": 0.005,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07100RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 96,
+              "buy": 100,
+              "excess": 4,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R50 R51 R52 R53 R54",
+              "per_board": 5,
+              "needed": 60,
+              "buy": 100,
+              "excess": 40,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 11.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 1.718,
+              "extended_USD": 20.616,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.1,
+              "extended_USD": 2.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.8432,
+              "extended_USD": 10.1184,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        }
+      ]
+    },
+    "FOX10-bench": {
+      "placed_parts_per_board": 74,
+      "costs": [
+        {
+          "boards": 5,
+          "total_USD": 80.04,
+          "per_board_USD": 16.01,
+          "unquoted_allowance_USD": 20.95,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 14.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 10.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.38,
+              "extended_USD": 1.9,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.61,
+              "extended_USD": 3.05,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 4.5,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 100,
+              "excess": 80,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.36,
+              "extended_USD": 1.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.0569,
+              "extended_USD": 1.138,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 20,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.5207,
+              "extended_USD": 2.6035,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.448,
+              "extended_USD": 2.24,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 65,
+              "buy": 100,
+              "excess": 35,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07560RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 40,
+              "buy": 100,
+              "excess": 60,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R50 R51 R52 R53 R54",
+              "per_board": 5,
+              "needed": 25,
+              "buy": 100,
+              "excess": 75,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 4.75,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 2.33,
+              "extended_USD": 11.65,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.1,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9925,
+              "extended_USD": 4.9625,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        },
+        {
+          "boards": 12,
+          "total_USD": 170.8,
+          "per_board_USD": 14.23,
+          "unquoted_allowance_USD": 43.9,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 35.52,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 24.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.08,
+              "extended_USD": 3.2,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.262,
+              "extended_USD": 3.144,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.528,
+              "extended_USD": 6.336,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 10.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 100,
+              "excess": 52,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.31,
+              "extended_USD": 3.72,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.0569,
+              "extended_USD": 2.276,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 50,
+              "excess": 2,
+              "unit_USD": 0.08,
+              "extended_USD": 4.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.12,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.12,
+              "extended_USD": 3.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.4123,
+              "extended_USD": 4.9476,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.414,
+              "extended_USD": 4.968,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 156,
+              "buy": 200,
+              "excess": 44,
+              "unit_USD": 0.005,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07560RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 96,
+              "buy": 100,
+              "excess": 4,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R50 R51 R52 R53 R54",
+              "per_board": 5,
+              "needed": 60,
+              "buy": 100,
+              "excess": 40,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 11.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 1.718,
+              "extended_USD": 20.616,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.1,
+              "extended_USD": 2.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.8432,
+              "extended_USD": 10.1184,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        }
+      ]
+    },
+    "MINI50-wire-initial": {
+      "placed_parts_per_board": 75,
+      "costs": [
+        {
+          "boards": 5,
+          "total_USD": 99.24,
+          "per_board_USD": 19.85,
+          "unquoted_allowance_USD": 29.25,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 14.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-222XJRC",
+              "refs": "L30",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 5.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-222/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 10.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-472XJRC",
+              "refs": "L33",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 1.5,
+              "extended_USD": 7.5,
+              "supplier": "OPEN",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/",
+              "breaks_USD": {
+                "1": 1.5
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "1812LS-333XJRC",
+              "refs": "L31",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 1.18,
+              "extended_USD": 5.9,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1812LS-333XJRC?qs=lc2O%252BfHJPVbUeCCXE6deKw%3D%3D",
+              "breaks_USD": {
+                "1": 1.18,
+                "10": 0.99,
+                "25": 0.908
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "397 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.38,
+              "extended_USD": 1.9,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.61,
+              "extended_USD": 3.05,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 4.5,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 100,
+              "excess": 80,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.36,
+              "extended_USD": 1.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 15,
+              "buy": 20,
+              "excess": 5,
+              "unit_USD": 0.0569,
+              "extended_USD": 1.138,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 20,
+              "buy": 20,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H471JA01D",
+              "refs": "C30",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.08,
+              "extended_USD": 0.8,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 10,
+              "excess": 0,
+              "unit_USD": 0.12,
+              "extended_USD": 1.2,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.5207,
+              "extended_USD": 2.6035,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.448,
+              "extended_USD": 2.24,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 65,
+              "buy": 100,
+              "excess": 35,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07100RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 40,
+              "buy": 100,
+              "excess": 60,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 100,
+              "excess": 95,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R52 R54",
+              "per_board": 2,
+              "needed": 10,
+              "buy": 100,
+              "excess": 90,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 4.75,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 2.33,
+              "extended_USD": 11.65,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 10,
+              "excess": 5,
+              "unit_USD": 0.1,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 5,
+              "buy": 5,
+              "excess": 0,
+              "unit_USD": 0.9925,
+              "extended_USD": 4.9625,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        },
+        {
+          "boards": 12,
+          "total_USD": 214.28,
+          "per_board_USD": 17.86,
+          "unquoted_allowance_USD": 63.5,
+          "basket": [
+            {
+              "mpn": "1008LS-102XJRC",
+              "refs": "L20 L23",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.48,
+              "extended_USD": 35.52,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC",
+              "breaks_USD": {
+                "1": 1.48
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1134 shown; no unobserved quantity discount assumed",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-222XJRC",
+              "refs": "L30",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 12.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-222/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-332XJRC",
+              "refs": "L21 L22",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 24,
+              "excess": 0,
+              "unit_USD": 1.0,
+              "extended_USD": 24.0,
+              "supplier": "Coilcraft direct",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/",
+              "breaks_USD": {
+                "1": 1.0,
+                "200": 0.78
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "catalog price; selected stock requires confirmation; cut tape no leader service",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "1008LS-472XJRC",
+              "refs": "L33",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 1.5,
+              "extended_USD": 18.0,
+              "supplier": "OPEN",
+              "url": "https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/",
+              "breaks_USD": {
+                "1": 1.5
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "1812LS-333XJRC",
+              "refs": "L31",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.99,
+              "extended_USD": 11.88,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Coilcraft/1812LS-333XJRC?qs=lc2O%252BfHJPVbUeCCXE6deKw%3D%3D",
+              "breaks_USD": {
+                "1": 1.18,
+                "10": 0.99,
+                "25": 0.908
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "397 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "2N7002,215",
+              "refs": "Q3 Q5 Q6",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.08,
+              "extended_USD": 3.2,
+              "supplier": "OPEN",
+              "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "74HCT240PW,118",
+              "refs": "U5",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.262,
+              "extended_USD": 3.144,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D",
+              "breaks_USD": {
+                "1": 0.38,
+                "10": 0.262,
+                "25": 0.234
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4580 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ABS07-32.768KHZ-T",
+              "refs": "Y1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.528,
+              "extended_USD": 6.336,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D",
+              "breaks_USD": {
+                "1": 0.61,
+                "10": 0.528,
+                "25": 0.479
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "cut tape; alternate Symmetry .61/.53",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "ATTINY1616-MNR",
+              "refs": "U3",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.9,
+              "extended_USD": 10.8,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D",
+              "breaks_USD": {
+                "1": 0.9,
+                "25": 0.872
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "16509 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CL05B104KO5NNNC",
+              "refs": "C6 C11 C12 C15",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 100,
+              "excess": 52,
+              "unit_USD": 0.0045,
+              "extended_USD": 0.45,
+              "supplier": "LCSC C1525",
+              "url": "https://www.lcsc.com/de/product-detail/C1525.html",
+              "breaks_USD": {
+                "100": 0.0045,
+                "1000": 0.0034
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "millions shown; locale price varies",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "CX3225FB25000F0FZZH1",
+              "refs": "Y2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.31,
+              "extended_USD": 3.72,
+              "supplier": "Mouser",
+              "url": "https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D",
+              "breaks_USD": {
+                "1": 0.36,
+                "10": 0.31,
+                "25": 0.294
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "50 detail / 17991 list; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "DMP2035U-7",
+              "refs": "Q1 Q2 Q4",
+              "per_board": 3,
+              "needed": 36,
+              "buy": 40,
+              "excess": 4,
+              "unit_USD": 0.0569,
+              "extended_USD": 2.276,
+              "supplier": "LCSC C110499",
+              "url": "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html",
+              "breaks_USD": {
+                "10": 0.0569,
+                "100": 0.0454
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "372830 cached; stale observation, refresh mandatory",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "GRM1555C1H180JA01D",
+              "refs": "C8 C9",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R61A105KE15D",
+              "refs": "C2 C7 C13 C16",
+              "per_board": 4,
+              "needed": 48,
+              "buy": 50,
+              "excess": 2,
+              "unit_USD": 0.08,
+              "extended_USD": 4.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71C473KA01D",
+              "refs": "C14",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM155R71H103KA88D",
+              "refs": "C5 C10",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.08,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H102JA01D",
+              "refs": "C22",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H103JA01D",
+              "refs": "C20",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H122JA01D",
+              "refs": "C21",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H471JA01D",
+              "refs": "C30",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM1885C1H821JA01D",
+              "refs": "C23",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.08,
+              "extended_USD": 1.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.08
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61A226ME44L",
+              "refs": "C4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.12,
+              "extended_USD": 2.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "GRM21BR61C106KE15L",
+              "refs": "C1 C3",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 30,
+              "excess": 6,
+              "unit_USD": 0.12,
+              "extended_USD": 3.6,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.12
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "MCP1700T-3002E/TT",
+              "refs": "U1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.4123,
+              "extended_USD": 4.9476,
+              "supplier": "LCSC C62244",
+              "url": "https://www.lcsc.com/product-image/C62244.html",
+              "breaks_USD": {
+                "1": 0.5207,
+                "10": 0.4123,
+                "30": 0.3663
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "2186 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "MF-FSMF020X-2",
+              "refs": "F1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.414,
+              "extended_USD": 4.968,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254",
+              "breaks_USD": {
+                "1": 0.54,
+                "5": 0.448,
+                "10": 0.414,
+                "50": 0.3432
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "85792 shown; refresh",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "RC0402FR-07100KL",
+              "refs": "R2 R3 R4 R5 R6 R9 R10 R11 R13 R17 R18 R19 R21",
+              "per_board": 13,
+              "needed": 156,
+              "buy": 200,
+              "excess": 44,
+              "unit_USD": 0.005,
+              "extended_USD": 1.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07100RL",
+              "refs": "R31 R32 R33 R34 R35 R36 R37 R38",
+              "per_board": 8,
+              "needed": 96,
+              "buy": 100,
+              "excess": 4,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071KL",
+              "refs": "R16 R20",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-071ML",
+              "refs": "R8",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-072ML",
+              "refs": "R7",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 100,
+              "excess": 88,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-07390KL",
+              "refs": "R1 R12",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402FR-074K7L",
+              "refs": "R14 R15",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "RC0402JR-070RL",
+              "refs": "R52 R54",
+              "per_board": 2,
+              "needed": 24,
+              "buy": 100,
+              "excess": 76,
+              "unit_USD": 0.005,
+              "extended_USD": 0.5,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "100": 0.005
+              },
+              "moq": 100,
+              "multiple": 100,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+              "refs": "J1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.95,
+              "extended_USD": 11.4,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "1": 0.95
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "SI5351A-B-GT",
+              "refs": "U4",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 1.718,
+              "extended_USD": 20.616,
+              "supplier": "DigiKey",
+              "url": "https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+              "breaks_USD": {
+                "1": 2.33,
+                "10": 1.718
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "4766 shown; cached prices vary",
+              "basis": "CATALOG OBSERVATION"
+            },
+            {
+              "mpn": "SWPA3015S2R2MT",
+              "refs": "L1",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 20,
+              "excess": 8,
+              "unit_USD": 0.1,
+              "extended_USD": 2.0,
+              "supplier": "OPEN",
+              "url": "",
+              "breaks_USD": {
+                "10": 0.1
+              },
+              "moq": 10,
+              "multiple": 10,
+              "availability": "Exact basket/availability OPEN",
+              "basis": "BUDGET ALLOWANCE, NOT A QUOTE"
+            },
+            {
+              "mpn": "TPS61099DRVR",
+              "refs": "U2",
+              "per_board": 1,
+              "needed": 12,
+              "buy": 12,
+              "excess": 0,
+              "unit_USD": 0.8432,
+              "extended_USD": 10.1184,
+              "supplier": "LCSC C2842395",
+              "url": "https://www.lcsc.com/product-image/C2842395.html",
+              "breaks_USD": {
+                "1": 0.9925,
+                "10": 0.8432,
+                "30": 0.7694
+              },
+              "moq": 1,
+              "multiple": 1,
+              "availability": "1293 shown; alternate page has MOQ10; refresh",
+              "basis": "CATALOG OBSERVATION"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

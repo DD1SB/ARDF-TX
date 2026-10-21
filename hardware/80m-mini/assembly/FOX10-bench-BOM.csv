@@ -1,0 +1,81 @@
+ref,value,mpn,footprint,population,note,price_basis,supplier,source_url
+J1,BAT 1S,S2B-PH-SM4-TB(LF)(SN),Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,ALL,Pin 1 +. Verify purchased battery harness polarity.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+F1,200mA PPTC,MF-FSMF020X-2,Mini80:MF_FSMF0603,ALL,200 mA hold / protected cell remains mandatory.,CATALOG OBSERVATION,DigiKey,https://www.digikey.com/en/products/detail/bourns-inc/MF-FSMF020X-2/2039254
+Q1,DMP2035U,DMP2035U-7,Package_TO_SOT_SMD:SOT-23,ALL,"Reverse polarity: drain battery, source protected rail.",CATALOG OBSERVATION,LCSC C110499,https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html
+C1,10u,GRM21BR61C106KE15L,Capacitor_SMD:C_0805_2012Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+U1,MCP1700 3.0V,MCP1700T-3002E/TT,Package_TO_SOT_SMD:SOT-23,ALL,1.6 uA typical IQ; 6 V maximum supply.,CATALOG OBSERVATION,LCSC C62244,https://www.lcsc.com/product-image/C62244.html
+C2,1u,GRM155R61A105KE15D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+U2,TPS61099DRVR,TPS61099DRVR,Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,ALL,"1V feedback; 390k/100k gives 4.90V PWM, ~5.05V PFM.",CATALOG OBSERVATION,LCSC C2842395,https://www.lcsc.com/product-image/C2842395.html
+L1,2.2u power,SWPA3015S2R2MT,Inductor_SMD:L_Sunlord_SWPA3015S,ALL,"2.2 uH, saturation >=1.5 A. Short boost loop.","BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C3,10u,GRM21BR61C106KE15L,Capacitor_SMD:C_0805_2012Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C4,22u,GRM21BR61A226ME44L,Capacitor_SMD:C_0805_2012Metric,ALL,Derated effective capacitance must exceed 8uF.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R1,390k,RC0402FR-07390KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R2,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R3,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Q2,CLOCK supply,DMP2035U-7,Package_TO_SOT_SMD:SOT-23,ALL,,CATALOG OBSERVATION,LCSC C110499,https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html
+R4,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Q3,CLOCK enable,"2N7002,215",Package_TO_SOT_SMD:SOT-23,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf
+R5,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R6,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,Discharge clock rail after shutdown.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R7,2M,RC0402FR-072ML,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R8,1M,RC0402FR-071ML,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C5,10n,GRM155R71H103KA88D,Capacitor_SMD:C_0402_1005Metric,ALL,Use internal 1.5V reference; long acquisition; VBAT=3*Vadc.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+U3,ATtiny1616-MNR,ATTINY1616-MNR,Mini80:ATtiny1616_VQFN20_JLC,ALL,,CATALOG OBSERVATION,Mouser,https://www.mouser.com/en/ProductDetail/Microchip-Technology/ATTINY1616-MNR?qs=HXFqYaX1Q2yKNpuKQU9qww%3D%3D
+C6,100n,CL05B104KO5NNNC,Capacitor_SMD:C_0402_1005Metric,ALL,,CATALOG OBSERVATION,LCSC C1525,https://www.lcsc.com/de/product-detail/C1525.html
+C7,1u,GRM155R61A105KE15D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Y1,32.768k 12.5pF,ABS07-32.768KHZ-T,Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm,ALL,20ppm initial. Load capacitors include AVR ~5.5pF pin capacitance.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/en/ProductDetail/ABRACON/ABS07-32.768KHZ-T?qs=3SpAxaLJ01g8GJWeO3sA3Q%3D%3D
+C8,18p,GRM1555C1H180JA01D,Capacitor_SMD:C_0402_1005Metric,ALL,Initial 18pF: adjust after load/frequency measurement.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C9,18p,GRM1555C1H180JA01D,Capacitor_SMD:C_0402_1005Metric,ALL,Initial 18pF: effective CL approximately 12.5pF with parasitics.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R9,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R10,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R11,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R12,390k,RC0402FR-07390KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R13,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C10,10n,GRM155R71H103KA88D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+U4,Si5351A-B-GT,SI5351A-B-GT,Package_SO:MSOP-10_3x3mm_P0.5mm,ALL,Default unprogrammed SKU; do not substitute preprogrammed -Bxxxxx types.,CATALOG OBSERVATION,DigiKey,https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847
+Y2,25MHz 10pF,CX3225FB25000F0FZZH1,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,ALL,10pF CL; Si5351 internal load set to 10pF. Verify total error <50ppm.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/ProductDetail/KYOCERA-AVX/CX3225FB25000F0FZZH1?qs=Tc%252BHE9vUsnv4CjUnsmTvrA%3D%3D
+C11,100n,CL05B104KO5NNNC,Capacitor_SMD:C_0402_1005Metric,ALL,,CATALOG OBSERVATION,LCSC C1525,https://www.lcsc.com/de/product-detail/C1525.html
+C12,100n,CL05B104KO5NNNC,Capacitor_SMD:C_0402_1005Metric,ALL,,CATALOG OBSERVATION,LCSC C1525,https://www.lcsc.com/de/product-detail/C1525.html
+C13,1u,GRM155R61A105KE15D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R14,4.7k,RC0402FR-074K7L,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R15,4.7k,RC0402FR-074K7L,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R16,1k,RC0402FR-071KL,Resistor_SMD:R_0402_1005Metric,ALL,Limits input-clamp current during envelope decay. RF_CLK has eight HCT inputs: verify rise/fall timing.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R17,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Q4,RF envelope pass,DMP2035U-7,Package_TO_SOT_SMD:SOT-23,ALL,"100k/100k +47nF gate ramp, Vgs final approx -2.5V. Bench-set envelope.",CATALOG OBSERVATION,LCSC C110499,https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMP2035U-7_C110499.html
+R18,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R19,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C14,47n,GRM155R71C473KA01D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Q5,Envelope drive,"2N7002,215",Package_TO_SOT_SMD:SOT-23,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R20,1k,RC0402FR-071KL,Resistor_SMD:R_0402_1005Metric,ALL,Discharges VPA; includes 5mA on-state overhead.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+Q6,RF enable,"2N7002,215",Package_TO_SOT_SMD:SOT-23,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R21,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,ALL,"Pull-up follows VPA, preventing disabled-domain backfeeding.","BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+U5,"74HCT240PW,118","74HCT240PW,118",Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,ALL,TSSOP selected for small-quantity availability. RF power remains a model estimate.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/ProductDetail/Nexperia/74HCT240PW118?qs=P62ublwmbi%252BM8OUN39MiMw%3D%3D
+C15,100n,CL05B104KO5NNNC,Capacitor_SMD:C_0402_1005Metric,ALL,,CATALOG OBSERVATION,LCSC C1525,https://www.lcsc.com/de/product-detail/C1525.html
+C16,1u,GRM155R61A105KE15D,Capacitor_SMD:C_0402_1005Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R31,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R32,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R33,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R34,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R35,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R36,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R37,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+R38,560,RC0402FR-07560RL,Resistor_SMD:R_0402_1005Metric,ALL,FOX10: replace all eight with 560 ohm; calibrate measured output.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C20,10n,GRM1885C1H103JA01D,Capacitor_SMD:C_0603_1608Metric,ALL,"DC block, C0G 50V.","BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L20,1u,1008LS-102XJRC,Mini80:Coilcraft_1008LS,ALL,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC
+L21,3.3u,1008LS-332XJRC,Mini80:Coilcraft_1008LS,ALL,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Coilcraft direct,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/
+L22,3.3u,1008LS-332XJRC,Mini80:Coilcraft_1008LS,ALL,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Coilcraft direct,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-332/
+L23,1u,1008LS-102XJRC,Mini80:Coilcraft_1008LS,ALL,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/ProductDetail/Coilcraft/1008LS-102XJRC
+C21,1200p,GRM1885C1H122JA01D,Capacitor_SMD:C_0603_1608Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C22,1000p,GRM1885C1H102JA01D,Capacitor_SMD:C_0603_1608Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C23,820p,GRM1885C1H821JA01D,Capacitor_SMD:C_0603_1608Metric,ALL,,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L30,2.2u,1008LS-222XJRC,Mini80:Coilcraft_1008LS,DNP,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Coilcraft direct,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-222/
+R50,0,RC0402JR-070RL,Resistor_SMD:R_0402_1005Metric,ALL,Mutually exclusive with L30. First article bypass.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+C30,470p,GRM1885C1H471JA01D,Capacitor_SMD:C_0603_1608Metric,DNP,Fit only for 100-ohm transformed load with L30.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L31,33u,1812LS-333XJRC,Mini80:Coilcraft_1812LS,DNP,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Mouser,https://www.mouser.com/ProductDetail/Coilcraft/1812LS-333XJRC?qs=lc2O%252BfHJPVbUeCCXE6deKw%3D%3D
+R51,0,RC0402JR-070RL,Resistor_SMD:R_0402_1005Metric,ALL,Remove bypass when corresponding coil fitted.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L32,10u,1008LS-103XJRC,Mini80:Coilcraft_1008LS,DNP,Use manufacturer RF model; not a generic power choke.,CATALOG OBSERVATION,Coilcraft direct,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/1008-%282520%29/1008ls/1008ls-103/
+R52,0,RC0402JR-070RL,Resistor_SMD:R_0402_1005Metric,ALL,Remove bypass when corresponding coil fitted.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L33,4.7u,1008LS-472XJRC,Mini80:Coilcraft_1008LS,DNP,Use manufacturer RF model; not a generic power choke.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/
+R53,0,RC0402JR-070RL,Resistor_SMD:R_0402_1005Metric,ALL,Remove bypass when corresponding coil fitted.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,
+L34,15u,1812LS-153XJRC,Mini80:Coilcraft_1812LS,DNP,Use manufacturer RF model; not a generic power choke.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/
+R54,0,RC0402JR-070RL,Resistor_SMD:R_0402_1005Metric,ALL,Remove bypass when corresponding coil fitted.,"BUDGET ALLOWANCE, NOT A QUOTE",OPEN,

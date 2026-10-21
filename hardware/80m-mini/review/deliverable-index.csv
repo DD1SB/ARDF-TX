@@ -1,0 +1,18 @@
+number,deliverable,relative_evidence_path,status
+1,Architecture B: AVR + Si5351 + HCT,README.md,SELECTED / PHYSICAL RF QUALIFICATION PENDING
+2,"35 x 35 mm, 2-layer FR4 1.6mm",Mini80.kicad_pcb,NATIVE / DRC PASS
+3,Main ICs and exact sourcing,SOURCING.md,CATALOG REVIEW / CHECKOUT OPEN
+4,MINI50 and FOX10 electrical BOM,assembly/,BENCH BOM COMPLETE / FOX ANTENNA TUNE OPEN
+5,Native complete schematic and routed PCB,Mini80.kicad_pro,ERC / DRC / PARITY PASS
+6,"Filter, reference port, transformer and loading bank",RF_COMPONENTS.md,CALCULATED / PHYSICAL TUNING PENDING
+7,"Power, losses, loading and harmonic estimates",analysis/electrical-estimates.json,CALCULATED / NOT MEASURED
+8,Calculated battery endurance,README.md,CALCULATED / NOT MEASURED
+9,Universal autonomous firmware/configuration,firmware/README.md,COMPILED / HOST TEST PASS / HIL NOT RUN
+10,Ten slotted roles plus S and MO,firmware/examples/,GENERATED / TEST PASS
+11,"Mounting, envelopes and battery capacities",README.md,CAD ENVELOPES / PACK SELECTION OPEN
+12,JLC copper/mask/silk/outline/drill/stencil outputs,fabrication/,GENERATED / LOCAL DFM PASS / NO ORDER
+13,Native 3D images,render/,GENERATED / SIMPLIFIED ENVELOPES DISCLOSED
+14,"Electrical, DFM, firmware and physical status",review/verification.json,PRE-HARDWARE PASS / PHYSICAL NOT_RUN
+15,"Parts cost at 5 and 12, MOQ rounded",assembly/cost-review.json,OBSERVED CORE PRICES + EXPLICIT ALLOWANCES
+16,Training / Foxoring candidate classification,README.md,NO OFFICIAL SPRINT OR FIELD COMPLIANCE CLAIM
+17,GO/HOLD,FIRST_ARTICLE.md,GO FIVE BARE / HOLD POPULATED FLEET AND COMPLIANCE

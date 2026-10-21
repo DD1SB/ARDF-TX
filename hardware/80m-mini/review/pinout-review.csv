@@ -1,0 +1,86 @@
+reference,pad,net,source,evidence
+U1,1,GND,https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf,SOT23 pin diagram: GND OUT IN
+U1,2,V3,https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf,SOT23 pin diagram: GND OUT IN
+U1,3,VBAT,https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf,SOT23 pin diagram: GND OUT IN
+U2,1,GND,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,2,V5,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,3,BOOST_FB,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,4,BOOST_EN,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,5,BOOST_SW,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,6,VBAT,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U2,7,GND,https://www.ti.com/lit/ds/symlink/tps61099.pdf,DRV top view; exposed pad ground
+U3,1,FIX_RX,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,2,SYNC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,3,GND,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,4,V3,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,5,BOOST_EN,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,6,CLK_EN,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,7,ENV_KEY,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,8,RF_ENABLE,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,9,BAT_ADC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,10,V5_ADC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,11,TOSC1,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,12,TOSC2,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,13,I2C_SDA,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,14,I2C_SCL,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,19,UPDI,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,20,FIX_TX,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U3,21,GND,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,VQFN20 section4.3/5.1; PB5/4 AIN8/9; alternate UART PA1/2; PB3/2 TOSC; pad21 local EP
+U4,1,VCLK,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,2,XA,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,3,XB,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,4,I2C_SCL,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,5,I2C_SDA,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,7,VCLK,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,8,GND,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U4,10,CLK0,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,10MSOP package; CLK2/1 pads6/9 deliberately NC
+U5,1,OE_N,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,19,OE_N,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,10,GND,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,20,VPA,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,2,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,4,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,6,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,8,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,11,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,13,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,15,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,17,RF_CLK,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,18,PA1,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,16,PA2,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,14,PA3,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,12,PA4,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,9,PA5,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,7,PA6,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,5,PA7,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+U5,3,PA8,https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf,PW TSSOP20 SOT360; inverting outputs individually ballasted; no exposed pad
+Q1,1,GND,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q1,2,VBAT,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q1,3,BAT_FUSED,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q2,1,CLK_GATE,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q2,2,V3,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q2,3,VCLK,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q4,1,ENV_GATE,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q4,2,V5,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q4,3,VPA,https://www.diodes.com/datasheet/download/DMP2035U.pdf,SOT23 G1 S2 D3; Q1 source is protected rail
+Q3,1,CLK_EN,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q3,2,GND,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q3,3,CLK_GATE,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q5,1,ENV_KEY,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q5,2,GND,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q5,3,ENV_PULL,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q6,1,RF_ENABLE,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q6,2,GND,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Q6,3,OE_N,https://assets.nexperia.com/documents/data-sheet/2N7002.pdf,SOT23 G1 S2 D3
+Y2,1,XA,https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf,Bottom view: crystal1/3; cover2/4
+Y2,2,GND,https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf,Bottom view: crystal1/3; cover2/4
+Y2,3,XB,https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf,Bottom view: crystal1/3; cover2/4
+Y2,4,GND,https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf,Bottom view: crystal1/3; cover2/4
+J1,1,BAT_PLUS,https://order.jst-mfg.com/InternetShop/app/pdf_show.php?kbn=1&key=ePH.pdf,Native JST PH land pattern pin numbers; plus assigned pad1; purchased battery polarity must be checked
+J1,2,GND,https://order.jst-mfg.com/InternetShop/app/pdf_show.php?kbn=1&key=ePH.pdf,Native JST PH land pattern pin numbers; plus assigned pad1; purchased battery polarity must be checked
+U3,15,NC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,Deliberately unconnected physical pad; no routed copper net
+U3,16,NC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,Deliberately unconnected physical pad; no routed copper net
+U3,17,NC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,Deliberately unconnected physical pad; no routed copper net
+U3,18,NC,https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf,Deliberately unconnected physical pad; no routed copper net
+U4,6,NC,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,Deliberately unconnected physical pad; no routed copper net
+U4,9,NC,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,Deliberately unconnected physical pad; no routed copper net

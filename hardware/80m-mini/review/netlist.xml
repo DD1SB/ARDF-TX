@@ -1,0 +1,3903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/stefan/src/ardf-tx/hardware/80m-mini/Mini80.kicad_sch</source>
+    <date>2026-10-21T23:07:55</date>
+    <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Mini80 autonomous low-power 80m transmitter</title>
+        <company>ARDF-TX</company>
+        <rev>M80-E1</rev>
+        <date>2026-10-21</date>
+        <source>Mini80.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/">
+      <title_block>
+        <title>01 Battery, reverse polarity and switched RF supply</title>
+        <company>ARDF-TX</company>
+        <rev>M80-E1</rev>
+        <date>2026-10-21</date>
+        <source>01_power.kicad_sch</source>
+        <comment number="1" value="Evaluation review only; unbuilt engineering candidate"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/">
+      <title_block>
+        <title>02 Autonomous control and pogo fixture</title>
+        <company>ARDF-TX</company>
+        <rev>M80-E1</rev>
+        <date>2026-10-21</date>
+        <source>02_control.kicad_sch</source>
+        <comment number="1" value="Evaluation review only; unbuilt engineering candidate"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/">
+      <title_block>
+        <title>03 Programmable source, eight isolated RF outputs and envelope</title>
+        <company>ARDF-TX</company>
+        <rev>M80-E1</rev>
+        <date>2026-10-21</date>
+        <source>03_rf.kicad_sch</source>
+        <comment number="1" value="Evaluation review only; unbuilt engineering candidate"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/">
+      <title_block>
+        <title>04 Seven-pole LPF and selectable antenna network</title>
+        <company>ARDF-TX</company>
+        <rev>M80-E1</rev>
+        <date>2026-10-21</date>
+        <source>04_output.kicad_sch</source>
+        <comment number="1" value="Evaluation review only; unbuilt engineering candidate"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61C106KE15L</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61C106KE15L"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>365b4f04-a795-527f-82c3-a405db340755</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>39822ce7-ed58-5f8f-8f5b-d1a5cb7f05ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61C106KE15L</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61C106KE15L"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>6c68e7d9-277c-5fd4-b094-bd3629c300e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>22u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A226ME44L</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">Derated effective capacitance must exceed 8uF.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61A226ME44L"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="Derated effective capacitance must exceed 8uF."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>65fb17c6-7f26-5a31-86ab-8dd0138ed10a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71H103KA88D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">Use internal 1.5V reference; long acquisition; VBAT=3*Vadc.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71H103KA88D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="Use internal 1.5V reference; long acquisition; VBAT=3*Vadc."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>59adc903-5fff-5069-8276-faf76531376d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>200mA PPTC</value>
+      <footprint>Mini80:MF_FSMF0603</footprint>
+      <fields>
+        <field name="MPN">MF-FSMF020X-2</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">200 mA hold / protected cell remains mandatory.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:MF_FSMF0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Fuse" description="Fuse"/>
+      <property name="MPN" value="MF-FSMF020X-2"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="200 mA hold / protected cell remains mandatory."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>424f3a28-4c3b-552d-a3cb-d7b66790f48e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>BAT 1S</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">S2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">Pin 1 +. Verify purchased battery harness polarity.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="S2B-PH-SM4-TB(LF)(SN)"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="Pin 1 +. Verify purchased battery harness polarity."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>26b130f1-1213-56d0-8255-977d8cc89962</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>2.2u power</value>
+      <footprint>Inductor_SMD:L_Sunlord_SWPA3015S</footprint>
+      <fields>
+        <field name="MPN">SWPA3015S2R2MT</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">2.2 uH, saturation &gt;=1.5 A. Short boost loop.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Inductor_SMD:L_Sunlord_SWPA3015S</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="SWPA3015S2R2MT"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="2.2 uH, saturation &gt;=1.5 A. Short boost loop."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>3195d4fb-3f58-5a65-bd48-219a002883ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>DMP2035U</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/DMP2035U.pdf</datasheet>
+      <fields>
+        <field name="MPN">DMP2035U-7</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">Reverse polarity: drain battery, source protected rail.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMP2035U.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="DMP2035U" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="DMP2035U-7"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="Reverse polarity: drain battery, source protected rail."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>06a5d73e-f6be-54b8-801d-950bbb424e3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>CLOCK supply</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">DMP2035U-7</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="DMP2035U" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="DMP2035U-7"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>c7381823-a843-53f6-81fb-4964cb5ada65</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>CLOCK enable</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</datasheet>
+      <fields>
+        <field name="MPN">2N7002,215</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="2N7002,215"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>9227b912-5b8d-514d-b024-7e0036e89da4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>390k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07390KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07390KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>20b5ab73-c522-51df-901b-3a8dafa85c1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>77506495-4e40-5943-affc-e3aec2b3a1a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>cbaa1c4a-e66e-5fc8-9c94-531f085432ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>d8127b03-d640-5960-b0c5-b1d26ec6f0d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>38ca0ad1-a38a-5117-b571-95c7688b1417</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">Discharge clock rail after shutdown.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="Discharge clock rail after shutdown."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>287bc248-6f1a-57b5-97fe-b454932a2e13</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>2M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-072ML</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-072ML"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>4fcb95d1-7c1e-5a04-b04b-2f2308659318</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071ML</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071ML"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>f8c3ce1f-328a-54b2-9122-caff32ea2d32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>MCP1700 3.0V</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP1700T-3002E/TT</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">1.6 uA typical IQ; 6 V maximum supply.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="MCP1700_SOT23" description=""/>
+      <property name="MPN" value="MCP1700T-3002E/TT"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="1.6 uA typical IQ; 6 V maximum supply."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>2bc6d989-197d-5b5d-89f3-3f939890349e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS61099DRVR</value>
+      <footprint>Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps61099.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS61099DRVR</field>
+        <field name="Population">ALL</field>
+        <field name="Function">01_power</field>
+        <field name="Engineering_Note">1V feedback; 390k/100k gives 4.90V PWM, ~5.05V PFM.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps61099.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TPS61099_DRV" description=""/>
+      <property name="MPN" value="TPS61099DRVR"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="01_power"/>
+      <property name="Engineering_Note" value="1V feedback; 390k/100k gives 4.90V PWM, ~5.05V PFM."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="01 Battery, reverse polarity and switched RF supply"/>
+      <property name="Sheetfile" value="01_power.kicad_sch"/>
+      <sheetpath names="/01 Battery, reverse polarity and switched RF supply/" tstamps="/efbce07b-451b-5f62-b508-4c05182715d9/"/>
+      <tstamps>8ab23195-36d1-51d3-8212-0370e40f91bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>b95536e7-9671-5367-b1c2-69227b4dcbc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>8ee1ff12-ed7d-55ee-9ffb-2a95486cfca1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>18p</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1555C1H180JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note">Initial 18pF: adjust after load/frequency measurement.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1555C1H180JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value="Initial 18pF: adjust after load/frequency measurement."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>49cb1d71-9124-57a6-941e-26e6da16c60c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>18p</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1555C1H180JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note">Initial 18pF: effective CL approximately 12.5pF with parasitics.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1555C1H180JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value="Initial 18pF: effective CL approximately 12.5pF with parasitics."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>80e3437b-43c3-50a4-b4a2-18f0685be0d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71H103KA88D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71H103KA88D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>db96797c-ef3e-5ae9-b60a-008e838557f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>FIXTURE 3V ONLY</value>
+      <footprint>Mini80:Pogo6</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note">Battery-powered fixture. V3 sense only, no external supply contention.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Pogo6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Pogo6" description=""/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value="Battery-powered fixture. V3 sense only, no external supply contention."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>237b6ad5-c9bf-5d9d-aec8-138824df095e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>51b33f34-ca02-5201-8e49-d5da5ba8a60f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>88742c7a-526c-50eb-b88e-03688527b255</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>0adf4880-b71d-51b6-ba3c-0d800e95e592</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>390k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07390KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07390KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>ee3fd00a-2bdb-52d7-bdd2-20edac6b253f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>a101d1d7-0ce8-5061-bead-2b7b6839282a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>ATtiny1616-MNR</value>
+      <footprint>Mini80:ATtiny1616_VQFN20_JLC</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf</datasheet>
+      <fields>
+        <field name="MPN">ATTINY1616-MNR</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:ATtiny1616_VQFN20_JLC</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny1614-16-17-DataSheet-DS40002204A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="ATtiny1616_MN" description=""/>
+      <property name="MPN" value="ATTINY1616-MNR"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>2928ce65-0c28-5032-a8da-a8cb69ae0de3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>32.768k 12.5pF</value>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <datasheet>https://abracon.com/Resonators/ABS07.pdf</datasheet>
+      <fields>
+        <field name="MPN">ABS07-32.768KHZ-T</field>
+        <field name="Population">ALL</field>
+        <field name="Function">02_control</field>
+        <field name="Engineering_Note">20ppm initial. Load capacitors include AVR ~5.5pF pin capacitance.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</field>
+        <field name="Datasheet">https://abracon.com/Resonators/ABS07.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Crystal" description="Two pin crystal"/>
+      <property name="MPN" value="ABS07-32.768KHZ-T"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="02_control"/>
+      <property name="Engineering_Note" value="20ppm initial. Load capacitors include AVR ~5.5pF pin capacitance."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="02 Autonomous control and pogo fixture"/>
+      <property name="Sheetfile" value="02_control.kicad_sch"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/02 Autonomous control and pogo fixture/" tstamps="/5eda9590-3744-5396-ad27-fb42bba502c4/"/>
+      <tstamps>72b5df85-e6bc-5270-b06c-d799f0dc84c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>6fc53ff1-8b3a-5135-bac4-d015f48a30b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>e83ab164-42f9-5334-8d07-4ff391743364</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>5ca40c62-5973-567f-872c-078a9a89bb71</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>47n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C473KA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C473KA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>0c76b858-7d18-534c-9faf-27f11990504a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>c348f0bd-1370-591b-b3b0-58f25b49adc9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A105KE15D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>40e33e05-fcb2-56b3-8be5-d97047455417</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q4">
+      <value>RF envelope pass</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">DMP2035U-7</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">100k/100k +47nF gate ramp, Vgs final approx -2.5V. Bench-set envelope.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="DMP2035U" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="DMP2035U-7"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="100k/100k +47nF gate ramp, Vgs final approx -2.5V. Bench-set envelope."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>6e8a79f3-73b4-5121-99b3-b43e6dfc1b2d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q5">
+      <value>Envelope drive</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">2N7002,215</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="2N7002,215"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>c5a71e06-4a49-5aaf-ad4f-ff38166f3c77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q6">
+      <value>RF enable</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">2N7002,215</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="2N7002,215"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel Switching MOSFET"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>87959633-ef5b-542b-b36a-f330e5171217</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>36140013-f13b-5cf9-98d2-167d1ad860cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>af1bbb02-0d3e-59e5-8881-c09a743e2859</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">Limits input-clamp current during envelope decay. RF_CLK has eight HCT inputs: verify rise/fall timing.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="Limits input-clamp current during envelope decay. RF_CLK has eight HCT inputs: verify rise/fall timing."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>1c75470b-c225-5a6e-92e5-85cf854859ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>5c3d7e09-e843-5466-9041-d11f129a36dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>ffc09fb5-59e0-5de6-80b6-8af27d7b2604</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>4cf97a9b-ae7a-53df-b44a-91ab1ed73d0c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-071KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">Discharges VPA; includes 5mA on-state overhead.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="Discharges VPA; includes 5mA on-state overhead."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>4b279302-a963-5bb7-88ea-b258d6540bdf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">Pull-up follows VPA, preventing disabled-domain backfeeding.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="Pull-up follows VPA, preventing disabled-domain backfeeding."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>7d5ce8a1-9194-519d-9633-79466ecba6e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>bcd79e81-b333-55aa-acc4-d0104413d385</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>18e443b2-28f3-59a8-af90-a9eb3bd0b2a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>aa764970-c105-5b0a-a842-a8e4c364e859</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>6cd286f8-eb1a-5a95-9be9-3a5b2198adcb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>3eb067f1-b754-5135-b07e-dbafdf11b552</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>bc73f080-1d3f-5450-8ae9-c55a5f6e1eff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>32d0bce4-eac7-5fb2-af20-76e2355eea50</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">FOX10: replace all eight with 560 ohm; calibrate measured output.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="FOX10: replace all eight with 560 ohm; calibrate measured output."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>97816f05-3ce8-5473-abc8-db9104ebe02b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>Si5351A-B-GT</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf</datasheet>
+      <fields>
+        <field name="MPN">SI5351A-B-GT</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">Default unprogrammed SKU; do not substitute preprogrammed -Bxxxxx types.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Si5351_MSOP" description=""/>
+      <property name="MPN" value="SI5351A-B-GT"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="Default unprogrammed SKU; do not substitute preprogrammed -Bxxxxx types."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>d73ca379-caf4-5c48-adb8-f6607da14a5d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>74HCT240PW,118</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf</datasheet>
+      <fields>
+        <field name="MPN">74HCT240PW,118</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">TSSOP selected for small-quantity availability. RF power remains a model estimate.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT240.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="HCT240_PW" description=""/>
+      <property name="MPN" value="74HCT240PW,118"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="TSSOP selected for small-quantity availability. RF power remains a model estimate."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>33b2f8a8-32d2-5298-86b7-274cc788a184</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y2">
+      <value>25MHz 10pF</value>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</footprint>
+      <datasheet>https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf</datasheet>
+      <fields>
+        <field name="MPN">CX3225FB25000F0FZZH1</field>
+        <field name="Population">ALL</field>
+        <field name="Function">03_rf</field>
+        <field name="Engineering_Note">10pF CL; Si5351 internal load set to 10pF. Verify total error &lt;50ppm.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</field>
+        <field name="Datasheet">https://ele.kyocera.com/assets/products/crystal-device/specification/CX3225FB_10pF.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="MPN" value="CX3225FB25000F0FZZH1"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="03_rf"/>
+      <property name="Engineering_Note" value="10pF CL; Si5351 internal load set to 10pF. Verify total error &lt;50ppm."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="03 Programmable source, eight isolated RF outputs and envelope"/>
+      <property name="Sheetfile" value="03_rf.kicad_sch"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/03 Programmable source, eight isolated RF outputs and envelope/" tstamps="/1103b90b-7654-5a99-a24d-8a401f48deaf/"/>
+      <tstamps>04fd8293-47d7-50d9-94c9-23560cf85c38</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1885C1H103JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">DC block, C0G 50V.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1885C1H103JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="DC block, C0G 50V."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>0ea0d966-ee19-5185-9085-79610bcf4285</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>1200p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1885C1H122JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1885C1H122JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>e8a757e3-3186-5abc-aa7b-698f38fa0ca9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>1000p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1885C1H102JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1885C1H102JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>523736b5-75c8-5f26-8d50-79872ee7c2bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>820p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1885C1H821JA01D</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1885C1H821JA01D"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>e8803289-8a55-5451-8942-0e95b043b65b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>470p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM1885C1H471JA01D</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Fit only for 100-ohm transformed load with L30.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM1885C1H471JA01D"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Fit only for 100-ohm transformed load with L30."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>27d1d97f-ff02-5442-b21b-2992471198d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>ANT / CP</value>
+      <footprint>Mini80:Wire2</footprint>
+      <fields>
+        <field name="MPN">Soldered strain-relieved wire</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Bare tinned pads, 1mm holes, no bulky RF connector.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Wire2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="Soldered strain-relieved wire"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Bare tinned pads, 1mm holes, no bulky RF connector."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>96a8f379-a08b-5c58-8b5e-68c13b946a3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L20">
+      <value>1u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-102XJRC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-102XJRC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>abceaa3f-4e29-5b3b-ac4d-9f0f062f14b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L21">
+      <value>3.3u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-332XJRC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-332XJRC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>e1d4f268-22d4-5718-a7ac-c14427056fca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L22">
+      <value>3.3u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-332XJRC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-332XJRC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>a59088ee-b268-5bcf-8d03-7d102a78eb01</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L23">
+      <value>1u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-102XJRC</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-102XJRC"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>db6a135e-d4d0-5914-ae72-f127556e8520</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L30">
+      <value>2.2u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-222XJRC</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-222XJRC"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>d8b6dafa-e6aa-5a6e-aa1f-780d38eba2c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L31">
+      <value>33u</value>
+      <footprint>Mini80:Coilcraft_1812LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1812LS-333XJRC</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1812LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1812LS-333XJRC"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>38cafa64-24ed-512c-a23e-871d2140bc35</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L32">
+      <value>10u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-103XJRC</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-103XJRC"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>a011c3b8-88e4-5f00-b366-88fe6a51f110</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L33">
+      <value>4.7u</value>
+      <footprint>Mini80:Coilcraft_1008LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1008LS-472XJRC</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1008LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1008LS-472XJRC"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>36ce2d64-2b1f-5d7d-a27f-ee7fdc83b3da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L34">
+      <value>15u</value>
+      <footprint>Mini80:Coilcraft_1812LS</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</datasheet>
+      <fields>
+        <field name="MPN">1812LS-153XJRC</field>
+        <field name="Population">DNP</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Use manufacturer RF model; not a generic power choke.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Mini80:Coilcraft_1812LS</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ferrite-core-chip-inductors/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="L" description="Inductor"/>
+      <property name="MPN" value="1812LS-153XJRC"/>
+      <property name="Population" value="DNP"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Use manufacturer RF model; not a generic power choke."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>f16de515-f3e8-5482-b319-1c9587668504</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R50">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Mutually exclusive with L30. First article bypass.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Mutually exclusive with L30. First article bypass."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>3e530b83-6aab-5c5b-b1aa-6132f5f60e9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R51">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Remove bypass when corresponding coil fitted.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Remove bypass when corresponding coil fitted."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>7545caf4-a46c-5b24-8c5f-00ac6d073eef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R52">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Remove bypass when corresponding coil fitted.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Remove bypass when corresponding coil fitted."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>4f179374-f094-5d4a-8545-973d2b97d957</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R53">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Remove bypass when corresponding coil fitted.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Remove bypass when corresponding coil fitted."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>00791e2d-5f86-537f-97af-fb0ea34c0464</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R54">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note">Remove bypass when corresponding coil fitted.</field>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value="Remove bypass when corresponding coil fitted."/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>b400db7c-9030-501a-a5f2-2d617db696ae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>VBAT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>90254041-1038-5583-8b26-eaf1928b3d63</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>9da51656-2b59-5380-92b0-2c1832c196e7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>V5</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>0316fd69-5e72-5b27-856c-9fe05aa23587</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>VPA</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>d67f6053-79b9-5fc8-bddd-7162c74c96f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>CLK0</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>2213854e-e72b-50cd-9bfa-b5779302e96f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>OE_N</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>3ee773ce-819d-5912-abc9-d90b6a293c08</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>RF50</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>34d5bb27-46a5-586e-a4e2-a7e6e496bffc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB feature</field>
+        <field name="Population">ALL</field>
+        <field name="Function">04_output</field>
+        <field name="Engineering_Note"/>
+        <field name="Status">EVALUATION / NOT RELEASED</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mini80" part="TestPoint" description="test point"/>
+      <property name="MPN" value="PCB feature"/>
+      <property name="Population" value="ALL"/>
+      <property name="Function" value="04_output"/>
+      <property name="Engineering_Note" value=""/>
+      <property name="Status" value="EVALUATION / NOT RELEASED"/>
+      <property name="Sheetname" value="04 Seven-pole LPF and selectable antenna network"/>
+      <property name="Sheetfile" value="04_output.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="*"/>
+      <sheetpath names="/04 Seven-pole LPF and selectable antenna network/" tstamps="/80866846-9f79-5037-85ec-5d980028917b/"/>
+      <tstamps>81b6f3f9-5fc9-57f3-b6f8-b992e8f36b21</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Mini80" part="2N7002">
+      <description>0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</docs>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N7002</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="Description">0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="ATtiny1616_MN">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATtiny1616_MN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PA2" type="bidirectional"/>
+        <pin num="2" name="PA3" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PA4" type="bidirectional"/>
+        <pin num="6" name="PA5" type="bidirectional"/>
+        <pin num="7" name="PA6" type="bidirectional"/>
+        <pin num="8" name="PA7" type="bidirectional"/>
+        <pin num="9" name="PB5" type="bidirectional"/>
+        <pin num="10" name="PB4" type="bidirectional"/>
+        <pin num="11" name="PB3_TOSC1" type="bidirectional"/>
+        <pin num="12" name="PB2_TOSC2" type="bidirectional"/>
+        <pin num="13" name="PB1" type="bidirectional"/>
+        <pin num="14" name="PB0" type="bidirectional"/>
+        <pin num="15" name="PC0" type="bidirectional"/>
+        <pin num="16" name="PC1" type="bidirectional"/>
+        <pin num="17" name="PC2" type="bidirectional"/>
+        <pin num="18" name="PC3" type="bidirectional"/>
+        <pin num="19" name="PA0_UPDI" type="bidirectional"/>
+        <pin num="20" name="PA1" type="bidirectional"/>
+        <pin num="21" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Two pin crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Four pin crystal, GND on pins 2 and 4</field>
+        <field name="KLC_S3.3">The rectangle is not a symbol body but a graphical element</field>
+        <field name="KLC_S4.1">Some pins are on 50mil grid to make the symbol small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="G" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="G" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="DMP2035U">
+      <description>-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</description>
+      <docs>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</docs>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3401A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</field>
+        <field name="Description">-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Fuse">
+      <description>Fuse</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="HCT240_PW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HCT240_PW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE_N" type="input"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="Y" type="tri_state"/>
+        <pin num="4" name="A" type="input"/>
+        <pin num="5" name="Y" type="tri_state"/>
+        <pin num="6" name="A" type="input"/>
+        <pin num="7" name="Y" type="tri_state"/>
+        <pin num="8" name="A" type="input"/>
+        <pin num="9" name="Y" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="A" type="input"/>
+        <pin num="12" name="Y" type="tri_state"/>
+        <pin num="13" name="A" type="input"/>
+        <pin num="14" name="Y" type="tri_state"/>
+        <pin num="15" name="A" type="input"/>
+        <pin num="16" name="Y" type="tri_state"/>
+        <pin num="17" name="A" type="input"/>
+        <pin num="18" name="Y" type="tri_state"/>
+        <pin num="19" name="OE_N" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="MCP1700_SOT23">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP1700_SOT23</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VOUT" type="power_out"/>
+        <pin num="3" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Pogo6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Pogo6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="V3" type="passive"/>
+        <pin num="3" name="UPDI" type="passive"/>
+        <pin num="4" name="RX" type="passive"/>
+        <pin num="5" name="TX" type="passive"/>
+        <pin num="6" name="SYNC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="Si5351_MSOP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Si5351_MSOP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="XA" type="passive"/>
+        <pin num="3" name="XB" type="passive"/>
+        <pin num="4" name="SCL" type="input"/>
+        <pin num="5" name="SDA" type="bidirectional"/>
+        <pin num="6" name="CLK2" type="output"/>
+        <pin num="7" name="VDDO" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="CLK1" type="output"/>
+        <pin num="10" name="CLK0" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="TPS61099_DRV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61099_DRV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VOUT" type="power_out"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="EN" type="input"/>
+        <pin num="5" name="SW" type="passive"/>
+        <pin num="6" name="VIN" type="power_in"/>
+        <pin num="7" name="EP_GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mini80" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Mini80">
+      <uri>${KIPRJMOD}/Mini80.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="A1" class="Default">
+      <node ref="L31" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L32" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R51" pin="2" pintype="passive"/>
+      <node ref="R52" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="A2" class="Default">
+      <node ref="L32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R52" pin="2" pintype="passive"/>
+      <node ref="R53" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="A3" class="Default">
+      <node ref="L33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R53" pin="2" pintype="passive"/>
+      <node ref="R54" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="ANT" class="Default">
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="L34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R54" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="BAT_ADC" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="PB5_9" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="BAT_FUSED" class="Default">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="7" name="BAT_PLUS" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="8" name="BOOST_EN" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="EN_4" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="PA4_5" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="BOOST_FB" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="FB_3" pintype="input"/>
+    </net>
+    <net code="10" name="BOOST_SW" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SW_5" pintype="passive"/>
+    </net>
+    <net code="11" name="CLK0" class="Default">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="CLK0_10" pintype="output"/>
+    </net>
+    <net code="12" name="CLK_EN" class="Default">
+      <node ref="Q3" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="PA5_6" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="CLK_GATE" class="Default">
+      <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="Q3" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="ENV_GATE" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="ENV_KEY" class="Default">
+      <node ref="Q5" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="PA6_7" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="ENV_PULL" class="Default">
+      <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="F1" class="Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="L20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L21" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="18" name="F2" class="Default">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="L21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L22" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="19" name="F3" class="Default">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="L22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L23" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="20" name="FIX_RX" class="Default">
+      <node ref="J2" pin="4" pinfunction="RX_4" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="PA2_1" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="FIX_TX" class="Default">
+      <node ref="J2" pin="5" pinfunction="TX_5" pintype="passive"/>
+      <node ref="U3" pin="20" pinfunction="PA1_20" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="F_IN" class="Default">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="L20" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="23" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="Q3" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q6" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="EP_GND_7" pintype="passive"/>
+      <node ref="U3" pin="21" pinfunction="GND_21" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U4" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="Y2" pin="2" pinfunction="G_2" pintype="passive"/>
+      <node ref="Y2" pin="4" pinfunction="G_4" pintype="passive"/>
+    </net>
+    <net code="24" name="I2C_SCL" class="Default">
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="PB0_14" pintype="bidirectional"/>
+      <node ref="U4" pin="4" pinfunction="SCL_4" pintype="input"/>
+    </net>
+    <net code="25" name="I2C_SDA" class="Default">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="PB1_13" pintype="bidirectional"/>
+      <node ref="U4" pin="5" pinfunction="SDA_5" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="MATCH" class="Default">
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="L30" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L31" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R50" pin="2" pintype="passive"/>
+      <node ref="R51" pin="1" pintype="passive"/>
+    </net>
+    <net code="27" name="OE_N" class="Default">
+      <node ref="Q6" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="OE_N_1" pintype="input"/>
+      <node ref="U5" pin="19" pinfunction="OE_N_19" pintype="input"/>
+    </net>
+    <net code="28" name="PA1" class="Default">
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="U5" pin="18" pinfunction="Y_18" pintype="tri_state"/>
+    </net>
+    <net code="29" name="PA2" class="Default">
+      <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="U5" pin="16" pinfunction="Y_16" pintype="tri_state"/>
+    </net>
+    <net code="30" name="PA3" class="Default">
+      <node ref="R33" pin="1" pintype="passive"/>
+      <node ref="U5" pin="14" pinfunction="Y_14" pintype="tri_state"/>
+    </net>
+    <net code="31" name="PA4" class="Default">
+      <node ref="R34" pin="1" pintype="passive"/>
+      <node ref="U5" pin="12" pinfunction="Y_12" pintype="tri_state"/>
+    </net>
+    <net code="32" name="PA5" class="Default">
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="U5" pin="9" pinfunction="Y_9" pintype="tri_state"/>
+    </net>
+    <net code="33" name="PA6" class="Default">
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="Y_7" pintype="tri_state"/>
+    </net>
+    <net code="34" name="PA7" class="Default">
+      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="Y_5" pintype="tri_state"/>
+    </net>
+    <net code="35" name="PA8" class="Default">
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="Y_3" pintype="tri_state"/>
+    </net>
+    <net code="36" name="RF50" class="Default">
+      <node ref="L23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R50" pin="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="37" name="RF_CLK" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U5" pin="11" pinfunction="A_11" pintype="input"/>
+      <node ref="U5" pin="13" pinfunction="A_13" pintype="input"/>
+      <node ref="U5" pin="15" pinfunction="A_15" pintype="input"/>
+      <node ref="U5" pin="17" pinfunction="A_17" pintype="input"/>
+      <node ref="U5" pin="2" pinfunction="A_2" pintype="input"/>
+      <node ref="U5" pin="4" pinfunction="A_4" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="A_6" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="A_8" pintype="input"/>
+    </net>
+    <net code="38" name="RF_ENABLE" class="Default">
+      <node ref="Q6" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="PA7_8" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="RF_SUM" class="Default">
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="R33" pin="2" pintype="passive"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+    </net>
+    <net code="40" name="SYNC" class="Default">
+      <node ref="J2" pin="6" pinfunction="SYNC_6" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="PA3_2" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="TOSC1" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="PB3_TOSC1_11" pintype="bidirectional"/>
+      <node ref="Y1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="42" name="TOSC2" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="PB2_TOSC2_12" pintype="bidirectional"/>
+      <node ref="Y1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="43" name="UPDI" class="Default">
+      <node ref="J2" pin="3" pinfunction="UPDI_3" pintype="passive"/>
+      <node ref="U3" pin="19" pinfunction="PA0_UPDI_19" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="V3" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="V3_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VOUT_2" pintype="power_out"/>
+      <node ref="U3" pin="4" pinfunction="VDD_4" pintype="power_in"/>
+    </net>
+    <net code="45" name="V5" class="Default">
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="VOUT_2" pintype="power_out"/>
+    </net>
+    <net code="46" name="V5_ADC" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="PB4_10" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="VBAT" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VIN_3" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="VIN_6" pintype="power_in"/>
+    </net>
+    <net code="48" name="VCLK" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="VDDO_7" pintype="power_in"/>
+    </net>
+    <net code="49" name="VPA" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+    </net>
+    <net code="50" name="XA" class="Default">
+      <node ref="U4" pin="2" pinfunction="XA_2" pintype="passive"/>
+      <node ref="Y2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="51" name="XB" class="Default">
+      <node ref="U4" pin="3" pinfunction="XB_3" pintype="passive"/>
+      <node ref="Y2" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="52" name="unconnected-(U3-PC0-Pad15)" class="Default">
+      <node ref="U3" pin="15" pinfunction="PC0_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U3-PC1-Pad16)" class="Default">
+      <node ref="U3" pin="16" pinfunction="PC1_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U3-PC2-Pad17)" class="Default">
+      <node ref="U3" pin="17" pinfunction="PC2_17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U3-PC3-Pad18)" class="Default">
+      <node ref="U3" pin="18" pinfunction="PC3_18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U4-CLK1-Pad9)" class="Default">
+      <node ref="U4" pin="9" pinfunction="CLK1_9" pintype="output+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U4-CLK2-Pad6)" class="Default">
+      <node ref="U4" pin="6" pinfunction="CLK2_6" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

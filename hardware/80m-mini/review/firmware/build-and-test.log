@@ -1,0 +1,11 @@
+make: Entering directory '/home/stefan/src/ardf-tx/hardware/80m-mini/firmware'
+mkdir -p build
+/tmp/mini80-reference/avr/usr/bin/avr-gcc -mmcu=attiny1616 -DF_CPU=5000000UL -Os -std=gnu11 -Wall -Wextra -Werror -ffunction-sections -fdata-sections -B/tmp/mini80-reference/dfp/gcc/dev/attiny1616/ -I/tmp/mini80-reference/dfp/include main.c core.c power.c -Wl,--gc-sections,-Map=build/mini80.map -o build/mini80.elf
+/tmp/mini80-reference/avr/usr/bin/avr-size build/mini80.elf
+   text	   data	    bss	    dec	    hex	filename
+   7119	     45	    232	   7396	   1ce4	build/mini80.elf
+/tmp/mini80-reference/avr/usr/bin/avr-objcopy -O ihex -R .eeprom build/mini80.elf build/mini80.hex
+gcc -std=c11 -Wall -Wextra -Werror core.c power.c test_core.c -o build/test_core
+./build/test_core
+PASS: RF safety states/tail/wrap, twelve roles, slot exclusion, 12h +/-20ppm drift guards, defaults, CRC bit faults, Morse 8-15WPM, 361 synthesizer frequencies
+make: Leaving directory '/home/stefan/src/ardf-tx/hardware/80m-mini/firmware'

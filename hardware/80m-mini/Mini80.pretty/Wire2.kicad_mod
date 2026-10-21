@@ -1,0 +1,152 @@
+(footprint "Wire2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "J3"
+		(at 0 -3.75 0)
+		(layer "F.Fab")
+		(uuid "02fc9cc9-be12-42f5-ac73-83e9ff80167d")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ANT / CP"
+		(at 0 3.75 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d10fe219-fbd2-416e-9bb0-afd6f5dd0e4c")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dac6718c-8ffd-4fe1-aa89-ff83157498ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aba03e9a-8175-4e4d-9641-c178c3f9a310")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "Soldered strain-relieved wire"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "372145bd-74ed-4bda-a8e4-d055470f463b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function" "04_output"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "39aba891-7203-4f6f-8581-72c84397e154")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Population" "ALL"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a0fc8031-fa9d-4dbb-a5eb-c17688fa1cd3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Engineering_Note" "Bare tinned pads, 1mm holes, no bulky RF connector."
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "394e4115-1ac7-4774-aca0-4e6f3399985c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Status" "EVALUATION / NOT RELEASED"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "42f75cfa-515f-4ead-9378-e385499f35a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.75 -3)
+		(end 1.75 3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f379009f-b5c7-4092-b6dd-08df3b5a2fd5")
+	)
+	(fp_rect
+		(start -1.5 -2.75)
+		(end 1.5 2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a2610275-e778-49f6-adcf-0f98261be0fa")
+	)
+	(pad "1" thru_hole circle
+		(at 0 -1.5)
+		(size 2.2 2.2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "699ec33f-05f2-4f04-8249-772932142b65")
+	)
+	(pad "2" thru_hole circle
+		(at 0 1.5)
+		(size 2.2 2.2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "83725b58-2993-43bb-8bab-9117da43ebf5")
+	)
+	(embedded_fonts no)
+)

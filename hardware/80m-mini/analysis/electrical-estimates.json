@@ -1,0 +1,629 @@
+{
+  "status": "CALCULATED CANDIDATE / NOT MEASURED",
+  "model_sources": {
+    "1008": "https://www.coilcraft.com/getmedia/7d978b1b-134f-445c-9d2b-c682ece55405/spice_1008ls.pdf",
+    "1812": "https://www.coilcraft.com/pdfs/spice_1812ls.pdf"
+  },
+  "coil_impedance_3p55MHz": {
+    "1008-102": {
+      "R_ohm": 1.9391783319519358,
+      "X_ohm": 22.307630210955693,
+      "Q_model": 11.503650718137566
+    },
+    "1008-332": {
+      "R_ohm": 4.134850636437806,
+      "X_ohm": 73.64482134782216,
+      "Q_model": 17.810757346066445
+    },
+    "1008-222": {
+      "R_ohm": 2.8717602157530946,
+      "X_ohm": 49.080689780337316,
+      "Q_model": 17.090803581407762
+    },
+    "1008-103": {
+      "R_ohm": 10.2585843014386,
+      "X_ohm": 223.48061206055092,
+      "Q_model": 21.784741977429714
+    },
+    "1008-472": {
+      "R_ohm": 4.977239462786236,
+      "X_ohm": 104.90477885914463,
+      "Q_model": 21.076900085578647
+    },
+    "1812-333": {
+      "R_ohm": 22.64035762499794,
+      "X_ohm": 741.7945964177715,
+      "Q_model": 32.76426144429505
+    },
+    "1812-153": {
+      "R_ohm": 14.352450149076795,
+      "X_ohm": 335.22911654985876,
+      "Q_model": 23.35692603478034
+    }
+  },
+  "nominal_mW": {
+    "MINI50": 47.41615613243905,
+    "FOX10": 10.159718746400037
+  },
+  "load_sweep_mW": [
+    {
+      "ohm": 25,
+      "MINI50": 49.59597880867227,
+      "FOX10": 9.293166555302788
+    },
+    {
+      "ohm": 50,
+      "MINI50": 47.41615613243905,
+      "FOX10": 10.159718746400037
+    },
+    {
+      "ohm": 100,
+      "MINI50": 36.18286250739748,
+      "FOX10": 8.511460904483748
+    },
+    {
+      "ohm": 150,
+      "MINI50": 28.386538053722347,
+      "FOX10": 6.903016495277306
+    },
+    {
+      "ohm": 200,
+      "MINI50": 23.21300575237363,
+      "FOX10": 5.736626539381016
+    }
+  ],
+  "harmonics": [
+    {
+      "harmonic": 1,
+      "filter_50ohm_S21_dB": -1.6794539388108052,
+      "actual_source_transfer_relative_dB": 0.0,
+      "ideal_square_relative_dBc": 0.0
+    },
+    {
+      "harmonic": 2,
+      "filter_50ohm_S21_dB": -28.413132418407763,
+      "actual_source_transfer_relative_dB": -25.053328273277135,
+      "ideal_square_relative_dBc": null
+    },
+    {
+      "harmonic": 3,
+      "filter_50ohm_S21_dB": -55.06564083354529,
+      "actual_source_transfer_relative_dB": -55.35649736728014,
+      "ideal_square_relative_dBc": -64.89892246167338
+    },
+    {
+      "harmonic": 4,
+      "filter_50ohm_S21_dB": -73.22329241506351,
+      "actual_source_transfer_relative_dB": -74.65153433605309,
+      "ideal_square_relative_dBc": null
+    },
+    {
+      "harmonic": 5,
+      "filter_50ohm_S21_dB": -87.13993240035038,
+      "actual_source_transfer_relative_dB": -89.07224869765093,
+      "ideal_square_relative_dBc": -103.05164878437131
+    },
+    {
+      "harmonic": 6,
+      "filter_50ohm_S21_dB": -98.47316333293617,
+      "actual_source_transfer_relative_dB": -100.67470632344234,
+      "ideal_square_relative_dBc": null
+    },
+    {
+      "harmonic": 7,
+      "filter_50ohm_S21_dB": -108.06069132532932,
+      "actual_source_transfer_relative_dB": -110.42347998020092,
+      "ideal_square_relative_dBc": -127.32544078048606
+    }
+  ],
+  "duty_error_second_harmonic_dBc": -41.16667944613735,
+  "fundamental_losses": {
+    "MINI50": {
+      "load_mW": 47.41615613243905,
+      "source_fundamental_mArms": 45.943961779492845,
+      "per_output_fundamental_mArms": 5.742995222436606,
+      "ballast_total_mW": 26.38559529994374,
+      "ballast_per_resistor_mW": 3.2981994124929677,
+      "assumed_driver_conduction_mW": 7.915678589983122,
+      "filter_loss_mW": 15.925421561797407,
+      "output_Vrms": 1.5397427728753763,
+      "PA_rail_budget_mW": 148.5
+    },
+    "FOX10": {
+      "load_mW": 10.159718746400037,
+      "source_fundamental_mArms": 21.2669941970761,
+      "per_output_fundamental_mArms": 2.6583742746345127,
+      "ballast_total_mW": 31.659952952492805,
+      "ballast_per_resistor_mW": 3.9574941190616006,
+      "assumed_driver_conduction_mW": 1.6960689081692575,
+      "filter_loss_mW": 3.4122927116613084,
+      "output_Vrms": 0.712731321972033,
+      "PA_rail_budget_mW": 99.0
+    }
+  },
+  "monte_carlo_MINI50_mW": {
+    "minimum": 35.99145544670679,
+    "median": 46.02376542239145,
+    "maximum": 59.91406646148864,
+    "draws": 2000,
+    "meaning": "sensitivity study only, no production yield prediction"
+  },
+  "thin_vertical_models": [
+    {
+      "height_m": 6,
+      "wire_radius_mm": 0.5,
+      "C_pF": 36.73806180801135,
+      "radiation_R_ohm": 1.992863430071627,
+      "ground_loss_scenarios_ohm": [
+        20,
+        100
+      ],
+      "limit": "short thin vertical against image ground; no real counterpoise, soil, feed or mutual coupling model"
+    },
+    {
+      "height_m": 7.5,
+      "wire_radius_mm": 0.5,
+      "C_pF": 44.82177383465962,
+      "radiation_R_ohm": 3.1138491094869165,
+      "ground_loss_scenarios_ohm": [
+        20,
+        100
+      ],
+      "limit": "short thin vertical against image ground; no real counterpoise, soil, feed or mutual coupling model"
+    },
+    {
+      "height_m": 9,
+      "wire_radius_mm": 0.5,
+      "C_pF": 52.75293005776011,
+      "radiation_R_ohm": 4.4839427176611615,
+      "ground_loss_scenarios_ohm": [
+        20,
+        100
+      ],
+      "limit": "short thin vertical against image ground; no real counterpoise, soil, feed or mutual coupling model"
+    },
+    {
+      "height_m": 0.3,
+      "wire_radius_mm": 0.5,
+      "C_pF": 2.74048280206816,
+      "radiation_R_ohm": 0.004982158575179066,
+      "ground_loss_scenarios_ohm": [
+        20,
+        100
+      ],
+      "limit": "short thin vertical against image ground; no real counterpoise, soil, feed or mutual coupling model"
+    }
+  ],
+  "antenna_candidates": [
+    {
+      "R_ohm": 50,
+      "C_pF": null,
+      "bits_33_10_4p7_15": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_R": 42.094855747541835,
+      "input_X": 28.520934103442443,
+      "return_loss_dB": 10.257731346271104,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 29.051156533373856,
+      "delivered_resistive_mW_at_50mW_available": 42.198484796329524,
+      "loading_coil_Vpeak": {},
+      "external_series_C_Vpeak": null
+    },
+    {
+      "R_ohm": 100,
+      "C_pF": 33,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_R": 57.127479542454026,
+      "input_X": -29.0087131839254,
+      "return_loss_dB": 11.400192194128376,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 17.010143456483327,
+      "delivered_resistive_mW_at_50mW_available": 28.934498041014248,
+      "loading_coil_Vpeak": {
+        "1812-333": 17.85290219013351,
+        "1008-103": 5.3817052262755976,
+        "1008-472": 2.5264255702650327,
+        "1812-153": 8.07165105791197
+      },
+      "external_series_C_Vpeak": 32.681412065823665
+    },
+    {
+      "R_ohm": 150,
+      "C_pF": 33,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "input_R": 31.61002859948818,
+      "input_X": -23.95202867935378,
+      "return_loss_dB": 8.994294885831863,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 14.191690000181191,
+      "delivered_resistive_mW_at_50mW_available": 30.210609759186426,
+      "loading_coil_Vpeak": {
+        "1812-333": 14.894809919393287,
+        "1008-103": 4.4899969502931,
+        "1812-153": 6.734238890846094
+      },
+      "external_series_C_Vpeak": 27.266346694423326
+    },
+    {
+      "R_ohm": 100,
+      "C_pF": 50,
+      "bits_33_10_4p7_15": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "input_R": 33.911909645543574,
+      "input_X": -10.957535305881677,
+      "return_loss_dB": 12.764724286761012,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 18.429409038912397,
+      "delivered_resistive_mW_at_50mW_available": 33.96431175235459,
+      "loading_coil_Vpeak": {
+        "1812-333": 19.342484549609242,
+        "1008-472": 2.7372214913940365
+      },
+      "external_series_C_Vpeak": 23.36943331671279
+    },
+    {
+      "R_ohm": 50,
+      "C_pF": 80,
+      "bits_33_10_4p7_15": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "input_R": 48.154589985561586,
+      "input_X": 12.61416000675014,
+      "return_loss_dB": 17.80021608706036,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 24.894167222885446,
+      "delivered_resistive_mW_at_50mW_available": 30.98597808604921,
+      "loading_coil_Vpeak": {
+        "1008-103": 7.876069369427814,
+        "1812-153": 11.812776988888633
+      },
+      "external_series_C_Vpeak": 19.729423352030988
+    },
+    {
+      "R_ohm": 100,
+      "C_pF": 3,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_R": 2.8792105674743955,
+      "input_X": -45.640070829793906,
+      "return_loss_dB": 0.545408335999113,
+      "matched": false,
+      "antenna_current_mArms_at_50mW_available": 0.31671213614292193,
+      "delivered_resistive_mW_at_50mW_available": 0.010030657718021273,
+      "loading_coil_Vpeak": {
+        "1812-333": 0.33240347463576236,
+        "1008-103": 0.1002020566531806,
+        "1008-472": 0.04703955855585483,
+        "1812-153": 0.15028620160032932
+      },
+      "external_series_C_Vpeak": 6.693453138367215
+    },
+    {
+      "R_ohm": 21.992863430071626,
+      "C_pF": 36.73806180801135,
+      "bits_33_10_4p7_15": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "input_R": 29.338417861111004,
+      "input_X": 9.050231842261496,
+      "return_loss_dB": 10.980281158359993,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 25.47384821791982,
+      "delivered_resistive_mW_at_50mW_available": 14.271541705509929,
+      "loading_coil_Vpeak": {
+        "1812-333": 26.73593681348358,
+        "1008-472": 3.7834943412116453,
+        "1812-153": 12.087847139166366
+      },
+      "external_series_C_Vpeak": 43.9627744710148
+    },
+    {
+      "R_ohm": 101.99286343007162,
+      "C_pF": 36.73806180801135,
+      "bits_33_10_4p7_15": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "input_R": 36.78624164186082,
+      "input_X": -14.7906457676984,
+      "return_loss_dB": 12.945386656955618,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 17.434086662077114,
+      "delivered_resistive_mW_at_50mW_available": 31.000463387847343,
+      "loading_coil_Vpeak": {
+        "1812-333": 18.297849441930666,
+        "1008-472": 2.5893915856718013,
+        "1812-153": 8.272820532624507
+      },
+      "external_series_C_Vpeak": 30.087751700344054
+    },
+    {
+      "R_ohm": 23.113849109486917,
+      "C_pF": 44.82177383465962,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "input_R": 28.191876461074745,
+      "input_X": 12.616023194831186,
+      "return_loss_dB": 9.9487615196302,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 26.84398410092186,
+      "delivered_resistive_mW_at_50mW_available": 16.65582770481172,
+      "loading_coil_Vpeak": {
+        "1812-333": 28.17395536805988,
+        "1008-103": 8.492956564392031
+      },
+      "external_series_C_Vpeak": 37.972108179339195
+    },
+    {
+      "R_ohm": 103.11384910948692,
+      "C_pF": 44.82177383465962,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "input_R": 37.74209124663447,
+      "input_X": -12.88896629464304,
+      "return_loss_dB": 13.954762207205977,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 18.054867952587966,
+      "delivered_resistive_mW_at_50mW_available": 33.61287278314207,
+      "loading_coil_Vpeak": {
+        "1812-333": 18.94938701945362,
+        "1008-103": 5.712237375818495
+      },
+      "external_series_C_Vpeak": 25.539480148768636
+    },
+    {
+      "R_ohm": 24.48394271766116,
+      "C_pF": 52.75293005776011,
+      "bits_33_10_4p7_15": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "input_R": 41.02420320909772,
+      "input_X": 25.853824097844445,
+      "return_loss_dB": 10.775354340596675,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 28.597730992327193,
+      "delivered_resistive_mW_at_50mW_available": 20.023708208068822,
+      "loading_coil_Vpeak": {
+        "1812-333": 30.0145907394551,
+        "1008-472": 4.247467930850314
+      },
+      "external_series_C_Vpeak": 34.37096822744677
+    },
+    {
+      "R_ohm": 104.48394271766117,
+      "C_pF": 52.75293005776011,
+      "bits_33_10_4p7_15": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "input_R": 47.124181381250864,
+      "input_X": -13.296176744211529,
+      "return_loss_dB": 17.154092523823405,
+      "matched": true,
+      "antenna_current_mArms_at_50mW_available": 18.67047035558863,
+      "delivered_resistive_mW_at_50mW_available": 36.4216880634758,
+      "loading_coil_Vpeak": {
+        "1812-333": 19.59548912417121,
+        "1008-472": 2.7730250386134148
+      },
+      "external_series_C_Vpeak": 22.439617449216456
+    },
+    {
+      "R_ohm": 20.004982158575178,
+      "C_pF": 2.74048280206816,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_R": 2.874662138429061,
+      "input_X": -45.70275755386269,
+      "return_loss_dB": 0.5438675206341901,
+      "matched": false,
+      "antenna_current_mArms_at_50mW_available": 0.2867902861102965,
+      "delivered_resistive_mW_at_50mW_available": 0.0016453831400521203,
+      "loading_coil_Vpeak": {
+        "1812-333": 0.30099916206503563,
+        "1008-103": 0.09073531834421951,
+        "1008-472": 0.04259542631055929,
+        "1812-153": 0.13608768921926703
+      },
+      "external_series_C_Vpeak": 6.635048971992063
+    },
+    {
+      "R_ohm": 100.00498215857517,
+      "C_pF": 2.74048280206816,
+      "bits_33_10_4p7_15": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_R": 2.8778755840588057,
+      "input_X": -45.70280548627806,
+      "return_loss_dB": 0.5444743613352887,
+      "matched": false,
+      "antenna_current_mArms_at_50mW_available": 0.2867688132292878,
+      "delivered_resistive_mW_at_50mW_available": 0.008224044938640922,
+      "loading_coil_Vpeak": {
+        "1812-333": 0.30097662532127617,
+        "1008-103": 0.09072852470863121,
+        "1008-472": 0.0425922370584647,
+        "1812-153": 0.13607749991056695
+      },
+      "external_series_C_Vpeak": 6.63455218523197
+    }
+  ],
+  "skew_bound": {
+    "rail_max_V": 5.2,
+    "ballast_min_ohm": 99,
+    "worst_4_vs_4_ballast_only_mA": 105.05050505050505,
+    "note": "Worst skew current exceeds the 70mA DC package rating. Pulse behavior is unspecified. Measure switching currents and obtain manufacturer clarification before a populated fleet release; use conservative current limiting for first articles."
+  },
+  "runtime": [
+    {
+      "mode": "slow/fast MINI50",
+      "cell_mAh": 150,
+      "average_mA": 9.704895389507154,
+      "useful_hours": 12.36489371433544
+    },
+    {
+      "mode": "slow/fast MINI50",
+      "cell_mAh": 300,
+      "average_mA": 9.704895389507154,
+      "useful_hours": 24.72978742867088
+    },
+    {
+      "mode": "slow/fast MINI50",
+      "cell_mAh": 560,
+      "average_mA": 9.704895389507154,
+      "useful_hours": 46.162269866852306
+    },
+    {
+      "mode": "slow/fast MINI50",
+      "cell_mAh": 1200,
+      "average_mA": 9.704895389507154,
+      "useful_hours": 98.91914971468351
+    },
+    {
+      "mode": "slow/fast MINI50",
+      "cell_mAh": 1500,
+      "average_mA": 9.704895389507154,
+      "useful_hours": 123.6489371433544
+    },
+    {
+      "mode": "S MINI50",
+      "cell_mAh": 150,
+      "average_mA": 34.004451510333865,
+      "useful_hours": 3.5289497307001794
+    },
+    {
+      "mode": "S MINI50",
+      "cell_mAh": 300,
+      "average_mA": 34.004451510333865,
+      "useful_hours": 7.057899461400359
+    },
+    {
+      "mode": "S MINI50",
+      "cell_mAh": 560,
+      "average_mA": 34.004451510333865,
+      "useful_hours": 13.174745661280669
+    },
+    {
+      "mode": "S MINI50",
+      "cell_mAh": 1200,
+      "average_mA": 34.004451510333865,
+      "useful_hours": 28.231597845601435
+    },
+    {
+      "mode": "S MINI50",
+      "cell_mAh": 1500,
+      "average_mA": 34.004451510333865,
+      "useful_hours": 35.289497307001795
+    },
+    {
+      "mode": "MO MINI50",
+      "cell_mAh": 150,
+      "average_mA": 47.49525323642971,
+      "useful_hours": 2.5265682741524547
+    },
+    {
+      "mode": "MO MINI50",
+      "cell_mAh": 300,
+      "average_mA": 47.49525323642971,
+      "useful_hours": 5.053136548304909
+    },
+    {
+      "mode": "MO MINI50",
+      "cell_mAh": 560,
+      "average_mA": 47.49525323642971,
+      "useful_hours": 9.43252155683583
+    },
+    {
+      "mode": "MO MINI50",
+      "cell_mAh": 1200,
+      "average_mA": 47.49525323642971,
+      "useful_hours": 20.212546193219637
+    },
+    {
+      "mode": "MO MINI50",
+      "cell_mAh": 1500,
+      "average_mA": 47.49525323642971,
+      "useful_hours": 25.265682741524547
+    },
+    {
+      "mode": "FOX10",
+      "cell_mAh": 150,
+      "average_mA": 37.93926868044515,
+      "useful_hours": 3.1629497397732127
+    },
+    {
+      "mode": "FOX10",
+      "cell_mAh": 300,
+      "average_mA": 37.93926868044515,
+      "useful_hours": 6.325899479546425
+    },
+    {
+      "mode": "FOX10",
+      "cell_mAh": 560,
+      "average_mA": 37.93926868044515,
+      "useful_hours": 11.808345695153328
+    },
+    {
+      "mode": "FOX10",
+      "cell_mAh": 1200,
+      "average_mA": 37.93926868044515,
+      "useful_hours": 25.3035979181857
+    },
+    {
+      "mode": "FOX10",
+      "cell_mAh": 1500,
+      "average_mA": 37.93926868044515,
+      "useful_hours": 31.629497397732127
+    }
+  ]
+}

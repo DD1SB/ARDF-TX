@@ -1,0 +1,4 @@
+# Preserve generated CSV/Intel HEX bytes for release checksums; CRLF is valid.
+*.csv -text whitespace=cr-at-eol
+*.hex -text whitespace=cr-at-eol
+*.elf binary
