@@ -1,0 +1,3 @@
+gcc -std=c11 -Wall -Wextra -Werror core.c power.c test_core.c -o build/test_core
+./build/test_core
+PASS: RF safety states/tail/wrap, twelve roles, slot exclusion, 12h +/-20ppm drift guards, defaults, CRC bit faults, Morse 8-15WPM, 361 synthesizer frequencies

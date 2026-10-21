@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-22T00:01:37",
+    "ignored_checks": [
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "Mini80.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [FIX_RX] on B.Cu, length 0.7393 mm",
+                    "pos": {
+                        "x": 55.8107,
+                        "y": 66.85
+                    },
+                    "uuid": "fc75c5a7-6d38-4c52-b846-d261ef2ed7e2"
+                },
+                {
+                    "description": "Via [FIX_RX] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.55,
+                        "y": 66.849999
+                    },
+                    "uuid": "abf59c7c-9cf9-4a9d-9715-990eae3dc79d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        }
+    ]
+}

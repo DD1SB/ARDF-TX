@@ -1,0 +1,57 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /tmp/mini80-e2-l4nntvwo/hardware/80m-mini/review/drc.json
+Found 0 violations
+Saved ERC Report to /tmp/mini80-e2-l4nntvwo/hardware/80m-mini/review/erc.json
+{
+  "status": "PASS",
+  "errors": [],
+  "connected_pin_comparisons": 229,
+  "independent_manufacturer_pin_comparisons": 85,
+  "PCB": {
+    "outline_with_stroke_mm": [
+      35.05,
+      35.05
+    ],
+    "tracks": 913,
+    "vias": 107,
+    "footprints": 92,
+    "min_track_mm": 0.1,
+    "min_via_drill_mm": 0.2,
+    "min_via_annulus_mm": 0.125,
+    "min_SMD_pad_dimension_mm": 0.25
+  },
+  "physical_measurements": "NOT RUN",
+  "DFM_limit": "Local checks against published JLC capabilities; no manufacturer CAM/assembly approval or checkout",
+  "input_SHA256": {
+    "01_power.kicad_sch": "6b075117d63fbe9a5950673c8e25b90cef7e1faf4e4a60cde02221dfa61e1571",
+    "02_control.kicad_sch": "1d88065f374d7ee0aa7d58b55e4f6af4ceb06a9aaec7fd053b7b97bfadaf1403",
+    "03_rf.kicad_sch": "452937a00489fb304aaaebef545c2765b1a3307bbb74d40086150503510d90d5",
+    "04_output.kicad_sch": "15f6595262807afe7fece683d0ae16005a8cbae1d412715a599272744accf9bb",
+    "Mini80.electrical.json": "79fb0214b53e6940da35b56cb6cc851a9152c174e55d78d228332c727f37c21c",
+    "Mini80.kicad_dru": "7f01ab58aa893814d466b9313062bb2b3b6bb386c304f922285ddbac7b6e77f6",
+    "Mini80.kicad_pcb": "1f5eb9e3a806201e6afa9f3418a9ba97dc4f930c289b66c978306004e1687fe8",
+    "Mini80.kicad_pro": "579e20c4f1aa9f6122c0b7f604666cf7963ff12a2b31720b71823afac22b3a42",
+    "Mini80.kicad_sch": "8ec01bf411497ca2019228461dc449d0d08063fd4ac6f77f2640fbc13841ae1a",
+    "Mini80.kicad_sym": "7491b708c05e2dcac5b7da454ce92eb805c438ad1a87494927b742602a49551a",
+    "Mini80.pretty/ATtiny1616_VQFN20_JLC.kicad_mod": "451e579827996cf5ecff1e071404952651202bf6b1f1d456d6059ea99248d2fb",
+    "Mini80.pretty/Coilcraft_1008LS.kicad_mod": "84ee6c5215495e94e8af622a504cc2dcd36cfcf23795a4d6dc466496d654b3f7",
+    "Mini80.pretty/Coilcraft_1812LS.kicad_mod": "fba35f093792e04bdcfbe344c79d17ae5caa4fb0bd0f3f1032d827e9b4f59954",
+    "Mini80.pretty/MF_FSMF0603.kicad_mod": "553192fa0996c72c319ebf33e60bfbe32cb9a593ba1b3cce3bd862639157535d",
+    "Mini80.pretty/Pogo6.kicad_mod": "e2f52b0c71b7b87601a0701df69f4d606eee3b16a6eaad05142a7c7c8ebcae66",
+    "Mini80.pretty/Wire2.kicad_mod": "dc4a822b233c7d211941ae716516e0b370be38e2298441b96986837e373cf629",
+    "fabrication/Mini80-M80-E1-JLCPCB-bare.zip": "d55f8791e4e18c89d3279581073e86afd17dfd55340b3f0aaf3966afde356142",
+    "fabrication/Mini80-M80-E1-stencil.zip": "f8256e8e347b15e22c5a1f88ec1815c045123084d6db768ffcd33811f37cd860",
+    "firmware/core.c": "58e455ee3c66def7c653df6c5dc71df8f60e64093fd0f42f9fee02ed53bbd56b",
+    "firmware/main.c": "7ab9a2cd8277e03d974b34306ba5fb37f0f3df34522646b522c0dba91f417828",
+    "firmware/mini80.h": "5e6fa024204f03c24ca90fe046ddd4c99f1e9e1ca93d0aa68c34b0ac3d48067c",
+    "firmware/power.c": "5a5d0502ae12252dca1cc3c15a563a4b27ca6a934745dad8a3ee9467bbedd48b",
+    "firmware/power.h": "52fb09d199e1b329a0c2571f01098417f86ad8c2b83ba815c18c22e88f1fe9c7",
+    "firmware/test_core.c": "decd9043572f83d2cce57cf8c49674b4d71423d4c36f924a7b5e4cea1e82284d",
+    "review/firmware/mini80-universal.hex": "6f468d20ec5365812dabb7c9521d066cdc187ceb4011986f2d79eb9c5c99969d"
+  }
+}

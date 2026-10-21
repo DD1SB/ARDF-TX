@@ -1,0 +1,13 @@
+item,exact_part_or_requirement,required,spares,proposed_quantity_or_reuse,specification_or_connections,source_url,procurement_status
+Pogo contacts,INGUN GKS-075 214 064 A 2000 / GKS-075-0007,6,2,8,0.64 mm tip; 1.91 mm minimum grid; 4.3 mm working stroke; 2 N each,https://ingun.com/en/products/GKS-075-series/GKS-075-0007,"OPEN - price/login, MOQ, multiple and delivery"
+Probe receptacles,INGUN KS-075 47 G / KS-07547G,6,2,8,Matching wire-wrap receptacle; 1.47 mm collar; bore per manufacturer fixture drawing,https://ingun.com/en/products/KS-075-series,"OPEN - price, MOQ, multiple and delivery"
+Insulating fixture plate / supported clamp / asymmetric stop,External reusable fixture; local fabrication,1,0,1,2 x 3 probes at 2 mm; adjustable alignment; stroke stop; support about 12 N; key against 180-degree reversal,,OPEN - local fixture materials and build
+M2 insulating guides and spacers,Nylon M2 fixture hardware,2,2,4,For H1/H2 2.20 mm NPTH; accommodate standard hole tolerances; no broad conductive washers,,OPEN - verify available hardware
+Six signal wires,Insulated small-gauge fixture wiring,6,2,8,J2.1 GND; .2 VTref sense; .3 UPDI; .4 UART TX to target RX; .5 UART RX from target TX; .6 SYNC,,OPEN - reuse stock or select wire
+UPDI programmer,Reusable target-referenced UPDI tool,1,0,1,3.0 V target compatibility; J2.1 ground/.2 sense/.3 data; disable tool power and high-voltage operation,,OPEN - existing tool availability; no assumed purchase price
+Configuration / sync interface,Reusable target-referenced 3.0 V UART and SYNC interface,1,0,1,9600 8N1; common ground; UART TX->J2.4/RX<-J2.5; normally-low 3 V edge->J2.6; verify output levels,,OPEN - existing adapter availability and verified logic levels
+Protected battery,Protected 1S Li-ion/LiPo bench pack,1,0,1,Suitable 1S battery range; bench capacity 150-300 mAh sufficient for initial tests; no runtime claim,,OPEN - pack dimensions/protection/polarity
+Battery harness,Prewired JST-PH 2.00 mm two-position mate,1,1,2,Mate J1 S2B-PH-SM4-TB; pin1 positive independently meter-verified; strain relief,,OPEN - exact harness vendor/MOQ/polarity
+Dummy-load pigtail,Two insulated wires or short 50-ohm coax to a bench connector,1,1,2,Hand solder J3.1 ANT/J3.2 GND; no wire connector fitted in SMT stencil,,OPEN - use characterized bench fixture
+RF dummy load,Characterized noninductive 50-ohm HF dummy load,1,0,1,Reusable load for conducted-power and filter tests; measure fixture losses,,OPEN - existing calibrated load availability
+Reflow consumables,Fine-pitch solder paste compatible with chosen reflow process,1,0,1,0.10 mm stencil; inspect 0402/QFN/WSON joints; microscope/reflow tools required,,OPEN - existing paste/tools and shelf life

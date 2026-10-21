@@ -1,0 +1,181 @@
+{
+  "mask_region_count": {
+    "F": 233,
+    "B": 10
+  },
+  "mask_at_EP_via_centers": {
+    "U2": {
+      "F": true,
+      "B": false
+    },
+    "U3": {
+      "F": true,
+      "B": false
+    }
+  },
+  "J2": [
+    {
+      "pad": "1",
+      "net": "GND",
+      "center_mm": [
+        60.0,
+        74.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        59.45,
+        73.45,
+        60.55,
+        74.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    },
+    {
+      "pad": "2",
+      "net": "V3",
+      "center_mm": [
+        58.0,
+        74.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        57.45,
+        73.45,
+        58.55,
+        74.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    },
+    {
+      "pad": "3",
+      "net": "UPDI",
+      "center_mm": [
+        56.0,
+        74.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        55.45,
+        73.45,
+        56.55,
+        74.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    },
+    {
+      "pad": "4",
+      "net": "FIX_RX",
+      "center_mm": [
+        60.0,
+        76.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        59.45,
+        75.45,
+        60.55,
+        76.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    },
+    {
+      "pad": "5",
+      "net": "FIX_TX",
+      "center_mm": [
+        58.0,
+        76.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        57.45,
+        75.45,
+        58.55,
+        76.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    },
+    {
+      "pad": "6",
+      "net": "SYNC",
+      "center_mm": [
+        56.0,
+        76.0
+      ],
+      "bottom_mask_opening_bounds_mm": [
+        55.45,
+        75.45,
+        56.55,
+        76.55
+      ],
+      "bottom_mask_opening_size_mm": [
+        1.0999999999999943,
+        1.0999999999999943
+      ]
+    }
+  ],
+  "silkscreen_text": [
+    {
+      "text": "CP",
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "stroke_mm": 0.15,
+      "layer": "F.Silkscreen"
+    },
+    {
+      "text": "ANT",
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "stroke_mm": 0.15,
+      "layer": "F.Silkscreen"
+    },
+    {
+      "text": "1 G  2 V  3 U\n4 RX 5 TX 6 SY",
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "stroke_mm": 0.15,
+      "layer": "B.Silkscreen"
+    },
+    {
+      "text": "BAT + = PIN 1",
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "stroke_mm": 0.15,
+      "layer": "B.Silkscreen"
+    },
+    {
+      "text": "MINI80 E1\nTRAINING / FOX10",
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "stroke_mm": 0.15,
+      "layer": "B.Silkscreen"
+    }
+  ],
+  "silkscreen_stroke_histogram": {
+    "0.12": 214
+  },
+  "ep_paste_to_drill": {
+    "U2_overlap_depth_mm_each_cap": 0.020000000000000004,
+    "U2_total_paste_overlap_area_mm2": 0.0032700221758656892,
+    "U3_paste_to_drill_edge_mm": 0.08458892449920655
+  }
+}
