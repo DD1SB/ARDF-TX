@@ -1,0 +1,63 @@
+{
+  "changes": [
+    {
+      "ref": "U402",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "U305",
+      "pin": "3",
+      "net": "DRIVER_ON"
+    },
+    {
+      "ref": "U601",
+      "pin": "1",
+      "net": "CLOCK_OFF"
+    },
+    {
+      "ref": "R509",
+      "pin": "1",
+      "net": "LOCAL_MOD_OFF"
+    },
+    {
+      "ref": "Q401",
+      "pin": "2",
+      "net": "VPA_PRE"
+    }
+  ],
+  "added": [
+    "U970",
+    "U971",
+    "U972",
+    "U973",
+    "R970",
+    "R971",
+    "R972",
+    "R973",
+    "R974",
+    "R975",
+    "R976",
+    "R977",
+    "R978",
+    "R979",
+    "R980",
+    "R981",
+    "R982",
+    "R983",
+    "R984",
+    "C970",
+    "C971",
+    "C972",
+    "C973",
+    "TP970",
+    "TP971",
+    "TP972",
+    "TP973",
+    "TP974",
+    "TP975",
+    "TP976"
+  ],
+  "thermal": "Existing TH801 retained; external thermocouple locations only. No new unqualified thermal trip.",
+  "controller_GPIO_change": false
+}

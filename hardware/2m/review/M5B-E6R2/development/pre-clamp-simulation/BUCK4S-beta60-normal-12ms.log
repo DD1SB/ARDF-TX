@@ -1,0 +1,524 @@
+
+Note: Compatibility modes selected: ps
+
+
+Circuit: * e6r2 native-value transient, buck4s, bfpass60, normal, edge0.012s
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+v3v3                                       3.3
+vsource                                 8.9996
+vreg                                   7.51018
+vreg_l                                 7.79176
+normal_off                                   0
+key                                          0
+key_n                                      3.3
+local_mod_off                              3.3
+driver_on                          3.30047e-12
+vreg_switch                            7.78161
+vmod                                    7.7586
+drvsource                                    5
+vdrv_filter                            2.13141
+vdrv_mmic                           4.3866e-08
+vpa                                2.62844e-05
+vpa_ready_s                        6.52169e-06
+vpa_ready_ref                        0.0247135
+drv_ready_s                         1.0884e-08
+drv_ready_ref                          1.13402
+vr_raw                                       0
+vpa_ready                                    0
+dr_raw                                       0
+drv_ready                                    0
+clock_off                                  3.3
+af_pwm                                       0
+af_f1                               0.00265618
+af_f2                               0.00715812
+af_dc                                0.0185565
+x401b.esdn                           0.0185565
+x401b.mid                              0.00033
+x401b.33                            0.00715812
+x401b.58                                   180
+x401b.59                                  -180
+x401b.52                               42.0003
+x401b.53                              -41.9997
+x401b.41                              -1.20106
+x401b.vclp                           0.0189405
+x401b.57                              -1.20106
+x401b.40                              -1.20106
+x401b.39                               1.23894
+x401b.56                               1.23894
+x401b.38                               1.23894
+x401b.29                             0.0185565
+x401b.79                                  -0.1
+x401b.vee_b                        3.30093e-10
+x401b.80                                   3.4
+x401b.vcc_b                                3.3
+x401b.22                            0.00755423
+x401b.21                            0.00755423
+x401b.xvos_vcm.1                    0.00755423
+x401b.xvos_vcm.e1_int1                       0
+x401b.xvos_vcm.e1_int2                 3.29245
+x401b.xvos_vcm.e2_int1                       0
+x401b.xvos_vcm.e2_int2              0.00755423
+x401b.23                              0.033634
+x401b.24                             0.0336089
+x401b.26                              0.126778
+x401b.25                              0.126791
+x401b.27                              0.126791
+x401b.28                               0.12679
+x401b.cl_clamp                       0.0189393
+x401b.30                              0.126766
+x401b.xu1.g1_int1                     0.126436
+x401b.31                            0.00159436
+x401b.32                             0.0192274
+x401b.xclawn.g1_int1               1.92274e-05
+x401b.xclawn.g1_int2               0.000185267
+x401b.vimon                        0.000144732
+x401b.xe_n.7                          0.833786
+x401b.xe_n.8                          0.833786
+x401b.xe_n.3                                 0
+x401b.xe_n.6                                 0
+x401b.xe_n.4                                 0
+x401b.xe_n.5                                 0
+x401b.esdp                          0.00715812
+x401b.xi_nn.7                         0.833786
+x401b.xi_nn.8                         0.833786
+x401b.xi_nn.3                                0
+x401b.xi_nn.6                                0
+x401b.xi_nn.4                                0
+x401b.xi_nn.5                                0
+x401b.xi_np.7                         0.833786
+x401b.xi_np.8                         0.833786
+x401b.xi_np.3                                0
+x401b.xi_np.6                                0
+x401b.xi_np.4                                0
+x401b.xi_np.5                                0
+x401b.34                               0.00033
+x401b.35                               0.00033
+x401b.36                               0.00033
+x401b.37                               0.00033
+x401b.42                             -0.652002
+x401b.vsense                         -0.654025
+x401b.clamp                          -0.654025
+x401b.xvccs_lim_2.g1_int1            -0.012265
+x401b.43                              -1.09967
+x401b.xvccs_lim_1.g1_int1             -1.1e-06
+x401b.45                             0.0185565
+x401b.44                            0.00755645
+x401b.46                           0.000327426
+x401b.47                           0.000244546
+x401b.48                           0.000329762
+x401b.49                              0.854878
+x401b.50                           0.000329883
+x401b.51                           0.000635968
+x401b.xiqpos.g1_int1                         0
+x401b.xiqneg.g1_int1               1.85267e-07
+x401b.54                               0.00033
+x401b.xcl_amp.gvo+_int1                      0
+x401b.55                               0.00033
+x401b.xcl_amp.gvo-_int1                      0
+x401b.61                               0.00033
+x401b.xgr_amp.gvo+_int1                      0
+x401b.60                             -0.654025
+x401b.62                               0.00033
+x401b.xgr_amp.gvo-_int1                      0
+x401b.63                               0.00033
+x401b.64                               0.00033
+x401b.xgr_src.g1_int1                        0
+x401b.65                               0.00033
+x401b.66                               0.00033
+x401b.xcl_src.g1_int1                        0
+x401b.67                               3.28158
+x401b.xclawp.g1_int1               1.84198e-05
+x401b.xclawp.g1_int2               0.000185267
+x401b.68                               3.28158
+x401b.69                             0.0192274
+x401b.vcc_clp                          3.28158
+x401b.vee_clp                        0.0192274
+x401b.70                               0.00033
+x401b.xclaw_amp.gvo+_int1                    0
+x401b.vout_s                         0.0185565
+x401b.71                            0.00100094
+x401b.xclaw_amp.gvo-_int1          0.000670941
+x401b.72                               0.00033
+x401b.73                            0.00100094
+x401b.claw_clamp                     0.0189393
+x401b.xclaw_src.g1_int1           -0.000670941
+x401b.sw_ol                            0.00033
+x401b.74                               0.00033
+x401b.xol_sense.gsw+_int1                    0
+x401b.75                            0.00014486
+x401b.76                             0.0185565
+x401b.77                             0.0189393
+x401b.78                            0.00755645
+x401b.xvcm_clamp.g1_int1            0.00722645
+x401b.81                            0.00755645
+x401b.82                               0.00033
+x401b.83                           3.30423e-10
+x401b.84                                   3.3
+x401b.85                            0.00755411
+x401b.86                            0.00755411
+am_command                                   0
+mod_command                          0.0164799
+mod_off_base                          0.631438
+mod_base                             0.0204913
+mod_drive                            0.0388782
+x401c.esdn                            0.016704
+x401c.mid                              0.00033
+x401c.33                             0.0164799
+x401c.58                                   180
+x401c.59                                  -180
+x401c.52                               42.0003
+x401c.53                              -41.9997
+x401c.41                              -1.15445
+x401c.vclp                           0.0655451
+x401c.57                              -1.15445
+x401c.40                              -1.15445
+x401c.39                               1.28555
+x401c.56                               1.28555
+x401c.38                               1.28555
+x401c.29                             0.0388782
+x401c.79                                  -0.1
+x401c.vee_b                        3.30084e-10
+x401c.80                                   3.4
+x401c.vcc_b                                3.3
+x401c.22                              0.016876
+x401c.21                              0.016876
+x401c.xvos_vcm.1                      0.016876
+x401c.xvos_vcm.e1_int1                       0
+x401c.xvos_vcm.e1_int2                 3.28312
+x401c.xvos_vcm.e2_int1                       0
+x401c.xvos_vcm.e2_int2                0.016876
+x401c.23                                2.3214
+x401c.24                               2.32127
+x401c.26                               8.81867
+x401c.25                               8.81954
+x401c.27                               8.81949
+x401c.28                                8.8199
+x401c.cl_clamp                        0.065558
+x401c.30                               8.81782
+x401c.xu1.g1_int1                      8.81751
+x401c.31                             0.0885051
+x401c.32                             0.0195028
+x401c.xclawn.g1_int1               1.95028e-05
+x401c.xclawn.g1_int2                 0.0209207
+x401c.vimon                          0.0212507
+x401c.xe_n.7                          0.833786
+x401c.xe_n.8                          0.833786
+x401c.xe_n.3                                 0
+x401c.xe_n.6                                 0
+x401c.xe_n.4                                 0
+x401c.xe_n.5                                 0
+x401c.esdp                           0.0164799
+x401c.xi_nn.7                         0.833786
+x401c.xi_nn.8                         0.833786
+x401c.xi_nn.3                                0
+x401c.xi_nn.6                                0
+x401c.xi_nn.4                                0
+x401c.xi_nn.5                                0
+x401c.xi_np.7                         0.833786
+x401c.xi_np.8                         0.833786
+x401c.xi_np.3                                0
+x401c.xi_np.6                                0
+x401c.xi_np.4                                0
+x401c.xi_np.5                                0
+x401c.34                               0.00033
+x401c.35                               0.00033
+x401c.36                               0.00033
+x401c.37                               0.00033
+x401c.42                              0.065558
+x401c.vsense                         0.0655906
+x401c.clamp                          0.0655906
+x401c.xvccs_lim_2.g1_int1          0.000196761
+x401c.43                             0.0179767
+x401c.xvccs_lim_1.g1_int1          1.76467e-08
+x401c.45                              0.016704
+x401c.44                             0.0168804
+x401c.46                           0.000327426
+x401c.47                           0.000244546
+x401c.48                           0.000329762
+x401c.49                              0.854878
+x401c.50                           0.000332124
+x401c.51                            0.00105368
+x401c.xiqpos.g1_int1               2.09207e-05
+x401c.xiqneg.g1_int1                         0
+x401c.54                               0.00033
+x401c.xcl_amp.gvo+_int1                      0
+x401c.55                               0.00033
+x401c.xcl_amp.gvo-_int1                      0
+x401c.61                               0.00033
+x401c.xgr_amp.gvo+_int1                      0
+x401c.60                             0.0655906
+x401c.62                               0.00033
+x401c.xgr_amp.gvo-_int1                      0
+x401c.63                               0.00033
+x401c.64                               0.00033
+x401c.xgr_src.g1_int1                        0
+x401c.65                               0.00033
+x401c.66                               0.00033
+x401c.xcl_src.g1_int1                        0
+x401c.67                               3.28132
+x401c.xclawp.g1_int1               1.86771e-05
+x401c.xclawp.g1_int2                 0.0209207
+x401c.68                               3.28132
+x401c.69                             0.0195028
+x401c.vcc_clp                          3.28132
+x401c.vee_clp                        0.0195028
+x401c.70                               0.00033
+x401c.xclaw_amp.gvo+_int1                    0
+x401c.vout_s                         0.0388781
+x401c.71                               0.00033
+x401c.xclaw_amp.gvo-_int1                    0
+x401c.72                               0.00033
+x401c.73                               0.00033
+x401c.claw_clamp                      0.065558
+x401c.xclaw_src.g1_int1                      0
+x401c.sw_ol                            0.00033
+x401c.74                               0.00033
+x401c.xol_sense.gsw+_int1                    0
+x401c.75                             0.0213136
+x401c.76                             0.0388782
+x401c.77                              0.065558
+x401c.78                             0.0168804
+x401c.xvcm_clamp.g1_int1             0.0165504
+x401c.81                             0.0168804
+x401c.82                               0.00033
+x401c.83                           3.30414e-10
+x401c.84                                   3.3
+x401c.85                             0.0168781
+x401c.86                             0.0168781
+vpa_fb                                0.016704
+mod_sink                               7.50804
+mod_e                             -6.27498e-08
+pass_base                               7.5081
+vpa_pre                            2.73933e-05
+b.x401c.xvcm_clamp.bg1#branch                0
+b.x401c.xol_sense.bgsw+#branch               0
+b.x401c.xclaw_src.bg1#branch                 0
+b.x401c.xclaw_amp.bgvo-#branch               0
+b.x401c.xclaw_amp.bgvo+#branch               0
+b.x401c.xclawp.bg1#branch                    0
+b.x401c.xcl_src.bg1#branch                   0
+b.x401c.xgr_src.bg1#branch                   0
+b.x401c.xgr_amp.bgvo-#branch                 0
+b.x401c.xgr_amp.bgvo+#branch                 0
+b.x401c.xcl_amp.bgvo-#branch                 0
+b.x401c.xcl_amp.bgvo+#branch                 0
+b.x401c.xiqneg.bg1#branch                    0
+b.x401c.xiqpos.bg1#branch                    0
+b.x401c.xvccs_lim_1.bg1#branch               0
+b.x401c.xvccs_lim_2.bg1#branch               0
+b.x401c.xclawn.bg1#branch                    0
+b.x401c.xu1.bg1#branch                       0
+b.x401c.xvos_vcm.be2#branch                  0
+b.x401c.xvos_vcm.be1#branch                  0
+b402#branch                        1.64799e-05
+b.x401b.xvcm_clamp.bg1#branch                0
+b.x401b.xol_sense.bgsw+#branch               0
+b.x401b.xclaw_src.bg1#branch                 0
+b.x401b.xclaw_amp.bgvo-#branch               0
+b.x401b.xclaw_amp.bgvo+#branch               0
+b.x401b.xclawp.bg1#branch                    0
+b.x401b.xcl_src.bg1#branch                   0
+b.x401b.xgr_src.bg1#branch                   0
+b.x401b.xgr_amp.bgvo-#branch                 0
+b.x401b.xgr_amp.bgvo+#branch                 0
+b.x401b.xcl_amp.bgvo-#branch                 0
+b.x401b.xcl_amp.bgvo+#branch                 0
+b.x401b.xiqneg.bg1#branch                    0
+b.x401b.xiqpos.bg1#branch                    0
+b.x401b.xvccs_lim_1.bg1#branch               0
+b.x401b.xvccs_lim_2.bg1#branch               0
+b.x401b.xclawn.bg1#branch                    0
+b.x401b.xu1.bg1#branch                       0
+b.x401b.xvos_vcm.be2#branch                  0
+b.x401b.xvos_vcm.be1#branch                  0
+bclock#branch                                0
+bdready#branch                               0
+bvready#branch                               0
+bdriver#branch                               0
+boff#branch                       -0.000266856
+bkeyn#branch                                 0
+h.x401c.h1#branch                 -6.29568e-07
+v.x401c.v4#branch                  2.09836e-05
+h.x401c.h3#branch                 -3.29994e-16
+v.x401c.v12#branch                -3.72546e-12
+h.x401c.h2#branch                 -3.29996e-16
+v.x401c.v11#branch                 3.59468e-12
+h.x401b.h1#branch                 -1.27664e-09
+v.x401b.v4#branch                  -1.8514e-07
+h.x401b.h3#branch                 -3.29838e-16
+v.x401b.v12#branch                -5.02492e-12
+h.x401b.h2#branch                 -3.30157e-16
+v.x401b.v11#branch                 2.29522e-12
+lfeed#branch                           12.4118
+e.x401c.e1#branch                 -6.33231e-08
+e.x401c.e4#branch                 -1.29863e-07
+e.x401c.e5#branch                 -5.22438e-10
+e.x401c.xi_np.e2#branch                      0
+e.x401c.xi_np.e1#branch                      0
+e.x401c.xi_nn.e2#branch                      0
+e.x401c.xi_nn.e1#branch                      0
+e.x401c.xe_n.e3#branch             5.06644e-12
+e.x401c.xe_n.e2#branch                       0
+e.x401c.xe_n.e1#branch                       0
+e.x401c.xvos_vcm.e2#branch        -6.64415e-14
+e.x401c.xvos_vcm.e1#branch        -6.64415e-14
+e.x401b.e1#branch                 -1.32983e-09
+e.x401b.e4#branch                  1.16052e-08
+e.x401b.e5#branch                  1.13754e-10
+e.x401b.xi_np.e2#branch                      0
+e.x401b.xi_np.e1#branch                      0
+e.x401b.xi_nn.e2#branch                      0
+e.x401b.xi_nn.e1#branch                      0
+e.x401b.xe_n.e3#branch             5.02978e-12
+e.x401b.xe_n.e2#branch                       0
+e.x401b.xe_n.e1#branch                       0
+e.x401b.xvos_vcm.e2#branch        -2.97799e-14
+e.x401b.xvos_vcm.e1#branch        -2.97799e-14
+v.x401c.v_os#branch               -6.64415e-14
+v.x401c.vcm_max#branch            -3.39967e-12
+v.x401c.vcm_min#branch              1.0033e-13
+v.x401c.v_orp#branch                         0
+v.x401c.v_orn#branch                         0
+v.x401c.v_iscn#branch                  4.2e-11
+v.x401c.v_iscp#branch                 -4.2e-11
+v.x401c.v_grn#branch                   1.8e-10
+v.x401c.v_grp#branch                  -1.8e-10
+v.x401b.v_os#branch               -2.97799e-14
+v.x401b.vcm_max#branch            -3.39967e-12
+v.x401b.vcm_min#branch              1.0033e-13
+v.x401b.v_orp#branch                         0
+v.x401b.v_orn#branch                         0
+v.x401b.v_iscn#branch                  4.2e-11
+v.x401b.v_iscp#branch                 -4.2e-11
+v.x401b.v_grn#branch                   1.8e-10
+v.x401b.v_grp#branch                  -1.8e-10
+vaf#branch                         2.65618e-07
+vdriver#branch                        -23.9049
+vkey#branch                                  0
+vfault#branch                                0
+vconv#branch                          -12.4118
+vlogic#branch                     -0.000264248
+a.x401c.xclawp.ag1#branch_1_0                0
+a.x401c.xclawn.ag1#branch_1_0                0
+a.x401c.xvos_vcm.ae2#branch_1_0               0
+a.x401c.xvos_vcm.ae1#branch_1_0               0
+a.x401b.xclawp.ag1#branch_1_0                0
+a.x401b.xclawn.ag1#branch_1_0                0
+a.x401b.xvos_vcm.ae2#branch_1_0               0
+a.x401b.xvos_vcm.ae1#branch_1_0               0
+
+ Reference value :  6.91623e-06
+ Reference value :  6.20350e-03
+ Reference value :  1.20641e-02
+ Reference value :  1.80825e-02
+ Reference value :  2.45191e-02
+ Reference value :  3.09505e-02
+ Reference value :  3.75750e-02
+ Reference value :  4.37925e-02
+ Reference value :  5.03620e-02
+ Reference value :  5.69559e-02
+ Reference value :  6.31675e-02
+ Reference value :  6.97255e-02
+ Reference value :  7.62825e-02
+ Reference value :  8.20708e-02
+ Reference value :  8.84255e-02
+ Reference value :  9.48535e-02
+ Reference value :  1.01404e-01
+ Reference value :  1.05643e-01
+ Reference value :  1.06298e-01
+ Reference value :  1.12348e-01
+ Reference value :  1.18429e-01
+ Reference value :  1.24627e-01
+ Reference value :  1.30798e-01
+ Reference value :  1.37218e-01
+ Reference value :  1.43737e-01
+ Reference value :  1.50232e-01
+ Reference value :  1.55023e-01
+ Reference value :  1.61101e-01
+ Reference value :  1.67498e-01
+ Reference value :  1.73303e-01
+ Reference value :  1.79350e-01
+ Reference value :  1.85775e-01
+ Reference value :  1.92100e-01
+ Reference value :  1.98401e-01
+ Reference value :  2.04586e-01
+ Reference value :  2.10472e-01
+ Reference value :  2.16592e-01
+ Reference value :  2.22775e-01
+ Reference value :  2.28928e-01
+ Reference value :  2.35096e-01
+ Reference value :  2.41092e-01
+ Reference value :  2.47101e-01
+ Reference value :  2.53200e-01
+ Reference value :  2.59192e-01
+ Reference value :  2.64717e-01
+ Reference value :  2.69643e-01
+ Reference value :  2.75847e-01
+ Reference value :  2.82083e-01
+ Reference value :  2.88133e-01
+ Reference value :  2.94026e-01
+ Reference value :  2.99879e-01
+ Reference value :  3.05933e-01
+ Reference value :  3.11850e-01
+ Reference value :  3.17979e-01
+ Reference value :  3.24077e-01
+ Reference value :  3.30201e-01
+ Reference value :  3.35572e-01
+ Reference value :  3.41441e-01
+ Reference value :  3.47425e-01
+ Reference value :  3.53353e-01
+ Reference value :  3.59052e-01
+ Reference value :  3.64913e-01
+ Reference value :  3.70563e-01
+ Reference value :  3.76172e-01
+ Reference value :  3.82005e-01
+ Reference value :  3.87826e-01
+ Reference value :  3.93603e-01
+ Reference value :  3.99376e-01
+ Reference value :  4.05042e-01
+ Reference value :  4.10725e-01
+ Reference value :  4.16461e-01
+ Reference value :  4.22397e-01
+ Reference value :  4.26275e-01
+ Reference value :  4.32150e-01
+ Reference value :  4.38054e-01
+ Reference value :  4.43926e-01
+ Reference value :  4.49798e-01
+ Reference value :  4.55418e-01
+ Reference value :  4.61252e-01
+ Reference value :  4.67077e-01
+ Reference value :  4.72925e-01
+ Reference value :  4.78752e-01
+ Reference value :  4.84568e-01
+ Reference value :  4.90001e-01
+ Reference value :  4.95468e-01
+No. of Data Rows : 163300
+vpamax              =  7.204534e+00 at=  2.663708e-02
+vmodmax             =  8.999600e+00 at=  1.061714e-01
+vpaspace            =  4.855274e-02 at=  1.100000e-01
+driverspace         =  1.329757e-07 at=  1.699375e-01
+ngspice-42 done
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: singular matrix:  check node x401b.xe_n.8
+
+Warning: singular matrix:  check node x401b.xe_n.8
+
+Warning: singular matrix:  check node x401b.xe_n.8
+
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully

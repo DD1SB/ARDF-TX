@@ -11,7 +11,7 @@ Historical reports and decision statuses have not been rewritten.
 | Controller M6-L2, independently reviewed; final reproduction PASS | [Decision](M6_L2_REVIEW_DECISION.md), [project](../hardware/controller/CTRL.kicad_pro), [review](../hardware/controller/review/M6-L2/README.md) | [48 populations](../hardware/controller/review/M6-L2/population-variants.json), [sourcing](../hardware/controller/review/M6-L2/sourcing-index.json), [manufacturing](M6_L2_MANUFACTURING.md) | [Physical gates](M6_L2_REVIEW_DECISION.md), [reproduce](../hardware/controller/review/M6-L2/REPRODUCE.md) |
 | Controller M6-L1, previous independently reviewed baseline | [Decision](M6_L1_REVIEW_DECISION.md), [review](../hardware/controller/review/M6-L1/README.md) | [Population BOMs](../hardware/controller/review/M6-L1/), [sourcing](../hardware/controller/review/M6-L1/SOURCING.md), [LoRa](M6_L1_LORA_VARIANTS.md) | [Bring-up](../hardware/controller/review/M6-L1/BRINGUP.md), [reproduce](../hardware/controller/review/M6-L1/REPRODUCE.md) |
 | RF80 M4A-V1R1 | [Decision](M4A_V1R1_REVIEW_DECISION.md), [project](../hardware/80m/production/RF80_V1.kicad_pro), [review](../hardware/80m/production/review/M4A-V1R1/README.md) | [Review BOMs](../hardware/80m/production/review/M4A-V1R1/), [variant analysis](M4A_VARIANT_BOM.md) | [Bring-up](../hardware/80m/production/review/M4A-V1R1/BRINGUP.md), [reproduce](../hardware/80m/production/review/M4A-V1R1/REPRODUCE.md) |
-| RF2M M5B-E5 native baseline; manufacturing and revised PCB HOLD | Preserved [E5 decision](M5B_E5_REVIEW_DECISION.md), [project](../hardware/2m/RF2M.kicad_pro); current [E6R1 HOLD](M5B_E6R1_REVIEW_DECISION.md), previous [E6](M5B_E6_REVIEW_DECISION.md) | Historical [E5 BOMs](../hardware/2m/review/M5B-E5/); [E6R1 costs](M5B_E6R1_COST_IMPACT.md), [common cooler](M5B_E6R1_COOLING_DECISION.md) | [E6R1 analysis/reproduction](../hardware/2m/review/M5B-E6R1/REPRODUCE.md); E5 [bring-up](../hardware/2m/review/M5B-E5/BRINGUP.md) remains historical |
+| RF2M M5B-E6R2 local evaluation candidate | [Decision](M5B_E6R2_REVIEW_DECISION.md), [native project](../hardware/2m/RF2M.kicad_pro); preserved [E5](M5B_E5_REVIEW_DECISION.md) | [E6R2 populations](../hardware/2m/review/M5B-E6R2/), [cost comparison](M5B_E6R2_COST_COMPARISON.md), [shared cooler](M5B_E6R2_MECHANICAL_ASSEMBLY.md) | [Reproduction](../hardware/2m/review/M5B-E6R2/REPRODUCE.md), [manufacturing](M5B_E6R2_MANUFACTURING.md), [first article](M5B_E6R2_FIRST_ARTICLE_TEST.md) |
 
 Current fabrication ZIPs and settings are in [Manufacturing data](../README.md#manufacturing-data).
 M6-L2: [five bare boards](../hardware/controller/review/M6-L2/ARDF_TX_CTRL_M6-L2_JLCPCB_5pcs_BARE.zip),
@@ -73,3 +73,9 @@ targets. Supplier observations have dates and unquoted positions.
 Do not run old generators over current sources or overwrite historical reviews.
 See [contribution guidance](../CONTRIBUTING.md) and
 [third-party notices](../THIRD_PARTY_NOTICES.md).
+
+## RF2M E6R2 implementation
+
+- [Native implementation](M5B_E6R2_IMPLEMENTATION.md) and [A2A keying](M5B_E6R2_A2A_KEYING.md).
+- [Thermal assumptions](M5B_E6R2_THERMAL_ASSUMPTIONS.md), [mechanical assembly](M5B_E6R2_MECHANICAL_ASSEMBLY.md), [RF regression](M5B_E6R2_RF_REGRESSION.md).
+- [Manufacturing](M5B_E6R2_MANUFACTURING.md), [first article](M5B_E6R2_FIRST_ARTICLE_TEST.md), [decision](M5B_E6R2_REVIEW_DECISION.md).

@@ -1,0 +1,15 @@
+{
+  "native_changes": {
+    "Q405.1": "MOD_COMMAND_OFF_BASE",
+    "R985": "10k NORMAL_OFF to MOD_COMMAND_OFF_BASE",
+    "R986": "100k MOD_COMMAND_OFF_BASE to GND"
+  },
+  "before_space_current_A": 0.04446,
+  "after_space_current_A_model": 9.1e-11,
+  "qualification": "SPICE model-level benefit; actual SPACE currents remain first-article measurements",
+  "removed_routes": [
+    "15fa2f79-49ca-4f20-ac80-ba0f6cbf6a60",
+    "3ca042a8-fdec-4871-93e9-44ff16a51019",
+    "e5216833-5fbe-49fe-ac80-c1ace3ff10bd"
+  ]
+}

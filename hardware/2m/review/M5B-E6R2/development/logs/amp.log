@@ -1,0 +1,203 @@
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: ps
+
+
+Circuit: * test ti model compatibility only
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vcc                                        3.3
+vin                                          1
+xamp.esdn                               1.0003
+xamp.mid                                  1.65
+xamp.33                                      1
+xamp.58                                 181.65
+xamp.59                                -178.35
+xamp.52                                  43.65
+xamp.53                                 -40.35
+xamp.41                             -0.0871208
+xamp.vclp                              1.13288
+xamp.57                             -0.0871208
+xamp.40                             -0.0871208
+xamp.39                                2.35288
+xamp.56                                2.35288
+xamp.38                                2.35288
+xamp.29                                 1.0003
+out                                     1.0003
+xamp.79                             -0.0999984
+xamp.vee_b                            1.65e-06
+xamp.80                                    3.4
+xamp.vcc_b                                 3.3
+xamp.22                                 1.0004
+xamp.21                                 1.0004
+xamp.xvos_vcm.1                         1.0004
+xamp.xvos_vcm.e1_int1                        0
+xamp.xvos_vcm.e1_int2                   2.2996
+xamp.xvos_vcm.e2_int1                        0
+xamp.xvos_vcm.e2_int2                   1.0004
+xamp.23                                 13.184
+xamp.24                                10.3005
+xamp.26                                34.5187
+xamp.25                                34.5219
+xamp.27                                34.5219
+xamp.28                                34.5219
+xamp.cl_clamp                          1.13288
+xamp.30                                34.5154
+xamp.xu1.g1_int1                       32.8654
+xamp.31                                1.97865
+xamp.32                               0.020592
+xamp.xclawn.g1_int1                2.05903e-05
+xamp.xclawn.g1_int2                    0.10003
+xamp.vimon                             1.75003
+xamp.xe_n.7                           0.833786
+xamp.xe_n.8                           0.833786
+xamp.xe_n.3                                  0
+xamp.xe_n.6                                  0
+xamp.xe_n.4                                  0
+xamp.xe_n.5                                  0
+xamp.esdp                                    1
+xamp.xi_nn.7                          0.833786
+xamp.xi_nn.8                          0.833786
+xamp.xi_nn.3                                 0
+xamp.xi_nn.6                                 0
+xamp.xi_nn.4                                 0
+xamp.xi_nn.5                                 0
+xamp.xi_np.7                          0.833786
+xamp.xi_np.8                          0.833786
+xamp.xi_np.3                                 0
+xamp.xi_np.6                                 0
+xamp.xi_np.4                                 0
+xamp.xi_np.5                                 0
+xamp.34                                   1.65
+xamp.35                                   1.65
+xamp.36                                   1.65
+xamp.37                                   1.65
+xamp.42                                1.13288
+xamp.vsense                            1.13288
+xamp.clamp                             1.13288
+xamp.xvccs_lim_2.g1_int1           -5.1712e-07
+xamp.43                                1.64995
+xamp.xvccs_lim_1.g1_int1          -4.63787e-11
+xamp.45                                 1.0003
+xamp.44                                 1.0003
+xamp.46                                   1.65
+xamp.47                                1.22268
+xamp.48                                   1.65
+xamp.49                                2.07732
+xamp.50                                 1.6499
+xamp.51                                1.62087
+xamp.xiqpos.g1_int1                 0.00010003
+xamp.xiqneg.g1_int1                          0
+xamp.54                                   1.65
+xamp.xcl_amp.gvo+_int1                       0
+xamp.55                                   1.65
+xamp.xcl_amp.gvo-_int1                       0
+xamp.61                                   1.65
+xamp.xgr_amp.gvo+_int1                       0
+xamp.60                                1.13288
+xamp.62                                   1.65
+xamp.xgr_amp.gvo-_int1                       0
+xamp.63                                   1.65
+xamp.64                                   1.65
+xamp.xgr_src.g1_int1                         0
+xamp.65                                   1.65
+xamp.66                                   1.65
+xamp.xcl_src.g1_int1                         0
+xamp.67                                 3.2803
+xamp.xclawp.g1_int1                1.96945e-05
+xamp.xclawp.g1_int2                    0.10003
+xamp.68                                 3.2803
+xamp.69                               0.020592
+xamp.vcc_clp                            3.2803
+xamp.vee_clp                          0.020592
+xamp.70                                   1.65
+xamp.xclaw_amp.gvo+_int1                     0
+xamp.vout_s                             1.0003
+xamp.71                                   1.65
+xamp.xclaw_amp.gvo-_int1                     0
+xamp.72                                   1.65
+xamp.73                                   1.65
+xamp.claw_clamp                        1.13288
+xamp.xclaw_src.g1_int1                       0
+xamp.sw_ol                                1.65
+xamp.74                                   1.65
+xamp.xol_sense.gsw+_int1                     0
+xamp.75                                1.75003
+xamp.76                                 1.0003
+xamp.77                                1.13288
+xamp.78                                 1.0003
+xamp.xvcm_clamp.g1_int1              -0.649699
+xamp.81                                 1.0003
+xamp.82                                   1.65
+xamp.83                            1.65165e-06
+xamp.84                                    3.3
+xamp.85                                 1.0003
+xamp.86                                 1.0003
+b.xamp.xvcm_clamp.bg1#branch                 0
+b.xamp.xol_sense.bgsw+#branch                0
+b.xamp.xclaw_src.bg1#branch                  0
+b.xamp.xclaw_amp.bgvo-#branch                0
+b.xamp.xclaw_amp.bgvo+#branch                0
+b.xamp.xclawp.bg1#branch                     0
+b.xamp.xcl_src.bg1#branch                    0
+b.xamp.xgr_src.bg1#branch                    0
+b.xamp.xgr_amp.bgvo-#branch                  0
+b.xamp.xgr_amp.bgvo+#branch                  0
+b.xamp.xcl_amp.bgvo-#branch                  0
+b.xamp.xcl_amp.bgvo+#branch                  0
+b.xamp.xiqneg.bg1#branch                     0
+b.xamp.xiqpos.bg1#branch                     0
+b.xamp.xvccs_lim_1.bg1#branch                0
+b.xamp.xvccs_lim_2.bg1#branch                0
+b.xamp.xclawn.bg1#branch                     0
+b.xamp.xu1.bg1#branch                        0
+b.xamp.xvos_vcm.be2#branch                   0
+b.xamp.xvos_vcm.be1#branch                   0
+h.xamp.h1#branch                  -3.10578e-13
+v.xamp.v4#branch                    0.00010003
+h.xamp.h3#branch                             0
+v.xamp.v12#branch                 -2.44005e-12
+h.xamp.h2#branch                             0
+v.xamp.v11#branch                  2.44005e-12
+e.xamp.e1#branch                     7.251e-12
+e.xamp.e4#branch                             0
+e.xamp.e5#branch                   6.49697e-13
+e.xamp.xi_np.e2#branch                       0
+e.xamp.xi_np.e1#branch                       0
+e.xamp.xi_nn.e2#branch                       0
+e.xamp.xi_nn.e1#branch                       0
+e.xamp.xe_n.e3#branch              5.10324e-12
+e.xamp.xe_n.e2#branch                        0
+e.xamp.xe_n.e1#branch                        0
+e.xamp.xvos_vcm.e2#branch         -1.01016e-13
+e.xamp.xvos_vcm.e1#branch         -1.01016e-13
+v.xamp.v_os#branch                -1.01016e-13
+v.xamp.vcm_max#branch                -1.75e-12
+v.xamp.vcm_min#branch                 1.75e-12
+v.xamp.v_orp#branch                          0
+v.xamp.v_orn#branch                          0
+v.xamp.v_iscn#branch                   4.2e-11
+v.xamp.v_iscp#branch                  -4.2e-11
+v.xamp.v_grn#branch                    1.8e-10
+v.xamp.v_grp#branch                   -1.8e-10
+vin#branch                         -1.8332e-12
+vcc#branch                         -0.00016003
+a.xamp.xclawp.ag1#branch_1_0                 0
+a.xamp.xclawn.ag1#branch_1_0                 0
+a.xamp.xvos_vcm.ae2#branch_1_0               0
+a.xamp.xvos_vcm.ae1#branch_1_0               0
+
+
+No. of Data Rows : 1008
+vmax                =  1.100316e+00 at=  3.123429e-04
+ngspice-42 done

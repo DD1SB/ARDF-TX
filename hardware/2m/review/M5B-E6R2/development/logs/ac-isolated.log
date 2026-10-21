@@ -1,0 +1,9 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_simulation.py", line 212, in ac_case
+    (SIM/(name+'.log')).write_text(run.stdout+run.stderr);assert run.returncode==0 and path.exists()
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

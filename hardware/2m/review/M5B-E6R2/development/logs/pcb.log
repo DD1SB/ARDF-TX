@@ -1,0 +1,14 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_pcb.py", line 93, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_pcb.py", line 38, in main
+    guard();power_footprints();b=p.LoadBoard(str(HW/'RF2M.kicad_pcb'));assert b.GetTitleBlock().GetRevision()!=REV,'Floorplan already applied; use native board authority'
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_pcb.py", line 30, in power_footprints
+    pp=next(z for z in c.children(d,'property') if z[1]=='ki_fp_filters');pp[2]+=' ARDF_2M:'+geometry()['devices']['Q401' if d[1]=='D45H11_ST' else 'Q402']['footprint']
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

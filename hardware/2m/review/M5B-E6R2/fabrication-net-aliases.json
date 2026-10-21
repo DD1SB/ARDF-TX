@@ -1,0 +1,18 @@
+{
+  "aliases": {
+    "MMIC_AC": "MMIC_AC",
+    "ST_IS_A": "MMIC_AC",
+    "ST_IS_B": "ST_IS_B",
+    "ST_IS_C": "ST_IS_B",
+    "ST_IS_D": "ST_IS_D",
+    "PA_GATE": "ST_IS_D",
+    "PA_DRAIN": "PA_DRAIN",
+    "ST_O_A": "PA_DRAIN",
+    "ST_O_B": "PA_DRAIN",
+    "ST_O_C": "ST_O_C",
+    "ST_O_D": "ST_O_C",
+    "ST_DC_BLOCK": "ST_DC_BLOCK",
+    "ST_LPF_IN": "ST_DC_BLOCK"
+  },
+  "reason": "Declared distributedRFnet-tie copper only;logical schematic remainsseparate"
+}

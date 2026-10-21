@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-18",
-  "revision": "M5B-E5",
-  "status": "COMPACT EVALUATION CANDIDATE / NOT RELEASED / PHYSICAL NOT_RUN",
+  "date": "2026-10-21",
+  "revision": "M5B-E6R2",
+  "status": "CONTROLLED EVALUATION PCB; POWERED QUALIFICATION NOT_RUN",
   "parts": [
     {
       "ref": "J101",
@@ -3024,7 +3024,7 @@
       "pins": {
         "1": "AF_DC",
         "2": "GND",
-        "3": "LEVEL_DC",
+        "3": "GND",
         "4": "AM_COMMAND",
         "5": "V3V3",
         "6": "KEY"
@@ -3074,7 +3074,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "MOD_OFF_BASE",
+        "1": "MOD_COMMAND_OFF_BASE",
         "2": "GND",
         "3": "MOD_COMMAND"
       }
@@ -3084,7 +3084,7 @@
       "sheet": "05_am",
       "value": "D45H11",
       "mpn": "D45H11",
-      "footprint": "ARDF_2M:TO-220-3_Vertical_E3",
+      "footprint": "ARDF_2M:TO220_Flat_CommonPlane_E6R2",
       "group": "modulator",
       "population": "NORMAL",
       "note": "",
@@ -3100,7 +3100,7 @@
       "multiple": 1,
       "pins": {
         "1": "PASS_BASE",
-        "2": "VPA",
+        "2": "VPA_PRE",
         "3": "VMOD"
       }
     },
@@ -3157,7 +3157,7 @@
       "sheet": "05_am",
       "value": "BD139",
       "mpn": "BD139",
-      "footprint": "ARDF_2M:TO-126-3_Vertical_E3",
+      "footprint": "ARDF_2M:TO126_Flat_CommonPlane_E6R2",
       "group": "modulator",
       "population": "NORMAL",
       "note": "",
@@ -3295,7 +3295,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "NORMAL_OFF",
+        "1": "LOCAL_MOD_OFF",
         "2": "MOD_OFF_BASE"
       }
     },
@@ -7389,7 +7389,7 @@
       "pins": {
         "1": "VDRV_FILTER",
         "2": "GND",
-        "3": "NORMAL_PERMIT",
+        "3": "DRIVER_ON",
         "4": null,
         "5": "VDRV_RF",
         "6": "VDRV_RF"
@@ -7583,7 +7583,7 @@
       "moq": 1,
       "multiple": 1,
       "pins": {
-        "1": "NORMAL_OFF",
+        "1": "CLOCK_OFF",
         "2": "CLK_NORMAL",
         "3": "GND",
         "4": "NORMAL_CLOCK_BUF",
@@ -8155,6 +8155,785 @@
       "multiple": 1,
       "pins": {
         "1": "VIN_CONV",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U970",
+      "sheet": "13_carrier_keying",
+      "value": "TLV7032DGKR",
+      "mpn": "TLV7032DGKR",
+      "footprint": "ARDF_2M:TLV7032_DGK_E6R2",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Push-pull readiness only; no unqualified local PA temperature threshold. Outputs pulled low when absent.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tlv7031.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.9
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY",
+        "2": "VPA_READY_REF",
+        "3": "VPA_READY_S",
+        "4": "GND",
+        "5": "DRV_READY_S",
+        "6": "DRV_READY_REF",
+        "7": "DRV_READY",
+        "8": "V3V3"
+      }
+    },
+    {
+      "ref": "U971",
+      "sheet": "13_carrier_keying",
+      "value": "SN74LVC1G00DBVR",
+      "mpn": "SN74LVC1G00DBVR",
+      "footprint": "ARDF_2M:LVC1G00_DBV_E6R2",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "NAND readiness. RF_NOT_READY has default pull-up.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.15
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY",
+        "2": "DRV_READY",
+        "3": "GND",
+        "4": "RF_NOT_READY",
+        "5": "V3V3"
+      }
+    },
+    {
+      "ref": "U972",
+      "sheet": "13_carrier_keying",
+      "value": "SN74LVC2G32DCTR",
+      "mpn": "SN74LVC2G32DCTR",
+      "footprint": "ARDF_2M:LVC2G32_DCT_E6R2",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Both emergency/slot inhibit and normal Morse key have priority over RF readiness.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g32.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.22
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_OFF",
+        "2": "KEY_N",
+        "3": "CLOCK_OFF",
+        "4": "GND",
+        "5": "LOCAL_MOD_OFF",
+        "6": "RF_NOT_READY",
+        "7": "LOCAL_MOD_OFF",
+        "8": "V3V3"
+      }
+    },
+    {
+      "ref": "U973",
+      "sheet": "13_carrier_keying",
+      "value": "SN74LVC1G04DBVR",
+      "mpn": "SN74LVC1G04DBVR",
+      "footprint": "ARDF_2M:LVC1G04_DBV_E6R2",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Driver enable defaults low; only small MMIC domain keyed.",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.1
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": null,
+        "2": "LOCAL_MOD_OFF",
+        "3": "GND",
+        "4": "DRIVER_ON",
+        "5": "V3V3"
+      }
+    },
+    {
+      "ref": "R970",
+      "sheet": "13_carrier_keying",
+      "value": "0.05",
+      "mpn": "WSL2512R0500FEA",
+      "footprint": "ARDF_2M:R_2512_6332Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "50mohm1%1W. Kelvin probe directly at R970 terminations; TP970/TP502 are coarse voltage checks. Outer feedback senses downstream VPA.",
+      "source_url": "https://www.vishay.com/docs/30100/wsl.pdf",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.4
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_PRE",
+        "2": "VPA"
+      }
+    },
+    {
+      "ref": "R971",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA",
+        "2": "VPA_READY_S"
+      }
+    },
+    {
+      "ref": "R972",
+      "sheet": "13_carrier_keying",
+      "value": "33k",
+      "mpn": "RT0603BRD0733KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY_S",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R973",
+      "sheet": "13_carrier_keying",
+      "value": "330k",
+      "mpn": "RT0603BRD07330KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "VPA_READY_REF"
+      }
+    },
+    {
+      "ref": "R974",
+      "sheet": "13_carrier_keying",
+      "value": "2.49k",
+      "mpn": "RT0603BRD072K49L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY_REF",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R975",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VDRV_MMIC",
+        "2": "DRV_READY_S"
+      }
+    },
+    {
+      "ref": "R976",
+      "sheet": "13_carrier_keying",
+      "value": "33k",
+      "mpn": "RT0603BRD0733KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRV_READY_S",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R977",
+      "sheet": "13_carrier_keying",
+      "value": "19.1k",
+      "mpn": "RT0603BRD0719K1L",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "DRV_READY_REF"
+      }
+    },
+    {
+      "ref": "R978",
+      "sheet": "13_carrier_keying",
+      "value": "10k",
+      "mpn": "RT0603BRD0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRV_READY_REF",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R979",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R980",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRV_READY",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R981",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLOCK_OFF",
+        "2": "V3V3"
+      }
+    },
+    {
+      "ref": "R982",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRIVER_ON",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R983",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "RF_NOT_READY",
+        "2": "V3V3"
+      }
+    },
+    {
+      "ref": "R984",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "0.1% divider/default state; exact package/MPN audit in E6R2.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LOCAL_MOD_OFF",
+        "2": "V3V3"
+      }
+    },
+    {
+      "ref": "C970",
+      "sheet": "13_carrier_keying",
+      "value": "100n",
+      "mpn": "GRM188R71H104KA93D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Local bypass at corresponding new IC.",
+      "source_url": "https://www.murata.com/en-global/products/capacitor/ceramiccapacitor",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C971",
+      "sheet": "13_carrier_keying",
+      "value": "100n",
+      "mpn": "GRM188R71H104KA93D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Local bypass at corresponding new IC.",
+      "source_url": "https://www.murata.com/en-global/products/capacitor/ceramiccapacitor",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C972",
+      "sheet": "13_carrier_keying",
+      "value": "100n",
+      "mpn": "GRM188R71H104KA93D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Local bypass at corresponding new IC.",
+      "source_url": "https://www.murata.com/en-global/products/capacitor/ceramiccapacitor",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C973",
+      "sheet": "13_carrier_keying",
+      "value": "100n",
+      "mpn": "GRM188R71H104KA93D",
+      "footprint": "ARDF_2M:C_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Local bypass at corresponding new IC.",
+      "source_url": "https://www.murata.com/en-global/products/capacitor/ceramiccapacitor",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "V3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "TP970",
+      "sheet": "13_carrier_keying",
+      "value": "Pass collector before current shunt",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_PRE"
+      }
+    },
+    {
+      "ref": "TP971",
+      "sheet": "13_carrier_keying",
+      "value": "Regulated current shunt upstream",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VREG_SWITCH"
+      }
+    },
+    {
+      "ref": "TP972",
+      "sheet": "13_carrier_keying",
+      "value": "RF inhibit",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "CLOCK_OFF"
+      }
+    },
+    {
+      "ref": "TP973",
+      "sheet": "13_carrier_keying",
+      "value": "MMIC enable",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRIVER_ON"
+      }
+    },
+    {
+      "ref": "TP974",
+      "sheet": "13_carrier_keying",
+      "value": "Modulator clamp",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "LOCAL_MOD_OFF"
+      }
+    },
+    {
+      "ref": "TP975",
+      "sheet": "13_carrier_keying",
+      "value": "PA readiness",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "VPA_READY"
+      }
+    },
+    {
+      "ref": "TP976",
+      "sheet": "13_carrier_keying",
+      "value": "Driver readiness",
+      "mpn": "PCB feature",
+      "footprint": "ARDF_2M:TestPoint_Pad_D1.0mm_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "High-impedance probing; never attach an ammeter directly across a supply.",
+      "source_url": "",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "DRV_READY"
+      }
+    },
+    {
+      "ref": "R985",
+      "sheet": "13_carrier_keying",
+      "value": "10k",
+      "mpn": "RT0603BRD0710KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Separate Q405 emergency input clamp from normal Q404 key clamp; prevents normal SPACE command injection.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "NORMAL_OFF",
+        "2": "MOD_COMMAND_OFF_BASE"
+      }
+    },
+    {
+      "ref": "R986",
+      "sheet": "13_carrier_keying",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "ARDF_2M:R_0603_1608Metric_E3",
+      "group": "carrier_keying",
+      "population": "NORMAL",
+      "note": "Separate Q405 emergency input clamp from normal Q404 key clamp; prevents normal SPACE command injection.",
+      "source_url": "https://www.yageo.com/en/ProductCategory/Resistors",
+      "supplier": "OPEN",
+      "supplier_part_number": "OPEN",
+      "availability": "Exact basket/stock OPEN",
+      "evidence": "ESTIMATE",
+      "price_breaks_eur": {
+        "1": 0.04
+      },
+      "moq": 1,
+      "multiple": 1,
+      "pins": {
+        "1": "MOD_COMMAND_OFF_BASE",
         "2": "GND"
       }
     }
@@ -10688,6 +11467,232 @@
         "x": 173.99,
         "y": 185.42000000000002,
         "type": "C"
+      }
+    ],
+    "13_carrier_keying": [
+      {
+        "ref": "U970",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 85.09,
+        "type": "TLV7032_DGK"
+      },
+      {
+        "ref": "U971",
+        "unit": 1,
+        "x": 173.99,
+        "y": 85.09,
+        "type": "LVC1G00_DBV"
+      },
+      {
+        "ref": "U972",
+        "unit": 1,
+        "x": 285.75,
+        "y": 85.09,
+        "type": "LVC2G32_DCU"
+      },
+      {
+        "ref": "U973",
+        "unit": 1,
+        "x": 397.51,
+        "y": 85.09,
+        "type": "LVC1G04_DBV"
+      },
+      {
+        "ref": "R970",
+        "unit": 1,
+        "x": 510.54,
+        "y": 85.09,
+        "type": "R"
+      },
+      {
+        "ref": "R971",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 134.62,
+        "type": "R"
+      },
+      {
+        "ref": "R972",
+        "unit": 1,
+        "x": 173.99,
+        "y": 134.62,
+        "type": "R"
+      },
+      {
+        "ref": "R973",
+        "unit": 1,
+        "x": 285.75,
+        "y": 134.62,
+        "type": "R"
+      },
+      {
+        "ref": "R974",
+        "unit": 1,
+        "x": 397.51,
+        "y": 134.62,
+        "type": "R"
+      },
+      {
+        "ref": "R975",
+        "unit": 1,
+        "x": 510.54,
+        "y": 134.62,
+        "type": "R"
+      },
+      {
+        "ref": "R976",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 182.88,
+        "type": "R"
+      },
+      {
+        "ref": "R977",
+        "unit": 1,
+        "x": 173.99,
+        "y": 182.88,
+        "type": "R"
+      },
+      {
+        "ref": "R978",
+        "unit": 1,
+        "x": 285.75,
+        "y": 182.88,
+        "type": "R"
+      },
+      {
+        "ref": "R979",
+        "unit": 1,
+        "x": 397.51,
+        "y": 182.88,
+        "type": "R"
+      },
+      {
+        "ref": "R980",
+        "unit": 1,
+        "x": 510.54,
+        "y": 182.88,
+        "type": "R"
+      },
+      {
+        "ref": "R981",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 232.41,
+        "type": "R"
+      },
+      {
+        "ref": "R982",
+        "unit": 1,
+        "x": 173.99,
+        "y": 232.41,
+        "type": "R"
+      },
+      {
+        "ref": "R983",
+        "unit": 1,
+        "x": 285.75,
+        "y": 232.41,
+        "type": "R"
+      },
+      {
+        "ref": "R984",
+        "unit": 1,
+        "x": 397.51,
+        "y": 232.41,
+        "type": "R"
+      },
+      {
+        "ref": "C970",
+        "unit": 1,
+        "x": 510.54,
+        "y": 232.41,
+        "type": "C"
+      },
+      {
+        "ref": "C971",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 280.67,
+        "type": "C"
+      },
+      {
+        "ref": "C972",
+        "unit": 1,
+        "x": 173.99,
+        "y": 280.67,
+        "type": "C"
+      },
+      {
+        "ref": "C973",
+        "unit": 1,
+        "x": 285.75,
+        "y": 280.67,
+        "type": "C"
+      },
+      {
+        "ref": "TP970",
+        "unit": 1,
+        "x": 397.51,
+        "y": 280.67,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP971",
+        "unit": 1,
+        "x": 510.54,
+        "y": 280.67,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP972",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 330.2,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP973",
+        "unit": 1,
+        "x": 173.99,
+        "y": 330.2,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP974",
+        "unit": 1,
+        "x": 285.75,
+        "y": 330.2,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP975",
+        "unit": 1,
+        "x": 397.51,
+        "y": 330.2,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "TP976",
+        "unit": 1,
+        "x": 510.54,
+        "y": 330.2,
+        "type": "TestPoint"
+      },
+      {
+        "ref": "R985",
+        "unit": 1,
+        "x": 62.230000000000004,
+        "y": 378.46,
+        "type": "R"
+      },
+      {
+        "ref": "R986",
+        "unit": 1,
+        "x": 173.99,
+        "y": 378.46,
+        "type": "R"
       }
     ]
   }

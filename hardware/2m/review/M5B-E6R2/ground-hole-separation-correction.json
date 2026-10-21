@@ -1,0 +1,11 @@
+{
+  "removed_redundant_via_mm": [
+    36.825,
+    92.5
+  ],
+  "retained_via_mm": [
+    37.3,
+    92.5
+  ],
+  "reason": "Reuse existingGNDvia instead of addingdrill0.475mm away; explicitgroundbridge reanchored"
+}

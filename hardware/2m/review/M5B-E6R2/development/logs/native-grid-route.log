@@ -1,0 +1,22 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+/home/stefan/src/ardf-tx/tools/m5b_e6r2_grid.cpp: In function ‘int main(int, char**)’:
+/home/stefan/src/ardf-tx/tools/m5b_e6r2_grid.cpp:13:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   13 |  if(argc!=3)return 2;string prefix=argv[1];ifstream cfg(prefix+".txt");int nx,ny,ns,ng;cfg>>nx>>ny>>ns>>ng;int N=nx*ny,sz=2*N;vector<int>starts(ns),goals(ng);for(auto&x:starts)cfg>>x;for(auto&x:goals)cfg>>x;
+      |  ^~
+/home/stefan/src/ardf-tx/tools/m5b_e6r2_grid.cpp:13:22: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   13 |  if(argc!=3)return 2;string prefix=argv[1];ifstream cfg(prefix+".txt");int nx,ny,ns,ng;cfg>>nx>>ny>>ns>>ng;int N=nx*ny,sz=2*N;vector<int>starts(ns),goals(ng);for(auto&x:starts)cfg>>x;for(auto&x:goals)cfg>>x;
+      |                      ^~~~~~
+/home/stefan/src/ardf-tx/tools/m5b_e6r2_grid.cpp:26:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   26 |  for(int id=found;id>=0;id=prev[id])out<<id<<"\n";cerr<<"ROUTED "<<expanded<<" cost "<<dist[found]<<"\n";return 0;
+      |  ^~~
+/home/stefan/src/ardf-tx/tools/m5b_e6r2_grid.cpp:26:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   26 |  for(int id=found;id>=0;id=prev[id])out<<id<<"\n";cerr<<"ROUTED "<<expanded<<" cost "<<dist[found]<<"\n";return 0;
+      |                                                   ^~~~
+ROUTED 651088 cost 14452
+DRIVER_ON routed 24 segments 5 vias 651088 nodes
+ROUTED 1005724 cost 21758
+CLOCK_OFF routed 26 segments 3 vias 1005724 nodes
+NO_PATH 1619068
+VPA_READY_REF no path in complete grid

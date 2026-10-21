@@ -1,0 +1,59 @@
+{
+  "status": "PASS_DIMENSIONED_SOLIDS",
+  "insulated_contact_pairs": [
+    {
+      "a": "Q401_tab",
+      "b": "SK81_100",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q401_tab",
+      "b": "source_bar_15x44x6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q401_body",
+      "b": "SK81_100",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q401_body",
+      "b": "source_bar_15x44x6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q402_tab",
+      "b": "SK81_100",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q402_tab",
+      "b": "source_bar_15x44x6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q402_body",
+      "b": "SK81_100",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "Q402_body",
+      "b": "source_bar_15x44x6",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "parts": 88,
+  "negative_solid_tests": [
+    {
+      "name": "carrier2mmtoo_high",
+      "intersection_mm3": 1847.366377849004
+    },
+    {
+      "name": "live_tab_moved_through_insulator",
+      "intersection_mm3": 7.622942526027154
+    }
+  ],
+  "PCB_cutouts": "Actual native component/NPTH drills and cutouts; via holes omitted from mechanical envelope, present in native3D/CAM",
+  "controller": "Read-only native board holes; envelope at53mm per preserved carrier reference, full components in native board renders",
+  "physical": "NOT_RUN"
+}

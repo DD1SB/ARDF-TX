@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "native_SHA256": "0bdf01a6907b35927f6f1d9ad55acf9c7eb7e893835982afc9e9652c51417baf",
+  "commands": [
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "-o",
+        "/tmp/m5b-e6r2-final-reproduction/",
+        "--layers",
+        "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+        "--subtract-soldermask",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-F_Cu.gtl'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-B_Cu.gbl'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-F_Paste.gtp'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-B_Paste.gbp'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-F_Silkscreen.gto'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-B_Silkscreen.gbo'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-F_Mask.gts'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-B_Mask.gbs'.\nPlotted to '/tmp/m5b-e6r2-final-reproduction/RF2M-Edge_Cuts.gm1'.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "drill",
+        "-o",
+        "/tmp/m5b-e6r2-final-reproduction/",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--excellon-separate-th",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Created file '/tmp/m5b-e6r2-final-reproduction/RF2M-PTH.drl'\nCreated file '/tmp/m5b-e6r2-final-reproduction/RF2M-NPTH.drl'\nDone.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "/tmp/m5b-e6r2-final-reproduction/RF2M.net.xml",
+        "/home/stefan/src/ardf-tx/hardware/2m/RF2M.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "CAM_comparisons": [
+    {
+      "file": "RF2M-B_Cu.gbl",
+      "archived_SHA256": "45a6e697b5bcc864e335f91279352ba985398ca54e4e6e3e58cc23e77b5a59d9",
+      "fresh_SHA256": "01ba07f3cec436fe132b3fd19dc7e57b3ac0af158e45d614216481dcb6cb9fc7",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-B_Mask.gbs",
+      "archived_SHA256": "150f033f281433c2880db29a7b97a156f896896b17bee89e56013eb6cac4e810",
+      "fresh_SHA256": "28d37159b4386b642f31ffc9ecc08f7ee99396b5ed864e372f06be336f6c69c4",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-B_Paste.gbp",
+      "archived_SHA256": "5757653cc9b5b4fda7997439c0c0b19444c643b567edabacc942a2330fc7df78",
+      "fresh_SHA256": "3a6393a0f3b818b16bba6f885330491072578d1ed5723b1c7f89638abd7e6769",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-B_Silkscreen.gbo",
+      "archived_SHA256": "73c5e2a4bd44b5c56d341f35aa072e7e1cdbe26eb61f662a4b31c37c7c6ed8a2",
+      "fresh_SHA256": "9335d3bc068dd966aeddb10f9e2d70e4efbf12ae0aeec7e8f9e7f1526a34f67a",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-Edge_Cuts.gm1",
+      "archived_SHA256": "d65c841016e69c9f81a724aa8b085484d0d61859a49e0cd185825ce6120ae7ca",
+      "fresh_SHA256": "6a63ab6eb30c514a57fd3523373443a3d8b60a513468c1259d2f34e992c1aa3c",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-F_Cu.gtl",
+      "archived_SHA256": "428a2fc6f2b848ddcdf436aa0fe389d6e1c0095857c060440d2b31ca2a38c640",
+      "fresh_SHA256": "a9cfa23e9378d3c760cddd3992a62bb57ff68186b615bf732c9ef95853e07b0c",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-F_Mask.gts",
+      "archived_SHA256": "a2e62a077be5adcadc020f7de07cb882cc8de6608d8e4a0d95340d14f0a511a0",
+      "fresh_SHA256": "17a220a8cb82e444ad8fab4f81d374bebf18313a37db4c40e9eb6320d51605ee",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-F_Paste.gtp",
+      "archived_SHA256": "b197fc89155c7db13c6e8c93caa17e4ee23f6ba0502610214c9f3c355035c0c9",
+      "fresh_SHA256": "a22f45ddbfe0098f56b9a5383f45c92b57c4cc0019ac9abe320ff0e939d8d868",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-F_Silkscreen.gto",
+      "archived_SHA256": "4287769a35109a6ebccb26b050d6a187761f964dbb5abe1093bb727d2c4e7d30",
+      "fresh_SHA256": "46635b9447f6b827d62b3ce4eb9cefe116ca0c971b9ebb9387a702afd01f256e",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-NPTH.drl",
+      "archived_SHA256": "241238eca993d5c860458384bc2b632451e6ace2e4c5d5bf4680570faf2a5c09",
+      "fresh_SHA256": "cad571132e7236580f970f7cd0b5ad9edd3ffb9ac97891c8a15c51d2b3c49d32",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    },
+    {
+      "file": "RF2M-PTH.drl",
+      "archived_SHA256": "dea486e703936b756be0bbba311d9b476c0451a461d329985843c95c134360c0",
+      "fresh_SHA256": "b75e615cc04e87f62653e6e0710ccb393a51b58a7c53a77e35b4ab0077bd700d",
+      "classification": "IDENTICAL_GEOMETRY_CREATION_TIMESTAMP_ONLY"
+    }
+  ],
+  "netlist_semantics_equal": true,
+  "source_paste_windows": 5,
+  "source_paste_area_mm2": 6.765,
+  "source_mask_mm": [
+    90.95,
+    52.5,
+    93.05,
+    57.5
+  ],
+  "output": "/tmp/m5b-e6r2-final-reproduction",
+  "archived_files_replaced": false,
+  "physical": "NOT_RUN"
+}

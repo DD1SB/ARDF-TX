@@ -1,0 +1,29 @@
+{
+  "correction": "Actual contact graph found isolated C409GND pad andFpour; connect with short wide traces/two ordinary vias to nativeBgroundplane",
+  "routes": [
+    {
+      "via_mm": [
+        104.8,
+        123.4
+      ],
+      "track_width_mm": 0.6,
+      "from_pin": "C409.2",
+      "land_drill_mm": [
+        0.6,
+        0.3
+      ]
+    },
+    {
+      "via_mm": [
+        103.8,
+        123.4
+      ],
+      "track_width_mm": 0.6,
+      "from_pin": "C409.2",
+      "land_drill_mm": [
+        0.6,
+        0.3
+      ]
+    }
+  ]
+}

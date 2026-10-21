@@ -1,0 +1,113 @@
+* E6R2 native-value transient, BUCK4S, BFpass60, normal, edge0.008s
+* TI model per-amplifier family proxy: not a package-coupling model.
+.include /tmp/m5b-e6r2/references/tlv9002.lib
+.options reltol=.002 abstol=1n vntol=10u method=gear
+Vlogic V3V3 0 3.3
+Vconv vsource 0 8.9996
+Rconv vsource vreg .12
+Lfeed vreg vreg_l 100n
+Creservoir vreg_l 0 44u
+Vfault EXTERNAL_FAULT 0 DC 0
+* Behavioral proxy of native INA180/LM339 and asynchronous fault latch.
+*10us detector RC is a sensitivity assumption, not a measured delay guarantee.
+BCURRENT raw_current_fault 0 V=if(v(VREG_SWITCH,VMOD)>.122196,3.3,0)
+Rdelay raw_current_fault current_fault_delay 10k
+Cdelay current_fault_delay 0 1n
+BLATCH latch_drive 0 V=if(v(current_fault_delay)>1.65 || v(FAULT_LATCH)>1.65,3.3,0)
+Rlatch latch_drive FAULT_LATCH 1k
+Clatch FAULT_LATCH 0 1n
+BEMERGENCY NORMAL_OFF 0 V=if(v(EXTERNAL_FAULT)>1.65 || v(FAULT_LATCH)>1.65,3.3,0)
+Vkey KEY 0 DC 3.3
+BkeyN KEY_N 0 V=3.3-v(KEY)
+Boff LOCAL_MOD_OFF 0 V=if(v(NORMAL_OFF)>1.65 || v(KEY_N)>1.65,3.3,0)
+Bdriver DRIVER_ON 0 V=3.3-v(LOCAL_MOD_OFF)
+Smain vreg_l VREG_SWITCH V3V3 NORMAL_OFF SWMAIN
+.model SWMAIN SW(Ron=.03 Roff=1G Vt=1.65 Vh=.05)
+R309 VREG_SWITCH VMOD 0.068
+C635 VMOD 0 1u
+C306 VMOD 0 100n
+C307 VMOD 0 100n
+* Prepared independent driver regulators, reservoir upstream of U305.
+Vdriver drvsource 0 5
+Rdriver drvsource VDRV_FILTER .12
+C409 VDRV_FILTER 0 150u
+S305 VDRV_FILTER VDRV_MMIC DRIVER_ON 0 SWDRV
+.model SWDRV SW(Ron=.079 Roff=1G Vt=1.65 Vh=.05)
+C603 VDRV_MMIC 0 100n
+C604 VDRV_MMIC 0 1n
+Bmmic VDRV_MMIC 0 I=.1463*max(v(VDRV_MMIC),0)/5
+Bqod VDRV_MMIC 0 I=if(v(DRIVER_ON)<1.65,v(VDRV_MMIC)/120,0)
+* Existing slot-qualified gate-bias clamp remains independent of MorseKEY.
+R606 VMOD BIAS_TOP 1k
+D501 0 BIAS_TOP DBIAS
+.model DBIAS D(IS=1p N=1 BV=6.2 IBV=5m)
+Rpot_top BIAS_TOP BIAS_WIPER 7k
+Rpot_bottom BIAS_WIPER 0 3k
+C607 BIAS_WIPER 0 100n
+L606 BIAS_WIPER PA_GATE_DC 33n
+Cgate PA_GATE_DC 0 80p
+M502 BIAS_WIPER NORMAL_OFF 0 0 NCLAMP
+.model NCLAMP NMOS(LEVEL=1 VTO=1.5 KP=.1 RD=1 RS=1)
+* Actual divider thresholds;3us typical comparator pole is a scenario.
+R971 VPA VPA_READY_S 100k
+R972 VPA_READY_S 0 33k
+R973 V3V3 VPA_READY_REF 330k
+R974 VPA_READY_REF 0 2.49k
+R975 VDRV_MMIC DRV_READY_S 100k
+R976 DRV_READY_S 0 33k
+R977 V3V3 DRV_READY_REF 19.1k
+R978 DRV_READY_REF 0 10k
+BVREADY vr_raw 0 V=if(v(VPA_READY_S)>v(VPA_READY_REF),3.3,0)
+Rvr vr_raw VPA_READY 3k
+Cvr VPA_READY 0 1n
+BDREADY dr_raw 0 V=if(v(DRV_READY_S)>v(DRV_READY_REF),3.3,0)
+Rdr dr_raw DRV_READY 3k
+Cdr DRV_READY 0 1n
+BCLOCK CLOCK_OFF 0 V=if(v(LOCAL_MOD_OFF)>1.65 || v(VPA_READY)<1.65 || v(DRV_READY)<1.65,3.3,0)
+Vaf AF_PWM 0 DC 1.42857143
+R503 AF_PWM AF_F1 10k
+R504 AF_F1 AF_F2 10k
+C503 AF_F1 AF_DC 4.7n
+C504 AF_F2 0 4.7n
+X401B AF_F2 AF_DC V3V3 0 AF_DC TLV9002
+* U402 selects reconstructed AF or0V, as actual E6R2 schematic.
+B402 AM_COMMAND 0 V=if(v(KEY)>1.65,v(AF_DC),0)
+R516 AM_COMMAND MOD_COMMAND 1k
+Q405 MOD_COMMAND MOD_COMMAND_OFF_BASE 0 M3904
+R985 NORMAL_OFF MOD_COMMAND_OFF_BASE 10k
+R986 MOD_COMMAND_OFF_BASE 0 100k
+R509 LOCAL_MOD_OFF MOD_OFF_BASE 10k
+Q404 MOD_BASE MOD_OFF_BASE 0 M3904
+R508 MOD_DRIVE MOD_BASE 1k
+R510 MOD_BASE 0 100k
+Vinject VFB_AMP VPA_FB DC 0 AC 1
+X401C MOD_COMMAND VFB_AMP V3V3 0 MOD_DRIVE TLV9002
+C505 MOD_DRIVE VPA_FB 4.7n
+R511 VPA VPA_FB 18k
+R512 VPA_FB 0 10k
+Q402 MOD_SINK MOD_BASE MOD_E NHELP
+Q403 MOD_BASE MOD_E 0 M3904
+R507 MOD_E 0 8.2
+R506 PASS_BASE MOD_SINK 10
+R505 PASS_BASE VMOD 4.7k
+Q401 VPA_PRE PASS_BASE VMOD PPASS
+R970 VPA_PRE VPA 0.05
+C506 VPA 0 100n
+C634 VPA 0 330p
+R513 VPA 0 1k
+BPA VPA 0 I=(0.149529*max(v(VPA),0)+.15*min(max(v(VPA)/.2,0),1))*(1)
+* Gummel-Poon parameter sensitivities; not ST-characterized models.
+.model PPASS PNP(IS=1e-12 BF=60 VAF=50 IKF=4 RB=.2 RC=.04 RE=.02 CJE=500p CJC=150p TF=100n TR=1u)
+.model NHELP NPN(IS=1e-13 BF=40 VAF=50 IKF=1 RB=2 RC=.1 RE=.05 CJE=100p CJC=40p TF=10n TR=100n)
+.model M3904 NPN(IS=6.7e-15 BF=150 VAF=75 CJE=4.5p CJC=3.6p TF=300p TR=20n)
+.control
+set wr_singlescale
+set wr_vecnames
+ac dec 100 1 100Meg
+let returnratio=-v(VPA_FB)/v(VFB_AMP)
+let realpart=real(returnratio)
+let imagpart=imag(returnratio)
+wrdata /tmp/m5b-e6r2/loop-loaded.dat realpart imagpart
+quit
+.endc
+.end

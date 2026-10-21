@@ -1,0 +1,32 @@
+Cannot create cache home directory: '/home/stefan/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+16:13:41: Debug: Adding duplicate image handler for 'PNG file'
+16:13:41: Debug: Adding duplicate image handler for 'JPEG file'
+16:13:41: Debug: Adding duplicate image handler for 'TIFF file'
+16:13:41: Debug: Adding duplicate image handler for 'GIF file'
+16:13:41: Debug: Adding duplicate image handler for 'PNM file'
+16:13:41: Debug: Adding duplicate image handler for 'PCX file'
+16:13:41: Debug: Adding duplicate image handler for 'IFF file'
+16:13:41: Debug: Adding duplicate image handler for 'Windows icon file'
+16:13:41: Debug: Adding duplicate image handler for 'Windows cursor file'
+16:13:41: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+16:13:41: Debug: Adding duplicate image handler for 'TGA file'
+16:13:41: Debug: Adding duplicate image handler for 'XPM file'
+16:13:42: Debug: Adding duplicate image handler for 'PNG file'
+16:13:42: Debug: Adding duplicate image handler for 'JPEG file'
+16:13:42: Debug: Adding duplicate image handler for 'TIFF file'
+16:13:42: Debug: Adding duplicate image handler for 'GIF file'
+16:13:42: Debug: Adding duplicate image handler for 'PNM file'
+16:13:42: Debug: Adding duplicate image handler for 'PCX file'
+16:13:42: Debug: Adding duplicate image handler for 'IFF file'
+16:13:42: Debug: Adding duplicate image handler for 'Windows icon file'
+16:13:42: Debug: Adding duplicate image handler for 'Windows cursor file'
+16:13:42: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+16:13:42: Debug: Adding duplicate image handler for 'TGA file'
+16:13:42: Debug: Adding duplicate image handler for 'XPM file'
+/tmp/m5b-e6r2-venv/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.
+  warn(f"{f.__name__} will be removed in the next release.", FutureWarning)
+PASS drawings/sections/complete-stack solids

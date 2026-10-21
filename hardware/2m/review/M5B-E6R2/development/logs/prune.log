@@ -1,0 +1,16 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Traceback (most recent call last):
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_finish.py", line 122, in <module>
+    else:globals()[action]()
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/stefan/src/ardf-tx/tools/m5b_e6r2_finish.py", line 88, in prune
+    assert not t.IsLocked(),'Review locked native geometry before pruning'
+           ^^^^^^^^^^^^^^^^
+AssertionError: Review locked native geometry before pruning
+swig/python detected a memory leak of type 'PCB_VIA *', no destructor found.
+swig/python detected a memory leak of type 'PCB_VIA *', no destructor found.
+swig/python detected a memory leak of type 'PCB_VIA *', no destructor found.
+swig/python detected a memory leak of type 'PCB_VIA *', no destructor found.
+swig/python detected a memory leak of type 'PCB_VIA *', no destructor found.

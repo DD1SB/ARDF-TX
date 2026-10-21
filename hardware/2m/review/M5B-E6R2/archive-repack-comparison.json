@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archives": [
+    {
+      "file": "fabrication/RF2M-M5B-E6R2_JLCPCB_5boards.zip",
+      "SHA256": "4cde1a85fbc5a4af92302dba723644863a9656446d047e470af38f5a22ca67b8",
+      "entries": 11,
+      "classification": "BYTE_IDENTICAL_REPEAT_PACKAGING"
+    },
+    {
+      "file": "fabrication/RF2M-M5B-E6R2_FULL_TOP_STENCIL.zip",
+      "SHA256": "f89e9492844b6e869900565874d19c0af0cd922670c78801520668e6e5900d7b",
+      "entries": 2,
+      "classification": "BYTE_IDENTICAL_REPEAT_PACKAGING"
+    },
+    {
+      "file": "RF2M-M5B-E6R2-native.zip",
+      "SHA256": "4b51a07b7b900845d749d95438fb580bea0f459422bd105ce3ff7770948dae7a",
+      "entries": 114,
+      "classification": "BYTE_IDENTICAL_REPEAT_PACKAGING"
+    }
+  ],
+  "scope": "Same final native/CAM input bytes; no manufacturing files regenerated or replaced by alternative geometry"
+}

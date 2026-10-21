@@ -1,0 +1,64 @@
+* E6R2 native-value transient, BUCK4S, BFpass60, normal, edge0.008s
+* TI model per-amplifier family proxy: not a package-coupling model.
+.include /tmp/m5b-e6r2/references/tlv9002.lib
+.options reltol=.002 abstol=1n vntol=10u method=gear rshunt=1e12
+Vlogic V3V3 0 3.3
+Vconv vsource 0 8.9996
+Rconv vsource vreg .12
+Lfeed vreg vreg_l 100n
+Creservoir vreg_l 0 44u
+Vacenable NORMAL_OFF 0 0
+Vackey KEY 0 3.3
+Vaclocal LOCAL_MOD_OFF 0 0
+Rmain vreg_l VREG_SWITCH .03
+R309 VREG_SWITCH VMOD 0.068
+C635 VMOD 0 1u
+C306 VMOD 0 100n
+C307 VMOD 0 100n
+Vaf AF_PWM 0 DC 1.42857143
+R503 AF_PWM AF_F1 10k
+R504 AF_F1 AF_F2 10k
+C503 AF_F1 AF_DC 4.7n
+C504 AF_F2 0 4.7n
+X401B AF_F2 AF_DC V3V3 0 AF_DC TLV9002
+* U402 selects reconstructed AF or0V, as actual E6R2 schematic.
+B402 AM_COMMAND 0 V=if(v(KEY)>1.65,v(AF_DC),0)
+R516 AM_COMMAND MOD_COMMAND 1k
+Q405 MOD_COMMAND MOD_COMMAND_OFF_BASE 0 M3904
+R985 NORMAL_OFF MOD_COMMAND_OFF_BASE 10k
+R986 MOD_COMMAND_OFF_BASE 0 100k
+R509 LOCAL_MOD_OFF MOD_OFF_BASE 10k
+Q404 MOD_BASE MOD_OFF_BASE 0 M3904
+R508 MOD_DRIVE MOD_BASE 1k
+R510 MOD_BASE 0 100k
+Vinject VFB_AMP VPA_FB DC 0 AC 1
+X401C MOD_COMMAND VFB_AMP V3V3 0 MOD_DRIVE TLV9002
+C505 MOD_DRIVE VPA_FB 4.7n
+R511 VPA VPA_FB 18k
+R512 VPA_FB 0 10k
+Q402 MOD_SINK MOD_BASE MOD_E NHELP
+Q403 MOD_BASE MOD_E 0 M3904
+R507 MOD_E 0 8.2
+R506 PASS_BASE MOD_SINK 10
+R505 PASS_BASE VMOD 4.7k
+Q401 VPA_PRE PASS_BASE VMOD PPASS
+R970 VPA_PRE VPA 0.05
+C506 VPA 0 100n
+C634 VPA 0 330p
+R513 VPA 0 1k
+RnoPA VPA 0 1G
+* Gummel-Poon parameter sensitivities; not ST-characterized models.
+.model PPASS PNP(IS=1e-12 BF=60 VAF=50 IKF=4 RB=.2 RC=.04 RE=.02 CJE=500p CJC=150p TF=100n TR=1u)
+.model NHELP NPN(IS=1e-13 BF=40 VAF=50 IKF=1 RB=2 RC=.1 RE=.05 CJE=100p CJC=40p TF=10n TR=100n)
+.model M3904 NPN(IS=6.7e-15 BF=150 VAF=75 CJE=4.5p CJC=3.6p TF=300p TR=20n)
+.control
+set wr_singlescale
+set wr_vecnames
+ac dec 100 1 100Meg
+let returnratio=-v(VPA_FB)/v(VFB_AMP)
+let realpart=real(returnratio)
+let imagpart=imag(returnratio)
+wrdata /tmp/m5b-e6r2/loop-unloaded.dat realpart imagpart
+quit
+.endc
+.end
